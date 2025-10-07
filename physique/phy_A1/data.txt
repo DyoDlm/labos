@@ -1,0 +1,21 @@
+Omega 0 = 4472,135
+
+
+R for lambda = omega : 894 Ohms
+
+R for lambda > omega : 3500 Ohms and 1000 Ohms
+
+R for lambda < omega : 500 Ohms and 10 Ohms
+
+
+Lair = 38,8 mH
+R = 10, 6 Ohm
+
+Laci = 70,2 mH
+R = 193 Ohms
+
+Lalu = 25,5 mH
+R = 26,8 Ohms
+
+Lff = 173, 4 mH
+R = 41.0 Ohms
