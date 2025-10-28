@@ -3,24 +3,6 @@ import pandas as pd
 
 
 #   define raw data
-exp = "Decharge de condenstateur"
-a_names = ["egale_0.csv", "mgra_10_.csv", "mgra_50.csv", "pgra_10.csv", "pgra_35.csv"]
-a_is = ["Amortissement faible", "Amortissement fort", "Amortissement critique"]
-
-
-exp = "Mesure des oscillation d'une bobine de cuivre avec inductances variables"
-e_names = ["e_aff.csv", "e_aci.csv", "e_air.csv", "e_alu.csv"]
-e_is = ["Oscillation acier feuillete", "Oscillation acier", "Oscillation air", "Oscillation aluminium"]
-
-
-exp = "Mesures de comparaison pour la bobine d'inductance"
-f_names = ["f_aci.csv", "f_aff.csv", "f_air.csv", "f_alu.csv"]
-f_is = []
-
-
-experiences = [a_names,e_names,f_names]
-exp_names = ["a", "exp_e", "exp_f"]
-
 #   it returns the new file name
 #   somethings to do 
 def plot(df, exp: str, name: str) -> str:
@@ -47,10 +29,13 @@ def plot(df, exp: str, name: str) -> str:
         pseudo_periode = 0
     elif exp == "f":
         #   comparer avec valeurs theoriques
-        plt.title("")
+        plt.tinitial_paramsitle("")
         plt.ylabel("Volt +/- ? [V]")
         plt.xlabel("Time +/- ? [s]")
-        
+    else:
+        plt.title("Tension en fonction de la frequence")
+        plt.ylabel("")
+        plt.xlabel("")
 
     plt.plot(x, y)
     plt.show()
@@ -58,13 +43,29 @@ def plot(df, exp: str, name: str) -> str:
     return fileName
 
 
-iteration = 0
-for exp in experiences:
-    for file in exp:
-        dir = exp_names[iteration] + "/"
-        df = pd.read_csv(dir + file)
-#        df = pd.read_excel(dir + file, engine=".ods")
-        new = plot(df, exp_names[iteration], file)
-        print(f"New file created : {new} !")
-    iteration += 1
+directory = ""
+file = "phy_B1.csv"
+df = pd.read_csv(file, sep=';')
+
+phase=df[df.columns[0]].to_numpy())
+courant=df[df.columns[1]].to_numpy())
+tensionGen=df[df.columns[2]].to_numpy())
+tensionRee=df[df.columns[3]].to_numpy())
+frequence=df[df.columns[4]].to_numpy())
+
+g_phase         = parse(phase)
+g_courant       = parse(courant)
+g_tensionGen    = parse(tensionGen)
+g_tensionRee    = parse(frequence)
+
+#df = pd.read_excel(directory + file, engine=".csv")#, engine=".ods")
+for i in df[df.columns[0]].to_numpy():
+    print(i)
+
+print("COMPLETE DATAFRAME")
+#print(df)
+exit(1)
+
+new = plot(df, "", file)
+print(f"New file created : {new} !")
 
