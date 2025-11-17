@@ -1,0 +1,127 @@
+\section{Théorie}
+
+\subsection{Oscillations libres}
+
+Le pendule de Pohl est un oscillateur de rotation caractérisé par l’angle $\theta(t)$, le moment d’inertie $J$ du disque, la constante de torsion $C$ du ressort spiral et un couple de frottement proportionnel à la vitesse angulaire.  
+En appliquant le théorème du moment cinétique :
+
+\begin{equation}
+J\ddot{\theta} = -C\theta - b\dot{\theta}.
+\end{equation}
+
+On obtient l’équation différentielle :
+\begin{equation}
+\ddot{\theta} + \frac{b}{J} \dot{\theta} + \frac{C}{J}\theta = 0.
+\label{eq:edo_libre}
+\end{equation}
+
+La pulsation propre non amortie vaut :
+\begin{equation}
+\omega_0 = \sqrt{\frac{C}{J}}, \qquad T_0 = \frac{2\pi}{\omega_0}.
+\end{equation}
+
+Pour un amortissement faible ($\zeta < 1$), la solution est :
+\begin{equation}
+\theta(t) = A_0 e^{-\zeta\omega_0 t}\cos(\omega_1 t + \phi),
+\end{equation}
+où
+\begin{equation}
+\omega_1 = \omega_0\sqrt{1-\zeta^2}, \qquad
+\zeta = \frac{b}{2\sqrt{JC}}.
+\end{equation}
+
+L’amortissement expérimental est obtenu via le décrément logarithmique :
+\begin{equation}
+\delta = \ln \left(\frac{\theta_n}{\theta_{n+1}}\right), \qquad
+\zeta = \frac{\delta}{2\pi}.
+\label{eq:zeta_delta}
+\end{equation}
+
+Dans les manipulations, l’amortissement dépend du courant $I$ circulant dans la bobine du frein de Foucault.  
+On montre que :
+\begin{equation}
+b(I) \propto I^2,
+\end{equation}
+car le champ magnétique $B \propto I$ et la force de Laplace produite par les courants induits est elle‐même proportionnelle à $B$.
+
+Ainsi, la pseudo‐période expérimentale vérifie :
+\begin{equation}
+\omega_1(I) = \sqrt{\omega_0^2 - \left(\frac{b(I)}{2J}\right)^2}
+\qquad \Rightarrow \qquad
+\omega_1 \text{ décroît lorsque } I \text{ augmente}.
+\end{equation}
+
+C’est la relation qui est vérifiée dans la manipulation 3.4.7(c) via le graphe $\omega_1 = f(I^2)$.
+
+\subsection{Oscillations forcées}
+
+Lorsque le pendule est excité par un moment sinusoïdal
+\begin{equation}
+M_e(t) = M_0 \cos(\omega t),
+\end{equation}
+l’équation du mouvement devient :
+\begin{equation}
+\ddot{\theta}
++ 2\zeta\omega_0 \dot{\theta}
++ \omega_0^2 \theta
+= \frac{M_0}{J}\cos(\omega t).
+\label{eq:edo_forcee}
+\end{equation}
+
+La solution en régime permanent est :
+\begin{equation}
+\theta(t) = \Theta(\omega)\cos(\omega t + \phi),
+\end{equation}
+où l'amplitude vaut :
+\begin{equation}
+\Theta(\omega) = 
+\frac{M_0/J}{
+\sqrt{\left(\omega_0^2 - \omega^2\right)^2 + \left(2\zeta\omega\omega_0\right)^2}
+},
+\label{eq:amplitude_forcee}
+\end{equation}
+et la phase relative :
+\begin{equation}
+\phi(\omega) =
+\arctan\!\left(
+\frac{2\zeta\omega\omega_0}{\omega_0^2 - \omega^2}
+\right).
+\label{eq:phase_forcee}
+\end{equation}
+
+\subsubsection{Résonance}
+
+L'amplitude est maximale pour une pulsation :
+\begin{equation}
+\omega_{\mathrm{res}} = \omega_0\sqrt{1 - 2\zeta^2},
+\label{eq:omega_res}
+\end{equation}
+proche de $\omega_0$ si l’amortissement est faible.
+
+La fréquence recherchée dans la manipulation est :
+\begin{equation}
+f_0 = \frac{\omega_0}{2\pi}.
+\end{equation}
+
+\subsubsection{Facteur de qualité et puissance}
+
+Le facteur de qualité caractérise l’amortissement :
+\begin{equation}
+Q = \frac{\omega_0}{2\zeta}.
+\end{equation}
+
+Il peut aussi être déterminé expérimentalement via la largeur à mi‐hauteur (méthode FWHM) :
+\begin{equation}
+Q = \frac{f_0}{\Delta f_{\mathrm{FWHM}}}.
+\end{equation}
+
+La manipulation demande également d’utiliser la puissance moyenne transmise au système.  
+Un couple $M_f$ appliqué à une vitesse angulaire $\omega$ délivre une puissance instantanée :
+
+\begin{equation}
+P(t) = M_f\,\omega(t).
+\end{equation}
+
+La puissance relative $P(f)/P(f_0)$ est construite à partir des amplitudes $\hat{\theta}(f)$ et permet une seconde mesure de $Q$.
+
+

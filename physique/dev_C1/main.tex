@@ -18,7 +18,7 @@
 }
 %+++++++++++++++++++++++++++++++++++++++++
 
-%	SOURCES
+%	INCLUDES
 \graphicspath{ {./images/} }
 
 \begin{document}
@@ -27,94 +27,46 @@
 \author{Seite Alexander}
 \date{\today}
 \maketitle
-
-\begin{abstract}
-In this experiment we studied a very important physical effect by measuring the
-dependence of a quantity $V$ on the quantity $X$ for two different sample
-temperatures. Our experimental measurements confirmed the quadratic dependence
-$V = kX^2$ predicted by Someone's first law. The value of the parameter
-$k = 15.4\pm 0.5$~s was extracted from the fit. This value is
-not consistent with the theoretically predicted $k_{theory}=17.34$~s. We attribute this
-discrepancy to low efficiency of our $V$-detector.
-\end{abstract}
-\newpage
+\newline
 
 \tableofcontents
 
 \newpage
 
+%====================================
+%	INTRODUCTION
+%====================================
+\include{./srcs/intro.tex}
+
+%	Todo : Resumer / Reformuler / Abreger 
+
+
+
+%====================================
+%	DESCRIPTION EXPERIENCES
+%====================================
+\include{./srcs/description.tex}
+
+%	Todo :  Finir descriptions
+
+
+
 %=====================================
-\section{Introduction}
-
-Les experiences ont ete realisees sur un pendule de Pohl. Ce dernier est connu pour mettre en avant des concepts physiques important et cela a des fins pedagogiques. Il est un oscillateur* de torsion constitue d'un disque monte sur un axe et rappele par un ressort spiral. Il peut osciller librement* ou etre soumis par un couple sinusoidale externe*. Dans la premiere experience, nous mesurons les oscillations libres, soit un mouvement amorti autour de la position d'equilibre. En un second temps, nous ajoutons Un frein electromagnetique permetant d'ajuster l'amortissement des oscillations du pendule, pendule fonctionnement sous un regime force.
-//
-L’objectif du travail est de caractériser le comportement dynamique du système, de déterminer ses paramètres physiques (pulsation propre, coefficient d’amortissement) et d’observer la résonance en régime forcé. Cela nous a permi de verifier certaines equations fondamentales telles que la loi de Hook et la loi sur le moment cinetique ou encore la validite de la loi de l'induction avec des phenomenes comme le frein de Foucault.
-
-%  !!--> completer	!!
-
-
-
-
+%   THEORIE ET EQUATION PERTINENTES
 %=====================================
-\section{Description des installations}
 
-D'abord, voici l'installation du pendule de pohl dont on peut voir le balancier et le ressort spiral.
+\include{./srcs/theorie.tex}
 
-\includegraphics{schema_pohl.png}
-Figure 1. Schema de pohl
-
-Nous pouvons voir que le balencier est lie par un axe de transmission au moteur a droite de l'image. Des deux cotes du balencier se font face des bobines qui seront alimentes durant la seconde experience. Ces dernieres permettront de freiner le balancier stimule par le moteur.
-
-
-\subsection{Oscillations libres}
-Pour essayer de comprendre le comportement du pendule en regime libre du balencier spiral, nous utilisons l'application Phidgets MATLAB pour mesure l'angle du balancier.
-\\
-Nous complementons les mesures avec l'utilisation d'un amperemetre pour mesurer le courant induit dans le frein.
-\\
-%Definir la largeur : \includegraphics[width=0.7\textwidth]{nom_image.png}.
-%Définir la hauteur : \includegraphics[height=8cm]{nom_image.png}.
-%Redimensionner proportionnellement : \includegraphics[scale=0.75]{nom_image.png}.
-
-\includegraphics[scale=0.5]{schema_libre.png}
-\\Figure 2. Schema electrique pour la prise de mesure en regime d'oscillations libres
-\\
-Avant de mesurer les oscillations avec un courant dans le frein
-
-
-\subsection{Oscillations forcees}
-
-Texte décrivant l’installation de l’expérience 2.
-
-\\
-\includegraphics[scale=0.5]{schema_force.png}
-\\Figure 3. Schema electrique pour la prise de mesure en regime d'oscillations forcees 
-
+%	Todo : Retoucher formules (remplacer zeta...)
+%		Adapter le texte pour relier plus prosaiquement formules
 
 
 
 
 %=====================================
-\section{Théorie}
-
-\subsection{Expérience 1}
-
-According to references~\cite{melissinos, Cyr, Wiki} the dependence of interest is given
-by
-\begin{equation}
-u(\lambda,T)=\frac{8\pi hc\lambda^{-5}}{e^{hc/\lambda kT}-1},
-\end{equation}
-
-\subsection{Expérience 2}
-
-Complément théorique pour l’expérience 2.
-
-
-
-
-
-
-
+%	MANIPULATIONS
 %=====================================
+
 \section{Description des manipulations}
 
 Give a schematic of the experimental setup(s) used (figure~\ref{fig:samplesetup}).
@@ -133,6 +85,9 @@ Give a schematic of the experimental setup(s) used (figure~\ref{fig:samplesetup}
 
 
 %=====================================
+%	RESULTATS
+%=====================================
+
 \section{Résultats}
 
 \subsection{Expérience 1}
@@ -150,6 +105,9 @@ Insert tables/plots here.
 
 
 %=====================================
+%	ANALYSE 
+%=====================================
+
 \section{Analyse des résultats}
 
 Here you explain uncertainties, systematic errors, graphical analysis, etc.
@@ -168,6 +126,9 @@ Here you explain uncertainties, systematic errors, graphical analysis, etc.
 
 
 %=====================================
+%	CONCLUSIONS
+%=====================================
+
 \section{Conclusion}
 
 Here you briefly summarize your findings.
@@ -178,14 +139,17 @@ Here you briefly summarize your findings.
 
 
 %=====================================
+%	SOURCES
+%=====================================
+
 \section{Sources}
 
 \begin{thebibliography}{99}
 
-\bibitem{Schema pendule de Pohl}
-	Gilbert Gastebois, \textit{Le pendule de Pohl},
-	\\	https://ggastebois.fr/java/pend_pohl/theorie_pend_pohl.pdf,
-	\\	Le 17 Novembre 2025
+\bibitem{schemapohl}
+Gilbert Gastebois, \textit{Le pendule de Pohl},
+\\https://ggastebois.fr/java/pend_pohl/theorie_pend_pohl.pdf,
+\\	Le 17 Novembre 2025
 
 \bibitem{melissinos}
 A.~C. Melissinos and J. Napolitano, \textit{Experiments in Modern Physics},
@@ -200,7 +164,14 @@ IEEE Trans.\ Instrum.\ Meas.\ \textbf{42}, 640 (1993).
 
 \end{thebibliography}
 
+
+
+
+
 %=====================================
+%	ANNEXES 
+%=====================================
+
 \section{Annexes}
 
 \subsection{Annexe A}
