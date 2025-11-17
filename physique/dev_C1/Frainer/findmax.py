@@ -6,13 +6,13 @@ import matplotlib.pyplot as plt
 
 
 def get_clean_content(file):
-    print("extracting content")
+    print("extracting content", "\n")
     df = pd.read_csv(file)
     return df
 
 
-def find_maximums(df, timestamp):
-    print("Finding maximums")
+def find_maximums(df):
+    print("Finding maximums", "\n")
     x = df[df.columns[0]]
     y = df[df.columns[1]]
 
@@ -30,7 +30,7 @@ def find_maximums(df, timestamp):
     index2 = 0
     cursor = 0
     for value in x:
-        if index > 50:
+        if index > 0:
             index -= 0.5
             cursor += 1
             continue
@@ -48,23 +48,22 @@ def find_maximums(df, timestamp):
 
 def find_lambda(array):
     print("finding lambda")
-    pseudo_period = array[1] - array[0]
+    pseudo_period = array[0] - array[1]
     return pseudo_period
 
-files=["Mesure_0_1A.csv", "Mesure_0_2A.csv", "Mesure_0_3A.csv", "Mesure_0_4A.csv", "Mesure_0_5A.csv", "Mesure_0_9A.csv"]
+files=["Mesure_0_1A.csv", "Mesure_0_2A.csv", "Mesure_0_3A.csv", "Mesure_0_4A.csv", "Mesure_0_5A.csv"] #"Mesure_0_9A.csv"]
 
 i = 0
-timestamps = [1, 1, 1, 1, 1, 2]
-amperes = [1,2,3,4,5,9]
+amperes = [0.1,0.2,0.3,0.4,0.5]#,9]
 lambda_arr = []
 for file in files:
     i += 1
     df = get_clean_content(file)
-    theta_maximums, time_maxs = find_maximums(df, timestamps[i - 1])
-    print(f"For 0.{amperes[i - 1]} amperes, maximums are : {theta_maximums}")
+    theta_maximums, time_maxs = find_maximums(df)
+    print(f"For {amperes[i - 1]} amperes, maximums are : {theta_maximums}")
     print(f"times_intervals : {time_maxs}")
     pseudo_period = find_lambda(time_maxs)
-    print(f"pseudo_period for 0.{amperes[i - 1]} A is : {pseudo_period}")
+    print(f"pseudo_period for {amperes[i - 1]} A is : {pseudo_period}")
     lambda_arr.append(pseudo_period)
 
 #   now plot that shit
@@ -75,6 +74,6 @@ plt.figure()
 plt.xlabel('I [A]')
 plt.ylabel('Lambda [1/Hz]')
 
-plt.scatter(y, x)
+plt.scatter(x, y)
 
 plt.show()
