@@ -1,3 +1,5 @@
+
+% NE PAS TOUCHER
 %++++++++++++++++++++++++++++++++++++++++
 \documentclass[letterpaper,12pt]{article}
 \usepackage{tabularx}
@@ -14,6 +16,10 @@
 	filecolor=magenta,
 	urlcolor=blue
 }
+%+++++++++++++++++++++++++++++++++++++++++
+
+%	SOURCES
+\graphicspath{ {./images/} }
 
 \begin{document}
 
@@ -40,18 +46,48 @@ discrepancy to low efficiency of our $V$-detector.
 %=====================================
 \section{Introduction}
 
-The very important physical effect has applications to astronomy, nuclear physics, condensed matter, and more.
+Les experiences ont ete realisees sur un pendule de Pohl. Ce dernier est connu pour mettre en avant des concepts physiques important et cela a des fins pedagogiques. Il est un oscillateur* de torsion constitue d'un disque monte sur un axe et rappele par un ressort spiral. Il peut osciller librement* ou etre soumis par un couple sinusoidale externe*. Dans la premiere experience, nous mesurons les oscillations libres, soit un mouvement amorti autour de la position d'equilibre. En un second temps, nous ajoutons Un frein electromagnetique permetant d'ajuster l'amortissement des oscillations du pendule, pendule fonctionnement sous un regime force.
+//
+L’objectif du travail est de caractériser le comportement dynamique du système, de déterminer ses paramètres physiques (pulsation propre, coefficient d’amortissement) et d’observer la résonance en régime forcé. Cela nous a permi de verifier certaines equations fondamentales telles que la loi de Hook et la loi sur le moment cinetique ou encore la validite de la loi de l'induction avec des phenomenes comme le frein de Foucault.
+
+%  !!--> completer	!!
+
+
+
 
 %=====================================
 \section{Description des installations}
 
-\subsection{Expérience 1}
+D'abord, voici l'installation du pendule de pohl dont on peut voir le balancier et le ressort spiral.
 
-Texte décrivant l’installation de l’expérience 1.
+\includegraphics{schema_pohl.png}
+Figure 1. Schema de pohl
 
-\subsection{Expérience 2}
+Nous pouvons voir que le balencier est lie par un axe de transmission au moteur a droite de l'image. Des deux cotes du balencier se font face des bobines qui seront alimentes durant la seconde experience. Ces dernieres permettront de freiner le balancier stimule par le moteur.
+
+
+\subsection{Oscillations libres}
+Pour essayer de comprendre le comportement du pendule en regime libre du balencier spiral, nous utilisons l'application Phidgets MATLAB pour mesure l'angle du balancier.
+\\
+Nous complementons les mesures avec l'utilisation d'un amperemetre pour mesurer le courant induit dans le frein.
+\\
+\includegraphics{shema_libre.png}
+Figure 2. Schema electrique pour la prise de mesure en regime d'oscillations libres
+\\
+Avant de mesurer les oscillations avec un courant dans le frein
+
+
+\subsection{Oscillations forcees}
 
 Texte décrivant l’installation de l’expérience 2.
+
+\\
+\includegraphics{schema_force.png}
+Figure 3. Schema electrique pour la prise de mesure en regime d'oscillations forcees 
+
+
+
+
 
 %=====================================
 \section{Théorie}
@@ -68,6 +104,12 @@ u(\lambda,T)=\frac{8\pi hc\lambda^{-5}}{e^{hc/\lambda kT}-1},
 
 Complément théorique pour l’expérience 2.
 
+
+
+
+
+
+
 %=====================================
 \section{Description des manipulations}
 
@@ -80,6 +122,12 @@ Give a schematic of the experimental setup(s) used (figure~\ref{fig:samplesetup}
 \label{fig:samplesetup}
 \end{figure}
 
+
+
+
+
+
+
 %=====================================
 \section{Résultats}
 
@@ -90,6 +138,12 @@ Insert tables/plots here.
 \subsection{Expérience 2}
 
 Insert tables/plots here.
+
+
+
+
+
+
 
 %=====================================
 \section{Analyse des résultats}
@@ -103,15 +157,31 @@ Here you explain uncertainties, systematic errors, graphical analysis, etc.
 \label{fig:exp_plots}
 \end{figure}
 
+
+
+
+
+
+
 %=====================================
 \section{Conclusion}
 
 Here you briefly summarize your findings.
 
+
+
+
+
+
 %=====================================
 \section{Sources}
 
 \begin{thebibliography}{99}
+
+\bibitem{Schema pendule de Pohl}
+	Gilbert Gastebois, \textit{Le pendule de Pohl},
+	\\	https://ggastebois.fr/java/pend_pohl/theorie_pend_pohl.pdf,
+	\\	Le 17 Novembre 2025
 
 \bibitem{melissinos}
 A.~C. Melissinos and J. Napolitano, \textit{Experiments in Modern Physics},
