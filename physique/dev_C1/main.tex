@@ -8,6 +8,7 @@
 \usepackage[margin=1in,letterpaper]{geometry}
 \usepackage{cite}
 \usepackage[final]{hyperref}
+\usepackage{datatool}
 
 \hypersetup{
 	colorlinks=true,
@@ -73,7 +74,7 @@ Give a schematic of the experimental setup(s) used (figure~\ref{fig:samplesetup}
 
 \begin{figure}[ht]
 \centering 
-\includegraphics[width=0.8\columnwidth]{sr_setup}
+	\includegraphics[width=0.8\columnwidth]{rentrer_graphique}
 \caption{Every figure MUST have a caption.}
 \label{fig:samplesetup}
 \end{figure}
@@ -148,20 +149,30 @@ Here you briefly summarize your findings.
 
 \bibitem{schemapohl}
 Gilbert Gastebois, \textit{Le pendule de Pohl},
-\\https://ggastebois.fr/java/pend_pohl/theorie_pend_pohl.pdf,
-\\	Le 17 Novembre 2025
+\\
+	https://ggastebois.fr/java/pend_pohl/theorie_pend_pohl.pdf,
+\\
+	Le 17 Novembre 2025
 
 \bibitem{melissinos}
-A.~C. Melissinos and J. Napolitano, \textit{Experiments in Modern Physics},
-(Academic Press, New York, 2003).
+\\
+	A.~C. Melissinos and J. Napolitano, \textit{Experiments in Modern Physics},
+\\
+	(Academic Press, New York, 2003).
+
+
 
 \bibitem{Cyr}
-N.\ Cyr, M.\ T$\hat{e}$tu, and M.\ Breton,
-IEEE Trans.\ Instrum.\ Meas.\ \textbf{42}, 640 (1993).
+\\
+	N.\ Cyr, M.\ T$\hat{e}$tu, and M.\ Breton,
+\\
+	IEEE Trans.\ Instrum.\ Meas.\ \textbf{42}, 640 (1993).
+
 
 \bibitem{Wiki}
-\emph{Expected value}, available at \texttt{http://en.wikipedia.org/wiki/Expected\_value}.
-
+\\
+	\emph{Expected value}, available at \texttt{http://en.wikipedia.org/wiki/Expected\_value}.
+\\
 \end{thebibliography}
 
 
@@ -175,7 +186,10 @@ IEEE Trans.\ Instrum.\ Meas.\ \textbf{42}, 640 (1993).
 \section{Annexes}
 
 \subsection{Annexe A}
-Contenu de l’annexe A.
+\begin{table}
+\includegraphics[scale=0.5]{tab1.png}
+\caption{Mesures pour determiner constante de raideur k}
+\end{table}
 
 \subsection{Annexe B}
 Contenu de l’annexe B.
