@@ -1,0 +1,95 @@
+=== Traitement : Mesure_0_1A.csv ===
+filename is :  Mesure_0_1A.csv
+
+--- Paramètres fit sous-amorti ---
+A     = 1.00879 ± 0.000941
+gamma = 0.0171278 ± 0.000115  (--> lambda = gamma)
+omega = 3.25176 ± 0.000108  (pulsation amortie)
+phi   = 1.30418 ± 0.000875
+T_d   = 1.93224 s
+
+--- Facteur d'amortissement ---
+lambda (γ) = 0.0171278 ± 0.000115  s^-1
+omega0     = 3.2518  rad/s (estimée)
+zeta (ζ)   = 0.00526717 ± 3.54e-05  (adimensionnel)
+
+
+=== Traitement : Mesure_0_2A.csv ===
+filename is :  Mesure_0_2A.csv
+
+--- Paramètres fit sous-amorti ---
+A     = 1.20835 ± 0.00114
+gamma = 0.0397727 ± 0.000128  (--> lambda = gamma)
+omega = 3.25253 ± 0.000121  (pulsation amortie)
+phi   = 1.334 ± 0.000885
+T_d   = 1.93178 s
+
+--- Facteur d'amortissement ---
+lambda (γ) = 0.0397727 ± 0.000128  s^-1
+omega0     = 3.25277  rad/s (estimée)
+zeta (ζ)   = 0.0122273 ± 3.94e-05  (adimensionnel)
+
+
+=== Traitement : Mesure_0_3A.csv ===
+filename is :  Mesure_0_3A.csv
+
+--- Paramètres fit sous-amorti ---
+A     = 1.16631 ± 0.000984
+gamma = 0.080483 ± 0.000144  (--> lambda = gamma)
+omega = 3.24994 ± 0.00014  (pulsation amortie)
+phi   = 1.9869 ± 0.000852
+T_d   = 1.93332 s
+
+--- Facteur d'amortissement ---
+lambda (γ) = 0.080483 ± 0.000144  s^-1
+omega0     = 3.25094  rad/s (estimée)
+zeta (ζ)   = 0.0247568 ± 4.42e-05  (adimensionnel)
+
+
+=== Traitement : Mesure_0_4A.csv ===
+filename is :  Mesure_0_4A.csv
+
+--- Paramètres fit sous-amorti ---
+A     = 1.27726 ± 0.00137
+gamma = 0.13794 ± 0.000251  (--> lambda = gamma)
+omega = 3.2497 ± 0.000227  (pulsation amortie)
+phi   = 1.74106 ± 0.00104
+T_d   = 1.93346 s
+
+--- Facteur d'amortissement ---
+lambda (γ) = 0.13794 ± 0.000251  s^-1
+omega0     = 3.25263  rad/s (estimée)
+zeta (ζ)   = 0.0424089 ± 7.68e-05  (adimensionnel)
+
+
+=== Traitement : Mesure_0_5A.csv ===
+filename is :  Mesure_0_5A.csv
+
+--- Paramètres fit sous-amorti ---
+A     = 1.61994 ± 0.00187
+gamma = 0.2055 ± 0.000376  (--> lambda = gamma)
+omega = 3.24659 ± 0.000332  (pulsation amortie)
+phi   = 1.62576 ± 0.00109
+T_d   = 1.93532 s
+
+--- Facteur d'amortissement ---
+lambda (γ) = 0.2055 ± 0.000376  s^-1
+omega0     = 3.25308  rad/s (estimée)
+zeta (ζ)   = 0.0631707 ± 0.000115  (adimensionnel)
+
+
+=== Traitement : Mesure_0_9A.csv ===
+filename is :  Mesure_0_9A.csv
+
+--- Paramètres fit sous-amorti ---
+A     = 3.00039 ± 0.0611
+gamma = 0.641608 ± 0.0135  (--> lambda = gamma)
+omega = 3.07109 ± 0.0138  (pulsation amortie)
+phi   = 4.38099 ± 0.0224
+T_d   = 2.04591 s
+
+--- Facteur d'amortissement ---
+lambda (γ) = 0.641608 ± 0.0135  s^-1
+omega0     = 3.1374  rad/s (estimée)
+zeta (ζ)   = 0.204503 ± 0.00443  (adimensionnel)
+!
