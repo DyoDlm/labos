@@ -9,6 +9,7 @@
 \usepackage{cite}
 \usepackage[final]{hyperref}
 \usepackage{datatool}
+\usepackage{caption}
 
 \hypersetup{
 	colorlinks=true,
@@ -64,26 +65,6 @@
 
 
 
-%=====================================
-%	MANIPULATIONS
-%=====================================
-
-\section{Description des manipulations}
-
-Give a schematic of the experimental setup(s) used (figure~\ref{fig:samplesetup}).
-
-\begin{figure}[ht]
-\centering 
-	\includegraphics[width=0.8\columnwidth]{rentrer_graphique}
-\caption{Every figure MUST have a caption.}
-\label{fig:samplesetup}
-\end{figure}
-
-
-
-
-
-
 
 %=====================================
 %	RESULTATS
@@ -94,6 +75,7 @@ Give a schematic of the experimental setup(s) used (figure~\ref{fig:samplesetup}
 \subsection{Expérience 1}
 
 Insert tables/plots here.
+
 
 \subsection{Expérience 2}
 
@@ -186,10 +168,18 @@ Gilbert Gastebois, \textit{Le pendule de Pohl},
 \section{Annexes}
 
 \subsection{Annexe A}
-\begin{table}
-\includegraphics[scale=0.5]{tab1.png}
-\caption{Mesures pour determiner constante de raideur k}
-\end{table}
+
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{tab1.png}
+	\captionof{table}{Mesures pour determiner constante de raideur k}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{tab1.png}
+	\captionof{table}{Description du graphique 2}
+\end{minipage}
 
 \subsection{Annexe B}
 Contenu de l’annexe B.
