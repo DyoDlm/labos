@@ -78,15 +78,15 @@ for res in (res05, res09):
 
     # ligne verticale f0
     plt.axvline(f0, color=c, linestyle=":", alpha=0.8)
-    plt.text(f0, max(A)*0.9, f"f0={f0:.3f} Hz", color=c, ha="right")
+    plt.text(f0, max(A)*0.9, f"f0={f0:.3f} Hz", color=c, ha="left")
 
 plt.title("Amplitude en fonction de la fréquence")
-plt.xlabel("Fréquence [Hz]")
-plt.ylabel("Amplitude")
+plt.xlabel("f [Hz]")
+plt.ylabel("Amplitude [deg]")
 plt.grid()
 plt.legend()
-plt.show()
-
+#plt.show()
+plt.savefig("force_amp.png")
 ###############################################################################
 # GRAPHIQUE 2 : PHASES
 ###############################################################################
@@ -110,15 +110,15 @@ for res in (res05, res09):
 
     # ligne verticale f0
     plt.axvline(f0, color=c, linestyle=":", alpha=0.8)
-    plt.text(f0, np.mean(P), f"f0={f0:.3f} Hz", color=c, ha="right")
+    plt.text(f0, np.mean(P), f"f0={f0:.3f} Hz", color=c, ha="left")
 
 plt.title("Phase en fonction de la fréquence")
-plt.xlabel("Fréquence [Hz]")
-plt.ylabel("Phase [°]")
+plt.xlabel("f [Hz]")
+plt.ylabel(r"$\phi$ [°]")
 plt.grid()
 plt.legend()
-plt.show()
-
+#plt.show()
+plt.savefig("force_phase.png")
 ###############################################################################
 # Résultats numériques
 ###############################################################################
