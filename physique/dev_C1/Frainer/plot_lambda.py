@@ -23,7 +23,7 @@ slope_std = residual_std / np.sqrt(Sxx)          # incertitude sur la pente
 intercept_std = residual_std * np.sqrt(1/n + x_mean**2 / Sxx)  # incertitude sur l'ordonnée
 
 # --- Equation avec incertitudes (LaTeX) ---
-equation = rf"$\lambda (I^2) = ({slope:.4f} \pm {slope_std:.4f}) I^2 + ({intercept:.4f} \pm {intercept_std:.4f})$"
+equation = rf"$\lambda = ({slope:.4f} \pm {slope_std:.4f}) I^2 + ({intercept:.4f} \pm {intercept_std:.4f})$"
 
 # --- Tracé ---
 plt.figure(figsize=(8,6))
