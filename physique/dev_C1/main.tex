@@ -81,16 +81,47 @@
 %	ANALYSE 
 %=====================================
 
-\section{Analyse des résultats}
+\section{Analyse des résultats, complement}
 
 \subsection{oscillations libres}
 
-%	Constante de torsion C +/- incertitude [Nm / rad]
+Nous avons vu pour la constante de torsion C = 0.0123 +/- 0.0002 [Nm / rad] que l'incertitude est relativement basse. Les valeurs sont obtenu directement grace a la pente du la fonction $M_r$($\theta$) (voir fig: \ref{fig:C}).
 
-%	Discuter rapport lambda(I) VS lambda(I**2)
+\\ 
 
-%	Pulsation propre W0 +/- incert [rad / s]
-%       Moment d'inertie J +/- incertitude
+En revanche, si l'on souhaite déterminer l'incertitude sur le moment d'inertie du balancier, 
+nous pouvons calculer l'erreur sur $J$ à partir de la relation entre $C$, $J$ et la pulsation propre 
+$\omega_0$ (voir Eq.~\ref{eq:J}), en utilisant la méthode des dérivées partielles avec :
+
+\[
+\frac{\partial J}{\partial C} = \frac{1}{\omega_0^2},
+\qquad
+\frac{\partial J}{\partial \omega_0}
+= -\,\frac{2C}{\omega_0^3}.
+\]
+
+L'incertitude sur $J$ s'écrit donc :
+
+\[
+\sigma_J = 
+\sqrt{
+\left( \frac{\sigma_C}{\omega_0^2} \right)^2
++
+\left( \frac{2C\,\sigma_{\omega_0}}{\omega_0^3} \right)^2
+}.
+\]
+
+En remplaçant par les valeurs numériques utilisées :
+
+\[
+\sigma_J = 
+\sqrt{
+\left( \frac{0.0002}{3.25^2} \right)^2
++
+\left( \frac{2 \cdot 0.0123 \cdot 0.02}{3.25^3} \right)^2
+}.
+ = \]
+
 
 \subsection{oscillations forcees}
 
@@ -101,21 +132,86 @@
 %	Facteur de qualite Q []
 
 % expliquer differences entre 0.5 et 0.9 A
+%Nous avons pu extraire plusieurs parametres qui structurent l'equation du mouvement du systeme ressort-spiral/balencier freine en regime force. Notament la pseudo-pulsation $lambda$ grace a la relation Eq. \ref{eq:lambda}  ou la pulsation propre $\omega_0$ grace a la relation Eq. \ref{eq:omega0_force} qui a aussi permi de trouver par l'arrangement suivant : $f_0$ = $\omega_0$ / (2 \cdot \pi).
 
-\subsection{Discussion}
+%Toutefois, en etablissant le rapport de puissances en fonction de la frequence, nous avons pu trouver le fmwh (expliquer brievement) tel que :
 
+%\\  FWHM (num)0.5A     = 0.133998 ± 0.003146 Hz
+%\\  FWHM (num)0.9A     = 0.214367 ± 0.002802 Hz
+
+%\\
+%Nous aussi avons pu trouver une nouvelle frequence propre grace a la relation Eq. \ref{eq:f0_Q} :
+%\\
+% f0(0.5) (power fit) = 0.521047 ± 0.005195 Hz
+%\\   f0 (0.9) (power fit) = 0.476599 ± 0.012115 Hz
+
+%\\
+%Et grace a Eq. \ref{eq:Q}, nous obtenons le facteur de qualite Q 
+%\\
+
+%\\  Q(0.5A) (exp) = f0/FWHM = 3.8885 ±
+%\\ Q (0.9A)(exp) = f0/FWHM = 2.2233 ± 
+%
+%Dont l'incertitude est calculee telle que :
+
+% developper brievement (comme pour J) le sigma Q
+
+
+% ne pas prendre en compte la suite ;:
+%Enfin Q aurait pu etre obtenu aussi grace au fit :
+%\\  Q (fit)        = 2.4039 ± 0.2918
+%       \\ Q (fit)        = 4.9453 ± 0.5344
+À partir du rapport de puissance, nous obtenons la FWHM, directement liée à la largeur de la résonance :
+
+\[
+\mathrm{FWHM}_{0.5\,A} = 0.133998 \pm 0.003146~\mathrm{Hz}, \qquad
+\mathrm{FWHM}_{0.9\,A} = 0.214367 \pm 0.002802~\mathrm{Hz}.
+\]
+
+La fréquence propre extraite du fit de puissance (Eq.~\ref{eq:f0_Q}) est :
+
+\[
+f_{0}^{(0.5A)} = 0.521 \pm 0.005~\mathrm{Hz}, \qquad
+f_{0}^{(0.9A)} = 0.48 \pm 0.01~\mathrm{Hz}.
+\]
+
+Le facteur de qualité est donné par (Eq.~\ref{eq:Q}) et l’incertitude correspondante, obtenue par dérivées partielles, est :
+
+\[
+\frac{\partial Q}{\partial f_0} = \frac{1}{\mathrm{FWHM}},
+\qquad
+\frac{\partial Q}{\partial\,\mathrm{FWHM}}
+= -\,\frac{f_0}{\mathrm{FWHM}^2}.
+\]
+
+Ainsi,
+
+\[
+\sigma_Q
+=
+\sqrt{
+\left(\frac{\sigma_{f_0}}{\mathrm{FWHM}}\right)^2
++
+\left(
+\frac{f_0\,\sigma_{\mathrm{FWHM}}}{\mathrm{FWHM}^2}
+\right)^2
+}.
+=
+\sqrt{
+\left(\frac{0.005195}{0.133998}\right)^2
++
+\left(\frac{((0.521047 + 0.476599)/2) \cdot 0.003146}{0.133998^2}\right)^2
+},
+\]
 
 
 %=====================================
-%	CONCLUSIONS
+%%	CONCLUSIONS
 %=====================================
 
 \section{Conclusion}
 
 Here you briefly summarize your findings.
-
-
-
 
 
 

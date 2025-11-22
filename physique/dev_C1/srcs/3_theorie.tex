@@ -1,128 +1,136 @@
-\section{Théorie}
+\section{Partie théorique}
 
-\subsection{Oscillations libres}
+\subsection{Oscillations libres d’un pendule de Pohl}
 
-Le pendule de Pohl est un oscillateur de rotation caractérisé par l’angle $\theta(t)$, le moment d’inertie $J$ du disque, la constante de torsion $C$ du ressort spiral et un couple de frottement proportionnel à la vitesse angulaire.  
-En appliquant le théorème du moment cinétique :
+Le pendule de Pohl est un oscillateur mécanique rotatif composé d'un disque couplé à un ressort
+spiral. La coordonnée généralisée du système est l’angle de torsion $\theta(t)$.
+En appliquant le théorème du moment cinétique au disque, on obtient :
 
-\begin{equation}
-J\ddot{\theta} = -C\theta - b\dot{\theta}.
-	\label{eq:nature}
-\end{equation}
+\[
+\frac{dL}{dt} = \sum M_{\mathrm{ext}},
+\qquad L = J\,\dot{\theta},
+\]
 
-On obtient l’équation différentielle :
-\begin{equation}
-\ddot{\theta} + \frac{b}{J} \dot{\theta} + \frac{C}{J}\theta = 0.
-\label{eq:edo_libre}
-\end{equation}
+où $J$ est le moment d’inertie du balancier. Deux moments mécaniques agissent sur le système :
+(i) le moment de rappel du ressort spiral
+\[
+M_r = -C\,\theta,
+\]
+où $C$ est la constante de torsion, et (ii) le moment de frottement visqueux
+\[
+M_f = -b\,\dot{\theta}.
+\]
 
-La pulsation propre non amortie vaut :
-\begin{equation}
-\omega_0 = \sqrt{\frac{C}{J}}, \qquad T_0 = \frac{2\pi}{\omega_0}.
-\end{equation}
+En combinant ces contributions, l'équation du mouvement devient :
 
-Pour un amortissement faible ($\zeta < 1$), la solution est :
-\begin{equation}
-\theta(t) = A_0 e^{-\zeta\omega_0 t}\cos(\omega_1 t + \phi),
-\end{equation}
-où
-\begin{equation}
-\omega_1 = \omega_0\sqrt{1-\zeta^2}, \qquad
-\zeta = \frac{b}{2\sqrt{JC}}.
-\end{equation}
+\[
+J\ddot{\theta} + b\dot{\theta} + C\theta = 0.
+\]
 
-L’amortissement expérimental est obtenu via le décrément logarithmique :
-\begin{equation}
-\delta = \ln \left(\frac{\theta_n}{\theta_{n+1}}\right), \qquad
-\zeta = \frac{\delta}{2\pi}.
-\label{eq:zeta_delta}
-\end{equation}
+On définit la pulsation propre non amortie :
+\[
+\omega_0 = \sqrt{\frac{C}{J}},
+\]
+ainsi que le coefficient d’amortissement :
+\[
+\lambda = \frac{b}{2J}.
+\]
 
-Dans les manipulations, l’amortissement dépend du courant $I$ circulant dans la bobine du frein de Foucault.  
-On montre que :
-\begin{equation}
-b(I) \propto I^2,
-\end{equation}
-car le champ magnétique $B \propto I$ et la force de Laplace produite par les courants induits est elle‐même proportionnelle à $B$.
+L’équation différentielle se met sous la forme caractéristique :
+\[
+\ddot{\theta} + 2\lambda \dot{\theta} + \omega_0^2 \theta = 0.
+\]
 
-Ainsi, la pseudo‐période expérimentale vérifie :
-\begin{equation}
-\omega_1(I) = \sqrt{\omega_0^2 - \left(\frac{b(I)}{2J}\right)^2}
-\qquad \Rightarrow \qquad
-\omega_1 \text{ décroît lorsque } I \text{ augmente}.
-\end{equation}
+Dans le régime faiblement amorti ($\lambda < \omega_0$), la solution générale est :
 
-C’est la relation qui est vérifiée dans la manipulation 3.4.7(c) via le graphe $\omega_1 = f(I^2)$.
+\[
+\theta(t) = \theta_0\,e^{-\lambda t}
+\cos(\omega_1 t + \phi),
+\]
+
+où la pseudo-pulsation est :
+
+\[
+\omega_1 = \sqrt{\omega_0^2 - \lambda^2}.
+\]
+
+La période mesurée expérimentalement est alors :
+
+\[
+T = \frac{2\pi}{\omega_1}.
+\]
+
+L’expression de $J$ peut être inversée en fonction des paramètres mesurés :
+
+\[
+J = \frac{C}{\omega_0^2}.
+\]
+
 
 \subsection{Oscillations forcées}
 
-Lorsque le pendule est excité par un moment sinusoïdal
-\begin{equation}
+Lorsque le moteur excite le système, un moment sinusoïdal est appliqué :
+
+\[
 M_e(t) = M_0 \cos(\omega t),
-\end{equation}
-l’équation du mouvement devient :
-\begin{equation}
-\ddot{\theta}
-+ 2\zeta\omega_0 \dot{\theta}
-+ \omega_0^2 \theta
-= \frac{M_0}{J}\cos(\omega t).
-\label{eq:edo_forcee}
-\end{equation}
+\]
 
-La solution en régime permanent est :
-\begin{equation}
-\theta(t) = \Theta(\omega)\cos(\omega t + \phi),
-\end{equation}
-où l'amplitude vaut :
-\begin{equation}
-\Theta(\omega) = 
-\frac{M_0/J}{
-\sqrt{\left(\omega_0^2 - \omega^2\right)^2 + \left(2\zeta\omega\omega_0\right)^2}
-},
-\label{eq:amplitude_forcee}
-\end{equation}
-et la phase relative :
-\begin{equation}
-\phi(\omega) =
-\arctan\!\left(
-\frac{2\zeta\omega\omega_0}{\omega_0^2 - \omega^2}
-\right).
-\label{eq:phase_forcee}
-\end{equation}
+ce qui modifie l'équation différentielle :
 
-\subsubsection{Résonance}
+\[
+J\ddot{\theta} + b\dot{\theta} + C\theta = M_0\cos(\omega t).
+\]
 
-L'amplitude est maximale pour une pulsation :
-\begin{equation}
-\omega_{\mathrm{res}} = \omega_0\sqrt{1 - 2\zeta^2},
-\label{eq:omega_res}
-\end{equation}
-proche de $\omega_0$ si l’amortissement est faible.
+En divisant par $J$, on obtient l'équation caractéristique sous forme normalisée :
 
-La fréquence recherchée dans la manipulation est :
-\begin{equation}
-f_0 = \frac{\omega_0}{2\pi}.
-\end{equation}
+\[
+\ddot{\theta} + 2\lambda \dot{\theta} + \omega_0^2 \theta
+= A\cos(\omega t),
+\qquad A = \frac{M_0}{J}.
+\]
 
-\subsubsection{Facteur de qualité et puissance}
+\subsection{Méthode des phaseurs}
 
-Le facteur de qualité caractérise l’amortissement :
-\begin{equation}
-Q = \frac{\omega_0}{2\zeta}.
-\end{equation}
+On cherche une solution sinusoïdale particulière de la forme :
 
-Il peut aussi être déterminé expérimentalement via la largeur à mi‐hauteur (méthode FWHM) :
-\begin{equation}
-Q = \frac{f_0}{\Delta f_{\mathrm{FWHM}}}.
-\end{equation}
+\[
+\theta(t) = \Theta(\omega)\cos(\omega t + \phi(\omega)).
+\]
 
-La manipulation demande également d’utiliser la puissance moyenne transmise au système.  
-Un couple $M_f$ appliqué à une vitesse angulaire $\omega$ délivre une puissance instantanée :
+En utilisant la méthode complexe (phaseurs), l'amplitude en régime forcé est :
 
-\begin{equation}
-P(t) = M_f\,\omega(t).
-\end{equation}
+\[
+\Theta(\omega)
+= \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (2\lambda\omega)^2}}.
+\]
 
-La puissance relative $P(f)/P(f_0)$ est construite à partir des amplitudes $\hat{\theta}(f)$ et permet une seconde mesure de $Q$.
+La phase du mouvement par rapport à la force excitatrice est :
 
+\[
+\phi(\omega)
+= \arctan\!\left(\frac{2\lambda\omega}{\omega_0^2 - \omega^2}\right).
+\]
+
+La résonance apparaît lorsque l’amplitude est maximale, ce qui se produit pour :
+
+\[
+\omega_{\mathrm{res}} = \sqrt{\omega_0^2 - 2\lambda^2}.
+\]
+
+\subsection{Facteur de qualité}
+
+Le facteur de qualité d’un oscillateur amorti est défini par :
+
+\[
+Q = \frac{\omega_0}{2\lambda}.
+\]
+
+Dans l’analyse fréquentielle (courbe de puissance), il peut aussi être obtenu via :
+
+\[
+Q = \frac{f_0}{\mathrm{FWHM}},
+\]
+
+où $\mathrm{FWHM}$ est la largeur à mi-hauteur du pic de résonance,
+et $f_0 = \omega_0 / (2\pi)$ la fréquence propre.
 
