@@ -1,135 +1,150 @@
-\section{Partie théorique}
+\section{Partie théorique} \label{sec:theorie}
 
-\subsection{Oscillations libres d’un pendule de Pohl}
+\subsection{Oscillations libres d’un pendule de Pohl} \label{subsec:osc_libres}
 
 Le pendule de Pohl est un oscillateur mécanique rotatif composé d'un disque couplé à un ressort
 spiral. La coordonnée généralisée du système est l’angle de torsion $\theta(t)$.
 En appliquant le théorème du moment cinétique au disque, on obtient :
 
-\[
+\begin{equation}
 \frac{dL}{dt} = \sum M_{\mathrm{ext}},
 \qquad L = J\,\dot{\theta},
-\]
+\label{eq:TMC}
+\end{equation}
 
 où $J$ est le moment d’inertie du balancier. Deux moments mécaniques agissent sur le système :
-(i) le moment de rappel du ressort spiral
-\[
+\begin{equation}
 M_r = -C\,\theta,
-\]
-où $C$ est la constante de torsion, et (ii) le moment de frottement visqueux
-\[
-M_f = -b\,\dot{\theta}.
-\]
-
+\qquad
+M_f = -b\,\dot{\theta},
+\label{eq:MOMENTS}
+\end{equation}
+où $C$ est la constante de torsion, et $b$ le moment de frottement visqueux.  
 En combinant ces contributions, l'équation du mouvement devient :
 
-\[
+\begin{equation}
 J\ddot{\theta} + b\dot{\theta} + C\theta = 0.
-\]
+\label{eq:edo}
+\end{equation}
 
-On définit la pulsation propre non amortie :
-\[
+Dont on définit la pulsation propre non amortie $\omega_0$ et le coefficient d'amortissement $\lambda$ tels que :
+\begin{equation}
 \omega_0 = \sqrt{\frac{C}{J}},
-\]
-ainsi que le coefficient d’amortissement :
-\[
+\qquad
 \lambda = \frac{b}{2J}.
-\]
+\label{eq:lambda} % et omega 0
+\end{equation}
 
 L’équation différentielle se met sous la forme caractéristique :
-\[
+\begin{equation}
 \ddot{\theta} + 2\lambda \dot{\theta} + \omega_0^2 \theta = 0.
-\]
+\label{eq:cara}
+\end{equation}
 
 Dans le régime faiblement amorti ($\lambda < \omega_0$), la solution générale est :
 
-\[
+\begin{equation}
 \theta(t) = \theta_0\,e^{-\lambda t}
 \cos(\omega_1 t + \phi),
-\]
+\label{eq:solution}
+\end{equation}
 
 où la pseudo-pulsation est :
 
-\[
+\begin{equation}
 \omega_1 = \sqrt{\omega_0^2 - \lambda^2}.
-\]
+\label{eq:w}
+\end{equation}
 
 La période mesurée expérimentalement est alors :
 
-\[
+\begin{equation}
 T = \frac{2\pi}{\omega_1}.
-\]
+\label{eq:t}
+\end{equation}
 
 L’expression de $J$ peut être inversée en fonction des paramètres mesurés :
 
-\[
+\begin{equation}
 J = \frac{C}{\omega_0^2}.
-\]
+\label{eq:J}
+\end{equation}
 
 
-\subsection{Oscillations forcées}
+\subsection{Oscillations forcées} \label{subsec:osc_forcees}
 
 Lorsque le moteur excite le système, un moment sinusoïdal est appliqué :
 
-\[
+\begin{equation}
 M_e(t) = M_0 \cos(\omega t),
-\]
+\label{eq:moment_excitation}
+\end{equation}
 
 ce qui modifie l'équation différentielle :
 
-\[
+\begin{equation}
 J\ddot{\theta} + b\dot{\theta} + C\theta = M_0\cos(\omega t).
-\]
+\label{eq:equa_forcee_brut}
+\end{equation}
 
 En divisant par $J$, on obtient l'équation caractéristique sous forme normalisée :
 
-\[
+\begin{equation}
 \ddot{\theta} + 2\lambda \dot{\theta} + \omega_0^2 \theta
 = A\cos(\omega t),
 \qquad A = \frac{M_0}{J}.
-\]
+\label{eq:equa_forcee_normalisee}
+\end{equation}
 
-\subsection{Méthode des phaseurs}
+
+\subsection{Méthode des phaseurs} \label{subsec:phaseurs}
 
 On cherche une solution sinusoïdale particulière de la forme :
 
-\[
+\begin{equation}
 \theta(t) = \Theta(\omega)\cos(\omega t + \phi(\omega)).
-\]
+\label{eq:solution_phaseurs}
+\end{equation}
 
 En utilisant la méthode complexe (phaseurs), l'amplitude en régime forcé est :
 
-\[
+\begin{equation}
 \Theta(\omega)
 = \frac{A}{\sqrt{(\omega_0^2 - \omega^2)^2 + (2\lambda\omega)^2}}.
-\]
+\label{eq:amplitude_forcee}
+\end{equation}
 
 La phase du mouvement par rapport à la force excitatrice est :
 
-\[
+\begin{equation}
 \phi(\omega)
 = \arctan\!\left(\frac{2\lambda\omega}{\omega_0^2 - \omega^2}\right).
-\]
+\label{eq:phase_forcee}
+\end{equation}
 
 La résonance apparaît lorsque l’amplitude est maximale, ce qui se produit pour :
 
-\[
+\begin{equation}
 \omega_{\mathrm{res}} = \sqrt{\omega_0^2 - 2\lambda^2}.
-\]
+\label{eq:omega_res}
+\end{equation}
 
-\subsection{Facteur de qualité}
+
+\subsection{Facteur de qualité} \label{subsec:facteur_Q}
 
 Le facteur de qualité d’un oscillateur amorti est défini par :
 
-\[
+\begin{equation}
 Q = \frac{\omega_0}{2\lambda}.
-\]
+\label{eq:Q_lambda}
+\end{equation}
 
 Dans l’analyse fréquentielle (courbe de puissance), il peut aussi être obtenu via :
 
-\[
+\begin{equation}
 Q = \frac{f_0}{\mathrm{FWHM}},
-\]
+\label{eq:Q_fwhm}
+\end{equation}
 
 où $\mathrm{FWHM}$ est la largeur à mi-hauteur du pic de résonance,
 et $f_0 = \omega_0 / (2\pi)$ la fréquence propre.
