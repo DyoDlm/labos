@@ -2,36 +2,26 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Données
-x = np.array([0.01, 0.04, 0.09, 0.16, 0.25, 0.81])
+x = np.array([0.1, 0.2, 0.3, 0.4, 0.5, 0.9])
 y = np.array([0.0171, 0.0398, 0.0805, 0.1379, 0.2055, 0.6416])
 
-# --- Régression linéaire ---
-n = len(x)
-slope, intercept = np.polyfit(x, y, 1)
+# --- Régression polynomiale du 2ème degré ---
+coeffs = np.polyfit(x, y, 2)  # coeffs[0]*x^2 + coeffs[1]*x + coeffs[2]
+a, b, c = coeffs
 
-# Prédiction de y
-y_pred = slope * x + intercept
-
-# --- Calcul des incertitudes (formule comme Excel DROITEREG) ---
-residuals = y - y_pred
-residual_std = np.sqrt(np.sum(residuals**2) / (n - 2))  # écart-type des résidus
-
-x_mean = np.mean(x)
-Sxx = np.sum((x - x_mean)**2)
-
-slope_std = residual_std / np.sqrt(Sxx)          # incertitude sur la pente
-intercept_std = residual_std * np.sqrt(1/n + x_mean**2 / Sxx)  # incertitude sur l'ordonnée
-
-# --- Equation avec incertitudes (LaTeX) ---
-equation = rf"$\lambda = ({slope:.4f} \pm {slope_std:.4f}) I^2 + ({intercept:.4f} \pm {intercept_std:.4f})$"
+# --- Prédiction de y pour la courbe lisse ---
+x_fit = np.linspace(min(x), max(x), 200)
+y_fit = a*x_fit**2 + b*x_fit + c
 
 # --- Tracé ---
 plt.figure(figsize=(8,6))
 plt.scatter(x, y, color='blue', label='Données')
-plt.plot(x, y_pred, color='red', label=f'Regression linéaire\n{equation}')
-plt.ylabel(r"$\lambda$ [$s^-1$]")
-plt.xlabel(r"$I^2$ [A²]")
-plt.legend(fontsize=10)
+plt.plot(x_fit, y_fit, color='red', label=f'Fit :\n$\lambda = {a:.4f}I^2 + {b:.4f}I + {c:.4f}$')
+plt.xlabel(r"$I$ [A]")
+plt.ylabel(r"$\lambda$ [$s^{-1}$]")
 plt.grid(True)
-#plt.show()
-plt.savefig("lambda.png")
+plt.legend(fontsize=10)
+plt.tight_layout()
+plt.savefig("lambda_quadratique.png")
+plt.show()
+

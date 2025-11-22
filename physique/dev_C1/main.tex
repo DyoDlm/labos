@@ -65,76 +65,15 @@
 %		Adapter le texte pour relier plus prosaiquement formules
 
 
-
-
-
 %=====================================
 %	RESULTATS
 %=====================================
 
-\section{Résultats}
+\include{./srcs/4_resultats.tex}
 
-\subsection{Oscillations libres}
+%	Todo : Commmenter et aligner graphiques (max 2 pages)
 
-
-\subsubsection{constante C}
-
-Avant de mesurer une oscillation, nous avons mesure le rapport de force qu'il faut exercer sur le balancier afin de le placer a un certain angle.
-\\
-\noindent \begin{minipage}{0.5\textwidth}
-\vspace{0.4cm}
-\includegraphics[width=\textwidth]{raideur.png}
-	\captionof{figure}{Amortissement en fonction du courant}
-\label{fig:nature}
-\end{minipage}
-\hspace{0.05\textwidth}
-\begin{minipage}{0.4\textwidth}
-	Nous obtenons par consequent le graphique \ref{fig:nature} ci-joint.
-	Grace a sa pente d'unite ... nous avons pu directement extraire la valeur C, soit la constante de raideur du ressort utilise grace a la relation \ref{eq:nature} Soit :
-\\	C = 123.123
-\noindent \end{minipage}
-
-
-\subsubsection{lambda-current}
-
-\noindent \begin{figure}[ht]
-\centering
-	\includegraphics[scale=0.4]{lambda.png}
-	\caption{lambda en fonction du courant}
-\end{figure}
-
-\subsection{Expérience 2}
-
-\begin{figure}[H]
-\centering
-	\includegraphics[scale=0.4]{force_phase.png}
-	\caption{Phase en fonction de la frequence}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-	\includegraphics[scale=0.4]{force_amp.png}
-        \caption{Amplitude en fonction de la frequence}
-\end{figure}
-
-\begin{minipage}[t]{0.56\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{power_0.5A.png}
-        \captionof{figure}{Rapport de puissance en fonction de la frequence a 0.5A}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.56\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{power_0.9A.png}
-        \captionof{figure}{Rapport de puissance en fonction de la frequence a 0.9A}
-\end{minipage}
-
-
-
-
-\newpage
-
-
+%	include Lambda(I) avec Lambda(I**2)
 
 
 
@@ -144,18 +83,26 @@ Avant de mesurer une oscillation, nous avons mesure le rapport de force qu'il fa
 
 \section{Analyse des résultats}
 
-Here you explain uncertainties, systematic errors, graphical analysis, etc.
+\subsection{oscillations libres}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.5\columnwidth]{sr_squeezing_vs_detuning}
-\caption{Every plot must have axes labeled.}
-\label{fig:exp_plots}
-\end{figure}
+%	Constante de torsion C +/- incertitude [Nm / rad]
 
+%	Discuter rapport lambda(I) VS lambda(I**2)
 
+%	Pulsation propre W0 +/- incert [rad / s]
+%       Moment d'inertie J +/- incertitude
 
+\subsection{oscillations forcees}
 
+%	Lambda et Omega0 pour phase  et moyenne f0
+
+%	FWHM [Hz]
+%	frquence propre : F0 [Hz]
+%	Facteur de qualite Q []
+
+% expliquer differences entre 0.5 et 0.9 A
+
+\subsection{Discussion}
 
 
 

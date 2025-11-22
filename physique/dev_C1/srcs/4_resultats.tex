@@ -1,0 +1,88 @@
+\section{Résultats}
+
+\subsection{Oscillations libres}
+
+Avant de mesurer une oscillation, nous avons mesure le rapport de force qu'il faut exercer sur le balancier afin de le placer a un certain angle.
+\\
+\noindent \begin{minipage}{0.5\textwidth}
+\vspace{0.4cm}
+\includegraphics[width=\textwidth]{raideur.png}
+        \captionof{figure}{Amortissement en fonction du courant}
+\label{fig:nature}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.4\textwidth}
+        Nous obtenons par consequent le graphique \ref{fig:nature} ci-joint.
+        Grace a sa pente d'unite ... nous avons pu directement extraire la valeur C, soit la constante de raideur du ressort utilise grace a la relation \ref{eq:nature} Soit :
+\\      C = 123.123
+\noindent \end{minipage}
+\\
+\\
+\\
+En un second temps, apres avoir montee l'installation pour mesures les oscillations du balencier-spiral (voir \ref{fig:samplesetup}), nous avons donne une position hors-equilibre au balencier et mesurer en fonction du frein imposee a les differences oscillations observable en annexe (voir \ref{fig:oscillations}).
+
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{lambda.png}
+        \captionof{figure}{lambdas en fonction des courants}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{lambda_quadratique.png}
+	\captionof{figure}{Lambdas en fonction des courants au carre}
+\end{minipage}
+\\
+\\
+skhvrb skruv slirvb.
+\newpage
+\subsection{Expérience 2}
+
+En tracant la phase en fonction de la frequence (voir \ref{fig:phase}), nous pouvons retrouver les frequences propres $f_0$ pour les alimentations a 0.5 en bleu et 0.9A en rouge.
+        Les frequences propres resultent du point d'inflexions de leurs courbes correspondantes.
+\\
+\noindent \begin{minipage}{0.5\textwidth}
+\vspace{0.4cm}
+\includegraphics[width=\textwidth]{force_phase.png}
+	\captionof{figure}{Phase en fonction de la frequence}
+\label{fig:phase}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.4\textwidth}
+	Ci-joint (\ref{fig:phas}), les frequences propres ont pu s'obtenir a partir de la relation pulsation-frequence decrite dans la section theorie (voir \iref{eq:pulsation-frequence}). Cela nous donne les valeurs a 0.5A de : $f_0$ = 0.518 $+/-$ 0.0000 [Hz]. A 0.9A, nous obtenons en revanche : $f_0$ = 0.528 $+/-$ 0.000 [Hz].
+\noindent \end{minipage}
+
+\noindent \begin{minipage}{0.5\textwidth}
+\vspace{0.4cm}
+\includegraphics[width=\textwidth]{force_amp.png}
+	\captionof{figure}{Amplitude(f)}
+	\label{fig:amplitude}
+\label{fig:nature}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.4\textwidth}
+	Comme pour la phase en fonction de la frquence, l'amplitude du balencier en fonction de la frequence nous permet d'obtenir les differents parametres de notre systemes ($\lambda , \omega_0 , \f_0)$. 
+	Toutefois, c'est sheitan.
+\noindent \end{minipage}
+\\
+\\
+Nous pourrions etablir une moyenne des frequences ou les valeurs des pulsations propres et des pseudo pulsations a partir d'une moyenne. Toutefois, ces donnees sont extraites des fits dont la qualite differe entre celui de la phase (\ref{fig:phase}) et celui de l'amplitude (\ref{fig:amplitude}). Ainsi, il est plus judicieux d'etablir avec plus de certitude qu'a partir de la phase en fonction de la frequence que $\lambda = $. $\omega_0 = $ . Et la par moyenne des deux freqences : $\f_0 = 0.523 +/- 0.00 [Hz]$. 
+\\
+\\
+Enfin, si nous etablissons le rapport $P$ / $P_0$ en fonction de la frequence a differents courants induits dans les freins, nous pouvons observer une courbe plus aplatie (voir \ref{fig:power9}) qu'en le graphique a 0.5 A (voir \ref{fig:power5}). 
+
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{power_0.5A.png}
+	\captionof{figure}{$P$/$P_0$(f) 0.5A}
+	\label{fig:power5}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{power_0.9A.png}
+	\captionof{figure}{$P$/$P_0$(f) a 0.9A}
+	\label{fig:power9}
+\end{minipage}
+
+
