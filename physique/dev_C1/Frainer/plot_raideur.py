@@ -23,14 +23,14 @@ slope_std = residual_std / np.sqrt(Sxx)          # incertitude sur la pente
 intercept_std = residual_std * np.sqrt(1/n + x_mean**2 / Sxx)  # incertitude sur l'ordonnée
 
 # --- Equation avec incertitudes (LaTeX) ---
-equation = rf"$M_f (\alpha) = ({slope:.4f} \pm {slope_std:.4f}) \,\alpha + ({intercept:.4f} \pm {intercept_std:.4f})$"
+equation = rf"$M_f (\theta) = ({slope:.4f} \pm {slope_std:.4f}) \,\theta + ({intercept:.4f} \pm {intercept_std:.4f})$"
 
 # --- Tracé ---
 plt.figure(figsize=(8,6))
 plt.scatter(x, y, color='blue', label='Données')
 plt.plot(x, y_pred, color='red', label=f'Regression linéaire\n{equation}')
 plt.ylabel(r"$M_f$ [Nm]")
-plt.xlabel(r"$\alpha$ [rad]")
+plt.xlabel(r"$\theta$ [rad]")
 plt.legend(fontsize=10)
 plt.grid(True)
 #plt.show()
