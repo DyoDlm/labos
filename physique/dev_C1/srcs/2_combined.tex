@@ -217,30 +217,58 @@ Ainsi,
 
 \section{Conclusion}
 
-La constante de torsion C est de $0.0123 \pm 0.0002 [Nm / rad]$.     % OK
-\\Le moment d'inertie J est de $(1.165 \pm 0.024)$ \cdot $10^-3$ [Kg/$m^2$] % OK
-\\La frequence de resonance du systeme en regime libre est de $0.517 \pm 0.003$ % OK
-\\La frequence de resonance du systeme en dephasage (methode des phaseurs) est de $0.520 \pm 0.005 [Hz]$ % OK
-\\La relation $\lambda$($I^2$) est de $0.7801 \pm 0.0026$ [$s^-1$$A^-2$] 
-\\Les facteurs de qualite des systemes sont :
-\\      $Q_0.5A$ =  4.0 \pm 0.1 % completer
-\\      $Q_0.9A$ =  2.20 \pm 0.06 % completer
+%La constante de torsion C est de $0.0123 \pm 0.0002 [Nm / rad]$.     % OK
+%\\Le moment d'inertie J est de $(1.165 \pm 0.024)$ \cdot $10^-3$ [Kg/$m^2$] % OK
+%\\La moyenne des frequence de resonance $\overline{$f_0$}$ du systeme en regime libre est de $0.517 \pm 0.003$ % OK
+%\\La frequence de resonance du systeme en dephasage (methode des phaseurs) est de $0.520 \pm 0.005 [Hz]$ % OK
+%\\La relation $\lambda$($I^2$) est de $0.7801 \pm 0.0026$ [$s^-1$$A^-2$] 
+%\\Les facteurs de qualite des systemes sont :
+%\\      $Q_0.5A$ =  4.0 \pm 0.1 
+%\\      $Q_0.9A$ =  2.20 \pm 0.06 
 
-\\Frquence resonange --> l'amplitude est macimale ety dephasage -90def
-Toutefois, nous n'avons pas pris assez de mesures autour de la frequence de resonnance, ce qui nous a mene vers des fits de moindre qualite.
+L’étude menée sur le pendule de Pohl nous a permis de caractériser avec précision les paramètres essentiels du système. 
+La constante de torsion a été évaluée à 
+\[
+C = 0.0123 \pm 0.0002~\mathrm{N\,m/rad},
+\]
+ce qui a conduit à une détermination fiable du moment d’inertie du balancier :
+\[
+J = (1.165 \pm 0.024)\times 10^{-3}~\mathrm{kg\,m^2}.
+\]
+
+L’analyse des oscillations libres a permis d’obtenir une fréquence propre moyenne de
+\[
+\overline{f_0} = 0.517 \pm 0.003~\mathrm{Hz},
+\]
+tandis que la méthode des phaseurs a fourni une valeur tout à fait cohérente :
+\[
+f_0 = 0.520 \pm 0.005~\mathrm{Hz}.
+\]
+
+L’évolution de l’amortissement en fonction du courant s’est révélée conforme au modèle attendu, avec la relation
+\[
+\lambda(I^2) = 0.7801 \pm 0.0026~\mathrm{s^{-1}A^{-2}}.
+\]
+
+Les facteurs de qualité mesurés pour deux régimes d’excitation illustrent clairement la diminution de la résonance lorsque l’amortissement augmente :
+\[
+Q_{0.5\,\mathrm{A}} = 4.0 \pm 0.1, \qquad
+Q_{0.9\,\mathrm{A}} = 2.20 \pm 0.06.
+\]
+
+Comme prévu pour un oscillateur harmonique forcé, l’amplitude atteint son maximum à la résonance et le déphasage s’établit alors à $-90^\circ$. 
+Notons enfin que la précision des ajustements est restée limitée par le manque de points de mesure autour du pic de résonance, ce qui laisse entrevoir des marges d’amélioration dans l’acquisition de données futures.
 %=====================================
 %       SOURCES
 %=====================================
 
-\section{Sources}
+%\begin{thebibliography}{99}
 
-\begin{thebibliography}{99}
+%\bibitem{schemapohl}
+%Gilbert Gastebois, \textit{Le pendule de Pohl},
+%\\
+%                \texttt{https://ggastebois.fr/java/pendpohl/theorie\_pend\_pohl.pdf}
+%\\
+%        Consulte le : 17 Novembre 2025
 
-\bibitem{schemapohl}
-Gilbert Gastebois, \textit{Le pendule de Pohl},
-\\
-                \texttt{https://ggastebois.fr/java/pendpohl/theorie\_pend\_pohl.pdf}
-\\
-        Consulte le : 17 Novembre 2025
-
-\end{thebibliography}
+%\end{thebibliography}
