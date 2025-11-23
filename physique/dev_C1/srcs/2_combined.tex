@@ -12,7 +12,8 @@ Avant de mesurer une oscillation, nous avons mesure le rapport de force qu'il fa
 \begin{minipage}{0.4\textwidth}
 	Nous obtenons par consequent le graphique (\ref{fig:C}) ci-joint.
 	Nous avons pu directement extraire la valeur C, soit la constante de raideur du ressort utilise grace a la relation (\ref{eq:nature}).\\ Soit :
-	\\      C = 0.0123 \pm 0.0002 [Nm / $rad^-1$]
+	\\      C = 0.0123 \pm 0.0002 [Nm / rad]
+	
 \noindent \end{minipage}
 \\
 \\
@@ -34,7 +35,7 @@ En un second temps, apres avoir montee l'installation pour mesures les oscillati
 \end{minipage}
 \\
 \\
-La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas lineaire. Nous constatons verifions la relation (\ref{eq:lambda-courant}), avec le graphique \ref{fig:lambda-current}. Nous pouvons extraire grace a la relation Eq. \ref{eq:w} la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 +/- 0.02 [rad/s] desquelles on extrait la frequence propre : $\overline{f_0} = 0.517 \pm 0.003 [Hz]$ partir de l'inverse de la periode : Eq. \ref{eq:t} (voir valeurs : \ref{val:f0}). Avec la constante de torsion du ressort le moment d'inertie du balencier $J$ = $C$ / $\omega_^2$ = $0.0123/3.25^2$ = (1.16 \pm 0.000) \cdot $10^3$  [kg / $m^2$]. 
+La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas lineaire. Nous constatons verifions la relation (\ref{eq:lambda-courant}), avec le graphique \ref{fig:lambda-current}. Nous pouvons extraire grace a la relation Eq. \ref{eq:w} la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 +/- 0.02 [rad/s] desquelles on extrait la frequence propre : $\overline{f_0} = 0.517 \pm 0.003 [Hz]$ partir de l'inverse de la periode : Eq. \ref{eq:t} (voir valeurs : \ref{val:f0}). Grace a la relation Eq~.\ref{eq:J} nous trouvons le moment d'inertie du balencier $J$ = $C$ / $\omega_^2$ = $0.0123/3.25^2$ = (1.165 \pm 0.024) \cdot $10^-3$ [Kg/$m^2$]. 
 
 \newpage
 \subsection{Expérience 2}
@@ -51,8 +52,8 @@ En tracant la phase en fonction de la frequence (voir \ref{fig:phase}), nous pou
 \hspace{0.00005\textwidth}
 \begin{minipage}{0.4\textwidth}
 	Ci-joint (\ref{fig:phase}), les frequences propres ont pu s'obtenir a partir de la relation de la phase-freqence (voir \ref{eq:phase_forcee}), sachant que la phase en fonction de la pulsation propore vaut $\pi/2$. L'ajustement nous donne :
-	\\ \\ $f_0$(0.5) = 0.518 \pm 0.009 [Hz].
-	\\ \\ $f_0$(0.9) = 0.528 \pm 0.004 [Hz].
+	\\ \\ $f_0$(0.5A) = 0.518 \pm 0.009 [Hz].
+	\\ \\ $f_0$(0.9A) = 0.528 \pm 0.004 [Hz].
 \noindent \end{minipage}
 
 \noindent \begin{minipage}{0.65\textwidth}
@@ -65,16 +66,16 @@ En tracant la phase en fonction de la frequence (voir \ref{fig:phase}), nous pou
 \hspace{0.00005\textwidth}
 \begin{minipage}{0.4\textwidth}
 	En revanche, l'amplitude du balencier en fonction de la frequence nous permet d'obtenir les frequences propres en fonction de Eq. \ref{eq:omega_res}, soit en explorant le lien entre pulsation propre et pseudo pulsation :
-	\\ \\ $f_0$(0.5) = 0.518 \pm 0.004 [Hz].
-	\\ \\ $f_0$(0.9) = 0.519 \pm 0.001 [Hz]
+	\\ \\ $f_0$(0.5A) = 0.518 \pm 0.004 [Hz].
+	\\ \\ $f_0$(0.9A) = 0.519 \pm 0.001 [Hz]
 	
 \noindent \end{minipage}
 \\
 
 En fonction du graph d'amplitude,
 nous obtenons en realisant un fit a partir du modele Eq. \ref{eq:amplitude_forcee} les valeurs suivantes :
-\\\\ 
-\textbf{$\lambda$(0.5) = 0.191 ± 0.003 [$1/s$] , \hspace{2.5cm} $\lambda$(0.9) = 0.609 ± 0.005 [$1/s$]. \\$\omega_0$(0.5) = 3.249 ± 0.001 [rad/s],  \hspace{2cm} $\omega_0$(0.9) = 3.315 ± 0.003 [rad/s]} \\\\Et la par moyenne des freqences obtenues : 
+\\\\
+\textbf{$\lambda$(0.5A) = 0.191 ± 0.003 [$1/s$] , \hspace{2.5cm} $\lambda$(0.9A) = 0.609 ± 0.005 [$1/s$]. \\$\omega_0$(0.5A) = 3.249 ± 0.001 [rad/s],  \hspace{2cm} $\omega_0$(0.9A) = 3.315 ± 0.003 [rad/s]} \\\\Et la par moyenne des freqences obtenues : 
 \\- \hspace{5cm} \textbf{$\overline{f_0}$ = 0.520 ± 0.005 [Hz].} 
 
 \vspace{0.5cm}
@@ -96,23 +97,36 @@ Ces courbes vont nous permettre d'extraire FMWH grace a des outils MATLAB et les
 \end{minipage}
 
 \vspace{0.5cm}
-À partir du rapport de puissance, nous obtenons la FWHM, directement liée à la largeur de la résonance :
+À partir du rapport de puissance, nous obtenons a partir du fit :
 
 \[
-\mathrm{FWHM}_{0.5\,A} = 0.13295 \pm 0.003~\mathrm{Hz}, \qquad
-\mathrm{FWHM}_{0.9\,A} = 0.21404 \pm 0.003~\mathrm{Hz}.
+	\mathrm{f_0}(0.5A) = 0.521 \pm 0.005~\mathrm{Hz}, \qquad
+\mathrm{f_0}(0.9A) = 0.47 \pm 0.01~\mathrm{Hz}.
+\]
+
+Puis, nous obtenons la FWHM, directement liée à la largeur de la résonance :
+
+\[
+\mathrm{FWHM}_{0.5\,A} = 0.132 \pm 0.003~\mathrm{Hz}, \qquad
+\mathrm{FWHM}_{0.9\,A} = 0.214 \pm 0.003~\mathrm{Hz}.
 \]
 
 Ce qui nous donne respectivement :
 \[
-	\mathrm{Q}_{0.5\A} = 0.520 / 0.13295 = 3.911 \pm 0.00\qquad
-	\mathrm{Q}_{0.9\A} = 0.520 / 0.21404 = 2,429 \pm 0.00
+	\mathrm{Q}_{0.5\A} = 0.521 / 0.132 = 4.0 \pm 0.1 \qquad
+	\mathrm{Q}_{0.9\A} = 0.47 / 0.214 = 2,20 \pm 0.06
 \]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	ANALYSE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Analyse des résultats, complement}
 
 \subsection{oscillations libres}
 
-Nous avons vu pour la constante de torsion C = 0.0123 +/- 0.0002 [Nm / rad] que l'incertitude est relativement basse. Les valeurs sont obtenu directement grace a la pente du la fonction $M_r$($\theta$) (voir fig: \ref{fig:C}).
+Nous avons vu pour la constante de torsion $C = 0.0123 \pm 0.0002 [Nm / rad]$ que l'incertitude est relativement basse. Les valeurs sont obtenu directement grace a la pente du la fonction $M_r$($\theta$) (voir fig: \ref{fig:C}).
 
 \\
 
@@ -141,13 +155,13 @@ L'incertitude sur $J$ s'écrit donc :
 En remplaçant par les valeurs numériques utilisées :
 
 \[
-\sigma_J = 
+\sigma_J =
 \sqrt{
-\left( \frac{0.0002}{3.25^2} \right)^2
-+
+\left( \frac{0.0002}{3.25^2} \right)^2 +
 \left( \frac{2 \cdot 0.0123 \cdot 0.02}{3.25^3} \right)^2
-}.
- = \]
+}
+= 0.0237 \times 10^{-3}\ \mathrm{kg\,m^2}
+\]
 
 
 \subsection{oscillations forcees}
@@ -176,13 +190,26 @@ Ainsi,
 \]
 
 \[
+\sigma_{Q_{0.5A}}
+=
 \sqrt{
-\left(\frac{0.005195}{0.133998}\right)^2
+\left(\frac{0.005}{0.132}\right)^2
 +
-\left(\frac{((0.521047 + 0.476599)/2) \cdot 0.003146}{0.133998^2}\right)^2
-},
+\left(\frac{0.521 \cdot 0.003}{0.132^2}\right)^2
+}
+= 0.097
 \]
 
+\[
+\sigma_{Q_{0.9A}}
+=
+\sqrt{
+\left(\frac{0.01}{0.214}\right)^2
++
+\left(\frac{0.47 \cdot 0.003}{0.214^2}\right)^2
+}
+= 0.056
+\]
 
 %=====================================
 %%      CONCLUSIONS
@@ -190,14 +217,14 @@ Ainsi,
 
 \section{Conclusion}
 
-La constante de torsion C est de 0.0123 \pm 0.0002 [Nm / rad].     % OK
-\\Le moment d'inertie J est de 1.16 \pm ... [Kg/$m^2$]          % verifier
-\\La frequence de resonance du systeme en regime libre est de 0.... \pm 0....% comple
-\\La frequence de resonance du systeme en dephasage (methode des phaseurs) est de 0.520 \pm 0.0002 [Hz] % completer
-\\La relation $\lambda$($I^2$) est de 0.7801 \pm 0.0026 [$s^-1$$A^-2$] 
+La constante de torsion C est de $0.0123 \pm 0.0002 [Nm / rad]$.     % OK
+\\Le moment d'inertie J est de $(1.165 \pm 0.024)$ \cdot $10^-3$ [Kg/$m^2$] % OK
+\\La frequence de resonance du systeme en regime libre est de $0.517 \pm 0.003$ % OK
+\\La frequence de resonance du systeme en dephasage (methode des phaseurs) est de $0.520 \pm 0.005 [Hz]$ % OK
+\\La relation $\lambda$($I^2$) est de $0.7801 \pm 0.0026$ [$s^-1$$A^-2$] 
 \\Les facteurs de qualite des systemes sont :
-\\      $Q_0.5A$ = 3.911 \pm 0.00 % verifier
-\\      $Q_0.9A$ = 2.429 \pm 0.00 %verifier
+\\      $Q_0.5A$ =  4.0 \pm 0.1 % completer
+\\      $Q_0.9A$ =  2.20 \pm 0.06 % completer
 
 \\Frquence resonange --> l'amplitude est macimale ety dephasage -90def
 Toutefois, nous n'avons pas pris assez de mesures autour de la frequence de resonnance, ce qui nous a mene vers des fits de moindre qualite.
@@ -217,15 +244,3 @@ Gilbert Gastebois, \textit{Le pendule de Pohl},
         Consulte le : 17 Novembre 2025
 
 \end{thebibliography}
-
-                                                                                                                                                      
-~                                                                                                                                                                                      
-~                                                                                                                                                                                      
-~                                                                                                                                                                                      
-~                                                                                                                                                                                      
-~                                                                                                                                                                                                  
-~                                                                                                                                                                                      
-~                                                                                                                                                                                      
-~                                                                                                                                                                                      
-~                                                                                                                                                                                      
-~                                   
