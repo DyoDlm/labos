@@ -1,16 +1,29 @@
 
-Le dispositif utilisé est un pendule de Pohl, constitué d’une roue montée sur un axe et reliée à un ressort spiral, dont l’autre extrémité est fixée ou mise en mouvement par un excentrique entraîné par un moteur. La roue passe dans l’entrefer d’un frein de Foucault, permettant de moduler l’amortissement en ajustant le courant. Le mouvement angulaire du pendule est enregistré par un encodeur connecté à l’interface Phidgets MATLAB, et des index sur le pendule et l’excitateur permettent de mesurer la phase relative.
+
+Comme il est possible de le voir en fig:\ref{fig:schemapohl}, le dispositif utilisé est un pendule de Pohl, constitué d’une roue montée sur un axe et reliée à un ressort spiral, dont l’autre extrémité est fixée ou mise en mouvement par un systeme de transmission liant le balancier au moteur. La roue du balancier passe dans l’entrefer d’un frein de Foucault, permettant de moduler l’amortissement en ajustant le courant mesure par un amperemetre (voir fig :\ref{samplesetup}). Le mouvement angulaire du pendule est enregistré par un encodeur connecté à l’interface Phidgets MATLAB. Cela elimine grandement les erreurs accidentelles de mesures, car les mesures sont principalement electroniques. Des indexes sur le pendule et l’excitateur permettent de mesurer la phase relative.
+\\
+
+\newline 
+L'ensemble des experiences sont visibles sur le schema ci-dessous : 
 \newline
-Pour les oscillations libres, le disque est dévié d’un angle initial et lâché. Le ressort spiral exerce un moment de rappel qui oppose la rotation, et le pendule effectue des oscillations amorties. L’amplitude et la pseudo-période sont mesurées pour différentes valeurs de courant dans le frein afin de déterminer le coefficient d’amortissement et le moment d’inertie.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{schema_force.png}
+\caption{Schema electrique pour la prise de mesure en regime d'oscillations libres}
+\label{fig:samplesetup}
+\end{figure}
+\\
+\\
+Le schema est strictement le meme pour les experiences en regime libre et en regime force. Seul le moteur est branche pour la seconde experience. Lorsqu'il sera alimente, cela modifiera l'quation caracteristique de notre systeme dynamique (voir Eq. \ref{eq:cara}) afin de rajouter un terme a droite de l'equaion (voir Eq. \ref{eq:equa_forcee_normalisee}.
+\newline
+Il manque seulement au schemas le dynamometre qui a permit de mesurer la constante de torsion C du ressort-spiral (voir Eq. \ref{eq:C}). Avant de faire osciller le systeme, il suffit de placer suspendre un dynamometre au dessus du pendule et de le fixer au moyeu (cylindre du centre de rotation) de ce dernier. Afin de realiser les mesures pour determiner C, il faut mesurer le rapport du moment de force avec le dynamometre et l'angle responsable de ce moment de force.
+La suite des mesures est moins manuelle.
+
+\newline
+Pour les oscillations libres, le disque est dévié d’un angle initial et lâche. Le ressort spiral exerce un moment de rappel qui oppose la rotation et le pendule effectue des oscillations amorties. L’amplitude et la pseudo-période sont mesurées pour différentes valeurs de courant dans le frein afin de déterminer le coefficient d’amortissement et le moment d’inertie. 
 \newline
 Pour les oscillations forcées, le moteur impose un mouvement sinusoïdal de fréquence réglable. L’amplitude et la phase de l’oscillateur sont enregistrées en fonction de la fréquence, permettant de tracer les courbes caractéristiques et d’identifier la fréquence de résonance ainsi que le facteur de qualité.
 \newline
 Des mesures complémentaires sont réalisées avec un ampermètre pour quantifier le courant induit dans le frein et relier ainsi l’amplitude des oscillations à l’intensité du freinage. L’ensemble du montage est simple à manipuler tout en offrant un contrôle précis des paramètres dynamiques du pendule.
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.5]{schema_force.png}
-\caption{Schema electrique pour la prise de mesure en regime d'oscillations libres}
-\label{fig:samplesetup}
-\end{figure}
 
 

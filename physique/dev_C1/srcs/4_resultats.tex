@@ -34,7 +34,7 @@ En un second temps, apres avoir montee l'installation pour mesures les oscillati
 \end{minipage}
 \\
 \\
-La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas lineaire. Nous constatons verifions la relation (\ref{eq:lambda-courant}), avec le graphique \ref{fig:lambda-current}. Nous pouvons extraire grace a la relation \ref{eq:JCW} la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 +/- 0.02 [rad/s] (voir tab:\ref{val:omega0}) et avec la constante de torsion du ressort le moment d'inertie du balencier $J$ = $C$ / $\omega_0^2$ = $0.0123/3.25^2$ = (1.16 +/- 0.000) \cdot $10^3$  [kg / $m^2$]. 
+La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas lineaire. Nous constatons verifions la relation (\ref{eq:lambda-courant}), avec le graphique \ref{fig:lambda-current}. Nous pouvons extraire grace a la relation \ref{eq:JCW} la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 +/- 0.02 [rad/s] (voir tab:\ref{val:omega0}) desquelles on extrait la frequence propre : $f_0$ = ... (a partir de l'inverse de la periode : Eq. \ref{eq:t}). Avec la constante de torsion du ressort le moment d'inertie du balencier $J$ = $C$ / $\omega_^2$ = $0.0123/3.25^2$ = (1.16 +/- 0.000) \cdot $10^3$  [kg / $m^2$]. 
 
 \newpage
 \subsection{Expérience 2}
@@ -42,54 +42,69 @@ La relation entre le facteur d'amortissement et le courant circulant dans les fr
 En tracant la phase en fonction de la frequence (voir \ref{fig:phase}), nous pouvons retrouver les frequences propres $f_0$ pour les alimentations a 0.5 en bleu et 0.9A en rouge.
         Les frequences propres resultent du point d'inflexions de leurs courbes correspondantes.
 \\
-\noindent \begin{minipage}{0.5\textwidth}
+\noindent \begin{minipage}{0.65\textwidth}
 \vspace{0.4cm}
 \includegraphics[width=\textwidth]{force_phase.png}
-	\captionof{figure}{Phase en fonction de la frequence}
+	\captionof{figure}{$\phi$(f), evolution de la Phase}
 \label{fig:phase}
 \end{minipage}
-\hspace{0.05\textwidth}
+\hspace{0.00005\textwidth}
 \begin{minipage}{0.4\textwidth}
-	Ci-joint (\ref{fig:phase}), les frequences propres ont pu s'obtenir a partir de la relation pulsation-frequence decrite dans la section theorie (voir \iref{eq:pulsation-frequence}). Cela nous donne :
+	Ci-joint (\ref{fig:phase}), les frequences propres ont pu s'obtenir a partir de la relation de la phase-freqence (voir \ref{eq:phase_forcee}), sachant que la phase en fonction de la pulsation propore vaut $\pi/2$. L'ajustement nous donne :
 	\\ \\ $f_0$(0.5) = 0.518 $+/-$ 0.009 [Hz].
 	\\ \\ $f_0$(0.9) = 0.528 $+/-$ 0.004 [Hz].
 \noindent \end{minipage}
 
-\noindent \begin{minipage}{0.5\textwidth}
+\noindent \begin{minipage}{0.65\textwidth}
 \vspace{0.4cm}
 \includegraphics[width=\textwidth]{force_amp.png}
-	\captionof{figure}{Amplitude(f)}
+	\captionof{figure}{A(f), evolution de l'elongation angulaire}
 	\label{fig:amplitude}
 \label{fig:nature}
 \end{minipage}
-\hspace{0.05\textwidth}
+\hspace{0.00005\textwidth}
 \begin{minipage}{0.4\textwidth}
-	Comme pour la phase en	l'amplitude du balencier en fonction de la frequence nous permet d'obtenir :
+	En revanche, l'amplitude du balencier en fonction de la frequence nous permet d'obtenir les frequences propres en fonction de Eq. \ref{eq:omega_res}, soit en explorant le lien entre pulsation propre et pseudo pulsation :
 	\\ \\ $f_0$(0.5) = 0.518 +/- 0.004 [Hz].
 	\\ \\ $f_0$(0.9) = 0.519 +/- 0.001 [Hz]
 	
 \noindent \end{minipage}
 \\
 
-En fonction du graph d'amplitude, nous obtenons :
-\\ 
-\textbf{$\lambda$(0.5) = 0.191 ± 0.003 [$1/s$] , \hspace{3.5cm} $\lambda$(0.9) = 0.609 ± 0.005 [$1/s$]. \\$\omega_0$(0.5) = 3.249 ± 0.001 [rad/s],  \hspace{3.5cm} $\omega_0$(0.9) = 3.315 ± 0.003. \\Et la par moyenne des freqences : \hspace{3.5cm} $\overline{f_0}$ = 0.520 +/- 0.005 [Hz].} 
-\\
-\\
-Enfin, si nous etablissons le rapport $P$ / $P_0$ en fonction de la frequence sous differents courants, nous pouvons observer une courbe plus aplatie (voir \ref{fig:power9}) qu'en le graphique a 0.5 A (voir \ref{fig:power5}) dont nous analyserons fmwh*, f0 et Q* (voir val:\ref{val:fmwh}) dans la section suivante.
+En fonction du graph d'amplitude,
+nous obtenons en realisant un fit a partir du modele Eq. \ref{eq:amplitude_forcee} les valeurs suivantes :
+\\\\ 
+\textbf{$\lambda$(0.5) = 0.191 ± 0.003 [$1/s$] , \hspace{2.5cm} $\lambda$(0.9) = 0.609 ± 0.005 [$1/s$]. \\$\omega_0$(0.5) = 3.249 ± 0.001 [rad/s],  \hspace{2cm} $\omega_0$(0.9) = 3.315 ± 0.003 [rad/s]} \\\\Et la par moyenne des freqences obtenues : 
+\\- \hspace{5cm} \textbf{$\overline{f_0}$ = 0.520 +/- 0.005 [Hz].} 
 
-\begin{minipage}[t]{0.46\textwidth}
+\vspace{0.5cm}
+A partir de la puissance relative, si nous etablissons donc le rapport $\overline{P}$ / $P_0$ en fonction de la frequence sous differents courants, nous pouvons observer une courbe plus aplatie (voir \ref{fig:power9}) qu'en le graphique a 0.5 A (voir \ref{fig:power5}).
+Ces courbes vont nous permettre d'extraire FMWH grace a des outils MATLAB et les facteurs de qualite Q a partir de la relation  Eq. \ref{eq:Q_fwhm}.
+\\
+\begin{minipage}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{power_0.5A.png}
+	\includegraphics[scale=0.3]{power_0.5A.png}
 	\captionof{figure}{$P$/$P_0$(f) 0.5A}
 	\label{fig:power5}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.46\textwidth}
+\begin{minipage}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{power_0.9A.png}
+	\includegraphics[scale=0.3]{power_0.9A.png}
 	\captionof{figure}{$P$/$P_0$(f) a 0.9A}
 	\label{fig:power9}
 \end{minipage}
 
+\vspace{1cm}
+À partir du rapport de puissance, nous obtenons la FWHM, directement liée à la largeur de la résonance :
 
+\[
+\mathrm{FWHM}_{0.5\,A} = 0.133998 \pm 0.003146~\mathrm{Hz}, \qquad
+\mathrm{FWHM}_{0.9\,A} = 0.214367 \pm 0.002802~\mathrm{Hz}.
+\]
+
+Ce qui nous donne respectivement :
+\[
+	\mathrm{Q}_{0.5\A} = 1\qquad
+	\mathrm{Q}_{0.9\A} = 3
+\]

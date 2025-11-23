@@ -1,0 +1,231 @@
+\section{Résultats}
+
+\subsection{Oscillations libres}
+
+Avant de mesurer une oscillation, nous avons mesure le rapport de force qu'il faut exercer sur le balancier afin de le placer a un certain angle.
+\\
+\noindent \begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{raideur.png}
+	\captionof{figure}{$M_r$($\theta$)}
+\label{fig:C}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	Nous obtenons par consequent le graphique (\ref{fig:C}) ci-joint.
+	Nous avons pu directement extraire la valeur C, soit la constante de raideur du ressort utilise grace a la relation (\ref{eq:nature}).\\ Soit :
+	\\      C = 0.0123 \pm 0.0002 [Nm / $rad^-1$]
+\noindent \end{minipage}
+\\
+\\
+\\
+En un second temps, apres avoir montee l'installation pour mesures les oscillations du balencier-spiral (voir fig:\ref{fig:samplesetup}), nous avons donne une position hors-equilibre au balencier et mesurer en fonction du frein imposee a les differences oscillations observable en annexe (voir fig:\ref{fig:oscillations}).
+
+\begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{lambda_quadratique.png}
+	\captionof{figure}{$\lambda$(I)}
+	\label{fig:lambda-current_quad}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{lambda.png}
+	\captionof{figure}{$\lambda$($I^2$)}
+	\label{fig:lambda-current}
+\end{minipage}
+\\
+\\
+La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas lineaire. Nous constatons verifions la relation (\ref{eq:lambda-courant}), avec le graphique \ref{fig:lambda-current}. Nous pouvons extraire grace a la relation Eq. \ref{eq:w} la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 +/- 0.02 [rad/s] desquelles on extrait la frequence propre : $\overline{f_0} = 0.517 \pm 0.003 [Hz]$ partir de l'inverse de la periode : Eq. \ref{eq:t} (voir valeurs : \ref{val:f0}). Avec la constante de torsion du ressort le moment d'inertie du balencier $J$ = $C$ / $\omega_^2$ = $0.0123/3.25^2$ = (1.16 \pm 0.000) \cdot $10^3$  [kg / $m^2$]. 
+
+\newpage
+\subsection{Expérience 2}
+
+En tracant la phase en fonction de la frequence (voir \ref{fig:phase}), nous pouvons retrouver les frequences propres $f_0$ pour les alimentations a 0.5 en bleu et 0.9A en rouge.
+        Les frequences propres resultent du point d'inflexions de leurs courbes correspondantes.
+\\
+\noindent \begin{minipage}{0.65\textwidth}
+\vspace{0.4cm}
+\includegraphics[width=\textwidth]{force_phase.png}
+	\captionof{figure}{$\phi$(f), evolution de la Phase}
+\label{fig:phase}
+\end{minipage}
+\hspace{0.00005\textwidth}
+\begin{minipage}{0.4\textwidth}
+	Ci-joint (\ref{fig:phase}), les frequences propres ont pu s'obtenir a partir de la relation de la phase-freqence (voir \ref{eq:phase_forcee}), sachant que la phase en fonction de la pulsation propore vaut $\pi/2$. L'ajustement nous donne :
+	\\ \\ $f_0$(0.5) = 0.518 \pm 0.009 [Hz].
+	\\ \\ $f_0$(0.9) = 0.528 \pm 0.004 [Hz].
+\noindent \end{minipage}
+
+\noindent \begin{minipage}{0.65\textwidth}
+\vspace{0.4cm}
+\includegraphics[width=\textwidth]{force_amp.png}
+	\captionof{figure}{A(f), evolution de l'elongation angulaire}
+	\label{fig:amplitude}
+\label{fig:nature}
+\end{minipage}
+\hspace{0.00005\textwidth}
+\begin{minipage}{0.4\textwidth}
+	En revanche, l'amplitude du balencier en fonction de la frequence nous permet d'obtenir les frequences propres en fonction de Eq. \ref{eq:omega_res}, soit en explorant le lien entre pulsation propre et pseudo pulsation :
+	\\ \\ $f_0$(0.5) = 0.518 \pm 0.004 [Hz].
+	\\ \\ $f_0$(0.9) = 0.519 \pm 0.001 [Hz]
+	
+\noindent \end{minipage}
+\\
+
+En fonction du graph d'amplitude,
+nous obtenons en realisant un fit a partir du modele Eq. \ref{eq:amplitude_forcee} les valeurs suivantes :
+\\\\ 
+\textbf{$\lambda$(0.5) = 0.191 ± 0.003 [$1/s$] , \hspace{2.5cm} $\lambda$(0.9) = 0.609 ± 0.005 [$1/s$]. \\$\omega_0$(0.5) = 3.249 ± 0.001 [rad/s],  \hspace{2cm} $\omega_0$(0.9) = 3.315 ± 0.003 [rad/s]} \\\\Et la par moyenne des freqences obtenues : 
+\\- \hspace{5cm} \textbf{$\overline{f_0}$ = 0.520 ± 0.005 [Hz].} 
+
+\vspace{0.5cm}
+A partir de la puissance relative, si nous etablissons donc le rapport $\overline{P}$ / $P_0$ en fonction de la frequence sous differents courants, nous pouvons observer une courbe plus aplatie (voir \ref{fig:power9}) qu'en le graphique a 0.5 A (voir \ref{fig:power5}).
+Ces courbes vont nous permettre d'extraire FMWH grace a des outils MATLAB et les facteurs de qualite Q a partir de la relation  Eq. \ref{eq:Q_fwhm}.
+\\
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+	\includegraphics[scale=0.3]{power_0.5A.png}
+	\captionof{figure}{$P$/$P_0$(f) 0.5A}
+	\label{fig:power5}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+	\includegraphics[scale=0.3]{power_0.9A.png}
+	\captionof{figure}{$P$/$P_0$(f) a 0.9A}
+	\label{fig:power9}
+\end{minipage}
+
+\vspace{0.5cm}
+À partir du rapport de puissance, nous obtenons la FWHM, directement liée à la largeur de la résonance :
+
+\[
+\mathrm{FWHM}_{0.5\,A} = 0.13295 \pm 0.003~\mathrm{Hz}, \qquad
+\mathrm{FWHM}_{0.9\,A} = 0.21404 \pm 0.003~\mathrm{Hz}.
+\]
+
+Ce qui nous donne respectivement :
+\[
+	\mathrm{Q}_{0.5\A} = 0.520 / 0.13295 = 3.911 \pm 0.00\qquad
+	\mathrm{Q}_{0.9\A} = 0.520 / 0.21404 = 2,429 \pm 0.00
+\]
+\section{Analyse des résultats, complement}
+
+\subsection{oscillations libres}
+
+Nous avons vu pour la constante de torsion C = 0.0123 +/- 0.0002 [Nm / rad] que l'incertitude est relativement basse. Les valeurs sont obtenu directement grace a la pente du la fonction $M_r$($\theta$) (voir fig: \ref{fig:C}).
+
+\\
+
+En revanche, si l'on souhaite déterminer l'incertitude sur le moment d'inertie du balancier,
+nous pouvons calculer l'erreur sur $J$ à partir de la relation entre $C$, $J$ et la pulsation propre
+$\omega_0$ (voir Eq.~\ref{eq:J}), en utilisant la méthode des dérivées partielles avec :
+
+\[
+\frac{\partial J}{\partial C} = \frac{1}{\omega_0^2},
+\qquad
+\frac{\partial J}{\partial \omega_0}
+= -\,\frac{2C}{\omega_0^3}.
+\]
+
+L'incertitude sur $J$ s'écrit donc :
+
+\[
+\sigma_J = 
+\sqrt{
+\left( \frac{\sigma_C}{\omega_0^2} \right)^2
++
+\left( \frac{2C\,\sigma_{\omega_0}}{\omega_0^3} \right)^2
+}.
+\]
+
+En remplaçant par les valeurs numériques utilisées :
+
+\[
+\sigma_J = 
+\sqrt{
+\left( \frac{0.0002}{3.25^2} \right)^2
++
+\left( \frac{2 \cdot 0.0123 \cdot 0.02}{3.25^3} \right)^2
+}.
+ = \]
+
+
+\subsection{oscillations forcees}
+
+Le facteur de qualité est donné par (Eq.~\ref{eq:Q}) et l’incertitude correspondante, obtenue par dérivées partielles, est :
+
+\[
+\frac{\partial Q}{\partial f_0} = \frac{1}{\mathrm{FWHM}},
+\qquad
+\frac{\partial Q}{\partial\,\mathrm{FWHM}}
+= -\,\frac{f_0}{\mathrm{FWHM}^2}.
+\]
+
+Ainsi,
+
+\[
+\sigma_Q
+=
+\sqrt{
+\left(\frac{\sigma_{f_0}}{\mathrm{FWHM}}\right)^2
++
+\left(
+\frac{f_0\,\sigma_{\mathrm{FWHM}}}{\mathrm{FWHM}^2}
+\right)^2
+}.
+\]
+
+\[
+\sqrt{
+\left(\frac{0.005195}{0.133998}\right)^2
++
+\left(\frac{((0.521047 + 0.476599)/2) \cdot 0.003146}{0.133998^2}\right)^2
+},
+\]
+
+
+%=====================================
+%%      CONCLUSIONS
+%=====================================
+
+\section{Conclusion}
+
+La constante de torsion C est de 0.0123 \pm 0.0002 [Nm / rad].     % OK
+\\Le moment d'inertie J est de 1.16 \pm ... [Kg/$m^2$]          % verifier
+\\La frequence de resonance du systeme en regime libre est de 0.... \pm 0....% comple
+\\La frequence de resonance du systeme en dephasage (methode des phaseurs) est de 0.520 \pm 0.0002 [Hz] % completer
+\\La relation $\lambda$($I^2$) est de 0.7801 \pm 0.0026 [$s^-1$$A^-2$] 
+\\Les facteurs de qualite des systemes sont :
+\\      $Q_0.5A$ = 3.911 \pm 0.00 % verifier
+\\      $Q_0.9A$ = 2.429 \pm 0.00 %verifier
+
+\\Frquence resonange --> l'amplitude est macimale ety dephasage -90def
+Toutefois, nous n'avons pas pris assez de mesures autour de la frequence de resonnance, ce qui nous a mene vers des fits de moindre qualite.
+%=====================================
+%       SOURCES
+%=====================================
+
+\section{Sources}
+
+\begin{thebibliography}{99}
+
+\bibitem{schemapohl}
+Gilbert Gastebois, \textit{Le pendule de Pohl},
+\\
+                \texttt{https://ggastebois.fr/java/pendpohl/theorie\_pend\_pohl.pdf}
+\\
+        Consulte le : 17 Novembre 2025
+
+\end{thebibliography}
+
+                                                                                                                                                      
+~                                                                                                                                                                                      
+~                                                                                                                                                                                      
+~                                                                                                                                                                                      
+~                                                                                                                                                                                      
+~                                                                                                                                                                                                  
+~                                                                                                                                                                                      
+~                                                                                                                                                                                      
+~                                                                                                                                                                                      
+~                                                                                                                                                                                      
+~                                   
