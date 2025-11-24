@@ -49,21 +49,21 @@ Pour les oscillations forcées, le moteur impose un mouvement périodique de fr�
 
 \noindent \end{minipage}
 
-
-
-\newpage
 \section{Partie théorique} \label{sec:theorie}
 
 \subsection{Oscillations libres d’un pendule de Pohl}
 \label{sec:libre}
 
-Le pendule de Pohl est un oscillateur rotatif décrit par l’angle de torsion $\theta(t)$.  
-La constante de torsion du ressort spiral se mesure expérimentalement à partir du moment de rappel :
+Le pendule de Pohl est un oscillateur rotatif caractérisé par l’angle de torsion $\theta(t)$ du balancier. La constante de torsion du ressort spiral $C$ relie le moment de rappel $M_r$ à la déformation angulaire :
 
 \begin{equation}
 C = \frac{M_r}{\theta}
 \label{eq:C}
 \end{equation}
+
+où $M_r$ est le moment de rappel et $\theta$ l’angle de torsion.
+
+Selon le théorème du moment cinétique, le moment total appliqué sur le balancier est égal à la variation du moment cinétique $L$ :
 
 \begin{equation}
 \frac{dL}{dt} = \sum M_{\mathrm{ext}},
@@ -72,119 +72,134 @@ L = J\,\dot{\theta},
 \label{eq:TMC}
 \end{equation}
 
+où $J$ est le moment d’inertie du pendule et $\dot{\theta}$ la vitesse angulaire.
+
+Les moments appliqués incluent le moment de rappel du ressort et le moment de frottement visqueux $M_f$ :
+
 \begin{equation}
-M_r = -C\theta, \qquad M_f = -b\dot{\theta}.
+M_r = -C\theta, \qquad M_f = -b\dot{\theta},
 \label{eq:MOMENTS}
 \end{equation}
 
-On en déduit l’équation du mouvement :
+avec $b$ le coefficient d’amortissement.
+
+En combinant ces relations, on obtient l’équation différentielle du mouvement du pendule :
+
 \begin{equation}
 J\ddot{\theta} + b\dot{\theta} + C\theta = 0.
 \label{eq:edo}
 \end{equation}
 
-La pulsation propre non amortie et le coefficient d’amortissement sont :
+On définit la pulsation propre non amortie et le coefficient d’amortissement par :
+
 \begin{equation}
-\omega_0 = \sqrt{\frac{C}{J}}, \qquad \lambda = \frac{b}{2J}.
+\omega_0 = \sqrt{\frac{C}{J}}, \qquad \lambda = \frac{b}{2J},
 \label{eq:lambda}
 \end{equation}
 
-L’équation devient :
+de sorte que l’équation du mouvement s’écrit sous la forme normalisée :
+
 \begin{equation}
 \ddot{\theta} + 2\lambda\dot{\theta} + \omega_0^2\,\theta = 0.
 \label{eq:cara}
 \end{equation}
 
-En régime faiblement amorti :
+Dans le régime faiblement amorti ($\lambda \ll \omega_0$), la solution temporelle est donnée par :
+
 \begin{equation}
 \theta(t)=\theta_0 e^{-\lambda t}\cos(\omega_1 t+\phi),
 \label{eq:solution}
 \end{equation}
 
-avec la pseudo-pulsation :
+où $\theta_0$ est l’amplitude initiale, $\phi$ la phase initiale, et la pseudo-pulsation $\omega_1$ :
+
 \begin{equation}
 \omega_1=\sqrt{\omega_0^2 - \lambda^2}.
 \label{eq:w}
 \end{equation}
 
-La période observée expérimentalement vaut :
+La période observée expérimentalement est donc :
+
 \begin{equation}
-T = \frac{2\pi}{\omega_1}.
+T = \frac{2\pi}{\omega_1},
 \label{eq:t}
 \end{equation}
 
-Enfin, le moment d’inertie du balancier s’en déduit :
+et le moment d’inertie $J$ peut être déduit à partir de $C$ et $\omega_0$ :
+
 \begin{equation}
 J = \frac{C}{\omega_0^2}.
 \label{eq:J}
 \end{equation}
 
-
 \subsection{Oscillations forcées} \label{sec:forcee}
 
-Un moment sinusoïdal excite le système :
+Si un moment sinusoïdal externe $M_e(t)$ agit sur le pendule :
+
 \begin{equation}
-M_e(t) = M_0\cos(\omega t).
+M_e(t) = M_0\cos(\omega t),
 \label{eq:moment_excitation}
 \end{equation}
 
-L’équation du mouvement devient :
+avec $M_0$ l’amplitude et $\omega$ la fréquence d’excitation, l’équation du mouvement devient :
+
 \begin{equation}
-J\ddot{\theta} + b\dot{\theta} + C\theta = M_0\cos(\omega t).
+J\ddot{\theta} + b\dot{\theta} + C\theta = M_0\cos(\omega t),
 \label{eq:equa_forcee_brut}
 \end{equation}
 
-ou encore, sous forme normalisée :
+ou sous forme normalisée avec $A = M_0/J$ :
+
 \begin{equation}
 \ddot{\theta}+2\lambda\dot{\theta}+\omega_0^2\theta
-= A\cos(\omega t), \qquad A=\frac{M_0}{J}.
+= A\cos(\omega t).
 \label{eq:equa_forcee_normalisee}
 \end{equation}
 
-
 \subsection{Méthode des phaseurs} \label{subsec:phaseurs}
 
-On cherche une solution forcée de la forme :
+Pour résoudre l’équation forcée, on cherche une solution stationnaire de la forme :
+
 \begin{equation}
-\theta(t)=\Theta(\omega)\cos(\omega t+\phi(\omega)).
+\theta(t)=\Theta(\omega)\cos(\omega t+\phi(\omega)),
 \label{eq:solution_phaseurs}
 \end{equation}
 
-L’amplitude vaut :
+où $\Theta(\omega)$ est l’amplitude en régime permanent et $\phi(\omega)$ la phase.
+
+L’amplitude dépend de la fréquence :
+
 \begin{equation}
 \Theta(\omega)
 =\frac{A}{\sqrt{(\omega_0^2-\omega^2)^2+(2\lambda\omega)^2}}.
 \label{eq:amplitude_forcee}
 \end{equation}
 
-La phase est donnée par :
+La phase relative entre la force et la réponse est :
+
 \begin{equation}
 \phi(\omega)
 =\arctan\left(\frac{2\lambda\omega}{\omega_0^2-\omega^2}\right).
 \label{eq:phase_forcee}
 \end{equation}
 
-La résonance apparaît pour :
+La résonance, c’est-à-dire la fréquence pour laquelle l’amplitude est maximale, se produit à :
+
 \begin{equation}
 \omega_{\mathrm{res}}=\sqrt{\omega_0^2 - 2\lambda^2}.
 \label{eq:omega_res}
 \end{equation}
 
-
 \subsection{Facteur de qualité} \label{subsec:facteur_Q}
 
-Dans le régime temporel :
-\begin{equation}
-Q = \frac{\omega_0}{2\lambda}.
-\label{eq:Q_lambda}
-\end{equation}
+Le facteur de qualité $Q$ caractérise la finesse de l’oscillation qui dans l’analyse fréquentielle se déduit de la largeur du pic de résonance :
 
-Dans l’analyse fréquentielle :
 \begin{equation}
 Q = \frac{f_0}{\mathrm{FWHM}},
 \label{eq:Q_fwhm}
 \end{equation}
-où $\mathrm{FWHM}$ est la largeur à mi-hauteur du pic de résonance.
+
+où $\mathrm{FWHM}$ est la largeur à mi-hauteur du pic de résonance et $f_0 = \omega_0/(2\pi)$ la fréquence propre.
 
 
 \section{Résultats}
@@ -199,23 +214,23 @@ Avant de mesurer une oscillation, nous avons mesuré le rapport de force qu'il f
 \label{fig:C}
 \end{minipage}
 \begin{minipage}{0.4\textwidth}
-	Nous obtenons par conséquent le graphique (\ref{fig:C}) ci-joint.
-	Nous avons pu directement extraire la valeur $C$, soit la constante de raideur du ressort utilisé grâce à la relation (\ref{eq:nature}).\\ Soit :
-	\\      C = 0.0123 \pm 0.0002 [Nm / rad]
+	Nous obtenons par conséquent le graphique (\ref{fig:C}) du moment $M_r$ en fonction de l'angle $\theta$.
+	Nous avons pu directement extraire la valeur $C$, soit la constante de raideur du ressort utilisé grâce à la relation Eq. \ref{eq:C}.\\ Soit :
+	\\      -\hspace{1cm} C = 0.0123 \pm 0.0002 [Nm / rad]
 \noindent \end{minipage}
 \\
-\\
-\\
+
+
 En un second temps, après avoir monté l'installation pour mesurer les oscillations du balancier-spiral (voir Fig.~\ref{fig:samplesetup}), nous avons donné une position hors équilibre au balancier et mesuré, en fonction du frein imposé, les différentes oscillations observables en annexe (voir Fig.~\ref{fig:oscillations}).
 
-\begin{minipage}[t]{0.45\textwidth}
+\begin{minipage}[t]{0.42\textwidth}
     \centering
     \includegraphics[width=\linewidth]{lambda_quadratique.png}
 	\captionof{figure}{$\lambda$(I)}
 	\label{fig:lambda-current_quad}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.48\textwidth}
     \centering
     \includegraphics[width=\linewidth]{lambda.png}
 	\captionof{figure}{$\lambda$($I^2$)}
@@ -223,7 +238,7 @@ En un second temps, après avoir monté l'installation pour mesurer les oscillat
 \end{minipage}
 \\
 \\
-La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas linéaire. Nous vérifions la relation (\ref{eq:lambda-courant}) avec le graphique \ref{fig:lambda-current}. Nous pouvons extraire grâce à la relation Eq. \ref{eq:w} la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 $\pm$ 0.02 [rad/s], desquelles on extrait la fréquence propre : $\overline{f_0} = 0.517 \pm 0.003$ [Hz] à partir de l'inverse de la période : Eq. \ref{eq:t} (voir valeurs : \ref{val:f0}). Grâce à la relation Eq.~\ref{eq:J}, nous trouvons le moment d'inertie du balancier $J$ = $C / \omega_0^2 = 0.0123/3.25^2 = (1.165 \pm 0.024)\cdot 10^{-3}$ [kg/m$^2$]. 
+La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas linéaire. Nous constatons avec fig: \ref{fig:lambda-current} que le facteurs d'amortissement est proportionnel au carré du courant. Avec l'annexe B : \ref{annexe:a}, nous pouvons extraire grâce à la relation Eq. \ref{eq:w} la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 $\pm$ 0.02 [rad/s], desquelles on extrait la moyenne des fréquences propres : $\overline{f_0} = 0.517 \pm 0.003$ [Hz] à partir de l'inverse de la période : Eq. \ref{eq:t} (voir valeurs : \ref{val:f0}). Grâce à la relation Eq.~\ref{eq:J}, nous trouvons le moment d'inertie du balancier $J$ = $C / \omega_0^2 = 0.0123/3.25^2 = (1.165 \pm 0.024)\cdot 10^{-3}$ [kg/m$^2$] (pour incertitudes voir sec: \ref{sec:analyse}). 
 
 \subsection{Oscillations forcées}
 
@@ -309,7 +324,7 @@ Ce qui nous donne respectivement :
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Analyse des résultats, complément}
-
+\label{sec:analyse}
 \subsection{Oscillations libres}
 
 Nous avons vu que pour la constante de torsion $C = 0.0123 \pm 0.0002$ [Nm / rad], l'incertitude est relativement basse. Les valeurs sont obtenues directement grâce à la pente de la fonction $M_r(\theta)$ (voir Fig. \ref{fig:C}).
@@ -443,7 +458,6 @@ Notons enfin que la précision des ajustements est restée limitée par le manqu
 \section{Annexes}
 
 \subsection{Annexe A : Constante de raideur}
-
 \begin{table}[H]
     \centering
     \includegraphics[scale=0.6]{tab1.png}
@@ -451,6 +465,7 @@ Notons enfin que la précision des ajustements est restée limitée par le manqu
 \end{table}
 
 \subsection{Annexe B : Libres}
+\label{annexe:b}
 
 \begin{minipage}[t]{0.46\textwidth}
     \centering
