@@ -238,12 +238,11 @@ En un second temps, après avoir monté l'installation pour mesurer les oscillat
 \end{minipage}
 \\
 \\
-La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas linéaire. Nous constatons avec fig: \ref{fig:lambda-current} que le facteurs d'amortissement est proportionnel au carré du courant. Avec l'annexe B : \ref{annexe:a}, nous pouvons extraire grâce à la relation Eq. \ref{eq:w} la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 $\pm$ 0.02 [rad/s], desquelles on extrait la moyenne des fréquences propres : $\overline{f_0} = 0.517 \pm 0.003$ [Hz] à partir de l'inverse de la période : Eq. \ref{eq:t} (voir valeurs : \ref{val:f0}). Grâce à la relation Eq.~\ref{eq:J}, nous trouvons le moment d'inertie du balancier $J$ = $C / \omega_0^2 = 0.0123/3.25^2 = (1.165 \pm 0.024)\cdot 10^{-3}$ [kg/m$^2$] (pour incertitudes voir sec: \ref{sec:analyse}). 
+La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas linéaire. Nous constatons avec fig: \ref{fig:lambda-current} que le facteurs d'amortissement est proportionnel au carré du courant. Avec l'annexe B : \ref{annexe:b}, nous pouvons extraire grâce à la relation Eq. \ref{eq:w} la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 $\pm$ 0.02 [rad/s], desquelles on extrait la moyenne des fréquences propres : $\overline{f_0} = 0.517 \pm 0.003$ [Hz] à partir de l'inverse de la période : Eq. \ref{eq:t} (voir valeurs : \ref{val:f0}). Grâce à la relation Eq.~\ref{eq:J}, nous trouvons le moment d'inertie du balancier $J$ = $C / \omega_0^2 = 0.0123/3.25^2 = (1.165 \pm 0.024)\cdot 10^{-3}$ [kg/m$^2$] (pour incertitudes voir sec: \ref{sec:analyse}). 
 
 \subsection{Oscillations forcées}
 
-En traçant la phase en fonction de la fréquence (voir \ref{fig:phase}), nous pouvons retrouver les fréquences propres $f_0$ pour les alimentations à 0.5 A en bleu et 0.9 A en rouge.
-        Les fréquences propres résultent du point d'inflexion de leurs courbes correspondantes.
+En traçant la phase en fonction de la fréquence (fig: \ref{fig:phase}), nous pouvons retrouver les fréquences propres $f_0$ via Eq. \ref{eq:t} en exploitant les liens entres les parametres de notre equation du mouvement sous forme normalisée (Eq. \ref{eq:equa_forcee_normalisee}) pour les alimentations à 0.5 A en bleu et 0.9 A en rouge.
 \\
 \noindent \begin{minipage}{0.65\textwidth}
 \vspace{0.4cm}
@@ -253,7 +252,7 @@ En traçant la phase en fonction de la fréquence (voir \ref{fig:phase}), nous p
 \end{minipage}
 \hspace{0.00005\textwidth}
 \begin{minipage}{0.4\textwidth}
-	Ci-joint (\ref{fig:phase}), les fréquences propres ont pu être obtenues à partir de la relation phase-fréquence (voir \ref{eq:phase_forcee}), sachant que la phase en fonction de la pulsation propre vaut $\pi/2$. L'ajustement nous donne :
+	Ci-joint (fig: \ref{fig:phase}), les fréquences propres ont pu être obtenues à partir de la relation phase-fréquence (voir \ref{eq:phase_forcee}), sachant que la phase en fonction de la pulsation propre vaut $\pi/2$. L'ajustement nous donne :
 	\\ \\ $f_0$(0.5A) = 0.518 \pm 0.009 [Hz].
 	\\ \\ $f_0$(0.9A) = 0.528 \pm 0.004 [Hz].
 \noindent \end{minipage}
@@ -280,8 +279,8 @@ nous obtenons en réalisant un fit à partir du modèle Eq. \ref{eq:amplitude_fo
 \\- \hspace{5cm} \textbf{$\overline{f_0}$ = 0.520 ± 0.005 [Hz].} 
 
 \vspace{0.5cm}
-À partir de la puissance relative, si nous établissons le rapport $\overline{P} / P_0$ en fonction de la fréquence sous différents courants, nous pouvons observer une courbe plus aplatie (voir \ref{fig:power9}) que le graphique à 0.5 A (voir \ref{fig:power5}).
-Ces courbes vont nous permettre d'extraire la FWHM grâce à des outils MATLAB et les facteurs de qualité $Q$ à partir de la relation Eq. \ref{eq:Q_fwhm}.
+À partir de la puissance relative, si nous établissons le rapport $\overline{P}$(f) / P($f_0$) en fonction de la fréquence sous différents courants, nous pouvons observer une courbe plus aplatie (fig: \ref{fig:power9}) que le graphique à 0.5 A (fig: \ref{fig:power5}).
+Ces courbes vont nous permettre, apres qu'on ait extrai la FWHM (ou largeur a mi-hauteur),de determiner facteurs de qualité $Q$ à partir de la relation Eq. \ref{eq:Q_fwhm}.
 \\
 \begin{minipage}[t]{0.5\textwidth}
     \centering
@@ -317,20 +316,19 @@ Ce qui nous donne respectivement :
 	\mathrm{Q}_{0.5A} = 0.521 / 0.132 = 4.0 \pm 0.1 \qquad
 	\mathrm{Q}_{0.9A} = 0.47 / 0.214 = 2.20 \pm 0.06
 \]
-
+\label{val:q}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	ANALYSE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Analyse des résultats, complément}
+\section{Analyse des résultats, compléments et discussion}
 \label{sec:analyse}
 \subsection{Oscillations libres}
 
-Nous avons vu que pour la constante de torsion $C = 0.0123 \pm 0.0002$ [Nm / rad], l'incertitude est relativement basse. Les valeurs sont obtenues directement grâce à la pente de la fonction $M_r(\theta)$ (voir Fig. \ref{fig:C}).
-
+Nous avons vu que pour la constante de torsion $C = 0.0123 \pm 0.0002$ [Nm / rad], l'incertitude est relativement basse. Cela démontre la fiabilité du modele théorique et la validité de la loi de Hook.
 \\
-
+\\
 En revanche, si l'on souhaite déterminer l'incertitude sur le moment d'inertie du balancier,
 nous pouvons calculer l'erreur sur $J$ à partir de la relation entre $C$, $J$ et la pulsation propre
 $\omega_0$ (voir Eq.~\ref{eq:J}), en utilisant la méthode des dérivées partielles :
@@ -364,10 +362,14 @@ En remplaçant par les valeurs numériques utilisées :
 = 0.0237 \times 10^{-3}\ \mathrm{kg\,m^2}
 \]
 
+Nous remarquons que l'incertitude sur le moment d'inértie est également relativement basse et nous pouvons donc conclure que les pulsations propres comme le fit qui les a extrait sont de bonne qualité. C'est aussi le cas pour les fréquences propres obtenues pour les différentes mesures de courant. A ce sujet, nous constatons que nous avons perdu beaucoup de précision le courant responsable pour le plus grand amortissement a 0.9A (voir tab: \ref{val:f0}). Nous supposons que le modéle pour l'amortissement faible devient de moins en moins fiables a mesure que nous nous approchons d'amortissements plus critiques.  
+
+Toutefois, ces mesures vérifient la validité de la théorie du moment cinétique a la base de notre équation du mouvement.
 
 \subsection{Oscillations forcées}
 
-Le facteur de qualité est donné par (Eq.~\ref{eq:Q}) et l’incertitude correspondante, obtenue par dérivées partielles, est :
+Les fréquences propres obtenues en régime forcé avec la méthode des phaseurs (Eq. \ref{eq:solution_phaseurs}) sont tres proches de celles obtenues en régime libre. Cela montre que les modeles dans les deux cas sont pertinents avec les expériences réalisées. 
+En outre, les fits réalisés sur les mesures a 0.5 et 0.9A en plotant le rapport de puissances $\overline{P}$/$P_0$ sur les figures: \ref{fig:power5} et \ref{fig:power9} montrent graphiquement qu'ils sont pas bien calqués sur les valeurs expérimentales. Cependant afin dediscuter du facteur de qualité Q, nous devons d'abord déterminer l'incertitude sur ce dernier a partir de Eq.~\ref{eq:Q}. Pour cela, nous pouvons utiliser la méthode par dérivées partielles :
 
 \[
 \frac{\partial Q}{\partial f_0} = \frac{1}{\mathrm{FWHM}},
@@ -376,7 +378,7 @@ Le facteur de qualité est donné par (Eq.~\ref{eq:Q}) et l’incertitude corres
 = -\,\frac{f_0}{\mathrm{FWHM}^2}.
 \]
 
-Ainsi,
+Ainsi a partir de cette forme générale,
 
 \[
 \sigma_Q
@@ -387,9 +389,10 @@ Ainsi,
 \left(
 \frac{f_0\,\sigma_{\mathrm{FWHM}}}{\mathrm{FWHM}^2}
 \right)^2
-}.
+},
 \]
 
+nous obtenons pour 0.5A :
 \[
 \sigma_{Q_{0.5A}}
 =
@@ -398,9 +401,10 @@ Ainsi,
 +
 \left(\frac{0.521 \cdot 0.003}{0.132^2}\right)^2
 }
-= 0.097
+= 0.097,
 \]
 
+et pour 0.9A :
 \[
 \sigma_{Q_{0.9A}}
 =
@@ -409,8 +413,10 @@ Ainsi,
 +
 \left(\frac{0.47 \cdot 0.003}{0.214^2}\right)^2
 }
-= 0.056
+= 0.056.
 \]
+
+Et comme attendu, nous constatons ci-dessus les plus grosses incertitudes des expériences réalisées sur le pendule de Pohl. Sinon, en ce qui concerne la différence entre les valeurs de Q, soit $Q\!\left(0.5A\right) > Q\!\left(0.9A\right)$  (voir val: \ref{val:q}), nous sommes en accord avec la théorie, car si nous alimentons les freins de foucaults avec plus de courants, le systeme stockera moins d'énergie. Cela, s'explique par le fait que l'énergie du moteur se dissipe par l'amortissement crée par les freins.
 
 %=====================================
 %%      CONCLUSIONS
@@ -450,7 +456,18 @@ Q_{0.9\,\mathrm{A}} = 2.20 \pm 0.06.
 
 Comme prévu pour un oscillateur harmonique forcé, l’amplitude atteint son maximum à la résonance et le déphasage s’établit alors à $-90^\circ$. 
 Notons enfin que la précision des ajustements est restée limitée par le manque de points de mesure autour du pic de résonance, ce qui laisse entrevoir des marges d’amélioration dans l’acquisition de données futures.
+\begin{thebibliography}{99}
 
+\bibitem{schemapohl}
+Gilbert Gastebois, \textit{Le pendule de Pohl},
+\\
+\texttt{https://ggastebois.fr/java/pendpohl/theorie\_pend\_pohl.pdf}
+\\
+Consulté le : 17 Novembre 2025
+
+\end{thebibliography}
+
+                          
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %	ANNEXES
@@ -547,22 +564,15 @@ Notons enfin que la précision des ajustements est restée limitée par le manqu
 \centering
 	\includegraphics[scale=0.4]{0_5A.png}
 \captionof{table}{Tableau de mesures avec incertitudes}
+	\label{tab:p5}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 	\includegraphics[scale=0.4]{0_9A.png}
 \captionof{table}{Tableau de mesures avec incertitudes}
+	\label{tab:p9}
 \end{figure}
 
 \begin{thebibliography}{99}
-
-\bibitem{schemapohl}
-Gilbert Gastebois, \textit{Le pendule de Pohl},
-\\
-\texttt{https://ggastebois.fr/java/pendpohl/theorie\_pend\_pohl.pdf}
-\\
-Consulté le : 17 Novembre 2025
-
-\end{thebibliography}
 
