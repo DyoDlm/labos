@@ -10,18 +10,16 @@ L’objectif de ce travail est de caractériser le comportement dynamique du sys
 
 En premier lieu, voici l'installation du pendule de pohl dont on peut clairement voir le balancier et le ressort spiral que l'on va manipuler durant les deux experiences.
 \\\\
-\begin{minipage}{0.43\textwidth}
-\includegraphics[width=\textwidth]{schema_pohl.png}
+\begin{figure}[ht]
+\centering
+	\includegraphics[scale=0.8]{schema_pohl.png}
 	\captionof{figure}{ Schema pohl, ref : \cite{schemapohl} }
 \label{fig:schemapohl}
-\end{minipage}
-\hspace{0.05cm}
-\begin{minipage}{0.55\textwidth}
+\end{figure}
 
-	Comme il est possible de le voir en fig:\ref{fig:schemapohl}, le dispositif est constitué d’une roue montée sur un axe et reliée à un ressort spiral, dont l’autre extrémité est fixée ou mise en mouvement par un systeme de transmission liant le balancier au moteur. La roue du balancier passe dans l’entrefer d’un frein de Foucault. Le frein permet de moduler l’amortissement en ajustant le courant mesure par un amperemetre (voir fig :\ref{samplesetup}).
-\noindent \end{minipage}
+Comme il est possible de le voir en fig:\ref{fig:schemapohl}, le dispositif est constitué d’une roue montée sur un axe et reliée à un ressort spiral, dont l’autre extrémité est fixée ou mise en mouvement par un systeme de transmission liant le balancier au moteur. La roue du balancier passe dans l’entrefer d’un frein de Foucault. Le frein permet de moduler l’amortissement en ajustant le courant mesure par un amperemetre (voir fig :\ref{samplesetup}).
 \\\\
-Le mouvement angulaire du pendule est enregistré par un encodeur connecté à l’interface Phidgets MATLAB. Cela elimine grandement les erreurs accidentelles de mesures, car les mesures sont principalement electroniques. Des indexes sur le pendule et l’excitateur permettent de mesurer la phase relative.
+	Le mouvement angulaire du pendule est enregistré par un encodeur connecté à l’interface Phidgets MATLAB. Cela elimine grandement les erreurs accidentelles de mesures, car les mesures sont principalement electroniques. Des indexes sur le pendule et l’excitateur permettent de mesurer la phase relative.
 
 \begin{figure}[ht]
 \centering
@@ -40,7 +38,7 @@ Pour les oscillations libres, le disque est dévié d’un angle initial et lâc
 \newline \\
 Pour les oscillations forcées, le moteur impose un mouvement sinusoïdal de fréquence réglable. L’amplitude et la phase de l’oscillateur sont enregistrées en fonction de la fréquence, permettant de tracer les courbes caractéristiques et d’identifier la fréquence de résonance ainsi que le facteur de qualité.
 
-
+\newpage
 \section{Partie théorique} \label{sec:theorie}
 
 \subsection{Oscillations libres d’un pendule de Pohl} \label{subsec:osc_libres}
