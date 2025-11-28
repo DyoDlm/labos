@@ -191,3 +191,49 @@ for lab in sheets.keys():
 
 print('Plots saved to labo_outputs directory (amplitude_*.png, phase_*.png, power_*.png).')
 
+def fit_f0_from_phase(df):
+    f = df["Freq_Hz"].values
+    P = df["Phase_deg"].values
+    P_err = df["Phase_err_deg"].values
+
+    # tri par fréquence
+    idx = np.argsort(f)
+    f, P, P_err = f[idx], P[idx], P_err[idx]
+
+    # modèle complet
+    def phase_model_fit(f, f0, gamma, phi0):
+        w = 2*np.pi*f
+        w0 = 2*np.pi*f0
+        return np.degrees(phi0 + np.arctan2(2*gamma*w, (w0**2 - w**2)))
+
+    # Estimation initiale
+    f0_guess = f[np.argmin(np.abs(P + 90))] if np.any(P < -90) else f[len(f)//2]
+    p0 = [f0_guess, 0.05, 0.0]
+
+    pars, cov = curve_fit(
+        phase_model_fit, f, P, p0=p0,
+        sigma=P_err, absolute_sigma=True, maxfev=3000000
+    )
+
+    f0_phase, gamma_phase, phi0 = pars
+    sigma_f0, sigma_gamma, sigma_phi0 = np.sqrt(np.diag(cov))
+
+    return {
+        "f": f,
+        "P": P,
+        "f0_phase": f0_phase,
+        "sigma_f0_phase": sigma_f0,
+        "gamma_phase": gamma_phase,
+        "sigma_gamma_phase": sigma_gamma,
+        "phi0": phi0,
+        "sigma_phi0": sigma_phi0,
+        "pars": pars,
+        "cov": cov,
+    }
+phase_result = fit_f0_from_phase(df)
+
+print("=== f0 obtenu depuis la phase ===")
+print(f"f0_phase = {phase_result['f0_phase']:.6f} ± {phase_result['sigma_f0_phase']:.6f} Hz")
+print(f"gamma_phase = {phase_result['gamma_phase']:.6f} ± {phase_result['sigma_gamma_phase']:.6f} rad/s")
+print(f"phi0 = {phase_result['phi0']:.3f} ± {phase_result['sigma_phi0']:.3f} deg")
+
