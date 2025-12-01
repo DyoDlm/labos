@@ -1,0 +1,4 @@
+2) rouge --> amorphe / premier refroidissement à -200K/min
+1) vert sapin --> première chauffe 50K/min
+4) vert kaki --> chauffe a 10K/min
+5) violet --> second refroidissemnet a -10K/min
