@@ -16,7 +16,7 @@ if [ -f "main.pdf" ] ; then
 	mv main.pdf rendu.pdf 
 fi
 
-rm $aux
+#rm $aux
 
 clear && echo "Rapport compiled"
 
@@ -26,3 +26,10 @@ else
 	echo "Something went wrong"
 	cat dbug | grep error
 fi
+
+mkdir -p tex_aux
+
+mv $aux tex_aux
+
+mv dbug tex_aux
+
