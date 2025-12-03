@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  3 DEC 2025 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  3 DEC 2025 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,15 +935,20 @@ Underfull \hbox (badness 1668) in paragraph at lines 14--18
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 14--18
-\OT1/cmr/m/n/12 de flex-ion trois points.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--18
 \OT1/cmr/m/n/12 Pour chaque fr^^Sequence,
  []
 
-<./images/Seite_graph_primitif.png, id=150, 1927.2pt x 1038.88126pt>
+
+Underfull \hbox (badness 5331) in paragraph at lines 14--18
+\OT1/cmr/m/n/12 tion de la temp^^Serature.
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 14--18
+\OT1/cmr/m/n/12 Ces r^^Sesultats com-para-t-ifs
+ []
+
+<./images/Seite_graph_primitif.png, id=151, 1927.2pt x 1038.88126pt>
 File: ./images/Seite_graph_primitif.png Graphic file (type png)
 <use ./images/Seite_graph_primitif.png>
 Package pdftex.def Info: ./images/Seite_graph_primitif.png  used on input line 
@@ -968,32 +973,34 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-\OT1/cmr/m/n/12 la po-si-tion de la tran-si-
+LaTeX Warning: Reference `sec:manipulations' on page 6 undefined on input line 
+29.
+
+
+LaTeX Warning: Reference `sec:analyse' on page 6 undefined on input line 32.
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 29--33
+\OT1/cmr/m/n/12 un fit des dif-fer-ents sets de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-\OT1/cmr/m/n/12 tion vit-reuse pour chaque
+Underfull \hbox (badness 1701) in paragraph at lines 29--33
+\OT1/cmr/m/n/12 ex-tremas lo-caux les pics de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-\OT1/cmr/m/n/12 car-act^^Seristiques sont en-
+Underfull \hbox (badness 1033) in paragraph at lines 29--33
+\OT1/cmr/m/n/12 cor-re-spon-dant etait max-i-mal.
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 29--32
-\OT1/cmr/m/n/12 suite utilis^^Sees pour con-stru-
+Underfull \hbox (badness 10000) in paragraph at lines 29--33
+\OT1/cmr/m/n/12 temp^^Seratures car-act^^Seristiques
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-\OT1/cmr/m/n/12 ire le graphe d'Arrhenius
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
+Underfull \hbox (badness 10000) in paragraph at lines 29--33
 \OT1/cmr/m/n/12 et d^^Seterminer l'^^Senergie
  []
 
@@ -1001,15 +1008,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
 pdfTeX warning: pdflatex (file ./images/Seite_Peak_analyse.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<./images/Seite_Peak_analyse.pdf, id=151, 845.07724pt x 597.55246pt>
+<./images/Seite_Peak_analyse.pdf, id=152, 845.07724pt x 597.55246pt>
 File: ./images/Seite_Peak_analyse.pdf Graphic file (type pdf)
 <use ./images/Seite_Peak_analyse.pdf>
-Package pdftex.def Info: ./images/Seite_Peak_analyse.pdf  used on input line 36
+Package pdftex.def Info: ./images/Seite_Peak_analyse.pdf  used on input line 37
 .
 (pdftex.def)             Requested size: 291.2458pt x 205.93698pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 37.
+(caption)                particular \caption on input line 38.
 See the caption package documentation for explanation.
 
 
@@ -1019,7 +1026,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 \newpage
+l.45 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1037,36 +1044,36 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 \begin{figure}[hct]
+l.49 \begin{figure}[hct]
                         
 Option `c' ignored and `p' used.
 
-<./images/fig1.png, id=186, 959.08313pt x 590.95781pt>
+<./images/fig1.png, id=187, 959.08313pt x 590.95781pt>
 File: ./images/fig1.png Graphic file (type png)
 <use ./images/fig1.png>
-Package pdftex.def Info: ./images/fig1.png  used on input line 50.
+Package pdftex.def Info: ./images/fig1.png  used on input line 51.
 (pdftex.def)             Requested size: 383.62645pt x 236.37894pt.
 
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_chauffe.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_chauffe.pdf, id=187, 845.07724pt x 597.55246pt>
+<./exp2/dsc_chauffe.pdf, id=188, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_chauffe.pdf Graphic file (type pdf)
 <use ./exp2/dsc_chauffe.pdf>
-Package pdftex.def Info: ./exp2/dsc_chauffe.pdf  used on input line 58.
+Package pdftex.def Info: ./exp2/dsc_chauffe.pdf  used on input line 59.
 (pdftex.def)             Requested size: 234.8775pt x 166.08263pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 59.
+(caption)                particular \caption on input line 60.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--68
+Underfull \hbox (badness 10000) in paragraph at lines 66--69
 []\OT1/cmr/m/n/12 BLBBLBAAAA AAAAAAA AA
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--68
+Underfull \hbox (badness 10000) in paragraph at lines 66--69
 \OT1/cmr/m/n/12 AAAAAAAAAA, sk-fvnl-snvf,sljvj
  []
 
@@ -1074,23 +1081,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_amorphe.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_amorphe.pdf, id=188, 845.07724pt x 597.55246pt>
+<./exp2/dsc_amorphe.pdf, id=189, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_amorphe.pdf Graphic file (type pdf)
 <use ./exp2/dsc_amorphe.pdf>
-Package pdftex.def Info: ./exp2/dsc_amorphe.pdf  used on input line 74.
+Package pdftex.def Info: ./exp2/dsc_amorphe.pdf  used on input line 75.
 (pdftex.def)             Requested size: 211.38832pt x 149.4698pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 75.
+(caption)                particular \caption on input line 76.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 []\OT1/cmr/m/n/12 BLBBLBAAAA AAAAAAA AA
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 \OT1/cmr/m/n/12 AAAAAAAAAA, sk-fvnl-snvf,sljvj
  []
 
@@ -1098,24 +1105,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_cristallisation_chaude.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_cristallisation_chaude.pdf, id=222, 845.07724pt x 597.55246pt>
+<./exp2/dsc_cristallisation_chaude.pdf, id=223, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_cristallisation_chaude.pdf Graphic file (type pdf)
 <use ./exp2/dsc_cristallisation_chaude.pdf>
 Package pdftex.def Info: ./exp2/dsc_cristallisation_chaude.pdf  used on input l
-ine 87.
+ine 88.
 (pdftex.def)             Requested size: 211.38832pt x 149.4698pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 88.
+(caption)                particular \caption on input line 89.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 []\OT1/cmr/m/n/12 BLBBLBAAAA AAAAAAA AA
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 \OT1/cmr/m/n/12 AAAAAAAAAA, sk-fvnl-snvf,sljvj
  []
 
@@ -1123,24 +1130,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_cristallisation_froide.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_cristallisation_froide.pdf, id=223, 845.07724pt x 597.55246pt>
+<./exp2/dsc_cristallisation_froide.pdf, id=224, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_cristallisation_froide.pdf Graphic file (type pdf)
 <use ./exp2/dsc_cristallisation_froide.pdf>
 Package pdftex.def Info: ./exp2/dsc_cristallisation_froide.pdf  used on input l
-ine 100.
+ine 101.
 (pdftex.def)             Requested size: 211.38832pt x 149.4698pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 101.
+(caption)                particular \caption on input line 102.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 []\OT1/cmr/m/n/12 BLBBLBAAAA AAAAAAA AA
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 \OT1/cmr/m/n/12 AAAAAAAAAA, sk-fvnl-snvf,sljvj
  []
 
@@ -1176,7 +1183,7 @@ Option `c' ignored and `p' used.
 
 pdfTeX warning: pdflatex (file ./images/Seite_arrhenius_graph.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./images/Seite_arrhenius_graph.pdf, id=307, 845.07724pt x 597.55246pt>
+<./images/Seite_arrhenius_graph.pdf, id=308, 845.07724pt x 597.55246pt>
 File: ./images/Seite_arrhenius_graph.pdf Graphic file (type pdf)
 <use ./images/Seite_arrhenius_graph.pdf>
 Package pdftex.def Info: ./images/Seite_arrhenius_graph.pdf  used on input line
@@ -1205,7 +1212,7 @@ Option `c' ignored and `p' used.
 
 pdfTeX warning: pdflatex (file ./images/combined.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<./images/combined.pdf, id=342, 845.07724pt x 597.55246pt>
+<./images/combined.pdf, id=343, 845.07724pt x 597.55246pt>
 File: ./images/combined.pdf Graphic file (type pdf)
 <use ./images/combined.pdf>
 Package pdftex.def Info: ./images/combined.pdf  used on input line 47.
@@ -1348,10 +1355,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: CE33E33365E16E7ED88A69B272FB65D3;2424.
  ) 
 Here is how much of TeX's memory you used:
- 15114 strings out of 474222
- 246312 string characters out of 5748733
+ 15116 strings out of 474222
+ 246344 string characters out of 5748733
  1934975 words of memory out of 5000000
- 37034 multiletter control sequences out of 15000+600000
+ 37036 multiletter control sequences out of 15000+600000
  565750 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,117p,688b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1371,10 +1378,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (12 pages, 2571693 bytes).
+Output written on main.pdf (12 pages, 2571981 bytes).
 PDF statistics:
- 475 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
+ 476 PDF objects out of 1000 (max. 8388607)
+ 368 compressed objects within 4 object streams
  57 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
