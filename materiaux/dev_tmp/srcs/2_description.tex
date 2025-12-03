@@ -29,9 +29,11 @@ DECRIRE PLUS ?
 
 Pour les manipulations d'un echantillon de PET, nous utilisons donc la technique DSC grace a la machine X’Press DSC 214 Polyma' egalement du fournisseur NETZSCH qui lui meme decrit sa cellule DSC tel que :
 \\
-"composee d'un four et d'un capteur intégré avec des positions désignées pour les bacs d'échantillonnage et de référence" (Ref. \cite{DSC}). \\
+"composee d'un four et d'un capteur intégré avec des positions désignées pour les bacs d'échantillonnage et de référence" (Ref. \cite{DSC}),
+\\\\
+que l'on peut voir sur sur la figure suivante : 
+\\
 
-Nous pouvons s'il
 \begin{figure}[ht]
 \centering
         \includegraphics[scale=0.6]{schema_pohl.png}
@@ -39,88 +41,8 @@ Nous pouvons s'il
 \label{fig:schemapohl}
 \end{figure}
 
+%	PREPARER L'ECHANTILLONS
+Il est important de sceller les capsules par pression afin d'elimine le plus d'impuretees apres d'avoir decoupe en petites rondelles un film plastique en PET et l'avoir depose dans les lit d'echantillon de la machine (le tout avec des gants evidemment).
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Préparation et mise en route :
-
-Allumer les contrôleurs électroniques, l’unité de refroidissement (chiller) et ouvrir le flux d’azote (0.5 bar).
-
-Lancer le logiciel DMA et ouvrir le fichier de paramètres « Labo MT2-v2024 ».
-
-Définition des paramètres de mesure :
-
-Mode « Standard », configuration 3-points bending.
-
-Fréquences de mesure : typiquement 1, 2, 5, 10, 20 Hz.
-
-
-Installation de l’échantillon :
-
-Descendre puis décaler le four.
-
-Régler l’offset sans échantillon.
-
-Placer l’échantillon (PMMA) sur les appuis du montage 3-points et approcher la sonde.
-
-Refermer le four et lancer la mesure.
-
-Acquisition et traitement :
-
-Suivre l’évolution de E’, E’’ et tan δ en fonction de la température pour chaque fréquence.
-
-À partir du pic de tan δ, déterminer les températures caractéristiques.
-
-Tracer le graphe d’Arrhenius et calculer l’énergie d’activation (exp1, p.23).
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-3.2. Manipulations DSC
-
-Basé sur exp2, parties 3 et 4.
-
-Préparation de l’échantillon :
-
-Découper une rondelle de PET à l’emporte-pièce.
-
-Peser séparément : l’échantillon, la capsule et le couvercle servant de creuset, ainsi que la capsule de référence (exp2, p.6).
-
-Sceller les capsules par pression (« cold welding »).
-
-Installation dans l’instrument :
-
-Ouvrir la cellule de la DSC et déposer :
-
-capsule de référence à gauche,
-
-capsule contenant l’échantillon à droite, en s’assurant d’un bon centrage (exp2, p.7).
-
-Refermer les couvercles du four.
-
-Ouvrir le flux d’azote (0.5 mbar).
-
-Configuration de la mesure :
-
-Ouvrir le fichier PET_training_01 contenant les rampes prédéfinies.
-
-Saisir la masse de l’échantillon et du creuset (exp2, p.9).
-
-Rampe typique :
-
-chauffage jusqu’à ~300 °C,
-
-refroidissement rapide,
-
-second cycle de chauffage à vitesse réduite pour améliorer la résolution (exp2, p.10).
-
-Acquisition et analyse :
-
-Enregistrer le signal DSC (flux de chaleur) en fonction de la température.
-
-À l’aide du logiciel Proteus 80 :
-
-identifier Tg, Tfroid, Tfus, Tchaude (exp2, p.14),
-
-intégrer les pics pour obtenir les chaleurs latentes,
-
-calculer le taux de cristallinité.

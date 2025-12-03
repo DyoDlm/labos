@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  3 DEC 2025 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  3 DEC 2025 21:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -758,12 +758,17 @@ or  <return>  to continue without it.
 
 
  <./images/DMAexample.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 30--33
+Underfull \hbox (badness 10000) in paragraph at lines 30--36
 
  []
 
 
-LaTeX Warning: File `schema_pohl.png' not found on input line 37.
+Underfull \hbox (badness 10000) in paragraph at lines 30--36
+
+ []
+
+
+LaTeX Warning: File `schema_pohl.png' not found on input line 39.
 
 
 ! Package pdftex.def Error: File `schema_pohl.png' not found: using draft setti
@@ -773,162 +778,18 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...ncludegraphics[scale=0.6]{schema_pohl.png}
+l.39 ...ncludegraphics[scale=0.6]{schema_pohl.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation `schemapohl' on page 4 undefined on input line 38.
+LaTeX Warning: Citation `schemapohl' on page 4 undefined on input line 40.
 
 
-LaTeX Warning: Citation `schemapohl' on page 4 undefined on input line 38.
+LaTeX Warning: Citation `schemapohl' on page 4 undefined on input line 40.
 
-
-! LaTeX Error: Command \guillemetleft unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 ...DMA et ouvrir le fichier de paramètres «
-                                                   Labo MT2-v2024 ».
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \guillemetright unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 ...ichier de paramètres « Labo MT2-v2024 »
-                                                  .
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \guillemetleft unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 Mode «
-             Standard », configuration 3-points bending.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \guillemetright unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 Mode « Standard »
-                        , configuration 3-points bending.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Unicode character δ (U+03B4)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 ... l’évolution de E’, E’’ et tan δ
-                                                   en fonction de la tempér...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character δ (U+03B4)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 À partir du pic de tan δ
-                               , déterminer les températures caractéristi...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Command \guillemetleft unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 Sceller les capsules par pression («
-                                           cold welding »).
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \guillemetright unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 ... capsules par pression (« cold welding »
-                                                  ).
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.104 Ouvrir le fichier PET_
-                            training_01 contenant les rampes prédéfinies.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 104.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.104 ...PET_training_01 contenant les rampes pré
-                                                  définies.
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 104.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.104 ..._training_01 contenant les rampes prédé
-                                                  finies.
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.105 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
- [4]) [5{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+) [4]
 \openout2 = `./srcs/3_theorie.aux'.
 
  (./srcs/3_theorie.tex
@@ -1074,11 +935,11 @@ mr/m/n/12 en fonc-tion de $1\OML/cmm/m/it/12 =T[]\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 f\OT1/cmr/m/n/12 )$ per-met d'extraire l'^^Senergie d'activation
  []
 
- [6
+ [5
 
 
 
-]) [7]
+]) [6]
 \openout2 = `./srcs/4_resultats.aux'.
 
  (./srcs/4_resultats.tex
@@ -1106,7 +967,7 @@ Underfull \hbox (badness 2269) in paragraph at lines 14--18
 \OT1/cmr/m/n/12 Ces r^^Sesultats com-para-t-ifs
  []
 
-<./images/Seite_graph_primitif.png, id=182, 1927.2pt x 1038.88126pt>
+<./images/Seite_graph_primitif.png, id=176, 1927.2pt x 1038.88126pt>
 File: ./images/Seite_graph_primitif.png Graphic file (type png)
 <use ./images/Seite_graph_primitif.png>
 Package pdftex.def Info: ./images/Seite_graph_primitif.png  used on input line 
@@ -1159,7 +1020,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--33
 
 pdfTeX warning: pdflatex (file ./images/Seite_Peak_analyse.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<./images/Seite_Peak_analyse.pdf, id=185, 845.07724pt x 597.55246pt>
+<./images/Seite_Peak_analyse.pdf, id=179, 845.07724pt x 597.55246pt>
 File: ./images/Seite_Peak_analyse.pdf Graphic file (type pdf)
 <use ./images/Seite_Peak_analyse.pdf>
 Package pdftex.def Info: ./images/Seite_Peak_analyse.pdf  used on input line 37
@@ -1183,15 +1044,16 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- [8
+ [7
 
 
 
- <./images/Seite_graph_primitif.png> <./images/Seite_Peak_analyse.pdf>]
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./images/Seite_gr
+aph_primitif.png> <./images/Seite_Peak_analyse.pdf>]
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_chauffe.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_chauffe.pdf, id=218, 845.07724pt x 597.55246pt>
+<./exp2/dsc_chauffe.pdf, id=214, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_chauffe.pdf Graphic file (type pdf)
 <use ./exp2/dsc_chauffe.pdf>
 Package pdftex.def Info: ./exp2/dsc_chauffe.pdf  used on input line 55.
@@ -1205,7 +1067,7 @@ See the caption package documentation for explanation.
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_amorphe.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_amorphe.pdf, id=219, 845.07724pt x 597.55246pt>
+<./exp2/dsc_amorphe.pdf, id=215, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_amorphe.pdf Graphic file (type pdf)
 <use ./exp2/dsc_amorphe.pdf>
 Package pdftex.def Info: ./exp2/dsc_amorphe.pdf  used on input line 61.
@@ -1246,7 +1108,7 @@ or  <return>  to continue without it.
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_cristallisation_chaude.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_cristallisation_chaude.pdf, id=222, 845.07724pt x 597.55246pt>
+<./exp2/dsc_cristallisation_chaude.pdf, id=218, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_cristallisation_chaude.pdf Graphic file (type pdf)
 <use ./exp2/dsc_cristallisation_chaude.pdf>
 Package pdftex.def Info: ./exp2/dsc_cristallisation_chaude.pdf  used on input l
@@ -1261,7 +1123,7 @@ See the caption package documentation for explanation.
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_cristallisation_froide.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_cristallisation_froide.pdf, id=223, 845.07724pt x 597.55246pt>
+<./exp2/dsc_cristallisation_froide.pdf, id=219, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_cristallisation_froide.pdf Graphic file (type pdf)
 <use ./exp2/dsc_cristallisation_froide.pdf>
 Package pdftex.def Info: ./exp2/dsc_cristallisation_froide.pdf  used on input l
@@ -1298,17 +1160,17 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [9 <./exp2/dsc_chauffe.pdf> <./exp2/dsc_amorphe.pdf> <./exp2/dsc_cristallisat
+) [8 <./exp2/dsc_chauffe.pdf> <./exp2/dsc_amorphe.pdf> <./exp2/dsc_cristallisat
 ion_chaude.pdf> <./exp2/dsc_cristallisation_froide.pdf>]
 \openout2 = `./srcs/5_analyse.aux'.
 
  (./srcs/5_analyse.tex
 
-LaTeX Warning: Reference `fig:DMAresultats' on page 10 undefined on input line 
-6.
+LaTeX Warning: Reference `fig:DMAresultats' on page 9 undefined on input line 6
+.
 
 
-LaTeX Warning: Reference `fig:DMApeaks' on page 10 undefined on input line 31.
+LaTeX Warning: Reference `fig:DMApeaks' on page 9 undefined on input line 31.
 
 
 ! LaTeX Error: Unknown float option `c'.
@@ -1325,7 +1187,7 @@ Option `c' ignored and `p' used.
 
 pdfTeX warning: pdflatex (file ./images/Seite_arrhenius_graph.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./images/Seite_arrhenius_graph.pdf, id=337, 845.07724pt x 597.55246pt>
+<./images/Seite_arrhenius_graph.pdf, id=333, 845.07724pt x 597.55246pt>
 File: ./images/Seite_arrhenius_graph.pdf Graphic file (type pdf)
 <use ./images/Seite_arrhenius_graph.pdf>
 Package pdftex.def Info: ./images/Seite_arrhenius_graph.pdf  used on input line
@@ -1379,7 +1241,7 @@ l.42 \]
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
- [10
+ [9
 
 
 
@@ -1389,7 +1251,7 @@ Package caption Warning: \label without proper reference on input line 52.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:combined' on page 11 undefined on input line 47.
+LaTeX Warning: Reference `fig:combined' on page 10 undefined on input line 47.
 
 
 ! LaTeX Error: Unknown float option `c'.
@@ -1406,7 +1268,7 @@ Option `c' ignored and `p' used.
 
 pdfTeX warning: pdflatex (file ./images/combined.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<./images/combined.pdf, id=374, 845.07724pt x 597.55246pt>
+<./images/combined.pdf, id=370, 845.07724pt x 597.55246pt>
 File: ./images/combined.pdf Graphic file (type pdf)
 <use ./images/combined.pdf>
 Package pdftex.def Info: ./images/combined.pdf  used on input line 51.
@@ -1430,7 +1292,7 @@ Package caption Warning: \label without proper reference on input line 52.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:combined' on page 11 undefined on input line 57.
+LaTeX Warning: Reference `fig:combined' on page 10 undefined on input line 57.
 
 ! Double subscript.
 <argument> $V_v_
@@ -1458,7 +1320,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--90
 
  []
 
-) [11 <./images/combined.pdf>]
+) [10 <./images/combined.pdf>]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -1532,7 +1394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--138
 o MT2 -
  []
 
- [12
+ [11
 
 
 ]
@@ -1555,12 +1417,12 @@ l.14 \begin{figure}[hct]
                         
 Option `c' ignored and `p' used.
 
-<./images/fig1.png, id=420, 959.08313pt x 590.95781pt>
+<./images/fig1.png, id=416, 959.08313pt x 590.95781pt>
 File: ./images/fig1.png Graphic file (type png)
 <use ./images/fig1.png>
 Package pdftex.def Info: ./images/fig1.png  used on input line 16.
 (pdftex.def)             Requested size: 316.49841pt x 195.01668pt.
-) [13
+) [12
 
  <./images/fig1.png>] (./main.aux (./srcs/1_intro.aux) (./srcs/2_description.au
 x) (./srcs/3_theorie.aux) (./srcs/4_resultats.aux) (./srcs/5_analyse.aux) (./sr
@@ -1576,10 +1438,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A8EF01ED4A89DF5D8472641A5304A223;2651.
  ) 
 Here is how much of TeX's memory you used:
- 15142 strings out of 474222
- 246877 string characters out of 5748733
+ 15136 strings out of 474222
+ 246796 string characters out of 5748733
  1934975 words of memory out of 5000000
- 37054 multiletter control sequences out of 15000+600000
+ 37049 multiletter control sequences out of 15000+600000
  565750 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,117p,665b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1599,10 +1461,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (13 pages, 2624036 bytes).
+Output written on main.pdf (12 pages, 2621578 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
- 65 named destinations out of 1000 (max. 500000)
+ 513 PDF objects out of 1000 (max. 8388607)
+ 402 compressed objects within 5 object streams
+ 64 named destinations out of 1000 (max. 500000)
  192 words of extra memory for PDF output out of 10000 (max. 10000000)
 
