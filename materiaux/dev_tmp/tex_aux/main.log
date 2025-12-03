@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  3 DEC 2025 19:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  3 DEC 2025 19:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -517,25 +517,11 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package hyperref Info: Option `colorlinks' set `true' on input line 24.
  (./main.aux
 (./srcs/1_intro.aux) (./srcs/2_description.aux) (./srcs/3_theorie.aux)
-(./srcs/4_resultats.aux
-
-LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
-
-
-LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
-
-
-LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
-
-) (./srcs/5_analyse.aux
+(./srcs/4_resultats.aux) (./srcs/5_analyse.aux
 
 LaTeX Warning: Label `fig:arrenius' multiply defined.
 
-) (./srcs/annexes.aux
-
-LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
-
-))
+) (./srcs/annexes.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -556,7 +542,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count331
 \scratchdimen=\dimen193
@@ -1068,22 +1055,12 @@ F version <1.7>, but at most version <1.5> allowed
 <./exp2/dsc_chauffe.pdf, id=200, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_chauffe.pdf Graphic file (type pdf)
 <use ./exp2/dsc_chauffe.pdf>
-Package pdftex.def Info: ./exp2/dsc_chauffe.pdf  used on input line 52.
-(pdftex.def)             Requested size: 234.8775pt x 166.08263pt.
+Package pdftex.def Info: ./exp2/dsc_chauffe.pdf  used on input line 55.
+(pdftex.def)             Requested size: 230.18253pt x 162.7637pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 53.
+(caption)                particular \caption on input line 56.
 See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-[]\OT1/cmr/m/n/12 BLBBLBAAAA AAAAAAA AA
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-\OT1/cmr/m/n/12 AAAAAAAAAA, sk-fvnl-snvf,sljvj
- []
 
 
 
@@ -1092,91 +1069,86 @@ F version <1.7>, but at most version <1.5> allowed
 <./exp2/dsc_amorphe.pdf, id=201, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_amorphe.pdf Graphic file (type pdf)
 <use ./exp2/dsc_amorphe.pdf>
-Package pdftex.def Info: ./exp2/dsc_amorphe.pdf  used on input line 68.
-(pdftex.def)             Requested size: 211.38832pt x 149.4698pt.
+Package pdftex.def Info: ./exp2/dsc_amorphe.pdf  used on input line 61.
+(pdftex.def)             Requested size: 230.18253pt x 162.7637pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 69.
+(caption)                particular \caption on input line 62.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
-[]\OT1/cmr/m/n/12 BLBBLBAAAA AAAAAAA AA
- []
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \\\\
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
-\OT1/cmr/m/n/12 AAAAAAAAAA, sk-fvnl-snvf,sljvj
- []
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 N
+      eanmoins, le comportement de l'echantillon change fortement quand nous...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_cristallisation_chaude.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_cristallisation_chaude.pdf, id=202, 845.07724pt x 597.55246pt>
+<./exp2/dsc_cristallisation_chaude.pdf, id=204, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_cristallisation_chaude.pdf Graphic file (type pdf)
 <use ./exp2/dsc_cristallisation_chaude.pdf>
 Package pdftex.def Info: ./exp2/dsc_cristallisation_chaude.pdf  used on input l
-ine 81.
-(pdftex.def)             Requested size: 211.38832pt x 149.4698pt.
+ine 71.
+(pdftex.def)             Requested size: 230.18253pt x 162.7637pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 82.
+(caption)                particular \caption on input line 72.
 See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
-[]\OT1/cmr/m/n/12 BLBBLBAAAA AAAAAAA AA
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
-\OT1/cmr/m/n/12 AAAAAAAAAA, sk-fvnl-snvf,sljvj
- []
 
 
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_cristallisation_froide.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_cristallisation_froide.pdf, id=203, 845.07724pt x 597.55246pt>
+<./exp2/dsc_cristallisation_froide.pdf, id=205, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_cristallisation_froide.pdf Graphic file (type pdf)
 <use ./exp2/dsc_cristallisation_froide.pdf>
 Package pdftex.def Info: ./exp2/dsc_cristallisation_froide.pdf  used on input l
-ine 94.
-(pdftex.def)             Requested size: 211.38832pt x 149.4698pt.
+ine 77.
+(pdftex.def)             Requested size: 230.18253pt x 162.7637pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 95.
+(caption)                particular \caption on input line 78.
 See the caption package documentation for explanation.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--103
-[]\OT1/cmr/m/n/12 BLBBLBAAAA AAAAAAA AA
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--103
-\OT1/cmr/m/n/12 AAAAAAAAAA, sk-fvnl-snvf,sljvj
- []
-
 ) [8 <./exp2/dsc_chauffe.pdf> <./exp2/dsc_amorphe.pdf> <./exp2/dsc_cristallisat
-ion_chaude.pdf>] [9 <./exp2/dsc_cristallisation_froide.pdf>]
+ion_chaude.pdf> <./exp2/dsc_cristallisation_froide.pdf>]
 \openout2 = `./srcs/5_analyse.aux'.
 
  (./srcs/5_analyse.tex
 
-LaTeX Warning: Reference `sec:DMAresults' on page 10 undefined on input line 6.
+LaTeX Warning: Reference `sec:DMAresults' on page 9 undefined on input line 6.
 
 
-
-LaTeX Warning: Reference `fig:DMAresults' on page 10 undefined on input line 6.
-
+LaTeX Warning: Reference `fig:DMAresults' on page 9 undefined on input line 6.
 
 
-LaTeX Warning: Reference `fig:DMApeaks' on page 10 undefined on input line 31.
+LaTeX Warning: Reference `fig:DMApeaks' on page 9 undefined on input line 31.
 
 
-LaTeX Warning: Reference `annexe:peaks' on page 10 undefined on input line 31.
+LaTeX Warning: Reference `annexe:peaks' on page 9 undefined on input line 31.
 
 
 ! LaTeX Error: Unknown float option `c'.
@@ -1193,19 +1165,19 @@ Option `c' ignored and `p' used.
 
 pdfTeX warning: pdflatex (file ./images/Seite_arrhenius_graph.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./images/Seite_arrhenius_graph.pdf, id=317, 845.07724pt x 597.55246pt>
+<./images/Seite_arrhenius_graph.pdf, id=315, 845.07724pt x 597.55246pt>
 File: ./images/Seite_arrhenius_graph.pdf Graphic file (type pdf)
 <use ./images/Seite_arrhenius_graph.pdf>
 Package pdftex.def Info: ./images/Seite_arrhenius_graph.pdf  used on input line
  35.
 (pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
- [10
+ [9
 
 
 
  <./images/Seite_arrhenius_graph.pdf>]
 
-LaTeX Warning: Reference `fig:combined' on page 11 undefined on input line 44.
+LaTeX Warning: Reference `fig:combined' on page 10 undefined on input line 44.
 
 
 ! LaTeX Error: Unknown float option `c'.
@@ -1222,7 +1194,7 @@ Option `c' ignored and `p' used.
 
 pdfTeX warning: pdflatex (file ./images/combined.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<./images/combined.pdf, id=352, 845.07724pt x 597.55246pt>
+<./images/combined.pdf, id=350, 845.07724pt x 597.55246pt>
 File: ./images/combined.pdf Graphic file (type pdf)
 <use ./images/combined.pdf>
 Package pdftex.def Info: ./images/combined.pdf  used on input line 48.
@@ -1261,7 +1233,7 @@ l.75 ...$T_v$: Temperature de transition vitreuse}
                                                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-) [11 <./images/combined.pdf>]
+) [10 <./images/combined.pdf>]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -1335,7 +1307,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--138
 o MT2 -
  []
 
- [12
+ [11
 
 
 ]
@@ -1358,16 +1330,16 @@ l.14 \begin{figure}[hct]
                         
 Option `c' ignored and `p' used.
 
-<./images/fig1.png, id=392, 959.08313pt x 590.95781pt>
+<./images/fig1.png, id=390, 959.08313pt x 590.95781pt>
 File: ./images/fig1.png Graphic file (type png)
 <use ./images/fig1.png>
 Package pdftex.def Info: ./images/fig1.png  used on input line 16.
-(pdftex.def)             Requested size: 383.62645pt x 236.37894pt.
-) [13
+(pdftex.def)             Requested size: 316.49841pt x 195.01668pt.
+) [12
 
-] [14 <./images/fig1.png>] (./main.aux (./srcs/1_intro.aux) (./srcs/2_descripti
-on.aux) (./srcs/3_theorie.aux) (./srcs/4_resultats.aux) (./srcs/5_analyse.aux) 
-(./srcs/annexes.aux))
+ <./images/fig1.png>] (./main.aux (./srcs/1_intro.aux) (./srcs/2_description.au
+x) (./srcs/3_theorie.aux) (./srcs/4_resultats.aux) (./srcs/5_analyse.aux) (./sr
+cs/annexes.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1382,10 +1354,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A6F165EBF8E57926C1560E8707AB8D31;2495.
  ) 
 Here is how much of TeX's memory you used:
- 15128 strings out of 474222
- 246612 string characters out of 5748733
+ 15130 strings out of 474222
+ 246654 string characters out of 5748733
  1934975 words of memory out of 5000000
- 37046 multiletter control sequences out of 15000+600000
+ 37050 multiletter control sequences out of 15000+600000
  565750 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,117p,661b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1405,10 +1377,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (14 pages, 2614690 bytes).
+Output written on main.pdf (12 pages, 2615060 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
- 381 compressed objects within 4 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 57 named destinations out of 1000 (max. 500000)
  192 words of extra memory for PDF output out of 10000 (max. 10000000)
 

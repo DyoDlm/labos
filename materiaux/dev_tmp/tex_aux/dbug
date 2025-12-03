@@ -204,25 +204,12 @@ For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty)) (./main.aux
 (./srcs/1_intro.aux) (./srcs/2_description.aux) (./srcs/3_theorie.aux)
-(./srcs/4_resultats.aux
-
-LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
-
-
-LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
-
-
-LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
-
-) (./srcs/5_analyse.aux
+(./srcs/4_resultats.aux) (./srcs/5_analyse.aux
 
 LaTeX Warning: Label `fig:arrenius' multiply defined.
 
-) (./srcs/annexes.aux
-
-LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
-
-)) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+) (./srcs/annexes.aux))
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
