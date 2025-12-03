@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  3 DEC 2025 18:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  3 DEC 2025 19:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,11 +516,8 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ))
 Package hyperref Info: Option `colorlinks' set `true' on input line 24.
  (./main.aux
-(./srcs/1_intro.aux) (./srcs/2_description.aux
-
-LaTeX Warning: Label `fig:schemapohl' multiply defined.
-
-) (./srcs/3_theorie.aux) (./srcs/4_resultats.aux
+(./srcs/1_intro.aux) (./srcs/2_description.aux) (./srcs/3_theorie.aux)
+(./srcs/4_resultats.aux
 
 LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
 
@@ -715,35 +712,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--45
 \openout2 = `./srcs/2_description.aux'.
 
  (./srcs/2_description.tex
-
-LaTeX Warning: File `schema_pohl.png' not found on input line 12.
-
-
-! Package pdftex.def Error: File `schema_pohl.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 	\includegraphics[scale=0.6]{schema_pohl.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Citation `schemapohl' on page 3 undefined on input line 13.
-
-
-LaTeX Warning: Citation `schemapohl' on page 3 undefined on input line 13.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
 
 
-LaTeX Warning: File `schema_pohl.png' not found on input line 26.
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+<./images/DMAexample.png, id=123, 578.16pt x 361.35pt>
+File: ./images/DMAexample.png Graphic file (type png)
+<use ./images/DMAexample.png>
+Package pdftex.def Info: ./images/DMAexample.png  used on input line 16.
+(pdftex.def)             Requested size: 291.2458pt x 182.02542pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 17.
+See the caption package documentation for explanation.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \\\\
+         \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \\\\\\
+           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 D
+      ECRIRE PLUS ?
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ [3
+
+
+
+ <./images/DMAexample.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
+
+ []
+
+
+LaTeX Warning: File `schema_pohl.png' not found on input line 37.
 
 
 ! Package pdftex.def Error: File `schema_pohl.png' not found: using draft setti
@@ -753,16 +790,16 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 ...ncludegraphics[scale=0.6]{schema_pohl.png}
+l.37 ...ncludegraphics[scale=0.6]{schema_pohl.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation `schemapohl' on page 3 undefined on input line 27.
+LaTeX Warning: Citation `schemapohl' on page 4 undefined on input line 38.
 
 
-LaTeX Warning: Citation `schemapohl' on page 3 undefined on input line 27.
+LaTeX Warning: Citation `schemapohl' on page 4 undefined on input line 38.
 
 
 ! LaTeX Error: Command \guillemetleft unavailable in encoding OT1.
@@ -771,7 +808,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 ...DMA et ouvrir le fichier de paramètres «
+l.49 ...DMA et ouvrir le fichier de paramètres «
                                                    Labo MT2-v2024 ».
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -784,7 +821,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 ...ichier de paramètres « Labo MT2-v2024 »
+l.49 ...ichier de paramètres « Labo MT2-v2024 »
                                                   .
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -797,7 +834,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 Mode «
+l.53 Mode «
              Standard », configuration 3-points bending.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -810,17 +847,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 Mode « Standard »
+l.53 Mode « Standard »
                         , configuration 3-points bending.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- [3
-
-
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 ! LaTeX Error: Unicode character δ (U+03B4)
                not set up for use with LaTeX.
@@ -913,10 +945,10 @@ l.105
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [4]
+ [4]) [5{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 \openout2 = `./srcs/3_theorie.aux'.
 
- (./srcs/3_theorie.tex) [5
+ (./srcs/3_theorie.tex) [6
 
 
 
@@ -948,7 +980,7 @@ Underfull \hbox (badness 2269) in paragraph at lines 14--18
 \OT1/cmr/m/n/12 Ces r^^Sesultats com-para-t-ifs
  []
 
-<./images/Seite_graph_primitif.png, id=151, 1927.2pt x 1038.88126pt>
+<./images/Seite_graph_primitif.png, id=163, 1927.2pt x 1038.88126pt>
 File: ./images/Seite_graph_primitif.png Graphic file (type png)
 <use ./images/Seite_graph_primitif.png>
 Package pdftex.def Info: ./images/Seite_graph_primitif.png  used on input line 
@@ -1001,7 +1033,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--33
 
 pdfTeX warning: pdflatex (file ./images/Seite_Peak_analyse.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<./images/Seite_Peak_analyse.pdf, id=154, 845.07724pt x 597.55246pt>
+<./images/Seite_Peak_analyse.pdf, id=166, 845.07724pt x 597.55246pt>
 File: ./images/Seite_Peak_analyse.pdf Graphic file (type pdf)
 <use ./images/Seite_Peak_analyse.pdf>
 Package pdftex.def Info: ./images/Seite_Peak_analyse.pdf  used on input line 37
@@ -1025,7 +1057,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- [6
+ [7
 
 
 
@@ -1033,7 +1065,7 @@ or  <return>  to continue without it.
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_chauffe.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_chauffe.pdf, id=189, 845.07724pt x 597.55246pt>
+<./exp2/dsc_chauffe.pdf, id=200, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_chauffe.pdf Graphic file (type pdf)
 <use ./exp2/dsc_chauffe.pdf>
 Package pdftex.def Info: ./exp2/dsc_chauffe.pdf  used on input line 52.
@@ -1057,7 +1089,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_amorphe.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_amorphe.pdf, id=190, 845.07724pt x 597.55246pt>
+<./exp2/dsc_amorphe.pdf, id=201, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_amorphe.pdf Graphic file (type pdf)
 <use ./exp2/dsc_amorphe.pdf>
 Package pdftex.def Info: ./exp2/dsc_amorphe.pdf  used on input line 68.
@@ -1081,7 +1113,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_cristallisation_chaude.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_cristallisation_chaude.pdf, id=191, 845.07724pt x 597.55246pt>
+<./exp2/dsc_cristallisation_chaude.pdf, id=202, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_cristallisation_chaude.pdf Graphic file (type pdf)
 <use ./exp2/dsc_cristallisation_chaude.pdf>
 Package pdftex.def Info: ./exp2/dsc_cristallisation_chaude.pdf  used on input l
@@ -1106,7 +1138,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--90
 
 pdfTeX warning: pdflatex (file ./exp2/dsc_cristallisation_froide.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./exp2/dsc_cristallisation_froide.pdf, id=192, 845.07724pt x 597.55246pt>
+<./exp2/dsc_cristallisation_froide.pdf, id=203, 845.07724pt x 597.55246pt>
 File: ./exp2/dsc_cristallisation_froide.pdf Graphic file (type pdf)
 <use ./exp2/dsc_cristallisation_froide.pdf>
 Package pdftex.def Info: ./exp2/dsc_cristallisation_froide.pdf  used on input l
@@ -1127,22 +1159,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--103
 \OT1/cmr/m/n/12 AAAAAAAAAA, sk-fvnl-snvf,sljvj
  []
 
-) [7 <./exp2/dsc_chauffe.pdf> <./exp2/dsc_amorphe.pdf> <./exp2/dsc_cristallisat
-ion_chaude.pdf>] [8 <./exp2/dsc_cristallisation_froide.pdf>]
+) [8 <./exp2/dsc_chauffe.pdf> <./exp2/dsc_amorphe.pdf> <./exp2/dsc_cristallisat
+ion_chaude.pdf>] [9 <./exp2/dsc_cristallisation_froide.pdf>]
 \openout2 = `./srcs/5_analyse.aux'.
 
  (./srcs/5_analyse.tex
 
-LaTeX Warning: Reference `sec:DMAresults' on page 9 undefined on input line 6.
+LaTeX Warning: Reference `sec:DMAresults' on page 10 undefined on input line 6.
 
 
-LaTeX Warning: Reference `fig:DMAresults' on page 9 undefined on input line 6.
+
+LaTeX Warning: Reference `fig:DMAresults' on page 10 undefined on input line 6.
 
 
-LaTeX Warning: Reference `fig:DMApeaks' on page 9 undefined on input line 31.
+
+LaTeX Warning: Reference `fig:DMApeaks' on page 10 undefined on input line 31.
 
 
-LaTeX Warning: Reference `annexe:peaks' on page 9 undefined on input line 31.
+LaTeX Warning: Reference `annexe:peaks' on page 10 undefined on input line 31.
 
 
 ! LaTeX Error: Unknown float option `c'.
@@ -1159,19 +1193,19 @@ Option `c' ignored and `p' used.
 
 pdfTeX warning: pdflatex (file ./images/Seite_arrhenius_graph.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./images/Seite_arrhenius_graph.pdf, id=307, 845.07724pt x 597.55246pt>
+<./images/Seite_arrhenius_graph.pdf, id=317, 845.07724pt x 597.55246pt>
 File: ./images/Seite_arrhenius_graph.pdf Graphic file (type pdf)
 <use ./images/Seite_arrhenius_graph.pdf>
 Package pdftex.def Info: ./images/Seite_arrhenius_graph.pdf  used on input line
  35.
 (pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
- [9
+ [10
 
 
 
  <./images/Seite_arrhenius_graph.pdf>]
 
-LaTeX Warning: Reference `fig:combined' on page 10 undefined on input line 44.
+LaTeX Warning: Reference `fig:combined' on page 11 undefined on input line 44.
 
 
 ! LaTeX Error: Unknown float option `c'.
@@ -1188,7 +1222,7 @@ Option `c' ignored and `p' used.
 
 pdfTeX warning: pdflatex (file ./images/combined.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<./images/combined.pdf, id=342, 845.07724pt x 597.55246pt>
+<./images/combined.pdf, id=352, 845.07724pt x 597.55246pt>
 File: ./images/combined.pdf Graphic file (type pdf)
 <use ./images/combined.pdf>
 Package pdftex.def Info: ./images/combined.pdf  used on input line 48.
@@ -1227,7 +1261,7 @@ l.75 ...$T_v$: Temperature de transition vitreuse}
                                                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-) [10 <./images/combined.pdf>]
+) [11 <./images/combined.pdf>]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -1301,7 +1335,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--138
 o MT2 -
  []
 
- [11
+ [12
 
 
 ]
@@ -1324,14 +1358,14 @@ l.14 \begin{figure}[hct]
                         
 Option `c' ignored and `p' used.
 
-<./images/fig1.png, id=382, 959.08313pt x 590.95781pt>
+<./images/fig1.png, id=392, 959.08313pt x 590.95781pt>
 File: ./images/fig1.png Graphic file (type png)
 <use ./images/fig1.png>
 Package pdftex.def Info: ./images/fig1.png  used on input line 16.
 (pdftex.def)             Requested size: 383.62645pt x 236.37894pt.
-) [12
+) [13
 
-] [13 <./images/fig1.png>] (./main.aux (./srcs/1_intro.aux) (./srcs/2_descripti
+] [14 <./images/fig1.png>] (./main.aux (./srcs/1_intro.aux) (./srcs/2_descripti
 on.aux) (./srcs/3_theorie.aux) (./srcs/4_resultats.aux) (./srcs/5_analyse.aux) 
 (./srcs/annexes.aux))
  ***********
@@ -1348,10 +1382,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A6F165EBF8E57926C1560E8707AB8D31;2495.
  ) 
 Here is how much of TeX's memory you used:
- 15117 strings out of 474222
- 246350 string characters out of 5748733
+ 15128 strings out of 474222
+ 246612 string characters out of 5748733
  1934975 words of memory out of 5000000
- 37036 multiletter control sequences out of 15000+600000
+ 37046 multiletter control sequences out of 15000+600000
  565750 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,117p,661b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1371,10 +1405,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (13 pages, 2572161 bytes).
+Output written on main.pdf (14 pages, 2614690 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 58 named destinations out of 1000 (max. 500000)
- 187 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 493 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 192 words of extra memory for PDF output out of 10000 (max. 10000000)
 

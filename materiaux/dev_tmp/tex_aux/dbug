@@ -203,11 +203,8 @@ For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def))
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty)) (./main.aux
-(./srcs/1_intro.aux) (./srcs/2_description.aux
-
-LaTeX Warning: Label `fig:schemapohl' multiply defined.
-
-) (./srcs/3_theorie.aux) (./srcs/4_resultats.aux
+(./srcs/1_intro.aux) (./srcs/2_description.aux) (./srcs/3_theorie.aux)
+(./srcs/4_resultats.aux
 
 LaTeX Warning: Label `fig:DSCprimitif' multiply defined.
 
