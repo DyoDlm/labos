@@ -1,6 +1,16 @@
 #!/bin/bash
 
-aux="*.log *.aux *.toc *.out srcs/*.log srcs/*.aux srcs/*.out srcs/*.toc"
+auxs=" \
+	"*.log"\
+	"*.aux"\
+	"*.toc"\
+	"*.out"\
+	"srcs/*.aux"\
+	"srcs/*.toc"\
+	"srcs/*.out"\
+	"srcs/*.log"\
+	""
+"
 
 echo FIRST COMPILATION : > dbug.log
 
@@ -16,8 +26,6 @@ if [ -f "main.pdf" ] ; then
 	mv main.pdf rendu.pdf 
 fi
 
-#rm $aux
-
 clear && echo "Rapport compiled"
 
 if [ -f "rendu.pdf" ] ; then
@@ -29,7 +37,12 @@ fi
 
 mkdir -p tex_aux
 
-mv $aux tex_aux
+for format in $auxs
+do
+	if [ -f "$format" ] ; then
+		mv $format tex_aux
+	fi
+done
 
 mv dbug tex_aux
 
