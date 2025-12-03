@@ -4,14 +4,14 @@
 \contentsline {subsection}{\numberline {2.2}Experience 2, DSC}{4}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Partie théorique}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Experience 1, DMA}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Experience 2, DSC}{6}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Résultats}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Expérience 1 : Resultats DMA}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Expérience 2 : Resultats DSC}{8}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Analyse des résultats, complement}{9}{section.5}%
-\contentsline {subsection}{\numberline {5.1}DMA}{9}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}DSC}{10}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Conclusion}{11}{section.6}%
-\contentsline {section}{\numberline {7}Annexes}{12}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Annexe A : DMA data}{12}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Annexe B : DSC data}{12}{subsection.7.2}%
+\contentsline {subsection}{\numberline {3.2}Calorimétrie différentielle à balayage (DSC)}{6}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Résultats}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Expérience 1 : Resultats DMA}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Expérience 2 : Resultats DSC}{9}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Analyse des résultats, complement}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}DMA}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}DSC}{11}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Conclusion}{12}{section.6}%
+\contentsline {section}{\numberline {7}Annexes}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Annexe A : DMA data}{13}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Annexe B : DSC data}{13}{subsection.7.2}%

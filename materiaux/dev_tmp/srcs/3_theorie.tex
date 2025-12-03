@@ -2,43 +2,73 @@
 
 \subsection{Experience 1, DMA} \label{subsec:osc_libres}
 
-Le pendule de Pohl est un oscillateur mécanique rotatif composé d'un disque couplé à un ressort
-spiral. La coordonnée généralisée du système est l’angle de torsion $\theta(t)$.
-En appliquant le théorème du moment cinétique au disque, on obtient :
-
+La DMA permet de caractériser le comportement viscoélastique d’un polymère soumis à une
+contrainte sinusoïdale. L’instrument applique une contrainte périodique
 \begin{equation}
-\frac{dL}{dt} = \sum M_{\mathrm{ext}},
-\qquad L = J\,\dot{\theta},
-\label{eq:TMC}
+    \sigma(t) = \sigma_0 \sin(\omega t),
+\end{equation}
+tandis que la déformation résultante est déphasée d’un angle $\delta$ :
+\begin{equation}
+    \varepsilon(t) = \varepsilon_0 \sin(\omega t + \delta).
 \end{equation}
 
-où $J$ est le moment d’inertie du balancier. Deux moments mécaniques agissent sur le système :
-\begin{equation}
-M_r = -C\,\theta,
-\qquad
-M_f = -b\,\dot{\theta},
-\label{eq:MOMENTS}
-\end{equation}
-où $C$ est la constante de torsion, et $b$ le moment de frottement visqueux.  
-En combinant ces contributions, l'équation du mouvement devient :
+À partir de ce déphasage, les grandeurs viscoélastiques mesurées (exp1.pdf) sont :
+\begin{align}
+    E' &= \frac{\sigma_0}{\varepsilon_0}\cos\delta, \\
+    E'' &= \frac{\sigma_0}{\varepsilon_0}\sin\delta, \\
+    \tan\delta &= \frac{E''}{E'}.
+\end{align}
 
+Le pic du facteur d’amortissement $\tan\delta$ correspond à la transition vitreuse mécanique.
+Comme cette transition dépend de la fréquence d’excitation, les températures des pics mesurés
+sont exploitées à l’aide de la loi d’Arrhenius (exp1.pdf) :
 \begin{equation}
-J\ddot{\theta} + b\dot{\theta} + C\theta = 0.
-\label{eq:edo}
+    f = f_0 \exp\!\left(-\frac{E_a}{RT}\right),
 \end{equation}
-
-Dont on définit la pulsation propre non amortie $\omega_0$ et le coefficient d'amortissement $\lambda$ tels que :
+que l’on linéarise sous la forme
 \begin{equation}
-\omega_0 = \sqrt{\frac{C}{J}},
-\qquad
-\lambda = \frac{b}{2J}.
-\label{eq:lambda} % et omega 0
+    \ln f = \ln f_0 - \frac{E_a}{R}\,\frac{1}{T}.
 \end{equation}
 
-L’équation différentielle se met sous la forme caractéristique :
+Ainsi, la représentation de $\ln f$ en fonction de $1/T_g(f)$ permet d’extraire l’énergie
+d’activation $E_a$ associée à la transition vitreuse du PMMA.
+
+
+\subsection{Calorimétrie différentielle à balayage (DSC)}
+
+La DSC mesure le flux de chaleur nécessaire pour maintenir un échantillon et une référence à
+la même température lors d’une rampe thermique. Le signal correspond au flux enthalpique
+(exp2.pdf) :
 \begin{equation}
-\ddot{\theta} + 2\lambda \dot{\theta} + \omega_0^2 \theta = 0.
-\label{eq:cara}
+    \frac{dH}{dt}.
 \end{equation}
 
-\subsection{Experience 2, DSC}
+À pression constante, la variation d’enthalpie est égale à la chaleur échangée (exp2.pdf) :
+\begin{equation}
+    dH = dQ_p,
+\end{equation}
+d'où
+\begin{equation}
+    \Delta H = Q_p.
+\end{equation}
+
+Le flux mesuré est relié à la capacité calorifique par
+\begin{equation}
+    \frac{dH}{dt} = m\,c_p\,\frac{dT}{dt}.
+\end{equation}
+
+Les transitions de premier ordre (fusion et cristallisation) apparaissent sous forme de pics
+endothermiques ou exothermiques. La chaleur latente d’une transition se calcule par
+\begin{equation}
+    L = \frac{1}{m} \int_{\text{pic}} \frac{dH}{dt}\, dT.
+\end{equation}
+
+Pour un polymère semi-cristallin comme le PET, le taux de cristallinité s’obtient en comparant
+la chaleur de fusion mesurée à celle d’un matériau parfaitement cristallin (exp2.pdf) :
+\begin{equation}
+    X_c = \frac{\Delta H_f - \Delta H_{c,\text{froide}}}{\Delta H_f^{100\%}}.
+\end{equation}
+
+Cette relation permet de déterminer quantitativement la proportion cristalline du PET à partir
+des mesures DSC.
+
