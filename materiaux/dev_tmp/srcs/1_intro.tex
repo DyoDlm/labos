@@ -1,71 +1,17 @@
 \section{Introduction}
 
-Decrire phenomenes de deformation du solide et modifications des proprietes (ceramiques, polymeres) en fonction de la temperature (dielectrique, resistance, ...).
-
-Il y a plusieurs manieres de verifier les proprietes mecanique d'un solide (voir Fig. \ref{fig:meca}).
+Il existe plusieurs manieres de verifier les proprietes mecanique d'un solide (voir Fig. \ref{fig:meca}). Les interets sont multiples, mais pour certaines applications concretes ce n'est pas toujours suffisant.
 
 \begin{figure}[ht]
 \centering
 	\centering
-        \includegraphics[scale=0.3]{meca.png}
-        \captionof{figure}{ Schéma du pendule de Pohl, ref : \cite{meca} }
+        \includegraphics[scale=0.28]{meca.png}
+        \captionof{figure}{ Techniques d'analyses des proporietes mecaniques d'un solide, ref : \cite{meca} }
 \label{fig:meca}
 \end{figure}
-
-
-% DONNER OBJECTIFS :
-
-1) DMA
-\\\\
-Buts pedagogiques : 
-\\\\
-Comprendre la pertinence de la technique DMA pour l’étude des matériaux en général et
-pour les polymères en particulier.
-Comprendre les principes de base du DMA : principes instrumentaux et interprétation des
-résultats.
-Se familiariser avec un instrument de DMA moderne et performant.
-Effectuer des mesures de propriétés viscoélastiques pour différents polymères.
-\\\\\\
-
-Mesures a effectuer : 
-\\\\
-Mesure des coefficients E’, E’’ et tan sur des échantillons de PMMA à l’aide du DMA dans la
-configuration « 3 point bending » : (annexe 1)
 \\
-A l’aide de ces mesures, trouver l’énergie d’activation du PMMA (cf annexe 2)
-
-
-2) DSC
+C'est ce pourquoi, nous nous concentrons dans ce rapport a l'etude du comportement des proprietes mecaniques des polymeres en fonction de differents regimes thermiques. Pour ce faire, nous utilisons des outils d'analyse thermique pour etudier l'evolution dynamique des proprietes des materiaux. Car pour les polymères, ces méthodes constituent un outil essentiel pour comprendre leur structure, leurs transitions physiques, leurs historiques thermiques et prédire leur comportement en service (\cite{protocoleDSC}, p.2 ; \cite{protocoleDMA}, p.2).
 \\\\
-Buts pedagogiques :
+Nous etudions dans ce rapport principalement deux techniques. La DMA (Dynamic Mechanical Analysis)  mesure la réponse mécanique viscoélastique d’un polymère soumis à une contrainte sinusoïdale (exp1, p.2). La DSC en revanche (Differential Scanning Calorimetry) mesure les flux de chaleur nécessaires pour maintenir l’échantillon et une référence à la même température lors d’une rampe thermique (\cite{protocoleDSC} pages 2-4).
 \\\\
-Réaliser la pertinence de la technique DSC pour l’étude des polymères.
-Comprendre les principes des bases de la DSC, y compris les principes instrumentaux et
-l’interprétation des résultats.
-Se familiariser avec un instrument de DSC moderne et performant.
-Effectuer des mesures DSC pour déterminer quantitativement les températures de
-transitions ainsi que les chaleurs latentes de fusion et de cristallisation
-Savoir mesurer un taux de cristallinité d’un polymère avec la DS
-\\\\
-
-Mesures a effectuer : 
-
-\\\\
-Le but est d’analyser un échantillon de PET extrait d’une bouteille en plastique.
--
--
--
-Transition vitreuse :la phase amorphe passe de l’état solide à l’état liquide.
-Fusion : la phase cristalline passe à l’état liquide.
-Cristallisation froide : en deçà du point de fusion, lorsqu’on augmente la température, la
-phase liquide cristallise (partiellement)
-Cristallisation chaude : au-delà du point de fusion, lorsqu’on diminue la température, le
-matériau cristallise (partiellement)
-Le but de ce laboratoire est de configurer la DSC de façon à mettre en évidence toute ces transitions.
-En analysant vos courbes DSC à l’aide du logiciel d’analyse « Proteus 80 », vous pouvez sortir :
-- Les températures de transition vitreuse, de cristallisation froide, de cristallisation chaude et
-de fusion.
-- Les chaleurs latentes de cristallisation fr
-
-
-\\\\\
+Ainsi le but du laboratoire est double. Premierement, nous utilisons la DMA en une configuration en trois points pour mesurer les modules viscoélastiques E’, E’’ et tan δ (decrits posterieurement Sec. \ref{sec:theorie}) sur plusieurs fréquences et extraire l’énergie d’activation de la transition vitreuse (\cite{protocoleDMA}, p.1) de notre echantillon de PMMA. En un second temps, nous utilisons la DSC pour identifier les transitions thermiques (Tg, cristallisation froide, fusion, cristallisation chaude), les chaleurs latentes et le taux de cristallinité pour un echantillon de PET (\cite{protocoleDSC}, p.1).

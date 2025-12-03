@@ -23,7 +23,7 @@ Bien que nous aillons traite les donnees en Sec. \ref{sec:DMAresults}, le traite
 \hline
 \end{tabular}
 	\caption{Valeurs de temperatures auxquelles E (module d'Young) est maximal}
-\label{val:peaks}
+\label{tab:peaks}
 \end{table}
 
 
@@ -40,7 +40,7 @@ On peut donc extraire tous les extremums locaux de Fig. \ref{fig:DMApeaks} que l
 
 \subsection{DSC}
 
-Le facteur de qualité est donné par (Eq.~\ref{eq:Q}) et l’incertitude correspondante, obtenue par dérivées partielles, est :
+Dans son ensemble chaque experience en DSC est visible en Fig. \ref{fig:combined}.
 
 \begin{figure}[hct]
         \centering
@@ -49,3 +49,28 @@ Le facteur de qualité est donné par (Eq.~\ref{eq:Q}) et l’incertitude corres
         \caption{Arrhenius graph}
 \end{figure}
 
+\\
+On peut concentrer les donnees interessantes dans le tableau suivant :
+\\
+\begin{table}[!ht]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+	\textbf{Variation}
+	& \textbf{$V_v_t$ [$K/min$]}
+        & \textbf{Pic complexe [$^\circ$]}
+        & \textbf{Aire [$J/g$]}
+	& \textbf{$T_v$ [$^\circ$]}
+\\\hline
+	Chauffe & 50.0 & 244.8 & -43.15 & Oui  \\
+	Refroidissement & -200.0 & $\emptyset$ & $\emptyset$ & $\emptyset$  \\
+	Chauffe & 10.0 & 131.1-245.9 & 23.93-(-35.58) & Oui \\
+	Refroidissment & -10.0 & 186.8 & 36.19 & $\emptyset$ \\
+\hline
+\end{tabular}
+        \caption{$V_v_t$: vitesse de la variation thermique, $T_v$: Temperature de transition vitreuse}
+\label{val:peaks}
+\end{table}
