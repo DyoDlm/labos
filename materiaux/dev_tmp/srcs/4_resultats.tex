@@ -1,31 +1,43 @@
 \section{Résultats}
 
-\subsection{Experience 1, DMA}
+\subsection{Expérience 1 : Analyse DMA}
 
-A la fin d'un essais a une frequence donnees, nous obtenons un apercu des donnees brutes obtenues a partir de la machine NETZSH. On aura releve en Fig. \ref{fig:DMAprimitif}, les modules de Young E' (en bleu) et E$''$ (en jaune) ainsi que tan($d$) (en vert) en fonction d'une evolution lente de la temperature de 70 $^{\circ}$C et 175 $^{\circ}$C.
+À la fin de chaque essai pour une fréquence donnée, l’instrument NETZSCH fournit les données
+brutes de l'analyse mécanique dynamique. La Fig.~\ref{fig:DMA_brut} présente un exemple typique
+des signaux obtenus : le module de stockage $E'$ (en bleu), le module de perte $E''$ (en jaune)
+ainsi que le facteur d’amortissement $\tan\delta$ (en vert), mesurés lors d’une montée en
+température entre 70\,°C et 175\,°C.
 
-\\
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.2]{Seite_graph_primitif.png}
-\label{fig:DMAprimitif}
-	\captionof{figure}{le graph primitif}
-\end{figure}
-
-
-
-\noindent \begin{minipage}{0.7\textwidth}
-	\includegraphics[width=\textwidth]{Seite_analyse_miniLabel.pdf}
-	\captionof{figure}{DMA resultats}
-\label{fig:DMAresultats}
+\vspace{0.4cm}
+\begin{flushleft}
+\begin{minipage}[3cm]{0.3\textwidth}
+Le protocole est répété pour plusieurs fréquences, comprises entre 1~Hz et 20~Hz, sur des
+échantillons de PMMA en configuration de flexion trois points. Pour chaque fréquence, nous
+obtenons les courbes de $E'$ et de $\tan\delta$ en fonction de la température. Ces résultats
+comparatifs sont illustrés en Fig.~\ref{fig:DMA_resultats}.
 \end{minipage}
-\begin{minipage}{0.3\textwidth}
-
-Le processus sera repete pour differentes frequences allant de 1.000 Hz a 20.000 Hz sur les echantillons de PMMA toujours avec la configuration en 3 points. Pour chacuns de ces essais, nous avons obtenus fit les coubres de E$'$ et tan($d$) entre 70 $^{\circ}$C et 175 $^{\circ}$C visibles sur Fig. \ref{fig:DMAresultats}.
-
-\noindent \end{minipage}
+\hfill
+\begin{minipage}{0.65\textwidth}
+    \includegraphics[width=\linewidth]{Seite_graph_primitif.png}
+    \caption{Exemple de données brutes issues de la mesure DMA}
+    \label{fig:DMA_brut}
+\end{minipage}
+\end{flushleft}
+\newpage
 \\
-
+\noindent
+\begin{minipage}[t]{0.34\textwidth}
+La détection automatique du pic de $\tan\delta$ permet d’identifier la position de la
+transition vitreuse pour chaque fréquence. Ces températures caractéristiques sont ensuite
+utilisées pour construire le graphe d’Arrhenius et déterminer l’énergie d’activation du PMMA.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.62\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{Seite_Peak_analyse.pdf}
+    \captionof{figure}{Analyse du pic de $\tan\delta$ permettant l’extraction de $T_g(f)$}
+    \label{fig:DMA_resultats}
+\end{minipage}
 
 
 
