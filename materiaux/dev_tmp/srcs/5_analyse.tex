@@ -28,7 +28,7 @@ Bien que nous aillons traite les donnees en Sec. \ref{sec:DMAresults}, le traite
 \end{table}
 
 
-On peut donc extraire tous les extremums locaux de Fig. \ref{fig:DMApeaks} que l'on peut retrouver dans le tableau \ref{tab:peaks}. Grace a la relation Eq. \ref{eq:arrhenius} qu'on linearise a partir de Eq. \ref{eq:arrheniuslin}, nous obtenons le graph d'Arrenhius suivant : 
+On peut donc extraire tous les extremums locaux de Fig. \ref{fig:DMApeaks} que l'on peut retrouver dans le tableau \ref{tab:peaks}. Grace a la relation Eq. \ref{eq:arrhenius} qu'on linearise tel que Eq. \ref{eq:arrheniuslin}, nous obtenons le graph d'Arrenhius suivant : 
 
 \begin{figure}[hct]
         \centering
@@ -37,6 +37,7 @@ On peut donc extraire tous les extremums locaux de Fig. \ref{fig:DMApeaks} que l
         \caption{Arrhenius graph}
 \end{figure}
 
+Celui nous permet, comme nous le mentionnons en Sec. \ref{sec:theorie}, d'extraire l'energie d'activation $E_a$ associee a la transition vitreuse de notre echantillon de PMMA.
 \newpage
 
 \subsection{DSC}
@@ -46,12 +47,12 @@ Dans son ensemble chaque experience en DSC est visible en Fig. \ref{fig:combined
 \begin{figure}[hct]
         \centering
         \includegraphics[scale=0.5]{combined.pdf}
-        \label{fig:arrenius}
-        \caption{Arrhenius graph}
+        \label{fig:combined}
+        \caption{Vue d'ensemble des mesures DSC}
 \end{figure}
 
 \\
-On peut concentrer les donnees interessantes dans le tableau suivant :
+Avec la chauffe rapide en vert sapin, le refroidissement rapide en rouge, la chauffe lente en jaune et le refoidissement lent en violet (voir Fig. \ref{fig:combined}), nous pouvons concentrer les donnees analysees dans le tableau suivant :
 \\
 \begin{table}[!ht]
 \centering
@@ -64,7 +65,7 @@ On peut concentrer les donnees interessantes dans le tableau suivant :
 	& \textbf{$V_v_t$ [$K/min$]}
         & \textbf{Pic complexe [$^\circ$]}
         & \textbf{Aire [$J/g$]}
-	& \textbf{$T_v$ [$^\circ$]}
+	& \textbf{$T_v$ [bool]}
 \\\hline
 	Chauffe & 50.0 & 244.8 & -43.15 & Oui  \\
 	Refroidissement & -200.0 & $\emptyset$ & $\emptyset$ & $\emptyset$  \\
@@ -75,3 +76,13 @@ On peut concentrer les donnees interessantes dans le tableau suivant :
         \caption{$V_v_t$: vitesse de la variation thermique, $T_v$: Temperature de transition vitreuse}
 \label{val:peaks}
 \end{table}
+
+
+Le refroidissement froid rapide \ref{fig:refroidissement_rapide} nous donne une courbe amorphe contre cristalisation bien marquee avec refroidissement lent \ref{fig:refroidissement_lent}.
+\\
+poursuivre comparaisons refroidissement...
+\\\\
+La chauffe lente ... \ref{fig:chauffe_lente} et \ref{fig:chauffe_rapide}
+\\
+poursuivre chauffes comparaisons
+
