@@ -2,37 +2,49 @@
 
 \subsection{Experience 1, DMA} \label{subsec:osc_libres}
 
-La DMA permet de caractériser le comportement viscoélastique d’un polymère soumis à une
-contrainte sinusoïdale. L’instrument applique une contrainte périodique
+A partir de Ref. \cite{DMAprotocole}, nous pouvons decrire depuis les lois de Hook et de Newton la modelisation de notre systeme. L'instrument imporse une contrainte périodique en fonction du temps $\sigma$(t) de pusation $\omega$ et d'une contrainte de reference $\sigma_0$ tel que 
 \begin{equation}
-    \sigma(t) = \sigma_0 \sin(\omega t),
+    \sigma(t) = \sigma_0 \sin(\omega t).
+	\label{eq:1}
 \end{equation}
-tandis que la déformation résultante est déphasée d’un angle $\delta$ :
+
+Notons, une deformation $\epsilon$ sous dephasage d’un angle $\delta$ :
 \begin{equation}
     \varepsilon(t) = \varepsilon_0 \sin(\omega t + \delta).
+	\label{eq:2}
 \end{equation}
 
-À partir de ce déphasage, les grandeurs viscoélastiques mesurées (exp1.pdf) sont :
-\begin{align}
-    E' &= \frac{\sigma_0}{\varepsilon_0}\cos\delta, \\
-    E'' &= \frac{\sigma_0}{\varepsilon_0}\sin\delta, \\
-    \tan\delta &= \frac{E''}{E'}.
-\end{align}
+Selon les hypotheses du protocole (Ref. \cite{DMAprotocole} p. 2-3), les grandeurs viscoelastiques mesurees $E'$ (module de stockage) et $E''$ (module de perte) sont apres derivation de Eqs. \ref{eq:1} et \ref{eq:2}
+\begin{equation}
+	E' &= \frac{\sigma_0}{\varepsilon_0}\cos\delta \hspace{0.4cm} et \hspace{0.4cm}
+    E'' &= \frac{\sigma_0}{\varepsilon_0}\sin\delta.
+	\label{eq:3}
+\end{equation}
 
-Le pic du facteur d’amortissement $\tan\delta$ correspond à la transition vitreuse mécanique.
-Comme cette transition dépend de la fréquence d’excitation, les températures des pics mesurés
-sont exploitées à l’aide de la loi d’Arrhenius (exp1.pdf) :
+Elles permettent d'ecrire Le pic du facteur d’amortissement $\tan\delta$ correspondant à la transition vitreuse mécanique a partir de relations trigonometriques avec Eqs. \ref{eq:3} tel que :
+\begin{equation}
+	\tan\delta &= \frac{E'}{E'\'}.
+	\label{eq:4}
+\end{equation}
+
+Comme cette transition depend de la frequence d’excitation, les temperatures des pics mesures
+sont exploitees à l’aide de la loi d’Arrhenius () :
 \begin{equation}
     f = f_0 \exp\!\left(-\frac{E_a}{RT}\right),
+	\label{eq:arrhenius}
 \end{equation}
+
 que l’on linéarise sous la forme
+
 \begin{equation}
     \ln f = \ln f_0 - \frac{E_a}{R}\,\frac{1}{T}.
+	\label{eq:arrheniuslin}
 \end{equation}
 
 Ainsi, la représentation de $\ln f$ en fonction de $1/T_g(f)$ permet d’extraire l’énergie
 d’activation $E_a$ associée à la transition vitreuse du PMMA.
 
+\newpage
 
 \subsection{Calorimétrie différentielle à balayage (DSC)}
 
