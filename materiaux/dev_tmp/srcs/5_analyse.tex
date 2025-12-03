@@ -3,7 +3,8 @@
 
 \subsection{DMA}
 
-Bien que nous aillons traite les donnees en Sec. \ref{sec:DMAresultats}, le traitement permet de determiner plus precisement le pic de chacune des courbes en Fig. \ref{fig:DMAresultats}. Couple a une autre fonction logiciel (recherche des extremeums locaux lors de changement de variation d'une fonction continue). Nous obtenons en sortie du programme la figure suivante :
+Bien que nous aillons traite les donnees en Sec. \ref{sec:DMAresultats}, le traitement permet de determiner plus precisement le pic de chacune des courbes en Fig. \ref{fig:DMA_resultats}. Couple a une autre fonction logiciel (recherche des extremeums locaux lors de changement de variation d'une fonction continue). Nous obtenons en compilant tous les extremumsle tableau suivant :
+
 \\
 \begin{table}[!ht]
 \centering
@@ -28,7 +29,7 @@ Bien que nous aillons traite les donnees en Sec. \ref{sec:DMAresultats}, le trai
 \end{table}
 
 
-On peut donc extraire tous les extremums locaux de Fig. \ref{fig:DMApeaks} que l'on peut retrouver dans le tableau \ref{tab:peaks}. Grace a la relation Eq. \ref{eq:arrhenius} qu'on linearise tel que Eq. \ref{eq:arrheniuslin}, nous obtenons le graph d'Arrenhius suivant : 
+On peut donc extraire tous les extremums locaux de Fig. \ref{fig:DMA_resultats} que l'on peut retrouver dans le tableau \ref{tab:peaks}. Grace a la relation Eq. \ref{eq:arrhenius} qu'on linearise tel que Eq. \ref{eq:arrheniuslin}, nous obtenons le graph d'Arrenhius suivant : 
 
 \begin{figure}[hct]
         \centering
@@ -48,7 +49,7 @@ Dans son ensemble chaque experience en DSC est visible en Fig. \ref{fig:combined
 
 \begin{figure}[hct]
         \centering
-        \includegraphics[scale=0.5]{combined.pdf}
+        \includegraphics[scale=0.45]{combined.pdf}
         \label{fig:combined}
         \caption{Vue d'ensemble des mesures DSC}
 \end{figure}
@@ -75,16 +76,32 @@ Avec la chauffe rapide en vert sapin, le refroidissement rapide en rouge, la cha
 	Refroidissment & -10.0 & 186.8 & 36.19 & $\emptyset$ \\
 \hline
 \end{tabular}
-        \caption{$V_v_t$: vitesse de la variation thermique, $T_v$: Temperature de transition vitreuse}
+        \caption{$V_v_t$: vitesse de la variation thermique, $T_v$: Transition vitreuse}
 \label{val:peaks}
 \end{table}
 
 
-Le refroidissement froid rapide \ref{fig:refroidissement_rapide} nous donne une courbe amorphe contre cristalisation bien marquee avec refroidissement lent \ref{fig:refroidissement_lent}.
-\\
-poursuivre comparaisons refroidissement...
-\\\\
-La chauffe lente ... \ref{fig:chauffe_lente} et \ref{fig:chauffe_rapide}
-\\
-poursuivre chauffes comparaisons
+Que l'on peut resumer dans le tableau chronologique comparatif suivant :
+\begin{table}[!ht]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+	\textbf{Condition (C|R)} &
+\textbf{Cristallisation froide ?} &
+\textbf{Fusion} &
+\textbf{Cristallisation chaude ?} &
+\textbf{Cristallinite} \\
+\hline
+C rapide       & ??  & ?? & ?? & ?? \\
+R rapide & ??  & ?? & ?? & ?? \\
+C lent         & ?? & ?? & ?? & ?? \\
+R lent   & ?? & ?? & ?? & ?? \\
+\hline
+\end{tabular}
+        \caption{tableau comparatif des mesures DSC}
+
+\end{table}
 

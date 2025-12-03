@@ -1,0 +1,83 @@
+🔵 1. Refroidissement lent
+★ Ce qui se passe physiquement
+
+Lors d’un refroidissement lent, les chaînes de PET ont le temps de s’ordonner et de former des cristallites.
+
+Le polymère cristallise spontanément pendant la descente en température.
+
+★ Ce que l’on observe en DSC
+
+Cristallisation froide : faible
+→ Parce que le matériau est déjà cristallisé lors du refroidissement.
+→ En chauffant ensuite, il n’a presque plus rien à cristalliser : donc pic faible.
+
+Fusion : forte
+→ Beaucoup de cristallites formées → grande chaleur de fusion → grand pic endothermique.
+
+Cristallisation chaude : forte
+→ Pendant le refroidissement, on voit un grand pic exothermique traduisant la formation de cristallites.
+
+Cristallinité Xc : élevée
+→ Le taux de cristallinité final est important puisqu’on a laissé le temps au polymère de s’organiser.
+
+🔴 2. Refroidissement rapide
+★ Ce qui se passe physiquement
+
+Le polymère est refroidi si vite que les chaînes n’ont pas le temps de s’organiser.
+→ Il “gèle” dans un état essentiellement amorphe.
+
+★ Ce que l’on observe en DSC
+
+Cristallisation froide : forte
+→ Comme le matériau est amorphe après refroidissement, il cristallise lors de la montée, juste après Tg.
+
+Fusion : faible
+→ Peu de cristallites formées initialement → faible chaleur de fusion.
+
+Cristallisation chaude : faible / absente
+→ Pendant le refroidissement, aucune réorganisation significative n’a eu lieu.
+
+Cristallinité Xc : faible
+→ Le matériau commence le chauffage suivant dans un état presque entièrement amorphe.
+
+🟢 3. Chauffage lent
+★ Ce qui se passe physiquement
+
+Si la rampe de chauffage est lente :
+→ les chaînes ont le temps de cristalliser pendant la montée, juste après la Tg.
+
+Mais cette cristallisation est généralement faible si le matériau était déjà cristallin (ex : après refroidissement lent).
+
+★ Ce que l’on observe en DSC
+
+Cristallisation froide : faible
+→ Parce que le matériau peut lentement cristalliser de façon progressive ; le pic est diffus ou faible.
+
+Fusion : forte
+→ Le chauffage lent permet d’augmenter encore légèrement l’ordre avant la fusion → pic de fusion large/intense.
+
+Cristallisation chaude : n/a
+→ Elle n’apparaît qu’en refroidissement.
+
+Cristallinité Xc : élevée
+→ Chauffage lent favorise la croissance cristalline ; Xc mesuré avant fusion est plus élevé.
+
+🟠 4. Chauffage rapide
+★ Ce qui se passe physiquement
+
+Le matériau ne peut pas se réorganiser progressivement :
+→ Les chaînes atteignent rapidement les températures où la mobilité est suffisante pour former des cristaux, mais de manière brutale.
+
+★ Ce que l’on observe en DSC
+
+Cristallisation froide : forte
+→ Chauffage brutal → cristallisation “retardée” → pic exothermique intense.
+
+Fusion : faible à modérée
+→ Le matériau n’a encore que très peu cristallisé avant la fusion.
+→ La chaleur de fusion est directement proportionnelle à la quantité de cristallites.
+
+Cristallisation chaude : n/a (car uniquement en refroidissement)
+
+Cristallinité Xc : faible
+→ Chauffage rapide empêche l’échantillon d’augmenter significativement son ordre cristallin avant fusion.

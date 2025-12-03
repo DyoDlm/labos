@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {2.2}Experience 2, DSC}{4}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Partie théorique}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Experience 1, DMA}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Calorimétrie différentielle à balayage (DSC)}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Experience 2 : DSC}{6}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Résultats}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Expérience 1 : Resultats DMA}{7}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Expérience 2 : Resultats DSC}{8}{subsection.4.2}%
