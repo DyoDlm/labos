@@ -111,7 +111,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 \newline
+l.40 \newline
              
 ? OK, entering \batchmodeThis is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
@@ -206,8 +206,8 @@ For additional information on amsmath, use the `?' option.
 (./srcs/1_intro.aux) (./srcs/dma/2_description_dma.aux)
 (./srcs/dma/3_theorie_dma.aux) (./srcs/dma/4_resultats_dma.aux)
 (./srcs/dma/5_analyse_dma.aux) (./srcs/dsc/2_description_dsc.aux)
-(./srcs/dsc/3_theorie_dsc.aux) (./srcs/dsc/4_resultats_dsc.aux)
-(./srcs/dsc/5_analyse_dsc.aux) (./srcs/annexes.aux))
+(./srcs/dsc/4_resultats_dsc.aux) (./srcs/dsc/5_analyse_dsc.aux)
+(./srcs/annexes.aux))
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -231,6 +231,6 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 \newline
+l.40 \newline
              
 ? OK, entering \batchmode

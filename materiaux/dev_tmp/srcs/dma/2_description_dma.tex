@@ -2,13 +2,14 @@
 \label{sec:manipulations}
 \subsection{escription de l'installation et manipulations}
 
-Les manipulations sont realisees sur un echantillon de PMMA (donner formule brute ?), nous utlisons donc la technique de DMA grace a la machine "X'Press DMA 242 E Artemis' du fournisseur NETZSH qui selon lui doit nous permettre d'evaluer les proprietes viscoelastiques de notre echantillon en lui appliquant une charge oscillante Ref. \cite{DMA}. 
+Les manipulations sont realisees sur un echantillon de PMMA. Nous utlisons donc la technique de DMA grace a la machine "X'Press DMA 242 E Artemis' du fournisseur NETZSH Ref. \ref{DMA} qui nous permet d'evaluer les proprietes viscoelastiques de notre echantillon de PMMA.
+Pour ce faire, nous lui appliquons une charge oscillante pendant que ce dernier se trouve dans le four lui imposant une rampe thermique positive. Nous repetons ce processus a differentes frequences d'oscillations de la charge, soit a 1Hz, 2Hz, 5Hz, 10Hz et 20Hz. La rampe thermique reste identique pour chaque serie de mesure. (PRECISER VITESSE)
 \\\\
 L'application de cette charge permet de mesurer plusieurs parametres visibles sur Fig. \ref{fig:DMAschema}. La charge genere une deformation totale, visqueuse et elastique. Couples a la contrainte correspondante, nous pouvons determiner l'etat dans lequel se trouve l'echantillon au cours de l'experience.
 \\
 \begin{flushleft}
 \begin{minipage}{0.34\textwidth}
-	La figure ci-contre nous permet de determiner par le sommet de la deformation totale $E''$, le sommet de la deformation elastique $E'$ et leur dephasage $\delta$ (voir \ref{sec:theorie}.
+	La figure \ref{fig:DMAschema} nous permet de determiner par le sommet de la deformation totale $E''$, le sommet de la deformation elastique $E'$ et leur dephasage $\delta$ (voir \ref{sec:theorie}.
 \end{minipage}
 \hfill
 \begin{minipage}{0.62\textwidth}
@@ -19,8 +20,7 @@ L'application de cette charge permet de mesurer plusieurs parametres visibles su
 \end{minipage}
 \end{flushleft}
 
-Pour garantir la fiabilite des resultats, il faudra suivre les instructions logicielles/machines du fournisseur Ref. \cite{DMA} ou suivre des protocoles adaptes tel que Ref. \cite{protocoleDMA}.
-
+Pour garantir la fiabilite des resultats, il faut faire attention a relever precisement les dimensions de l'echantillon mesure avant de le placer dans le four. Une fois dedans, il est necessaire de configurer l'offset entre l'echantillon et la masse oscillante. En effet, afin de modeliser correctement les parametres recherches sur Fig. \ref{fig:DMAschema}, il est indispensable de rentrer les bon parametres dans les fonctions qui vont determiner l'ajustement des donnees obtenues pendant le process. Cela s'illustre par les Eqs. \ref{eq:3} et \ref{eq:4} en Sec. \ref{sec:DMAtheorie}.
 \\\\\\
 DECRIRE PLUS ?
 

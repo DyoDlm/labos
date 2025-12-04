@@ -5,37 +5,23 @@
 brutes de l'analyse mécanique dynamique. La Fig.~\ref{fig:DMA_brut} présente un exemple typique
 des signaux obtenus : le module de stockage $E'$ (en bleu), le module de perte $E''$ (en jaune)
 ainsi que le facteur d’amortissement $\tan\delta$ (en vert), mesurés lors d’une montée en
-température entre 70\,°C et 175\,°C.
+température entre 70\,°C et 175\,°C. Ces derniers sont traites pour obtenir une representation plus clair de nos parametres de deformatition sur Fig. \ref{fig:DMA_resultats}.
 
-\vspace{0.4cm}
-\begin{flushleft}
-\begin{minipage}[2cm]{0.3\textwidth}
-Le protocole est répété pour plusieurs fréquences, comprises entre 1~Hz et 20~Hz, sur des
-échantillons de PMMA en configuration de flexion en trois points. Pour chaque fréquence, nous
-obtenons les courbes de $E'$ et de $\tan\delta$ en fonction de la température. Ces résultats
-comparatifs sont illustrés en Fig.~\ref{fig:DMA_resultats} sur lequel nous retouvons bien les differentes courbes du format brut precedent Fig. \ref{fig:DMA_brut}. 
-\end{minipage}
-\hfill
-\begin{minipage}{0.65\textwidth}
-    \includegraphics[width=\linewidth]{Seite_graph_primitif.png}
-	\captionof{figure}{Exemple de données brutes issues de la mesure DMA}
-    \label{fig:DMA_brut}
-\end{minipage}
-\end{flushleft}
-\\
-\begin{flushleft}
-\begin{minipage}[3cm]{0.34\textwidth}
-Le logiciel d'analyse associee a la machine du fournisseur (voir Sec. \ref{sec:manipulations}), a permit d'obtenir un fit des differents sets de donnees et par recherche des extremas locaux les pics de temperatures auxquels le $\tan\delta$ correspondant etait maximal. 
-Cela permet d’identifier la position de la
-transition vitreuse pour chaque fréquence. Ces températures caractéristiques sont ensuite
-	utilisées pour construire le graphe d’Arrhenius et déterminer l’énergie d’activation du PMMA (voir Sec. \ref{sec:analyse}).
-\end{minipage}
-\hfill
-\begin{minipage}{0.62\textwidth}
+\begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{Seite_Peak_analyse.pdf}
     \captionof{figure}{Analyse du pic de $\tan\delta$ permettant l’extraction de $T_g(f)$}
     \label{fig:DMA_resultats}
-\end{minipage}
-\end{flushleft}
+\end{figure}
+
+%\vspace{0.4cm}
+Le protocole est répété pour plusieurs fréquences, comprises entre 1~Hz et 20~Hz, sur des
+échantillons de PMMA en configuration de flexion en trois points. Pour chaque fréquence, nous
+obtenons les courbes de $E'$ et de $\tan\delta$ en fonction de la température. Ces résultats
+comparatifs sont illustrés en Fig.~\ref{fig:DMA_resultats} sur lequel nous retouvons bien les differentes courbes du format brut precedent Fig. \ref{fig:DMAprimitif}. 
+\\\\
+Le logiciel d'analyse associee a la machine du fournisseur (voir Sec. \ref{sec:manipulations}), a permit d'obtenir un fit des differents sets de donnees et par recherche des extremas locaux les pics de temperatures auxquels le $\tan\delta$ correspondant etait maximal. 
+Cela permet d’identifier la position de la
+transition vitreuse pour chaque fréquence. Ces températures caractéristiques sont ensuite
+	utilisées pour construire le graphe d’Arrhenius et déterminer l’énergie d’activation du PMMA (voir Sec. \ref{sec:DMAanalyse}).
 
