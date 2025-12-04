@@ -6,10 +6,13 @@ auxs=" \
 	"*.toc"\
 	"*.out"\
 	"srcs/*.aux"\
-	"srcs/*.toc"\
-	"srcs/*.out"\
-	"srcs/*.log"\
-	""
+        "srcs/*.toc"\
+        "srcs/*.out"\
+        "srcs/*.log"\
+	"srcs/*/*.aux"\
+	"srcs/*/*.toc"\
+	"srcs/*/*.out"\
+	"srcs/*/*.log"\
 "
 
 echo FIRST COMPILATION : > dbug.log
