@@ -1,15 +1,39 @@
 \subsection{Analyse}
 
-Dans son ensemble chaque experience en DSC est visible en Fig. \ref{fig:combined}.
+Dans son ensemble chaque experience en DSC est visible en Tab. \ref{val:peaks}.
 
-\begin{figure}[hct]
-        \centering
-        \includegraphics[scale=0.45]{combined.pdf}
-        \label{fig:combined}
-        \caption{Vue d'ensemble des mesures DSC}
-\end{figure}
+\begin{table}[!ht]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+        \textbf{Figure}
+        & \textbf{$V_v_t$ [$K/min$]}
+        & \textbf{Pic complexe [$^\circ$]}
+        & \textbf{Aire [$J/g$]}
+        & \textbf{$T_v$ [bool]}
+\\\hline
+        \ref{fig:chauffe_rapide} & 50.0 & 244.8 & -43.15 & Oui  \\
+        \ref{fig:refroidissement_rapide} & -200.0 & $\emptyset$ & $\emptyset$ & $\emptyset$  \\
+        \ref{fig:chauffe_lente} & 10.0 & 131.1-245.9 & 23.93-(-35.58) & Oui \\
+        \ref{fig:refroidissement_lent} & -10.0 & 186.8 & 36.19 & $\emptyset$ \\
+\hline
+\end{tabular}
+        \caption{$V_v_t$: vitesse de la variation thermique, $T_v$: Transition vitreuse}
+\label{val:peaks}
+\end{table}
 
-\\
+
+%\begin{figure}[hct]
+%        \centering
+%        \includegraphics[scale=0.45]{combined.pdf}
+%        \label{fig:combined}
+%        \caption{Vue d'ensemble des mesures DSC}
+%\end{figure}
+
+
 Avec la chauffe rapide en vert sapin, le refroidissement rapide en rouge, la chauffe lente en jaune et le refoidissement lent en violet (voir Fig. \ref{fig:combined})...
 \\
 

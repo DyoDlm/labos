@@ -2,8 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Données
-y = np.array([0.006008, 0.009012,0.011265,0.013518,0.016522,0.021779,0.026285,0.027787,0.030040,0.033795])
-x = np.array([0.522,0.773,0.970,1.143,1.276,1.847,2.171,2.297,2.470,2.772])
+y = np.array([1,2,5,10,20])
+x = np.array([140.5, 143.5, 148.6,150.5,155.7])
+
+i = 0
+for item in y:
+    y[i] = np.log(item)
+    i += 1
 
 # --- Régression linéaire ---
 n = len(x)
@@ -24,11 +29,15 @@ intercept_std = residual_std * np.sqrt(1/n + x_mean**2 / Sxx)  # incertitude sur
 
 # --- Equation avec incertitudes (LaTeX) ---
 equation = rf"$M_f (\theta) = ({slope:.4f} \pm {slope_std:.4f}) \,\theta + ({intercept:.4f} \pm {intercept_std:.4f})$"
+i = 0
+for item in x:
+    x[i] = 1/item
+    i += 1
 
 # --- Tracé ---
 plt.figure(figsize=(8,6))
 plt.scatter(x, y, color='blue', label='Données')
-plt.plot(x, y_pred, color='red', label=f'Regression linéaire\n{equation}')
+plt.plot(x, y_pred,color='red', label=f'Regression linéaire\n{equation}')
 plt.ylabel(r"$M_f$ [Nm]")
 plt.xlabel(r"$\theta$ [rad]")
 plt.legend(fontsize=10)
