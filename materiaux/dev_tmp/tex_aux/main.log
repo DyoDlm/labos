@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  14 DEC 2025 09:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  15 DEC 2025 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1114,16 +1114,16 @@ So I shall assume that you typed `$$' both times.
 File: ./images/schema_dsc.png Graphic file (type png)
 <use ./images/schema_dsc.png>
 Package pdftex.def Info: ./images/schema_dsc.png  used on input line 9.
-(pdftex.def)             Requested size: 427.6008pt x 280.0484pt.
+(pdftex.def)             Requested size: 391.96559pt x 256.70984pt.
 
 LaTeX Warning: Citation `something' on page 7 undefined on input line 15.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 15--108
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
 
  []
 
- [7
+) [7
 
 
 
@@ -1546,13 +1546,13 @@ o MT2 -
 \openout2 = `./srcs/annexes.aux'.
 
  (./srcs/annexes.tex
-<./images/Seite_graph_primitif.png, id=372, 1927.2pt x 1038.88126pt>
+<./images/Seite_graph_primitif.png, id=374, 1927.2pt x 1038.88126pt>
 File: ./images/Seite_graph_primitif.png Graphic file (type png)
 <use ./images/Seite_graph_primitif.png>
 Package pdftex.def Info: ./images/Seite_graph_primitif.png  used on input line 
 7.
 (pdftex.def)             Requested size: 366.17181pt x 197.38948pt.
-<./images/fig1.png, id=373, 959.08313pt x 590.95781pt>
+<./images/fig1.png, id=375, 959.08313pt x 590.95781pt>
 File: ./images/fig1.png Graphic file (type png)
 <use ./images/fig1.png>
 Package pdftex.def Info: ./images/fig1.png  used on input line 14.
@@ -1581,7 +1581,7 @@ Here is how much of TeX's memory you used:
  37076 multiletter control sequences out of 15000+600000
  566861 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,9n,117p,854b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,10n,117p,1111b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -1597,10 +1597,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (11 pages, 2388436 bytes).
+Output written on main.pdf (11 pages, 2389151 bytes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 360 compressed objects within 4 object streams
+ 465 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
  52 named destinations out of 1000 (max. 500000)
  160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
