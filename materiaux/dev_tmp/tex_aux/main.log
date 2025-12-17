@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  17 DEC 2025 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  17 DEC 2025 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -519,8 +519,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 24.
 (./srcs/1_intro.aux) (./srcs/dma/2_description_dma.aux)
 (./srcs/dma/3_theorie_dma.aux) (./srcs/dma/4_resultats_dma.aux)
 (./srcs/dma/5_analyse_dma.aux) (./srcs/dsc/2_description_dsc.aux)
-(./srcs/dsc/4_resultats_dsc.aux) (./srcs/dsc/5_analyse_dsc.aux)
-(./srcs/annexes.aux
+(./srcs/dsc/45_dsc.aux) (./srcs/annexes.aux
 
 LaTeX Warning: Label `fig:chauffe_lente' multiply defined.
 
@@ -661,7 +660,7 @@ OK, entering \batchmode...
 \openout2 = `./srcs/1_intro.aux'.
 
  (./srcs/1_intro.tex
-<./images/meca.png, id=84, 1312.905pt x 871.255pt>
+<./images/meca.png, id=85, 1312.905pt x 871.255pt>
 File: ./images/meca.png Graphic file (type png)
 <use ./images/meca.png>
 Package pdftex.def Info: ./images/meca.png  used on input line 6.
@@ -775,49 +774,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
 
-
-! LaTeX Error: Unicode character ′ (U+2032)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ... le sommet de la déformation totale $E′
-                                                  ′$, le sommet de la déf...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ′ (U+2032)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ... sommet de la déformation totale $E′′
-                                                  $, le sommet de la déform...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ′ (U+2032)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...sommet de la déformation élastique $E′
-                                                  $ et leur déphasage $\del...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-<./images/DMAexample.png, id=110, 578.16pt x 361.35pt>
+<./images/DMAexample.png, id=111, 578.16pt x 361.35pt>
 File: ./images/DMAexample.png Graphic file (type png)
 <use ./images/DMAexample.png>
 Package pdftex.def Info: ./images/DMAexample.png  used on input line 16.
@@ -1224,23 +1181,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--18
-
- []
-
 ) [7
 
 
 
- <./images/schema_dsc.png>] [8]
-\openout2 = `./srcs/dsc/4_resultats_dsc.aux'.
+ <./images/schema_dsc.png>]
+\openout2 = `./srcs/dsc/45_dsc.aux'.
 
- (./srcs/dsc/4_resultats_dsc.tex
+ (./srcs/dsc/45_dsc.tex
 
 pdfTeX warning: pdflatex (file ./utils/dsc/dsc_chauffe.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<./utils/dsc/dsc_chauffe.pdf, id=217, 845.07724pt x 597.55246pt>
+<./utils/dsc/dsc_chauffe.pdf, id=213, 845.07724pt x 597.55246pt>
 File: ./utils/dsc/dsc_chauffe.pdf Graphic file (type pdf)
 <use ./utils/dsc/dsc_chauffe.pdf>
 Package pdftex.def Info: ./utils/dsc/dsc_chauffe.pdf  used on input line 11.
@@ -1254,7 +1206,7 @@ See the caption package documentation for explanation.
 
 pdfTeX warning: pdflatex (file ./utils/dsc/dsc_amorphe.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<./utils/dsc/dsc_amorphe.pdf, id=218, 845.07724pt x 597.55246pt>
+<./utils/dsc/dsc_amorphe.pdf, id=214, 845.07724pt x 597.55246pt>
 File: ./utils/dsc/dsc_amorphe.pdf Graphic file (type pdf)
 <use ./utils/dsc/dsc_amorphe.pdf>
 Package pdftex.def Info: ./utils/dsc/dsc_amorphe.pdf  used on input line 17.
@@ -1295,7 +1247,7 @@ or  <return>  to continue without it.
 
 pdfTeX warning: pdflatex (file ./utils/dsc/dsc_cristallisation_chaude.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./utils/dsc/dsc_cristallisation_chaude.pdf, id=221, 845.07724pt x 597.55246pt>
+<./utils/dsc/dsc_cristallisation_chaude.pdf, id=217, 845.07724pt x 597.55246pt>
 
 File: ./utils/dsc/dsc_cristallisation_chaude.pdf Graphic file (type pdf)
 <use ./utils/dsc/dsc_cristallisation_chaude.pdf>
@@ -1311,7 +1263,7 @@ See the caption package documentation for explanation.
 
 pdfTeX warning: pdflatex (file ./utils/dsc/dsc_cristallisation_froide.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./utils/dsc/dsc_cristallisation_froide.pdf, id=222, 845.07724pt x 597.55246pt>
+<./utils/dsc/dsc_cristallisation_froide.pdf, id=218, 845.07724pt x 597.55246pt>
 
 File: ./utils/dsc/dsc_cristallisation_froide.pdf Graphic file (type pdf)
 <use ./utils/dsc/dsc_cristallisation_froide.pdf>
@@ -1323,33 +1275,24 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 34.
 See the caption package documentation for explanation.
 
-
-LaTeX Warning: Reference `fig' on page 9 undefined on input line 38.
-
-
-LaTeX Warning: Reference `fig' on page 9 undefined on input line 38.
-
-) [9
+ [8
 
 
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./utils/dsc/dsc_c
 hauffe.pdf> <./utils/dsc/dsc_amorphe.pdf> <./utils/dsc/dsc_cristallisation_chau
-de.pdf> <./utils/dsc/dsc_cristallisation_froide.pdf>] [10]
-\openout2 = `./srcs/dsc/5_analyse_dsc.aux'.
-
- (./srcs/dsc/5_analyse_dsc.tex
+de.pdf> <./utils/dsc/dsc_cristallisation_froide.pdf>]
 ! Double subscript.
 <argument> $V_v_
                 t$ [$K/min$]
-l.13         & \textbf{$V_v_t$ [$K/min$]}
+l.52         & \textbf{$V_v_t$ [$K/min$]}
                                          
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Undefined control sequence.
 \thetable ->\thechapter 
                         \Roman {table}
-l.24         \caption{
+l.63         \caption{
                       $V_v_t$: vitesse de la variation thermique, $T_v$: Tra...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1360,7 +1303,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \thetable ->\thechapter 
                         \Roman {table}
-l.24 ...ion thermique, $T_v$: Transition vitreuse}
+l.63 ...ion thermique, $T_v$: Transition vitreuse}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1371,7 +1314,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \thetable ->\thechapter 
                         \Roman {table}
-l.24 ...ion thermique, $T_v$: Transition vitreuse}
+l.63 ...ion thermique, $T_v$: Transition vitreuse}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1382,7 +1325,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \thetable ->\thechapter 
                         \Roman {table}
-l.24 ...ion thermique, $T_v$: Transition vitreuse}
+l.63 ...ion thermique, $T_v$: Transition vitreuse}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1393,14 +1336,14 @@ and I'll forget about whatever was undefined.
 ! Double subscript.
 <argument> $V_v_
                 t$: vitesse de la variation thermique, $T_v$: Transition vit...
-l.24 ...ion thermique, $T_v$: Transition vitreuse}
+l.63 ...ion thermique, $T_v$: Transition vitreuse}
                                                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Undefined control sequence.
 \thetable ->\thechapter 
                         \Roman {table}
-l.24 ...ion thermique, $T_v$: Transition vitreuse}
+l.63 ...ion thermique, $T_v$: Transition vitreuse}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1411,7 +1354,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \thetable ->\thechapter 
                         \Roman {table}
-l.24 ...ion thermique, $T_v$: Transition vitreuse}
+l.63 ...ion thermique, $T_v$: Transition vitreuse}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1422,294 +1365,294 @@ and I'll forget about whatever was undefined.
 ! Double subscript.
 <argument> $V_v_
                 t$: vitesse de la variation thermique, $T_v$: Transition vit...
-l.24 ...ion thermique, $T_v$: Transition vitreuse}
+l.63 ...ion thermique, $T_v$: Transition vitreuse}
                                                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-LaTeX Warning: Citation `petnet' on page 11 undefined on input line 27.
+LaTeX Warning: Citation `petnet' on page 9 undefined on input line 66.
 
 ! Double subscript.
-l.27 ...e la rampe thermique de 50.0 $K/min$ $X_2_
+l.66 ...e la rampe thermique de 50.0 $K/min$ $X_2_
                                                   4_4_._8$(50.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.27 ...la rampe thermique de 50.0 $K/min$ $X_2_4_
+l.66 ...la rampe thermique de 50.0 $K/min$ $X_2_4_
                                                   4_._8$(50.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.27 ... rampe thermique de 50.0 $K/min$ $X_2_4_4_
+l.66 ... rampe thermique de 50.0 $K/min$ $X_2_4_4_
                                                   ._8$(50.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.27 ...ampe thermique de 50.0 $K/min$ $X_2_4_4_._
+l.66 ...ampe thermique de 50.0 $K/min$ $X_2_4_4_._
                                                   8$(50.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.31 	X_2_
+l.70 	X_2_
           4_4_._8(50.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.31 	X_2_4_
+l.70 	X_2_4_
             4_._8(50.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.31 	X_2_4_4_
+l.70 	X_2_4_4_
               ._8(50.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.31 	X_2_4_4_._
+l.70 	X_2_4_4_._
                 8(50.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_
                       t_h
-l.31 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.70 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{35,5...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_t_
                         h
-l.31 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.70 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{35,5...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_
                       m_e
-l.31 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.70 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{35,5...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_m_
                         e
-l.31 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.70 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{35,5...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.33 ...fe_rapide} le taux de cristallinité $X_2_
+l.72 ...fe_rapide} le taux de cristallinité $X_2_
                                                   4_5_._9$(10.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.33 ..._rapide} le taux de cristallinité $X_2_4_
+l.72 ..._rapide} le taux de cristallinité $X_2_4_
                                                   5_._9$(10.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.33 ...apide} le taux de cristallinité $X_2_4_5_
+l.72 ...apide} le taux de cristallinité $X_2_4_5_
                                                   ._9$(10.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.33 ...ide} le taux de cristallinité $X_2_4_5_._
+l.72 ...ide} le taux de cristallinité $X_2_4_5_._
                                                   9$(10.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.36 	X_2_
+l.75 	X_2_
           4_5_._9(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.36 	X_2_4_
+l.75 	X_2_4_
             5_._9(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.36 	X_2_4_5_
+l.75 	X_2_4_5_
               ._9(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.36 	X_2_4_5_._
+l.75 	X_2_4_5_._
                 9(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_
                       t_h
-l.36 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.75 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{43.1...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_t_
                         h
-l.36 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.75 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{43.1...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_
                       m_e
-l.36 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.75 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{43.1...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_m_
                         e
-l.36 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.75 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{43.1...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 Nous constatons que $X_2_
+l.78 Nous constatons que $X_2_
                               4_5_._9$(10.0) $>$ $X_2_4_5_._9$(50.0), c’es...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 Nous constatons que $X_2_4_
+l.78 Nous constatons que $X_2_4_
                                 5_._9$(10.0) $>$ $X_2_4_5_._9$(50.0), c’es...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 Nous constatons que $X_2_4_5_
+l.78 Nous constatons que $X_2_4_5_
                                   ._9$(10.0) $>$ $X_2_4_5_._9$(50.0), c’es...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 Nous constatons que $X_2_4_5_._
+l.78 Nous constatons que $X_2_4_5_._
                                     9$(10.0) $>$ $X_2_4_5_._9$(50.0), c’es...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 ...nstatons que $X_2_4_5_._9$(10.0) $>$ $X_2_
+l.78 ...nstatons que $X_2_4_5_._9$(10.0) $>$ $X_2_
                                                   4_5_._9$(50.0), c’est-à...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 ...tatons que $X_2_4_5_._9$(10.0) $>$ $X_2_4_
+l.78 ...tatons que $X_2_4_5_._9$(10.0) $>$ $X_2_4_
                                                   5_._9$(50.0), c’est-à-d...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 ...tons que $X_2_4_5_._9$(10.0) $>$ $X_2_4_5_
+l.78 ...tons que $X_2_4_5_._9$(10.0) $>$ $X_2_4_5_
                                                   ._9$(50.0), c’est-à-dir...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 ...ns que $X_2_4_5_._9$(10.0) $>$ $X_2_4_5_._
+l.78 ...ns que $X_2_4_5_._9$(10.0) $>$ $X_2_4_5_._
                                                   9$(50.0), c’est-à-dire ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 ...ent amorphe de l’échantillon avec $X_1_
+l.78 ...ent amorphe de l’échantillon avec $X_1_
                                                   3_1_._1$(10.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 ...t amorphe de l’échantillon avec $X_1_3_
+l.78 ...t amorphe de l’échantillon avec $X_1_3_
                                                   1_._1$(10.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 ...amorphe de l’échantillon avec $X_1_3_1_
+l.78 ...amorphe de l’échantillon avec $X_1_3_1_
                                                   ._1$(10.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.39 ...orphe de l’échantillon avec $X_1_3_1_._
+l.78 ...orphe de l’échantillon avec $X_1_3_1_._
                                                   1$(10.0) :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.42 	X_1_
+l.81 	X_1_
           3_1_._1(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.42 	X_1_3_
+l.81 	X_1_3_
             1_._1(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.42 	X_1_3_1_
+l.81 	X_1_3_1_
               ._1(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.42 	X_1_3_1_._
+l.81 	X_1_3_1_._
                 1(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_
                       t_h
-l.42 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.81 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{23.9...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_t_
                         h
-l.42 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.81 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{23.9...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_
                       m_e
-l.42 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.81 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{23.9...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_m_
                         e
-l.42 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.81 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{23.9...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.45 ... au taux de décristallisation, soit $X_1_
+l.84 ... au taux de décristallisation, soit $X_1_
                                                   3_1_._1$(10.0) $<$ $X_2_4_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.45 ...u taux de décristallisation, soit $X_1_3_
+l.84 ...u taux de décristallisation, soit $X_1_3_
                                                   1_._1$(10.0) $<$ $X_2_4_5_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.45 ...taux de décristallisation, soit $X_1_3_1_
+l.84 ...taux de décristallisation, soit $X_1_3_1_
                                                   ._1$(10.0) $<$ $X_2_4_5_._...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.45 ...ux de décristallisation, soit $X_1_3_1_._
+l.84 ...ux de décristallisation, soit $X_1_3_1_._
                                                   1$(10.0) $<$ $X_2_4_5_._9$...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.45 ...sation, soit $X_1_3_1_._1$(10.0) $<$ $X_2_
+l.84 ...sation, soit $X_1_3_1_._1$(10.0) $<$ $X_2_
                                                   4_5_._9$(10.0). Le matéri...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.45 ...tion, soit $X_1_3_1_._1$(10.0) $<$ $X_2_4_
+l.84 ...tion, soit $X_1_3_1_._1$(10.0) $<$ $X_2_4_
                                                   5_._9$(10.0). Le matériau...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.45 ...on, soit $X_1_3_1_._1$(10.0) $<$ $X_2_4_5_
+l.84 ...on, soit $X_1_3_1_._1$(10.0) $<$ $X_2_4_5_
                                                   ._9$(10.0). Le matériau a...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.45 ..., soit $X_1_3_1_._1$(10.0) $<$ $X_2_4_5_._
+l.84 ..., soit $X_1_3_1_._1$(10.0) $<$ $X_2_4_5_._
                                                   9$(10.0). Le matériau a, ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
@@ -1720,7 +1663,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \\\\
+l.86 \\\\
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1733,7 +1676,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 E
+l.87 E
       nfin, quand le matériau est à nouveau refroidi, mais plus lentement ...
 
 Your command was ignored.
@@ -1741,207 +1684,140 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Double subscript.
-l.48 ...ement \ref{val:peaks}, nous obtenons $X_1_
+l.87 ...ement \ref{val:peaks}, nous obtenons $X_1_
                                                   8_6_._8$(-10.0), soit :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.48 ...ent \ref{val:peaks}, nous obtenons $X_1_8_
+l.87 ...ent \ref{val:peaks}, nous obtenons $X_1_8_
                                                   6_._8$(-10.0), soit :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.48 ...t \ref{val:peaks}, nous obtenons $X_1_8_6_
+l.87 ...t \ref{val:peaks}, nous obtenons $X_1_8_6_
                                                   ._8$(-10.0), soit :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.48 ...\ref{val:peaks}, nous obtenons $X_1_8_6_._
+l.87 ...\ref{val:peaks}, nous obtenons $X_1_8_6_._
                                                   8$(-10.0), soit :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.51         X_1_
+l.90         X_1_
                  8_6_._8(-10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \c...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.51         X_1_8_
+l.90         X_1_8_
                    6_._8(-10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \c...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.51         X_1_8_6_
+l.90         X_1_8_6_
                      ._8(-10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \c...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.51         X_1_8_6_._
+l.90         X_1_8_6_._
                        8(-10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \c...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_
                       t_h
-l.51 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.90 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{36.1...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_t_
                         h
-l.51 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.90 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{36.1...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_
                       m_e
-l.51 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.90 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{36.1...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \delta H_f_m_
                         e
-l.51 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
+l.90 ...) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}
                                                   | \cdot 100\% = \frac{36.1...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
+ [9]
 ! Double subscript.
-l.54 ...le même taux de cristallinité avec $X_1_
+l.93 ...le même taux de cristallinité avec $X_1_
                                                   8_6_._8$(-10.0) que pour $...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.54 ... même taux de cristallinité avec $X_1_8_
+l.93 ... même taux de cristallinité avec $X_1_8_
                                                   6_._8$(-10.0) que pour $X_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.54 ...ême taux de cristallinité avec $X_1_8_6_
+l.93 ...ême taux de cristallinité avec $X_1_8_6_
                                                   ._8$(-10.0) que pour $X_2_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.54 ...me taux de cristallinité avec $X_1_8_6_._
+l.93 ...me taux de cristallinité avec $X_1_8_6_._
                                                   8$(-10.0) que pour $X_2_4_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.54 ...� avec $X_1_8_6_._8$(-10.0) que pour $X_2_
+l.93 ...� avec $X_1_8_6_._8$(-10.0) que pour $X_2_
                                                   4_5_._9$(10.0).
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.54 ...avec $X_1_8_6_._8$(-10.0) que pour $X_2_4_
+l.93 ...avec $X_1_8_6_._8$(-10.0) que pour $X_2_4_
                                                   5_._9$(10.0).
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.54 ...ec $X_1_8_6_._8$(-10.0) que pour $X_2_4_5_
+l.93 ...ec $X_1_8_6_._8$(-10.0) que pour $X_2_4_5_
                                                   ._9$(10.0).
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.54 ... $X_1_8_6_._8$(-10.0) que pour $X_2_4_5_._
+l.93 ... $X_1_8_6_._8$(-10.0) que pour $X_2_4_5_._
                                                   9$(10.0).
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-) [11
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
+
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
 
-]
-! Display math should end with $$.
-<to be read again> 
-                   E
-l.145 	\hspace{8cm} $E
-                      _a$ = 294.381 [kJ/mol] (87.6-159.8$^\circ$).
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+ []
 
+) [10]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.145 	\hspace{8cm} $E_
-                       a$ = 294.381 [kJ/mol] (87.6-159.8$^\circ$).
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 \]
-        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.146 \]
-        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.146 \]
-        
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150 \\\\
-          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 C
-       onclusions DSC :
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.162 ...fr/articles/Analyse_mécanique_dynamique}
+l.150 ...fr/articles/Analyse_mécanique_dynamique}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 162.
+LaTeX Warning: Command \' invalid in math mode on input line 150.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.162 ...fr/articles/Analyse_mécanique_dynamique}
+l.150 ...fr/articles/Analyse_mécanique_dynamique}
                                                   
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1949,7 +1825,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.162 ...fr/articles/Analyse_mécanique_dynamique}
+l.150 ...fr/articles/Analyse_mécanique_dynamique}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1960,7 +1836,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.167 
+l.155 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1968,7 +1844,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.167 
+l.155 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1977,43 +1853,49 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (54.57275pt too wide) in paragraph at lines 172--177
+Overfull \hbox (54.57275pt too wide) in paragraph at lines 160--165
 \OT1/cmtt/m/n/12 https://analyzing-testing.netzsch.com/fr/produits/analyse-dyna
 mique-mecanique-dma 
  []
 
 
-Overfull \hbox (60.74776pt too wide) in paragraph at lines 182--185
+Overfull \hbox (60.74776pt too wide) in paragraph at lines 170--173
 []\OT1/cmtt/m/n/12 https://analyzing-testing.netzsch.com/fr/landingpages/princi
 ple-of-a-heat-flux-dsc 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--191
+Underfull \hbox (badness 10000) in paragraph at lines 175--179
 \OT1/cmtt/m/n/12 https://cyberlearn.hes-so.ch/mod/folder/view.php?id=474646 Lab
 o MT2 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
+Underfull \hbox (badness 10000) in paragraph at lines 180--184
 \OT1/cmtt/m/n/12 https://cyberlearn.hes-so.ch/mod/folder/view.php?id=474646 Lab
 o MT2 -
  []
 
- [12
+
+Overfull \hbox (295.39787pt too wide) in paragraph at lines 185--189
+\OT1/cmtt/m/n/12 https://analyzing-testing.netzsch.com/fr/polymeres-netzsch-com
+/engineering-thermoplastics/pet-polyethylene-terephthalate
+ []
+
+ [11
 
 
 ]
 \openout2 = `./srcs/annexes.aux'.
 
  (./srcs/annexes.tex
-<./images/Seite_graph_primitif.png, id=368, 1927.2pt x 1038.88126pt>
+<./images/Seite_graph_primitif.png, id=367, 1927.2pt x 1038.88126pt>
 File: ./images/Seite_graph_primitif.png Graphic file (type png)
 <use ./images/Seite_graph_primitif.png>
 Package pdftex.def Info: ./images/Seite_graph_primitif.png  used on input line 
 7.
 (pdftex.def)             Requested size: 366.17181pt x 197.38948pt.
-<./images/fig1.png, id=369, 959.08313pt x 590.95781pt>
+<./images/fig1.png, id=368, 959.08313pt x 590.95781pt>
 File: ./images/fig1.png Graphic file (type png)
 <use ./images/fig1.png>
 Package pdftex.def Info: ./images/fig1.png  used on input line 14.
@@ -2040,19 +1922,19 @@ put line 41.
 
 pdfTeX warning: pdflatex (file ./images/Seite_arrhenius_graph.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./images/Seite_arrhenius_graph.pdf, id=370, 845.07724pt x 597.55246pt>
+<./images/Seite_arrhenius_graph.pdf, id=369, 845.07724pt x 597.55246pt>
 File: ./images/Seite_arrhenius_graph.pdf Graphic file (type pdf)
 <use ./images/Seite_arrhenius_graph.pdf>
 Package pdftex.def Info: ./images/Seite_arrhenius_graph.pdf  used on input line
  48.
 (pdftex.def)             Requested size: 338.0249pt x 239.01674pt.
-) [13
+) [12
 
- <./images/Seite_graph_primitif.png> <./images/fig1.png>] [14] [15] [16 <./imag
+ <./images/Seite_graph_primitif.png> <./images/fig1.png>] [13] [14] [15 <./imag
 es/Seite_arrhenius_graph.pdf>] (./main.aux (./srcs/1_intro.aux) (./srcs/dma/2_d
 escription_dma.aux) (./srcs/dma/3_theorie_dma.aux) (./srcs/dma/4_resultats_dma.
 aux) (./srcs/dma/5_analyse_dma.aux) (./srcs/dsc/2_description_dsc.aux) (./srcs/
-dsc/4_resultats_dsc.aux) (./srcs/dsc/5_analyse_dsc.aux) (./srcs/annexes.aux))
+dsc/45_dsc.aux) (./srcs/annexes.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -2067,13 +1949,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B360950798F539CA31008E7F615B453D;1814.
  ) 
 Here is how much of TeX's memory you used:
- 15197 strings out of 474222
- 250391 string characters out of 5748733
+ 15172 strings out of 474222
+ 249214 string characters out of 5748733
  1937975 words of memory out of 5000000
- 37090 multiletter control sequences out of 15000+600000
+ 37072 multiletter control sequences out of 15000+600000
  567198 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,9n,117p,1200b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,9n,117p,1236b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -2090,9 +1972,9 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (16 pages, 2420953 bytes).
+Output written on main.pdf (15 pages, 2425460 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
+ 506 PDF objects out of 1000 (max. 8388607)
  395 compressed objects within 4 object streams
  61 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)

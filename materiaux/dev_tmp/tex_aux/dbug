@@ -206,8 +206,7 @@ For additional information on amsmath, use the `?' option.
 (./srcs/1_intro.aux) (./srcs/dma/2_description_dma.aux)
 (./srcs/dma/3_theorie_dma.aux) (./srcs/dma/4_resultats_dma.aux)
 (./srcs/dma/5_analyse_dma.aux) (./srcs/dsc/2_description_dsc.aux)
-(./srcs/dsc/4_resultats_dsc.aux) (./srcs/dsc/5_analyse_dsc.aux)
-(./srcs/annexes.aux
+(./srcs/dsc/45_dsc.aux) (./srcs/annexes.aux
 
 LaTeX Warning: Label `fig:chauffe_lente' multiply defined.
 
