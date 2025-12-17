@@ -207,8 +207,20 @@ For additional information on amsmath, use the `?' option.
 (./srcs/dma/3_theorie_dma.aux) (./srcs/dma/4_resultats_dma.aux)
 (./srcs/dma/5_analyse_dma.aux) (./srcs/dsc/2_description_dsc.aux)
 (./srcs/dsc/4_resultats_dsc.aux) (./srcs/dsc/5_analyse_dsc.aux)
-(./srcs/annexes.aux))
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(./srcs/annexes.aux
+
+LaTeX Warning: Label `fig:chauffe_lente' multiply defined.
+
+
+LaTeX Warning: Label `fig:refroidissement_lent' multiply defined.
+
+
+LaTeX Warning: Label `fig:chauffe_lente' multiply defined.
+
+
+LaTeX Warning: Label `fig:refroidissement_lent' multiply defined.
+
+)) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))

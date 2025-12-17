@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  15 DEC 2025 09:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  17 DEC 2025 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -520,7 +520,20 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 24.
 (./srcs/dma/3_theorie_dma.aux) (./srcs/dma/4_resultats_dma.aux)
 (./srcs/dma/5_analyse_dma.aux) (./srcs/dsc/2_description_dsc.aux)
 (./srcs/dsc/4_resultats_dsc.aux) (./srcs/dsc/5_analyse_dsc.aux)
-(./srcs/annexes.aux))
+(./srcs/annexes.aux
+
+LaTeX Warning: Label `fig:chauffe_lente' multiply defined.
+
+
+LaTeX Warning: Label `fig:refroidissement_lent' multiply defined.
+
+
+LaTeX Warning: Label `fig:chauffe_lente' multiply defined.
+
+
+LaTeX Warning: Label `fig:refroidissement_lent' multiply defined.
+
+))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -541,8 +554,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count331
 \scratchdimen=\dimen193
@@ -1222,7 +1234,7 @@ See the caption package documentation for explanation.
 
 
  <./utils/dsc/dsc_chauffe.pdf> <./utils/dsc/dsc_amorphe.pdf> <./utils/dsc/dsc_c
-ristallisation_chaude.pdf> <./utils/dsc/dsc_cristallisation_froide.pdf>]
+ristallisation_chaude.pdf> <./utils/dsc/dsc_cristallisation_froide.pdf>] [9]
 \openout2 = `./srcs/dsc/5_analyse_dsc.aux'.
 
  (./srcs/dsc/5_analyse_dsc.tex
@@ -1314,7 +1326,7 @@ l.24 ...ion thermique, $T_v$: Transition vitreuse}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-LaTeX Warning: Reference `fig:combined' on page 9 undefined on input line 37.
+LaTeX Warning: Reference `fig:combined' on page 10 undefined on input line 37.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 37--39
@@ -1387,7 +1399,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) [9
+) [10
 
 
 
@@ -1539,31 +1551,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--196
 o MT2 -
  []
 
- [10
+ [11
 
 
 ]
 \openout2 = `./srcs/annexes.aux'.
 
  (./srcs/annexes.tex
-<./images/Seite_graph_primitif.png, id=374, 1927.2pt x 1038.88126pt>
+<./images/Seite_graph_primitif.png, id=380, 1927.2pt x 1038.88126pt>
 File: ./images/Seite_graph_primitif.png Graphic file (type png)
 <use ./images/Seite_graph_primitif.png>
 Package pdftex.def Info: ./images/Seite_graph_primitif.png  used on input line 
 7.
 (pdftex.def)             Requested size: 366.17181pt x 197.38948pt.
-<./images/fig1.png, id=375, 959.08313pt x 590.95781pt>
+<./images/fig1.png, id=381, 959.08313pt x 590.95781pt>
 File: ./images/fig1.png Graphic file (type png)
 <use ./images/fig1.png>
 Package pdftex.def Info: ./images/fig1.png  used on input line 14.
 (pdftex.def)             Requested size: 354.85521pt x 218.65096pt.
-) [11
+File: ./utils/dsc/dsc_chauffe.pdf Graphic file (type pdf)
+<use ./utils/dsc/dsc_chauffe.pdf>
+Package pdftex.def Info: ./utils/dsc/dsc_chauffe.pdf  used on input line 22.
+(pdftex.def)             Requested size: 380.28125pt x 268.89612pt.
+File: ./utils/dsc/dsc_amorphe.pdf Graphic file (type pdf)
+<use ./utils/dsc/dsc_amorphe.pdf>
+Package pdftex.def Info: ./utils/dsc/dsc_amorphe.pdf  used on input line 28.
+(pdftex.def)             Requested size: 380.28125pt x 268.89612pt.
+File: ./utils/dsc/dsc_cristallisation_chaude.pdf Graphic file (type pdf)
+<use ./utils/dsc/dsc_cristallisation_chaude.pdf>
+Package pdftex.def Info: ./utils/dsc/dsc_cristallisation_chaude.pdf  used on in
+put line 35.
+(pdftex.def)             Requested size: 380.28125pt x 268.89612pt.
+File: ./utils/dsc/dsc_cristallisation_froide.pdf Graphic file (type pdf)
+<use ./utils/dsc/dsc_cristallisation_froide.pdf>
+Package pdftex.def Info: ./utils/dsc/dsc_cristallisation_froide.pdf  used on in
+put line 41.
+(pdftex.def)             Requested size: 380.28125pt x 268.89612pt.
+) [12
 
- <./images/Seite_graph_primitif.png> <./images/fig1.png>] (./main.aux (./srcs/1
-_intro.aux) (./srcs/dma/2_description_dma.aux) (./srcs/dma/3_theorie_dma.aux) (
-./srcs/dma/4_resultats_dma.aux) (./srcs/dma/5_analyse_dma.aux) (./srcs/dsc/2_de
-scription_dsc.aux) (./srcs/dsc/4_resultats_dsc.aux) (./srcs/dsc/5_analyse_dsc.a
-ux) (./srcs/annexes.aux))
+ <./images/Seite_graph_primitif.png> <./images/fig1.png>] [13] [14] (./main.aux
+ (./srcs/1_intro.aux) (./srcs/dma/2_description_dma.aux) (./srcs/dma/3_theorie_
+dma.aux) (./srcs/dma/4_resultats_dma.aux) (./srcs/dma/5_analyse_dma.aux) (./src
+s/dsc/2_description_dsc.aux) (./srcs/dsc/4_resultats_dsc.aux) (./srcs/dsc/5_ana
+lyse_dsc.aux) (./srcs/annexes.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1571,17 +1601,20 @@ L3 programming layer <2024-01-22>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B360950798F539CA31008E7F615B453D;1814.
  ) 
 Here is how much of TeX's memory you used:
- 15172 strings out of 474222
- 249966 string characters out of 5748733
+ 15179 strings out of 474222
+ 250055 string characters out of 5748733
  1934975 words of memory out of 5000000
  37076 multiletter control sequences out of 15000+600000
  566861 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,117p,1111b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,10n,117p,1217b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -1597,10 +1630,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (11 pages, 2389151 bytes).
+Output written on main.pdf (14 pages, 2390257 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 362 compressed objects within 4 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 483 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
+ 59 named destinations out of 1000 (max. 500000)
  160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
