@@ -1,0 +1,256 @@
+\section{DMA}
+\label{sec:manipulations}
+\subsection{escription de l'installation et manipulations}
+
+Les manipulations sont realisees sur un echantillon de PMMA. Nous utlisons donc la technique de DMA grace a la machine "X'Press DMA 242 E Artemis' du fournisseur NETZSH Ref. \ref{DMA} qui nous permet d'evaluer les proprietes viscoelastiques de notre echantillon de PMMA.
+Pour ce faire, nous lui appliquons une charge oscillante pendant que ce dernier se trouve dans le four lui imposant une rampe thermique positive. Nous repetons ce processus a differentes frequences d'oscillations de la charge, soit a 1Hz, 2Hz, 5Hz, 10Hz et 20Hz. La rampe thermique reste identique pour chaque serie de mesure. (PRECISER VITESSE)
+\\\\
+L'application de cette charge permet de mesurer plusieurs parametres visibles sur Fig. \ref{fig:DMAschema}. La charge genere une deformation totale, visqueuse et elastique. Couples a la contrainte correspondante, nous pouvons determiner l'etat dans lequel se trouve l'echantillon au cours de l'experience.
+\\
+\begin{flushleft}
+\begin{minipage}{0.34\textwidth}
+	La figure \ref{fig:DMAschema} nous permet de determiner par le sommet de la deformation totale $E''$, le sommet de la deformation elastique $E'$ et leur dephasage $\delta$ (voir \ref{sec:theorie}.
+\end{minipage}
+\hfill
+\begin{minipage}{0.62\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{DMAexample.png}
+    \captionof{figure}{Exemple des signaux mesures par DMA a temperature constante}
+    \label{fig:DMAschema}
+\end{minipage}
+\end{flushleft}
+\vspace{1cm}
+Pour garantir la fiabilite des resultats, il faut faire attention a relever precisement les dimensions de l'echantillon mesure avant de le placer dans le four. Une fois dedans, il est necessaire de configurer l'offset entre l'echantillon et la masse oscillante. En effet, afin de modeliser correctement les parametres recherches sur Fig. \ref{fig:DMAschema}, il est indispensable de rentrer les bon parametres dans les fonctions qui vont determiner l'ajustement des donnees obtenues pendant le process. Cela s'illustre par les Eqs. \ref{eq:3} et \ref{eq:4} en Sec. \ref{sec:DMAtheorie}.
+
+\subsection{Theorie} \label{sec:theorie}
+
+A partir de Ref. \cite{protocoleDMA}, nous pouvons decrire depuis les lois de Hook et de Newton la modelisation de notre systeme. L'instrument imporse une contrainte périodique en fonction du temps $\sigma$(t) de pusation $\omega$ et d'une contrainte de reference $\sigma_0$ tel que 
+\begin{equation}
+    \sigma(t) = \sigma_0 \sin(\omega t).
+	\label{eq:1}
+\end{equation}
+
+Notons, une deformation $\epsilon$ sous dephasage d’un angle $\delta$ :
+\begin{equation}
+    \varepsilon(t) = \varepsilon_0 \sin(\omega t + \delta).
+	\label{eq:2}
+\end{equation}
+
+Selon les hypotheses du protocole (Ref. \cite{protocoleDMA} p. 2-3), les grandeurs viscoelastiques mesurees $E'$ (module de stockage) et $E''$ (module de perte) sont apres derivations des Eqs. \ref{eq:1} et \ref{eq:2}
+\begin{equation}
+	E' &= \frac{\sigma_0}{\varepsilon_0}\cos\delta \hspace{0.4cm} et \hspace{0.4cm}
+    E'' &= \frac{\sigma_0}{\varepsilon_0}\sin\delta.
+	\label{eq:3}
+\end{equation}
+
+Elles permettent d'ecrire le pic du facteur d’amortissement $\tan\delta$ correspondant à la transition vitreuse mécanique a partir de relations trigonometriques avec Eqs. \ref{eq:3} tel que :
+\begin{equation}
+	\tan\delta &= \frac{E'}{E'\'}.
+	\label{eq:4}
+\end{equation}
+
+Comme cette transition depend de la frequence d’excitation, les temperatures des pics mesures
+sont exploitees à l’aide de la loi d’Arrhenius (voir Ref. \cite{protocoleDMA}) :
+\begin{equation}
+    f = f_0 \exp\!\left(-\frac{E_a}{RT}\right),
+	\label{eq:arrhenius}
+\end{equation}
+
+que l’on linéarise sous la forme
+
+\begin{equation}
+    \ln f = \ln f_0 - \frac{E_a}{R}\,\frac{1}{T}.
+	\label{eq:arrheniuslin}
+\end{equation}
+
+Ainsi, la représentation de $\ln f$ en fonction de $1/T_g(f)$ permet d’extraire l’énergie
+d’activation $E_a$ associée à la transition vitreuse du PMMA.
+
+ 
+\subsection{Resultats}
+\label{sec:DMAresultats}
+À la fin de chaque essai pour une fréquence donnée, l’instrument NETZSCH fournit les données
+brutes de l'analyse mécanique dynamique. La Fig.~\ref{fig:DMAprimitif} présente un exemple typique des signaux obtenus traites ensuite plus clairement sur Fig. \ref{fig:DMA_resultats} : 
+\begin{description}
+
+	\item le module de stockage $E'$ en bleu (voir Eq. \ref{eq:3}) est relativement eleve a basse temperature (~2000-2500 $MPa$) et se stablilise generalement vers 200 $MPa$ independament de la frquence imposee, 
+
+	\item Le module de perte $E''$ en jaune (voir Eq. \ref{eq:3}) adopte un comportement similaire au module de stockage, mais il varie autour de 150-200 $MPa$ avant de se stabiliser autour de 20-50 $MPa$. 
+
+	\item Le dephasage entre les deux modules illustre ainsi le facteur d’amortissement $\tan\delta$ en vert (voir Eq. \ref{eq:4}) dont on observe les pics legendes sur Fig. \ref{fig:DMA_resultats}.
+
+\end{description}
+La rampe thermique est répétée pour plusieurs fréquences legendees entre 1~Hz et 20~Hz sur Fig. \ref{fig:DMA_resultats}, sur le meme échantillon de PMMA en configuration "3 point bending" entre 75$^\circ$ et 175$^\circ$. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.45]{Seite_Peak_analyse.pdf}
+    \captionof{figure}{Analyse du pic de $\tan\delta$ permettant l’extraction de $T_g(f)$}
+    \label{fig:DMA_resultats}
+\end{figure}
+
+\\\\
+Le logiciel d'analyse associee a la machine du fournisseur (voir Sec. \ref{sec:manipulations}), a permit d'obtenir un fit des differents sets de donnees et par recherche des extremas locaux les pics de temperatures auxquels le $\tan\delta$ correspondant etait maximal. 
+Cela permet d’identifier la position de la
+transition vitreuse pour chaque fréquence. Ces températures caractéristiques sont ensuite
+	utilisées pour construire le graphe d’Arrhenius et déterminer l’énergie d’activation du PMMA (voir Sec. \ref{sec:DMAanalyse}).
+
+\subsection{Analyse des résultats, complement}
+\label{sec:DMAanalyse}
+
+Grace au traitement de donnees sur Fig. \ref{eq:DMAprimitif}, nous pouvons obtenir en couplant les extremums a chaque frequence d'oscillation imposee a la masse le tableau suivant :
+
+\\
+\begin{table}[!ht]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{|c|c|c|}
+\hline
+	\textbf{Frequence [Hz]} 
+	& \textbf{Peak [$^\circ$]}
+	& \textbf{incertitude [$^\circ$]}
+\\\hline
+	1.000 & 140.5 & 1.606 \\
+	2.000 & 143.5 & 1.594 \\
+	5.000 & 148.6 & 1.601 \\
+	10.000 & 150.5 & 1.616 \\
+	20.000 & 155.7 & 1.518 \\
+\hline
+\textbf{Moyenne}
+& \textbf{n/a}
+& \textbf{1.587} \\
+\hline
+\end{tabular}
+	\caption{Valeurs de temperatures auxquelles E (module d'Young) est maximal}
+\label{tab:peaks}
+\end{table}
+
+
+On peut donc extraire tous les extremums locaux de Fig. \ref{fig:DMA_resultats} que l'on peut retrouver dans le tableau \ref{tab:peaks}. Grace a la relation Eq. \ref{eq:arrhenius} qu'on linearise tel que Eq. \ref{eq:arrheniuslin}, nous obtenons le graph d'Arrenhius suivant : 
+
+\begin{figure}[hct]
+        \centering
+        \includegraphics[scale=0.7]{my_arrenius.png}
+        \label{fig:arrenius}
+        \caption{Arrhenius graph}
+\end{figure}
+
+que l'on peut comparer avec celui obtenu grace au logiciel du fournisseur (voir Ref. \ref{fig:n_arrenius}). Cela nous permet, comme nous le mentionnons en Sec. \ref{sec:theorie}, d'extraire l'energie d'activation $E_a$ associee a la transition vitreuse de notre echantillon de PMMA, soit :
+\[
+	E_a &= 295.730 \pm 18.959 ~[kJ/mol].
+\]
+Avec une ordonnee a l'orgine de :
+\[ 86 \pm 5 [ln(f)].
+\]
+\section{DSC}
+\label{sec:DSC}
+\subsection{Description des manipulations}
+
+Pour les manipulations d'un echantillon de PET, nous utilisons donc la technique DSC grace a la machine X’Press DSC 214 Polyma' egalement du fournisseur NETZSCH. Cet instrument est essentiellement un four. A l'intereur de ce derniers, se trouvent deux petites capsules visibles sur Fig. \ref{fig:DSCschema}. L'une accueille l'echantillon, l'autre sert de reference. (Ref. \cite{DSC}),
+
+\begin{figure}[ht]
+\centering
+        \includegraphics[scale=0.55]{schema_dsc.png}
+        \captionof{figure}{ Schema de principe de la mesure DSC, Ref. \cite{DSC} }
+	\label{fig:DSCschema}
+\end{figure}
+
+%	DEFINE CHALEUR SPECIFIQUE + CAPACITE CALO
+L'echantillon doit soigneusement etre prepare afin de limite les erreurs de mesures. Il est important de sceller les capsules par pression apres avoir manipuler l'echantillon avec des gants. Cela permet d'eviter d'eviter de contaminer le PET avec des impuretees, car nos mesures se basent sur les capacites calorifiques propres a notre echantillon.
+\\\\
+%	DEFINE ENTALPIE ...
+Enfin, le principe du DSC consiste a simplement mesurer avec deux thermocouples identiques la chaleur que degagent chacun des echantillons. Nous soustrayons la difference entre les deux afin d'obtenir l'evolution de ce parametre en fonction de la temperature du four. En appliquant cette mesure a differentes rampes thermiques (voir vitesses Tab. \ref{val:peaks}), nous pouvons verifier graphiquement la temperature transition vitreuse $V_f$ (ou transition alpha), la temperature de fusion $T_f$. L'experience permet egalement d'identifier les phases ou se forment et deforment les cristaux dans un echantillon de PET en fonction de differentes rampes thermiques. Nous employons l'ordre suivant : d'abord chauffer rapidement l'echantillon, puis le refroidir rapidement. Ensuite il faut proceder a une chauffe lente puis un refroidissement lent. Nous pouvons par consequent extraire le taux de cristalinite a partir de notre mesure d'enthalpie de fusion.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Resultats}
+\label{sec:DSCresultats}
+
+Lors de la chauffe rapide Fig. \ref{fig:chauffe_rapide}, nous constatons une temperature de transition vitreuse autour de 82 $^\circ$C et pic exothermique vers 244.8$^\circ$C d'une intensite de -43.15 $\pm 0.00 J/g$. En effet, chauffe a froid, les cristaux qui se defonts liberent une certaine chaleur. En revanche, le refroidissement rapide a chaud sur Fig. \ref{fig:refroidissement_rapide} ne laisse pas au materiau le temps de correctement se restructure et prend une structure amorphe.
+
+\begin{flushleft}
+\begin{minipage}{0.49\textwidth} 
+\includegraphics[width=\textwidth]{dsc_chauffe.pdf}%
+	\captionof{figure}{$\delta$H(T[$^\circ$C]) chauffe rapide}
+       \label{fig:chauffe_rapide}
+\end{minipage}
+\hfill
+\begin{minipage}{0.49\textwidth}
+    \includegraphics[width=\linewidth]{dsc_amorphe.pdf}
+	\captionof{figure}{$\delta$H(T[$^\circ$C]) refroidissement rapide}
+        \label{fig:refroidissement_rapide}
+\end{minipage}
+\end{flushleft}
+\\\\
+Par la suite, le comportement de l'echantillon change lorsque nous lui permettons de se refroidir ou chauffer plus lentement (visible sur Figs. \ref{fig:chauffe_lente} et \ref{fig:refroidissement_lent}).
+
+\begin{flushleft}
+\begin{minipage}{0.49\textwidth}
+    \includegraphics[width=\linewidth]{dsc_cristallisation_chaude.pdf}
+        \captionof{figure}{$\delta$H(T[$^\circ$C]) chauffe lente}
+        \label{fig:chauffe_lente}
+\end{minipage}
+\hfill
+\begin{minipage}{0.49\textwidth}
+    \includegraphics[width=\linewidth]{dsc_cristallisation_froide.pdf}
+        \captionof{figure}{$\delta$H(T[$^\circ$C]) refroidissement lent}
+        \label{fig:refroidissement_lent}
+\end{minipage}
+\end{flushleft}
+
+Apres un refroidissement rapide sur Fig. \ref{fig:refroidissement_rapide}, nous chauffons lentement et obtenons Fig. \ref{fig:chauffe_lente} sur laquelle $T_v$ se situe autour de 77$^\circ$C, soit environ 5$^\circ$ plus bas que lors de la premiere chauffe sur Fig. \ref{fig:chauffe_rapide}. Nous observons ensuite un pic endothermique sur Fig. \ref{fig:chauffe_lente} autour de 131 $^\circ$C que nous ne voyons pas sur Fig. \ref{fig:chauffe_rapide}. Cela demontre l'energie de recristalisation du materiau chauffe a froid suite au refroidissement rapide ayant laisse une structure amorphe. Autour de 245 $^\circ$C, avec $0.2 ^\circ$C de difference que lors de la chauffe rapide (Fig. \ref{fig:chauffe_rapide}), nous observons un second pic sur Fig. \ref{fig:chauffe_lente}. qui est egalement de nature exothermique. Cela demontre l'energie liberee lors de la decristalisation dans l'echantillon de PMMA. Lors du refroidissement lent sur Fig. \ref{fig:refroidissement_lent}, nous observons contrairement que sur Fig. \ref{fig:refroidissement_rapide} un pic endothermique demontrant l'energie necessaire a la recristalisation du materiau.
+\subsection{Analyse}
+
+Dans son ensemble chaque experience en DSC est visible en Tab. \ref{val:peaks} dont on connait alors l'enthalpie de fusion a partir de la mesure de l'aire.
+\begin{table}[!ht]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+        \textbf{Figure}
+        & \textbf{$V_v_t$ [$K/min$]}
+        & \textbf{Pic complexe [$^\circ$]}
+        & \textbf{Aire [$J/g$]}
+        & \textbf{$T_v$ [bool]}
+\\\hline
+        \ref{fig:chauffe_rapide} & 50.0 & 244.8 & -43.15 & Oui  \\
+        \ref{fig:refroidissement_rapide} & -200.0 & $\emptyset$ & $\emptyset$ & $\emptyset$  \\
+        \ref{fig:chauffe_lente} & 10.0 & 131.1-245.9 & 23.93-(-35.58) & Oui \\
+        \ref{fig:refroidissement_lent} & -10.0 & 186.8 & 36.19 & $\emptyset$ \\
+\hline
+\end{tabular}
+        \caption{$V_v_t$: vitesse de la variation thermique, $T_v$: Transition vitreuse}
+\label{val:peaks}
+\end{table}
+
+La valeur theorique d'enthalpie de fusion du PET est definie par Ref. \cite{petnet} a 140 $J/g$. Pour la chauffe lente (chauffe a froid) sur Fig. \ref{fig:chauffe_lente}, nous obtenons la valeur mesuree d'enthalpie de fusion a -43.15 $^\circ$C a 244.8 $^\circ$C. Ainsi nous obtenons le taux de cristalinite en fonction de la rampe thermique de 50.0 $K/min$ $X_2_4_4_._8$(50.0):
+
+\[
+	X_2_4_4_._8(50.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\% = \frac{35,58}{140} \cdot 100 \% = 25.41 \%.
+\]
+
+Pour la meme temperature, a ~1$^\circ$C pres, nous obtenons pour la chauffe rapide sur Fig. \ref{fig:chauffe_rapide}, le taux de cristalinite $X_2_4_5_._9$(10.0) :
+
+\[
+	X_2_4_5_._9(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\% = \frac{43.15}{140} \cdot 100\% = 32.25 \%.
+\]
+
+Nous constatons que $X_2_4_5_._9$(10.0) $>$ $X_2_4_5_._9$(50.0), c'est-a-dire que le taux de cristalinite avant decristalinisation est plus eleve dans l'echantillon chauffe rapidement que celui chauffe lentement. En effet, suite a avoir ete chauffe rapidement, nous nous observons une phase amorphe lors du refroidissment rapide sur Fig. \ref{fig:refroidissement_rapide}. Cela veut dire que le PET n'a pas eu le temps de recuperer le premier taux de cristalinite mesure avec la chauffe rapide. Nous pouvons verifier quel etait le taux de cristalinite a 131.1$^\circ$C observe sur la chauffe lente sur Fig. \ref{fig:chauffe_lente} suite au refroidissement amorphe de l'echantillon avec $X_1_3_1_._1$(10.0) :
+
+
+\[
+	X_1_3_1_._1(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\% = \frac{23.93}{140} \cdot 100\% = 17.11 \%,
+\]
+
+Nous remarquons que le taux de cristalisation est inferieur au taux de decristalisation, soit $X_1_3_1_._1$(10.0) $<$ $X_2_4_5_._9$(10.0). Le materiaux a en fin de compte un taux de cristalinite plus eleve quand il est chauffe, puis refroidit rapidement avant d'etre rechauffe lentement de 50 $^\circ$C a 300 $^\circ$.
+\\\\
+Enfin, quand le materiau est a nouveau refroidit, mais plus lentement \ref{val:peaks}, nous obtenons $X_1_8_6_._8$(-10.0), soit : 
+
+\[
+        X_1_8_6_._8(-10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\% = \frac{36.19}{140} \cdot 100\% = 25.85 \%.
+\]
+
+Nous obtenons par consequent le meme taux de cristalinite avec $X_1_8_6_._8$(-10.0) que pour $X_2_4_5_._9$(10.0).
+

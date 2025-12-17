@@ -1,33 +1,30 @@
 
 \subsection{Theorie} \label{sec:theorie}
-
-A partir de Ref. \cite{protocoleDMA}, nous pouvons decrire depuis les lois de Hook et de Newton la modelisation de notre systeme. L'instrument imporse une contrainte périodique en fonction du temps $\sigma$(t) de pusation $\omega$ et d'une contrainte de reference $\sigma_0$ tel que 
+À partir de la Ref. \cite{protocoleDMA}, nous pouvons décrire, depuis les lois de Hooke et de Newton, la modélisation de notre système. L’instrument impose une contrainte périodique en fonction du temps $\sigma$(t) de pulsation $\omega$ et d’une contrainte de référence $\sigma_0$ telle que
 \begin{equation}
     \sigma(t) = \sigma_0 \sin(\omega t).
 	\label{eq:1}
 \end{equation}
 
-Notons, une deformation $\epsilon$ sous dephasage d’un angle $\delta$ :
+Notons une déformation $\epsilon$ sous déphasage d’un angle $\delta$ :
 \begin{equation}
     \varepsilon(t) = \varepsilon_0 \sin(\omega t + \delta).
 	\label{eq:2}
 \end{equation}
 
-Selon les hypotheses du protocole (Ref. \cite{protocoleDMA} p. 2-3), les grandeurs viscoelastiques mesurees $E'$ (module de stockage) et $E''$ (module de perte) sont apres derivations des Eqs. \ref{eq:1} et \ref{eq:2}
+Selon les hypothèses du protocole (Ref. \cite{protocoleDMA} p. 2-3), les grandeurs viscoélastiques mesurées $E′$ (module de stockage) et $E′′$ (module de perte) sont, après dérivations des Eqs. \ref{eq:1} et \ref{eq:2} :
 \begin{equation}
 	E' &= \frac{\sigma_0}{\varepsilon_0}\cos\delta \hspace{0.4cm} et \hspace{0.4cm}
     E'' &= \frac{\sigma_0}{\varepsilon_0}\sin\delta.
 	\label{eq:3}
 \end{equation}
 
-Elles permettent d'ecrire le pic du facteur d’amortissement $\tan\delta$ correspondant à la transition vitreuse mécanique a partir de relations trigonometriques avec Eqs. \ref{eq:3} tel que :
+Elles permettent d’écrire le pic du facteur d’amortissement $\tan \delta$ correspondant à la transition vitreuse mécanique à partir de relations trigonométriques avec les Eqs. \ref{eq:3}, tel que :
 \begin{equation}
 	\tan\delta &= \frac{E'}{E'\'}.
 	\label{eq:4}
 \end{equation}
-
-Comme cette transition depend de la frequence d’excitation, les temperatures des pics mesures
-sont exploitees à l’aide de la loi d’Arrhenius (voir Ref. \cite{protocoleDMA}) :
+Comme cette transition dépend de la fréquence d’excitation, les températures des pics mesurés sont exploitées à l’aide de la loi d’Arrhenius (voir Ref. \cite{protocoleDMA}) :
 \begin{equation}
     f = f_0 \exp\!\left(-\frac{E_a}{RT}\right),
 	\label{eq:arrhenius}
