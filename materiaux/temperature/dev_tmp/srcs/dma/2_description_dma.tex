@@ -1,0 +1,24 @@
+\section{DMA}
+\label{sec:manipulations}
+\subsection{Description de l'installation et manipulations}
+
+Les manipulations sont réalisées sur un échantillon de PMMA. Nous utilisons donc la technique de DMA grâce à la machine 'X’Press DMA 242 E Artemis' du fournisseur NETZSCH (Ref. \cite{DMA}) qui nous permet d’évaluer les propriétés viscoélastiques de notre échantillon de PMMA. Pour ce faire, nous lui appliquons une charge oscillante pendant que ce dernier se trouve dans le four, lequel lui impose une rampe thermique positive. Nous répétons ce processus à différentes fréquences d’oscillation de la charge, soit à 1 Hz, 2 Hz, 5 Hz, 10 Hz et 20 Hz. Nous chauffons à 5 K/min jusqu'à 70 $^\circ$C avant d'imposer un temps de "stabilisation" inférieur ou égal à 10 minutes. Ensuite, la rampe thermique reste identique pour chaque série de mesures en faisant osciller la masse aux fréquences susmentionnées jusqu'à 180 $^\circ$C.
+\\\\
+L’application de cette charge permet de mesurer plusieurs paramètres visibles sur la Fig. \ref{fig:DMAschema}. La charge génère une déformation totale, visqueuse et élastique. Couplée à la contrainte correspondante, nous pouvons déterminer l’état dans lequel se trouve l’échantillon au cours de l’expérience.
+\\
+\begin{flushleft}
+\begin{minipage}{0.34\textwidth}
+La figure \ref{fig:DMAschema} nous permet de déterminer, par le sommet de la déformation totale $E''$, le sommet de la déformation élastique $E'$ et leur déphasage $\delta$ (voir \ref{sec:theorie}).
+\end{minipage}
+\hfill
+\begin{minipage}{0.62\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{DMAexample.png}
+    \captionof{figure}{Exemple des signaux mesures par DMA a temperature constante}
+    \label{fig:DMAschema}
+\end{minipage}
+\end{flushleft}
+\vspace{1cm}
+Pour garantir la fiabilité des résultats, il faut faire attention à relever précisément les dimensions de l’échantillon mesuré avant de le placer dans le four. Une fois dedans, il est nécessaire de configurer l’offset entre l’échantillon et la masse oscillante. En effet, afin de modéliser correctement les paramètres recherchés sur la Fig. \ref{fig:DMAschema}, il est indispensable d’entrer les bons paramètres dans les fonctions qui vont déterminer l’ajustement des données obtenues pendant le processus. Cela s’illustre par les Eqs. \ref{eq:3} et 4 en Sec. \ref{sec:theorie}.
+
+

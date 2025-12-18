@@ -1,0 +1,26 @@
+ 
+\subsection{Résultats}
+\label{sec:DMAresultats}
+À la fin de chaque essai pour une fréquence donnée, l’instrument NETZSCH fournit les données brutes de l’analyse mécanique dynamique. La Fig. 10 présente un exemple typique des signaux obtenus, traités ensuite plus clairement sur la Fig. \ref{fig:DMA_resultats} :
+\begin{description}
+
+	\item le module de stockage $E′$ en bleu (voir Eq. \ref{eq:3}) est relativement élevé à basse température (~2000-2500 MPa) et se stabilise généralement vers 200 $MPa$, indépendamment de la fréquence imposée,
+
+	\item Le module de perte $E''$ en jaune (voir Eq. \ref{eq:3}) adopte un comportement similaire au module de stockage, mais il varie autour de 150-200 $MPa$ avant de se stabiliser autour de 20-50 $MPa$. 
+
+	\item Le déphasage entre les deux modules illustre ainsi le facteur d’amortissement $\tan\delta$ en vert (voir Eq. \ref{eq:4}) dont on observe les pics légendés sur Fig. \ref{fig:DMA_resultats}.
+
+\end{description}
+La rampe thermique est répétée pour plusieurs fréquences légendées entre 1~Hz et 20~Hz sur Fig. \ref{fig:DMA_resultats}, sur le même échantillon de PMMA en configuration "3 point bending" entre 75$^\circ$ et 175$^\circ$. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.45]{Seite_Peak_analyse.pdf}
+    \captionof{figure}{Analyse du pic de $\tan\delta$ permettant l’extraction de $T_g(f)$}
+    \label{fig:DMA_resultats}
+\end{figure}
+
+\\\\
+Le logiciel d’analyse associé à la machine du fournisseur (voir Sec. \ref{sec:manipulations}) a permis d’obtenir un ajustement des différents jeux de données et, par recherche des extrema locaux, les pics de température auxquels le $\tan\delta$ correspondant était maximal.
+Cela permet d’identifier la position de la transition vitreuse pour chaque fréquence. Ces températures caractéristiques sont ensuite utilisées pour construire le graphe d’Arrhenius et déterminer l’énergie d’activation du PMMA (voir Sec. \ref{sec:DMAanalyse}).
+
+

@@ -1,0 +1,202 @@
+
+% NE PAS TOUCHER
+%++++++++++++++++++++++++++++++++++++++++
+\documentclass[letterpaper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{cite}
+\usepackage[final]{hyperref}
+\usepackage{datatool}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{gensymb}
+\usepackage{lipsum}
+\usepackage{adjustbox}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	citecolor=blue,
+	filecolor=magenta,
+	urlcolor=blue
+}
+
+%+++++++++++++++++++++++++++++++++++++++++
+
+%	CONFIG
+\renewcommand{\thetable}{\thechapter \Roman{table}} % c'est comme une MACRO
+
+%	INCLUDES
+\graphicspath{ {./images/} {./utils/dma/} {./utils/dsc/} }
+
+\begin{document}
+
+\title{Étude des transitions thermiques et viscoélastiques de polymères à l’aide des techniques DMA et DSC}
+\author{Seite Alexander}
+\date{\today}
+\maketitle
+\newline
+
+
+\begin{abstract}
+	Ce rapport présente une caractérisation thermomécanique du PMMA et du PET par DMA et DSC, visant à analyser leurs propriétés viscoélastiques et transitions thermiques sous différentes sollicitations. Pour le PMMA, la DMA a permis de mesurer $E'$, $E''$ et $\tan\delta$ pour des fréquences entre 1–20 Hz inclus. Cela nous a permis de réveler une transition vitreuse dépendante de la fréquence et une énergie d’activation $E_a$ = 295,730 $\pm$ 18,959 [kJ/mol]. Pour le PET, la DSC a identifié les transitions vitreuse, fusion et cristallisation, avec des taux de cristallinité variant de 17,11 \% à 32,25 \% selon les rampes thermiques (50–10 K/min). Ces résultats illustrent l’influence des conditions thermiques sur la structure et les propriétés mécaniques des polymères, confirmant la complémentarité DMA/DSC pour leur caractérisation.
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+%====================================
+%====================================
+%	INTRODUCTION
+%====================================
+%====================================
+
+\include{./srcs/1_intro.tex}
+
+%	Todo :  REVOIR SYNTAXE
+                %       STATUS : KO
+
+
+%====================================
+%	EXPERIENCE 1 :	DMA
+%====================================
+
+%===========================
+%       DESCRIPTION
+
+\include{./srcs/dma/2_description_dma.tex}
+
+%	Todo :	REVOIR SYNTAXE
+                %       STATUS : KO
+
+
+%===========================
+%	THEORIE 
+
+\include{./srcs/dma/3_theorie_dma.tex}
+
+%	Todo :	CHECK
+                %       STATUS : KO
+
+%===========================
+%	RESULTATS
+
+\include{./srcs/dma/4_resultats_dma.tex}
+
+%	Todo :	REVOIR SYNTAXE
+                %       STATUS : KO
+
+%===========================
+%	ANALYSE 
+
+\include{./srcs/dma/5_analyse_dma.tex}
+
+%	Todo : 	RAJOUTER INCERTITUDE
+                %       STATUS : KO
+
+
+%====================================
+%	EXPERIENCE 2:	DSC
+%====================================
+
+%===========================
+%       DESCRIPTION
+
+\include{./srcs/dsc/2_description_dsc.tex}
+
+%       Todo : all
+		%	STATUS : KO
+
+%===========================
+%       THEORIE
+
+%       Todo : Inclure dans description
+		%	STATUS : KO
+
+%===========================
+%       RESULTATS
+
+%\include{./srcs/dsc/4_resultats_dsc.tex}
+
+%       Todo : all
+                %       STATUS : KO
+
+%===========================
+%       ANALYSE
+
+%\include{./srcs/dsc/5_analyse_dsc.tex}
+
+%       Todo : all
+                %       STATUS : KO
+\include{./srcs/dsc/45_dsc.tex}
+
+%====================================
+%       CONCLUSION
+%====================================
+
+
+
+
+\begin{thebibliography}{99}
+
+
+\bibitem{meca}
+Selon,
+                \textit{analyse mecanique dynamique},
+\\
+                \texttt{https://www.wikiwand.com/fr/articles/Analyse_mécanique_dynamique}
+\\
+        Consulte le : 1 Decembre 2025
+\newline
+Extrait de : \newline
+
+Jacques Kessler, René Bourgeois et Henri Chauvel, Mémotech : génie des matériaux, Paris, Éducalivre, 2001, 528 p. (ISBN 978-2-7135-2246-8, OCLC 300135131), p. 61-65.
+
+
+\bibitem{DMA}
+                        \textit{Principe de la méthode DMA},
+\\
+                \texttt{https://analyzing-testing.netzsch.com/fr/produits/analyse-dynamique-mecanique-dma}
+\\
+		\texttt{Consulte le 1 Decembre 2025}
+
+	
+\bibitem{DSC}
+	\textit{Principe de fonctionnement d'une DSC à flux thermique}
+
+	\texttt{https://analyzing-testing.netzsch.com/fr/landingpages/principle-of-a-heat-flux-dsc}
+\\
+		\texttt{Consulte le 1 Decembre 2025}
+
+\bibitem{protocoleDMA}
+	\textit{Analyse thermique : DMA}
+		\\
+		\texttt{https://cyberlearn.hes-so.ch/mod/folder/view.php?id=474646}
+		\texttt{Labo MT2 - DMA V2025.pdf}
+\bibitem{protocoleDSC}
+	\textit{Analyse thermique : DSC}
+		\\
+		\texttt{https://cyberlearn.hes-so.ch/mod/folder/view.php?id=474646}
+		\texttt{Labo MT2 - DSC v2024.pdfLabo MT2 - DSC v2024.pdf}
+\bibitem{petnet}
+		\textit{PET : Polyéthylène téréphtalate}
+		\\
+		\texttt{https://analyzing-testing.netzsch.com/fr/polymeres-netzsch-com/engineering-thermoplastics/pet-polyethylene-terephthalate}
+		\texttt{Consulte le 17 Decembre}
+
+\end{thebibliography}
+
+
+%=====================================
+%	ANNEXES 
+%=====================================
+
+\include{./srcs/annexes.tex}
+
+%	Todo :	RAJOUTER TABLEAU DES LAMBDAS CALCULES
+
+
+\end{document}

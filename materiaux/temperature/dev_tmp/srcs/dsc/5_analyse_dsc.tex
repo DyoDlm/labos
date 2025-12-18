@@ -1,0 +1,55 @@
+\subsection{Analyse}
+
+Dans son ensemble, chaque expérience en DSC est visible dans le Tab. \ref{val:peaks}, dont on connaît alors l’enthalpie de fusion à partir de la mesure de l’aire.
+
+\begin{table}[!ht]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+        \textbf{Figure}
+        & \textbf{$V_v_t$ [$K/min$]}
+        & \textbf{Pic complexe [$^\circ$]}
+        & \textbf{Aire [$J/g$]}
+        & \textbf{$T_v$ [bool]}
+\\\hline
+        \ref{fig:chauffe_rapide} & 50.0 & 244.8 & -43.15 & Oui  \\
+        \ref{fig:refroidissement_rapide} & -200.0 & $\emptyset$ & $\emptyset$ & $\emptyset$  \\
+        \ref{fig:chauffe_lente} & 10.0 & 131.1-245.9 & 23.93-(-35.58) & Oui \\
+        \ref{fig:refroidissement_lent} & -10.0 & 186.8 & 36.19 & $\emptyset$ \\
+\hline
+\end{tabular}
+        \caption{$V_v_t$: vitesse de la variation thermique, $T_v$: Transition vitreuse}
+\label{val:peaks}
+\end{table}
+La valeur théorique d’enthalpie de fusion du PET est définie par la Ref. \cite{petnet} à 140 J/g. Pour la chauffe lente (chauffe à froid) sur la Fig. \ref{fig:chauffe_lente}, nous obtenons la valeur mesurée d’enthalpie de fusion à -43,15 J/g à 244,8 °C. Ainsi, nous obtenons le taux de cristallinité en fonction de la rampe thermique de 50.0 $K/min$ $X_2_4_4_._8$(50.0) :
+
+
+\[
+	X_2_4_4_._8(50.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\% = \frac{35,58}{140} \cdot 100 \% = 25.41 \%.
+\]
+Pour la même température, à ~1 °C près, nous obtenons pour la chauffe rapide sur la Fig. \ref{fig:chauffe_rapide} le taux de cristallinité $X_2_4_5_._9$(10.0) :
+
+\[
+	X_2_4_5_._9(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\% = \frac{43.15}{140} \cdot 100\% = 32.25 \%.
+\]
+
+Nous constatons que $X_2_4_5_._9$(10.0) $>$ $X_2_4_5_._9$(50.0), c’est-à-dire que le taux de cristallinité avant décristallisation est plus élevé dans l’échantillon chauffé rapidement que celui chauffé lentement. En effet, suite à avoir été chauffé rapidement, nous observons une phase amorphe lors du refroidissement rapide sur la Fig. \ref{fig:refroidissement_rapide}. Cela veut dire que le PET n’a pas eu le temps de récupérer le premier taux de cristallinité mesuré avec la chauffe rapide. Nous pouvons vérifier quel était le taux de cristallinité à 131,1 °C observé sur la chauffe lente sur la Fig. \ref{fig:chauffe_lente} suite au refroidissement amorphe de l’échantillon avec $X_1_3_1_._1$(10.0) :
+
+\[
+	X_1_3_1_._1(10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\% = \frac{23.93}{140} \cdot 100\% = 17.11 \%,
+\]
+
+Nous remarquons que le taux de cristallisation est inférieur au taux de décristallisation, soit $X_1_3_1_._1$(10.0) $<$ $X_2_4_5_._9$(10.0). Le matériau a, en fin de compte, un taux de cristallinité plus élevé quand il est chauffé, puis refroidi rapidement avant d’être rechauffé lentement de 50 °C à 300 °C.
+
+\\\\
+Enfin, quand le matériau est à nouveau refroidi, mais plus lentement \ref{val:peaks}, nous obtenons $X_1_8_6_._8$(-10.0), soit : 
+
+\[
+        X_1_8_6_._8(-10.0) = |\frac{\delta H_f_t_h}{\delta H_f_m_e}| \cdot 100\% = \frac{36.19}{140} \cdot 100\% = 25.85 \%.
+\]
+
+Nous obtenons par conséquent le même taux de cristallinité avec $X_1_8_6_._8$(-10.0) que pour $X_2_4_5_._9$(10.0).
+
