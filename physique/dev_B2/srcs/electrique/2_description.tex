@@ -25,24 +25,18 @@ Nous mesurons la difference entre les signaux du generateur et ceux passant par 
 \vspace{1cm}
 
 
-En un second temps, nous utilisons un pont RLC (voir Fig. \ref{fig:rlc}) afin de determiner la capacite lineique c* et l'inductance lineique l*. Pour c*, nous branchons en circuit ouvert le cable coaxial comme sur Fig. \ref{fig:c}. Pour l*, nous branchons le cable avec un cours circuit tel que sur Fig. \ref{fig:l}. 
-\begin{figure}[h!]
-    \centering
-    % Première figure
-    \begin{minipage}[b]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{accoustique/acc2.png}
-	    \caption{U$^2$(1/D$^2$)}
-        \label{fig:c}
-    \end{minipage}
-    \hfill
-    % Deuxième figure
-    \begin{minipage}[b]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{accoustique/acc3.png}
-	    \caption{U(1/D) avec E-R inversés}
-        \label{fig:l}
-    \end{minipage}
-\end{figure}
+En un second temps, nous utilisons un pont RLC (voir Fig. \ref{fig:rlc}) afin de determiner la capacite lineique c* et l'inductance lineique l* en y connectant une extremite de notre cable coaxial. 
 
-Enfin nous mes
+\vspace{1cm}
+\noindent \begin{minipage}{0.4\textwidth}
+\includegraphics[width=\textwidth]{rlc.png}
+        \captionof{figure}{Montage d'un pont RLC}
+\label{fig:rlc}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.5\textwidth}
+	Afin de determiner c*, le pont RLC est utile dans la mesure ou, en laissant l'autre extremite du cable ouvert, le cable devient une capacite. A l'inverse, pour trouver l*, nous fermons le circuit. Ainsi notre cable se comporte comme une inductance.  
+\noindent \end{minipage}
+
+\vspace{1cm}
+Enfin, en faisant varier les resistances de terminaison (Voir R sur Fig. \ref{fig:montage_elec}), nous pouvons mesurer les amplitudes des impulsions transmises et reflechies afin de trouver les coefficients de reflexion et de transmission.

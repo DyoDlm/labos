@@ -22,8 +22,23 @@ Nous avons mesure grace au pont RLC les valeurs suivantes pour la capacite linei
 
 \[
 	\mathrm{c*} = 10,1 nF \qquad
-	\mathrm{l*} = 31 \mu H
+	\mathrm{l*} = 31,0 \mu H
 \]
 
-\subsubsection{Un deuxieme resultat}
+Ainsi comme nous connaissons la relation liant c* et l* avec l'impedance characteristique :
+\[
+	\mathrm{Z_c} = \sqrt{\frac{l*}{c*}} = \sqrt{\frac{31,0 \cdot 10^-6}{10,1 \cdot 10^-9}} = 55,5 \pm 0,3
+\]
+
+Pour les incertitudes :
+\[
+\Delta Z_c = \frac{1}{2} \cdot Z_c \sqrt{\left(\frac{\Delta L^*}{L^*}\right)^2 + \left(\frac{\Delta C^*}{C^*}\right)^2}
+\]
+
+Donc :
+\[
+\Delta Z_c = 55,5 \cdot \frac{1}{2} \sqrt{\left(\frac{0,1}{31,0}\right)^2 + \left(\frac{0,1}{10,1}\right)^2} \approx 0,3~\Omega
+\]
+
+subsubsection{Un deuxieme resultat}
 
