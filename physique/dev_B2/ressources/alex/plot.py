@@ -61,6 +61,8 @@ def plot(that):
 
 resistances = ["s1500_14.csv", "s2500_15.csv", "s40pe_11.csv","s15pe_6.csv", "s25pe_8.csv", "s500e_13.csv", "s100e_12.csv", "s2000_16.csv", "s30pe_9.csv", "s5ope_4.csv", "s10pe_5.csv","s20pe_7.csv", "s35pe_10.csv"]
 
+resistances = ["whatisdat/scope_0.csv"]
+
 for i in resistances:
     print(i)
     plot(i)

@@ -206,17 +206,8 @@ LaTeX Warning: Label `eq:TMC' multiply defined.
 
 LaTeX Warning: Label `eq:lambda' multiply defined.
 
-) (./srcs/electrique/4_resultats.aux
-
-LaTeX Warning: Label `fig:C' multiply defined.
-
-
-LaTeX Warning: Label `fig:lambda-current_quad' multiply defined.
-
-
-LaTeX Warning: Label `fig:lambda-current' multiply defined.
-
-) (./srcs/electrique/5_analyse.aux) (./srcs/annexes.aux))
+) (./srcs/electrique/4_resultats.aux) (./srcs/electrique/5_analyse.aux)
+(./srcs/annexes.aux))
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty

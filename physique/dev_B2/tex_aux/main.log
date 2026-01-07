@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 14:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -485,17 +485,8 @@ LaTeX Warning: Label `eq:TMC' multiply defined.
 
 LaTeX Warning: Label `eq:lambda' multiply defined.
 
-) (./srcs/electrique/4_resultats.aux
-
-LaTeX Warning: Label `fig:C' multiply defined.
-
-
-LaTeX Warning: Label `fig:lambda-current_quad' multiply defined.
-
-
-LaTeX Warning: Label `fig:lambda-current' multiply defined.
-
-) (./srcs/electrique/5_analyse.aux) (./srcs/annexes.aux))
+) (./srcs/electrique/4_resultats.aux) (./srcs/electrique/5_analyse.aux)
+(./srcs/annexes.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -787,7 +778,7 @@ or  <return>  to continue without it.
 \openout2 = `./srcs/electrique/2_description.aux'.
 
  (./srcs/electrique/2_description.tex
-<./ressources/images/montage_elec.png, id=199, 644.4075pt x 483.8075pt>
+<./ressources/images/montage_elec.png, id=198, 644.4075pt x 483.8075pt>
 File: ./ressources/images/montage_elec.png Graphic file (type png)
 <use ./ressources/images/montage_elec.png>
 Package pdftex.def Info: ./ressources/images/montage_elec.png  used on input li
@@ -809,112 +800,19 @@ ne 9.
 
  (./srcs/electrique/4_resultats.tex
 
-LaTeX Warning: File `raideur.png' not found on input line 8.
+LaTeX Warning: Citation `christophe' on page 10 undefined on input line 82.
 
 
-! Package pdftex.def Error: File `raideur.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...ludegraphics[width=\textwidth]{raideur.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Citation `christophe' on page 10 undefined on input line 82.
 
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 9.
-See the caption package documentation for explanation.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `eq:nature' on page 10 undefined on input line 14.
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 13--16
-[]\OT1/cmr/m/n/12 Nous obtenons par con-se-quent le
- []
-
-
-LaTeX Warning: Reference `fig:samplesetup' on page 10 undefined on input line 2
-0.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--21
-
- []
-
-
-LaTeX Warning: File `lambda_quadratique.png' not found on input line 24.
-
-
-! Package pdftex.def Error: File `lambda_quadratique.png' not found: using draf
-t setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.24 ...[width=\linewidth]{lambda_quadratique.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 25.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: File `lambda.png' not found on input line 31.
-
-
-! Package pdftex.def Error: File `lambda.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ...ludegraphics[width=\linewidth]{lambda.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 32.
-See the caption package documentation for explanation.
-
- [10
+) [10
 
 
 
-]
-! Undefined control sequence.
-l.45 	\mathrm{Q}_{0.5\A
-                       } = 1\qquad
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.46 	\mathrm{Q}_{0.9\A
-                       } = 3
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) [11]
+] [11]
 \openout2 = `./srcs/electrique/5_analyse.aux'.
 
  (./srcs/electrique/5_analyse.tex
@@ -1149,10 +1047,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: CA97F7F75F35AC2D5233BA8C8F3E11D1;4275.
  ) 
 Here is how much of TeX's memory you used:
- 14190 strings out of 474222
- 232152 string characters out of 5748733
+ 14192 strings out of 474222
+ 232193 string characters out of 5748733
  1940975 words of memory out of 5000000
- 36107 multiletter control sequences out of 15000+600000
+ 36109 multiletter control sequences out of 15000+600000
  565413 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,117p,406b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1172,10 +1070,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (15 pages, 303633 bytes).
+Output written on main.pdf (15 pages, 308201 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 293 compressed objects within 3 object streams
+ 351 PDF objects out of 1000 (max. 8388607)
+ 291 compressed objects within 3 object streams
  74 named destinations out of 1000 (max. 500000)
  232 words of extra memory for PDF output out of 10000 (max. 10000000)
 

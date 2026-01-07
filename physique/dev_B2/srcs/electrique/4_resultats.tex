@@ -2,46 +2,83 @@
 
 \subsubsection{Un premier resultat}
 
-Avant de mesurer une oscillation, nous avons mesure le rapport de force qu'il faut exercer sur le balancier afin de le placer a un certain angle.
-\\
-\noindent \begin{minipage}{0.5\textwidth}
-\includegraphics[width=\textwidth]{raideur.png}
-	\captionof{figure}{$M_r$($\theta$)}
-\label{fig:C}
-\end{minipage}
-\begin{minipage}{0.4\textwidth}
-	Nous obtenons par consequent le graphique (\ref{fig:C}) ci-joint.
-	Grace a sa pente d'unite ... nous avons pu directement extraire la valeur C, soit la constante de raideur du ressort utilise grace a la relation (\ref{eq:nature}).\\ Soit :
-	\\      C = 0.0123 +/- 0.0002 [Nm / $rad^-1$]
-\noindent \end{minipage}
-\\
-\\
-\\
-En un second temps, apres avoir montee l'installation pour mesures les oscillations du balencier-spiral (voir fig:\ref{fig:samplesetup}), nous avons donne une position hors-equilibre au balencier et mesurer en fonction du frein imposee a les differences oscillations observable en annexe (voir fig:\ref{fig:oscillations}).
+Le delai entre les deux signaux pour une resistance nulle R = 0 $\ohm$ $\delta$$t$ = $|$$t_1$ - $t_2$$|$ est : 
 
-\begin{minipage}[t]{0.45\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{lambda_quadratique.png}
-	\captionof{figure}{$\lambda$(I)}
-	\label{fig:lambda-current_quad}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.5\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{lambda.png}
-	\captionof{figure}{$\lambda$($I^2$)}
-	\label{fig:lambda-current}
-\end{minipage}
+\[
+        \mathrm{\delta t} = | 
+\]
+
+
+Nous avons mesure grace au pont RLC les valeurs suivantes pour la capacite lineique $c*$ et $l*$ :
+
+\[
+	\mathrm{c*} = 10,1 nF \qquad
+	\mathrm{l*} = 31 \mu H
+\]
 
 \subsubsection{Un deuxieme resultat}
 
-\[
-\mathrm{FWHM}_{0.5\,A} = 0.133998 \pm 0.003146~\mathrm{Hz}, \qquad
-\mathrm{FWHM}_{0.9\,A} = 0.214367 \pm 0.002802~\mathrm{Hz}.
-\]
+Entre 0 et 50 $\ohm$ :
 
-Ce qui nous donne respectivement :
-\[
-	\mathrm{Q}_{0.5\A} = 1\qquad
-	\mathrm{Q}_{0.9\A} = 3
-\]
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c|c|c}
+\hline
+$R$ ($\Omega$) &
+Amplitude Générateur (V) &
+Amplitude Câble (V) &
+Temps (ms) --> verifier \\
+\hline
+5   & 10.65 & 9.73 & 0.98 \\
+10  & 9.65  & 7.48 & 1.79 \\
+15  & 9.65  & 8.44 & 0.90 \\
+20  & 8.84  & 6.43 & 1.83 \\
+25  & 9.05  & 7.56 & 0.98 \\
+30  & 8.19  & 5.95 & 1.42 \\
+35  & 8.44  & 7.08 & 1.03 \\
+40  & 8.04  & 5.39 & 1.59 \\
+\hline
+\end{tabular}
+\caption{Mesures pour les résistances comprises entre 0 et 50 $\Omega$}
+\end{table}
+
+Pour R $>$ 50 $\ohm$ :
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c|c|c}
+\hline
+$R$ ($\Omega$) &
+Amplitude Générateur (V) &
+Amplitude Câble (V) &
+Temps (ns) \\
+\hline
+100  & 7.84 & 6.27 & 0.26 \\
+500  & 8.24 & 8.68 & -1.87 \\
+1500 & 7.64 & 9.33 & -2.51 \\
+2000 & 8.04 & 9.49 & -2.59 \\
+2500 & 7.84 & 9.43 & -2.79 \\
+\hline
+\end{tabular}
+\caption{Mesures pour les résistances supérieures ou égales à 50 $\Omega$}
+\end{table}
+
+Synthese : 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c|c|c}
+\hline
+$R$ ($\Omega$) &
+Amplitude Générateur (V) &
+Amplitude Câble (V) &
+Temps (ns) \\
+\hline
+0     & N/A & N/A & N/A \\
+50    & N/A & N/A & N/A \\
+2500  & 7.84 & 9.43 & -2.79 \\
+\hline
+\end{tabular}
+	\caption{Comparaison pour $R = 0\,\Omega$, $50\,\Omega$ et $R_{max}$ Ref \cite{christophe}}
+\end{table}
+
