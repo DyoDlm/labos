@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 18:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -620,13 +620,18 @@ OK, entering \batchmode...
 \openout2 = `./srcs/accoustique/2_description.aux'.
 
  (./srcs/accoustique/2_description.tex
-<./ressources/images/montage_acc1.png, id=153, 681.54625pt x 483.8075pt>
+! Double subscript.
+l.5 ...alimente d'une tension crete a crete ($U_p_
+                                                  p$ = 5V). Cela est possibl...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+<./ressources/images/montage_acc1.png, id=143, 681.54625pt x 483.8075pt>
 File: ./ressources/images/montage_acc1.png Graphic file (type png)
 <use ./ressources/images/montage_acc1.png>
 Package pdftex.def Info: ./ressources/images/montage_acc1.png  used on input li
 ne 9.
 (pdftex.def)             Requested size: 272.61366pt x 193.51956pt.
-<./ressources/images/montage_acc2.png, id=156, 698.61pt x 146.5475pt>
+<./ressources/images/montage_acc2.png, id=146, 698.61pt x 146.5475pt>
 File: ./ressources/images/montage_acc2.png Graphic file (type png)
 <use ./ressources/images/montage_acc2.png>
 Package pdftex.def Info: ./ressources/images/montage_acc2.png  used on input li
@@ -647,113 +652,31 @@ ne 17.
 \openout2 = `./srcs/accoustique/4_resultats.aux'.
 
  (./srcs/accoustique/4_resultats.tex
-
-LaTeX Warning: File `raideur.png' not found on input line 8.
-
-
-! Package pdftex.def Error: File `raideur.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...ludegraphics[width=\textwidth]{raideur.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 9.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `eq:nature' on page 5 undefined on input line 14.
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 13--16
-[]\OT1/cmr/m/n/12 Nous obtenons par con-se-quent le
- []
-
-
-LaTeX Warning: Reference `fig:samplesetup' on page 5 undefined on input line 20
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--21
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
+<./ressources/images/accoustique/acc1.png, id=171, 462.528pt x 346.896pt>
+File: ./ressources/images/accoustique/acc1.png Graphic file (type png)
+<use ./ressources/images/accoustique/acc1.png>
+Package pdftex.def Info: ./ressources/images/accoustique/acc1.png  used on inpu
+t line 19.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./ressources/images/accoustique/acc2.png, id=173, 462.528pt x 346.896pt>
+File: ./ressources/images/accoustique/acc2.png Graphic file (type png)
+<use ./ressources/images/accoustique/acc2.png>
+Package pdftex.def Info: ./ressources/images/accoustique/acc2.png  used on inpu
+t line 28.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--21
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-
-LaTeX Warning: File `lambda_quadratique.png' not found on input line 24.
-
-
-! Package pdftex.def Error: File `lambda_quadratique.png' not found: using draf
-t setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.24 ...[width=\linewidth]{lambda_quadratique.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 25.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: File `lambda.png' not found on input line 31.
-
-
-! Package pdftex.def Error: File `lambda.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ...ludegraphics[width=\linewidth]{lambda.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 32.
-See the caption package documentation for explanation.
-
- [5
+) [5
 
 
 
-]
-! Undefined control sequence.
-l.45 	\mathrm{Q}_{0.5\A
-                       } = 1\qquad
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.46 	\mathrm{Q}_{0.9\A
-                       } = 3
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) [6]
+ <./ressources/images/accoustique/acc1.png>] [6 <./ressources/images/accoustiqu
+e/acc2.png>]
 \openout2 = `./srcs/accoustique/5_analyse.aux'.
 
  (./srcs/accoustique/5_analyse.tex
@@ -778,7 +701,7 @@ or  <return>  to continue without it.
 \openout2 = `./srcs/electrique/2_description.aux'.
 
  (./srcs/electrique/2_description.tex
-<./ressources/images/montage_elec.png, id=200, 644.4075pt x 483.8075pt>
+<./ressources/images/montage_elec.png, id=195, 644.4075pt x 483.8075pt>
 File: ./ressources/images/montage_elec.png Graphic file (type png)
 <use ./ressources/images/montage_elec.png>
 Package pdftex.def Info: ./ressources/images/montage_elec.png  used on input li
@@ -806,7 +729,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:r0' on page 10 undefined on input line 5.
 
-<./ressources/images/electrique/r5.png, id=216, 462.528pt x 346.896pt>
+<./ressources/images/electrique/r5.png, id=210, 462.528pt x 346.896pt>
 File: ./ressources/images/electrique/r5.png Graphic file (type png)
 <use ./ressources/images/electrique/r5.png>
 Package pdftex.def Info: ./ressources/images/electrique/r5.png  used on input l
@@ -863,202 +786,39 @@ or  <return>  to continue without it.
 \openout2 = `./srcs/annexes.aux'.
 
  (./srcs/annexes.tex
-
-LaTeX Warning: File `tab1.png' not found on input line 7.
-
-
-! Package pdftex.def Error: File `tab1.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7     \includegraphics[scale=0.6]{tab1.png}
-                                             
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `libre_frein_0_1A.png' not found on input line 15.
-
-
-! Package pdftex.def Error: File `libre_frein_0_1A.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 ...cs[width=\linewidth]{libre_frein_0_1A.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 16.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: File `libre_frein_0_2A.png' not found on input line 22.
-
-
-! Package pdftex.def Error: File `libre_frein_0_2A.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.22 ...cs[width=\linewidth]{libre_frein_0_2A.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 23.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: File `libre_frein_0_3A.png' not found on input line 28.
-
-
-! Package pdftex.def Error: File `libre_frein_0_3A.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 ...cs[width=\linewidth]{libre_frein_0_3A.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 29.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: File `libre_frein_0_4A.png' not found on input line 34.
-
-
-! Package pdftex.def Error: File `libre_frein_0_4A.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 ...cs[width=\linewidth]{libre_frein_0_4A.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 35.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: File `libre_frein_0_5A.png' not found on input line 40.
-
-
-! Package pdftex.def Error: File `libre_frein_0_5A.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.40 ...cs[width=\linewidth]{libre_frein_0_5A.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 41.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: File `libre_frein_0_9A.png' not found on input line 46.
-
-
-! Package pdftex.def Error: File `libre_frein_0_9A.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.46 ...cs[width=\linewidth]{libre_frein_0_9A.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 47.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: File `data.png' not found on input line 52.
-
-
-! Package pdftex.def Error: File `data.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 	\includegraphics[scale=0.45]{data.png}
-                                            
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
- [13
-
-
-
-]
-
-LaTeX Warning: File `0_5A.png' not found on input line 91.
-
-
-! Package pdftex.def Error: File `0_5A.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.91 	\includegraphics[scale=0.4]{0_5A.png}
-                                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `0_9A.png' not found on input line 97.
-
-
-! Package pdftex.def Error: File `0_9A.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 	\includegraphics[scale=0.4]{0_9A.png}
-                                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
- [14]) [15] (./main.aux (./srcs/1_intro.aux) (./srcs/accoustique/2_description.
-aux) (./srcs/accoustique/3_theorie.aux) (./srcs/accoustique/4_resultats.aux) (.
-/srcs/accoustique/5_analyse.aux) (./srcs/electrique/2_description.aux) (./srcs/
-electrique/3_theorie.aux) (./srcs/electrique/4_resultats.aux) (./srcs/electriqu
-e/5_analyse.aux) (./srcs/annexes.aux))
+! Double subscript.
+l.7 	$D_r_
+          e_e_l$ \ cm &
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.7 	$D_r_e_
+            e_l$ \ cm &
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.7 	$D_r_e_e_
+              l$ \ cm &
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.8 	$\lambda$ \ cm  &
+                       \\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+) [13
+
+
+
+] (./main.aux (./srcs/1_intro.aux) (./srcs/accoustique/2_description.aux) (./sr
+cs/accoustique/3_theorie.aux) (./srcs/accoustique/4_resultats.aux) (./srcs/acco
+ustique/5_analyse.aux) (./srcs/electrique/2_description.aux) (./srcs/electrique
+/3_theorie.aux) (./srcs/electrique/4_resultats.aux) (./srcs/electrique/5_analys
+e.aux) (./srcs/annexes.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1070,36 +830,31 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CA97F7F75F35AC2D5233BA8C8F3E11D1;4275.
+(rerunfilecheck)             Checksum: 5252D9F0C8B32CAD0A741B5E72B8DB32;4193.
  ) 
 Here is how much of TeX's memory you used:
- 14205 strings out of 474222
- 232588 string characters out of 5748733
- 1940975 words of memory out of 5000000
- 36121 multiletter control sequences out of 15000+600000
- 565413 words of font info for 62 fonts, out of 8000000 for 9000
+ 13805 strings out of 474222
+ 223192 string characters out of 5748733
+ 1939975 words of memory out of 5000000
+ 35737 multiletter control sequences out of 15000+600000
+ 564878 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,117p,1029b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (15 pages, 346495 bytes).
+ 94i,9n,117p,1177b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt12.pfb>
+Output written on main.pdf (13 pages, 323105 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,8 +5,9 @@
 \contentsline {subsubsection}{\numberline {2.2.1}un premier truc}{4}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}un deuxieme truc}{4}{subsubsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.3}Résultats}{5}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Un premier resultat}{5}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Un deuxieme resultat}{6}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.1}Determination de la celerite}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Verification de la Variation de la pression}{5}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Nature spherique des ondes accoustiques}{5}{subsubsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.4}Analyse des résultats, complement}{7}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}Une premiere analyse}{7}{subsubsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}Une deuxieme analyse}{7}{subsubsection.2.4.2}%
@@ -22,6 +23,3 @@
 \contentsline {subsubsection}{\numberline {3.4.1}Une premiere analyse}{12}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Une deuxieme analyse}{12}{subsubsection.3.4.2}%
 \contentsline {section}{\numberline {4}Annexes}{13}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Annexe A : Constante de raideur}{13}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Annexe B : Libres}{13}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Annexe C : Forces}{14}{subsection.4.3}%
