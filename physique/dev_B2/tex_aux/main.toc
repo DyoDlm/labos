@@ -11,9 +11,11 @@
 \contentsline {section}{\numberline {4}ELECTRIQUE}{6}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Description des manipulations}{6}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Résultats}{7}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Un premier resultat}{7}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1}Temps de propagation}{7}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Un deuxieme resultat}{7}{subsubsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}Analyse des résultats, complement}{9}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Une premiere analyse}{9}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Une deuxieme analyse}{9}{subsubsection.4.3.2}%
-\contentsline {section}{\numberline {5}Annexes}{10}{section.5}%
+\contentsline {subsection}{\numberline {4.3}Analyse des résultats, complement}{8}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Une premiere analyse}{8}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Une deuxieme analyse}{8}{subsubsection.4.3.2}%
+\contentsline {section}{\numberline {5}Annexes}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}ACCOUSTIQUE}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}ELECTRIQUE}{9}{subsection.5.2}%

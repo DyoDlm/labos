@@ -2,12 +2,47 @@
 
 \subsection{Description des manipulations}
 
-SCHEMAS INSTALLATION
+Nous utilisons un cable coaxial de type RG58 de 50 $\ohm$ et de 100 mètres dans lequel nous faisons passer grace a un generateur, une impulsion de 210 ns a une frequence de 30 kHz (voir Fig. \ref{montage_elec}).
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[scale=0.4]{montage_elec.png}
+%        \caption{Montage experience cable coaxial}
+%        \label{fig:montage_elec}
+%\end{figure}
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.6]{montage_elec.png}
-        \caption{Montage experience cable coaxial}
-        \label{fig:montage_elec}
+\vspace{1cm}
+\noindent \begin{minipage}{0.4\textwidth}
+\includegraphics[width=\textwidth]{montage_elec.png}
+	\captionof{figure}{U$^2$(1/D$^2$)}
+\label{fig:montage_elec}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.5\textwidth}
+Nous mesurons la difference entre les signaux du generateur et ceux passant par le cable. Cela nous permet de connaitre le temps de propagation de l'onde electrique dans le cablem.Si on connait le temps et la distance, nous pouvons ainsi connaitre la vitesse de propagation grace a la relation Eq. 2.
+
+\noindent \end{minipage}
+
+\vspace{1cm}
+
+
+En un second temps, nous utilisons un pont RLC (voir Fig. \ref{fig:rlc}) afin de determiner la capacite lineique c* et l'inductance lineique l*. Pour c*, nous branchons en circuit ouvert le cable coaxial comme sur Fig. \ref{fig:c}. Pour l*, nous branchons le cable avec un cours circuit tel que sur Fig. \ref{fig:l}. 
+\begin{figure}[h!]
+    \centering
+    % Première figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{accoustique/acc2.png}
+	    \caption{U$^2$(1/D$^2$)}
+        \label{fig:c}
+    \end{minipage}
+    \hfill
+    % Deuxième figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{accoustique/acc3.png}
+	    \caption{U(1/D) avec E-R inversés}
+        \label{fig:l}
+    \end{minipage}
 \end{figure}
 
+Enfin nous mes
