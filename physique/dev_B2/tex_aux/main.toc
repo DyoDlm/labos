@@ -1,25 +1,19 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}ACCOUSTIQUE}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Description des manipulations}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Partie théorique}{4}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}un premier truc}{4}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}un deuxieme truc}{4}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Résultats et Analyse}{5}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Determination de la celerite}{5}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Vérification de la variation de la pression}{6}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Nature spherique des ondes accoustiques}{6}{subsubsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.4}Analyse des résultats, complement}{7}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Une premiere analyse}{7}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Une deuxieme analyse}{7}{subsubsection.2.4.2}%
-\contentsline {section}{\numberline {3}ELECTRIQUE}{8}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Description des manipulations}{8}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Partie théorique}{9}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}un premier truc}{9}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}un deuxieme truc}{9}{subsubsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Résultats}{10}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Un premier resultat}{10}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Un deuxieme resultat}{10}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}Analyse des résultats, complement}{12}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Une premiere analyse}{12}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Une deuxieme analyse}{12}{subsubsection.3.4.2}%
-\contentsline {section}{\numberline {4}Annexes}{13}{section.4}%
+\contentsline {section}{\numberline {2}Théorie générale}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Theorie accousstique}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Theorie electrique}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}ACCOUSTIQUE}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Description des manipulations}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Résultats, Analyse et Discussion}{4}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Determination de la celerite}{4}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Nature spherique des ondes accoustiques}{4}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Vérification de la variation de la pression}{5}{subsubsection.3.2.3}%
+\contentsline {section}{\numberline {4}ELECTRIQUE}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Description des manipulations}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Résultats}{7}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Un premier resultat}{7}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Un deuxieme resultat}{7}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Analyse des résultats, complement}{9}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Une premiere analyse}{9}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Une deuxieme analyse}{9}{subsubsection.4.3.2}%
+\contentsline {section}{\numberline {5}Annexes}{10}{section.5}%

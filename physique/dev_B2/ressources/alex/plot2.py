@@ -56,8 +56,70 @@ y2 = [0.0400,
 0.0132,
 0.0121]
 
-x = x2
-y = y2
+y3 = [2.2,
+2.3,
+1.97,
+1.87,
+1.83,
+1.7,
+1.47,
+1.45,
+1.46,
+1.29,
+1.31]
+
+x3 = [0.10,
+0.11,
+0.12,
+0.13,
+0.14,
+0.15,
+0.16,
+0.17,
+0.18,
+0.19,
+0.20]
+
+y4 = [0.13,
+0.18,
+0.28,
+0.44,
+0.91,
+1.95,
+2.5,
+1.45,
+0.54,
+0.16,
+0.08,
+0.06,
+0.05]
+
+x4 = [90,
+75,
+60,
+45,
+30,
+15,
+0,
+-15,
+-30,
+-45,
+-60,
+-75,
+-90]
+print("before")
+print(x3)
+c = 0
+for i in x3:
+    x3[c] = 1/i
+    c += 1
+print("after")
+print(x3)
+x = x3
+y = y3
+
+x = x4
+y = y4
 def regression_lineaire(x, y):
     """
     Calcule la régression linéaire y = ax + b
@@ -79,12 +141,13 @@ a, b = regression_lineaire(x, y)
 # Droite de régression
 x_droite = np.linspace(min(x), max(x), 100)
 y_droite = a * x_droite + b
-plt.plot(x_droite, y_droite, label=rf"$U^2$ = {a:.2f} * 1/$D^2$ + {b:.2f}")
+plt.plot(x_droite, y_droite, label=rf"$U$ = {a:.2f} * 1/$D$ + {b:.2f}")
+
 plt.legend()
 plt.scatter(x, y)
-plt.xlabel(r"1/$D^2$ \ m ")
-plt.ylabel(r"$U^2$ \ V")
+plt.xlabel(r"1/$D$ \ m ")
+plt.ylabel(r"$U$ \ V")
 plt.grid(True)
-plt.savefig("acc2.png")
+plt.savefig("acc3.png")
 plt.show()
 

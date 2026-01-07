@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 19:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 20:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,31 +461,8 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box57
 )
 (./main.aux (./srcs/1_intro.aux) (./srcs/accoustique/2_description.aux)
-(./srcs/accoustique/3_theorie.aux
-
-LaTeX Warning: Label `eq:TMC' multiply defined.
-
-
-LaTeX Warning: Label `eq:lambda' multiply defined.
-
-) (./srcs/accoustique/4_resultats.aux) (./srcs/accoustique/5_analyse.aux)
-(./srcs/electrique/2_description.aux) (./srcs/electrique/3_theorie.aux
-
-LaTeX Warning: Label `sec:theorie' multiply defined.
-
-
-LaTeX Warning: Label `eq:TMC' multiply defined.
-
-
-LaTeX Warning: Label `eq:lambda' multiply defined.
-
-
-LaTeX Warning: Label `eq:TMC' multiply defined.
-
-
-LaTeX Warning: Label `eq:lambda' multiply defined.
-
-) (./srcs/electrique/4_resultats.aux) (./srcs/electrique/5_analyse.aux)
+(./srcs/accoustique/4_resultats.aux) (./srcs/electrique/2_description.aux)
+(./srcs/electrique/4_resultats.aux) (./srcs/electrique/5_analyse.aux)
 (./srcs/annexes.aux))
 \openout1 = `main.aux'.
 
@@ -625,13 +602,13 @@ l.5 ...alimente d'une tension crete a crete ($U_p_
                                                   p$ = 5V). Cela est possibl...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-<./ressources/images/montage_acc1.png, id=143, 681.54625pt x 483.8075pt>
+<./ressources/images/montage_acc1.png, id=113, 681.54625pt x 483.8075pt>
 File: ./ressources/images/montage_acc1.png Graphic file (type png)
 <use ./ressources/images/montage_acc1.png>
 Package pdftex.def Info: ./ressources/images/montage_acc1.png  used on input li
 ne 9.
 (pdftex.def)             Requested size: 272.61366pt x 193.51956pt.
-<./ressources/images/montage_acc2.png, id=146, 698.61pt x 146.5475pt>
+<./ressources/images/montage_acc2.png, id=116, 698.61pt x 146.5475pt>
 File: ./ressources/images/montage_acc2.png Graphic file (type png)
 <use ./ressources/images/montage_acc2.png>
 Package pdftex.def Info: ./ressources/images/montage_acc2.png  used on input li
@@ -642,90 +619,67 @@ ne 17.
 
 
  <./ressources/images/montage_acc1.png> <./ressources/images/montage_acc2.png>]
-\openout2 = `./srcs/accoustique/3_theorie.aux'.
-
- (./srcs/accoustique/3_theorie.tex) [4
-
-
-
-]
 \openout2 = `./srcs/accoustique/4_resultats.aux'.
 
  (./srcs/accoustique/4_resultats.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+LaTeX Warning: Reference `eq:lambda' on page 4 undefined on input line 8.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-<./ressources/images/accoustique/acc1.png, id=171, 462.528pt x 346.896pt>
+<./ressources/images/accoustique/angle.png, id=128, 569.12625pt x 302.12875pt>
+File: ./ressources/images/accoustique/angle.png Graphic file (type png)
+<use ./ressources/images/accoustique/angle.png>
+Package pdftex.def Info: ./ressources/images/accoustique/angle.png  used on inp
+ut line 40.
+(pdftex.def)             Requested size: 234.8775pt x 124.68958pt.
+ [4
+
+
+
+ <./ressources/images/accoustique/angle.png>]
+<./ressources/images/accoustique/acc1.png, id=140, 462.528pt x 346.896pt>
 File: ./ressources/images/accoustique/acc1.png Graphic file (type png)
 <use ./ressources/images/accoustique/acc1.png>
 Package pdftex.def Info: ./ressources/images/accoustique/acc1.png  used on inpu
-t line 48.
-(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+t line 55.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 49.
+(caption)                particular \caption on input line 56.
 See the caption package documentation for explanation.
 
-<./ressources/images/accoustique/acc2.png, id=173, 462.528pt x 346.896pt>
+<./ressources/images/accoustique/acc2.png, id=143, 462.528pt x 346.896pt>
 File: ./ressources/images/accoustique/acc2.png Graphic file (type png)
 <use ./ressources/images/accoustique/acc2.png>
 Package pdftex.def Info: ./ressources/images/accoustique/acc2.png  used on inpu
-t line 58.
-(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 59.
-See the caption package documentation for explanation.
-
- [5
-
-
-
-]) [6 <./ressources/images/accoustique/acc1.png> <./ressources/images/accoustiq
-ue/acc2.png>]
-\openout2 = `./srcs/accoustique/5_analyse.aux'.
-
- (./srcs/accoustique/5_analyse.tex
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 
-    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) [7
-
-
-
-]
+t line 68.
+(pdftex.def)             Requested size: 225.4804pt x 169.11243pt.
+<./ressources/images/accoustique/acc3.png, id=144, 462.528pt x 346.896pt>
+File: ./ressources/images/accoustique/acc3.png Graphic file (type png)
+<use ./ressources/images/accoustique/acc3.png>
+Package pdftex.def Info: ./ressources/images/accoustique/acc3.png  used on inpu
+t line 76.
+(pdftex.def)             Requested size: 225.4804pt x 169.11243pt.
+) [5 <./ressources/images/accoustique/acc1.png> <./ressources/images/accoustiqu
+e/acc2.png> <./ressources/images/accoustique/acc3.png>]
 \openout2 = `./srcs/electrique/2_description.aux'.
 
  (./srcs/electrique/2_description.tex
-<./ressources/images/montage_elec.png, id=195, 644.4075pt x 483.8075pt>
+<./ressources/images/montage_elec.png, id=154, 644.4075pt x 483.8075pt>
 File: ./ressources/images/montage_elec.png Graphic file (type png)
 <use ./ressources/images/montage_elec.png>
 Package pdftex.def Info: ./ressources/images/montage_elec.png  used on input li
 ne 9.
 (pdftex.def)             Requested size: 386.64748pt x 290.28674pt.
-) [8
+) [6
 
 
 
  <./ressources/images/montage_elec.png>]
-\openout2 = `./srcs/electrique/3_theorie.aux'.
-
- (./srcs/electrique/3_theorie.tex) [9
-
-
-
-]
 \openout2 = `./srcs/electrique/4_resultats.aux'.
 
  (./srcs/electrique/4_resultats.tex
@@ -734,9 +688,9 @@ Package caption Warning: \label without proper reference on input line 10.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:r0' on page 10 undefined on input line 5.
+LaTeX Warning: Reference `fig:r0' on page 7 undefined on input line 5.
 
-<./ressources/images/electrique/r5.png, id=210, 462.528pt x 346.896pt>
+<./ressources/images/electrique/r5.png, id=163, 462.528pt x 346.896pt>
 File: ./ressources/images/electrique/r5.png Graphic file (type png)
 <use ./ressources/images/electrique/r5.png>
 Package pdftex.def Info: ./ressources/images/electrique/r5.png  used on input l
@@ -747,7 +701,7 @@ Package caption Warning: \label without proper reference on input line 10.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:r0' on page 10 undefined on input line 20.
+LaTeX Warning: Reference `fig:r0' on page 7 undefined on input line 20.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -756,19 +710,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `christophe' on page 10 undefined on input line 91.
+LaTeX Warning: Citation `christophe' on page 7 undefined on input line 91.
 
 
-LaTeX Warning: Citation `christophe' on page 10 undefined on input line 91.
+LaTeX Warning: Citation `christophe' on page 7 undefined on input line 91.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [10
+) [7
 
 
 
- <./ressources/images/electrique/r5.png>] [11]
+ <./ressources/images/electrique/r5.png>] [8]
 \openout2 = `./srcs/electrique/5_analyse.aux'.
 
  (./srcs/electrique/5_analyse.tex
@@ -785,7 +739,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [12
+) [9
 
 
 
@@ -817,15 +771,14 @@ You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
-) [13
+) [10
 
 
 
 ] (./main.aux (./srcs/1_intro.aux) (./srcs/accoustique/2_description.aux) (./sr
-cs/accoustique/3_theorie.aux) (./srcs/accoustique/4_resultats.aux) (./srcs/acco
-ustique/5_analyse.aux) (./srcs/electrique/2_description.aux) (./srcs/electrique
-/3_theorie.aux) (./srcs/electrique/4_resultats.aux) (./srcs/electrique/5_analys
-e.aux) (./srcs/annexes.aux))
+cs/accoustique/4_resultats.aux) (./srcs/electrique/2_description.aux) (./srcs/e
+lectrique/4_resultats.aux) (./srcs/electrique/5_analyse.aux) (./srcs/annexes.au
+x))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -833,35 +786,33 @@ L3 programming layer <2024-01-22>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 49E5A841A76F5B867BD6561ABEAEE912;4257.
+(rerunfilecheck)             Checksum: 9BDAF7F4006EF07A36D99B5B381A8D8F;3291.
  ) 
 Here is how much of TeX's memory you used:
- 13807 strings out of 474222
- 223234 string characters out of 5748733
- 1939975 words of memory out of 5000000
- 35739 multiletter control sequences out of 15000+600000
+ 13729 strings out of 474222
+ 220521 string characters out of 5748733
+ 1935975 words of memory out of 5000000
+ 35696 multiletter control sequences out of 15000+600000
  564878 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,9n,117p,1177b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,9n,117p,1177b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt12.pfb>
-Output written on main.pdf (13 pages, 325566 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (10 pages, 382660 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 206 compressed objects within 3 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
