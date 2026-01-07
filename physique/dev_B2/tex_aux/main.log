@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 19:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -652,7 +652,7 @@ ne 17.
 \openout2 = `./srcs/accoustique/4_resultats.aux'.
 
  (./srcs/accoustique/4_resultats.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
@@ -660,23 +660,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 File: ./ressources/images/accoustique/acc1.png Graphic file (type png)
 <use ./ressources/images/accoustique/acc1.png>
 Package pdftex.def Info: ./ressources/images/accoustique/acc1.png  used on inpu
-t line 19.
+t line 48.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 49.
+See the caption package documentation for explanation.
+
 <./ressources/images/accoustique/acc2.png, id=173, 462.528pt x 346.896pt>
 File: ./ressources/images/accoustique/acc2.png Graphic file (type png)
 <use ./ressources/images/accoustique/acc2.png>
 Package pdftex.def Info: ./ressources/images/accoustique/acc2.png  used on inpu
-t line 28.
+t line 58.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 59.
+See the caption package documentation for explanation.
 
-) [5
+ [5
 
 
 
- <./ressources/images/accoustique/acc1.png>] [6 <./ressources/images/accoustiqu
-e/acc2.png>]
+]) [6 <./ressources/images/accoustique/acc1.png> <./ressources/images/accoustiq
+ue/acc2.png>]
 \openout2 = `./srcs/accoustique/5_analyse.aux'.
 
  (./srcs/accoustique/5_analyse.tex
@@ -830,13 +837,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5252D9F0C8B32CAD0A741B5E72B8DB32;4193.
+(rerunfilecheck)             Checksum: 49E5A841A76F5B867BD6561ABEAEE912;4257.
  ) 
 Here is how much of TeX's memory you used:
- 13805 strings out of 474222
- 223192 string characters out of 5748733
+ 13807 strings out of 474222
+ 223234 string characters out of 5748733
  1939975 words of memory out of 5000000
- 35737 multiletter control sequences out of 15000+600000
+ 35739 multiletter control sequences out of 15000+600000
  564878 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,9n,117p,1177b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -851,7 +858,7 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb>
-Output written on main.pdf (13 pages, 323105 bytes).
+Output written on main.pdf (13 pages, 325566 bytes).
 PDF statistics:
  301 PDF objects out of 1000 (max. 8388607)
  249 compressed objects within 3 object streams

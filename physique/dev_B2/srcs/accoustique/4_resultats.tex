@@ -1,5 +1,6 @@
-\subsection{Résultats}
+\subsection{Résultats et Analyse}
 
+\hspace{8cm}
 \subsubsection{Determination de la celerite}
 
 Nous mesurons pour des phases a 0 $\pm 5 ^\circ$ sur en Annexe (voir Tab. \ref{tab:lambda}) :
@@ -7,29 +8,81 @@ Nous mesurons pour des phases a 0 $\pm 5 ^\circ$ sur en Annexe (voir Tab. \ref{t
 Dont nous pouvons extraire une moyenne de 0.83 $cm$ quand on considere la longueur d'onde de 1.8 $cm$ comme la somme de deux intervalles de phase nulle de nos signaux. En effet, si on le divise par deux, nous obtenons 0.9 $cm$ qui est relativement proche de la moyenne.  \\\\
 Grace a la relation $\lambda$ = c $\cdot$ $T$ avec T = $\frac{1}{f}$ (voir Eq. \ref{eq:lambda}), nous obtenons : 
 \[
-	\mathrm{c} = \lambda \cdot f = 0.0083 \cdot 400'000 = ... m/s
+	\mathrm{c} = \lambda \cdot f = 0.0083 \cdot 400'000 = 3,3 \pm ... m/s
 \]
 
-\subsubsection{Verification de la Variation de la pression}
 
-Nous pouvons visualiser sur Fig. \ref{fig:U(1/R)} comment la tension varie en fonction de la distance. En effet la pression est proportionnelle a la pression de part le phenomene piezoresistif du capteur.
+La propagation de l'incertitude sur la célérité $c$ peut donc être estimée à partir de la relation
+\[
+c = \lambda \cdot f,
+\]
+en supposant que la fréquence $f$ est connue avec une précision négligeable.
+L'incertitude relative de $c$ est donc donnée par :
+\[
+\frac{\Delta c}{c} = \frac{\Delta \lambda}{\lambda}.
+\]
 
-\begin{figure}[ht]
-	\centering 
+L'incertitude sur la longueur d'onde est celle de la règle utilisée soit
+\[
+\Delta \lambda = \pm 0{,}1~\mathrm{cm} = 1 \times 10^{-4}~\mathrm{m},
+\]
+alors l'incertitude absolue sur $c$ est
+\[
+\Delta c = c \cdot \frac{\Delta \lambda}{\lambda}
+= 3320 \cdot \frac{1 \times 10^{-4}}{8,3 \times 10^{-3}}
+\approx ...~\mathrm{m/s}.
+\]
+
+Ainsi, la célérité de l'onde acoustique peut être reportée avec incertitude comme :
+\[
+c = (3,3 \pm ...) \times 10^{3}~\mathrm{m/s}.
+\]
+
+\subsubsection{Vérification de la variation de la pression}
+
+\begin{minipage}{\linewidth}
+La Fig.~\ref{fig:U(1/R)} présente l’évolution de la tension mesurée en fonction de l’inverse de la distance entre l’émetteur et le récepteur.
+La tension délivrée par le capteur piézoélectrique étant proportionnelle à la pression acoustique incidente, cette représentation permet de visualiser directement la variation de la pression avec la distance de propagation de l’onde.
+
+\begin{center}
 	\includegraphics[scale=0.5]{accoustique/acc1.png}
-	\caption{Variation de la tension en fonction de l'inverse de la frequence}
-	\label{fig:U(1/R)}
-\end{figure}
+\captionof{figure}{Variation de la tension en fonction de l’inverse de la distance}
+\label{fig:U(1/R)}
+\end{center}
 
-Or, lorsque nous tracons la tension au carre en fonction de l'inverse du carre de la distance sur Fig. \ref{fig:U2(1/R2)}, nous observons une variation lineaire.
+Afin de vérifier le modèle théorique de décroissance de la pression acoustique, nous avons ensuite tracé le carré de la tension en fonction de l’inverse du carré de la distance (Fig.~\ref{fig:U2(1/R2)}).
+Contrairement à l’attente d’une dépendance linéaire marquée, aucune variation significative n’est observée, si ce n’est une pente très faible.
+Ce comportement peut indiquer que l’atténuation géométrique est masquée par d’autres phénomènes, tels que les pertes du milieu, les réflexions ou une réponse non parfaitement linéaire du capteur.
 
-\begin{figure}[h]
-        \centering
-	\includegraphics[scale=0.5]{accoustique/acc2.png}
-        \caption{Variation de la tension en fonction de l'inverse de la frequence}
-        \label{fig:U2(1/R2)}
-\end{figure}
+\begin{center}
+\includegraphics[scale=0.5]{accoustique/acc2.png}
+\captionof{figure}{Variation du carré de la tension en fonction de l’inverse du carré de la distance}
+\label{fig:U2(1/R2)}
+\end{center}
 
+\end{minipage}
+
+%\subsubsection{Verification de la Variation de la pression}
+
+%Nous pouvons visualiser sur Fig. \ref{fig:U(1/R)} comment la tension varie en fonction de la distance. En effet la pression est proportionnelle a la pression de part le phenomene piezoresistif du capteur.
+
+%\begin{figure}[h]
+%	\centering 
+%	\includegraphics[scale=0.5]{accoustique/acc1.png}
+%	\caption{Variation de la tension en fonction de l'inverse de la frequence}
+%	\label{fig:U(1/R)}
+%\end{figure}
+%
+%Or, lorsque nous tracons la tension au carre en fonction de l'inverse du carre de la distance sur Fig. \ref{fig:U2(1/R2)}, nous n'observons aucun changement sinon une pente tres petite (LIEN AVEC LN(1/R) ???).
+
+%\begin{figure}[h]
+%        \centering
+%	\includegraphics[scale=0.4]{accoustique/acc2.png}
+%        \caption{Variation de la tension en fonction de l'inverse de la frequence}
+%        \label{fig:U2(1/R2)}
+%\end{figure}
+
+\newpage
 
 \subsubsection{Nature spherique des ondes accoustiques}
 

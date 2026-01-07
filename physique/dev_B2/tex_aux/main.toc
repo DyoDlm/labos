@@ -4,10 +4,10 @@
 \contentsline {subsection}{\numberline {2.2}Partie théorique}{4}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}un premier truc}{4}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}un deuxieme truc}{4}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Résultats}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Résultats et Analyse}{5}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Determination de la celerite}{5}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Verification de la Variation de la pression}{5}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Nature spherique des ondes accoustiques}{5}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.2}Vérification de la variation de la pression}{6}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Nature spherique des ondes accoustiques}{6}{subsubsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.4}Analyse des résultats, complement}{7}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}Une premiere analyse}{7}{subsubsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}Une deuxieme analyse}{7}{subsubsection.2.4.2}%
