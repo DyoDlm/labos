@@ -1,0 +1,156 @@
+s1500_14.csv
+----------------------
+Resistances are : s1500_14.csv
+max generateur 1 : 1.65829154849
+max cable 2 : 4.17085424811
+min generateur 1 : -5.97989946604
+min cable 2 : -5.15577881783
+amplitude generateur1 : 7.63819101453
+amplitude cable2 : 9.326633065940001
+Time between : -2.51256269962
+----------------------
+res was ploted
+s2500_15.csv
+----------------------
+Resistances are : s2500_15.csv
+max generateur 1 : 1.45728652179
+max cable 2 : 4.2512562573
+min generateur 1 : -6.38190951943
+min cable 2 : -5.17587932012
+amplitude generateur1 : 7.839196041219999
+amplitude cable2 : 9.42713557742
+Time between : -2.7939697355099997
+----------------------
+res was ploted
+s40pe_11.csv
+----------------------
+Resistances are : s40pe_11.csv
+max generateur 1 : 4.07035186887
+max cable 2 : 2.48241205513
+min generateur 1 : -3.96984919906
+min cable 2 : -2.90452256054
+amplitude generateur1 : 8.04020106793
+amplitude cable2 : 5.38693461567
+Time between : 1.5879398137399994
+----------------------
+res was ploted
+s15pe_6.csv
+----------------------
+Resistances are : s15pe_6.csv
+max generateur 1 : 5.07537700236
+max cable 2 : 4.17085424811
+min generateur 1 : -4.57286427915
+min cable 2 : -4.27135671675
+amplitude generateur1 : 9.64824128151
+amplitude cable2 : 8.44221096486
+Time between : 0.9045227542499994
+----------------------
+res was ploted
+s25pe_8.csv
+----------------------
+Resistances are : s25pe_8.csv
+max generateur 1 : 4.67336694896
+max cable 2 : 3.68844219297
+min generateur 1 : -4.37185925245
+min cable 2 : -3.86934667081
+amplitude generateur1 : 9.04522620141
+amplitude cable2 : 7.557788863780001
+Time between : 0.9849247559899998
+----------------------
+res was ploted
+s500e_13.csv
+----------------------
+Resistances are : s500e_13.csv
+max generateur 1 : 2.06030160189
+max cable 2 : 3.92964822054
+min generateur 1 : -6.18090449274
+min cable 2 : -4.75376877189
+amplitude generateur1 : 8.24120609463
+amplitude cable2 : 8.68341699243
+Time between : -1.8693466186499998
+----------------------
+res was ploted
+s100e_12.csv
+----------------------
+Resistances are : s100e_12.csv
+max generateur 1 : 3.06532673538
+max cable 2 : 2.80402009189
+min generateur 1 : -4.77386930585
+min cable 2 : -3.46733662486
+amplitude generateur1 : 7.83919604123
+amplitude cable2 : 6.271356716750001
+Time between : 0.26130664348999977
+----------------------
+res was ploted
+s2000_16.csv
+----------------------
+Resistances are : s2000_16.csv
+max generateur 1 : 1.65829154849
+max cable 2 : 4.2512562573
+min generateur 1 : -6.38190951943
+min cable 2 : -5.23618082702
+amplitude generateur1 : 8.04020106792
+amplitude cable2 : 9.48743708432
+Time between : -2.5929647088099994
+----------------------
+res was ploted
+s30pe_9.csv
+----------------------
+Resistances are : s30pe_9.csv
+max generateur 1 : 4.22110563889
+max cable 2 : 2.80402009189
+min generateur 1 : -3.96984919906
+min cable 2 : -3.1457285881
+amplitude generateur1 : 8.19095483795
+amplitude cable2 : 5.94974867999
+Time between : 1.4170855470000001
+----------------------
+res was ploted
+s5ope_4.csv
+----------------------
+Resistances are : s5ope_4.csv
+max generateur 1 : 5.87939710915
+max cable 2 : 4.89447233081
+min generateur 1 : -4.77386930585
+min cable 2 : -4.83417078108
+amplitude generateur1 : 10.653266415000001
+amplitude cable2 : 9.728643111890001
+Time between : 0.9849247783399999
+----------------------
+res was ploted
+s10pe_5.csv
+----------------------
+Resistances are : s10pe_5.csv
+max generateur 1 : 5.47738705575
+max cable 2 : 3.68844219297
+min generateur 1 : -4.17085422575
+min cable 2 : -3.78894466162
+amplitude generateur1 : 9.6482412815
+amplitude cable2 : 7.47738685459
+Time between : 1.7889448627800002
+----------------------
+res was ploted
+s20pe_7.csv
+----------------------
+Resistances are : s20pe_7.csv
+max generateur 1 : 4.87437197566
+max cable 2 : 3.04522611946
+min generateur 1 : -3.96984919906
+min cable 2 : -3.38693461567
+amplitude generateur1 : 8.84422117472
+amplitude cable2 : 6.43216073513
+Time between : 1.8291458561999998
+----------------------
+res was ploted
+s35pe_10.csv
+----------------------
+Resistances are : s35pe_10.csv
+max generateur 1 : 4.47236192226
+max cable 2 : 3.4472361654
+min generateur 1 : -3.96984919906
+min cable 2 : -3.62814064324
+amplitude generateur1 : 8.44221112132
+amplitude cable2 : 7.07537680864
+Time between : 1.02512575686
+----------------------
+res was ploted

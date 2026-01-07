@@ -34,6 +34,7 @@ def plot(that):
     amplitude1 = max1 - min1
     amplitude2 = max2 - min2
 
+    print("----------------------")
     print(f"Resistances are : {file_path}")
     print(f"max generateur 1 : {max1}")
     print(f"max cable 2 : {max2}")
@@ -42,15 +43,16 @@ def plot(that):
     print(f"amplitude generateur1 : {amplitude1}")
     print(f"amplitude cable2 : {amplitude2}")
     print(f"Time between : {time}")
+    print("----------------------")
+
 
 # Plot
     plt.figure()
-    plt.plot(t, y1, label="Signal 1")
-    plt.plot(t, y2, label="Signal 2")
+    plt.plot(t, y1, label="CH 1 (generateur)")
+    plt.plot(t, y2, label="CH 2 (cable coaxial)")
 
-    plt.xlabel(r"Temps $\upmu s$" )
-    plt.ylabel("Tension \ V")
-    plt.title("Tracé des signaux depuis fichier TXT")
+    plt.xlabel(r"Temps t \ $\mu$s" )
+    plt.ylabel("Tension U \ V")
     plt.legend()
     plt.grid(True)
     name = file_path.split(".")
@@ -63,4 +65,3 @@ for i in resistances:
     print(i)
     plot(i)
     print("res was ploted")
-    break 
