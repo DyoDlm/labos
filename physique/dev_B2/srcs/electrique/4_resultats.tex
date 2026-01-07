@@ -8,16 +8,18 @@ Nous mesurons donc 2 signaux sur l'oscilloscope (visible sur \ref{fig:r0} : l'im
 	\centering
 	\includegraphics[scale=0.6]{electrique/r5.png}
 	\label{fig:r0}
-	\caption{Mesure des impulsions de largeur (width) $w$ = 210 $ns$}
+	\caption{Mesure des impulsions de largeur (width) $w$ = 210 $\mu$$s$ avec R = 0$\ohm$}
 \end{figure}
 
-Le delai entre les deux signaux pour une resistance nulle R = 0 $\ohm$ $\delta$$t$ = $|$$t_1$ - $t_2$$|$ est : 
+Le delai entre les deux impulsions est definit tel que $\delta$$t$ = $|$$t_1$ - $t_2$$|$ est approximativement, selon Fig. \ref{fig:r0} de : 
 
 \[
-        \mathrm{\delta t} = | 
+        \mathrm{\delta t} \approx 0,5 \mu s 
 \]
 
-Que nous avons extrait sour \ref{fig:r0} 
+
+\subsubsection{Impedence characteristique}
+
 Nous avons mesure grace au pont RLC les valeurs suivantes pour la capacite lineique $c*$ et $l*$ :
 
 \[
@@ -40,5 +42,66 @@ Donc :
 \Delta Z_c = 55,5 \cdot \frac{1}{2} \sqrt{\left(\frac{0,1}{31,0}\right)^2 + \left(\frac{0,1}{10,1}\right)^2} \approx 0,3~\Omega
 \]
 
-subsubsection{Un deuxieme resultat}
+\subsubsection{Coefficients de reflexion et de transmission}
+
+Enfin, quand nous pouvons observer differentes reflexions en fonction de la resistance de terminaison appliquee au cable coaxial. Sur Fig. \ref{fig:r25}, il y a encore un retour negatif sur CH1. Ce dernier s'annule sur Fig. \ref{fig:50} quand $Z_L$ = $Z_C$. En effet, selon la relation entre les impedances $Z_C$, $Z_L$ et le coefficent de reflexion $\rho$ avec Eq. \ref{eq:reflexion}, ce dernier est egal a 1. (EXPLICITER UN PEU PLUS quand Zl = 25 ohms) Analyse : il ne s'annule pas tout a fait, car nous avons mesurer $Z_C$ $\approx$ 55 $\ohm$ donc nous voyons encore apparaitre petit retrour negatif*. 
+
+\begin{figure}[h!]
+    \centering
+    % Première figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{electrique/r25.png}
+            \caption{$Z_L$ = 25 $\ohm$}
+        \label{fig:r25}
+    \end{minipage}
+    \hfill
+    % Deuxième figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{electrique/christophe/r_50.png}
+	    \caption{$Z_L$ = 50 $\ohm$ Ref \cite{christophe}}
+        \label{fig:r50}
+    \end{minipage}
+\end{figure}
+
+En outre, lorsque $Z_L$ devient plus grand que $Z_C$ (voir Fig. \ref{fig:r100}), nous pouvons observer que ... .
+\begin{figure}[h!]
+    \centering
+    % Première figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{electrique/r100.png}
+            \caption{$Z_L$ = 100 $\ohm$}
+        \label{fig:r100}
+    \end{minipage}
+    \hfill
+    % Deuxième figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{electrique/r500.png}
+            \caption{$Z_L$ = 500 $\ohm$}
+        \label{fig:r500}
+    \end{minipage}
+\end{figure}
+
+Nous pouvons nous imaginer que l'amplitude maximum continue de croitre. Toutefois, nous voyons que lorsque $Z_L$ tend verd $\inf$, l'amplitude maximale ne depasse pas le seuil de ... comme nous pouvons l'observer sur les Figs. \ref{fig:r2000} et \ref{fig:2500}. La difference d'amplitude $\delta$ U pour approximativement la meme difference de resistance ($\delta$ R = 500 $\ohm$) est beaucoup plus petite que pour les Figs. \ref{fig:r100} et \ref{fig:500}. (DONNER VALEURS) 
+\begin{figure}[h!]
+    \centering
+    % Première figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{electrique/r2000.png}
+            \caption{$Z_L$ = 2000 $\ohm$}
+        \label{fig:r2000}
+    \end{minipage}
+    \hfill
+    % Deuxième figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{electrique/r2500.png}
+            \caption{$Z_L$ = 2500 $\ohm$}
+	    \label{fig:r2500}
+    \end{minipage}
+\end{figure}
 
