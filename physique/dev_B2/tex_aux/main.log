@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 15:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -620,17 +620,17 @@ OK, entering \batchmode...
 \openout2 = `./srcs/accoustique/2_description.aux'.
 
  (./srcs/accoustique/2_description.tex
-<./ressources/images/montage_acc1.png, id=152, 681.54625pt x 483.8075pt>
+<./ressources/images/montage_acc1.png, id=153, 681.54625pt x 483.8075pt>
 File: ./ressources/images/montage_acc1.png Graphic file (type png)
 <use ./ressources/images/montage_acc1.png>
 Package pdftex.def Info: ./ressources/images/montage_acc1.png  used on input li
 ne 9.
-(pdftex.def)             Requested size: 408.93091pt x 290.28674pt.
-<./ressources/images/montage_acc2.png, id=154, 698.61pt x 146.5475pt>
+(pdftex.def)             Requested size: 272.61366pt x 193.51956pt.
+<./ressources/images/montage_acc2.png, id=156, 698.61pt x 146.5475pt>
 File: ./ressources/images/montage_acc2.png Graphic file (type png)
 <use ./ressources/images/montage_acc2.png>
 Package pdftex.def Info: ./ressources/images/montage_acc2.png  used on input li
-ne 16.
+ne 17.
 (pdftex.def)             Requested size: 419.16924pt x 87.92915pt.
 ) [3
 
@@ -778,7 +778,7 @@ or  <return>  to continue without it.
 \openout2 = `./srcs/electrique/2_description.aux'.
 
  (./srcs/electrique/2_description.tex
-<./ressources/images/montage_elec.png, id=198, 644.4075pt x 483.8075pt>
+<./ressources/images/montage_elec.png, id=200, 644.4075pt x 483.8075pt>
 File: ./ressources/images/montage_elec.png Graphic file (type png)
 <use ./ressources/images/montage_elec.png>
 Package pdftex.def Info: ./ressources/images/montage_elec.png  used on input li
@@ -800,10 +800,36 @@ ne 9.
 
  (./srcs/electrique/4_resultats.tex
 
-LaTeX Warning: Citation `christophe' on page 10 undefined on input line 82.
+Package caption Warning: \label without proper reference on input line 10.
+See the caption package documentation for explanation.
 
 
-LaTeX Warning: Citation `christophe' on page 10 undefined on input line 82.
+LaTeX Warning: Reference `fig:r0' on page 10 undefined on input line 5.
+
+<./ressources/images/electrique/r5.png, id=216, 462.528pt x 346.896pt>
+File: ./ressources/images/electrique/r5.png Graphic file (type png)
+<use ./ressources/images/electrique/r5.png>
+Package pdftex.def Info: ./ressources/images/electrique/r5.png  used on input l
+ine 9.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+
+Package caption Warning: \label without proper reference on input line 10.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:r0' on page 10 undefined on input line 20.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `christophe' on page 10 undefined on input line 91.
+
+
+LaTeX Warning: Citation `christophe' on page 10 undefined on input line 91.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -812,7 +838,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-] [11]
+ <./ressources/images/electrique/r5.png>] [11]
 \openout2 = `./srcs/electrique/5_analyse.aux'.
 
  (./srcs/electrique/5_analyse.tex
@@ -1047,13 +1073,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: CA97F7F75F35AC2D5233BA8C8F3E11D1;4275.
  ) 
 Here is how much of TeX's memory you used:
- 14192 strings out of 474222
- 232193 string characters out of 5748733
+ 14205 strings out of 474222
+ 232588 string characters out of 5748733
  1940975 words of memory out of 5000000
- 36109 multiletter control sequences out of 15000+600000
+ 36121 multiletter control sequences out of 15000+600000
  565413 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,117p,406b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,10n,117p,1029b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -1070,10 +1096,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (15 pages, 308201 bytes).
+Output written on main.pdf (15 pages, 346495 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
- 232 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 358 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 

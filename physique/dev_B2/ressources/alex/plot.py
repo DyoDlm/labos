@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 # Chemin vers le fichier TXT
 
-def plot(that):
+def plot(that, name):
     file_path = that   # à adapter
-
+ 
     filename = "plot_" + that
 # Lecture :
 # - séparateur = virgule
@@ -51,19 +51,23 @@ def plot(that):
     plt.plot(t, y1, label="CH 1 (generateur)")
     plt.plot(t, y2, label="CH 2 (cable coaxial)")
 
-    plt.xlabel(r"Temps t \ $\mu$s" )
+    plt.xlabel(r"Temps t \ s")
     plt.ylabel("Tension U \ V")
     plt.legend()
     plt.grid(True)
-    name = file_path.split(".")
-    plt.savefig(name[0])
+    plt.savefig(name)
     plt.show()
 
 resistances = ["s1500_14.csv", "s2500_15.csv", "s40pe_11.csv","s15pe_6.csv", "s25pe_8.csv", "s500e_13.csv", "s100e_12.csv", "s2000_16.csv", "s30pe_9.csv", "s5ope_4.csv", "s10pe_5.csv","s20pe_7.csv", "s35pe_10.csv"]
 
-resistances = ["whatisdat/scope_0.csv"]
+names = ["r1500", "r2500", "r40", "r15", "r25", "r500", "r100", "r2000", "r30", "r5", "r10", "r20", "r35"]
 
+#resistances = ["whatisdat/scope_0.csv"]
+
+c = 0
 for i in resistances:
     print(i)
-    plot(i)
+    plot(i, names[c])
+    c += 1
+    break 
     print("res was ploted")
