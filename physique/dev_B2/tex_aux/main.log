@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  6 JAN 2026 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  7 JAN 2026 14:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -628,11 +628,24 @@ OK, entering \batchmode...
 ]
 \openout2 = `./srcs/accoustique/2_description.aux'.
 
- (./srcs/accoustique/2_description.tex) [3
+ (./srcs/accoustique/2_description.tex
+<./ressources/images/montage_acc1.png, id=152, 681.54625pt x 483.8075pt>
+File: ./ressources/images/montage_acc1.png Graphic file (type png)
+<use ./ressources/images/montage_acc1.png>
+Package pdftex.def Info: ./ressources/images/montage_acc1.png  used on input li
+ne 9.
+(pdftex.def)             Requested size: 408.93091pt x 290.28674pt.
+<./ressources/images/montage_acc2.png, id=154, 698.61pt x 146.5475pt>
+File: ./ressources/images/montage_acc2.png Graphic file (type png)
+<use ./ressources/images/montage_acc2.png>
+Package pdftex.def Info: ./ressources/images/montage_acc2.png  used on input li
+ne 16.
+(pdftex.def)             Requested size: 419.16924pt x 87.92915pt.
+) [3
 
 
 
-]
+ <./ressources/images/montage_acc1.png> <./ressources/images/montage_acc2.png>]
 \openout2 = `./srcs/accoustique/3_theorie.aux'.
 
  (./srcs/accoustique/3_theorie.tex) [4
@@ -773,11 +786,18 @@ or  <return>  to continue without it.
 ]
 \openout2 = `./srcs/electrique/2_description.aux'.
 
- (./srcs/electrique/2_description.tex) [8
+ (./srcs/electrique/2_description.tex
+<./ressources/images/montage_elec.png, id=199, 644.4075pt x 483.8075pt>
+File: ./ressources/images/montage_elec.png Graphic file (type png)
+<use ./ressources/images/montage_elec.png>
+Package pdftex.def Info: ./ressources/images/montage_elec.png  used on input li
+ne 9.
+(pdftex.def)             Requested size: 386.64748pt x 290.28674pt.
+) [8
 
 
 
-]
+ <./ressources/images/montage_elec.png>]
 \openout2 = `./srcs/electrique/3_theorie.aux'.
 
  (./srcs/electrique/3_theorie.tex) [9
@@ -1129,10 +1149,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: CA97F7F75F35AC2D5233BA8C8F3E11D1;4275.
  ) 
 Here is how much of TeX's memory you used:
- 14157 strings out of 474222
- 231014 string characters out of 5748733
+ 14190 strings out of 474222
+ 232152 string characters out of 5748733
  1940975 words of memory out of 5000000
- 36077 multiletter control sequences out of 15000+600000
+ 36107 multiletter control sequences out of 15000+600000
  565413 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,117p,406b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1152,10 +1172,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (15 pages, 198002 bytes).
+Output written on main.pdf (15 pages, 303633 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 353 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 
