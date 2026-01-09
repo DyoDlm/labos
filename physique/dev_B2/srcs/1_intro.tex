@@ -6,5 +6,29 @@ Les objectifs de cette experience vont être réalisés à partir de deux instal
 
 \subsection{Theorie accousstique}
 
+Pour les ondes planes indeformables l'equation d'Alembert s'ecrit : 
+\begin{equation}
+	\frac{\partial^2p(x,t)}{\partial x^2} = \frac{1}{c^2} \cdot \frac{\partial^2p(x,t)}{\partial t^2}
+	\label{eq:alembert1}
+\end{equation}
 
+Avec c la celerite, p(r,t) une onde indeformable avec une composante temporelle t et composante spaciale r. La solution generale de Eq. \ref{eq:alembert1} s'ecrit telle que :
+\begin{equation}
+	c = 1
+	\label{eq:solution_plane}
+\end{equation}
+Pour les ondes spheriques l'equation d'alembert s'ecrit :
+
+\begin{equation}
+        \frac{\partial^2p(r,t)}{\partial r^2} = \frac{1}{c^2} \cdot \frac{\partial^2p(x,t)}{\partial t^2}
+        \label{eq:alembert2}
+\end{equation}
+
+Avec (x, y, z) -$>$ (r$\cos(\theta)\sin(\phi), r\sin(\theta)\sin(\phi), r\cos(\phi)$) la composante spatiale (et radiale), les angles $\theta$ et $\phi$. On peut deduire la solution generale de Eq. \ref{eq:alembert2} :
+
+\begin{equation}
+	p(r,t) = \frac{1}{r} \cdot (f(ct-r) + g(ct + r))
+	\label{eq:solution_spherique}
+\end{equation}
+Dont $\frac{1}{r}$ decrit l'amortissement geometrique de l'onde avec la distance \cite{protocole}
 \subsection{Theorie electrique}
