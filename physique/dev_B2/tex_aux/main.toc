@@ -2,19 +2,19 @@
 \contentsline {section}{\numberline {2}Théorie générale}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Theorie accousstique}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Theorie electrique}{2}{subsection.2.2}%
-\contentsline {section}{\numberline {3}ACCOUSTIQUE}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Description des manipulations}{3}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Résultats, Analyse et Discussion}{4}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Determination de la celerite}{4}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Nature spherique des ondes accoustiques}{4}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Vérification de la variation de la pression}{5}{subsubsection.3.2.3}%
-\contentsline {section}{\numberline {4}ELECTRIQUE}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Description des manipulations}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Résultats}{7}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Temps de propagation}{7}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Impedence characteristique}{7}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Coefficients de reflexion et de transmission}{8}{subsubsection.4.2.3}%
-\contentsline {section}{\numberline {5}Conclusion}{10}{section.5}%
-\contentsline {section}{\numberline {6}Annexes}{11}{section.6}%
-\contentsline {subsection}{\numberline {6.1}ACCOUSTIQUE}{11}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}ELECTRIQUE}{11}{subsection.6.2}%
+\contentsline {section}{\numberline {3}ACCOUSTIQUE}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Description des manipulations}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Résultats, Analyse et Discussion}{5}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Determination de la celerite}{5}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Nature spherique des ondes accoustiques}{5}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Vérification de la variation de la pression}{6}{subsubsection.3.2.3}%
+\contentsline {section}{\numberline {4}ELECTRIQUE}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Description des manipulations}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Résultats}{8}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Temps de propagation}{8}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Impedence characteristique}{8}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Coefficients de reflexion et de transmission}{9}{subsubsection.4.2.3}%
+\contentsline {section}{\numberline {5}Conclusion}{11}{section.5}%
+\contentsline {section}{\numberline {6}Annexes}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}ACCOUSTIQUE}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}ELECTRIQUE}{12}{subsection.6.2}%

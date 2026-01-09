@@ -17,7 +17,7 @@ Avec c la celerite, p(r,t) une onde indeformable avec une composante temporelle 
 	c = 1
 	\label{eq:solution_plane}
 \end{equation}
-Pour les ondes spheriques l'equation d'alembert s'ecrit :
+Pour les ondes spheriques l'equation d'alembert s'ecrit telle que Ref. \cite{protocole} :
 
 \begin{equation}
         \frac{\partial^2p(r,t)}{\partial r^2} = \frac{1}{c^2} \cdot \frac{\partial^2p(x,t)}{\partial t^2}
@@ -32,3 +32,27 @@ Avec (x, y, z) -$>$ (r$\cos(\theta)\sin(\phi), r\sin(\theta)\sin(\phi), r\cos(\p
 \end{equation}
 Dont $\frac{1}{r}$ decrit l'amortissement geometrique de l'onde avec la distance \cite{protocole}
 \subsection{Theorie electrique}
+
+D'apres le modele de la propagation d'une onde de tension et d'une corde de courant le long d'une ligne bifilaire Ref. \cite{protocole}, nous ecrivons l'equation d'alembert :
+
+\begin{equation}
+        \frac{\partial^2u(x,t)}{\partial x^2} \cdot \frac{1}{l* \cdot c*} = \frac{\partial^2u(x,t)}{\partial t^2}
+        \label{eq:alembert2}
+\end{equation}
+
+avec une tension u(x,t) ainsi que la capacite lineique c* et l'inductance lineique l*
+dont on obtient la celerite sous forme de c = $\frac{1}{\sqrt{l* \cdot c*}}$. 
+
+Comme l'impedence characteristique est define par $Z_c$ = $\frac{u}{i}$, nous pouvons demontrer a partir de la relation de la celerite en fonction d'une pulsation $\omega$ et le nombre d'onde k tel que : 
+\begin{equation}
+	\frac{\omega}{k} = \lambda \cdot f = c = \frac{1}{\sqrt{l* \cdot c*}}
+	\label{eq:zc}
+\end{equation}
+
+Qui pour un cable coaxial s'ecrit selon Ref. \cite{protocol} en prenons en compte les rayons exterieur (a) et interieur (b) des conducteurs interieurs ($c_a$) et exterieurs ($c_b$), la permittivite dielecrique $\epsilon$ et la permeabilite magnetique $\mu$ du milieu de propagation :
+\begin{equation}
+	Z_c = \frac{1}{2\pi} \sqrt{\frac{\mu}{\epsilon}} ln(\frac{b}{a})
+	\label{eq:zc2}
+\end{equation}\\\\
+(donner schema d'equivalence de la ligne bifilaire) \\\\
+Enfin, pour mesurer la reflexion et la transmission d'une onde electrique le long de notre cable coaxial, les coefficients pour la reflexion ($\rho$) et pour a transmission ($\tho$) sont definit par une impedence de terminaison $Z_L$(x = 0, t) = $Z_0$. Selon la loi des noeuds, une onde incidente $A_i\sin(\omega t + kx)$ d'amplitude $A_i$ peut etre soustraite a une onde reflechie $A_r\sin(\omega t + kx)$ d'amplitude $A_r$ pour obenir le courant. Cela
