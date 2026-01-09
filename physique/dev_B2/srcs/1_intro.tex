@@ -30,7 +30,14 @@ Avec (x, y, z) -$>$ (r$\cos(\theta)\sin(\phi), r\sin(\theta)\sin(\phi), r\cos(\p
 	p(r,t) = \frac{1}{r} \cdot (f(ct-r) + g(ct + r))
 	\label{eq:solution_spherique}
 \end{equation}
-Dont $\frac{1}{r}$ decrit l'amortissement geometrique de l'onde avec la distance \cite{protocole}
+Si on se refere a la definition mathematique d'une onde, l'amplitude de celle-ci, dans un cas géométrique, nous est donné en Eq. \ref{eq:solution_spherique} comme :
+\begin{equation}
+	\label{eq:decroissance}
+	A = \frac{1}{r}
+\end{equation}
+
+Avec r qui symbolise la distance ou encore un angle $\theta$.
+EXPLIQUER, car c'est un peu le bordel...
 \subsection{Theorie electrique}
 
 D'apres le modele de la propagation d'une onde de tension et d'une corde de courant le long d'une ligne bifilaire Ref. \cite{protocole}, nous ecrivons l'equation d'alembert :
@@ -77,4 +84,9 @@ Et comme en x = 0, la continuite impose que $A_i + A_r = A_t$ Ref. \cite{protoco
 	A_t = (1 + \rho_u) \cdot A_i = \tau_u \cdot A_i
 	\label{eq:tau}
 \end{equation}
-	
+
+Sans oublier que par definition Ref. \cite{protocole}, nous pouvons aussi ecrire le coefficient de reflexion tel que :
+\begin{equation}
+	\rho = \frac{Z_c - Z_L}{Z_c + Z_L}
+	\label{eq:reflexion1}
+\end{equation}

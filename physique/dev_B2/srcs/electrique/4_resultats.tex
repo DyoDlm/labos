@@ -44,7 +44,14 @@ Donc :
 
 \subsubsection{Coefficients de reflexion et de transmission}
 
-Enfin, quand nous pouvons observer differentes reflexions en fonction de la resistance de terminaison appliquee au cable coaxial. Sur Fig. \ref{fig:r25}, il y a encore un retour negatif sur CH1. Ce dernier s'annule sur Fig. \ref{fig:50} quand $Z_L$ = $Z_C$. En effet, selon la relation entre les impedances $Z_C$, $Z_L$ et le coefficent de reflexion $\rho$ avec Eq. \ref{eq:reflexion}, ce dernier est egal a 1. (EXPLICITER UN PEU PLUS quand Zl = 25 ohms) Analyse : il ne s'annule pas tout a fait, car nous avons mesurer $Z_C$ $\approx$ 55 $\ohm$ donc nous voyons encore apparaitre petit retrour negatif*. 
+%Prenons le cas ou nous avons un coefficient de reflexion relativement faible. Nous devons obtenir un comportement tel que sur Fig. \ref{concept.png} tel sont liées les amplitudes et le coefficient de reflexion en Eq. \ref{eq:a}. Considerons les phases 1, 2 et 3. (1) Onde progressive et $A_1$ positive. (2) Onde retrograde avec$A_2$ negative et $|A_2| < |A_1|$. (3) Onde progressive avec $A_3$ positive. 
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[scale=0.3]{concept.png}
+%	\caption{Evolution d'une impulsion avec faible $\rho$}
+%	\label{concept.png}
+%\end{figure}
+Le chemin sur CH1 est tellement court que nous pouvons observer sur chaque figure une seconde onde $\epsilon_2$ reflexion de $\epsilon_1$. Sur Figs. \ref{fig:r25} et \ref{fig:r50}, $\epsilon_2$ a le meme pattern que $\epsilon_1$, mais avec une amplitude plus basse. Cette amplitude baisse sur Fig. \ref{fig:r50} en accord avec la relation Eq. \ref{eq:a}.
 
 \begin{figure}[h!]
     \centering
@@ -65,7 +72,7 @@ Enfin, quand nous pouvons observer differentes reflexions en fonction de la resi
     \end{minipage}
 \end{figure}
 
-En outre, lorsque $Z_L$ devient plus grand que $Z_C$ (voir Fig. \ref{fig:r100}), nous pouvons observer que ... .
+En outre, lorsque $Z_L$ devient plus grand que $Z_C$ (voir Fig. \ref{fig:r100}), nous observons l'onde reflechie avec $\rho < 0$. Cela implique en effet d'inverser les amplitudes de l'impulsion initiale $\epsilon_1$ tout en les diminuant. Le phenomene se repete sur Fig. \ref{fig:r500}, bien que l'amplitude maximale semble attendre la tension d'entree en 10 $V_p_p$ a mesure que $Z_L$ tend vers l'infini (voir Tab. \ref{tab:amp}). 
 \begin{figure}[h!]
     \centering
     % Première figure
@@ -84,39 +91,35 @@ En outre, lorsque $Z_L$ devient plus grand que $Z_C$ (voir Fig. \ref{fig:r100}),
         \label{fig:r500}
     \end{minipage}
 \end{figure}
-
-Nous pouvons nous imaginer que l'amplitude maximum continue de croitre. Toutefois, nous voyons que lorsque $Z_L$ tend vers $\infty$, l'amplitude maximale ne depasse pas le seuil de 4,2 V comme nous pouvons l'observer sur les Figs. \ref{fig:r2000} et \ref{fig:2500}. La difference d'amplitude $\delta$ U pour approximativement la meme difference de resistance ($\delta$ R = 500 $\ohm$) est beaucoup plus petite que pour les Figs. \ref{fig:r100} et \ref{fig:500}. 
-
-\begin{figure}[h!]
-    \centering
-    % Première figure
-    \begin{minipage}[b]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{electrique/r2000.png}
-            \caption{$Z_L$ = 2000 $\ohm$}
-        \label{fig:r2000}
-    \end{minipage}
-    \hfill
-    % Deuxième figure
-    \begin{minipage}[b]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{electrique/r2500.png}
-            \caption{$Z_L$ = 2500 $\ohm$}
-	    \label{fig:r2500}
-    \end{minipage}
-\end{figure}
-
+\newpage
 \subsection{Analyse}
 Si l'on compare avec la theorie (voir Tab. \ref{tab:th}), nos valeurs pratiques sur Tab. \ref{eq:pr} sont ... :
-\vspace{1cm}
-\noindent \begin{minipage}{0.4\textwidth}
-	VALEURS THEORIQUES POUR \\ R0,25,50,100,inf
-	\captionof{tabular}{foo}
-	\label{foo}
-\end{minipage}
-\hspace{1cm}
-\begin{minipage}{0.5\textwidth}
-VALEURS PRATIQUES
-\noindent \end{minipage}
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+	\textbf{Lien $Z_C , Z_L$} & \textbf{$\rho_t_h$} & \textbf{$\rho_m_e_s$} \\
+\hline
+	$Z_L \approx Z_C$, $Z_L$ = 50 & $\rho \approx 0$ & Christophe  \\%Adaptation, pas de réflexion \\
+\hline
+$Z_L < Z_C$, $Z_L$ = 25 & $\rho < 0$ & -0.377 \\%Réflexion avec inversion de phase \\
+\hline
+	$Z_L > Z_C$ & $\rho > 0$, $Z_L = 100$ & $\rho > 0$ & 0.288 \\%Réflexion sans inversion de phase \\
+\hline
+	$Z_L \rightarrow \infty$, $Z_L = 2500$ & $\rho \rightarrow +1$ & 0.957 \\
+\hline
+$Z_L \rightarrow 0$, $Z_L = 5$ & $\rho \rightarrow -1$ & -0.834 \\
+\hline
+\end{tabular}
+	\label{tab:th}
+\caption{Interprétation physique du coefficient de réflexion}
+\end{table}
 
-\vspace{1cm}
+Nous pouvons verifier l'evolution de $\rho$ en fonction de $Z_L$ sur Fig. \ref{}
+
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.4]{rho.png}
+	    \caption{$\rho$($Z_L$)}
+        \label{fig:rhoo}
+    \end{figure}

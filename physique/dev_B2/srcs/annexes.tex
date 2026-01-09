@@ -76,6 +76,7 @@ Angle $\theta$ $\pm$ 1° & $V$ $\pm$ 0.001 V \\
 \label{tab:angle}
 \end{table}
 
+\newpage
 \subsection{ELECTRIQUE}
 Entre 0 et 50 $\ohm$ :
 
@@ -84,8 +85,8 @@ Entre 0 et 50 $\ohm$ :
 \begin{tabular}{|c|c|c|}
 \hline
 $R$ ($\Omega$) &
-Amplitude Générateur (V) &
-Amplitude Câble (V) \\
+$V_G_p_p \pm$ 0.01 V &
+$V_C_p_p \pm$ 0.01 V \\
 \hline
 5   & 10.65 & 9.73 \\
 10  & 9.65  & 7.48 \\
@@ -107,8 +108,8 @@ Pour R $>$ 50 $\ohm$ :
 \begin{tabular}{|c|c|c|}
 \hline
 $R$ ($\Omega$) &
-Amplitude Générateur (V) &
-Amplitude Câble (V) \\
+$V_G_p_p \pm$ 0.01 V &
+$V_C_p_p \pm$ 0.01 V \\
 \hline
 100  & 7.84 & 6.27 \\
 500  & 8.24 & 8.68 \\
@@ -117,25 +118,56 @@ Amplitude Câble (V) \\
 2500 & 7.84 & 9.43 \\
 \hline
 \end{tabular}
-\caption{Mesures pour les résistances supérieures ou égales à 50 $\Omega$}
+	\label{tab:amp}
+	\caption{Mesures pour les résistances supérieures ou égales à 50 $\Omega$}
 \end{table}
-
-Synthese :
-
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline
-$R$ ($\Omega$) &
-Amplitude Générateur (V) &
-Amplitude Câble (V) &
-Temps (ns) \\
+\textbf{$R$ ($\Omega$)} & \textbf{$V_{G,pp}$ (V)} & \textbf{$V_{C,pp}$ (V)} & \textbf{$\Gamma$} \\
 \hline
-0     & N/A & N/A & N/A \\
-50    & N/A & N/A & N/A \\
-2500  & 7.84 & 9.43 & -2.79 \\
+5    & 10.65 & 9.73 & -0.834 \\
+10   & 9.65  & 7.48 & -0.694 \\
+15   & 9.65  & 8.44 & -0.573 \\
+20   & 8.84  & 6.43 & -0.469 \\
+25   & 9.05  & 7.56 & -0.377 \\
+30   & 8.19  & 5.95 & -0.297 \\
+35   & 8.44  & 7.08 & -0.225 \\
+40   & 8.04  & 5.39 & -0.161 \\
+100  & 7.84  & 6.27 &  0.288 \\
+500  & 8.24  & 8.68 &  0.801 \\
+1500 & 7.64  & 9.33 &  0.929 \\
+2000 & 8.04  & 9.49 &  0.946 \\
+2500 & 7.84  & 9.43 &  0.957 \\
 \hline
 \end{tabular}
-        \caption{Comparaison pour $R = 0\,\Omega$, $50\,\Omega$ et $R_{max}$ Ref \cite{christophe}}
+\caption{Valeurs mesurées et coefficient de réflexion pour un câble coaxial de $Z_0 = 55{,}3~\Omega$}
+\end{table}
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{$R$ ($\Omega$)} & \textbf{$V_{G,pp}$ (V)} & \textbf{$V_{C,pp}$ (V)} & \textbf{$\Gamma$} \\
+\hline
+5    & 10.65 & 9.73 & -0.834 \\
+10   & 9.65  & 7.48 & -0.694 \\
+15   & 9.65  & 8.44 & -0.573 \\
+20   & 8.84  & 6.43 & -0.469 \\
+25   & 9.05  & 7.56 & -0.377 \\
+30   & 8.19  & 5.95 & -0.297 \\
+35   & 8.44  & 7.08 & -0.225 \\
+40   & 8.04  & 5.39 & -0.161 \\
+100  & 7.84  & 6.27 &  0.288 \\
+500  & 8.24  & 8.68 &  0.801 \\
+1500 & 7.64  & 9.33 &  0.929 \\
+2000 & 8.04  & 9.49 &  0.946 \\
+2500 & 7.84  & 9.43 &  0.957 \\
+\hline
+\end{tabular}
+\caption{Mesures expérimentales et coefficient de réflexion pour un câble coaxial ($Z_0 = 55{,}3~\Omega$)}
 \end{table}
 
+
+DONNER LES RHOS DE CHRISTOPHE !!!
