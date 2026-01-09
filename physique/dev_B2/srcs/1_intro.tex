@@ -53,6 +53,28 @@ Qui pour un cable coaxial s'ecrit selon Ref. \cite{protocol} en prenons en compt
 \begin{equation}
 	Z_c = \frac{1}{2\pi} \sqrt{\frac{\mu}{\epsilon}} ln(\frac{b}{a})
 	\label{eq:zc2}
-\end{equation}\\\\
-(donner schema d'equivalence de la ligne bifilaire) \\\\
-Enfin, pour mesurer la reflexion et la transmission d'une onde electrique le long de notre cable coaxial, les coefficients pour la reflexion ($\rho$) et pour a transmission ($\tho$) sont definit par une impedence de terminaison $Z_L$(x = 0, t) = $Z_0$. Selon la loi des noeuds, une onde incidente $A_i\sin(\omega t + kx)$ d'amplitude $A_i$ peut etre soustraite a une onde reflechie $A_r\sin(\omega t + kx)$ d'amplitude $A_r$ pour obenir le courant. Cela
+\end{equation}
+
+Enfin, pour mesurer la reflexion et la transmission d'une onde electrique le long de notre cable coaxial, les coefficients pour la reflexion ($\rho$) et pour a transmission ($\tau$) sont definit par une impedence de terminaison $Z_L$(x = 0, t) = $Z_0$. Selon la loi des noeuds, une onde incidente $A_i\sin(\omega t + kx)$ d'amplitude $A_i$ peut etre soustraite a une onde reflechie $A_r\sin(\omega t + kx)$ d'amplitude $A_r$ pour obenir le courant :
+\begin{equation}
+	i(x,t) = A_i \cdot \frac{\omega}{k} \cdot c* \cdot \sin(\omega t - kx) - A_r \cdot \frac{\omega}{k} \cdot c* \cdot \sin(\omega t + kx)
+	\label{eq:current}
+\end{equation}
+
+Enfin, comme l'impedance $Z_0$ = $\frac{u(0, t)}{i(0, t)}$, elle peut aussi s'ecrire telle que :
+\begin{equation}
+	Z_0 = Z_c \cdot \frac{A_i + A_r}{A_i - A_r}
+	\label{eq:z0}
+\end{equation}
+Avec $Z_c$ l'impedance de notre cable coaxial dont on peut extraire les relations entre amplitudes :
+\begin{equation}
+	A_r = \frac{Z_0 - Z_c}{Z_0 + Z_c} \cdot A_i = \rho \cdot A_i
+	\label{eq:a}
+\end{equation}
+
+Et comme en x = 0, la continuite impose que $A_i + A_r = A_t$ Ref. \cite{protocole}, nou pouvons determiner le coefficient de transmission en arrangeant Eq. \ref{eq:a} tel que :
+\begin{equation}
+	A_t = (1 + \rho_u) \cdot A_i = \tau_u \cdot A_i
+	\label{eq:tau}
+\end{equation}
+	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  9 JAN 2026 12:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  9 JAN 2026 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,28 +600,7 @@ OK, entering \batchmode...
 
 LaTeX Warning: Citation `protocol' on page 3 undefined on input line 52.
 
-! Undefined control sequence.
-<recently read> \tho 
-                     
-l.58 ...ion ($\rho$) et pour a transmission ($\tho
-                                                  $) sont definit par une im...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 56--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--44
-
- []
-
- [3]
+) [3]
 \openout2 = `./srcs/accoustique/2_description.aux'.
 
  (./srcs/accoustique/2_description.tex
@@ -630,13 +609,13 @@ l.5 ...alimente d'une tension crete a crete ($U_p_
                                                   p$ = 5V). Cela est possibl...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-<./ressources/images/montage_acc1.png, id=146, 681.54625pt x 483.8075pt>
+<./ressources/images/montage_acc1.png, id=152, 681.54625pt x 483.8075pt>
 File: ./ressources/images/montage_acc1.png Graphic file (type png)
 <use ./ressources/images/montage_acc1.png>
 Package pdftex.def Info: ./ressources/images/montage_acc1.png  used on input li
 ne 9.
 (pdftex.def)             Requested size: 272.61366pt x 193.51956pt.
-<./ressources/images/montage_acc2.png, id=149, 698.61pt x 146.5475pt>
+<./ressources/images/montage_acc2.png, id=155, 698.61pt x 146.5475pt>
 File: ./ressources/images/montage_acc2.png Graphic file (type png)
 <use ./ressources/images/montage_acc2.png>
 Package pdftex.def Info: ./ressources/images/montage_acc2.png  used on input li
@@ -658,7 +637,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-<./ressources/images/accoustique/angle.png, id=160, 569.12625pt x 302.12875pt>
+<./ressources/images/accoustique/angle.png, id=166, 569.12625pt x 302.12875pt>
 File: ./ressources/images/accoustique/angle.png Graphic file (type png)
 <use ./ressources/images/accoustique/angle.png>
 Package pdftex.def Info: ./ressources/images/accoustique/angle.png  used on inp
@@ -669,7 +648,7 @@ ut line 39.
 
 
  <./ressources/images/accoustique/angle.png>]
-<./ressources/images/accoustique/acc1.png, id=172, 462.528pt x 346.896pt>
+<./ressources/images/accoustique/acc1.png, id=178, 462.528pt x 346.896pt>
 File: ./ressources/images/accoustique/acc1.png Graphic file (type png)
 <use ./ressources/images/accoustique/acc1.png>
 Package pdftex.def Info: ./ressources/images/accoustique/acc1.png  used on inpu
@@ -680,13 +659,13 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 55.
 See the caption package documentation for explanation.
 
-<./ressources/images/accoustique/acc2.png, id=175, 462.528pt x 346.896pt>
+<./ressources/images/accoustique/acc2.png, id=181, 462.528pt x 346.896pt>
 File: ./ressources/images/accoustique/acc2.png Graphic file (type png)
 <use ./ressources/images/accoustique/acc2.png>
 Package pdftex.def Info: ./ressources/images/accoustique/acc2.png  used on inpu
 t line 67.
 (pdftex.def)             Requested size: 225.4804pt x 169.11243pt.
-<./ressources/images/accoustique/acc3.png, id=176, 462.528pt x 346.896pt>
+<./ressources/images/accoustique/acc3.png, id=182, 462.528pt x 346.896pt>
 File: ./ressources/images/accoustique/acc3.png Graphic file (type png)
 <use ./ressources/images/accoustique/acc3.png>
 Package pdftex.def Info: ./ressources/images/accoustique/acc3.png  used on inpu
@@ -700,7 +679,7 @@ e/acc2.png> <./ressources/images/accoustique/acc3.png>]
 
 LaTeX Warning: Reference `montage_elec' on page 7 undefined on input line 5.
 
-<./ressources/images/montage_elec.png, id=186, 644.4075pt x 483.8075pt>
+<./ressources/images/montage_elec.png, id=192, 644.4075pt x 483.8075pt>
 File: ./ressources/images/montage_elec.png Graphic file (type png)
 <use ./ressources/images/montage_elec.png>
 Package pdftex.def Info: ./ressources/images/montage_elec.png  used on input li
@@ -711,7 +690,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 16.
 See the caption package documentation for explanation.
 
-<./ressources/images/rlc.png, id=188, 579.16376pt x 307.1475pt>
+<./ressources/images/rlc.png, id=194, 579.16376pt x 307.1475pt>
 File: ./ressources/images/rlc.png Graphic file (type png)
 <use ./ressources/images/rlc.png>
 Package pdftex.def Info: ./ressources/images/rlc.png  used on input line 32.
@@ -736,7 +715,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:r0' on page 8 undefined on input line 5.
 
-<./ressources/images/electrique/r5.png, id=200, 462.528pt x 346.896pt>
+<./ressources/images/electrique/r5.png, id=206, 462.528pt x 346.896pt>
 File: ./ressources/images/electrique/r5.png Graphic file (type png)
 <use ./ressources/images/electrique/r5.png>
 Package pdftex.def Info: ./ressources/images/electrique/r5.png  used on input l
@@ -760,13 +739,13 @@ LaTeX Warning: Reference `eq:reflexion' on page 8 undefined on input line 47.
 
 
  <./ressources/images/electrique/r5.png>]
-<./ressources/images/electrique/r25.png, id=209, 462.528pt x 346.896pt>
+<./ressources/images/electrique/r25.png, id=215, 462.528pt x 346.896pt>
 File: ./ressources/images/electrique/r25.png Graphic file (type png)
 <use ./ressources/images/electrique/r25.png>
 Package pdftex.def Info: ./ressources/images/electrique/r25.png  used on input 
 line 54.
 (pdftex.def)             Requested size: 225.4804pt x 169.11243pt.
-<./ressources/images/electrique/christophe/r_50.png, id=210, 803.0pt x 504.8862
+<./ressources/images/electrique/christophe/r_50.png, id=216, 803.0pt x 504.8862
 5pt>
 File: ./ressources/images/electrique/christophe/r_50.png Graphic file (type png
 )
@@ -774,13 +753,13 @@ File: ./ressources/images/electrique/christophe/r_50.png Graphic file (type png
 Package pdftex.def Info: ./ressources/images/electrique/christophe/r_50.png  us
 ed on input line 62.
 (pdftex.def)             Requested size: 225.4804pt x 141.76778pt.
-<./ressources/images/electrique/r100.png, id=214, 462.528pt x 346.896pt>
+<./ressources/images/electrique/r100.png, id=220, 462.528pt x 346.896pt>
 File: ./ressources/images/electrique/r100.png Graphic file (type png)
 <use ./ressources/images/electrique/r100.png>
 Package pdftex.def Info: ./ressources/images/electrique/r100.png  used on input
  line 74.
 (pdftex.def)             Requested size: 225.4804pt x 169.11243pt.
-<./ressources/images/electrique/r500.png, id=215, 462.528pt x 346.896pt>
+<./ressources/images/electrique/r500.png, id=221, 462.528pt x 346.896pt>
 File: ./ressources/images/electrique/r500.png Graphic file (type png)
 <use ./ressources/images/electrique/r500.png>
 Package pdftex.def Info: ./ressources/images/electrique/r500.png  used on input
@@ -792,13 +771,13 @@ LaTeX Warning: Reference `fig:2500' on page 9 undefined on input line 88.
 
 LaTeX Warning: Reference `fig:500' on page 9 undefined on input line 88.
 
-<./ressources/images/electrique/r2000.png, id=218, 462.528pt x 346.896pt>
+<./ressources/images/electrique/r2000.png, id=224, 462.528pt x 346.896pt>
 File: ./ressources/images/electrique/r2000.png Graphic file (type png)
 <use ./ressources/images/electrique/r2000.png>
 Package pdftex.def Info: ./ressources/images/electrique/r2000.png  used on inpu
 t line 94.
 (pdftex.def)             Requested size: 225.4804pt x 169.11243pt.
-<./ressources/images/electrique/r2500.png, id=219, 462.528pt x 346.896pt>
+<./ressources/images/electrique/r2500.png, id=225, 462.528pt x 346.896pt>
 File: ./ressources/images/electrique/r2500.png Graphic file (type png)
 <use ./ressources/images/electrique/r2500.png>
 Package pdftex.def Info: ./ressources/images/electrique/r2500.png  used on inpu
@@ -968,10 +947,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7B208F1DAE5C534653E10B49B7729922;3451.
  ) 
 Here is how much of TeX's memory you used:
- 13825 strings out of 474222
- 222796 string characters out of 5748733
+ 13832 strings out of 474222
+ 222876 string characters out of 5748733
  1937975 words of memory out of 5000000
- 35777 multiletter control sequences out of 15000+600000
+ 35780 multiletter control sequences out of 15000+600000
  565215 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,9n,117p,1177b,508s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -986,10 +965,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (13 pages, 600155 bytes).
+Output written on main.pdf (13 pages, 602243 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
  244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
