@@ -1,0 +1,134 @@
+\begin{thebibliography}{99}
+\bibitem{rlc}
+Cours electronique, \textit{Pont RLC},
+\\
+                \texttt{https://courselectronique.wordpress.com/etude-des-circuits/
+		circuits-en-regime-transitoire/circuit-rlc-serie/}
+\\
+        Consulte le : 7 Janvier 2026
+\bibitem{christophe}
+Christophe Soares, \textit{Mesure de reflexion d'un cable coaxial avec $Z_L$ = 50 $\ohm$},
+\bibitem{protocole}
+	\\
+		Protocole de laboratoire, \textit{Hepia, cours sur les ondes}
+		\texttt{https://cyberlearn.hes-so.ch/pluginfile.php/697672/
+				mod\_resource/content/6/MT2\_S2\_main.pdf}
+
+	\\
+
+\end{thebibliography}
+
+\newpage
+
+\section{Annexes}
+
+\subsection{ACCOUSTIQUE}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+	$D_r_e_e_l$ \ cm &
+	$\lambda$ \ cm  & \\
+\hline
+1,5 & 0,5 \\
+2,0 & 0,9 \\
+2,9 & 0,8 \\
+3,7 & 1,8 \\
+5,5 & 1,0 \\
+6,5 & 0,9 \\
+7,4 & 0,7 \\
+8,1 & 0,9 \\
+9,0 & N/A \\
+\hline
+\end{tabular}
+\caption{Distances mesurées et nombre de longueurs d’onde correspondantes}
+        \label{tab:lambda}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Angle $\theta$ $\pm$ 1° & $V$ $\pm$ 0.001 V \\
+\hline
+90  & 0,130 \\
+75  & 0,180 \\
+60  & 0,280 \\
+45  & 0,440 \\
+30  & 0,910 \\
+15  & 1,950 \\
+0   & 2,500  \\
+-15 & 1,450 \\
+-30 & 0,540 \\
+-45 & 0,160 \\
+-60 & 0,080 \\
+-75 & 0,060 \\
+-90 & 0,050 \\
+\hline
+\end{tabular}
+\caption{Tension $V$ en fonction de l'angle $\theta$}
+\label{tab:angle}
+\end{table}
+
+\newpage
+\subsection{ELECTRIQUE}
+
+\begin{table}[h!]
+\centering
+\label{tab:extrema_signaux}
+\begin{tabular}{|c |c|c |c|c |c|c|}
+\hline
+	$Z_L$ ($\ohm$)
+& \multicolumn{2}{c}{Incident (CH1)}
+& \multicolumn{2}{c}{Transmis (CH2)}
+& \multicolumn{2}{c}{Réfléchi (CH1)} \\
+\hline
+ & max \ V & min \ V & max \ V & min \ V  & max \ V & min \ V)\\
+\hline
+5    & 5.879 & -2.362 & 4.894 & -4.834 &  0.050 & -4.774 \\
+10   & 5.477 & -2.563 & 3.688 & -3.789 & -0.955 & -4.171 \\
+15   & 5.075 & -2.764 & 4.171 & -4.271 & -0.553 & -4.573 \\
+20   & 4.874 & -3.166 & 3.045 & -3.387 & -1.558 & -3.970 \\
+25   & 4.673 & -3.367 & 3.688 & -3.869 & -1.156 & -4.372 \\
+30   & 4.221 & -3.568 & 2.804 & -3.146 & -1.558 & -3.970 \\
+35   & 4.472 & -3.769 & 3.447 & -3.628 & -1.357 & -3.970 \\
+40   & 4.070 & -3.970 & 2.482 & -2.905 & -1.960 & -3.568 \\
+100  & 3.065 & -4.774 & 2.804 & -3.045 & -1.960 & -3.769 \\
+500  & 2.060 & -6.181 & 3.930 & -3.849 & -1.156 & -4.573 \\
+1500 & 1.658 & -5.980 & 4.171 & -4.171 & -0.955 & -4.774 \\
+2000 & 1.658 & -6.382 & 4.251 & -3.970 & -1.156 & -4.774 \\
+2500 & 1.457 & -6.382 & 4.251 & -3.106 & -0.955 & -4.975 \\
+\hline
+\caption{Extremas des signaux CH1 et CH2}
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{Coefficient de réflexion en fonction de l’impédance de charge}
+\label{tab:coeff_reflexion}
+\begin{tabular}{|c|c|}
+\hline
+$Z_L$ ($\Omega$) & $\rho$ \\
+\hline
+5    & -0.834 \\
+10   & -0.694 \\
+15   & -0.573 \\
+20   & -0.469 \\
+25   & -0.377 \\
+30   & -0.297 \\
+35   & -0.225 \\
+40   & -0.161 \\
+100  &  0.288 \\
+500  &  0.801 \\
+1500 &  0.929 \\
+2000 &  0.946 \\
+2500 &  0.957 \\
+\hline
+%\caption{Mesures expérimentales et coefficient de réflexion calcules par Eq. \ref{eq:rhoo}}
+\end{tabular}
+\end{table}
+
+
+DONNER LES RHOS DE CHRISTOPHE !!!

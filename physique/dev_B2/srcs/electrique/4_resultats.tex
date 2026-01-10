@@ -100,11 +100,12 @@ Si l'on compare avec la theorie (voir Tab. \ref{tab:th}), nos valeurs pratiques 
 \hline
 	\textbf{Lien $Z_C , Z_L$} & \textbf{$\rho_t_h$} & \textbf{$\rho_m_e_s$} \\
 \hline
-	$Z_L \approx Z_C$, $Z_L$ = 50 & $\rho \approx 0$ & Christophe  \\%Adaptation, pas de réflexion \\
+	$Z_L \approx Z_C$, $Z_L$ = 40 & $\rho \approx 0$ & -0.161  \\%Adaptation, pas de réflexion \\
+        :wq
 \hline
 $Z_L < Z_C$, $Z_L$ = 25 & $\rho < 0$ & -0.377 \\%Réflexion avec inversion de phase \\
 \hline
-	$Z_L > Z_C$ & $\rho > 0$, $Z_L = 100$ & $\rho > 0$ & 0.288 \\%Réflexion sans inversion de phase \\
+	$Z_L > Z_C$, $Z_L = 100$ & $\rho > 0$ & 0.288 \\%Réflexion sans inversion de phase \\
 \hline
 	$Z_L \rightarrow \infty$, $Z_L = 2500$ & $\rho \rightarrow +1$ & 0.957 \\
 \hline
@@ -112,14 +113,22 @@ $Z_L \rightarrow 0$, $Z_L = 5$ & $\rho \rightarrow -1$ & -0.834 \\
 \hline
 \end{tabular}
 	\label{tab:th}
-\caption{Interprétation physique du coefficient de réflexion}
+\caption{Coefficients de reflexion et de transmission avec leur couple d'impedance}
 \end{table}
 
-Nous pouvons verifier l'evolution de $\rho$ en fonction de $Z_L$ sur Fig. \ref{}
+Nous pouvons verifier l'evolution de $\rho$ en fonction de $Z_L$ sur Fig. \ref{fig:rhoo} trace a partir de la relation Eq. \ref{eq:rho}.
 
     \begin{figure}[ht]
         \centering
-        \includegraphics[scale=0.4]{rho.png}
+        \includegraphics[scale=0.38]{rho.png}
 	    \caption{$\rho$($Z_L$)}
         \label{fig:rhoo}
     \end{figure}
+
+\section{Conclusion}
+
+Dans la partie acoustique, la mesure de la célérité des ultrasons dans l’air a conduit à une valeur $c = (3,3 \pm 0,4)\cdot 10^2,\mathrm{m/s}$, en bon accord avec l’ordre de grandeur attendu compte tenu des incertitudes expérimentales. L’étude de la dépendance angulaire et de la décroissance de l’amplitude en fonction de la distance a permis de confirmer la nature sphérique des ondes acoustiques, ainsi que la loi de décroissance de la pression en (1/r) avec des pentes lineaires de $\alpha_U = 155 \pm 8$ V/m, $\alpha_U_^2$ $= 30067 \pm 1771$ $V^2$/$m^2$, $\alpha_U_i_n_v = 0.21 \pm 0.02$ $V/m$ (voir Figs. \ref{fig:U(1/R)}, \ref{fig:U2(1/R2)}, \ref{fig:U(1/R)inv}).
+
+Dans la partie électrique, l’étude de la propagation d’une onde de tension le long d’un câble coaxial a permis de déterminer le temps de propagation de $\tau \approx 0.5 \mu$s. A partir des mesures de la capacité et de l’inductance linéiques, nous avons determine l’impédance caractéristique réelle du câble  $Z_C = 55,5 \pm 0,3 \ohm$. La valeur d'impedance calculee est proche de la valeur nominale du câble RG58, ce qui confirme la pertinence de la méthode employée. Les coefficients de réflexion et de transmission n'ont pas été mesurés a partir des amplitudes, mais des impédances. Cela est dû au manque de temps.
+
+

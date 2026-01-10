@@ -118,8 +118,6 @@ print(x3)
 x = x3
 y = y3
 
-x = x4
-y = y4
 def regression_lineaire(x, y):
     """
     Calcule la régression linéaire y = ax + b
@@ -129,25 +127,30 @@ def regression_lineaire(x, y):
     y = np.array(y)
 
     a, b = np.polyfit(x, y, 1)
-    return a, b
+    
+    (a, b), cov = np.polyfit(x, y, 1, cov=True)
+
+    ua = np.sqrt(cov[0, 0])  # incertitude sur a
+    ub = np.sqrt(cov[1, 1])  # incertitude sur b
+    return a, b, ua, ub
 
 
 
 plt.figure()
 
-a, b = regression_lineaire(x, y)
+a, b, ua, ub = regression_lineaire(x, y)
 
 
 # Droite de régression
 x_droite = np.linspace(min(x), max(x), 100)
 y_droite = a * x_droite + b
-plt.plot(x_droite, y_droite, label=rf"$U$ = {a:.2f} * 1/$D$ + {b:.2f}")
+plt.plot(x_droite, y_droite, label=rf"$U^2$ = ({a:.0f}$\pm$ {ua:.0f}) $\cdot$ 1/$D^2$ + {b:.3f}$\pm$ {ub:.3f}")
 
 plt.legend()
 plt.scatter(x, y)
 plt.xlabel(r"1/$D$ \ m ")
 plt.ylabel(r"$U$ \ V")
 plt.grid(True)
-plt.savefig("acc3.png")
+plt.savefig("acc1.png")
 plt.show()
 
