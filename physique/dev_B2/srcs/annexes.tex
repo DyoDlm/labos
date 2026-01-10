@@ -1,25 +1,20 @@
-\section{Conclusion}
-
-Une belle conclusion !
-
 \begin{thebibliography}{99}
-
 \bibitem{rlc}
 Cours electronique, \textit{Pont RLC},
 \\
                 \texttt{https://courselectronique.wordpress.com/etude-des-circuits/
-		circuits-en-regime-transitoire/circuit-rlc-serie/}
+                circuits-en-regime-transitoire/circuit-rlc-serie/}
 \\
         Consulte le : 7 Janvier 2026
 \bibitem{christophe}
 Christophe Soares, \textit{Mesure de reflexion d'un cable coaxial avec $Z_L$ = 50 $\ohm$},
 \bibitem{protocole}
-	\\
-		Protocole de laboratoire, \textit{Hepia, cours sur les ondes}
-		\texttt{https://cyberlearn.hes-so.ch/pluginfile.php/697672/
-				mod\_resource/content/6/MT2\_S2\_main.pdf}
+        \\
+                Protocole de laboratoire, \textit{Hepia, cours sur les ondes}
+                \texttt{https://cyberlearn.hes-so.ch/pluginfile.php/697672/
+                                mod\_resource/content/6/MT2\_S2\_main.pdf}
 
-	\\
+        \\
 
 \end{thebibliography}
 
@@ -76,98 +71,62 @@ Angle $\theta$ $\pm$ 1° & $V$ $\pm$ 0.001 V \\
 \label{tab:angle}
 \end{table}
 
-\newpage
+
+
+
+
 \subsection{ELECTRIQUE}
-Entre 0 et 50 $\ohm$ :
+
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{|c|c|c|}
+\caption{Coefficient de réflexion en fonction de l’impédance de charge}
+\label{tab:coeff_reflexion}
+\begin{tabular}{|c|c|}
 \hline
-$R$ ($\Omega$) &
-$V_G_p_p \pm$ 0.01 V &
-$V_C_p_p \pm$ 0.01 V \\
+$Z_L$ ($\Omega$) & $\rho$ \\
 \hline
-5   & 10.65 & 9.73 \\
-10  & 9.65  & 7.48 \\
-15  & 9.65  & 8.44 \\
-20  & 8.84  & 6.43 \\
-25  & 9.05  & 7.56 \\
-30  & 8.19  & 5.95 \\
-35  & 8.44  & 7.08 \\
-40  & 8.04  & 5.39 \\
+5    & -0.834 \\
+10   & -0.694 \\
+15   & -0.573 \\
+20   & -0.469 \\
+25   & -0.377 \\
+30   & -0.297 \\
+35   & -0.225 \\
+40   & -0.161 \\
+100  &  0.288 \\
+500  &  0.801 \\
+1500 &  0.929 \\
+2000 &  0.946 \\
+2500 &  0.957 \\
 \hline
+%\caption{Mesures expérimentales et coefficient de réflexion calcules par Eq. \ref{eq:rhoo}}
 \end{tabular}
-\caption{Mesures pour les résistances comprises entre 0 et 50 $\Omega$}
-\end{table}
-
-Pour R $>$ 50 $\ohm$ :
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-$R$ ($\Omega$) &
-$V_G_p_p \pm$ 0.01 V &
-$V_C_p_p \pm$ 0.01 V \\
-\hline
-100  & 7.84 & 6.27 \\
-500  & 8.24 & 8.68 \\
-1500 & 7.64 & 9.33 \\
-2000 & 8.04 & 9.49 \\
-2500 & 7.84 & 9.43 \\
-\hline
-\end{tabular}
-	\label{tab:amp}
-	\caption{Mesures pour les résistances supérieures ou égales à 50 $\Omega$}
 \end{table}
 \begin{table}[h!]
 \centering
-\begin{tabular}{|c|c|c|c|}
+\caption{Extremas des signaux CH1 et CH2}
+\label{tab:extrema_signaux}
+\begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-\textbf{$R$ ($\Omega$)} & \textbf{$V_{G,pp}$ (V)} & \textbf{$V_{C,pp}$ (V)} & \textbf{$\Gamma$} \\
+\( Z_L \) (\(\Omega\)) & \multicolumn{2}{c|}{Incident (CH1)} & \multicolumn{2}{c|}{Transmis (CH2)} & \multicolumn{2}{c|}{Réfléchi (CH1)} \\
+\cline{2-7}
+& max V & min V & max V & min V & max V & min V \\
 \hline
-5    & 10.65 & 9.73 & -0.834 \\
-10   & 9.65  & 7.48 & -0.694 \\
-15   & 9.65  & 8.44 & -0.573 \\
-20   & 8.84  & 6.43 & -0.469 \\
-25   & 9.05  & 7.56 & -0.377 \\
-30   & 8.19  & 5.95 & -0.297 \\
-35   & 8.44  & 7.08 & -0.225 \\
-40   & 8.04  & 5.39 & -0.161 \\
-100  & 7.84  & 6.27 &  0.288 \\
-500  & 8.24  & 8.68 &  0.801 \\
-1500 & 7.64  & 9.33 &  0.929 \\
-2000 & 8.04  & 9.49 &  0.946 \\
-2500 & 7.84  & 9.43 &  0.957 \\
-\hline
-\end{tabular}
-\caption{Valeurs mesurées et coefficient de réflexion pour un câble coaxial de $Z_0 = 55{,}3~\Omega$}
-\end{table}
-\begin{table}[h!]
-\centering
-\small
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{$R$ ($\Omega$)} & \textbf{$V_{G,pp}$ (V)} & \textbf{$V_{C,pp}$ (V)} & \textbf{$\Gamma$} \\
-\hline
-5    & 10.65 & 9.73 & -0.834 \\
-10   & 9.65  & 7.48 & -0.694 \\
-15   & 9.65  & 8.44 & -0.573 \\
-20   & 8.84  & 6.43 & -0.469 \\
-25   & 9.05  & 7.56 & -0.377 \\
-30   & 8.19  & 5.95 & -0.297 \\
-35   & 8.44  & 7.08 & -0.225 \\
-40   & 8.04  & 5.39 & -0.161 \\
-100  & 7.84  & 6.27 &  0.288 \\
-500  & 8.24  & 8.68 &  0.801 \\
-1500 & 7.64  & 9.33 &  0.929 \\
-2000 & 8.04  & 9.49 &  0.946 \\
-2500 & 7.84  & 9.43 &  0.957 \\
+5    & 5.879  & -2.362 & 4.894  & -4.834 & 0.050  & -4.774 \\
+10   & 5.477  & -2.563 & 3.688  & -3.789 & -0.955 & -4.171 \\
+15   & 5.075  & -2.764 & 4.171  & -4.271 & -0.553 & -4.573 \\
+20   & 4.874  & -3.166 & 3.045  & -3.387 & -1.558 & -3.970 \\
+25   & 4.673  & -3.367 & 3.688  & -3.869 & -1.156 & -4.372 \\
+30   & 4.221  & -3.568 & 2.804  & -3.146 & -1.558 & -3.970 \\
+35   & 4.472  & -3.769 & 3.447  & -3.628 & -1.357 & -3.970 \\
+40   & 4.070  & -3.970 & 2.482  & -2.905 & -1.960 & -3.568 \\
+100  & 3.065  & -4.774 & 2.804  & -3.045 & -1.960 & -3.769 \\
+500  & 2.060  & -6.181 & 3.930  & -3.849 & -1.156 & -4.573 \\
+1500 & 1.658  & -5.980 & 4.171  & -4.171 & -0.955 & -4.774 \\
+2000 & 1.658  & -6.382 & 4.251  & -3.970 & -1.156 & -4.774 \\
+2500 & 1.457  & -6.382 & 4.251  & -3.106 & -0.955 & -4.975 \\
 \hline
 \end{tabular}
-\caption{Mesures expérimentales et coefficient de réflexion pour un câble coaxial ($Z_0 = 55{,}3~\Omega$)}
 \end{table}
 
-
-DONNER LES RHOS DE CHRISTOPHE !!!

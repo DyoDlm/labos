@@ -15,7 +15,7 @@
 \contentsline {subsubsection}{\numberline {4.2.2}Impedence characteristique}{8}{subsubsection.4.2.2}%
 \contentsline {subsubsection}{\numberline {4.2.3}Coefficients de reflexion et de transmission}{9}{subsubsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.3}Analyse}{10}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Conclusion}{11}{section.5}%
+\contentsline {section}{\numberline {5}Conclusion}{10}{section.5}%
 \contentsline {section}{\numberline {6}Annexes}{12}{section.6}%
 \contentsline {subsection}{\numberline {6.1}ACCOUSTIQUE}{12}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}ELECTRIQUE}{13}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}ELECTRIQUE}{12}{subsection.6.2}%
