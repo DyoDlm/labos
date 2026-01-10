@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  10 JAN 2026 13:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  10 JAN 2026 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,7 +466,17 @@ LaTeX Warning: Label `eq:alembert2' multiply defined.
 
 ) (./srcs/accoustique/2_description.aux) (./srcs/accoustique/4_resultats.aux)
 (./srcs/electrique/2_description.aux) (./srcs/electrique/4_resultats.aux)
-(./srcs/annexes.aux))
+(./srcs/annexes.aux
+
+LaTeX Warning: Label `fig:r25' multiply defined.
+
+
+LaTeX Warning: Label `fig:r100' multiply defined.
+
+
+LaTeX Warning: Label `fig:r500' multiply defined.
+
+))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -487,8 +497,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count326
 \scratchdimen=\dimen179
@@ -994,7 +1003,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 
 LaTeX Warning: Reference `eq:rho' on page 10 undefined on input line 122.
 
-<./ressources/images/rho.png, id=245, 578.16pt x 361.35pt>
+<./ressources/images/rho.png, id=247, 578.16pt x 361.35pt>
 File: ./ressources/images/rho.png Graphic file (type png)
 <use ./ressources/images/rho.png>
 Package pdftex.def Info: ./ressources/images/rho.png  used on input line 126.
@@ -1122,10 +1131,107 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [12{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [13] (./main
-.aux (./srcs/1_intro.aux) (./srcs/accoustique/2_description.aux) (./srcs/accous
-tique/4_resultats.aux) (./srcs/electrique/2_description.aux) (./srcs/electrique
-/4_resultats.aux) (./srcs/annexes.aux))
+File: ./ressources/images/electrique/r5.png Graphic file (type png)
+<use ./ressources/images/electrique/r5.png>
+Package pdftex.def Info: ./ressources/images/electrique/r5.png  used on input l
+ine 138.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+<./ressources/images/electrique/r10.png, id=265, 505.89pt x 289.08pt>
+File: ./ressources/images/electrique/r10.png Graphic file (type png)
+<use ./ressources/images/electrique/r10.png>
+Package pdftex.def Info: ./ressources/images/electrique/r10.png  used on input 
+line 146.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./ressources/images/electrique/r15.png, id=266, 505.89pt x 289.08pt>
+File: ./ressources/images/electrique/r15.png Graphic file (type png)
+<use ./ressources/images/electrique/r15.png>
+Package pdftex.def Info: ./ressources/images/electrique/r15.png  used on input 
+line 157.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+<./ressources/images/electrique/r20.png, id=267, 505.89pt x 289.08pt>
+File: ./ressources/images/electrique/r20.png Graphic file (type png)
+<use ./ressources/images/electrique/r20.png>
+Package pdftex.def Info: ./ressources/images/electrique/r20.png  used on input 
+line 165.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ./ressources/images/electrique/r25.png Graphic file (type png)
+<use ./ressources/images/electrique/r25.png>
+Package pdftex.def Info: ./ressources/images/electrique/r25.png  used on input 
+line 175.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+<./ressources/images/electrique/r30.png, id=268, 505.89pt x 289.08pt>
+File: ./ressources/images/electrique/r30.png Graphic file (type png)
+<use ./ressources/images/electrique/r30.png>
+Package pdftex.def Info: ./ressources/images/electrique/r30.png  used on input 
+line 183.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./ressources/images/electrique/r35.png, id=269, 505.89pt x 289.08pt>
+File: ./ressources/images/electrique/r35.png Graphic file (type png)
+<use ./ressources/images/electrique/r35.png>
+Package pdftex.def Info: ./ressources/images/electrique/r35.png  used on input 
+line 193.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+<./ressources/images/electrique/r40.png, id=270, 505.89pt x 289.08pt>
+File: ./ressources/images/electrique/r40.png Graphic file (type png)
+<use ./ressources/images/electrique/r40.png>
+Package pdftex.def Info: ./ressources/images/electrique/r40.png  used on input 
+line 201.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ./ressources/images/electrique/r100.png Graphic file (type png)
+<use ./ressources/images/electrique/r100.png>
+Package pdftex.def Info: ./ressources/images/electrique/r100.png  used on input
+ line 211.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+File: ./ressources/images/electrique/r500.png Graphic file (type png)
+<use ./ressources/images/electrique/r500.png>
+Package pdftex.def Info: ./ressources/images/electrique/r500.png  used on input
+ line 219.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./ressources/images/electrique/r1500.png, id=271, 505.89pt x 289.08pt>
+File: ./ressources/images/electrique/r1500.png Graphic file (type png)
+<use ./ressources/images/electrique/r1500.png>
+Package pdftex.def Info: ./ressources/images/electrique/r1500.png  used on inpu
+t line 227.
+(pdftex.def)             Requested size: 252.94437pt x 144.53964pt.
+<./ressources/images/electrique/r2000.png, id=272, 505.89pt x 289.08pt>
+File: ./ressources/images/electrique/r2000.png Graphic file (type png)
+<use ./ressources/images/electrique/r2000.png>
+Package pdftex.def Info: ./ressources/images/electrique/r2000.png  used on inpu
+t line 237.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+<./ressources/images/electrique/r2500.png, id=273, 505.89pt x 289.08pt>
+File: ./ressources/images/electrique/r2500.png Graphic file (type png)
+<use ./ressources/images/electrique/r2500.png>
+Package pdftex.def Info: ./ressources/images/electrique/r2500.png  used on inpu
+t line 245.
+(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [12{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [13 <./resso
+urces/images/electrique/r10.png>] [14 <./ressources/images/electrique/r15.png> 
+<./ressources/images/electrique/r20.png> <./ressources/images/electrique/r30.pn
+g> <./ressources/images/electrique/r35.png> <./ressources/images/electrique/r40
+.png>] [15 <./ressources/images/electrique/r1500.png> <./ressources/images/elec
+trique/r2000.png> <./ressources/images/electrique/r2500.png>] (./main.aux (./sr
+cs/1_intro.aux) (./srcs/accoustique/2_description.aux) (./srcs/accoustique/4_re
+sultats.aux) (./srcs/electrique/2_description.aux) (./srcs/electrique/4_resulta
+ts.aux) (./srcs/annexes.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1140,10 +1246,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7B208F1DAE5C534653E10B49B7729922;3451.
  ) 
 Here is how much of TeX's memory you used:
- 13821 strings out of 474222
- 222345 string characters out of 5748733
- 1940975 words of memory out of 5000000
- 35768 multiletter control sequences out of 15000+600000
+ 13921 strings out of 474222
+ 225885 string characters out of 5748733
+ 1946975 words of memory out of 5000000
+ 35859 multiletter control sequences out of 15000+600000
  565215 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,117p,1347b,508s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1159,10 +1265,10 @@ fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (13 pages, 563526 bytes).
+Output written on main.pdf (15 pages, 883863 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 239 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
