@@ -182,8 +182,30 @@ def plot(df, name, iteration, forced_models):
         plt.plot(x, y_fit, "-", label="Fit fort")
         equation = rf"$U(t)={A:.3g}e^{{-{a1:.3g}t}}+{B:.3g}e^{{-{a2:.3g}t}}$"
 
-    plt.xlabel("Temps [s]")
-    plt.ylabel("Tension [V]")
+    print(f"------{fileName}-------")
+
+    if regime == "Faiblement amorti":
+        print(f"Regime : {regime}")
+        print(f"A (Amplitude initiale)                  :   {A}")
+        print(f"Lambda (coefficeient d'amortissement)   :   {alpha}")
+        print(f"Omega ( pulsation)                      :   {omega}")
+        print(f"Phi (dephasage)                         :   {phi}")
+    elif regime == "Critique":
+        print(f"Regime : {regime}")
+        print(f"A (constante initiale : {A}")
+        print(f"B (coefficient lineaire) : {B}")
+        print(f"Lambda : {alpha}")
+    else:
+        print(f"Regime : {regime}")
+        print(f"A amplitude initiale e1 : {A}")
+        print(f"B Amplitude initiale e2 : {B}")
+        print(f"Lambda 1 : {a1}")
+        print(f"Lambda 2 : {a2}")
+
+
+    print("-----------------------")
+    plt.xlabel("t \ s")
+    plt.ylabel("U \ V")
     plt.title(f"{name} — {regime}")
     plt.text(0.02, 0.95, equation, transform=plt.gca().transAxes,
              fontsize=11, verticalalignment="top",
