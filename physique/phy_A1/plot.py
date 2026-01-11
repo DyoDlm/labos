@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-
+import numpy as np
+from scipy.signal import find_peaks
+from scipy.optimize import curve_fit
 
 #   define raw data
 exp = "Decharge de condenstateur"
@@ -56,6 +58,104 @@ def plot(df, exp: str, name: str) -> str:
     plt.show()
     plt.savefig(fileName)
     return fileName
+def underdamped(t, A, alpha, omega, phi):
+    return A * np.exp(-alpha * t) * np.cos(omega * t + phi)
+
+def critical(t, A, B, alpha):
+    return (A + B * t) * np.exp(-alpha * t)
+
+def overdamped(t, A, alpha, B, beta):
+    return A * np.exp(-alpha * t) + B * np.exp(-beta * t)
+
+def smart_plot(df, exp: str, name: str) -> str:
+    fileName = name.split(".csv")[0] + "_plot"
+    print(f"New file name : {fileName}")
+
+# Conversion en numérique
+    x = pd.to_numeric(df.iloc[:, 0], errors='coerce')
+    y = pd.to_numeric(df.iloc[:, 1], errors='coerce')
+
+# Suppression des NaN et inf
+    mask = np.isfinite(x) & np.isfinite(y)
+    x = x[mask].values
+    y = y[mask].values
+
+    plt.figure(figsize=(8, 5))
+    plt.grid()
+
+    # Détection des oscillations
+    peaks, _ = find_peaks(y, prominence=np.ptp(y) * 0.05)
+
+    if len(peaks) > 2:
+        # Régime faiblement amorti
+        popt, _ = curve_fit(
+            underdamped, x, y,
+            p0=[max(y), 1, 10, 0]
+        )
+        y_fit = underdamped(x, *popt)
+
+        A, alpha, omega, phi = popt
+        equation = (
+            r"$U(t)=%.2f\,e^{-%.2f t}\cos(%.2f t + %.2f)$"
+            % (A, alpha, omega, phi)
+        )
+        regime = "Faiblement amorti"
+
+    else:
+        # Tentative critique
+        try:
+            popt, _ = curve_fit(
+                critical, x, y,
+                p0=[max(y), -1, 1]
+            )
+            y_fit = critical(x, *popt)
+
+            A, B, alpha = popt
+            equation = (
+                r"$U(t)=(%.2f + %.2f t)e^{-%.2f t}$"
+                % (A, B, alpha)
+            )
+            regime = "Critique"
+
+        except RuntimeError:
+            # Fortement amorti
+            popt, _ = curve_fit(
+                overdamped, x, y,
+                p0=[max(y), -max(y), 1, 5]
+            )
+            y_fit = overdamped(x, *popt)
+
+            A, B, alpha1, alpha2 = popt
+            equation = (
+                r"$U(t)=%.2f e^{-%.2f t}+%.2f e^{-%.2f t}$"
+                % (A, alpha1, B, alpha2)
+            )
+            regime = "Fortement amorti"
+
+    # Tracés
+    plt.plot(x, y, 'o', label="Données expérimentales")
+    plt.plot(x, y_fit, '-', label="Fit")
+
+    plt.title(f"Régime détecté : {regime}")
+    plt.xlabel("Temps [s]")
+    plt.ylabel("Tension [V]")
+
+    # Affichage de l'équation sur le graphique
+    plt.text(
+        0.05, 0.95,
+        equation,
+        transform=plt.gca().transAxes,
+        fontsize=10,
+        verticalalignment='top',
+        bbox=dict(boxstyle="round", facecolor="white", alpha=0.8)
+    )
+
+    plt.legend()
+    plt.savefig(fileName)
+    plt.show()
+
+    return fileName
+
 
 
 iteration = 0
@@ -64,7 +164,7 @@ for exp in experiences:
         dir = exp_names[iteration] + "/"
         df = pd.read_csv(dir + file)
 #        df = pd.read_excel(dir + file, engine=".ods")
-        new = plot(df, exp_names[iteration], file)
+        new = smart_plot(df, exp_names[iteration], file)
         print(f"New file created : {new} !")
     iteration += 1
 
