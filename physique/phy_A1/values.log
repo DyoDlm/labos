@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  12 JAN 2026 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  12 JAN 2026 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,17 +574,7 @@ Package gensymb Info: Using \Omega for \ohm on input line 20.
 Package gensymb Warning: Not defining \micro.
 
 
-Overfull \hbox (113.16579pt too wide) in paragraph at lines 27--65
- [][] 
- []
-
-
-Overfull \hbox (22.40498pt too wide) in paragraph at lines 73--102
- [][] 
- []
-
-
-Overfull \hbox (10.6551pt too wide) in paragraph at lines 110--139
+Overfull \hbox (101.39517pt too wide) in paragraph at lines 26--63
  [][] 
  []
 
@@ -603,10 +593,10 @@ Package rerunfilecheck Info: File `values.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13369 strings out of 474222
- 209091 string characters out of 5748733
- 1948975 words of memory out of 5000000
- 35432 multiletter control sequences out of 15000+600000
+ 13367 strings out of 474222
+ 209075 string characters out of 5748733
+ 1945975 words of memory out of 5000000
+ 35430 multiletter control sequences out of 15000+600000
  561479 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,9n,117p,335b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -615,7 +605,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on values.pdf (1 page, 54703 bytes).
+Output written on values.pdf (1 page, 53667 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
