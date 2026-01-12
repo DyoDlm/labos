@@ -139,18 +139,36 @@ def select_best_model(x, y, iteration, forced_models=None):
         if forced_name is not None and name != forced_name:
             continue
         try:
-            popt, _ = curve_fit(m["func"], x, y, p0=m["p0"], bounds=m["bounds"], maxfev=40000)
+            popt, pcov = curve_fit(m["func"],
+                                   x, y,
+                                   p0=m["p0"],
+                                   bounds=m["bounds"],
+                                   maxfev=40000
+                                   )
             if m["check"] is not None and not m["check"](popt, x):
                 continue
             y_fit = m["func"](x, *popt)
             aic = compute_aic(y, y_fit, m["k"])
             if aic < best["aic"]:
-                best.update({"name":name, "aic":aic, "popt":popt, "y_fit":y_fit})
+                best.update({"name":name, "aic":aic,
+                             "popt":popt, "pcov":pcov, 
+                             "y_fit":y_fit})
         except (RuntimeError, ValueError):
             continue
     if best["name"] is None:
         raise RuntimeError("Aucun modèle valide trouvé.")
     return best
+
+
+def find_decimals(var):
+    strdecimal = str(var)
+    i_ = 0
+    i = 0
+    while strdecimal[i_] == '0' or strdecimal[i_] == '.':
+        #if strdecimal[i_] == '0':
+        i += 1
+        i_ += 1
+    return i
 
 # ============================================================
 # Tracé final
@@ -161,6 +179,8 @@ def plot(df, name, iteration, forced_models):
     result = select_best_model(x, y, iteration, forced_models)
     regime = result["name"]
     popt = result["popt"]
+    pcov = result["pcov"]
+    perr = np.sqrt(np.diag(pcov))
     y_fit = result["y_fit"]
 
     plt.figure(figsize=(9,5))
@@ -169,38 +189,61 @@ def plot(df, name, iteration, forced_models):
 
     if regime == "Faiblement amorti":
         A, alpha, omega, phi = popt
+        dA, dalpha, domega, dphi = perr
+        nA = find_decimals(A) 
+        nalpha = find_decimals(alpha)
+        nomega = find_decimals(omega)
+        nphi = find_decimals(phi)
+
         y_env = envelope(x, A, alpha)
         plt.plot(x, y_fit, "-", label=f"Fit oscillatoire")
         plt.plot(x, y_env, "--", label="Enveloppe exponentielle")
-        equation = rf"$U(t)={A:.3g}e^{{-{alpha:.3g}t}}\cos({omega:.3g}t+{phi:.3g})$"
+        equation = (
+        rf"$U(t)={A:.{nA + 2}f}e^{{-{alpha:.{nalpha}f}t}}"
+        rf"\cos({omega:.{nomega}f}t+{phi:.{nphi}f})$"
+    )
+
     elif regime == "Critique":
         A, B, alpha = popt
+        dA, dB, dalpha = perr
+        nA = find_decimals(A)
+        nB = find_decimals(B)
+        nalpha = find_decimals(alpha)
+
         plt.plot(x, y_fit, "-", label="Fit critique")
-        equation = rf"$U(t)=({A:.3g}+{B:.3g}t)e^{{-{alpha:.3g}t}}$"
+        equation = rf"$U(t)=({A:.{nA + 2}f}+{B:.{nB}f}t) \cdot e^{{-{alpha:.{nalpha}f}t}}$"
     else:
         A, B, a1, a2 = popt
+        dA, dB, da1, da2 = perr
+        nA = find_decimals(A)
+        nB = find_decimals(B)
+        na1 = find_decimals(a1)
+        na2 = find_decimals(a2)
+
         plt.plot(x, y_fit, "-", label="Fit fort")
-        equation = rf"$U(t)={A:.3g}e^{{-{a1:.3g}t}}+{B:.3g}e^{{-{a2:.3g}t}}$"
+        equation = rf"$U(t)={A:.{nA + 2}f} \cdot e^{{-{a1:.{na1}f}t}}+{B:.{nB}f} \cdot e^{{-{a2:.{na2}f}t}}$"
 
     print(f"------{fileName}-------")
 
     if regime == "Faiblement amorti":
         print(f"Regime : {regime}")
-        print(f"A (Amplitude initiale)                  :   {A}")
-        print(f"Lambda (coefficeient d'amortissement)   :   {alpha}")
-        print(f"Omega ( pulsation)                      :   {omega}")
-        print(f"Phi (dephasage)                         :   {phi}")
+        print(f"A (Amplitude initiale)                : {A:.5f} ± {dA:.{nA + 4}f}")
+        print(f"Lambda (coeff. d'amortissement)       : {alpha:.{nalpha + 3}f} ± {dalpha:.{nalpha + 1}f}")
+        print(f"Omega (pulsation)                     : {omega:.{nomega + 3}f} ± {domega:.{nomega + 1}f}")
+        print(f"Phi (déphasage)                       : {phi:.{nphi + 4}f} ± {dphi:.{nphi + 1}f}")
+
     elif regime == "Critique":
         print(f"Regime : {regime}")
-        print(f"A (constante initiale : {A}")
-        print(f"B (coefficient lineaire) : {B}")
-        print(f"Lambda : {alpha}")
+        print(f"A (constante initiale) : {A:.{nA + 3}f} ± {dA:.{nA + 3}f}")
+        print(f"B (coefficient linéaire) : {B:.{nB + 4}f} ± {dB:.{nB}f}")
+        print(f"Lambda : {alpha:.{nalpha + 4}f} ± {dalpha:.{nalpha + 1}f}")
+
     else:
         print(f"Regime : {regime}")
-        print(f"A amplitude initiale e1 : {A}")
-        print(f"B Amplitude initiale e2 : {B}")
-        print(f"Lambda 1 : {a1}")
-        print(f"Lambda 2 : {a2}")
+        print(f"A (amplitude e1) : {A:.{nA + 3}f} ± {dA:.{nA + 3}f}")
+        print(f"B (amplitude e2) : {B:.{nB + 2}f} ± {dB:.{nB + 2}f}")
+        print(f"Lambda 1 : {a1:.{na1 + 3}f} ± {da1:.{na1 + 1}f}")
+        print(f"Lambda 2 : {a2:.{na2 + 3}f} ± {da2:.{na2 + 1}f}")
 
 
     print("-----------------------")

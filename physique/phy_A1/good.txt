@@ -1,0 +1,90 @@
+------egale_0_plot.png-------
+Regime : Critique
+A (constante initiale) : 2.625 ± 0.004
+B (coefficient linéaire) : -2384.6771 ± 16
+Lambda : 1594.4772 ± 9.6
+-----------------------
+------mgra_10__plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 4.63277 ± 0.0054
+Lambda (coeff. d'amortissement)       : 179.530 ± 0.3
+Omega (pulsation)                     : 4455.750 ± 0.3
+Phi (déphasage)                       : 0.916523 ± 0.001
+-----------------------
+------mgra_50_plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 2.94856 ± 0.0050
+Lambda (coeff. d'amortissement)       : 2458.685 ± 11.3
+Omega (pulsation)                     : 3541.290 ± 15.1
+Phi (déphasage)                       : 0.400860 ± 0.004
+-----------------------
+------pgra_10_plot.png-------
+Regime : Critique
+A (constante initiale) : 2.645 ± 0.004
+B (coefficient linéaire) : -1929.5387 ± 14
+Lambda : 1472.3458 ± 7.6
+-----------------------
+------pgra_35_plot.png-------
+Regime : Fortement amorti
+A (amplitude e1) : -0.044 ± 0.006
+B (amplitude e2) : 2.82 ± 0.01
+Lambda 1 : 34.260 ± 19.6
+Lambda 2 : 579.968 ± 1.3
+-----------------------
+------e_aff_plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 4.69505 ± 0.0049
+Lambda (coeff. d'amortissement)       : 111.085 ± 0.2
+Omega (pulsation)                     : 3376.443 ± 0.2
+Phi (déphasage)                       : 0.914079 ± 0.001
+-----------------------
+------e_aci_plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 4.35373 ± 0.0111
+Lambda (coeff. d'amortissement)       : 1178.533 ± 4.5
+Omega (pulsation)                     : 4512.171 ± 4.8
+Phi (déphasage)                       : 0.892869 ± 0.003
+-----------------------
+------e_air_plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 4.61760 ± 0.0053
+Lambda (coeff. d'amortissement)       : 308.812 ± 0.5
+Omega (pulsation)                     : 7200.607 ± 0.5
+Phi (déphasage)                       : 0.916810 ± 0.001
+-----------------------
+------e_alu_plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 4.50132 ± 0.0071
+Lambda (coeff. d'amortissement)       : 909.597 ± 2.2
+Omega (pulsation)                     : 8894.358 ± 2.2
+Phi (déphasage)                       : 0.902583 ± 0.002
+-----------------------
+------f_aci_plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 4.59693 ± 0.0046
+Lambda (coeff. d'amortissement)       : 263.617 ± 0.4
+Omega (pulsation)                     : 5362.936 ± 0.4
+Phi (déphasage)                       : 0.915323 ± 0.001
+-----------------------
+------f_aff_plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 4.56527 ± 0.0052
+Lambda (coeff. d'amortissement)       : 187.346 ± 0.3
+Omega (pulsation)                     : 3381.811 ± 0.3
+Phi (déphasage)                       : 0.913824 ± 0.001
+-----------------------
+------f_air_plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 3.75086 ± 0.0100
+Lambda (coeff. d'amortissement)       : 1275.539 ± 5.5
+Omega (pulsation)                     : 7013.945 ± 6.2
+Phi (déphasage)                       : 0.733827 ± 0.003
+-----------------------
+------f_alu_plot.png-------
+Regime : Faiblement amorti
+A (Amplitude initiale)                : 4.21172 ± 0.0062
+Lambda (coeff. d'amortissement)       : 1172.698 ± 2.7
+Omega (pulsation)                     : 8875.445 ± 2.8
+Phi (déphasage)                       : 0.845720 ± 0.002
+-----------------------
+
