@@ -1,0 +1,68 @@
+%\documentclass[letterpaper,12pt]{article}
+\documentclass[preview]{standalone}
+
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{cite}
+\usepackage[final]{hyperref}
+\usepackage{datatool}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{gensymb}
+
+\hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        citecolor=blue,
+        filecolor=magenta,
+        urlcolor=blue
+}
+\begin{document}
+
+
+\[
+\omega = \sqrt{\omega_0^2 - \lambda^2}
+\]
+
+\[
+	\omega^2 = \omega_0^2 - \lambda^2
+\]
+\[
+\omega_0^2 = \omega^2 + \lambda^2
+\]
+\[
+\omega_0 = \sqrt{\omega^2 + \lambda^2}
+\]
+
+\[
+\Delta f = \sqrt{\left(\frac{\partial f}{\partial x} \Delta x\right)^2 + \left(\frac{\partial f}{\partial y} \Delta y\right)^2}
+\]
+
+\[
+\Delta \omega_0 = \sqrt{\left(\frac{\partial \omega_0}{\partial \omega} \Delta \omega\right)^2 + \left(\frac{\partial \omega_0}{\partial \lambda} \Delta \lambda\right)^2}
+\]
+
+\[
+\frac{\partial \omega_0}{\partial \omega} = \frac{\partial}{\partial \omega} \left( \sqrt{\omega^2 + \lambda^2} \right) = \frac{\omega}{\sqrt{\omega^2 + \lambda^2}} = \frac{\omega}{\omega_0}
+\]
+\[
+\frac{\partial \omega_0}{\partial \lambda} = \frac{\partial}{\partial \lambda} \left( \sqrt{\omega^2 + \lambda^2} \right) = \frac{\lambda}{\sqrt{\omega^2 + \lambda^2}} = \frac{\lambda}{\omega_0}
+\]
+
+\[
+\Delta \omega_0 = \sqrt{\left(\frac{\omega}{\omega_0} \Delta \omega\right)^2 + \left(\frac{\lambda}{\omega_0} \Delta \lambda\right)^2}
+\]
+\[
+\Delta \omega_0 = \frac{1}{\omega_0} \sqrt{(\omega \Delta \omega)^2 + (\lambda \Delta \lambda)^2}
+\]
+
+\[
+\boxed{
+\Delta \omega_0 = \frac{1}{\omega_0} \sqrt{(\omega \Delta \omega)^2 + (\lambda \Delta \lambda)^2}
+}
+\]
+
+\end{document}
+

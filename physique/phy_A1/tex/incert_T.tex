@@ -1,0 +1,47 @@
+%\documentclass[letterpaper,12pt]{article}
+\documentclass[preview]{standalone}
+
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{cite}
+\usepackage[final]{hyperref}
+\usepackage{datatool}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{gensymb}
+
+\hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        citecolor=blue,
+        filecolor=magenta,
+        urlcolor=blue
+}
+\begin{document}
+
+\[
+T = \frac{2\pi}{\omega}
+\]
+
+
+\[
+\Delta T = \left| \frac{dT}{d\omega} \right| \Delta\omega
+\]
+
+\[
+\frac{dT}{d\omega} = \frac{d}{d\omega} \left( \frac{2\pi}{\omega} \right) = -\frac{2\pi}{\omega^2}
+\]
+
+\[
+\left| \frac{dT}{d\omega} \right| = \frac{2\pi}{\omega^2}
+\]
+
+\[
+\Delta T = \frac{2\pi}{\omega^2} \Delta\omega
+\]
+
+
+\end{document}
+
