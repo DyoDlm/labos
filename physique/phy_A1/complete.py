@@ -173,7 +173,7 @@ def find_decimals(var):
 # ============================================================
 # Tracé final
 # ============================================================
-def plot(df, name, iteration, forced_models, label):
+def plot(df, name, iteration, forced_models, label=None):
     fileName = name.replace(".csv","_plot.png")
     x, y = clean_data(df)
     result = select_best_model(x, y, iteration, forced_models)
@@ -183,10 +183,9 @@ def plot(df, name, iteration, forced_models, label):
     perr = np.sqrt(np.diag(pcov))
     y_fit = result["y_fit"]
 
-#    plt.figure(figsize=(9,5))
-#    plt.grid(True)
-#    plt.plot(x, y, "o", label=r"Données pour : " + label)
-
+    plt.figure(figsize=(9,5))
+    plt.grid(True)
+    plt.plot(x, y, "o", label=r"Données")
     if regime == "Faiblement amorti":
         A, alpha, omega, phi = popt
         dA, dalpha, domega, dphi = perr
@@ -196,8 +195,8 @@ def plot(df, name, iteration, forced_models, label):
         nphi = find_decimals(phi)
 
         y_env = envelope(x, A, alpha)
-        #plt.plot(x, y_fit, "-", label=f"Fit en amortissement faible")
-        plt.plot(x, y_fit, "-", label="Fit du noyau : " + label)
+        plt.plot(x, y_fit, "-", label=f"Fit en amortissement faible")
+        #plt.plot(x, y_fit, "-", label="Fit du noyau : " + l)
         plt.plot(x, y_env, "--", label="Enveloppe exponentielle")
         equation = (
         rf"$U(t)={A:.{nA + 2}f}e^{{-{alpha:.{nalpha}f}t}}"
@@ -248,25 +247,25 @@ def plot(df, name, iteration, forced_models, label):
 
 
     print("-----------------------")
-#   plt.xlabel("t \ s")
-#    plt.ylabel("U \ V")
+    plt.xlabel("t \ s")
+    plt.ylabel("U \ V")
     #plt.title(f"{name} — {regime}")
-#    plt.text(0.02, 0.95, equation, transform=plt.gca().transAxes,
-#             fontsize=11, verticalalignment="top",
-#             bbox=dict(boxstyle="round", facecolor="white", alpha=0.9))
-#    plt.legend()
-#    plt.tight_layout()
-#    plt.savefig(fileName, dpi=300)
-#    plt.show()
+    plt.text(0.02, 0.95, equation, transform=plt.gca().transAxes,
+             fontsize=11, verticalalignment="top",
+             bbox=dict(boxstyle="round", facecolor="white", alpha=0.9))
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(fileName, dpi=300)
+    plt.show()
 
 # ============================================================
 # Dictionnaire d'expériences
 # ============================================================
-#experiences = {
-#    "a": ["egale_0.csv", "mgra_10_.csv", "mgra_50.csv", "pgra_10.csv", "pgra_35.csv"],
-#    "exp_e": ["e_aff.csv", "e_aci.csv", "e_air.csv", "e_alu.csv"],
-#    "exp_f": ["f_aci.csv", "f_aff.csv", "f_air.csv", "f_alu.csv"]
-#}
+experiences = {
+    "a": ["egale_0.csv", "mgra_10_.csv", "mgra_50.csv", "pgra_10.csv", "pgra_35.csv"],
+    "exp_e": ["e_aff.csv", "e_aci.csv", "e_air.csv", "e_alu.csv"],
+    "exp_f": ["f_aci.csv", "f_aff.csv", "f_air.csv", "f_alu.csv"]
+}
 #labels = ["R = 839 $\Omega$", "R = 10 $\Omega$", "R = 500 $\Omega$", "R = 3500 $\Omega$"]#experiences = {
 #    "a": ["egale_0.csv", "mgra_10_.csv", "mgra_50.csv", "pgra_35.csv"],
 #}
@@ -275,11 +274,15 @@ def plot(df, name, iteration, forced_models, label):
 #experiences = {
 #    "exp_e": ["e_aff.csv", "e_aci.csv", "e_air.csv", "e_alu.csv"],
 #}
-labels = ["Acier", "Acier feuilleté", "Air", "Aluminium"]
-experiences = {
-    "exp_f": ["f_aci.csv", "f_aff.csv", "f_air.csv", "f_alu.csv"]
-}
+#labels = ["Acier", "Acier feuilleté", "Air", "Aluminium"]
+#experiences = {
+#    "exp_f": ["f_aci.csv", "f_aff.csv", "f_air.csv", "f_alu.csv"]
+#}
 
+
+#experiences = {
+ #       "a": ["mgra_50.csv"]
+#        }
 
 # Forçage des modèles (itération correspond au numéro du fichier)
 FORCED_MODELS = {
@@ -289,13 +292,13 @@ FORCED_MODELS = {
 }
 
     #plt.title(f"{name} — {regime}")
-plt.text(0.02, 0.95, s="", transform=plt.gca().transAxes,
-         fontsize=11, verticalalignment="top",
-         bbox=dict(boxstyle="round", facecolor="white", alpha=0.9))
+#plt.text(0.02, 0.95, s="", transform=plt.gca().transAxes,
+#         fontsize=11, verticalalignment="top",
+#         bbox=dict(boxstyle="round", facecolor="white", alpha=0.9))
 
-plt.tight_layout()
-plt.figure(figsize=(9,5))
-plt.grid(True)
+#plt.tight_layout()
+#plt.figure(figsize=(9,5))
+#plt.grid(True)
 #    plt.plot(x, y, "o", label="Données")
 
  #  plt.savefig(fileName, dpi=300)
@@ -309,14 +312,13 @@ for exp_name, files in experiences.items():
         dir_path = f"{exp_name}/{file}"
         try:
             df = pd.read_csv(dir_path)
-            plot(df, file, iteration, FORCED_MODELS, labels[iteration - 1])
+            plot(df, file, iteration, FORCED_MODELS)#, labels[iteration - 1])
         except Exception as e:
             print(f"Erreur sur {file}: {e}")
         iteration += 1
-    break 
-plt.legend()
-plt.xlabel("t \ s")
-plt.ylabel("U \ V")
+#plt.legend()
+#plt.xlabel("t \ s")
+#plt.ylabel("U \ V")
 #plt.savefig("experience_f_combined.png")
 
-#plt.show()
+plt.show()
