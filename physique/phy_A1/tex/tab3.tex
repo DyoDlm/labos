@@ -1,0 +1,62 @@
+%\documentclass[letterpaper,12pt]{article}
+\documentclass[preview]{standalone}
+
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{cite}
+\usepackage[final]{hyperref}
+\usepackage{datatool}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{gensymb}
+
+\hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        citecolor=blue,
+        filecolor=magenta,
+        urlcolor=blue
+}
+\begin{document}
+ \setcounter{table}{4}
+ \begin{table}[h!]
+ \centering
+ \label{tab:fits}
+ \renewcommand{\arraystretch}{1.2}
+ \begin{tabular}{|c|c|c|c|c|}
+ \hline
+ Noyau & $A$ | V & $\lambda$ & $\omega$ | rad/s & T | s \\
+ \hline
+ Acier     &
+ $4.597 \pm 0.005$ &
+ $263.6 \pm 0.4$ &
+ $5362.9 \pm 0.4$ &
+ $0.0011716 \pm 9 \cdot 10^{-8}$ \\
+
+ Acier feuilleté     &
+ $4.565 \pm 0.005$ &
+ $187.4 \pm 0.3$ &
+ $3381.8 \pm 0.3$ &
+ $0.0018579 \pm 2 \cdot 10^{-7}$ \\
+
+ Air     &
+ $3.75 \pm 0.01$ &
+ $1276 \pm 6$ &
+ $7014 \pm 6$ &
+ $0.0008958 \pm 8 \cdot 10^{-7}$ \\
+
+ Aluminium    &
+ $4.212 \pm 0.006$ &
+ $1173 \pm 3$ &
+ $8875 \pm 3$ &
+ $0.0007079 \pm 2 \cdot 10^{-7}$ \\
+ \hline
+\end{tabular}
+ \caption{Paramètres ajustés des oscillations avec la boite à décade et R = $10 \Omega$}
+ \end{table}
+
+
+\end{document}
+

@@ -1,0 +1,70 @@
+%\documentclass[letterpaper,12pt]{article}
+\documentclass[preview]{standalone}
+
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{cite}
+\usepackage[final]{hyperref}
+\usepackage{datatool}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{gensymb}
+
+\hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        citecolor=blue,
+        filecolor=magenta,
+        urlcolor=blue
+}
+\begin{document}
+
+\setcounter{table}{2}
+\begin{table}[h!]
+\centering
+\label{tab:fits}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+R $\pm 1$ $\Omega$ & $A$ | V & $B$ | V & $\lambda$ & $\omega$ | rad/s & $\phi$ | $^\circ$ \\
+\hline
+839 &
+$2.625 \pm 0.004$ &
+$-2384 \pm 16$ &
+$1595 \pm 10$ &
+-- & -- \\
+
+10   & 
+$4.633 \pm 0.005$ &
+-- &
+$179.5 \pm 0.3$ &
+$4455.8 \pm 0.3$ &
+$0.917 \pm 0.001$ \\
+
+500   & 
+$2.949 \pm 0.005$ &
+-- &
+$2459 \pm 11$ &
+$3541 \pm 15$ &
+$0.401 \pm 0.004$ \\
+
+1000   &
+$2.645 \pm 0.004$ &
+$-1930 \pm 14$ &
+$1472 \pm 7$ &
+-- & -- \\
+
+3500   &
+$-0.044 \pm 0.006$ &
+$2.82 \pm 0.01$ &
+wtf &
+-- \\
+\hline
+\end{tabular}
+\caption{Paramètres ajustés des différents régimes d'amortissement}
+\end{table}
+
+\end{document}
+

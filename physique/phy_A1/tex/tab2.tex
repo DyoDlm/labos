@@ -1,0 +1,62 @@
+%\documentclass[letterpaper,12pt]{article}
+\documentclass[preview]{standalone}
+
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{cite}
+\usepackage[final]{hyperref}
+\usepackage{datatool}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{gensymb}
+
+\hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        citecolor=blue,
+        filecolor=magenta,
+        urlcolor=blue
+}
+\begin{document}
+
+\begin{table}[h!]
+ \centering
+ \label{tab:fits}
+ \renewcommand{\arraystretch}{1.2}
+ \begin{tabular}{|c|c|c|c|c|c|}
+ \hline
+ Noyau & $A$ | V & $\lambda$ & $\omega$ | rad/s & T | s \\
+ \hline
+ Acier feuilleté     &
+ $4.695 \pm 0.005$ &
+ $111.1 \pm 0.2$ &
+ $3376.4 \pm 0.2$ &
+ $0.0018609 \pm 1 \cdot 10^{-7}$ \\
+
+ Acier     &
+ $4.35 \pm 0.01$ &
+ $1179 \pm 5$ &
+$4512 \pm 5$ &
+ $0.0013925 \pm 1 \cdot 10^{-6}$ \\
+
+ Air     &
+ $4.618 \pm 0.005$ &
+ $308.8 \pm 0.5$ &
+ $7200.6 \pm 0.5$ &
+ $0.0008726 \pm 6 \cdot 10^{-8}$ \\
+
+ Aluminium     &
+ $4.501 \pm 0.007$ &
+ $910 \pm 2$ &
+ $8894 \pm 2$ &
+ $0.0007064 \pm 2 \cdot 10^{-7}$ \\
+ \hline
+ \end{tabular}
+ \caption{Paramètres ajustés des oscillations avec le pont RLC et R = $10 \Omega$}
+ \end{table}
+
+
+\end{document}
+
