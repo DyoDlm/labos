@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  18 FEB 2026 09:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  18 FEB 2026 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,7 +460,14 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box57
 )
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `fig:montage_elec' multiply defined.
+
+
+LaTeX Warning: Label `fig:montage_elec' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -585,49 +592,162 @@ OK, entering \batchmode...
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<./ressources/AB.png, id=118, 481.8pt x 239.89626pt>
+<./ressources/AB.png, id=100, 481.8pt x 239.89626pt>
 File: ./ressources/AB.png Graphic file (type png)
 <use ./ressources/AB.png>
-Package pdftex.def Info: ./ressources/AB.png  used on input line 44.
+Package pdftex.def Info: ./ressources/AB.png  used on input line 55.
 (pdftex.def)             Requested size: 337.25769pt x 167.92622pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
  [2 <./ressources/AB.png>]
-<./ressources/C.png, id=130, 598.235pt x 328.22626pt>
+<./ressources/reponse_indicielle.png, id=111, 1187.18532pt x 657.2053pt>
+File: ./ressources/reponse_indicielle.png Graphic file (type png)
+<use ./ressources/reponse_indicielle.png>
+Package pdftex.def Info: ./ressources/reponse_indicielle.png  used on input lin
+e 98.
+(pdftex.def)             Requested size: 356.15834pt x 197.1631pt.
+<./ressources/proprieter.png, id=112, 235.63031pt x 225.09094pt>
+File: ./ressources/proprieter.png Graphic file (type png)
+<use ./ressources/proprieter.png>
+Package pdftex.def Info: ./ressources/proprieter.png  used on input line 105.
+(pdftex.def)             Requested size: 187.89914pt x 179.49597pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 106.
+See the caption package documentation for explanation.
+
+ [3 <./ressources/reponse_indicielle.png>] [4 <./ressources/proprieter.png>]
+<./ressources/Exo2_A.png, id=125, 962.09438pt x 417.81094pt>
+File: ./ressources/Exo2_A.png Graphic file (type png)
+<use ./ressources/Exo2_A.png>
+Package pdftex.def Info: ./ressources/Exo2_A.png  used on input line 132.
+(pdftex.def)             Requested size: 481.046pt x 208.90495pt.
+
+Overfull \hbox (11.29099pt too wide) in paragraph at lines 132--134
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+
+ []
+
+<./ressources/EXO2_A_scop.png, id=126, 599.99156pt x 453.94594pt>
+File: ./ressources/EXO2_A_scop.png Graphic file (type png)
+<use ./ressources/EXO2_A_scop.png>
+Package pdftex.def Info: ./ressources/EXO2_A_scop.png  used on input line 137.
+(pdftex.def)             Requested size: 187.89914pt x 142.16252pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 138.
+See the caption package documentation for explanation.
+
+<./ressources/Exo2_B.png, id=127, 874.76813pt x 392.96812pt>
+File: ./ressources/Exo2_B.png Graphic file (type png)
+<use ./ressources/Exo2_B.png>
+Package pdftex.def Info: ./ressources/Exo2_B.png  used on input line 154.
+(pdftex.def)             Requested size: 524.86493pt x 235.78268pt.
+
+Overfull \hbox (55.10991pt too wide) in paragraph at lines 154--156
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+ [5 <./ressources/Exo2_A.png> <./ressources/EXO2_A_scop.png>]
+<./ressources/Exo2_B_scop.png, id=136, 598.48593pt x 447.17062pt>
+File: ./ressources/Exo2_B_scop.png Graphic file (type png)
+<use ./ressources/Exo2_B_scop.png>
+Package pdftex.def Info: ./ressources/Exo2_B_scop.png  used on input line 160.
+(pdftex.def)             Requested size: 187.89914pt x 140.38867pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 161.
+See the caption package documentation for explanation.
+
+ [6 <./ressources/Exo2_B.png> <./ressources/Exo2_B_scop.png>]
+<./ressources/C.png, id=145, 598.235pt x 328.22626pt>
 File: ./ressources/C.png Graphic file (type png)
 <use ./ressources/C.png>
-Package pdftex.def Info: ./ressources/C.png  used on input line 78.
-(pdftex.def)             Requested size: 418.76164pt x 229.7568pt.
- [3 <./ressources/C.png>]
+Package pdftex.def Info: ./ressources/C.png  used on input line 182.
+(pdftex.def)             Requested size: 358.94377pt x 196.93727pt.
 File: ./ressources/C.png Graphic file (type png)
 <use ./ressources/C.png>
-Package pdftex.def Info: ./ressources/C.png  used on input line 103.
+Package pdftex.def Info: ./ressources/C.png  used on input line 189.
 (pdftex.def)             Requested size: 418.76164pt x 229.7568pt.
- [4] (./main.aux)
+File: ./ressources/C.png Graphic file (type png)
+<use ./ressources/C.png>
+Package pdftex.def Info: ./ressources/C.png  used on input line 197.
+(pdftex.def)             Requested size: 358.94377pt x 196.93727pt.
+ [7 <./ressources/C.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 202.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 202.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 202.
+
+File: ./ressources/C.png Graphic file (type png)
+<use ./ressources/C.png>
+Package pdftex.def Info: ./ressources/C.png  used on input line 205.
+(pdftex.def)             Requested size: 179.47188pt x 98.46863pt.
+File: ./ressources/C.png Graphic file (type png)
+<use ./ressources/C.png>
+Package pdftex.def Info: ./ressources/C.png  used on input line 213.
+(pdftex.def)             Requested size: 179.47188pt x 98.46863pt.
+ [8] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F5CAC3737305FF57D57C59D6DDD4DB7A;1906.
+(rerunfilecheck)             Checksum: 40C8E685FB03A2DFE725486CD09392BA;3966.
  ) 
 Here is how much of TeX's memory you used:
- 13458 strings out of 474222
- 210474 string characters out of 5748733
- 1936975 words of memory out of 5000000
- 35491 multiletter control sequences out of 15000+600000
+ 13523 strings out of 474222
+ 212293 string characters out of 5748733
+ 1935975 words of memory out of 5000000
+ 35547 multiletter control sequences out of 15000+600000
  564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,7n,117p,333b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,7n,117p,392b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (4 pages, 183785 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb>
+Output written on main.pdf (8 pages, 351299 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
