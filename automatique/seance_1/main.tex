@@ -52,12 +52,22 @@
 \section{Exercice 1 : Système masse-ressort (matlab)}
 k représente la constante de raideur du ressort relié à la masse m qui subit un frottement b lors d'un changement de position p par une force f.
 
-\\
-\begin{figure}[h]
-        \begin{center}
-        \includegraphics[scale=0.7]{AB.png}
-        \end{center}
-\end{figure}
+\vspace{1cm}
+\noindent \begin{minipage}{0.6\textwidth}
+\includegraphics[width=\textwidth]{AB.png}
+\label{fig:montage_elec}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.5\textwidth}
+\item La position $p$ en $m$
+\item La raideur du ressort $k$ = 200 $\frac{N}{m}$
+\item La viscosité $b$ = 2 $\frac{N}{(m/s)}$
+\item La masse $m$ = 0.1 $kg$
+\item La force appliquée au système f en N
+\noindent \end{minipage}
+
+\vspace{1cm}
+
 
 \subsection{A : Equation du mouvement du système}
 L'equation différentielle du système est définie à partir de la seconde loi de Newton.
@@ -86,7 +96,7 @@ A partir de l'equation précédante, nous détérminons la fonction de transfert
 
 \subsection{C : Code matlab}
 % Notes sur le code matlab
-
+Completer...
 \subsection{D : Affichage FT G(s) sous forme d'Evans et de Bode}
 G(s) représenté sous ses formes de Bode et d'Evans : \\
 \[
@@ -183,7 +193,7 @@ Grâce aux fonctions graphiques de Simulink, nous observons la réponse indiciel
 	\includegraphics[scale=0.6]{C.png}
 	\end{center}
 \end{figure}
-
+Image is self-explanatory.
 \newpage
 
 \subsection{A : Schema Simulink}
