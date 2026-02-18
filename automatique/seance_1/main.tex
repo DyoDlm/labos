@@ -85,18 +85,16 @@ A partir de l'equation précédante, nous détérminons la fonction de transfert
 \]
 
 \subsection{C : Code matlab}
-Notes sur le code matlab
+% Notes sur le code matlab
 
 \subsection{D : Affichage FT G(s) sous forme d'Evans et de Bode}
-Evans : \\
+G(s) représenté sous ses formes de Bode et d'Evans : \\
 \[
-	\frac{10}{s^2 + 20s + 2000}
+	Evans \rightarrow \frac{10}{s^2 + 20s + 2000}
 \]
 \\
-Bode : 
-
 \[
-	\frac{0.005}{(1+ 0.4472(\frac{s}{44,72}) + \frac{s}{44/72}^2}
+	Bode \rightarrow \frac{0.005}{(1+ 0.4472(\frac{s}{44,72}) + \frac{s}{44/72}^2}
 \]
 
 \subsection{E : Réponse indicielle à 1N}
@@ -105,6 +103,7 @@ Bode :
         \includegraphics[scale=0.4]{reponse_indicielle.png}
         \end{centering}
 \end{figure}
+Grâce aux fonctions graphiques de Simulink, nous observons la réponse indicielle du système avec un Overshoot de 48.5\% a 0.0737 secondes. Le rising time est de 0.0412.
 
 \subsection{F : Overshoot, Rising time, Settling time}
 \vspace{1cm}
@@ -114,14 +113,12 @@ Bode :
 \end{minipage}
 \hspace{1cm}
 \begin{minipage}{0.5\textwidth}
-Nous mesurons la difference entre les signaux du generateur et ceux passant par le cable. Cela nous permet de connaitre le temps de propagation de l'onde electrique dans le cablem.Si on connait le temps et la distance, nous pouvons ainsi connaitre la vitesse de propagation grace a la relation Eq. 2.
-
+	Les données receuillies des paramètres donnés par la fonction stepinfo sur labview sont les mêmes que celles sur le graphique (section 2.5 E).
 \noindent \end{minipage}
 
 \vspace{1cm}
 
 
-Comparaison ...
 
 \newpage
 
@@ -146,8 +143,7 @@ Comparaison ...
 \end{minipage}
 \hspace{1cm}
 \begin{minipage}{0.5\textwidth}
-Nous mesurons la difference entre les signaux du generateur et ceux passant par le cable. Cela nous permet de connaitre le temps de propagation de l'onde electrique dans le cablem.Si on connait le temps et la distance, nous pouvons ainsi connaitre la vitesse de propagation grace a la relation Eq. 2.
-
+	Nous pouvons confirmer que le schéma représente en effet le système étudié, car lors de la simulation nous retrouvons la même courbe que dans l'exercice précédant (section 2.5 E). (soit charactérisé par un amortissement faible, de même amplitude, nombre d'oscillation et gain statique)
 \noindent \end{minipage}
 
 \vspace{1cm}
@@ -169,8 +165,7 @@ Nous mesurons la difference entre les signaux du generateur et ceux passant par 
 \end{minipage}
 \hspace{1cm}
 \begin{minipage}{0.5\textwidth}
-Nous mesurons la difference entre les signaux du generateur et ceux passant par le cable. Cela nous permet de connaitre le temps de propagation de l'onde electrique dans le cablem.Si on connait le temps et la distance, nous pouvons ainsi connaitre la vitesse de propagation grace a la relation Eq. 2.
-
+	Les réponses obtenues sont identiques. Et c'est normal... Le bloc LTI est simplement un bloc logique reprsentant le système charactérisé par G(s). Un même système aura la même sortie pour une même entrée.
 \noindent \end{minipage}
 
 \vspace{1cm}
