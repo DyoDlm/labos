@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  18 FEB 2026 13:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  18 FEB 2026 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -699,13 +699,8 @@ File: ./ressources/basic.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/basic.png  used on input line 190.
 (pdftex.def)             Requested size: 522.04683pt x 158.79216pt.
 
-Overfull \hbox (52.29181pt too wide) in paragraph at lines 190--192
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
-
+Overfull \hbox (52.29181pt too wide) in paragraph at lines 190--191
+ [] 
  []
 
 <./ressources/basic_graph.png, id=153, 958.58125pt x 696.6025pt>
@@ -720,20 +715,15 @@ File: ./ressources/P.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/P.png  used on input line 204.
 (pdftex.def)             Requested size: 545.04047pt x 191.51697pt.
 
-Overfull \hbox (75.28545pt too wide) in paragraph at lines 204--206
-[][]
+Overfull \hbox (75.28545pt too wide) in paragraph at lines 204--205
+ [] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--206
-
- []
-
-<./ressources/P_graph.png, id=164, 941.5175pt x 702.625pt>
+<./ressources/P_graph.png, id=164, 958.58125pt x 696.6025pt>
 File: ./ressources/P_graph.png Graphic file (type png)
 <use ./ressources/P_graph.png>
 Package pdftex.def Info: ./ressources/P_graph.png  used on input line 209.
-(pdftex.def)             Requested size: 376.60033pt x 281.04501pt.
+(pdftex.def)             Requested size: 383.4257pt x 278.63606pt.
  [9 <./ressources/P.png> <./ressources/P_graph.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -753,13 +743,8 @@ File: ./ressources/PI.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/PI.png  used on input line 221.
 (pdftex.def)             Requested size: 545.04047pt x 191.51697pt.
 
-Overfull \hbox (75.28545pt too wide) in paragraph at lines 221--223
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
-
+Overfull \hbox (75.28545pt too wide) in paragraph at lines 221--222
+ [] 
  []
 
 <./ressources/PI_graph.png, id=174, 941.5175pt x 702.625pt>
@@ -767,49 +752,6 @@ File: ./ressources/PI_graph.png Graphic file (type png)
 <use ./ressources/PI_graph.png>
 Package pdftex.def Info: ./ressources/PI_graph.png  used on input line 226.
 (pdftex.def)             Requested size: 376.60033pt x 281.04501pt.
-! Too many }'s.
-\@endfloatbox ...pagefalse \outer@nobreak \egroup 
-                                                  \color@endbox 
-l.228 \end{figure}
-                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Extra \endgroup.
-\color@endgroup ->\endgraf \endgroup 
-                                     
-l.228 \end{figure}
-                  
-Things are pretty mixed up, but I think the worst is over.
-
-! Too many }'s.
-\color@endbox ->\color@endgroup \egroup 
-                                        
-l.228 \end{figure}
-                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-
-! LaTeX Error: \begin{document} ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.228 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.228 \end{figure}
-                  
-Things are pretty mixed up, but I think the worst is over.
-
  [10 <./ressources/PI.png> <./ressources/PI_graph.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -822,8 +764,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 40C8E685FB03A2DFE725486CD09392BA;3966.
  ) 
 Here is how much of TeX's memory you used:
- 13579 strings out of 474222
- 213743 string characters out of 5748733
+ 13580 strings out of 474222
+ 213760 string characters out of 5748733
  1935975 words of memory out of 5000000
  35601 multiletter control sequences out of 15000+600000
  564362 words of font info for 58 fonts, out of 8000000 for 9000
@@ -838,10 +780,10 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb>
-Output written on main.pdf (10 pages, 546699 bytes).
+Output written on main.pdf (10 pages, 553578 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
