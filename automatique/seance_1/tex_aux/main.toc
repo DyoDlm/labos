@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {3.1}A : Reproduction du schema}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}B : Ajout du bloc LTI}{6}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Exercice 3 : Balance à fléau}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}A : Schema Simulink}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}B : Application d'un regulateur proportionnel (P)}{8}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}C : Changement du comportement induit par $K_p$}{8}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}D : Application d'un regulateur integrateur (PI)}{8}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}%
+\contentsline {subsection}{\numberline {4.1}A : Schema Simulink}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}B : Application d'un regulateur proportionnel (P)}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}C : Changement du comportement induit par $K_p$}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}D : Application d'un regulateur integrateur (PI)}{10}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Conclusion}{10}{section.5}%

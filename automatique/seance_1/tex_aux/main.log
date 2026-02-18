@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  18 FEB 2026 11:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  18 FEB 2026 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -618,105 +618,199 @@ File: ./ressources/reponse_indicielle.png Graphic file (type png)
 <use ./ressources/reponse_indicielle.png>
 Package pdftex.def Info: ./ressources/reponse_indicielle.png  used on input lin
 e 98.
-(pdftex.def)             Requested size: 356.15834pt x 197.1631pt.
+(pdftex.def)             Requested size: 474.8657pt x 262.87746pt.
+
+Overfull \hbox (5.11069pt too wide) in paragraph at lines 98--100
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
 <./ressources/proprieter.png, id=112, 235.63031pt x 225.09094pt>
 File: ./ressources/proprieter.png Graphic file (type png)
 <use ./ressources/proprieter.png>
 Package pdftex.def Info: ./ressources/proprieter.png  used on input line 105.
 (pdftex.def)             Requested size: 187.89914pt x 179.49597pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 106.
-See the caption package documentation for explanation.
-
  [3 <./ressources/reponse_indicielle.png>] [4 <./ressources/proprieter.png>]
-<./ressources/Exo2_A.png, id=125, 962.09438pt x 417.81094pt>
+<./ressources/Exo2_A.png, id=124, 962.09438pt x 417.81094pt>
 File: ./ressources/Exo2_A.png Graphic file (type png)
 <use ./ressources/Exo2_A.png>
-Package pdftex.def Info: ./ressources/Exo2_A.png  used on input line 132.
+Package pdftex.def Info: ./ressources/Exo2_A.png  used on input line 131.
 (pdftex.def)             Requested size: 481.046pt x 208.90495pt.
 
-Overfull \hbox (11.29099pt too wide) in paragraph at lines 132--134
+Overfull \hbox (11.29099pt too wide) in paragraph at lines 131--133
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
-<./ressources/EXO2_A_scop.png, id=126, 599.99156pt x 453.94594pt>
+<./ressources/EXO2_A_scop.png, id=125, 599.99156pt x 453.94594pt>
 File: ./ressources/EXO2_A_scop.png Graphic file (type png)
 <use ./ressources/EXO2_A_scop.png>
-Package pdftex.def Info: ./ressources/EXO2_A_scop.png  used on input line 137.
+Package pdftex.def Info: ./ressources/EXO2_A_scop.png  used on input line 136.
 (pdftex.def)             Requested size: 187.89914pt x 142.16252pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 138.
+(caption)                particular \caption on input line 137.
 See the caption package documentation for explanation.
 
-<./ressources/Exo2_B.png, id=127, 874.76813pt x 392.96812pt>
+<./ressources/Exo2_B.png, id=126, 874.76813pt x 392.96812pt>
 File: ./ressources/Exo2_B.png Graphic file (type png)
 <use ./ressources/Exo2_B.png>
-Package pdftex.def Info: ./ressources/Exo2_B.png  used on input line 154.
+Package pdftex.def Info: ./ressources/Exo2_B.png  used on input line 153.
 (pdftex.def)             Requested size: 524.86493pt x 235.78268pt.
 
-Overfull \hbox (55.10991pt too wide) in paragraph at lines 154--156
+Overfull \hbox (55.10991pt too wide) in paragraph at lines 153--155
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
  [5 <./ressources/Exo2_A.png> <./ressources/EXO2_A_scop.png>]
-<./ressources/Exo2_B_scop.png, id=136, 598.48593pt x 447.17062pt>
+<./ressources/Exo2_B_scop.png, id=135, 598.48593pt x 447.17062pt>
 File: ./ressources/Exo2_B_scop.png Graphic file (type png)
 <use ./ressources/Exo2_B_scop.png>
-Package pdftex.def Info: ./ressources/Exo2_B_scop.png  used on input line 160.
+Package pdftex.def Info: ./ressources/Exo2_B_scop.png  used on input line 159.
 (pdftex.def)             Requested size: 187.89914pt x 140.38867pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 161.
+(caption)                particular \caption on input line 160.
 See the caption package documentation for explanation.
 
  [6 <./ressources/Exo2_B.png> <./ressources/Exo2_B_scop.png>]
-<./ressources/C.png, id=145, 598.235pt x 328.22626pt>
+<./ressources/C.png, id=144, 598.235pt x 328.22626pt>
 File: ./ressources/C.png Graphic file (type png)
 <use ./ressources/C.png>
-Package pdftex.def Info: ./ressources/C.png  used on input line 182.
-(pdftex.def)             Requested size: 358.94377pt x 196.93727pt.
-File: ./ressources/C.png Graphic file (type png)
-<use ./ressources/C.png>
-Package pdftex.def Info: ./ressources/C.png  used on input line 189.
-(pdftex.def)             Requested size: 418.76164pt x 229.7568pt.
-File: ./ressources/C.png Graphic file (type png)
-<use ./ressources/C.png>
-Package pdftex.def Info: ./ressources/C.png  used on input line 197.
+Package pdftex.def Info: ./ressources/C.png  used on input line 181.
 (pdftex.def)             Requested size: 358.94377pt x 196.93727pt.
  [7 <./ressources/C.png>]
+<./ressources/basic.png, id=152, 745.78625pt x 226.8475pt>
+File: ./ressources/basic.png Graphic file (type png)
+<use ./ressources/basic.png>
+Package pdftex.def Info: ./ressources/basic.png  used on input line 190.
+(pdftex.def)             Requested size: 522.04683pt x 158.79216pt.
+
+Overfull \hbox (52.29181pt too wide) in paragraph at lines 190--192
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
+
+ []
+
+<./ressources/basic_graph.png, id=153, 958.58125pt x 696.6025pt>
+File: ./ressources/basic_graph.png Graphic file (type png)
+<use ./ressources/basic_graph.png>
+Package pdftex.def Info: ./ressources/basic_graph.png  used on input line 195.
+(pdftex.def)             Requested size: 383.4257pt x 278.63606pt.
+ [8 <./ressources/basic.png> <./ressources/basic_graph.png>]
+<./ressources/P.png, id=163, 908.39375pt x 319.1925pt>
+File: ./ressources/P.png Graphic file (type png)
+<use ./ressources/P.png>
+Package pdftex.def Info: ./ressources/P.png  used on input line 204.
+(pdftex.def)             Requested size: 545.04047pt x 191.51697pt.
+
+Overfull \hbox (75.28545pt too wide) in paragraph at lines 204--206
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
+
+ []
+
+<./ressources/P_graph.png, id=164, 941.5175pt x 702.625pt>
+File: ./ressources/P_graph.png Graphic file (type png)
+<use ./ressources/P_graph.png>
+Package pdftex.def Info: ./ressources/P_graph.png  used on input line 209.
+(pdftex.def)             Requested size: 376.60033pt x 281.04501pt.
+ [9 <./ressources/P.png> <./ressources/P_graph.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 202.
+(hyperref)                removing `math shift' on input line 215.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 202.
+(hyperref)                removing `subscript' on input line 215.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 202.
+(hyperref)                removing `math shift' on input line 215.
 
-File: ./ressources/C.png Graphic file (type png)
-<use ./ressources/C.png>
-Package pdftex.def Info: ./ressources/C.png  used on input line 205.
-(pdftex.def)             Requested size: 179.47188pt x 98.46863pt.
-File: ./ressources/C.png Graphic file (type png)
-<use ./ressources/C.png>
-Package pdftex.def Info: ./ressources/C.png  used on input line 213.
-(pdftex.def)             Requested size: 179.47188pt x 98.46863pt.
- [8] (./main.aux)
+<./ressources/PI.png, id=173, 908.39375pt x 319.1925pt>
+File: ./ressources/PI.png Graphic file (type png)
+<use ./ressources/PI.png>
+Package pdftex.def Info: ./ressources/PI.png  used on input line 221.
+(pdftex.def)             Requested size: 545.04047pt x 191.51697pt.
+
+Overfull \hbox (75.28545pt too wide) in paragraph at lines 221--223
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--223
+
+ []
+
+<./ressources/PI_graph.png, id=174, 941.5175pt x 702.625pt>
+File: ./ressources/PI_graph.png Graphic file (type png)
+<use ./ressources/PI_graph.png>
+Package pdftex.def Info: ./ressources/PI_graph.png  used on input line 226.
+(pdftex.def)             Requested size: 376.60033pt x 281.04501pt.
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.228 \end{figure}
+                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.228 \end{figure}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.228 \end{figure}
+                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 \end{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.228 \end{figure}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
+ [10 <./ressources/PI.png> <./ressources/PI_graph.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -728,10 +822,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 40C8E685FB03A2DFE725486CD09392BA;3966.
  ) 
 Here is how much of TeX's memory you used:
- 13523 strings out of 474222
- 212293 string characters out of 5748733
+ 13579 strings out of 474222
+ 213743 string characters out of 5748733
  1935975 words of memory out of 5000000
- 35547 multiletter control sequences out of 15000+600000
+ 35601 multiletter control sequences out of 15000+600000
  564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,7n,117p,392b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -744,10 +838,10 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb>
-Output written on main.pdf (8 pages, 351299 bytes).
+Output written on main.pdf (10 pages, 546699 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
