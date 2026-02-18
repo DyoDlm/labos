@@ -50,6 +50,9 @@
 %	Exercices 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Exercice 1 : Système masse-ressort (matlab)}
+k représente la constante de raideur du ressort relié à la masse m qui subit un frottement b lors d'un changement de position p par une force f.
+
+\\
 \begin{figure}[h]
         \begin{center}
         \includegraphics[scale=0.7]{AB.png}
@@ -57,6 +60,8 @@
 \end{figure}
 
 \subsection{A : Equation du mouvement du système}
+L'equation différentielle du système est définie à partir de la seconde loi de Newton.
+\\
 \[
 	\sum_{}^{}F = ma
 \]
@@ -65,6 +70,8 @@
 \]
 
 \subsection{B : Fonction de transfert (FT) G(s)}
+A partir de l'equation précédante, nous détérminons la fonction de transfert de notre système après avoir réalisé la transformée de Laplace de l'équiation du système.\\ 
+
 \[
 	\mathcal{L} \rightarrow m\cdot s^2 \cdot P(s) = -k \cdot P(s) - b\cdot s \cdot P(s) + F(s)
 \]
