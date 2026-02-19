@@ -1,0 +1,239 @@
+
+% NE PAS TOUCHER
+%++++++++++++++++++++++++++++++++++++++++
+\documentclass[letterpaper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{cite}
+\usepackage[final]{hyperref}
+\usepackage{datatool}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{gensymb}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	citecolor=blue,
+	filecolor=magenta,
+	urlcolor=blue
+}
+%+++++++++++++++++++++++++++++++++++++++++
+
+%	INCLUDES
+\graphicspath{ {./ressources/} }
+
+\begin{document}
+
+\title{Automatique}
+
+\author{Seite Alexander et Nathan Vidonne}
+\date{\today}
+\maketitle
+\newline
+
+\tableofcontents
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Intro 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Exercices 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Exercice 1 : Système masse-ressort (matlab)}
+\begin{figure}[h]
+        \begin{center}
+        \includegraphics[scale=0.7]{AB.png}
+        \end{center}
+\end{figure}
+
+\subsection{A : Equation du mouvement du système}
+\[
+	\sum_{}^{}F = ma
+\]
+\[
+	\Leftrightarrow \dot{m} \cdot p(t) = -k\cdot p(t) - b \cdot \dot{p(t)} + f(t)
+\]
+
+\subsection{B : Fonction de transfert (FT) G(s)}
+\[
+	\mathcal{L} \rightarrow m\cdot s^2 \cdot P(s) = -k \cdot P(s) - b\cdot s \cdot P(s) + F(s)
+\]
+\\
+\[
+	\Leftrightarrow P(s) \cdot (ms^2 + k + b) = F(s)
+\]
+\\
+\[
+	\Leftrightarrow G(s) = \frac{1}{ms^2 + k + b}
+\]
+
+\subsection{C : Code matlab}
+Notes sur le code matlab
+
+\subsection{D : Affichage FT G(s) sous forme d'Evans et de Bode}
+Evans : \\
+\[
+	\frac{10}{s^2 + 20s + 2000}
+\]
+\\
+Bode : 
+
+\[
+	\frac{0.005}{(1+ 0.4472(\frac{s}{44,72}) + \frac{s}{44/72}^2}
+\]
+
+\subsection{E : Réponse indicielle à 1N}
+\begin{figure}[h]
+        \begin{centering}
+        \includegraphics[scale=0.4]{reponse_indicielle.png}
+        \end{centering}
+\end{figure}
+
+\subsection{F : Overshoot, Rising time, Settling time}
+\vspace{1cm}
+\noindent \begin{minipage}{0.4\textwidth}
+\includegraphics[width=\textwidth]{proprieter.png}
+\label{fig:montage_elec}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.5\textwidth}
+Nous mesurons la difference entre les signaux du generateur et ceux passant par le cable. Cela nous permet de connaitre le temps de propagation de l'onde electrique dans le cablem.Si on connait le temps et la distance, nous pouvons ainsi connaitre la vitesse de propagation grace a la relation Eq. 2.
+
+\noindent \end{minipage}
+
+\vspace{1cm}
+
+
+Comparaison ...
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Exercices 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Exercice 2 : Système masse-ressort (simulink)}
+
+
+\subsection{A : Reproduction du schema}
+\begin{figure}[H]
+        \begin{centering}
+        \includegraphics[scale=0.5]{Exo2_A.png}
+        \end{centering}
+\end{figure}
+\vspace{1cm}
+\noindent \begin{minipage}{0.4\textwidth}
+\includegraphics[width=\textwidth]{EXO2_A_scop.png}
+        \captionof{figure}{U$^2$(1/D$^2$)}
+\label{fig:montage_elec}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.5\textwidth}
+Nous mesurons la difference entre les signaux du generateur et ceux passant par le cable. Cela nous permet de connaitre le temps de propagation de l'onde electrique dans le cablem.Si on connait le temps et la distance, nous pouvons ainsi connaitre la vitesse de propagation grace a la relation Eq. 2.
+
+\noindent \end{minipage}
+
+\vspace{1cm}
+
+
+
+\subsection{B : Ajout du bloc LTI} 
+\begin{figure}[H]
+        \begin{centering}
+        \includegraphics[scale=0.6]{Exo2_B.png}
+        \end{centering}
+\end{figure}
+
+\vspace{1cm}
+\noindent \begin{minipage}{0.4\textwidth}
+\includegraphics[width=\textwidth]{Exo2_B_scop.png}
+        \captionof{figure}{U$^2$(1/D$^2$)}
+\label{fig:montage_elec}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.5\textwidth}
+Nous mesurons la difference entre les signaux du generateur et ceux passant par le cable. Cela nous permet de connaitre le temps de propagation de l'onde electrique dans le cablem.Si on connait le temps et la distance, nous pouvons ainsi connaitre la vitesse de propagation grace a la relation Eq. 2.
+
+\noindent \end{minipage}
+
+\vspace{1cm}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Exercices 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Exercice 3 : Balance à fléau}
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.6]{C.png}
+	\end{center}
+\end{figure}
+
+\newpage
+
+\subsection{A : Schema Simulink}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.7]{basic.png}
+        \end{center}
+\end{figure}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.4]{basic_graph.png}
+	\end{center}
+\end{figure}
+
+
+\newpage
+\subsection{B : Application d'un regulateur proportionnel (P)}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.5]{P.png}
+        \end{center}
+\end{figure}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.4]{P_graph.png}
+        \end{center}
+\end{figure}
+
+
+\newpage
+\subsection{C : Changement du comportement induit par $K_p$}
+
+
+\subsection{D : Application d'un regulateur integrateur (PI)}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.5]{PI.png}
+        \end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+        \includegraphics[scale=0.4]{PI_graph.png}
+\end{center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Conclusion 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+
+\end{document}
+
+
+

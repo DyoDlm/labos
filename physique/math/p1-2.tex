@@ -1,0 +1,159 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Fonctions de plusieurs variables}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+La plupart des relations en ingénierie et en physique comportent plusieurs paramètres.
+On aimerait comprendre le comportement d’un système en fonction de ces paramètres.
+
+\subsection*{Exemples}
+
+\begin{enumerate}
+\item \textbf{Boîte de conserve}
+
+On considère une boîte cylindrique de rayon $r$ et de hauteur $h$.
+
+La surface extérieure est :
+\[
+S = 2\pi r^2 + 2\pi r h.
+\]
+
+Les variables ou paramètres sont $r$ et $h$.
+
+Quelles valeurs pour $r$ et $h$ afin que $S$ soit minimale, sous la contrainte :
+\[
+V = \pi r^2 h = \text{cste}.
+\]
+
+\textbf{Réponse :} $r = h$.
+
+\item \textbf{Loi des gaz parfaits}
+
+La loi des gaz parfaits est :
+\[
+PV = nRT.
+\]
+
+On peut écrire :
+\[
+P = \frac{nRT}{V} = f(n,T,V).
+\]
+
+\end{enumerate}
+
+L’idée est de généraliser les notions connues pour les fonctions à une variable :
+limites, continuité, dérivées, intégrales.
+
+\section{Limites}
+
+Soit la fonction :
+\[
+f(x,y) = \frac{xy}{x+y}.
+\]
+
+\subsection*{Domaine de définition}
+
+Le domaine de définition est :
+\[
+D_f : x+y \neq 0 \quad \Leftrightarrow \quad y \neq -x.
+\]
+
+Le domaine de définition est un sous-ensemble de $\mathbb{R}^2$ défini par une équation.
+
+\subsection*{Limite en $(0,0)$}
+
+Quelle est la limite de $f$ lorsque $x$ tend vers $0$ et $y$ tend vers $0$, c’est-à-dire
+lorsque $(x,y) \to (0,0)$ ?
+
+La fonction $f(0,0)$ n’est pas définie.
+
+On a une infinité de façons de tendre vers $0$.
+Le point $M(x,y)$ se rapproche de l’origine $O$.
+
+La limite dépend-elle de la façon dont on se rapproche de $0$ ?
+
+On se place en coordonnées polaires :
+\[
+\begin{cases}
+x = r\cos\theta, \\
+y = r\sin\theta,
+\end{cases}
+\qquad r = \sqrt{x^2 + y^2}, \quad r \ge 0.
+\]
+
+Alors :
+\[
+f(x,y) = g(r,\theta)
+= \frac{r\cos\theta \cdot r\sin\theta}{r\cos\theta + r\sin\theta}
+= \frac{r\sin\theta\cos\theta}{\cos\theta + \sin\theta}.
+\]
+
+\[
+(x,y) \to (0,0)
+\quad \Longleftrightarrow \quad
+\begin{cases}
+r \to 0, \\
+\forall \theta \in \mathbb{R}.
+\end{cases}
+\]
+
+On a :
+\[
+\lim_{r \to 0} g(r,\theta) = 0
+\quad \Longrightarrow \quad
+\lim_{(x,y)\to(0,0)} f(x,y) = 0.
+\]
+
+\subsection*{Exemple où la limite n’existe pas}
+
+Soit la fonction :
+\[
+h(x,y) = \frac{xy}{x^2 + y^2}.
+\]
+
+En coordonnées polaires :
+\[
+h(r,\theta)
+= \frac{r^2\sin\theta\cos\theta}{r^2(\cos^2\theta + \sin^2\theta)}
+= \sin\theta\cos\theta
+= \frac{1}{2}\sin(2\theta).
+\]
+
+Ainsi :
+\[
+\lim_{r \to 0} h(r,\theta) = \frac{1}{2}\sin(2\theta),
+\]
+ce qui dépend de la direction d’approche.
+
+La limite en $(0,0)$ dépend donc de la direction d’approche :
+on a une infinité de limites, et la limite n’existe pas.
+
+\section{Dérivées et différentielles}
+
+Une \og fonction de plusieurs variables \fg{} peut être :
+
+\begin{itemize}
+\item une fonction scalaire sur un champ scalaire :
+\[
+f : \mathbb{R}^n \to \mathbb{R},
+\quad (x_1,\ldots,x_n) \mapsto f(x_1,\ldots,x_n) \in \mathbb{R}.
+\]
+\end{itemize}
+
+\textbf{Exemple :}
+\[
+f(x,y,z) = x^2yz,
+\quad f : \mathbb{R}^3 \to \mathbb{R}.
+\]
+
+\end{document}
+

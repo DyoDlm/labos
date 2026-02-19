@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {2}Exercice 1 : Système masse-ressort (matlab)}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}A : Equation du mouvement du système}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}B : Fonction de transfert (FT) G(s)}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}C : Code matlab}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}C : Code matlab}{2}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}D : Affichage FT G(s) sous forme d'Evans et de Bode}{3}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}E : Réponse indicielle à 1N}{3}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}F : Overshoot, Rising time, Settling time}{4}{subsection.2.6}%
@@ -13,6 +13,5 @@
 \contentsline {subsection}{\numberline {4.1}A : Schema Simulink}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}B : Application d'un regulateur proportionnel (P)}{9}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}C : Changement du comportement induit par $K_p$}{10}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}D : Application d'un regulateur integrateur (PI)}{11}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Conclusion}{12}{section.5}%
-\contentsline {section}{\numberline {6}annexes}{13}{section.6}%
+\contentsline {subsection}{\numberline {4.4}D : Application d'un regulateur integrateur (PI)}{10}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Conclusion}{10}{section.5}%

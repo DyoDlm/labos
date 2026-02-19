@@ -225,8 +225,18 @@ Image is self-explanatory.
 
 \newpage
 \subsection{C : Changement du comportement induit par $K_p$}
-Nous avons oublié de run la simulation pour différents gains du régulateur $K_p$. Toutefois, nous pouvons affirmer que la variation de $K_p$ impacte directement les (oscillations ?).
+Nous avons oublié de run la simulation pour différents gains du régulateur $K_p$. Toutefois, nous pouvons affirmer que la variation de $K_p$ impacte directement les oscillations et l'amplitude.\\
+En un second temps, nous avons reconstitué avec python le systeme en question : 
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.5]{annexe.png}
+        \end{center}
+\end{figure}
 
+et constatons que lorsque k est faible donne une réponse lente. Les nombre d'oscillation avant stabilisation est faible et l'amplitude de ces dernieres sont grandes.
+Quand K augmente nous observons l'inverse. (nO++, A--)
+
+\newpage
 \subsection{D : Application d'un regulateur integrateur (PI)}
 \begin{figure}[H]
         \begin{center}
@@ -238,8 +248,7 @@ Nous avons oublié de run la simulation pour différents gains du régulateur $K
         \includegraphics[scale=0.4]{PI_graph.png}
 \end{center}
 \end{figure}
-Nous observons que le système se stabilise vers son état avant la perturbation.
-\\ COmpleter....
+Nous observons que le système se stabilise vers son état avant la perturbation. 
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -257,7 +266,56 @@ Nous observons que le système se stabilise vers son état avant la perturbation
 \end{center}
 \end{figure}
 
-
+\newpage
+\section{annexes}
+\\import numpy as np
+\\import matplotlib.pyplot as plt
+\\from scipy.integrate import odeint
+\\
+\\# Paramètres du système
+\\Kbobines = 1e-3  # (N·m)/A
+\\k = 2e-3          # (N·m)/rad
+\\b = 5e-5          # (N·m)/(rad/s)
+\\Jtot = 1e-4      # kg·m²
+\\l = 5e-2          # m
+\\g = 9.81          # m/s²
+\\m = 1e-3          # kg (1 g)
+\\
+\\# Perturbation : ajout d'une masse à t = 1 s
+\\def perturbation(t):
+\\    return m * g * l if t >= 1 else 0
+\\
+\\# Équation différentielle du système en boucle fermée avec régulateur P
+\\def systemode(theta, t, Kp):
+\\    dthetadt = theta[1]
+\\    # Perturbation (couple dû à la masse)
+\\    tauperturbation = perturbation(t)
+\\    # Couple des bobines : Kbobines * i, avec i = Kp * (-theta[0])
+\\    taubobines = -Kbobines * Kp * theta[0]
+\\    # Équation différentielle : J * d²θ/dt² = -kθ - b dθ/dt + τbobines + τperturbation
+\\    d2thetadt2 = (-k * theta[0] - b * theta[1] + taubobines + tauperturbation) / Jtot
+\\    return [dthetadt, d2thetadt2]
+\\
+\\# Temps de simulation
+\\t = np.linspace(0, 30, 1000)
+\\
+\\# Simulation pour Kp = 1
+\\solKp1 = odeint(systemode, [0, 0], t, args=(1,))
+\\
+\\# Simulation pour Kp = 100
+\\solKp100 = odeint(systemode, [0, 0], t, args=(100,))
+\\
+\\# Tracé des résultats
+\\plt.figure(figsize=(12, 6))
+\\plt.plot(t, solKp1[:, 0], label='Kp = 1')
+\\plt.plot(t, solKp100[:, 0], label='Kp = 100')
+\\plt.axvline(x=1, color='gray', linestyle='--', label='Ajout de la masse (t=1s)')
+\\plt.xlabel('Temps (s)')
+\\plt.ylabel('Position angulaire θ (rad)')
+\\plt.title('Réponse du système pour Kp = 1 et Kp = 100')
+\\plt.legend()
+\\plt.grid(True)
+\\plt.show()
 
 \end{document}
 
