@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  18 FEB 2026 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  23 FEB 2026 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -464,12 +464,6 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `fig:montage_elec' multiply defined.
 
-
-LaTeX Warning: Label `fig:montage_elec' multiply defined.
-
-
-LaTeX Warning: Label `fig:montage_elec' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
@@ -595,7 +589,7 @@ OK, entering \batchmode...
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<./ressources/AB.png, id=105, 481.8pt x 239.89626pt>
+<./ressources/AB.png, id=95, 481.8pt x 239.89626pt>
 File: ./ressources/AB.png Graphic file (type png)
 <use ./ressources/AB.png>
 Package pdftex.def Info: ./ressources/AB.png  used on input line 57.
@@ -711,155 +705,196 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--93
  []
 
  [2 <./ressources/AB.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
-<./ressources/reponse_indicielle.png, id=115, 1187.18532pt x 657.2053pt>
+<./ressources/reponse_indicielle.png, id=105, 1187.18532pt x 657.2053pt>
 File: ./ressources/reponse_indicielle.png Graphic file (type png)
 <use ./ressources/reponse_indicielle.png>
 Package pdftex.def Info: ./ressources/reponse_indicielle.png  used on input lin
-e 113.
+e 117.
 (pdftex.def)             Requested size: 474.8657pt x 262.87746pt.
 
-Overfull \hbox (5.11069pt too wide) in paragraph at lines 113--115
+Overfull \hbox (5.11069pt too wide) in paragraph at lines 117--119
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
-<./ressources/proprieter.png, id=116, 235.63031pt x 225.09094pt>
+<./ressources/proprieter.png, id=106, 235.63031pt x 225.09094pt>
 File: ./ressources/proprieter.png Graphic file (type png)
 <use ./ressources/proprieter.png>
-Package pdftex.def Info: ./ressources/proprieter.png  used on input line 121.
+Package pdftex.def Info: ./ressources/proprieter.png  used on input line 127.
 (pdftex.def)             Requested size: 187.89914pt x 179.49597pt.
  [3 <./ressources/reponse_indicielle.png>] [4 <./ressources/proprieter.png>]
-<./ressources/Exo2_A.png, id=128, 962.09438pt x 417.81094pt>
+<./ressources/Exo2_A.png, id=118, 962.09438pt x 417.81094pt>
 File: ./ressources/Exo2_A.png Graphic file (type png)
 <use ./ressources/Exo2_A.png>
-Package pdftex.def Info: ./ressources/Exo2_A.png  used on input line 145.
+Package pdftex.def Info: ./ressources/Exo2_A.png  used on input line 150.
 (pdftex.def)             Requested size: 481.046pt x 208.90495pt.
 
-Overfull \hbox (11.29099pt too wide) in paragraph at lines 145--146
+Overfull \hbox (11.29099pt too wide) in paragraph at lines 150--151
  [] 
  []
 
-<./ressources/EXO2_A_scop.png, id=129, 599.99156pt x 453.94594pt>
+<./ressources/EXO2_A_scop.png, id=119, 599.99156pt x 453.94594pt>
 File: ./ressources/EXO2_A_scop.png Graphic file (type png)
 <use ./ressources/EXO2_A_scop.png>
-Package pdftex.def Info: ./ressources/EXO2_A_scop.png  used on input line 150.
-(pdftex.def)             Requested size: 187.89914pt x 142.16252pt.
+Package pdftex.def Info: ./ressources/EXO2_A_scop.png  used on input line 155.
+(pdftex.def)             Requested size: 359.99771pt x 272.36966pt.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 151.
-See the caption package documentation for explanation.
+! LaTeX Error: There's no line here to end.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159 	N
+        ous pouvons confirmer que le schéma représente en effet le systèm...
 
-Underfull \hbox (badness 4792) in paragraph at lines 156--157
-[]\OT1/cmr/m/n/12 Nous pou-vons con-firmer que le sch^^Sema
- []
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-<./ressources/Exo2_B.png, id=130, 874.76813pt x 392.96812pt>
+ [5 <./ressources/Exo2_A.png> <./ressources/EXO2_A_scop.png>]
+<./ressources/Exo2_B.png, id=128, 874.76813pt x 392.96812pt>
 File: ./ressources/Exo2_B.png Graphic file (type png)
 <use ./ressources/Exo2_B.png>
 Package pdftex.def Info: ./ressources/Exo2_B.png  used on input line 166.
 (pdftex.def)             Requested size: 437.383pt x 196.48357pt.
- [5 <./ressources/Exo2_A.png> <./ressources/EXO2_A_scop.png>]
-<./ressources/Exo2_B_scop.png, id=139, 598.48593pt x 447.17062pt>
+<./ressources/Exo2_B_scop.png, id=129, 598.48593pt x 447.17062pt>
 File: ./ressources/Exo2_B_scop.png Graphic file (type png)
 <use ./ressources/Exo2_B_scop.png>
 Package pdftex.def Info: ./ressources/Exo2_B_scop.png  used on input line 172.
-(pdftex.def)             Requested size: 187.89914pt x 140.38867pt.
+(pdftex.def)             Requested size: 359.09433pt x 268.30444pt.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 173.
-See the caption package documentation for explanation.
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 	\\L
+          es réponses obtenues sont identiques. Et c'est normal... Le bloc ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
  [6 <./ressources/Exo2_B.png> <./ressources/Exo2_B_scop.png>]
-<./ressources/C.png, id=148, 598.235pt x 328.22626pt>
+<./ressources/C.png, id=138, 598.235pt x 328.22626pt>
 File: ./ressources/C.png Graphic file (type png)
 <use ./ressources/C.png>
-Package pdftex.def Info: ./ressources/C.png  used on input line 193.
+Package pdftex.def Info: ./ressources/C.png  used on input line 187.
 (pdftex.def)             Requested size: 358.94377pt x 196.93727pt.
  [7 <./ressources/C.png>]
-<./ressources/basic.png, id=156, 745.78625pt x 226.8475pt>
+<./ressources/basic.png, id=146, 745.78625pt x 226.8475pt>
 File: ./ressources/basic.png Graphic file (type png)
 <use ./ressources/basic.png>
-Package pdftex.def Info: ./ressources/basic.png  used on input line 202.
-(pdftex.def)             Requested size: 522.04683pt x 158.79216pt.
-
-Overfull \hbox (52.29181pt too wide) in paragraph at lines 202--203
- [] 
- []
-
-<./ressources/basic_graph.png, id=157, 958.58125pt x 696.6025pt>
+Package pdftex.def Info: ./ressources/basic.png  used on input line 196.
+(pdftex.def)             Requested size: 372.89221pt x 113.42346pt.
+<./ressources/basic_graph.png, id=147, 958.58125pt x 696.6025pt>
 File: ./ressources/basic_graph.png Graphic file (type png)
 <use ./ressources/basic_graph.png>
-Package pdftex.def Info: ./ressources/basic_graph.png  used on input line 207.
+Package pdftex.def Info: ./ressources/basic_graph.png  used on input line 201.
 (pdftex.def)             Requested size: 383.4257pt x 278.63606pt.
+
+! LaTeX Error: Unicode character θ (U+03B8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ... Avant t=1 s, le fléau est stable à $θ
+                                                  =0$. Quand on ajoute la ma...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ζ (U+03B6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 ...vent que le système est sous-amorti $(ζ
+                                                  <1)$, et l’erreur statiq...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
  [8 <./ressources/basic.png> <./ressources/basic_graph.png>]
-<./ressources/P.png, id=167, 908.39375pt x 319.1925pt>
+<./ressources/P.png, id=156, 908.39375pt x 319.1925pt>
 File: ./ressources/P.png Graphic file (type png)
 <use ./ressources/P.png>
-Package pdftex.def Info: ./ressources/P.png  used on input line 216.
+Package pdftex.def Info: ./ressources/P.png  used on input line 211.
 (pdftex.def)             Requested size: 454.19577pt x 159.59586pt.
-<./ressources/P_graph.png, id=168, 958.58125pt x 696.6025pt>
+<./ressources/P_graph.png, id=157, 958.58125pt x 696.6025pt>
 File: ./ressources/P_graph.png Graphic file (type png)
 <use ./ressources/P_graph.png>
-Package pdftex.def Info: ./ressources/P_graph.png  used on input line 221.
+Package pdftex.def Info: ./ressources/P_graph.png  used on input line 216.
 (pdftex.def)             Requested size: 383.4257pt x 278.63606pt.
  [9 <./ressources/P.png> <./ressources/P_graph.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 227.
+(hyperref)                removing `math shift' on input line 222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 227.
+(hyperref)                removing `subscript' on input line 222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 227.
+(hyperref)                removing `math shift' on input line 222.
 
-<./ressources/annexe.png, id=177, 867.24pt x 433.62pt>
+<./ressources/annexe.png, id=167, 867.24pt x 433.62pt>
 File: ./ressources/annexe.png Graphic file (type png)
 <use ./ressources/annexe.png>
-Package pdftex.def Info: ./ressources/annexe.png  used on input line 232.
-(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
- [10 <./ressources/annexe.png>]
-<./ressources/PI.png, id=223, 908.39375pt x 319.1925pt>
-File: ./ressources/PI.png Graphic file (type png)
-<use ./ressources/PI.png>
-Package pdftex.def Info: ./ressources/PI.png  used on input line 243.
-(pdftex.def)             Requested size: 454.19577pt x 159.59586pt.
-<./ressources/PI_graph.png, id=224, 941.5175pt x 702.625pt>
-File: ./ressources/PI_graph.png Graphic file (type png)
-<use ./ressources/PI_graph.png>
-Package pdftex.def Info: ./ressources/PI_graph.png  used on input line 248.
-(pdftex.def)             Requested size: 376.60033pt x 281.04501pt.
- [11 <./ressources/PI.png> <./ressources/PI_graph.png>]
-<./ressources/all.png, id=233, 989.6975pt x 533.995pt>
-File: ./ressources/all.png Graphic file (type png)
-<use ./ressources/all.png>
-Package pdftex.def Info: ./ressources/all.png  used on input line 260.
-(pdftex.def)             Requested size: 494.84753pt x 266.99684pt.
+Package pdftex.def Info: ./ressources/annexe.png  used on input line 227.
+(pdftex.def)             Requested size: 520.34802pt x 260.17401pt.
 
-Overfull \hbox (25.09251pt too wide) in paragraph at lines 260--261
+Overfull \hbox (50.593pt too wide) in paragraph at lines 227--228
  [] 
  []
 
-<./ressources/all_graph.png, id=234, 941.5175pt x 542.025pt>
+ [10 <./ressources/annexe.png>]
+<./ressources/PI.png, id=213, 908.39375pt x 319.1925pt>
+File: ./ressources/PI.png Graphic file (type png)
+<use ./ressources/PI.png>
+Package pdftex.def Info: ./ressources/PI.png  used on input line 238.
+(pdftex.def)             Requested size: 454.19577pt x 159.59586pt.
+<./ressources/PI_graph.png, id=214, 941.5175pt x 702.625pt>
+File: ./ressources/PI_graph.png Graphic file (type png)
+<use ./ressources/PI_graph.png>
+Package pdftex.def Info: ./ressources/PI_graph.png  used on input line 243.
+(pdftex.def)             Requested size: 376.60033pt x 281.04501pt.
+ [11 <./ressources/PI.png> <./ressources/PI_graph.png>]
+<./ressources/all.png, id=223, 989.6975pt x 533.995pt>
+File: ./ressources/all.png Graphic file (type png)
+<use ./ressources/all.png>
+Package pdftex.def Info: ./ressources/all.png  used on input line 255.
+(pdftex.def)             Requested size: 494.84753pt x 266.99684pt.
+
+Overfull \hbox (25.09251pt too wide) in paragraph at lines 255--256
+ [] 
+ []
+
+<./ressources/all_graph.png, id=224, 941.5175pt x 542.025pt>
 File: ./ressources/all_graph.png Graphic file (type png)
 <use ./ressources/all_graph.png>
-Package pdftex.def Info: ./ressources/all_graph.png  used on input line 265.
+Package pdftex.def Info: ./ressources/all_graph.png  used on input line 260.
 (pdftex.def)             Requested size: 376.60033pt x 216.80615pt.
  [12 <./ressources/all.png> <./ressources/all_graph.png>]
 
@@ -869,7 +904,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.271 \\i
+l.266 \\i
          mport numpy as np
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -878,7 +913,7 @@ or  <return>  to continue without it.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.275 \\#
+l.270 \\#
           Paramètres du système
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -886,7 +921,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.276 \\Kbobines = 1e-3  #
+l.271 \\Kbobines = 1e-3  #
                            (N·m)/A
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -894,7 +929,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.277 \\k = 2e-3          #
+l.272 \\k = 2e-3          #
                             (N·m)/rad
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -902,7 +937,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.278 \\b = 5e-5          #
+l.273 \\b = 5e-5          #
                             (N·m)/(rad/s)
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -910,7 +945,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.279 \\Jtot = 1e-4      #
+l.274 \\Jtot = 1e-4      #
                            kg·m²
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -918,7 +953,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.280 \\l = 5e-2          #
+l.275 \\l = 5e-2          #
                             m
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -926,7 +961,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.281 \\g = 9.81          #
+l.276 \\g = 9.81          #
                             m/s²
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -934,7 +969,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.282 \\m = 1e-3          #
+l.277 \\m = 1e-3          #
                             kg (1 g)
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -944,7 +979,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.284 \\#
+l.279 \\#
           Perturbation : ajout d'une masse à t = 1 s
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -954,7 +989,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.288 \\#
+l.283 \\#
           Équation différentielle du système en boucle fermée avec régu...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -964,7 +999,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.291 \\    #
+l.286 \\    #
               Perturbation (couple dû à la masse)
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -974,7 +1009,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.293 \\    #
+l.288 \\    #
               Couple des bobines : Kbobines * i, avec i = Kp * (-theta[0])
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -984,7 +1019,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.295 \\    #
+l.290 \\    #
               Équation différentielle : J * d²θ/dt² = -kθ - b dθ/dt +...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -999,7 +1034,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...  # Équation différentielle : J * d²θ
+l.290 ...  # Équation différentielle : J * d²θ
                                                   /dt² = -kθ - b dθ/dt + ...
 
 You may provide a definition with
@@ -1013,7 +1048,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...n différentielle : J * d²θ/dt² = -kθ
+l.290 ...n différentielle : J * d²θ/dt² = -kθ
                                                    - b dθ/dt + τbobines + ...
 
 You may provide a definition with
@@ -1027,7 +1062,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...rentielle : J * d²θ/dt² = -kθ - b dθ
+l.290 ...rentielle : J * d²θ/dt² = -kθ - b dθ
                                                   /dt + τbobines + τpertur...
 
 You may provide a definition with
@@ -1041,7 +1076,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...e : J * d²θ/dt² = -kθ - b dθ/dt + τ
+l.290 ...e : J * d²θ/dt² = -kθ - b dθ/dt + τ
                                                   bobines + τperturbation
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1054,7 +1089,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...�/dt² = -kθ - b dθ/dt + τbobines + τ
+l.290 ...�/dt² = -kθ - b dθ/dt + τbobines + τ
                                                   perturbation
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1062,7 +1097,7 @@ You may provide a definition with
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.299 \\#
+l.294 \\#
           Temps de simulation
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1072,7 +1107,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.302 \\#
+l.297 \\#
           Simulation pour Kp = 1
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1082,7 +1117,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.305 \\#
+l.300 \\#
           Simulation pour Kp = 100
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1092,7 +1127,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.308 \\#
+l.303 \\#
           Tracé des résultats
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1107,43 +1142,43 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314 \\plt.ylabel('Position angulaire θ
+l.309 \\plt.ylabel('Position angulaire θ
                                           (rad)')
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--319
+Underfull \hbox (badness 10000) in paragraph at lines 266--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--319
+Underfull \hbox (badness 10000) in paragraph at lines 266--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--319
+Underfull \hbox (badness 10000) in paragraph at lines 266--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--319
+Underfull \hbox (badness 10000) in paragraph at lines 266--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--319
+Underfull \hbox (badness 10000) in paragraph at lines 266--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--319
+Underfull \hbox (badness 10000) in paragraph at lines 266--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--319
+Underfull \hbox (badness 10000) in paragraph at lines 266--314
 
  []
 
@@ -1157,16 +1192,16 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 79AAE7E4B46D830273AC6262F17C3B04;4045.
+(rerunfilecheck)             Checksum: BF766FB2A102F7298651DD4B10C9E7CF;3667.
  ) 
 Here is how much of TeX's memory you used:
- 13626 strings out of 474222
- 214686 string characters out of 5748733
- 1935975 words of memory out of 5000000
- 35638 multiletter control sequences out of 15000+600000
+ 13622 strings out of 474222
+ 214619 string characters out of 5748733
+ 1934975 words of memory out of 5000000
+ 35636 multiletter control sequences out of 15000+600000
  564699 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,8n,117p,392b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,8n,117p,542b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -1177,10 +1212,10 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pf
 b>
-Output written on main.pdf (14 pages, 675118 bytes).
+Output written on main.pdf (14 pages, 677899 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

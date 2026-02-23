@@ -7,8 +7,6 @@
 \contentsline {subsection}{\numberline {2.5}E : Réponse indicielle à 1N}{3}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}F : Overshoot, Rising time, Settling time}{4}{subsection.2.6}%
 \contentsline {section}{\numberline {3}Exercice 2 : Système masse-ressort (simulink)}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}A : Reproduction du schema}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}B : Ajout du bloc LTI}{6}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Exercice 3 : Balance à fléau}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}A : Schema Simulink}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}B : Application d'un regulateur proportionnel (P)}{9}{subsection.4.2}%

@@ -98,11 +98,15 @@ A partir de l'equation précédante, nous détérminons la fonction de transfert
 % Notes sur le code matlab
 Completer...
 \subsection{D : Affichage FT G(s) sous forme d'Evans et de Bode}
-G(s) représenté sous ses formes de Bode et d'Evans : \\
+G(s) représenté sous ses formes de Bode et d'Evans. La commande $Gs\_zpk\_evans$ affiche la fonction de transfert sous forme zéros-pôles-gain, utile pour analyser la stabilité et la dynamique du système. \\
+\\
 \[
 	Evans \rightarrow \frac{10}{s^2 + 20s + 2000}
 \]
 \\
+Les commandes $Gs\_zpk\_bode$ et 
+$Gs\_zpk\_bode.DisplayFormat$;\\
+ permettent d’afficher la fonction de transfert sous une forme adaptée à l’analyse fréquentiel
 \[
 	Bode \rightarrow \frac{0.005}{(1+ 0.4472(\frac{s}{44,72}) + \frac{s}{44/72}^2}
 \]
@@ -113,6 +117,8 @@ G(s) représenté sous ses formes de Bode et d'Evans : \\
         \includegraphics[scale=0.4]{reponse_indicielle.png}
         \end{centering}
 \end{figure}
+La commande step(Gs) trace la réponse temporelle du système à une entrée en échelon unitaire. Nous pouvons observer la reponse a un echelon de force de 1N.
+
 Grâce aux fonctions graphiques de Simulink, nous observons la réponse indicielle du système avec un Overshoot de 48.5\% a 0.0737 secondes. Le rising time est de 0.0412.
 
 \subsection{F : Overshoot, Rising time, Settling time}
@@ -127,7 +133,7 @@ Grâce aux fonctions graphiques de Simulink, nous observons la réponse indiciel
 \noindent \end{minipage}
 
 \vspace{1cm}
-
+Le Overshoot est un pourcentage par lequel la réponse dépasse la valeur finale. Le RiseTime est le temps nécessaire de 10$\%$ à 90$\%$ de la valeur finale et le SettlingTime est le temps necessaire pour que la réponse reste dans une bande de $\pm$ 5 $\%$ fde la valeur finale. 
 
 
 \newpage
@@ -139,46 +145,34 @@ Grâce aux fonctions graphiques de Simulink, nous observons la réponse indiciel
 \section{Exercice 2 : Système masse-ressort (simulink)}
 
 
-\subsection{A : Reproduction du schema}
 \begin{figure}[H]
         \begin{center}
         \includegraphics[scale=0.5]{Exo2_A.png}
         \end{center}
 \end{figure}
-\vspace{1cm}
-\noindent \begin{minipage}{0.4\textwidth}
-\includegraphics[width=\textwidth]{EXO2_A_scop.png}
-        \captionof{figure}{U$^2$(1/D$^2$)}
-\label{fig:montage_elec}
-\end{minipage}
-\hspace{1cm}
-\begin{minipage}{0.5\textwidth}
+\begin{figure}[H]
+	\begin{center}
+\includegraphics[scale=0.6]{EXO2_A_scop.png}
+	\end{center}
+\end{figure}
+	\\
 	Nous pouvons confirmer que le schéma représente en effet le système étudié, car lors de la simulation nous retrouvons la même courbe que dans l'exercice précédant (section 2.5 E). (soit charactérisé par un amortissement faible, de même amplitude, nombre d'oscillation et gain statique)
-\noindent \end{minipage}
 
-\vspace{1cm}
-
+\newpage
 
 
-\subsection{B : Ajout du bloc LTI} 
 \begin{figure}[H]
         \begin{center}
         \includegraphics[scale=0.5]{Exo2_B.png}
         \end{center}
 \end{figure}
 
-\vspace{1cm}
-\noindent \begin{minipage}{0.4\textwidth}
-\includegraphics[width=\textwidth]{Exo2_B_scop.png}
-        \captionof{figure}{U$^2$(1/D$^2$)}
-\label{fig:montage_elec}
-\end{minipage}
-\hspace{1cm}
-\begin{minipage}{0.5\textwidth}
-	Les réponses obtenues sont identiques. Et c'est normal... Le bloc LTI est simplement un bloc logique reprsentant le système charactérisé par G(s). Un même système aura la même sortie pour une même entrée.
-\noindent \end{minipage}
-
-\vspace{1cm}
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.6]{Exo2_B_scop.png}
+	\end{center}
+\end{figure}
+	\\Les réponses obtenues sont identiques. Et c'est normal... Le bloc LTI est simplement un bloc logique reprsentant le système charactérisé par G(s). Un même système aura la même sortie pour une même entrée.
 
 
 \newpage
@@ -199,7 +193,7 @@ Image is self-explanatory.
 \subsection{A : Schema Simulink}
 \begin{figure}[H]
         \begin{center}
-        \includegraphics[scale=0.7]{basic.png}
+        \includegraphics[scale=0.5]{basic.png}
         \end{center}
 \end{figure}
 \begin{figure}[H]
@@ -207,6 +201,7 @@ Image is self-explanatory.
         \includegraphics[scale=0.4]{basic_graph.png}
 	\end{center}
 \end{figure}
+La courbe du point 3A montre la réponse d’un système sous-amorti à une perturbation brutale. Avant t=1 s, le fléau est stable à $θ=0$. Quand on ajoute la masse, le système oscille avec une amplitude qui diminue progressivement à cause de l’amortissement, jusqu’à se stabiliser à une nouvelle position d’équilibre. Les oscillations prouvent que le système est sous-amorti $(ζ<1)$, et l’erreur statique finale montre qu’il ne revient pas exactement à sa position initiale sans correction.
 
 
 \newpage
@@ -221,7 +216,7 @@ Image is self-explanatory.
         \includegraphics[scale=0.4]{P_graph.png}
         \end{center}
 \end{figure}
-
+En ajoutant un regulateur proportiponnel de gain $K_p$ = 10, le système va tenter de rejeter la perturbation (la masse ajoutée). La réponse sera plus rapide et plus stable qu’en boucle ouverte, mais il peut y avoir un erreur statique (la position ne revient pas exactement à 0 rad)
 
 \newpage
 \subsection{C : Changement du comportement induit par $K_p$}
@@ -229,7 +224,7 @@ Nous avons oublié de run la simulation pour différents gains du régulateur $K
 En un second temps, nous avons reconstitué avec python le systeme en question : 
 \begin{figure}[H]
         \begin{center}
-        \includegraphics[scale=0.5]{annexe.png}
+        \includegraphics[scale=0.6]{annexe.png}
         \end{center}
 \end{figure}
 
@@ -248,7 +243,7 @@ Quand K augmente nous observons l'inverse. (nO++, A--)
         \includegraphics[scale=0.4]{PI_graph.png}
 \end{center}
 \end{figure}
-Nous observons que le système se stabilise vers son état avant la perturbation. 
+Nous observons que le système se stabilise vers son état avant la perturbation. En d'autres termes, le regulateur integrateur annule l'erreur statique. Nous observons egalement une réponse plus lente, mais plus précise à long terme. 
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
