@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  18 MAR 2026 13:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  18 MAR 2026 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -599,13 +599,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--55
 
  []
 
-<./ressources/images/test.png, id=48, 769.87625pt x 392.46625pt>
+<./ressources/images/test.png, id=113, 769.87625pt x 392.46625pt>
 File: ./ressources/images/test.png Graphic file (type png)
 <use ./ressources/images/test.png>
 Package pdftex.def Info: ./ressources/images/test.png  used on input line 60.
 (pdftex.def)             Requested size: 469.75502pt x 239.4759pt.
  [2 <./ressources/images/test.png>]
-<./ressources/images/FIG_A_propre.png, id=56, 612.78937pt x 361.35pt>
+<./ressources/images/FIG_A_propre.png, id=121, 612.78937pt x 361.35pt>
 File: ./ressources/images/FIG_A_propre.png Graphic file (type png)
 <use ./ressources/images/FIG_A_propre.png>
 Package pdftex.def Info: ./ressources/images/FIG_A_propre.png  used on input li
@@ -621,52 +621,58 @@ LaTeX Warning: Reference `fig:A' on page 3 undefined on input line 90.
 
  [3 <./ressources/images/FIG_A_propre.png>]
 
-LaTeX Warning: File `Exo2_A.png' not found on input line 104.
+Package caption Warning: \label without proper reference on input line 105.
+See the caption package documentation for explanation.
 
 
-! Package pdftex.def Error: File `Exo2_A.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104 ...  \includegraphics[scale=0.5]{Exo2_A.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:graph' on page 4 undefined on input line 101.
 
 
-LaTeX Warning: File `EXO2_A_scop.png' not found on input line 109.
+LaTeX Warning: Citation `protocole' on page 4 undefined on input line 101.
+
+<./ressources/images/graph.png, id=131, 1311.90125pt x 487.8225pt>
+File: ./ressources/images/graph.png Graphic file (type png)
+<use ./ressources/images/graph.png>
+Package pdftex.def Info: ./ressources/images/graph.png  used on input line 104.
+
+(pdftex.def)             Requested size: 655.94902pt x 243.91064pt.
+
+Overfull \hbox (186.194pt too wide) in paragraph at lines 104--106
+ [] 
+ []
+
+! Double subscript.
+l.110     G_m_
+              o_t(s) = \frac{4.53 \cdot 10^3}{1 + s\cdot 8 \cdot 10^-3}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.110     G_m_o_
+                t(s) = \frac{4.53 \cdot 10^3}{1 + s\cdot 8 \cdot 10^-3}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.113     G_e_
+              l_e(s) = \frac{20.8 \cdot 10^-3}{1 + s\cdot 1.5 \cdot 10^-4}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.113     G_e_l_
+                e(s) = \frac{20.8 \cdot 10^-3}{1 + s\cdot 1.5 \cdot 10^-4}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.116     G_m_
+              e_s(s) = 10.7 \cdot 10^-3
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.116     G_m_e_
+                s(s) = 10.7 \cdot 10^-3
+I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-! Package pdftex.def Error: File `EXO2_A_scop.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 \includegraphics[scale=0.6]{EXO2_A_scop.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
- [4]
-
-LaTeX Warning: File `Exo2_B.png' not found on input line 119.
+LaTeX Warning: File `Exo2_B.png' not found on input line 124.
 
 
 ! Package pdftex.def Error: File `Exo2_B.png' not found: using draft setting.
@@ -675,13 +681,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.119 ...  \includegraphics[scale=0.5]{Exo2_B.png}
+l.124 ...  \includegraphics[scale=0.5]{Exo2_B.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `Exo2_B_scop.png' not found on input line 125.
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 133.
 
 
 ! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
@@ -691,14 +697,176 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+l.133 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ [4 <./ressources/images/graph.png>]
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 142.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 151.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 161.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 170.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 179.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 187.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.187 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
  [5]
 
-LaTeX Warning: File `all.png' not found on input line 139.
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 195.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 211.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 219.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 227.
+
+
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ [6]
+
+LaTeX Warning: File `all.png' not found on input line 241.
 
 
 ! Package pdftex.def Error: File `all.png' not found: using draft setting.
@@ -707,13 +875,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 ...    \includegraphics[scale=0.45]{all.png}
+l.241 ...    \includegraphics[scale=0.45]{all.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `all_graph.png' not found on input line 144.
+LaTeX Warning: File `all_graph.png' not found on input line 246.
 
 
 ! Package pdftex.def Error: File `all_graph.png' not found: using draft setting
@@ -723,12 +891,12 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.144 ...includegraphics[scale=0.4]{all_graph.png}
+l.246 ...includegraphics[scale=0.4]{all_graph.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
- [6] [7] (./main.aux)
+ [7] [8] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -737,26 +905,29 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 52F3C655C14279F15A96F03FDF998F75;1536.
+(rerunfilecheck)             Checksum: 2126E6BC0647911346F36EDBAE8E118F;5441.
  ) 
 Here is how much of TeX's memory you used:
- 13625 strings out of 474222
- 214285 string characters out of 5748733
- 1928975 words of memory out of 5000000
- 35663 multiletter control sequences out of 15000+600000
+ 13611 strings out of 474222
+ 213776 string characters out of 5748733
+ 1937975 words of memory out of 5000000
+ 35626 multiletter control sequences out of 15000+600000
  564531 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,7n,117p,507b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,8n,117p,507b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (7 pages, 544626 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt12.pfb>
+Output written on main.pdf (8 pages, 619663 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 226 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
