@@ -2,10 +2,6 @@
 \contentsline {section}{\numberline {2}Exercice 1 : Analyse empirique du banc de test}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}A : Estimation de la fonction de transfert du système}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}B/C/D : Vérification de la fonction de transfert}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}C : Code matlab}{3}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}D : Affichage FT G(s) sous forme d'Evans et de Bode}{3}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}E : Réponse indicielle à 1N}{4}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}F : Overshoot, Rising time, Settling time}{4}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Exercice 2 : Système masse-ressort (simulink)}{5}{section.3}%
-\contentsline {section}{\numberline {4}Conclusion}{7}{section.4}%
-\contentsline {section}{\numberline {5}annexes}{8}{section.5}%
+\contentsline {section}{\numberline {3}Exercice 2 : Système masse-ressort (simulink)}{4}{section.3}%
+\contentsline {section}{\numberline {4}Conclusion}{6}{section.4}%
+\contentsline {section}{\numberline {5}annexes}{7}{section.5}%

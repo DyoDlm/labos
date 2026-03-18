@@ -82,70 +82,42 @@ Dans le graphique suivant, nous pouvons observer que nous avons dû rajouter un 
 
 \begin{figure}[H]
     \begin{center}
-    \includegraphics[scale=0.6]{FIG_A_propre.png}
+    \includegraphics[scale=0.8]{FIG_A_propre.png}
     \label{fig:}
     \end{center}
 \end{figure}
 
 Par définition, $\tau$ peut être déterminé à 66\% du gain final. Nous trouvons 0.111. Cela n'est pas egal a la valeur theorique, mais cela s'explique par le fait que nous ayons ajoute un retard de 0.1. Comme 0.111 - 0.1 = 0.011, nous trouvons en effet une valeurs proche du modele pour $\tau$. Le gains statique qu'illustre Fig. \ref{fig:A} est lui aussi proche de la valeur theorique (85.3259 $\approx$ 85). 
 
-
-\subsection{C : Code matlab}
-\subsection{D : Affichage FT G(s) sous forme d'Evans et de Bode}
-\\
-\[
-	Evans \rightarrow \frac{10}{s^2 + 20s + 2000}
-\]
-\\
-\[
-	Bode \rightarrow \frac{0.005}{(1+ 0.4472(\frac{s}{44,72}) + \frac{s}{44/72}^2}
-\]
-
-\subsection{E : Réponse indicielle à 1N}
-\begin{figure}[h]
-        \begin{centering}
-        \includegraphics[scale=0.4]{reponse_indicielle.png}
-        \end{centering}
-\end{figure}
-
-
-\subsection{F : Overshoot, Rising time, Settling time}
-\vspace{1cm}
-\noindent \begin{minipage}{0.4\textwidth}
-\includegraphics[width=\textwidth]{proprieter.png}
-\label{fig:montage_elec}
-\end{minipage}
-\hspace{1cm}
-\begin{minipage}{0.5\textwidth}
-	Les données receuillies des paramètres donnés par la fonction stepinfo sur labview sont les mêmes que celles sur le graphique (section 2.5 E).
-\noindent \end{minipage}
-
-\vspace{1cm}
-
-
 \newpage
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       Exercices 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Exercice 2 : Système masse-ressort (simulink)}
+\section{Exercice 2 : Rentrons "vla" bien dans les details}
 
-
+Nous schematisons notre systeme sur Fig. \ref{fig:graph} par le produit de 3 sous-systemes (moteur, mesure, element) \cite{protocole}.
 \begin{figure}[H]
         \begin{center}
-        \includegraphics[scale=0.5]{Exo2_A.png}
+        \includegraphics[scale=0.5]{graph.png}
+            \label{fig:graph}
         \end{center}
 \end{figure}
-\begin{figure}[H]
-	\begin{center}
-\includegraphics[scale=0.6]{EXO2_A_scop.png}
-	\end{center}
-\end{figure}
-	\\
+Les fonctions de transfert des sous systemes sont respectivement :
+\[
+    G_m_o_t(s) = \frac{4.53 \cdot 10^3}{1 + s\cdot 8 \cdot 10^-3}
+\]
+\[
+    G_e_l_e(s) = \frac{20.8 \cdot 10^-3}{1 + s\cdot 1.5 \cdot 10^-4}
+\]
+\[
+    G_m_e_s(s) = 10.7 \cdot 10^-3
+\]
 
-\newpage
 
+\subsection{A : Verification graphique}
 
 \begin{figure}[H]
         \begin{center}
@@ -153,10 +125,107 @@ Par définition, $\tau$ peut être déterminé à 66\% du gain final. Nous trouv
         \end{center}
 \end{figure}
 
+
+\subsection{B : Fonction de transfert du systeme complet}
+
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=0.6]{Exo2_B_scop.png}
 	\end{center}
+\end{figure}
+
+
+\subsection{C : Code definissant la fonction de transfert}
+
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
+\end{figure}
+
+
+\subsection{D : Application d'un regulateur PI}
+
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
+\end{figure}
+
+
+\subsection{E : Diagrammes de Bode et Nyquist}
+
+Montrer marge de phase... (completer)
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
+\end{figure}
+
+
+\subsection{F : Diagramme d'Evans et reponse indicielle}
+
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
+\end{figure}
+
+
+\subsection{G : G(s) dans "Control System Designer"}
+
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
+\end{figure}
+
+\subsection{H : (MATLAB == CSD) ? verification graphique}
+
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
+\end{figure}
+
+\subsection{I : Marges de stabilite sur diagramme de Bode}
+
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
+\end{figure}
+
+\subsection{J : Lieu des poles (vous nous avez dit de passer cette question)}
+s
+%\begin{figure}[H]
+%        \begin{center}
+%                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+%                    \end{center}
+%\end{figure}
+
+\subsection{K : Caracteristiques de la reponse indicielle}
+
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
+\end{figure}
+
+\subsection{L : Lien entre gain du regulateur et valeurs de depassement}
+
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
+\end{figure}
+
+\subsection{M : Impact du gain sur la stabilite du systeme}
+
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                    \end{center}
 \end{figure}
 
 
