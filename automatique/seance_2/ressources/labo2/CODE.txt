@@ -1,0 +1,96 @@
+Code EX1 : 
+
+%Labo 2 - Exercice 1
+clear; close all; clc;
+
+%Charger les donnees
+load('Z:\MT\systeme_asservis\SIRAu_stepResponse.mat')
+
+%erifier les variables chargees
+whos
+
+%Tracer les donnees mesurees
+figure;
+t = time;
+y = vitesse;
+plot(t, y,'b','LineWidth',1.2);
+grid on;
+xlabel('Temps [s]');
+ylabel('Vitesse angulaire [rad/s]');
+title('Reponse indicielle mesuree');
+
+%Estimation simple du systeme
+K = 85;          % gain estime
+tau = 0.01;      % constante de temps estimee
+s = tf('s');
+G = K/(1 + tau*s);
+
+%Reponse du modele
+[y_mod, t_mod] = step(exp(-0.1*s)*G, t);
+
+%Superposition mesure / modele
+figure;
+plot(t, y,'b','LineWidth',1.2); hold on;
+plot(t_mod, y_mod,'r--','LineWidth',1.2);
+grid on;
+xlabel('Temps [s]');
+ylabel('Vitesse angulaire [rad/s]');
+title('Comparaison mesure / modele');
+legend('Mesure','Modele');
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Code Ex 2 : 
+
+%% Exercice 1 
+load('Z:\MT\systeme_asservis\SIRAu_stepResponse.mat')
+
+%t = time
+%y = vitesse
+K = 85;          % gain estime
+tau = 0.01;      % constante de temps estimee
+s = tf('s');
+G = K/(1 + tau*s);
+[y_ex1, t_ex1] = step(exp(-0.1*s)*G, t);
+
+
+%% G moteur 
+K = 4.53* 10^3;          % gain estime
+tau = 8 * 10^-3;     % constante de temps estimee
+s = tf('s');
+G_mot = K/(1 + tau*s);
+down_mot = 1 + tau*s;
+
+%% G element 
+K = 20.8*10^-3;          % gain estime
+tau = 1.5*10^-4;      % constante de temps estimee
+s = tf('s');
+G_ele = K/(1 + tau*s);
+down_ele = 1 + tau*s;
+
+%% G mesuré
+K = 10.7*10^-3;          % gain estime
+G_mes = K;
+
+%%  G_final (mot+ele+mes
+K = 10.7 * 4.53 * 20.8 * 10^-3;
+down = down_ele * down_mot;
+G_final = K/down;
+[y_mod, t_mod] = step(G_final, t);
+
+% Reponse du modele
+%[y_mod, t_mod] = step(G_mot*G_ele*exp(-0.1*s), t);
+
+% Reponse du modele
+%[y_mod, t_mod] = step(G_mot*G_ele*exp(-0.1*s) *G_mes, t);
+
+figure;
+%plot(t_ex1, y_ex1,'b','LineWidth',1.2); hold on;
+plot(t_mod, y_mod,'r--','LineWidth',1.2);
+grid on;
+xlabel('Temps [s]');
+ylabel('Vitesse angulaire [rad/s]');
+title('Comparaison mesure / modele');
+legend('Ex1','Gele*Gmot');
+
+%%% 

@@ -1,0 +1,320 @@
+
+% NE PAS TOUCHER
+%++++++++++++++++++++++++++++++++++++++++
+\documentclass[letterpaper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{cite}
+\usepackage[final]{hyperref}
+\usepackage{datatool}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{gensymb}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	citecolor=blue,
+	filecolor=magenta,
+	urlcolor=blue
+}
+%+++++++++++++++++++++++++++++++++++++++++
+
+%	INCLUDES
+\graphicspath{ {./ressources/} }
+
+\begin{document}
+
+\title{Automatique}
+
+\author{Seite Alexander et Nathan Vidonne}
+\date{\today}
+\maketitle
+\newline
+
+\tableofcontents
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Intro 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Exercices 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Exercice 1 : Système masse-ressort (matlab)}
+k représente la constante de raideur du ressort relié à la masse m qui subit un frottement b lors d'un changement de position p par une force f.
+
+\vspace{1cm}
+\noindent \begin{minipage}{0.6\textwidth}
+\includegraphics[width=\textwidth]{AB.png}
+\label{fig:montage_elec}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.5\textwidth}
+\item La position $p$ en $m$
+\item La raideur du ressort $k$ = 200 $\frac{N}{m}$
+\item La viscosité $b$ = 2 $\frac{N}{(m/s)}$
+\item La masse $m$ = 0.1 $kg$
+\item La force appliquée au système f en N
+\noindent \end{minipage}
+
+\vspace{1cm}
+
+
+\subsection{A : Equation du mouvement du système}
+L'equation différentielle du système est définie à partir de la seconde loi de Newton.
+\\
+\[
+	\sum_{}^{}F = ma
+\]
+\[
+	\Leftrightarrow \dot{m} \cdot p(t) = -k\cdot p(t) - b \cdot \dot{p(t)} + f(t)
+\]
+
+\subsection{B : Fonction de transfert (FT) G(s)}
+A partir de l'equation précédante, nous détérminons la fonction de transfert de notre système après avoir réalisé la transformée de Laplace de l'équiation du système.\\ 
+
+\[
+	\mathcal{L} \rightarrow m\cdot s^2 \cdot P(s) = -k \cdot P(s) - b\cdot s \cdot P(s) + F(s)
+\]
+\\
+\[
+	\Leftrightarrow P(s) \cdot (ms^2 + k + b) = F(s)
+\]
+\\
+\[
+	\Leftrightarrow G(s) = \frac{1}{ms^2 + k + b}
+\]
+
+\subsection{C : Code matlab}
+% Notes sur le code matlab
+Completer...
+\subsection{D : Affichage FT G(s) sous forme d'Evans et de Bode}
+G(s) représenté sous ses formes de Bode et d'Evans. La commande $Gs\_zpk\_evans$ affiche la fonction de transfert sous forme zéros-pôles-gain, utile pour analyser la stabilité et la dynamique du système. \\
+\\
+\[
+	Evans \rightarrow \frac{10}{s^2 + 20s + 2000}
+\]
+\\
+Les commandes $Gs\_zpk\_bode$ et 
+$Gs\_zpk\_bode.DisplayFormat$;\\
+ permettent d’afficher la fonction de transfert sous une forme adaptée à l’analyse fréquentiel
+\[
+	Bode \rightarrow \frac{0.005}{(1+ 0.4472(\frac{s}{44,72}) + \frac{s}{44/72}^2}
+\]
+
+\subsection{E : Réponse indicielle à 1N}
+\begin{figure}[h]
+        \begin{centering}
+        \includegraphics[scale=0.4]{reponse_indicielle.png}
+        \end{centering}
+\end{figure}
+La commande step(Gs) trace la réponse temporelle du système à une entrée en échelon unitaire. Nous pouvons observer la reponse a un echelon de force de 1N.
+
+Grâce aux fonctions graphiques de Simulink, nous observons la réponse indicielle du système avec un Overshoot de 48.5\% a 0.0737 secondes. Le rising time est de 0.0412.
+
+\subsection{F : Overshoot, Rising time, Settling time}
+\vspace{1cm}
+\noindent \begin{minipage}{0.4\textwidth}
+\includegraphics[width=\textwidth]{proprieter.png}
+\label{fig:montage_elec}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.5\textwidth}
+	Les données receuillies des paramètres donnés par la fonction stepinfo sur labview sont les mêmes que celles sur le graphique (section 2.5 E).
+\noindent \end{minipage}
+
+\vspace{1cm}
+Le Overshoot est un pourcentage par lequel la réponse dépasse la valeur finale. Le RiseTime est le temps nécessaire de 10$\%$ à 90$\%$ de la valeur finale et le SettlingTime est le temps necessaire pour que la réponse reste dans une bande de $\pm$ 5 $\%$ fde la valeur finale. 
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Exercices 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Exercice 2 : Système masse-ressort (simulink)}
+
+
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.5]{Exo2_A.png}
+        \end{center}
+\end{figure}
+\begin{figure}[H]
+	\begin{center}
+\includegraphics[scale=0.6]{EXO2_A_scop.png}
+	\end{center}
+\end{figure}
+	\\
+	Nous pouvons confirmer que le schéma représente en effet le système étudié, car lors de la simulation nous retrouvons la même courbe que dans l'exercice précédant (section 2.5 E). (soit charactérisé par un amortissement faible, de même amplitude, nombre d'oscillation et gain statique)
+
+\newpage
+
+
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.5]{Exo2_B.png}
+        \end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.6]{Exo2_B_scop.png}
+	\end{center}
+\end{figure}
+	\\Les réponses obtenues sont identiques. Et c'est normal... Le bloc LTI est simplement un bloc logique reprsentant le système charactérisé par G(s). Un même système aura la même sortie pour une même entrée.
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Exercices 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Exercice 3 : Balance à fléau}
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[scale=0.6]{C.png}
+	\end{center}
+\end{figure}
+Image is self-explanatory.
+\newpage
+
+\subsection{A : Schema Simulink}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.5]{basic.png}
+        \end{center}
+\end{figure}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.4]{basic_graph.png}
+	\end{center}
+\end{figure}
+La courbe du point 3A montre la réponse d’un système sous-amorti à une perturbation brutale. Avant t=1 s, le fléau est stable à $θ=0$. Quand on ajoute la masse, le système oscille avec une amplitude qui diminue progressivement à cause de l’amortissement, jusqu’à se stabiliser à une nouvelle position d’équilibre. Les oscillations prouvent que le système est sous-amorti $(ζ<1)$, et l’erreur statique finale montre qu’il ne revient pas exactement à sa position initiale sans correction.
+
+
+\newpage
+\subsection{B : Application d'un regulateur proportionnel (P)}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.5]{P.png}
+        \end{center}
+\end{figure}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.4]{P_graph.png}
+        \end{center}
+\end{figure}
+En ajoutant un regulateur proportiponnel de gain $K_p$ = 10, le système va tenter de rejeter la perturbation (la masse ajoutée). La réponse sera plus rapide et plus stable qu’en boucle ouverte, mais il peut y avoir un erreur statique (la position ne revient pas exactement à 0 rad)
+
+\newpage
+\subsection{C : Changement du comportement induit par $K_p$}
+Nous avons oublié de run la simulation pour différents gains du régulateur $K_p$. Toutefois, nous pouvons affirmer que la variation de $K_p$ impacte directement les oscillations et l'amplitude.\\
+En un second temps, nous avons reconstitué avec python le systeme en question : 
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.6]{annexe.png}
+        \end{center}
+\end{figure}
+
+et constatons que lorsque k est faible donne une réponse lente. Les nombre d'oscillation avant stabilisation est faible et l'amplitude de ces dernieres sont grandes.
+Quand K augmente nous observons l'inverse. (nO++, A--)
+
+\newpage
+\subsection{D : Application d'un regulateur integrateur (PI)}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.5]{PI.png}
+        \end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+        \includegraphics[scale=0.4]{PI_graph.png}
+\end{center}
+\end{figure}
+Nous observons que le système se stabilise vers son état avant la perturbation. En d'autres termes, le regulateur integrateur annule l'erreur statique. Nous observons egalement une réponse plus lente, mais plus précise à long terme. 
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Conclusion 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+\begin{figure}[H]
+        \begin{center}
+        \includegraphics[scale=0.45]{all.png}
+        \end{center}
+\end{figure}
+\begin{figure}[H]
+\begin{center}
+        \includegraphics[scale=0.4]{all_graph.png}
+\end{center}
+\end{figure}
+En résumé, ces expériences montrent comment un système mécanique réagit aux perturbations et comment on peut le contrôler. Sans régulation, le système oscille avant de se stabiliser, mais pas exactement à sa position initiale : il reste une petite erreur. Avec un régulateur proportionnel (P), la réponse s’améliore, mais l’erreur persiste. En ajoutant une action intégrale (PI), on élimine cette erreur, mais il faut bien choisir les paramètres pour éviter trop d’oscillations.
+
+
+\newpage
+\section{annexes}
+\\import numpy as np
+\\import matplotlib.pyplot as plt
+\\from scipy.integrate import odeint
+\\
+\\# Paramètres du système
+\\Kbobines = 1e-3  # (N·m)/A
+\\k = 2e-3          # (N·m)/rad
+\\b = 5e-5          # (N·m)/(rad/s)
+\\Jtot = 1e-4      # kg·m²
+\\l = 5e-2          # m
+\\g = 9.81          # m/s²
+\\m = 1e-3          # kg (1 g)
+\\
+\\# Perturbation : ajout d'une masse à t = 1 s
+\\def perturbation(t):
+\\    return m * g * l if t >= 1 else 0
+\\
+\\# Équation différentielle du système en boucle fermée avec régulateur P
+\\def systemode(theta, t, Kp):
+\\    dthetadt = theta[1]
+\\    # Perturbation (couple dû à la masse)
+\\    tauperturbation = perturbation(t)
+\\    # Couple des bobines : Kbobines * i, avec i = Kp * (-theta[0])
+\\    taubobines = -Kbobines * Kp * theta[0]
+\\    # Équation différentielle : J * d²θ/dt² = -kθ - b dθ/dt + τbobines + τperturbation
+\\    d2thetadt2 = (-k * theta[0] - b * theta[1] + taubobines + tauperturbation) / Jtot
+\\    return [dthetadt, d2thetadt2]
+\\
+\\# Temps de simulation
+\\t = np.linspace(0, 30, 1000)
+\\
+\\# Simulation pour Kp = 1
+\\solKp1 = odeint(systemode, [0, 0], t, args=(1,))
+\\
+\\# Simulation pour Kp = 100
+\\solKp100 = odeint(systemode, [0, 0], t, args=(100,))
+\\
+\\# Tracé des résultats
+\\plt.figure(figsize=(12, 6))
+\\plt.plot(t, solKp1[:, 0], label='Kp = 1')
+\\plt.plot(t, solKp100[:, 0], label='Kp = 100')
+\\plt.axvline(x=1, color='gray', linestyle='--', label='Ajout de la masse (t=1s)')
+\\plt.xlabel('Temps (s)')
+\\plt.ylabel('Position angulaire θ (rad)')
+\\plt.title('Réponse du système pour Kp = 1 et Kp = 100')
+\\plt.legend()
+\\plt.grid(True)
+\\plt.show()
+
+\end{document}
+
+
+
