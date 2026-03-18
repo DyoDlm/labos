@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  23 FEB 2026 16:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  18 MAR 2026 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,11 +460,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box57
 )
-(./main.aux
-
-LaTeX Warning: Label `fig:montage_elec' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -589,168 +585,35 @@ OK, entering \batchmode...
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<./ressources/AB.png, id=95, 481.8pt x 239.89626pt>
-File: ./ressources/AB.png Graphic file (type png)
-<use ./ressources/AB.png>
-Package pdftex.def Info: ./ressources/AB.png  used on input line 57.
-(pdftex.def)             Requested size: 281.85587pt x 140.34422pt.
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 \item L
-            a position $p$ en $m$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Citation `protocole' on page 2 undefined on input line 49.
 
 
-Underfull \hbox (badness 10000) detected at line 62
-[][]
+Overfull \hbox (7.46873pt too wide) in paragraph at lines 45--55
+\OT1/cmr/m/n/12 Nous analysons en deux temps ce banc de test. D'abord, nous dis
+-cu-tons par des repr^^Sesentations
  []
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63 \item L
-            a raideur du ressort $k$ = 200 $\frac{N}{m}$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 63
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 \item L
-            a viscosité $b$ = 2 $\frac{N}{(m/s)}$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 64
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65 \item L
-            a masse $m$ = 0.1 $kg$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 65
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 \item L
-            a force appliquée au système f en N
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 66
-[][]
- []
-
-
-Overfull \hbox (80.65326pt too wide) in paragraph at lines 56--68
-$[]$   $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 45--55
 
  []
 
+<./ressources/images/test.png, id=68, 769.87625pt x 392.46625pt>
+File: ./ressources/images/test.png Graphic file (type png)
+<use ./ressources/images/test.png>
+Package pdftex.def Info: ./ressources/images/test.png  used on input line 60.
+(pdftex.def)             Requested size: 469.75502pt x 239.4759pt.
+ [2 <./ressources/images/test.png>]
+<./ressources/images/FIG_A_propre.png, id=76, 612.78937pt x 361.35pt>
+File: ./ressources/images/FIG_A_propre.png Graphic file (type png)
+<use ./ressources/images/FIG_A_propre.png>
+Package pdftex.def Info: ./ressources/images/FIG_A_propre.png  used on input li
+ne 85.
+(pdftex.def)             Requested size: 367.67645pt x 216.81168pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+LaTeX Warning: Reference `fig:A' on page 3 undefined on input line 90.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
-
- []
-
- [2 <./ressources/AB.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
-
- []
-
-<./ressources/reponse_indicielle.png, id=105, 1187.18532pt x 657.2053pt>
-File: ./ressources/reponse_indicielle.png Graphic file (type png)
-<use ./ressources/reponse_indicielle.png>
-Package pdftex.def Info: ./ressources/reponse_indicielle.png  used on input lin
-e 117.
-(pdftex.def)             Requested size: 474.8657pt x 262.87746pt.
-
-Overfull \hbox (5.11069pt too wide) in paragraph at lines 117--119
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
-
- []
-
-<./ressources/proprieter.png, id=106, 235.63031pt x 225.09094pt>
-File: ./ressources/proprieter.png Graphic file (type png)
-<use ./ressources/proprieter.png>
-Package pdftex.def Info: ./ressources/proprieter.png  used on input line 127.
-(pdftex.def)             Requested size: 187.89914pt x 179.49597pt.
- [3 <./ressources/reponse_indicielle.png>] [4 <./ressources/proprieter.png>]
-<./ressources/Exo2_A.png, id=118, 962.09438pt x 417.81094pt>
-File: ./ressources/Exo2_A.png Graphic file (type png)
-<use ./ressources/Exo2_A.png>
-Package pdftex.def Info: ./ressources/Exo2_A.png  used on input line 150.
-(pdftex.def)             Requested size: 481.046pt x 208.90495pt.
-
-Overfull \hbox (11.29099pt too wide) in paragraph at lines 150--151
- [] 
- []
-
-<./ressources/EXO2_A_scop.png, id=119, 599.99156pt x 453.94594pt>
-File: ./ressources/EXO2_A_scop.png Graphic file (type png)
-<use ./ressources/EXO2_A_scop.png>
-Package pdftex.def Info: ./ressources/EXO2_A_scop.png  used on input line 155.
-(pdftex.def)             Requested size: 359.99771pt x 272.36966pt.
 
 ! LaTeX Error: There's no line here to end.
 
@@ -758,24 +621,82 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 	N
-        ous pouvons confirmer que le schéma représente en effet le systèm...
-
+l.96 \[
+       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- [5 <./ressources/Exo2_A.png> <./ressources/EXO2_A_scop.png>]
-<./ressources/Exo2_B.png, id=128, 874.76813pt x 392.96812pt>
-File: ./ressources/Exo2_B.png Graphic file (type png)
-<use ./ressources/Exo2_B.png>
-Package pdftex.def Info: ./ressources/Exo2_B.png  used on input line 166.
-(pdftex.def)             Requested size: 437.383pt x 196.48357pt.
-<./ressources/Exo2_B_scop.png, id=129, 598.48593pt x 447.17062pt>
-File: ./ressources/Exo2_B_scop.png Graphic file (type png)
-<use ./ressources/Exo2_B_scop.png>
-Package pdftex.def Info: ./ressources/Exo2_B_scop.png  used on input line 172.
-(pdftex.def)             Requested size: 359.09433pt x 268.30444pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+
+LaTeX Warning: File `reponse_indicielle.png' not found on input line 107.
+
+
+! Package pdftex.def Error: File `reponse_indicielle.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 ...aphics[scale=0.4]{reponse_indicielle.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ [3 <./ressources/images/FIG_A_propre.png>]
+
+LaTeX Warning: File `proprieter.png' not found on input line 115.
+
+
+! Package pdftex.def Error: File `proprieter.png' not found: using draft settin
+g.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 ...raphics[width=\textwidth]{proprieter.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ [4]
+
+LaTeX Warning: File `Exo2_A.png' not found on input line 137.
+
+
+! Package pdftex.def Error: File `Exo2_A.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 ...  \includegraphics[scale=0.5]{Exo2_A.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `EXO2_A_scop.png' not found on input line 142.
+
+
+! Package pdftex.def Error: File `EXO2_A_scop.png' not found: using draft setti
+ng.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 \includegraphics[scale=0.6]{EXO2_A_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -783,434 +704,107 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175 	\\L
-          es réponses obtenues sont identiques. Et c'est normal... Le bloc ...
-
+l.146 
+      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- [6 <./ressources/Exo2_B.png> <./ressources/Exo2_B_scop.png>]
-<./ressources/C.png, id=138, 598.235pt x 328.22626pt>
-File: ./ressources/C.png Graphic file (type png)
-<use ./ressources/C.png>
-Package pdftex.def Info: ./ressources/C.png  used on input line 187.
-(pdftex.def)             Requested size: 358.94377pt x 196.93727pt.
- [7 <./ressources/C.png>]
-<./ressources/basic.png, id=146, 745.78625pt x 226.8475pt>
-File: ./ressources/basic.png Graphic file (type png)
-<use ./ressources/basic.png>
-Package pdftex.def Info: ./ressources/basic.png  used on input line 196.
-(pdftex.def)             Requested size: 372.89221pt x 113.42346pt.
-<./ressources/basic_graph.png, id=147, 958.58125pt x 696.6025pt>
-File: ./ressources/basic_graph.png Graphic file (type png)
-<use ./ressources/basic_graph.png>
-Package pdftex.def Info: ./ressources/basic_graph.png  used on input line 201.
-(pdftex.def)             Requested size: 383.4257pt x 278.63606pt.
+ [5]
 
-! LaTeX Error: Unicode character θ (U+03B8)
-               not set up for use with LaTeX.
+LaTeX Warning: File `Exo2_B.png' not found on input line 152.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+! Package pdftex.def Error: File `Exo2_B.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.204 ... Avant t=1 s, le fléau est stable à $θ
-                                                  =0$. Quand on ajoute la ma...
+l.152 ...  \includegraphics[scale=0.5]{Exo2_B.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-You may provide a definition with
-\DeclareUnicodeCharacter 
+
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 158.
 
 
-! LaTeX Error: Unicode character ζ (U+03B6)
-               not set up for use with LaTeX.
+! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
+ng.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.204 ...vent que le système est sous-amorti $(ζ
-                                                  <1)$, et l’erreur statiq...
+l.158 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-You may provide a definition with
-\DeclareUnicodeCharacter 
+ [6]
 
- [8 <./ressources/basic.png> <./ressources/basic_graph.png>]
-<./ressources/P.png, id=156, 908.39375pt x 319.1925pt>
-File: ./ressources/P.png Graphic file (type png)
-<use ./ressources/P.png>
-Package pdftex.def Info: ./ressources/P.png  used on input line 211.
-(pdftex.def)             Requested size: 454.19577pt x 159.59586pt.
-<./ressources/P_graph.png, id=157, 958.58125pt x 696.6025pt>
-File: ./ressources/P_graph.png Graphic file (type png)
-<use ./ressources/P_graph.png>
-Package pdftex.def Info: ./ressources/P_graph.png  used on input line 216.
-(pdftex.def)             Requested size: 383.4257pt x 278.63606pt.
- [9 <./ressources/P.png> <./ressources/P_graph.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 222.
+LaTeX Warning: File `all.png' not found on input line 172.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 222.
+! Package pdftex.def Error: File `all.png' not found: using draft setting.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 222.
-
-<./ressources/annexe.png, id=167, 867.24pt x 433.62pt>
-File: ./ressources/annexe.png Graphic file (type png)
-<use ./ressources/annexe.png>
-Package pdftex.def Info: ./ressources/annexe.png  used on input line 227.
-(pdftex.def)             Requested size: 520.34802pt x 260.17401pt.
-
-Overfull \hbox (50.593pt too wide) in paragraph at lines 227--228
- [] 
- []
-
- [10 <./ressources/annexe.png>]
-<./ressources/PI.png, id=213, 908.39375pt x 319.1925pt>
-File: ./ressources/PI.png Graphic file (type png)
-<use ./ressources/PI.png>
-Package pdftex.def Info: ./ressources/PI.png  used on input line 238.
-(pdftex.def)             Requested size: 454.19577pt x 159.59586pt.
-<./ressources/PI_graph.png, id=214, 941.5175pt x 702.625pt>
-File: ./ressources/PI_graph.png Graphic file (type png)
-<use ./ressources/PI_graph.png>
-Package pdftex.def Info: ./ressources/PI_graph.png  used on input line 243.
-(pdftex.def)             Requested size: 376.60033pt x 281.04501pt.
- [11 <./ressources/PI.png> <./ressources/PI_graph.png>]
-<./ressources/all.png, id=223, 989.6975pt x 533.995pt>
-File: ./ressources/all.png Graphic file (type png)
-<use ./ressources/all.png>
-Package pdftex.def Info: ./ressources/all.png  used on input line 255.
-(pdftex.def)             Requested size: 445.35976pt x 240.29553pt.
-<./ressources/all_graph.png, id=224, 941.5175pt x 542.025pt>
-File: ./ressources/all_graph.png Graphic file (type png)
-<use ./ressources/all_graph.png>
-Package pdftex.def Info: ./ressources/all_graph.png  used on input line 260.
-(pdftex.def)             Requested size: 376.60033pt x 216.80615pt.
- [12 <./ressources/all.png> <./ressources/all_graph.png>]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.268 \\i
-         mport numpy as np
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.272 \\#
-          Paramètres du système
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.273 \\Kbobines = 1e-3  #
-                           (N·m)/A
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.274 \\k = 2e-3          #
-                            (N·m)/rad
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.275 \\b = 5e-5          #
-                            (N·m)/(rad/s)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.276 \\Jtot = 1e-4      #
-                           kg·m²
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.277 \\l = 5e-2          #
-                            m
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.278 \\g = 9.81          #
-                            m/s²
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.279 \\m = 1e-3          #
-                            kg (1 g)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.281 \\#
-          Perturbation : ajout d'une masse à t = 1 s
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.285 \\#
-          Équation différentielle du système en boucle fermée avec régu...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.288 \\    #
-              Perturbation (couple dû à la masse)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.290 \\    #
-              Couple des bobines : Kbobines * i, avec i = Kp * (-theta[0])
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.292 \\    #
-              Équation différentielle : J * d²θ/dt² = -kθ - b dθ/dt +...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+l.172 ...    \includegraphics[scale=0.45]{all.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Unicode character θ (U+03B8)
-               not set up for use with LaTeX.
+LaTeX Warning: File `all_graph.png' not found on input line 177.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+! Package pdftex.def Error: File `all_graph.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.292 ...  # Équation différentielle : J * d²θ
-                                                  /dt² = -kθ - b dθ/dt + ...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character θ (U+03B8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+l.177 ...includegraphics[scale=0.4]{all_graph.png}
                                                   
-l.292 ...n différentielle : J * d²θ/dt² = -kθ
-                                                   - b dθ/dt + τbobines + ...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character θ (U+03B8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.292 ...rentielle : J * d²θ/dt² = -kθ - b dθ
-                                                  /dt + τbobines + τpertur...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character τ (U+03C4)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.292 ...e : J * d²θ/dt² = -kθ - b dθ/dt + τ
-                                                  bobines + τperturbation
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character τ (U+03C4)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.292 ...�/dt² = -kθ - b dθ/dt + τbobines + τ
-                                                  perturbation
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.296 \\#
-          Temps de simulation
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.299 \\#
-          Simulation pour Kp = 1
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.302 \\#
-          Simulation pour Kp = 100
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.305 \\#
-          Tracé des résultats
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-! LaTeX Error: Unicode character θ (U+03B8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.311 \\plt.ylabel('Position angulaire θ
-                                          (rad)')
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--316
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--316
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--316
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--316
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--316
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--316
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--316
-
- []
-
- [13{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [14] (./main.
-aux)
+ [7] [8] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BF766FB2A102F7298651DD4B10C9E7CF;3667.
+(rerunfilecheck)             Checksum: A037D85A28584D1534A0C1713E32B6C4;2520.
  ) 
 Here is how much of TeX's memory you used:
- 13622 strings out of 474222
- 214619 string characters out of 5748733
- 1934975 words of memory out of 5000000
- 35636 multiletter control sequences out of 15000+600000
- 564699 words of font info for 59 fonts, out of 8000000 for 9000
+ 13701 strings out of 474222
+ 216268 string characters out of 5748733
+ 1931975 words of memory out of 5000000
+ 35733 multiletter control sequences out of 15000+600000
+ 564531 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,8n,117p,542b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,7n,117p,507b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pf
-b>
-Output written on main.pdf (14 pages, 678421 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (8 pages, 569197 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
