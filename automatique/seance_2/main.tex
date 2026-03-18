@@ -183,31 +183,56 @@ t = time;
 \newpage
 \subsection{D : Application d'un regulateur PI}
 
-\begin{figure}[H]
-        \begin{center}
-                \includegraphics[scale=0.6]{Exo2_B_scop.png}
-                    \end{center}
-\end{figure}
+\vspace{1cm}
+\noindent \begin{minipage}{0.45\textwidth}
+\includegraphics[width=\textwidth]{g_data_D.png}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.45\textwidth}
+    avec : 
+    \[
+        G_c_f = \frac{2.222e07}{s^2 + 6667 s + 2.222e07}
+    \]
+    Voir le code en annexe.
+    \noindent 
+\end{minipage}
 
+\vspace{1cm}   
 
+\newpage
 \subsection{E : Diagrammes de Bode et Nyquist}
 
 Montrer marge de phase... (completer)
+BODE : 
 \begin{figure}[H]
         \begin{center}
-                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                \includegraphics[scale=1]{FIG_E_G0_Bode.png}
+                    \end{center}
+\end{figure}
+\newpage
+\\NYQUIST : 
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.8]{FIG_E_G0_Nyquist.png}
                     \end{center}
 \end{figure}
 
-
+\newpage
 \subsection{F : Diagramme d'Evans et reponse indicielle}
 
+Reponse indicielle : 
 \begin{figure}[H]
         \begin{center}
-                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                \includegraphics[scale=0.6]{FIG_E_Gcf_reponse_indicielle.png}
                     \end{center}
 \end{figure}
 
+ZEROS (a mettre plus tard peut-etre...): 
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=0.6]{FIG_E_zeros.png}
+    \end{center}
+\end{figure}
 
 \subsection{G : G(s) dans "Control System Designer"}
 
