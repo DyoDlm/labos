@@ -198,11 +198,10 @@ t = time;
 \end{minipage}
 
 \vspace{1cm}   
-
+L'application du regulateur transforme le systeme en boucle fermee (du second ordre).
 \newpage
 \subsection{E : Diagrammes de Bode et Nyquist}
-
-Montrer marge de phase... (completer)
+La marge de phase est d'environ 65 $^\circ$ et la marge de gain est positive. Cela veut dire eque le systeme est stable. 
 BODE : 
 \begin{figure}[H]
         \begin{center}
@@ -216,9 +215,10 @@ BODE :
                 \includegraphics[scale=0.8]{FIG_E_G0_Nyquist.png}
                     \end{center}
 \end{figure}
-
+Le diagramme de Nyquist permet de montrer que le lieu de transfert est exclusivement positif. Cela nous permet d'affirmer la resilience du regulateur PI ou la stabilite du systeme. (reformuler)
 \newpage
 \subsection{F : Diagramme d'Evans et reponse indicielle}
+Par manque de temps, nous n'avons pas trace le diagramme d'evans. Il est sense neanmoins illustrer la trajectoire des poles en boucle fermee.\\\\
 
 Reponse indicielle : 
 \begin{figure}[H]
@@ -226,69 +226,108 @@ Reponse indicielle :
                 \includegraphics[scale=0.6]{FIG_E_Gcf_reponse_indicielle.png}
                     \end{center}
 \end{figure}
+La reponse indicielle illustre un depassement d'environ 5\% et un temps de reponse rapide.
 
-ZEROS (a mettre plus tard peut-etre...): 
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[scale=0.6]{FIG_E_zeros.png}
-    \end{center}
-\end{figure}
-
+\newpage
 \subsection{G : G(s) dans "Control System Designer"}
+
+Nous importons Gs dans "Control System Designer et obtenons :
+\begin{figure}[H]
+        \begin{center}
+            \includegraphics[scale=0.75]{FIG_G_Bode_control_system_designer.png}
+                    \end{center}
+\end{figure}
+\newpage
+C'est comparable avec le tracage que nous effectuons a partir de la ligne de commande 
+ matlab :
 
 \begin{figure}[H]
         \begin{center}
-                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+            \includegraphics[scale=1]{FIG_G_bode_matlab.png}
                     \end{center}
 \end{figure}
+\newpage
 
 \subsection{H : (MATLAB == CSD) ? verification graphique}
 
 \begin{figure}[H]
         \begin{center}
-                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+            \includegraphics[scale=0.49]{FIG_H_GOOOD.png}
                     \end{center}
 \end{figure}
 
+Nous constatons la encore qu'il s'agit des memes schemas qu'avec matlab (voir au point F).
+
+\newpage
+
 \subsection{I : Marges de stabilite sur diagramme de Bode}
+
 
 \begin{figure}[H]
         \begin{center}
                 \includegraphics[scale=0.6]{Exo2_B_scop.png}
                     \end{center}
 \end{figure}
-
+\newpage
 \subsection{J : Lieu des poles (vous nous avez dit de passer cette question)}
-s
-%\begin{figure}[H]
-%        \begin{center}
-%                \includegraphics[scale=0.6]{Exo2_B_scop.png}
-%                    \end{center}
-%\end{figure}
+
+Zeros de Gcf : 
+\begin{figure}[H]
+        \begin{center}
+            \includegraphics[scale=0.7]{FIG_E_zeros.png}
+                    \end{center}
+\end{figure}
 
 \subsection{K : Caracteristiques de la reponse indicielle}
 
 \begin{figure}[H]
         \begin{center}
-                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                \includegraphics[scale=0.5]{FIG_K.png}
                     \end{center}
 \end{figure}
-
+\newpage
 \subsection{L : Lien entre gain du regulateur et valeurs de depassement}
 
+Avec un overshoot de ~5\% : 
 \begin{figure}[H]
         \begin{center}
-                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+                \includegraphics[scale=0.5]{FIG_L_5_overshoot.png}
                     \end{center}
 \end{figure}
 
+Avec un overshoot de ~12\% : 
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.5]{FIG_L_12_overshoot.png}
+                    \end{center}
+\end{figure}
+
+Nous n'avons pas cherche (par manque de temps encore) les valeurs exact du controle designer, mais nous constatons que ...
+\newpage
 \subsection{M : Impact du gain sur la stabilite du systeme}
 
+Nous constatons que la modification du gain ne perturbe pas la stabilite du systeme.\\\\
+GAIN k = 0.1 :
 \begin{figure}[H]
         \begin{center}
-                \includegraphics[scale=0.6]{Exo2_B_scop.png}
+            \includegraphics[scale=0.5]{FIG_M_gain0_1.png}
                     \end{center}
 \end{figure}
+\newpage
+GAIN k = 6 : 
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.5]{FIG_M_gain6.png}
+                    \end{center}
+\end{figure}
+\newpage
+GAIN k = 1000 :
+\begin{figure}[H]
+        \begin{center}
+                \includegraphics[scale=0.5]{FIG_M_gain1000.png}
+                    \end{center}
+\end{figure}
+
 
 
 \newpage
