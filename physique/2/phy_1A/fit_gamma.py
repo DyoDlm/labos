@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
 g = 9.81
-h = 0.01
+h = 0.001
 rho = 998
 
 def v_theorique(lambda_, gamma):
