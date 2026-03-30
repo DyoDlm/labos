@@ -1,0 +1,579 @@
+\section{Introduction}
+
+Le monde oscille. Et pour comprendre comment, ou du moins le comprendre un peu mieux, nous avons utilisé un pendule de Pohl. Ce dernier nous permit d'étudier oscillations et régimes d'amortissement dans la biosphère des systèmes oscillants.
+\\ \\
+Dans la première expérience, nous avons observé les oscillations libres amorties par un frein électromagnétique. Dans la seconde expérience, le pendule a été soumis à une excitation forcée par un moteur.
+\\
+\\Les objectifs de ce travail sont d’abord de déterminer la constante de torsion C du ressort spiral. En un second temps, nous avons voulu étudier les oscillations libres du pendule de Pohl. Pour ce faire : mesurer les paramètres physiques du système \ref{sec:theorie}, établir le lien entre le facteur d’amortissement et le courant, puis en déduire le moment d’inertie J.
+
+Enfin, nous avons voulu comprendre le fonctionnement du pendule de Pohl en régime forcé. Cela fut fait en mesurant l’évolution de la phase et de l’amplitude en fonction de la fréquence imposée au moteur, puis en extrayant la fréquence propre en $\phi$ = $\pi$ / 2 et enfin déterminer les facteurs de qualité du système après avoir extrait la fréquence propre à partir des facteurs d’amortissement et les pulsations propres pour les comparer avec le régime libre.
+\section{Description de l'installation et manipulations}
+
+En premier lieu, voici l'installation du pendule de Pohl dont on peut clairement voir le balancier et le ressort spiral que l'on va manipuler durant les deux expériences.
+
+\begin{figure}[ht]
+\centering
+	\includegraphics[scale=0.6]{schema_pohl.png}
+	\captionof{figure}{ Schéma du pendule de Pohl, ref : \cite{schemapohl} }
+\label{fig:schemapohl}
+\end{figure}
+
+Comme il est possible de le voir en Fig.~\ref{fig:schemapohl}, le dispositif est constitué d’une roue montée sur un axe et reliée à un ressort spiral, dont l’autre extrémité est fixée \ref{sec:libre} ou mise en mouvement \ref{sec:forcee} par un système de transmission liant le balancier au moteur. La roue du balancier passe dans l’entrefer d’un frein de Foucault. Le frein permet de moduler l’amortissement en ajustant le courant mesuré par un ampèremètre (voir Fig.~\ref{fig:samplesetup}).
+\\\\
+Le mouvement angulaire du pendule est enregistré par un encodeur connecté à l’interface Phidgets MATLAB. Cela élimine grandement les erreurs accidentelles de mesure, car les mesures sont principalement électroniques. Des index sur le pendule et l’excitateur permettent de mesurer la phase relative.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{schema_force.png}
+\caption{Schéma électrique pour l'analyse du pendule de Pohl}
+\label{fig:samplesetup}
+\end{figure}
+
+\\\\
+Le schéma est strictement le même pour les expériences en régime libre et en régime forcé. Seule différence : le moteur est alimenté pour la seconde expérience. 
+\newline \\
+Pour les oscillations libres, le disque est dévié d’un angle initial puis relâché. Le ressort spiral exerce un moment de rappel qui s’oppose à la rotation. Les oscillations sont mesurées pour différentes valeurs de courant dans le frein afin de déterminer le coefficient d’amortissement et le moment d’inertie.
+\newline \\
+Pour les oscillations forcées, le moteur impose un mouvement périodique de fréquence réglable. L’amplitude et la phase de l’oscillateur sont enregistrées en fonction de la fréquence, permettant de tracer les courbes caractéristiques et d’identifier la fréquence de résonance ainsi que le facteur de qualité.
+
+\hspace{0.3cm}
+\newline \\
+\\
+\noindent \begin{minipage}{0.4\textwidth}
+\includegraphics[width=\textwidth]{schema_dynamo.png}
+        \captionof{figure}{Mesurer la constante de torsion $C$}
+\label{fig:dynamo}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.5\textwidth}
+Afin de déterminer la constante de torsion $C$ (définie en Eq. \ref{eq:C}), il faut suspendre un dynamomètre au-dessus du pendule et le fixer au moyeu, c'est-à-dire au cylindre du centre de rotation du balancier (voir fig: \ref{fig:dynamo}). Les mesures pour déterminer $C$ se résument à mesurer le rapport entre le moment de force fourni par le dynamomètre et l'angle responsable de ce moment de force.
+
+\noindent \end{minipage}
+
+\section{Partie théorique} \label{sec:theorie}
+
+\subsection{Oscillations libres d’un pendule de Pohl}
+\label{sec:libre}
+
+Le pendule de Pohl est un oscillateur rotatif caractérisé par l’angle de torsion $\theta(t)$ du balancier. La constante de torsion du ressort spiral $C$ relie le moment de rappel $M_r$ à la déformation angulaire :
+
+\begin{equation}
+C = \frac{M_r}{\theta}
+\label{eq:C}
+\end{equation}
+
+où $M_r$ est le moment de rappel et $\theta$ l’angle de torsion.
+
+Selon le théorème du moment cinétique, le moment total appliqué sur le balancier est égal à la variation du moment cinétique $L$ :
+
+\begin{equation}
+\frac{dL}{dt} = \sum M_{\mathrm{ext}},
+\qquad
+L = J\,\dot{\theta},
+\label{eq:TMC}
+\end{equation}
+
+où $J$ est le moment d’inertie du pendule et $\dot{\theta}$ la vitesse angulaire.
+
+Les moments appliqués incluent le moment de rappel du ressort et le moment de frottement visqueux $M_f$ 
+%\begin{equation}
+%M_r = -C\theta, \qquad M_f = -b\dot{\theta},
+%\label{eq:MOMENTS}
+%\end{equation}
+
+avec $b$ le coefficient d’amortissement.
+
+Avec ces relations, on obtient l’équation différentielle du mouvement de notre pendule :
+
+\begin{equation}
+J\ddot{\theta} + b\dot{\theta} + C\theta = 0.
+\label{eq:edo}
+\end{equation}
+
+On définit la pulsation propre non amortie et le coefficient d’amortissement par :
+
+\begin{equation}
+\omega_0 = \sqrt{\frac{C}{J}}, \qquad \lambda = \frac{b}{2J},
+\label{eq:lambda}
+\end{equation}
+
+de sorte que l’équation du mouvement s’écrit sous la forme normalisée :
+
+\begin{equation}
+\ddot{\theta} + 2\lambda\dot{\theta} + \omega_0^2\,\theta = 0.
+\label{eq:cara}
+\end{equation}
+
+Dans le régime faiblement amorti ($\lambda \ll \omega_0$), la solution temporelle est donnée par :
+
+\begin{equation}
+\theta(t)=\theta_0 e^{-\lambda t}\cos(\omega_1 t+\phi),
+\label{eq:solution}
+\end{equation}
+
+où $\theta_0$ est l’amplitude initiale, $\phi$ la phase initiale, et la pseudo-pulsation $\omega_1$ :
+
+\begin{equation}
+\omega_1=\sqrt{\omega_0^2 - \lambda^2}.
+\label{eq:w}
+\end{equation}
+
+La période observée expérimentalement est donc :
+
+\begin{equation}
+T = \frac{2\pi}{\omega_1},
+\label{eq:t}
+\end{equation}
+
+et le moment d’inertie $J$ peut être déduit à partir de $C$ et $\omega_0$ :
+
+\begin{equation}
+J = \frac{C}{\omega_0^2}.
+\label{eq:J}
+\end{equation}
+
+Notons pour un champs magnétique B, ses relations avec J et la force du frein $F_f$ et $\lambda$ :
+.\hspace{3.5cm} $B \propto I,\qquad J \propto B,\qquad F_{\text{f}} \sim B\,J 
+\;\Rightarrow\; \lambda \propto B^{2} \propto I^{2}.$ \hspace{2.4cm}(9.5)
+
+
+\subsection{Oscillations forcées} \label{sec:forcee}
+
+Si un moment sinusoïdal externe $M_e(t)$ agit sur le pendule :
+
+\begin{equation}
+M_e(t) = M_0\cos(\omega t),
+\label{eq:moment_excitation}
+\end{equation}
+
+avec $M_0$ l’amplitude et $\omega$ la fréquence d’excitation, l’équation du mouvement devient :
+
+\begin{equation}
+J\ddot{\theta} + b\dot{\theta} + C\theta = M_0\cos(\omega t),
+\label{eq:equa_forcee_brut}
+\end{equation}
+
+ou sous forme normalisée avec $A = M_0/J$ :
+
+\begin{equation}
+\ddot{\theta}+2\lambda\dot{\theta}+\omega_0^2\theta
+= A\cos(\omega t).
+\label{eq:equa_forcee_normalisee}
+\end{equation}
+
+\subsection{Méthode des phaseurs} \label{subsec:phaseurs}
+
+Pour résoudre l’équation forcée, on cherche une solution stationnaire de la forme :
+
+\begin{equation}
+\theta(t)=\Theta(\omega)\cos(\omega t+\phi(\omega)),
+\label{eq:solution_phaseurs}
+\end{equation}
+
+où $\Theta(\omega)$ est l’amplitude en régime permanent et $\phi(\omega)$ la phase.
+
+L’amplitude dépend de la fréquence :
+
+\begin{equation}
+\Theta(\omega)
+=\frac{A}{\sqrt{(\omega_0^2-\omega^2)^2+(2\lambda\omega)^2}}.
+\label{eq:amplitude_forcee}
+\end{equation}
+
+La phase relative entre la force et la réponse est :
+
+\begin{equation}
+\phi(\omega)
+=\arctan\left(\frac{2\lambda\omega}{\omega_0^2-\omega^2}\right).
+\label{eq:phase_forcee}
+\end{equation}
+
+La résonance, c’est-à-dire la fréquence pour laquelle l’amplitude est maximale, se produit à :
+
+\begin{equation}
+\omega_{\mathrm{res}}=\sqrt{\omega_0^2 - 2\lambda^2}.
+\label{eq:omega_res}
+\end{equation}
+
+\subsection{Facteur de qualité} \label{subsec:facteur_Q}
+
+Le facteur de qualité $Q$ caractérise la finesse de l’oscillation qui dans l’analyse fréquentielle se déduit de la largeur du pic de résonance :
+
+\begin{equation}
+Q = \frac{f_0}{\mathrm{FWHM}},
+\label{eq:Q_fwhm}
+\end{equation}
+
+où $\mathrm{FWHM}$ est la largeur à mi-hauteur du pic de résonance et $f_0 = \omega_0/(2\pi)$ la fréquence propre.
+
+
+\section{Résultats}
+
+\subsection{Oscillations libres}
+
+Avant de mesurer une oscillation, nous avons mesuré le rapport de force qu'il fallait exercer sur le balancier afin de le placer à un certain angle.
+\\
+\noindent \begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{raideur.png}
+	\captionof{figure}{$M_r$($\theta$)}
+\label{fig:C}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	Nous obtenons par conséquent le graphique (\ref{fig:C}) du moment $M_r$ en fonction de l'angle $\theta$.
+	Nous avons pu directement extraire la valeur $C$, soit la constante de raideur du ressort utilisé grâce à la relation Eq. \ref{eq:C}.\\ Soit :
+	\\      -\hspace{1cm} C = 0.0123 \pm 0.0002 [Nm / rad]
+\noindent \end{minipage}
+\\
+
+
+En un second temps, après avoir monté l'installation pour mesurer les oscillations du balancier-spiral (voir Fig.~\ref{fig:samplesetup}), nous avons donné une position hors équilibre au balancier et mesuré, en fonction du frein imposé, les différentes oscillations observables en annexe (voir Fig.~\ref{fig:oscillations}).
+
+\begin{minipage}[ht]{0.5\textwidth}
+\includegraphics[width=\textwidth]{lambda.png}
+	\captionof{figure}{$\lambda$($I^2$)}
+\label{fig:lambda-current}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	La relation entre le facteur d'amortissement et le courant circulant dans les freins n'est pas linéaire. Nous constatons avec fig: \ref{fig:lambda-current} que le facteur d'amortissement est proportionnel au carré du courant. Ce qui verifie la relation Eq. 9.5. 
+\noindent \end{minipage}
+\\
+\\
+Avec l'annexe B: \ref{annexe:b}, nous avons pu extraire, grâce à la relation Eq. \ref{eq:w}, la moyenne des pulsations propres $\overline{\omega_0}$ = 3.25 $\pm$ 0.02 [rad/s], desquelles on extrait la moyenne des fréquences propres : $\overline{f_0} = 0.517 \pm 0.003$ [Hz] à partir de l'inverse de la période : Eq. \ref{eq:t} (voir valeurs : \ref{val:f0}). Grâce à la relation Eq.~\ref{eq:J}, nous trouvons le moment d'inertie du balancier $J$ = $C / \omega_0^2 = 0.0123/3.25^2 = (1.165 \pm 0.019)\cdot 10^{-3}$ [kg/m$^2$] (pour incertitudes voir sec: \ref{sec:analyse}). 
+
+\subsection{Oscillations forcées}
+
+En traçant la phase en fonction de la fréquence (fig: \ref{fig:phase}), nous pouvons retrouver les fréquences propres $f_0$ via Eq. \ref{eq:t} en exploitant les liens entres les paramètres de notre équation du mouvement sous forme normalisée (Eq. \ref{eq:equa_forcee_normalisee}) pour les alimentations à 0.5 A en bleu et 0.9 A en rouge.
+\\
+\noindent \begin{minipage}{0.65\textwidth}
+\vspace{0.4cm}
+\includegraphics[width=\textwidth]{force_phase.png}
+	\captionof{figure}{$\phi$(f), évolution de la phase}
+\label{fig:phase}
+\end{minipage}
+\hspace{0.00005\textwidth}
+\begin{minipage}{0.4\textwidth}
+	Ci-joint (fig: \ref{fig:phase}), les fréquences propres ont pu être obtenues à partir de la relation phase-fréquence (voir Eq. \ref{eq:phase_forcee}), sachant que la phase en fonction de la pulsation propre vaut $\pi/2$. L'ajustement nous donne :
+	\\ \\ $f_0$(0.5A) = 0.5183 \pm 0.0009 [Hz].
+	\\ \\ $f_0$(0.9A) = 0.5286 \pm 0.0004 [Hz].
+\noindent \end{minipage}
+
+\noindent \begin{minipage}{0.65\textwidth}
+\vspace{0.4cm}
+\includegraphics[width=\textwidth]{force_amp.png}
+	\captionof{figure}{A(f), évolution de l'élongation angulaire}
+	\label{fig:amplitude}
+\label{fig:nature}
+\end{minipage}
+\hspace{0.00005\textwidth}
+\begin{minipage}{0.4\textwidth}
+	En revanche, l'amplitude du balancier en fonction de la fréquence nous permet d'obtenir les fréquences propres via Eq. \ref{eq:omega_res}, soit en explorant le lien entre pulsation propre et pseudo-pulsation :
+	\\ \\ $f_0$(0.5A) = 0.5183 \pm 0.0008 [Hz].
+	\\ \\ $f_0$(0.9A) = 0.5192 \pm 0.0006 [Hz]
+\noindent \end{minipage}
+\\
+
+En fonction du graphe d'amplitude,
+nous obtenons en réalisant un fit à partir du modèle Eq. \ref{eq:amplitude_forcee} les valeurs suivantes :
+\\\\
+\textbf{$\lambda$(0.5A) = 0.191 ± 0.003 [1/s], \hspace{2.5cm} $\lambda$(0.9A) = 0.609 ± 0.005 [1/s]. \\$\omega_0$(0.5A) = 3.249 ± 0.001 [rad/s],  \hspace{2cm} $\omega_0$(0.9A) = 3.315 ± 0.003 [rad/s]} \\\\Et par moyenne des fréquences obtenues : 
+\\- \hspace{5cm} \textbf{$\overline{f_0}$ = 0.5213 ± 0.0007 [Hz].} 
+
+\vspace{0.5cm}
+À partir de la puissance relative, si nous établissons le rapport $\overline{P}$(f) / P($f_0$) en fonction de la fréquence sous différents courants, nous pouvons observer une courbe plus aplatie (fig: \ref{fig:power9}) que le graphique à 0.5 A (fig: \ref{fig:power5}).
+Ces courbes vont nous permettre, apres qu'on ait extrai la FWHM (ou largeur a mi-hauteur),de determiner facteurs de qualité $Q$ à partir de la relation Eq. \ref{eq:Q_fwhm}.
+\\
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+	\includegraphics[scale=0.3]{power_0.5A.png}
+	\captionof{figure}{$P$/$P_0$(f) à 0.5A}
+	\label{fig:power5}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+	\includegraphics[scale=0.3]{power_0.9A.png}
+	\captionof{figure}{$P$/$P_0$(f) à 0.9A}
+	\label{fig:power9}
+\end{minipage}
+
+\vspace{0.5cm}
+À partir du rapport de puissance, nous obtenons via le fit :
+
+\[
+	\mathrm{f_0}(0.5A) = 0.521 \pm 0.005~\mathrm{Hz}, \qquad
+\mathrm{f_0}(0.9A) = 0.47 \pm 0.01~\mathrm{Hz}.
+\]
+
+Puis, nous obtenons la FWHM, directement liée à la largeur de la résonance :
+
+\[
+\mathrm{FWHM}_{0.5\,A} = 0.132 \pm 0.003~\mathrm{Hz}, \qquad
+\mathrm{FWHM}_{0.9\,A} = 0.214 \pm 0.003~\mathrm{Hz}.
+\]
+
+Ce qui nous donne respectivement :
+\[
+	\mathrm{Q}_{0.5A} = 0.521 / 0.132 = 4.0 \pm 0.1 \qquad
+	\mathrm{Q}_{0.9A} = 0.47 / 0.214 = 2.20 \pm 0.06
+\]
+\label{val:q}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	ANALYSE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Analyse des résultats, compléments et discussion}
+\label{sec:analyse}
+\subsection{Oscillations libres}
+
+Nous avons vu que pour la constante de torsion $C = 0.0123 \pm 0.0002$ [Nm / rad], l'incertitude est relativement basse. Cela démontre la fiabilité du modele théorique et la validité de la loi de Hook.
+\\
+\\
+En revanche, si l'on souhaite déterminer l'incertitude sur le moment d'inertie du balancier,
+nous pouvons calculer l'erreur sur $J$ à partir de la relation entre $C$, $J$ et la pulsation propre
+$\omega_0$ (voir Eq.~\ref{eq:J}), en utilisant la méthode des dérivées partielles :
+
+\[
+\frac{\partial J}{\partial C} = \frac{1}{\omega_0^2},
+\qquad
+\frac{\partial J}{\partial \omega_0}
+= -\,\frac{2C}{\omega_0^3}.
+\]
+
+L'incertitude sur $J$ s'écrit donc :
+
+\[
+\sigma_J = 
+\sqrt{
+\left( \frac{\sigma_C}{\omega_0^2} \right)^2
++
+\left( \frac{2C\,\sigma_{\omega_0}}{\omega_0^3} \right)^2
+}.
+\]
+
+En remplaçant par les valeurs numériques utilisées :
+
+\[
+\sigma_J =
+\sqrt{
+\left( \frac{0.0002}{3.25^2} \right)^2 +
+\left( \frac{2 \cdot 0.0123 \cdot 0.002}{3.25^3} \right)^2
+}
+= 0.00001898907 ~\mathrm{kg\,m^2}
+\]
+
+Nous remarquons que l'incertitude sur le moment d'inertie est également relativement basse et nous pouvons donc conclure que les pulsations propres comme le fit qui les a extrait sont de bonne qualité. C'est aussi le cas pour les fréquences propres obtenues pour les différentes mesures de courant. A ce sujet, nous constatons que nous avons perdu beaucoup de précision concernant le courant responsable du plus grand amortissement (0.9A) (voir tab: \ref{val:f0}). Nous supposons que le modéle pour l'amortissement faible devient de moins en moins fiables  àmesure que nous nous approchons d'amortissements plus critiques.  
+
+Toutefois, ces mesures vérifient la validité de la théorie du moment cinétique à la base de notre équation du mouvement.
+
+\subsection{Oscillations forcées}
+
+Les fréquences propres obtenues en régime forcé avec la méthode des phaseurs (Eq. \ref{eq:solution_phaseurs}) sont tres proches de celles obtenues en régime libre. Cela montre que les modeles sont dans les deux cas sont pertinents avec les expériences réalisées. 
+En outre, les fits réalisés sur les mesures a 0.5 et 0.9A en plotant le rapport de puissances $\overline{P}$/$P_0$ sur les figures: \ref{fig:power5} et \ref{fig:power9} montrent graphiquement qu'ils sont pas bien calqués sur les valeurs expérimentales. Cependant afin dediscuter du facteur de qualité Q, nous devons d'abord déterminer l'incertitude sur ce dernier a partir de Eq.~\ref{eq:Q}. Pour cela, nous pouvons utiliser la méthode par dérivées partielles :
+
+\[
+\frac{\partial Q}{\partial f_0} = \frac{1}{\mathrm{FWHM}},
+\qquad
+\frac{\partial Q}{\partial\,\mathrm{FWHM}}
+= -\,\frac{f_0}{\mathrm{FWHM}^2}.
+\]
+
+Ainsi a partir de cette forme générale,
+
+\[
+\sigma_Q
+=
+\sqrt{
+\left(\frac{\sigma_{f_0}}{\mathrm{FWHM}}\right)^2
++
+\left(
+\frac{f_0\,\sigma_{\mathrm{FWHM}}}{\mathrm{FWHM}^2}
+\right)^2
+},
+\]
+
+nous obtenons pour 0.5A :
+\[
+\sigma_{Q_{0.5A}}
+=
+\sqrt{
+\left(\frac{0.005}{0.132}\right)^2
++
+\left(\frac{0.521 \cdot 0.003}{0.132^2}\right)^2
+}
+= 0.097,
+\]
+
+et pour 0.9A :
+\[
+\sigma_{Q_{0.9A}}
+=
+\sqrt{
+\left(\frac{0.01}{0.214}\right)^2
++
+\left(\frac{0.47 \cdot 0.003}{0.214^2}\right)^2
+}
+= 0.056.
+\]
+
+Et comme attendu, nous constatons ci-dessus les plus grosses incertitudes des expériences réalisées sur le pendule de Pohl. Sinon, en ce qui concerne la différence entre les valeurs de Q, soit $Q\!\left(0.5A\right) > Q\!\left(0.9A\right)$  (voir val: \ref{val:q}), nous sommes en accord avec la théorie, car si nous alimentons les freins de foucaults avec plus de courants, le systeme stockera moins d'énergie. Cela s'explique par le fait que l'énergie du moteur se dissipe par l'amortissement créé par les freins.
+
+%=====================================
+%%      CONCLUSIONS
+%=====================================
+
+\section{Conclusion}
+
+L’étude menée sur le pendule de Pohl nous a permis de caractériser avec précision les paramètres essentiels du système. 
+La constante de torsion a été évaluée à 
+\[
+C = 0.0123 \pm 0.0002~\mathrm{N\,m/rad},
+\]
+ce qui a conduit à une détermination fiable du moment d’inertie du balancier :
+\[
+J = (1.165 \pm 0.019)\times 10^{-3}~\mathrm{kg\,m^2}.
+\]
+
+L’analyse des oscillations libres a permis d’obtenir une fréquence propre moyenne de
+\[
+\overline{f_0} = 0.5141 \pm 0.0004~\mathrm{Hz},
+\]
+tandis que la méthode des phaseurs a fourni une valeur tout à fait cohérente :
+\[
+	\overline{f_0} = 0.520 \pm 0.007~\mathrm{Hz}.
+\]
+
+La difference pourrait s'expliquer par le fait que la mesure a 0.9A parrait etre une erreur. Systematique ou accidentelle nous n'avons aucune certitude (logiciel ou montage dysfonctionnel ?).
+\\\\
+L’évolution de l’amortissement en fonction du courant s’est révélée etre une relation linéaire entre le facteur d'amortissement et le courant au carré :
+\[
+\lambda(I^2) = 0.7801 \pm 0.0026~\mathrm{s^{-1}A^{-2}}.
+\]
+
+Les facteurs de qualité mesurés pour deux régimes d’excitation illustrent clairement la diminution de la résonance lorsque l’amortissement augmente :
+\[
+Q_{0.5\,\mathrm{A}} = 4.0 \pm 0.1, \qquad
+Q_{0.9\,\mathrm{A}} = 2.20 \pm 0.06.
+\]
+
+Comme prévu pour un oscillateur harmonique forcé, l’amplitude atteint son maximum à la résonance et le déphasage s’établit alors à $-90^\circ$. 
+Notons que la précision des ajustements pour l'étude du systeme en régime forcé est restée limitée par le manque de points de mesure autour du pic de résonance. Si quiconque souhaite une meilleure précision, il faudra commencer par la. Qui plus est, le monde continue d'osciller !
+\begin{thebibliography}{99}
+
+\bibitem{schemapohl}
+Gilbert Gastebois, \textit{Le pendule de Pohl},
+\\
+\texttt{https://ggastebois.fr/java/pendpohl/theorie\_pend\_pohl.pdf}
+\\
+Consulté le : 17 Novembre 2025
+
+\end{thebibliography}
+
+                          
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	ANNEXES
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Annexes}
+
+\subsection{Annexe A : Constante de raideur}
+\begin{table}[H]
+    \centering
+    \includegraphics[scale=0.6]{tab1.png}
+	\captionof{table}{Mesures pour déterminer la constante de raideur $k$}
+\end{table}
+
+\subsection{Annexe B : Libres}
+\label{annexe:b}
+
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{libre_frein_0_1A.png}
+        \captionof{figure}{Mesure de l'angle $\theta$ à 0.1A}
+	\label{fig:oscillations}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{libre_frein_0_2A.png}
+        \captionof{figure}{Mesure de l'angle $\theta$ à 0.2A}
+\end{minipage}
+\\
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{libre_frein_0_3A.png}
+	\captionof{figure}{Mesure de l'angle $\theta$ à 0.3A}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{libre_frein_0_4A.png}
+	\captionof{figure}{Mesure de l'angle $\theta$ à 0.4A}
+\end{minipage}
+\\
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{libre_frein_0_5A.png}
+        \captionof{figure}{Mesure de l'angle $\theta$ à 0.5A}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{libre_frein_0_9A.png}
+        \captionof{figure}{Mesure de l'angle $\theta$ à 0.9A}
+\end{minipage}
+
+\begin{table}[H]
+	\centering
+	\includegraphics[scale=0.45]{data.png}
+	\captionof{table}{Paramètres des fits avec valeurs moyennes (moyennes inutiles)}
+\end{table}
+
+\begin{table}[!ht]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Fichier} 
+& \textbf{$\omega_0$ [rad/s]} 
+& \textbf{$\sigma_{\omega_0}$ [rad/s]} 
+& \textbf{$f_0$ [Hz]} 
+& \textbf{$\sigma_{f_0}$ [Hz]} \\
+\hline
+0.1A & 3.25153 & 0.00004 & 0.51745 & 0.00001 \\
+0.2A & 3.25250 & 0.00006 & 0.51760 & 0.00001 \\
+0.3A & 3.25089 & 0.00009 & 0.51734 & 0.00001 \\
+0.4A & 3.25255 & 0.00019 & 0.51760 & 0.00003 \\
+0.5A & 3.25308 & 0.00028 & 0.51768 & 0.00005 \\
+0.9A & 3.12291 & 0.01293 & 0.49734 & 0.00206 \\
+\hline
+\textbf{Moyenne} 
+	& \textbf{3.231} 
+& \textbf{0.002} 
+& \textbf{0.5141} 
+& \textbf{0.0004} \\
+\hline
+\end{tabular}
+\caption{Valeurs calculées de $\omega_0$ et $f_0$ à partir de $\omega$ et $\lambda$.}
+\label{val:f0}
+\end{table}
+
+\subsection{Annexe C : Forces}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.4]{0_5A.png}
+\captionof{table}{Tableau de mesures avec incertitudes}
+	\label{tab:p5}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.4]{0_9A.png}
+\captionof{table}{Tableau de mesures avec incertitudes}
+	\label{tab:p9}
+\end{figure}
+
+
