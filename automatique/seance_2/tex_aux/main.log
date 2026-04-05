@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  5 APR 2026 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  5 APR 2026 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -585,13 +585,24 @@ OK, entering \batchmode...
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 45--55
 
-LaTeX Warning: Citation `protocole' on page 2 undefined on input line 49.
+ []
 
 
 Overfull \hbox (7.46873pt too wide) in paragraph at lines 45--55
 \OT1/cmr/m/n/12 Nous analysons en deux temps ce banc de test. D'abord, nous dis
 -cu-tons par des repr^^Sesentations
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--55
+
  []
 
 
@@ -609,65 +620,64 @@ Package pdftex.def Info: ./ressources/images/test.png  used on input line 60.
 File: ./ressources/images/FIG_A_propre.png Graphic file (type png)
 <use ./ressources/images/FIG_A_propre.png>
 Package pdftex.def Info: ./ressources/images/FIG_A_propre.png  used on input li
-ne 85.
+ne 80.
 (pdftex.def)             Requested size: 490.23216pt x 289.0804pt.
 
-Overfull \hbox (20.47714pt too wide) in paragraph at lines 85--87
+Overfull \hbox (20.47714pt too wide) in paragraph at lines 80--82
  [] 
  []
 
 
-LaTeX Warning: Reference `fig:A' on page 3 undefined on input line 90.
+LaTeX Warning: Reference `fig:A' on page 3 undefined on input line 85.
 
  [3 <./ressources/images/FIG_A_propre.png>]
 
-Package caption Warning: \label without proper reference on input line 105.
+Package caption Warning: \label without proper reference on input line 100.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:graph' on page 4 undefined on input line 101.
+LaTeX Warning: Reference `fig:graph' on page 4 undefined on input line 96.
 
 
-LaTeX Warning: Citation `protocole' on page 4 undefined on input line 101.
+LaTeX Warning: Citation `protocole' on page 4 undefined on input line 96.
 
 <./ressources/images/graph.png, id=151, 1311.90125pt x 487.8225pt>
 File: ./ressources/images/graph.png Graphic file (type png)
 <use ./ressources/images/graph.png>
-Package pdftex.def Info: ./ressources/images/graph.png  used on input line 104.
-
+Package pdftex.def Info: ./ressources/images/graph.png  used on input line 99.
 (pdftex.def)             Requested size: 524.7512pt x 195.12553pt.
 
-Overfull \hbox (54.99619pt too wide) in paragraph at lines 104--106
+Overfull \hbox (54.99619pt too wide) in paragraph at lines 99--101
  [] 
  []
 
 ! Double subscript.
-l.110     G_m_
+l.105     G_m_
               o_t(s) = \frac{4.53 \cdot 10^3}{1 + s\cdot 8 \cdot 10^-3}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.110     G_m_o_
+l.105     G_m_o_
                 t(s) = \frac{4.53 \cdot 10^3}{1 + s\cdot 8 \cdot 10^-3}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.113     G_e_
+l.108     G_e_
               l_e(s) = \frac{20.8 \cdot 10^-3}{1 + s\cdot 1.5 \cdot 10^-4}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.113     G_e_l_
+l.108     G_e_l_
                 e(s) = \frac{20.8 \cdot 10^-3}{1 + s\cdot 1.5 \cdot 10^-4}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.116     G_m_
+l.111     G_m_
               e_s(s) = 10.7 \cdot 10^-3
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.116     G_m_e_
+l.111     G_m_e_
                 s(s) = 10.7 \cdot 10^-3
 I treat `x_1_2' essentially like `x_1{}_2'.
 
@@ -675,7 +685,7 @@ I treat `x_1_2' essentially like `x_1{}_2'.
 File: ./ressources/images/FIG_A_exercice2.png Graphic file (type png)
 <use ./ressources/images/FIG_A_exercice2.png>
 Package pdftex.def Info: ./ressources/images/FIG_A_exercice2.png  used on input
- line 124.
+ line 119.
 (pdftex.def)             Requested size: 389.65627pt x 345.69196pt.
  [4 <./ressources/images/graph.png>]
 
@@ -685,7 +695,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 \\\\
+l.123 \\\\
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -698,7 +708,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 N
+l.124 N
        ous constatons que les deux courbes ne sont pas identiques et que le ...
 
 Your command was ignored.
@@ -706,104 +716,104 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Double subscript.
-l.130 ...sions a : "Comparaison entre G(s) / $G_e_
+l.125 ...sions a : "Comparaison entre G(s) / $G_e_
                                                   l_e$ * $G_m_o_t$")
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.130 ...ons a : "Comparaison entre G(s) / $G_e_l_
+l.125 ...ons a : "Comparaison entre G(s) / $G_e_l_
                                                   e$ * $G_m_o_t$")
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.130 ...omparaison entre G(s) / $G_e_l_e$ * $G_m_
+l.125 ...omparaison entre G(s) / $G_e_l_e$ * $G_m_
                                                   o_t$")
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.130 ...paraison entre G(s) / $G_e_l_e$ * $G_m_o_
+l.125 ...paraison entre G(s) / $G_e_l_e$ * $G_m_o_
                                                   t$")
 I treat `x_1_2' essentially like `x_1{}_2'.
 
  [5 <./ressources/images/FIG_A_exercice2.png>]
 ! Double subscript.
-l.134 ... fonction de transfert à partir de $G_m_
+l.129 ... fonction de transfert à partir de $G_m_
                                                   o_t$ * $G_e_l_e$ * $G_m_e_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.134 ...onction de transfert à partir de $G_m_o_
+l.129 ...onction de transfert à partir de $G_m_o_
                                                   t$ * $G_e_l_e$ * $G_m_e_s$...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.134 ... transfert à partir de $G_m_o_t$ * $G_e_
+l.129 ... transfert à partir de $G_m_o_t$ * $G_e_
                                                   l_e$ * $G_m_e_s$ tel que :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.134 ...ransfert à partir de $G_m_o_t$ * $G_e_l_
+l.129 ...ransfert à partir de $G_m_o_t$ * $G_e_l_
                                                   e$ * $G_m_e_s$ tel que :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.134 ...� partir de $G_m_o_t$ * $G_e_l_e$ * $G_m_
+l.129 ...� partir de $G_m_o_t$ * $G_e_l_e$ * $G_m_
                                                   e_s$ tel que :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.134 ...partir de $G_m_o_t$ * $G_e_l_e$ * $G_m_e_
+l.129 ...partir de $G_m_o_t$ * $G_e_l_e$ * $G_m_e_
                                                   s$ tel que :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 <./ressources/images/GS.png, id=169, 769.87625pt x 293.095pt>
 File: ./ressources/images/GS.png Graphic file (type png)
 <use ./ressources/images/GS.png>
-Package pdftex.def Info: ./ressources/images/GS.png  used on input line 137.
+Package pdftex.def Info: ./ressources/images/GS.png  used on input line 132.
 (pdftex.def)             Requested size: 423.43324pt x 161.20273pt.
 <./ressources/images/FIG_B_ex2.png, id=170, 398.99063pt x 380.92313pt>
 File: ./ressources/images/FIG_B_ex2.png Graphic file (type png)
 <use ./ressources/images/FIG_B_ex2.png>
 Package pdftex.def Info: ./ressources/images/FIG_B_ex2.png  used on input line 
-142.
+137.
 (pdftex.def)             Requested size: 319.19293pt x 304.73889pt.
 ! Double subscript.
-l.158 ...mble du système $G_s$ (qu'on nomme $G_f_
+l.153 ...mble du système $G_s$ (qu'on nomme $G_f_
                                                   i_n_a_l$ dans le code au p...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.158 ...le du système $G_s$ (qu'on nomme $G_f_i_
+l.153 ...le du système $G_s$ (qu'on nomme $G_f_i_
                                                   n_a_l$ dans le code au poi...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.158 ... du système $G_s$ (qu'on nomme $G_f_i_n_
+l.153 ... du système $G_s$ (qu'on nomme $G_f_i_n_
                                                   a_l$ dans le code au point...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.158 ...u système $G_s$ (qu'on nomme $G_f_i_n_a_
+l.153 ...u système $G_s$ (qu'on nomme $G_f_i_n_a_
                                                   l$ dans le code au point C...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
  [6 <./ressources/images/GS.png> <./ressources/images/FIG_B_ex2.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 162--181
+Underfull \hbox (badness 10000) in paragraph at lines 157--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--181
+Underfull \hbox (badness 10000) in paragraph at lines 157--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--181
+Underfull \hbox (badness 10000) in paragraph at lines 157--176
 
  []
 
@@ -812,10 +822,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--181
 File: ./ressources/images/g_data_D.png Graphic file (type png)
 <use ./ressources/images/g_data_D.png>
 Package pdftex.def Info: ./ressources/images/g_data_D.png  used on input line 1
-88.
+83.
 (pdftex.def)             Requested size: 211.38832pt x 461.835pt.
 ! Double subscript.
-l.194         G_c_
+l.189         G_c_
                   f = \frac{2.222e07}{s^2 + 6667 s + 2.222e07}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
@@ -824,7 +834,7 @@ I treat `x_1_2' essentially like `x_1{}_2'.
 File: ./ressources/images/FIG_E_G0_Bode.png Graphic file (type png)
 <use ./ressources/images/FIG_E_G0_Bode.png>
 Package pdftex.def Info: ./ressources/images/FIG_E_G0_Bode.png  used on input l
-ine 209.
+ine 204.
 (pdftex.def)             Requested size: 423.07959pt x 380.92218pt.
  [10 <./ressources/images/FIG_E_G0_Bode.png>]
 
@@ -834,7 +844,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.213 \\N
+l.208 \\N
          YQUIST :
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -844,10 +854,10 @@ or  <return>  to continue without it.
 File: ./ressources/images/FIG_E_G0_Nyquist.png Graphic file (type png)
 <use ./ressources/images/FIG_E_G0_Nyquist.png>
 Package pdftex.def Info: ./ressources/images/FIG_E_G0_Nyquist.png  used on inpu
-t line 216.
+t line 211.
 (pdftex.def)             Requested size: 498.66368pt x 325.21542pt.
 
-Overfull \hbox (28.90866pt too wide) in paragraph at lines 216--217
+Overfull \hbox (28.90866pt too wide) in paragraph at lines 211--212
  [] 
  []
 
@@ -858,14 +868,14 @@ File: ./ressources/images/FIG_E_Gcf_reponse_indicielle.png Graphic file (type p
 ng)
 <use ./ressources/images/FIG_E_Gcf_reponse_indicielle.png>
 Package pdftex.def Info: ./ressources/images/FIG_E_Gcf_reponse_indicielle.png  
-used on input line 226.
+used on input line 221.
 (pdftex.def)             Requested size: 381.67888pt x 318.89383pt.
  [12 <./ressources/images/FIG_E_Gcf_reponse_indicielle.png>]
 <./ressources/images/FIG_E_zeros.png, id=215, 423.08063pt x 380.92313pt>
 File: ./ressources/images/FIG_E_zeros.png Graphic file (type png)
 <use ./ressources/images/FIG_E_zeros.png>
 Package pdftex.def Info: ./ressources/images/FIG_E_zeros.png  used on input lin
-e 233.
+e 228.
 (pdftex.def)             Requested size: 338.46495pt x 304.73889pt.
  [13 <./ressources/images/FIG_E_zeros.png>]
 <./ressources/images/FIG_G_Bode_control_system_designer.png, id=223, 310.15875p
@@ -874,27 +884,27 @@ File: ./ressources/images/FIG_G_Bode_control_system_designer.png Graphic file (
 type png)
 <use ./ressources/images/FIG_G_Bode_control_system_designer.png>
 Package pdftex.def Info: ./ressources/images/FIG_G_Bode_control_system_designer
-.png  used on input line 242.
+.png  used on input line 237.
 (pdftex.def)             Requested size: 232.61848pt x 484.43367pt.
  [14 <./ressources/images/FIG_G_Bode_control_system_designer.png>]
 <./ressources/images/FIG_G_bode_matlab.png, id=230, 423.08063pt x 380.92313pt>
 File: ./ressources/images/FIG_G_bode_matlab.png Graphic file (type png)
 <use ./ressources/images/FIG_G_bode_matlab.png>
 Package pdftex.def Info: ./ressources/images/FIG_G_bode_matlab.png  used on inp
-ut line 251.
+ut line 246.
 (pdftex.def)             Requested size: 423.07959pt x 380.92218pt.
  [15 <./ressources/images/FIG_G_bode_matlab.png>]
 <./ressources/images/FIG_H_GOOOD.png, id=237, 904.88063pt x 626.34pt>
 File: ./ressources/images/FIG_H_GOOOD.png Graphic file (type png)
 <use ./ressources/images/FIG_H_GOOOD.png>
 Package pdftex.def Info: ./ressources/images/FIG_H_GOOOD.png  used on input lin
-e 260.
+e 255.
 (pdftex.def)             Requested size: 443.3954pt x 306.90927pt.
  [16 <./ressources/images/FIG_H_GOOOD.png>]
-<__i.png, id=244, 462.528pt x 346.896pt>
-File: __i.png Graphic file (type png)
-<use __i.png>
-Package pdftex.def Info: __i.png  used on input line 271.
+<./ressources/images/__i.png, id=244, 462.528pt x 346.896pt>
+File: ./ressources/images/__i.png Graphic file (type png)
+<use ./ressources/images/__i.png>
+Package pdftex.def Info: ./ressources/images/__i.png  used on input line 266.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
 ! LaTeX Error: Unicode character ∘ (U+2218)
@@ -904,32 +914,32 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.274 Une marge de phase de 65∘
+l.269 Une marge de phase de 65∘
                                   et une marge de gain infinie indiquent un ...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
- [17 <./__i.png>]
+ [17 <./ressources/images/__i.png>]
 File: ./ressources/images/FIG_E_zeros.png Graphic file (type png)
 <use ./ressources/images/FIG_E_zeros.png>
 Package pdftex.def Info: ./ressources/images/FIG_E_zeros.png  used on input lin
-e 282.
+e 277.
 (pdftex.def)             Requested size: 296.15442pt x 266.64436pt.
 <./ressources/images/FIG_K.png, id=251, 903.375pt x 602.25pt>
 File: ./ressources/images/FIG_K.png Graphic file (type png)
 <use ./ressources/images/FIG_K.png>
-Package pdftex.def Info: ./ressources/images/FIG_K.png  used on input line 289.
+Package pdftex.def Info: ./ressources/images/FIG_K.png  used on input line 284.
 
 (pdftex.def)             Requested size: 451.6864pt x 301.12425pt.
  [18] [19 <./ressources/images/FIG_K.png>]
 <__k2.png, id=264, 722.7pt x 361.35pt>
 File: __k2.png Graphic file (type png)
 <use __k2.png>
-Package pdftex.def Info: __k2.png  used on input line 295.
+Package pdftex.def Info: __k2.png  used on input line 290.
 (pdftex.def)             Requested size: 505.88655pt x 252.94327pt.
 
-Overfull \hbox (36.13153pt too wide) in paragraph at lines 295--296
+Overfull \hbox (36.13153pt too wide) in paragraph at lines 290--291
  [] 
  []
 
@@ -938,23 +948,23 @@ Overfull \hbox (36.13153pt too wide) in paragraph at lines 295--296
 File: ./ressources/images/FIG_L_5_overshoot.png Graphic file (type png)
 <use ./ressources/images/FIG_L_5_overshoot.png>
 Package pdftex.def Info: ./ressources/images/FIG_L_5_overshoot.png  used on inp
-ut line 306.
+ut line 301.
 (pdftex.def)             Requested size: 452.43921pt x 313.16922pt.
 <./ressources/images/FIG_L_12_overshhoot.png, id=272, 903.375pt x 602.25pt>
 File: ./ressources/images/FIG_L_12_overshhoot.png Graphic file (type png)
 <use ./ressources/images/FIG_L_12_overshhoot.png>
 Package pdftex.def Info: ./ressources/images/FIG_L_12_overshhoot.png  used on i
-nput line 313.
+nput line 308.
 (pdftex.def)             Requested size: 451.6864pt x 301.12425pt.
  [21 <./ressources/images/FIG_L_5_overshoot.png>] [22 <./ressources/images/FIG_
 L_12_overshhoot.png>]
 <__l2.png, id=285, 867.24pt x 433.62pt>
 File: __l2.png Graphic file (type png)
 <use __l2.png>
-Package pdftex.def Info: __l2.png  used on input line 323.
+Package pdftex.def Info: __l2.png  used on input line 318.
 (pdftex.def)             Requested size: 563.69934pt x 281.84966pt.
 
-Overfull \hbox (93.94432pt too wide) in paragraph at lines 323--324
+Overfull \hbox (93.94432pt too wide) in paragraph at lines 318--319
  [] 
  []
 
@@ -963,10 +973,10 @@ Overfull \hbox (93.94432pt too wide) in paragraph at lines 323--324
 File: ./ressources/images/FIG_M_gain0_1.png Graphic file (type png)
 <use ./ressources/images/FIG_M_gain0_1.png>
 Package pdftex.def Info: ./ressources/images/FIG_M_gain0_1.png  used on input l
-ine 334.
+ine 329.
 (pdftex.def)             Requested size: 451.6864pt x 301.12425pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--336
+Underfull \hbox (badness 10000) in paragraph at lines 325--331
 
  []
 
@@ -975,22 +985,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--336
 File: ./ressources/images/FIG_M_gain6.png Graphic file (type png)
 <use ./ressources/images/FIG_M_gain6.png>
 Package pdftex.def Info: ./ressources/images/FIG_M_gain6.png  used on input lin
-e 341.
+e 336.
 (pdftex.def)             Requested size: 451.6864pt x 301.12425pt.
  [25 <./ressources/images/FIG_M_gain6.png>]
 <./ressources/images/FIG_M_gain1000.png, id=307, 903.375pt x 602.25pt>
 File: ./ressources/images/FIG_M_gain1000.png Graphic file (type png)
 <use ./ressources/images/FIG_M_gain1000.png>
 Package pdftex.def Info: ./ressources/images/FIG_M_gain1000.png  used on input 
-line 348.
+line 343.
 (pdftex.def)             Requested size: 451.6864pt x 301.12425pt.
  [26 <./ressources/images/FIG_M_gain1000.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 361--364
+Underfull \hbox (badness 10000) in paragraph at lines 356--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--364
+Underfull \hbox (badness 10000) in paragraph at lines 356--359
 
  []
 
@@ -998,7 +1008,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--364
 ! Missing number, treated as zero.
 <to be read again> 
                    n
-l.425 \\[num,den]
+l.420 \\[num,den]
                   = tfdata(G\_cf,'v');
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1007,7 +1017,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    n
-l.425 \\[num,den]
+l.420 \\[num,den]
                   = tfdata(G\_cf,'v');
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1019,7 +1029,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing { inserted.
 <to be read again> 
                    $
-l.433 \\\%\% Affichage de la forme Kcf / (a s\\$^$
+l.428 \\\%\% Affichage de la forme Kcf / (a s\\$^$
                                                   2 + b s + c)
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1029,7 +1039,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.433 \\\%\% Affichage de la forme Kcf / (a s\\$^$
+l.428 \\\%\% Affichage de la forme Kcf / (a s\\$^$
                                                   2 + b s + c)
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1040,7 +1050,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.439 ...intf('\\nG\_cf(s) = \%.6f / (\%.6e s\\$^$
+l.434 ...intf('\\nG\_cf(s) = \%.6f / (\%.6e s\\$^$
                                                   2 + \%.6e s + \%.6e )\\n',...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1050,7 +1060,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.439 ...intf('\\nG\_cf(s) = \%.6f / (\%.6e s\\$^$
+l.434 ...intf('\\nG\_cf(s) = \%.6f / (\%.6e s\\$^$
                                                   2 + \%.6e s + \%.6e )\\n',...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1059,152 +1069,152 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--474
+Underfull \hbox (badness 10000) in paragraph at lines 363--469
 
  []
 
@@ -1216,7 +1226,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.476 \\i
+l.471 \\i
          mport numpy as np
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1225,7 +1235,7 @@ or  <return>  to continue without it.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.480 \\#
+l.475 \\#
           Fonction de transfert du système complet (à adapter)
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1235,7 +1245,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.484 \\#
+l.479 \\#
           Calcul des marges de stabilité
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1245,7 +1255,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.487 \\#
+l.482 \\#
           Tracé du diagramme de Bode avec légende détaillée
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1255,7 +1265,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing number, treated as zero.
 <to be read again> 
                    \let 
-l.498 \\    ]
+l.493 \\    ]
              ,
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1264,7 +1274,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \let 
-l.498 \\    ]
+l.493 \\    ]
              ,
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1280,21 +1290,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.498 \\    ]
+l.493 \\    ]
              ,
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--498
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
 
  []
 
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.505 \\#
+l.500 \\#
           Affichage des valeurs
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1302,37 +1312,37 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--509
+Underfull \hbox (badness 10000) in paragraph at lines 471--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--509
+Underfull \hbox (badness 10000) in paragraph at lines 471--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--509
+Underfull \hbox (badness 10000) in paragraph at lines 471--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--509
+Underfull \hbox (badness 10000) in paragraph at lines 471--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--509
+Underfull \hbox (badness 10000) in paragraph at lines 471--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--509
+Underfull \hbox (badness 10000) in paragraph at lines 471--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--509
+Underfull \hbox (badness 10000) in paragraph at lines 471--504
 
  []
 
@@ -1344,7 +1354,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.510 \\#
+l.505 \\#
           Fonction de transfert en boucle fermée (à adapter)
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1353,7 +1363,7 @@ or  <return>  to continue without it.
 ! You can't use `macro parameter character #' in vertical mode.
 <recently read> ##
                   
-l.510 \\#
+l.505 \\#
           Fonction de transfert en boucle fermée (à adapter)
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1363,7 +1373,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.513 \\#
+l.508 \\#
           Réponse indicielle
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1373,7 +1383,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.516 \\#
+l.511 \\#
           Calcul des caractéristiques
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1381,7 +1391,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.517 \\overshoot = np.max(y) - 1  #
+l.512 \\overshoot = np.max(y) - 1  #
                                      Dépassement en %
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1389,7 +1399,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.518 ...(y - 1) < 0.05)[0][-1] * (t[1] - t[0])  #
+l.513 ...(y - 1) < 0.05)[0][-1] * (t[1] - t[0])  #
                                                    Temps d'établissement à 5%
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1397,7 +1407,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.519 ...np.where(y >= 1)[0][0] * (t[1] - t[0])  #
+l.514 ...np.where(y >= 1)[0][0] * (t[1] - t[0])  #
                                                    Temps de montée (0 à 100%)
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1407,7 +1417,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.521 \\#
+l.516 \\#
           Tracé de la réponse indicielle avec légende détaillée
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1417,7 +1427,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.534 \\#
+l.529 \\#
           Affichage des valeurs
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1425,22 +1435,22 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--539
+Underfull \hbox (badness 10000) in paragraph at lines 505--534
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--539
+Underfull \hbox (badness 10000) in paragraph at lines 505--534
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--539
+Underfull \hbox (badness 10000) in paragraph at lines 505--534
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--539
+Underfull \hbox (badness 10000) in paragraph at lines 505--534
 
  []
 
@@ -1452,7 +1462,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.541 \\#
+l.536 \\#
           Fonction de transfert du système complet
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1461,7 +1471,7 @@ or  <return>  to continue without it.
 ! You can't use `macro parameter character #' in vertical mode.
 <recently read> ##
                   
-l.541 \\#
+l.536 \\#
           Fonction de transfert du système complet
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1471,7 +1481,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.545 \\#
+l.540 \\#
           Gains du régulateur à tester
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1481,7 +1491,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.551 \\    #
+l.546 \\    #
               Régulateur PI
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1491,7 +1501,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.553 \\    #
+l.548 \\    #
               Fonction de transfert en boucle fermée
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1501,7 +1511,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.555 \\    #
+l.550 \\    #
               Réponse indicielle
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1509,7 +1519,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.557 \\    overshoot = np.max(y) - 1  #
+l.552 \\    overshoot = np.max(y) - 1  #
                                          Dépassement en %
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1519,7 +1529,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `macro parameter character #' in horizontal mode.
 <recently read> ##
                   
-l.569 \\#
+l.564 \\#
           Tableau des résultats
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1527,22 +1537,22 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--575
+Underfull \hbox (badness 10000) in paragraph at lines 536--570
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--575
+Underfull \hbox (badness 10000) in paragraph at lines 536--570
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--575
+Underfull \hbox (badness 10000) in paragraph at lines 536--570
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--575
+Underfull \hbox (badness 10000) in paragraph at lines 536--570
 
  []
 
@@ -1558,13 +1568,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D944E80F000163436D34AABF23C0C3DF;6364.
  ) 
 Here is how much of TeX's memory you used:
- 13709 strings out of 474222
- 218216 string characters out of 5748733
+ 13711 strings out of 474222
+ 218382 string characters out of 5748733
  1939975 words of memory out of 5000000
- 35689 multiletter control sequences out of 15000+600000
+ 35691 multiletter control sequences out of 15000+600000
  564699 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,8n,117p,507b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,8n,117p,507b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -1574,7 +1584,7 @@ fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm12
 00.pfb>
-Output written on main.pdf (32 pages, 1566536 bytes).
+Output written on main.pdf (32 pages, 1566579 bytes).
 PDF statistics:
  401 PDF objects out of 1000 (max. 8388607)
  300 compressed objects within 3 object streams

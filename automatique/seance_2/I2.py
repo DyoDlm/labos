@@ -17,9 +17,7 @@ plt.title("Diagramme de Bode - Marges de stabilité")
 plt.legend(
     [
         "Gain (dB)",
-        "Phase (deg)",
-        f"Marge de phase: {pm:.1f}°",
-        f"Marge de gain: {gm:.1f} dB"
+        "Phase (deg)"
     ],
     loc='upper right'
 )
