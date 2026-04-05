@@ -1,0 +1,127 @@
+\section{Partie théorique, Ondes et interférences} \label{sec:theorie}
+
+Soit une onde indéformable :
+\begin{equation}
+    \begin{center}
+    $p(x,t) = Â \cdot sin(\omega t - kx)$ 
+    \caption{eq:onde}
+    \end{center}
+\end{equation}
+
+qui dépend d'une composante spaciale (x) et temporelle (t). Cette onde est définie par k le nombre d'onde et $\omega$ la pulsation tels que :
+\begin{equation}
+    \begin{center}
+        k = \frac{2\pi}{\lambda} [...] et \omega = 2\pi f [rad/s]
+    \caption{eq:param}
+    \end{center}
+\end{equation}
+
+p(x,t) est donc définie plus spécifiquement par une longueur d'onde $\lambda$ [m], une fréquence f [Hz] et une amplitude Â.
+\\\\
+Nous nous interessons a deux cas specifiques. En un premier temps aux interferences d'ondes accoustiques, puis aux interferences d'ondes de surfaces circulaires. 
+
+\subsection{Interférences d'ondes indéformables}
+Soit deux ondes indéformables p1(x,t) et p2(x,t). L'onde stationnaire résultant de la superposition de p1 et p2, soit par la somme des deux tel que :
+\begin{equation}
+    p_m(t) = p1 + p2 = 2 Â cos(k \frac{d_2 - d_1}{2} sin(\omega t - k \frac{d_1 + d_2}{2})
+    \caption{eq:station}
+\end{equation}
+
+Pour deux ondes cohérentes de même amplitude, l'interférence est donc constructive si la différence de chemin \(\Delta x\) est un multiple entier de \(\lambda\) :
+\begin{equation}
+  \Delta x = n \lambda \quad \text{avec } n \in \mathbb{Z}
+  \] 
+\end{equation}
+et destructive si la différence de chemin \(\Delta x\) est un multiple demi-entier de \(\lambda\) :
+\begin{equation}
+    \Delta x = \left(n + \frac{1}{2}\right) \lambda \quad \text{avec } n \in \mathbb{Z}
+    \caption{eq:foo}
+\end{equation}
+
+Nous pouvons observer ce phenomène graphiquement sur Fig. \ref{fig:ohwaw} :
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{ohwaw.png}
+\end{center}
+\label{fig:ohwaw}
+\caption{Illustration d'ondes constructives et destructives}
+\end{figure}
+
+% Include une images pour les deux ?
+
+
+\subsection{Ondes acoustiques}
+
+Les ondes acoustiques suivent la forme générale d'une onde indéformable présente sur Eq. \ref{eq:onde}
+\\\\
+A amplitude constante \(A\) ne dépend pas de la position \(x\). Les nœuds correspondent à l'amplitude minimale et sont espacés de \(\frac{\lambda}{2}\). Ce comportement est propre des ondes stationnaires dans un milieu unidimensionnel. Par définition Ref. \cite{protocole}, la célérité est définite tel que le rapport $\frac{\omega}{k}$, soit par l
+
+\subsection{Ondes de surface circulaires}
+
+Les ondes de surface circulaires partagent la même base théorique que les ondes acoustiques, mais leur propagation est influencée par la géométrie du milieu.
+
+\paragraph{Équation et amplitude}
+L'onde s'écrit :
+\[
+h(r,t) = \frac{A_0}{\sqrt{r}} \cdot \sin(\omega t - kr)
+\]
+où \(A_0\) est l'amplitude initiale et \(r\) la distance radiale. **L'amplitude décroît avec \(\frac{1}{\sqrt{r}}\)** en raison de la conservation de l'énergie sur une surface circulaire.
+
+\paragraph{Célérité}
+La vitesse de propagation \(v\) dépend de la profondeur \(d\) et de la longueur d'onde \(\lambda\) :
+- En eau profonde (\(d \gg \lambda\)) :
+  \[
+  v = \sqrt{\frac{g \lambda}{2\pi}}
+  \]
+- En eau peu profonde (\(d \ll \lambda\)) :
+  \[
+  v = \sqrt{g d}
+  \]
+où \(g\) est l'accélération gravitationnelle.
+
+\paragraph{Particularités}
+- **Amplitude variable** : Contrairement aux ondes acoustiques, \(A\) dépend de la distance \(r\).
+- **Interférences** : Les franges (zones d'amplitude maximale/minimale) forment des motifs circulaires, avec une distance entre franges brillantes égale à \(\lambda\)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\subsection{Ondes accoustiques}
+%
+%Une onde indeformable de pression accoustique peut s'ecrire par...
+%
+%Pour les ondes acoustiques, la célérité \textbf{c} d'une onde accoustique dans un milieu est donné par :
+%\[
+%    c = \sqrt{\gamma \frac{R M}{T}} 
+%\]
+%Avec gamma ..., R ... et M .....
+%\\\\
+%De manière plus générale, la vitesse de propagation \(v\) d'une onde est donnée par la relation :
+%\[
+%c = \lambda \cdot f
+%\]
+%
+%
+%\subsection{Ondes de surface circulaires}
+%
+%De même que pour les ondes de pression accoustiques, une onde de surface circulaire peut s'ecrire tel que : ...
+%\\\\
+%A la seule différence que sa nature géométrique influence l'amplitude de l'onde tel que pour : ... 
+%
+

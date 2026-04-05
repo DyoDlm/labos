@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  5 APR 2026 16:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  5 APR 2026 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -624,35 +624,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--44
 \openout2 = `./srcs/3_theorie.aux'.
 
  (./srcs/3_theorie.tex
-
-LaTeX Warning: Command \^ invalid in math mode on input line 3.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.3 Soit une onde indéformable $p(x,t) = Â
-                                             \cdot sin(\omega t - kx)$ qui d...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
 
  []
 
-
-LaTeX Warning: Command \^ invalid in math mode on input line 10.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.10     p_m(t) = p1 + p2 = 2 Â
-                                 cos(k \frac{d_2 - d_1}{2} sin(\omega t - k ...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
 ! Undefined control sequence.
-l.15 ...n \lambda \quad \text{avec } n \in \mathbb
+l.39 ...n \lambda \quad \text{avec } n \in \mathbb
                                                   {Z}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -661,7 +638,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.18 ...) \lambda \quad \text{avec } n \in \mathbb
+l.44 ...) \lambda \quad \text{avec } n \in \mathbb
                                                   {Z}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -670,27 +647,94 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Package caption Warning: \label without proper reference on input line 27.
-See the caption package documentation for explanation.
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 \\\\
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Warning: Reference `fig:ohwaw' on page 3 undefined on input line 21.
+! LaTeX Error: There's no line here to end.
 
-<./ressources/images/ohwaw.png, id=130, 722.7pt x 578.16pt>
-File: ./ressources/images/ohwaw.png Graphic file (type png)
-<use ./ressources/images/ohwaw.png>
-Package pdftex.def Info: ./ressources/images/ohwaw.png  used on input line 25.
-(pdftex.def)             Requested size: 289.07487pt x 231.2599pt.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 C
+      es phénomènes s'appliquent tant aux ondes accoustiques qu'aux ondes ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
  [3
 
 
 
- <./ressources/images/ohwaw.png>]
-Overfull \hbox (2.09094pt too wide) in paragraph at lines 79--81
- []\OT1/cmr/bx/n/12 Particularit^^Ses[] \OT1/cmr/m/n/12 - **Am-pli-tude vari-ab
-le** : Con-traire-ment aux on-des acous-tiques, $\OML/cmm/m/it/12 A$ \OT1/cmr/m
-/n/12 d^^Sepend
- []
+]
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60     \caption
+                 {eq:omegaK}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \\C
+        e qui nous permet d'extraire la célérité en fonction de la longue...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68         \caption
+                     {eq:cele}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 L
+      a celerite des ondes a la surfaces d'un liquide peut dans de certaines...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 ) [4]
 \openout2 = `./srcs/konig/2_description.aux'.
@@ -740,7 +784,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--20
 \openout2 = `./srcs/konig/4_resultats.aux'.
 
  (./srcs/konig/4_resultats.tex
-<./ressources/images/lambda.png, id=159, 722.7pt x 433.62pt>
+<./ressources/images/lambda.png, id=165, 722.7pt x 433.62pt>
 File: ./ressources/images/lambda.png Graphic file (type png)
 <use ./ressources/images/lambda.png>
 Package pdftex.def Info: ./ressources/images/lambda.png  used on input line 36.
@@ -917,8 +961,13 @@ or  <return>  to continue without it.
 
 
 ]
+<./ressources/images/ohwaw.png, id=206, 722.7pt x 578.16pt>
+File: ./ressources/images/ohwaw.png Graphic file (type png)
+<use ./ressources/images/ohwaw.png>
+Package pdftex.def Info: ./ressources/images/ohwaw.png  used on input line 26.
+(pdftex.def)             Requested size: 289.07487pt x 231.2599pt.
 
-LaTeX Warning: File `electrique/r1500.png' not found on input line 28.
+LaTeX Warning: File `electrique/r1500.png' not found on input line 37.
 
 
 ! Package pdftex.def Error: File `electrique/r1500.png' not found: using draft 
@@ -928,13 +977,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 ...egraphics[scale=0.5]{electrique/r1500.png}
+l.37 ...egraphics[scale=0.5]{electrique/r1500.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `electrique/r2000.png' not found on input line 38.
+LaTeX Warning: File `electrique/r2000.png' not found on input line 47.
 
 
 ! Package pdftex.def Error: File `electrique/r2000.png' not found: using draft 
@@ -944,13 +993,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 ...cs[width=\linewidth]{electrique/r2000.png}
+l.47 ...cs[width=\linewidth]{electrique/r2000.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `electrique/r2500.png' not found on input line 46.
+LaTeX Warning: File `electrique/r2500.png' not found on input line 55.
 
 
 ! Package pdftex.def Error: File `electrique/r2500.png' not found: using draft 
@@ -960,33 +1009,33 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 ...cs[width=\linewidth]{electrique/r2500.png}
+l.55 ...cs[width=\linewidth]{electrique/r2500.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [13] (./main.aux (./srcs/1_intro.aux) (./srcs/3_theorie.aux) (./srcs/konig/2_
-description.aux) (./srcs/konig/4_resultats.aux) (./srcs/konig/5_analyse.aux) (.
-/srcs/cuve/2_description.aux) (./srcs/cuve/4_resultats.aux) (./srcs/cuve/5_anal
-yse.aux) (./srcs/annexes.aux))
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [13 <./ressources/images/ohwaw.png>] [14] (./main.aux (./srcs/1_intro.aux) (.
+/srcs/3_theorie.aux) (./srcs/konig/2_description.aux) (./srcs/konig/4_resultats
+.aux) (./srcs/konig/5_analyse.aux) (./srcs/cuve/2_description.aux) (./srcs/cuve
+/4_resultats.aux) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1E1BA481639BD7E1371C0579BA55497A;4395.
+(rerunfilecheck)             Checksum: 5EAD5214B4BE7407A3C87F749B83870A;4403.
  ) 
 Here is how much of TeX's memory you used:
- 13953 strings out of 474222
- 225373 string characters out of 5748733
+ 13972 strings out of 474222
+ 225657 string characters out of 5748733
  1937975 words of memory out of 5000000
- 35897 multiletter control sequences out of 15000+600000
+ 35910 multiletter control sequences out of 15000+600000
  564878 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,9n,117p,492b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1001,10 +1050,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb>
-Output written on main.pdf (13 pages, 271249 bytes).
+Output written on main.pdf (14 pages, 266784 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
