@@ -8,19 +8,18 @@ Les résultats des mesures sont résumés dans le \autoref{tab:mesures}. Pour ch
 La \autoref{fig:lambda_vs_f} montre la relation entre la fréquence \(f\) et la longueur d'onde \(\lambda\). Comme attendu, \(\lambda\) diminue lorsque la fréquence augmente, conformément à la relation \(\lambda = \frac{v}{f}\), où \(v\) est la vitesse du son.
 
 \begin{figure}[h!]
-    \begin{minipage}[b]{0.65\linewidth} % Plus d'espace pour le graphique
-        \centering
+    \begin{flushleft}
+    \begin{minipage}[b]{0.7\linewidth} % Plus d'espace pour le graphique
         \includegraphics[width=\linewidth]{lambda.png}
         \caption{$Z_L = 2000\,\Omega$}
         \label{fig:r2000}
     \end{minipage}
     \hfill
-    \begin{minipage}[b]{0.3\linewidth} % Moins d'espace pour le tableau
-        \centering
+    \begin{minipage}[b]{0.28\linewidth} % Moins d'espace pour le tableau
         \label{tab:mesures}
         \begin{tabular}{|c|c|}
             \hline
-            \textbf{f $\pm$ 1 (Hz)} & $\boldsymbol{\lambda} \pm 0.001$ (m) \\
+            \textbf{f} $\pm$ 1 Hz & $\boldsymbol{\lambda} \pm 0.001$ m \\
             \hline
             900 & 0.384 \\
             1300 & 0.270 \\
@@ -34,8 +33,9 @@ La \autoref{fig:lambda_vs_f} montre la relation entre la fréquence \(f\) et la 
             5000 & 0.068 \\
             \hline
         \end{tabular}
-        \captionof{table}{Mesures expérimentales des interférences acoustiques.}
+        \captionof{table}{Mesures interférences acoustiques.}
     \end{minipage}
+    \end{flushleft}
 \end{figure}
 
 
