@@ -1,24 +1,62 @@
 \subsection{Résultats, Analyse et Discussion}
 
-\subsubsection{Determination de la celerite}
-\subsubsection{Nature spherique des ondes accoustiques}
-\subsubsection{Vérification de la variation de la pression}
+Dans cette section, nous présentons les résultats expérimentaux obtenus lors de l'étude des interférences acoustiques à l'aide du trombone de König. Les mesures ont été réalisées pour des fréquences allant de 900 Hz à 5000 Hz, à une température ambiante de \(23,4 \pm 0,2 \,^\circ\text{C}\) (soit \(296,55 \, \text{K}\)) et une tension constante de \(0,5 \, \text{Vpp}\).
 
-\begin{figure}[h!]
+\subsubsection{Données expérimentales}
+
+Les résultats des mesures sont résumés dans le \autoref{tab:mesures}. Pour chaque fréquence, nous avons relevé les positions des minima d'interférence, calculé la distance entre ces minima, et déterminé la longueur d'onde \(\lambda\) ainsi que la période \(T\).
+
+\begin{table}[h]
     \centering
-    % Première figure
-    \begin{minipage}[b]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{accoustique/acc2.png}
-	    \caption{U$^2$(1/D$^2$)}
-        \label{fig:U2(1/R2)}
-    \end{minipage}
-    \hfill
-    % Deuxième figure
-    \begin{minipage}[b]{0.48\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{accoustique/acc3.png}
-	    \caption{U(1/D) avec E-R inversés}
-        \label{fig:U(1/R)inv}
-    \end{minipage}
+    \caption{Mesures expérimentales des interférences acoustiques.}
+    \label{tab:mesures}
+    \begin{tabular}{cccccccc}
+        \hline
+        \textbf{Fréquence} & \textbf{Position minima 1} & \textbf{Position minima 2} & \textbf{Distance} & \(\lambda\) & \(T\) & \textbf{Température} & \textbf{Tension} \\
+        \(\mathbf{f \, (\text{Hz})}\) & \(\mathbf{(\text{mm})}\) & \(\mathbf{(\text{mm})}\) & \(\mathbf{(\text{mm})}\) & \(\mathbf{(\text{mm})}\) & \(\mathbf{(\text{s})}\) & \(\mathbf{(^\circ\text{C})}\) & \(\mathbf{(\text{Vpp})}\) \\
+        \hline
+        900 & 99 & 291 & 192 & 0,384 & 0,00111 & 23,4 & 0,5 \\
+        1300 & 90 & 225 & 135 & 0,270 & 0,00077 & 23,4 & 0,5 \\
+        1700 & 63 & 166 & 103 & 0,206 & 0,00059 & 23,4 & 0,5 \\
+        2150 & 61 & 142 & 81 & 0,162 & 0,00047 & 23,4 & 0,5 \\
+        2550 & 42 & 110 & 68 & 0,136 & 0,00039 & 23,4 & 0,5 \\
+        3000 & 34 & 91 & 57 & 0,114 & 0,00033 & 23,4 & 0,5 \\
+        3500 & 32 & 81 & 49 & 0,098 & 0,00029 & 23,4 & 0,5 \\
+        4000 & 28 & 71 & 43 & 0,086 & 0,00025 & 23,4 & 0,5 \\
+        4500 & 30 & 68 & 38 & 0,076 & 0,00022 & 23,4 & 0,5 \\
+        5000 & 26 & 60 & 34 & 0,068 & 0,00020 & 23,4 & 0,5 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Analyse des résultats}
+
+\subsubsection{Relation fréquence-longueur d'onde}
+
+La \autoref{fig:lambda_vs_f} montre la relation entre la fréquence \(f\) et la longueur d'onde \(\lambda\). Comme attendu, \(\lambda\) diminue lorsque la fréquence augmente, conformément à la relation \(\lambda = \frac{v}{f}\), où \(v\) est la vitesse du son.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{chemin/vers/votre/graphe_lambda_vs_f.png}
+    \caption{Relation entre la fréquence et la longueur d'onde.}
+    \label{fig:lambda_vs_f}
 \end{figure}
+
+\subsubsection{Vitesse du son}
+
+À partir des données expérimentales, nous avons déterminé la vitesse du son \(v\) en utilisant une régression linéaire sur les valeurs de \(\lambda\) et \(f\). La relation utilisée est :
+\[
+v = \lambda \cdot f
+\]
+
+Les coefficients de la régression linéaire sont :
+\[
+v = a \cdot f + b
+\]
+où \(a = 347,499 \, \text{m/s}\) et \(b = -4,6577 \times 10^{-6}\).
+
+La vitesse du son mesurée est donc de \(347,499 \, \text{m/s}\), ce qui est légèrement supérieur à la valeur théorique de \(345,21 \, \text{m/s}\) calculée à partir de la température ambiante (\(v = 331 + 0,6 \cdot T\)).
+
+\subsubsection{Incertitudes et validation}
+
+Les incertitudes sur les coefficients \(a\) et \(b\) sont respectivement de \(\Delta a = 2,3\) et \(\Delta b = 0,000939\). Ces valeurs confirment la validité de nos mesures, avec une vitesse du son mesurée très proche de la valeur théorique.

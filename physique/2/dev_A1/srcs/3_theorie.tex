@@ -1,20 +1,66 @@
 \subsection{Partie théorique} \label{sec:theorie}
 
-\section{Théorie générale}
+\subsection{Interférences d'ondes}
 
-\subsection{Interférences d'ondes accoustiques}
-
-\subsection{Interférences d'ondes de surface circulaires}
+Les interférences se produisent lorsque deux ondes cohérentes se superposent. Pour les ondes acoustiques et les ondes de surface, les grandeurs clés sont la **longueur d'onde** (\(\lambda\)), la **fréquence** (\(f\)), et la **vitesse de propagation** (\(v\)).
 
 
-\begin{equation}
-\frac{dL}{dt} = \sum M_{\mathrm{ext}},
-\qquad L = J\,\dot{\theta}
-\label{eq:TMC}
-\end{equation}
+\subsection{Équations fondamentales}
 
+\subsubsection{Vitesse de propagation}
 
+La vitesse de propagation \(v\) d'une onde est donnée par la relation :
+\[
+v = \lambda \cdot f
+\]
+où :
+- \(\lambda\) est la longueur d'onde (en mètres),
+- \(f\) est la fréquence (en hertz).
 
+Cette équation est universelle pour toutes les ondes périodiques et découle de la définition de la longueur d'onde comme la distance parcourue par l'onde en une période \(T = \frac{1}{f}\).
 
+---
+
+\subsubsection{Vitesse du son dans l'air}
+
+Pour les ondes acoustiques, la célérité \textbf{c} d'une onde accoustique dans un milieu est donné par :
+\[
+    c = \sqrt{\gamma \frac{R M}{T}} 
+\]
+Avec gamma ..., R ... et M .....
+\\\\
+La vitesse du son dans l'air dépend donc de la température \(T\) (en degrés Celsius) selon la relation empirique :
+\[
+c = 331 + 0.6 \cdot T \quad \text{(en m/s)}
+\]
+Cette formule est dérivée de la théorie cinétique des gaz et est valable pour des températures proches de la température ambiante.
+
+---
+
+\subsubsection{Interférences constructives et destructives}
+
+Pour deux ondes cohérentes de même amplitude, l'interférence est :
+- **Constructive** si la différence de chemin \(\Delta x\) est un multiple entier de \(\lambda\) :
+  \[
+  \Delta x = n \lambda \quad \text{avec } n \in \mathbb{Z}
+  \]
+- **Destructive** si la différence de chemin \(\Delta x\) est un multiple demi-entier de \(\lambda\) :
+  \[
+  \Delta x = \left(n + \frac{1}{2}\right) \lambda \quad \text{avec } n \in \mathbb{Z}
+  \]
+
+Ces conditions découlent du principe de superposition des ondes et de la définition de la cohérence.
+
+---
+
+\subsection{Application aux expériences}
+
+\subsubsection{Trombone de König}
+
+Dans cette expérience, les interférences acoustiques sont observées en mesurant les positions des minima (nœuds) le long du trombone. La distance entre deux minima consécutifs correspond à \(\frac{\lambda}{2}\), car les nœuds sont espacés de \(\frac{\lambda}{2}\) pour les ondes stationnaires.
+
+\subsubsection{Cuve à ondes}
+
+Pour les ondes de surface, les motifs d'interférence sont visualisés directement. La distance entre les franges brillantes (ou sombres) correspond à \(\lambda\), car ces franges résultent d'interférences constructives (ou destructives) entre les ondes émises par les deux sources.
 
 

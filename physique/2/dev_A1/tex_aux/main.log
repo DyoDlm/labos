@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  5 APR 2026 13:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  5 APR 2026 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,20 +460,14 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box57
 )
-(./main.aux (./srcs/1_intro.aux) (./srcs/2_theorie.aux)
+(./main.aux (./srcs/1_intro.aux) (./srcs/3_theorie.aux)
 (./srcs/konig/2_description.aux) (./srcs/konig/4_resultats.aux)
 (./srcs/konig/5_analyse.aux) (./srcs/cuve/2_description.aux
 
 LaTeX Warning: Label `fig:montage_acc1' multiply defined.
 
-) (./srcs/cuve/4_resultats.aux
-
-LaTeX Warning: Label `fig:U2(1/R2)' multiply defined.
-
-
-LaTeX Warning: Label `fig:U(1/R)inv' multiply defined.
-
-) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux))
+) (./srcs/cuve/4_resultats.aux) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux
+))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -494,8 +488,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count326
 \scratchdimen=\dimen179
@@ -601,21 +594,54 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- (./main.toc)
+ (./main.toc [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+ [2]
 \openout2 = `./srcs/1_intro.aux'.
 
- (./srcs/1_intro.tex) [2
+ (./srcs/1_intro.tex
+Overfull \hbox (2.00258pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/12 obtenus sont com-par^^Ses aux pr^^Sedictions th^^Seoriques pour
+ valider les lois physiques sous-jacentes. 
+ []
 
-]
-\openout2 = `./srcs/2_theorie.aux'.
+) [3
 
-No file ./srcs/2_theorie.tex.
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+\openout2 = `./srcs/3_theorie.aux'.
+
+ (./srcs/3_theorie.tex
+Underfull \hbox (badness 10000) in paragraph at lines 29--33
+
+ []
+
+! Undefined control sequence.
+l.45 ...n \lambda \quad \text{avec } n \in \mathbb
+                                                  {Z}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49 ...) \lambda \quad \text{avec } n \in \mathbb
+                                                  {Z}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+ [4
+
+
+
+]) [5]
 \openout2 = `./srcs/konig/2_description.aux'.
 
  (./srcs/konig/2_description.tex
@@ -635,10 +661,7 @@ l.8 ...ncludegraphics[scale=0.4]{montage_acc1.png}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [3
-
-
-
+) [6
 
 
 
@@ -646,46 +669,38 @@ If that doesn't work, type  X <return>  to quit.
 \openout2 = `./srcs/konig/4_resultats.aux'.
 
  (./srcs/konig/4_resultats.tex
-
-LaTeX Warning: File `accoustique/acc2.png' not found on input line 12.
-
-
-! Package pdftex.def Error: File `accoustique/acc2.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ...cs[width=\linewidth]{accoustique/acc2.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (140.40552pt too wide) in paragraph at lines 13--30
+ [][] 
+ []
 
 
-LaTeX Warning: File `accoustique/acc3.png' not found on input line 20.
+LaTeX Warning: File `chemin/vers/votre/graphe_lambda_vs_f.png' not found on inp
+ut line 40.
 
 
-! Package pdftex.def Error: File `accoustique/acc3.png' not found: using draft 
-setting.
+! Package pdftex.def Error: File `chemin/vers/votre/graphe_lambda_vs_f.png' not
+ found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 ...cs[width=\linewidth]{accoustique/acc3.png}
+l.40 ...{chemin/vers/votre/graphe_lambda_vs_f.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [4
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+ [7
 
 
 
-]
+]) [8]
 \openout2 = `./srcs/konig/5_analyse.aux'.
 
- (./srcs/konig/5_analyse.tex) [5
+ (./srcs/konig/5_analyse.tex) [9
 
 
 
@@ -738,7 +753,7 @@ l.20 ...cludegraphics[scale=0.6]{montage_acc2.png}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [6
+) [10
 
 
 
@@ -778,14 +793,14 @@ l.20 ...cs[width=\linewidth]{accoustique/acc3.png}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [7
+) [11
 
 
 
 ]
 \openout2 = `./srcs/cuve/5_analyse.aux'.
 
- (./srcs/cuve/5_analyse.tex) [8
+ (./srcs/cuve/5_analyse.tex) [12
 
 
 
@@ -836,7 +851,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- [9
+ [13
 
 
 
@@ -889,7 +904,7 @@ l.46 ...cs[width=\linewidth]{electrique/r2500.png}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [10] (./main.aux (./srcs/1_intro.aux) (./srcs/2_theorie.aux) (./srcs/konig/2_
+) [14] (./main.aux (./srcs/1_intro.aux) (./srcs/3_theorie.aux) (./srcs/konig/2_
 description.aux) (./srcs/konig/4_resultats.aux) (./srcs/konig/5_analyse.aux) (.
 /srcs/cuve/2_description.aux) (./srcs/cuve/4_resultats.aux) (./srcs/cuve/5_anal
 yse.aux) (./srcs/annexes.aux))
@@ -901,28 +916,31 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 793C11199106C86D6BF275802EC9CE58;4415.
+(rerunfilecheck)             Checksum: 139CD3CE4F07E824E2587499FB798140;6250.
  ) 
 Here is how much of TeX's memory you used:
- 13898 strings out of 474222
- 224305 string characters out of 5748733
- 1937975 words of memory out of 5000000
- 35855 multiletter control sequences out of 15000+600000
- 564878 words of font info for 60 fonts, out of 8000000 for 9000
+ 13985 strings out of 474222
+ 226743 string characters out of 5748733
+ 1942975 words of memory out of 5000000
+ 35920 multiletter control sequences out of 15000+600000
+ 565836 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,7n,117p,353b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,14n,117p,455b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (10 pages, 98683 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (14 pages, 150298 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
