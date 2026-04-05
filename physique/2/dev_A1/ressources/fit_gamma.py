@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
 g = 9.81
-h = 0.001
-rho = 998
+h = 0.008
+rho = 900
 
 def v_theorique(lambda_, gamma):
     return np.sqrt((g * lambda_ / (2 * np.pi) + gamma * 2 * np.pi / (rho * lambda_)) * np.tanh(2 * np.pi * h / lambda_))
@@ -49,15 +49,16 @@ def fit_function(lambda_, gamma):
 
 popt, pcov = curve_fit(fit_function, lambda_exp, v_exp, p0=[0.072])
 
-l_th = np.linspace(0.002, 0.015, 400)
+l_th = np.linspace(0.0038, 0.012, 400)
 
 v_th = v_theorique(l_th, 0.072)
 
 v_fit = v_theorique(l_th, popt)
 
-plt.scatter(l_th, v_fit, label="Fit experimental")
-plt.scatter(l_th, v_th, label="Valeurs theoriques")
-plt.scatter(lambda_2, v_exp, label="Valeurs experimentales (x4)")
+plt.plot(l_th, v_fit, label="Fit experimental")
+#plt.scatter(l_th, v_th, label="Valeurs theoriques")
+plt.xlim(0.003, 0.013)
+#plt.scatter(lambda_2, v_exp, label="Valeurs experimentales (x4)")
 plt.scatter(lambda_exp, v_exp, label="Valeurs experimentales (x1,67)")
 plt.grid()
 plt.xlabel(rf"$\lambda [m]$")
