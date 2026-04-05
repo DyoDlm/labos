@@ -5,38 +5,48 @@ Dans cette section, nous présentons les résultats expérimentaux obtenus lors 
 \subsubsection{Données expérimentales}
 
 Les résultats des mesures sont résumés dans le \autoref{tab:mesures}. Pour chaque fréquence, nous avons relevé les positions des minima d'interférence, calculé la distance entre ces minima, et déterminé la longueur d'onde \(\lambda\) ainsi que la période \(T\).
-
-\begin{table}[h]
-    \centering
-    \caption{Mesures expérimentales des interférences acoustiques.}
-    \label{tab:mesures}
-    \begin{tabular}{|c|c|c|}
-        \hline
-        \textbf{Fréquence} & \(\lambda\) & \(T\)  \\
-        \hline
-        900 & 0,384 & 0,00111\\
-        1300 & 0,270 & 0,00077 \\
-        1700 & 0,206 & 0,00059 \\
-        2150 & 0,162 & 0,00047 \\
-        2550 & 0,136 & 0,00039 \\
-        3000 & 0,114 & 0,00033 \\
-        3500 & 0,098 & 0,00029\\
-        4000 & 0,086 & 0,00025 \\
-        4500 & 0,076 & 0,00022\\
-        5000 & 0,068 & 0,00020\\
-        \hline
-    \end{tabular}
-\end{table}
-
-
 La \autoref{fig:lambda_vs_f} montre la relation entre la fréquence \(f\) et la longueur d'onde \(\lambda\). Comme attendu, \(\lambda\) diminue lorsque la fréquence augmente, conformément à la relation \(\lambda = \frac{v}{f}\), où \(v\) est la vitesse du son.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.7]{lambda.png}
-    \caption{}
-    \label{fig:lambda_vs_f}
+\begin{figure}[h!]
+    \begin{minipage}[b]{0.65\linewidth} % Plus d'espace pour le graphique
+        \centering
+        \includegraphics[width=\linewidth]{lambda.png}
+        \caption{$Z_L = 2000\,\Omega$}
+        \label{fig:r2000}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.3\linewidth} % Moins d'espace pour le tableau
+        \centering
+        \label{tab:mesures}
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{f $\pm$ 1 (Hz)} & $\boldsymbol{\lambda} \pm 0.001$ (m) \\
+            \hline
+            900 & 0.384 \\
+            1300 & 0.270 \\
+            1700 & 0.206  \\
+            2150 & 0.162  \\
+            2550 & 0.136  \\
+            3000 & 0.114  \\
+            3500 & 0.098 \\
+            4000 & 0.086  \\
+            4500 & 0.076  \\
+            5000 & 0.068 \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Mesures expérimentales des interférences acoustiques.}
+    \end{minipage}
 \end{figure}
+
+
+
+
+
+
+
+
+
+
 
 À partir des données expérimentales, nous avons déterminé la vitesse du son \(v\) en utilisant une régression linéaire sur les valeurs de \(\lambda\) et \(f\). La relation utilisée est :
 \[
