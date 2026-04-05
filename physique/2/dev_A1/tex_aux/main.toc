@@ -1,8 +1,13 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}Partie théorique, Ondes et interférences}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Interférences constructives et destructives}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Ondes accoustiques}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.1}Interférences d'ondes indéformables}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Ondes acoustiques}{4}{subsection.2.2}%
+\contentsline {paragraph}{Célérité}{4}{section*.3}%
+\contentsline {paragraph}{Particularités}{4}{section*.4}%
 \contentsline {subsection}{\numberline {2.3}Ondes de surface circulaires}{4}{subsection.2.3}%
+\contentsline {paragraph}{Équation et amplitude}{4}{section*.5}%
+\contentsline {paragraph}{Célérité}{4}{section*.6}%
+\contentsline {paragraph}{Particularités}{4}{section*.7}%
 \contentsline {section}{\numberline {3}Interférences d'ondes accoustiques}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Description des manipulations}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Résultats, Analyse et Discussion}{6}{subsection.3.2}%
