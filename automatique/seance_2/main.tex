@@ -126,12 +126,12 @@ Les fonctions de transfert des sous systemes sont respectivement :
 \end{figure}
 
 \\\\
-Nous constatons que les deux courbes ne sont pas identiques et que le gain change. Elles restent tout de meme similaires.
+Nous constatons que les deux courbes ne sont pas identiques et que le gain change. Nous constatons également un retard temporel de 0.1s que nous avons ajouté au modèle afin de pouvoir superposer les deux courbres. Elles restent tout de même similaires.
 \\(Comme le titre est illisible, nous pensions a : "Comparaison entre G(s) / $G_e_l_e$ * $G_m_o_t$")
 \newpage
 \subsection{B : Fonction de transfert du systeme complet}
 
-Nous etablissons la fonction de transfert a partir de $G_m_o_t$ * $G_e_l_e$ * $G_m_e_s$ tel que : 
+Nous établissons la fonction de transfert à partir de $G_m_o_t$ * $G_e_l_e$ * $G_m_e_s$ tel que : 
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=0.55]{GS.png}
@@ -155,7 +155,7 @@ Nous etablissons la fonction de transfert a partir de $G_m_o_t$ * $G_e_l_e$ * $G
 
 \vspace{1cm}
 (Nous avons compris entre temps comment avoir de jolis titres)
-
+\\\\ La fonction de transfert de l'ensemble du système $G_s$ (qu'on nomme $G_f_i_n_a_l$ dans le code au point C) est ainsi représentée par le produit de convolution d'un élément de mesure, de l'actionneur et d'un élément sensible.
 \newpage
 
 \subsection{C : Code definissant la fonction de transfert}
@@ -198,10 +198,11 @@ t = time;
 \end{minipage}
 
 \vspace{1cm}   
-L'application du regulateur transforme le systeme en boucle fermee (du second ordre).
+L'application du régulateur transforme le système en boucle fermée (du second ordre). Cela permet de faciliter la suite de l'analyse. La forme est aussi plus simple à lire.
+
 \newpage
 \subsection{E : Diagrammes de Bode et Nyquist}
-La marge de phase est d'environ 65 $^\circ$ et la marge de gain est positive. Cela veut dire eque le systeme est stable. 
+La marge de phase est d'environ 65 $^\circ$ et la marge de gain est positive. Cela veut dire eque le système est stable. 
 BODE : 
 \begin{figure}[H]
         \begin{center}
@@ -215,10 +216,9 @@ BODE :
                 \includegraphics[scale=0.8]{FIG_E_G0_Nyquist.png}
                     \end{center}
 \end{figure}
-Le diagramme de Nyquist permet de montrer que le lieu de transfert est exclusivement positif. Cela nous permet d'affirmer la resilience du regulateur PI ou la stabilite du systeme. (reformuler)
+Le diagramme de Nyquist permet de montrer que le lieu de transfert est exclusivement positif. Cela nous permet également d'affirmer la résilience du régulateur PI.
 \newpage
 \subsection{F : Diagramme d'Evans et reponse indicielle}
-Par manque de temps, nous n'avons pas trace le diagramme d'evans. Il est sense neanmoins illustrer la trajectoire des poles en boucle fermee.\\\\
 
 Reponse indicielle : 
 \begin{figure}[H]
@@ -228,17 +228,22 @@ Reponse indicielle :
 \end{figure}
 La reponse indicielle illustre un depassement d'environ 5\% et un temps de reponse rapide.
 
-\newpage
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=0.5]{FIG_E_zeros.png}
+    \end{center}
+\end{figure}
+
 \subsection{G : G(s) dans "Control System Designer"}
 
-Nous importons Gs dans "Control System Designer et obtenons :
+Nous importons Gs dans "Control System Designer" et obtenons :
 \begin{figure}[H]
         \begin{center}
             \includegraphics[scale=0.75]{FIG_G_Bode_control_system_designer.png}
                     \end{center}
 \end{figure}
 \newpage
-C'est comparable avec le tracage que nous effectuons a partir de la ligne de commande 
+C'est comparable avec ce que nous obtenons avec la ligne de commande 
  matlab :
 
 \begin{figure}[H]
@@ -256,7 +261,7 @@ C'est comparable avec le tracage que nous effectuons a partir de la ligne de com
                     \end{center}
 \end{figure}
 
-Nous constatons la encore qu'il s'agit des memes schemas qu'avec matlab (voir au point F).
+Nous constatons là encore qu'il s'agit des mêmes schémas qu'avec matlab (voir au point F).
 
 \newpage
 
@@ -268,6 +273,14 @@ Nous constatons la encore qu'il s'agit des memes schemas qu'avec matlab (voir au
                 \includegraphics[scale=0.6]{Exo2_B_scop.png}
                     \end{center}
 \end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=0.8]{__i.png}
+    \end{center}
+\end{figure}
+Une marge de phase de 65∘ et une marge de gain infinie indiquent un système stable et robuste, capable de supporter des perturbations modérées sans devenir instable. Nous n'avions pas eu le temps de le réaliser pendant le laboratoire et avons ... avec python afin (voir en annexe).
+
 \newpage
 \subsection{J : Lieu des poles (vous nous avez dit de passer cette question)}
 
@@ -278,6 +291,12 @@ Zeros de Gcf :
                     \end{center}
 \end{figure}
 
+%\begin{figure}[H]
+%    \begin{center}
+%        \includegraphics[scale=0.5]{__j.png}
+%    \end{center}
+%\end{figure}
+Commenter...
 \subsection{K : Caracteristiques de la reponse indicielle}
 
 \begin{figure}[H]
@@ -285,6 +304,14 @@ Zeros de Gcf :
                 \includegraphics[scale=0.5]{FIG_K.png}
                     \end{center}
 \end{figure}
+
+\begin{figure}[H]
+        \begin{center}
+                    \includegraphics[scale=0.5]{__k2.png}
+                        \end{center}
+\end{figure}
+
+Un dépassement de 5.2\%, un temps de montée de 0.047s et un temps d'établissement de 0.21s confirment un bon compromis entre rapidité et stabilité du système en boucle fermée.
 \newpage
 \subsection{L : Lien entre gain du regulateur et valeurs de depassement}
 
@@ -302,7 +329,16 @@ Avec un overshoot de ~12\% :
                     \end{center}
 \end{figure}
 
-Nous n'avons pas cherche (par manque de temps encore) les valeurs exact du controle designer, mais nous constatons que ...
+Par manque de temps, nous n'avons pas cherché les valeurs exactes du contrôle designer, mais nous voyons que le dépassement varie en fonction du gain. 
+\newpage
+Nous avons pû en un second temps retracer avec python les valeurs de l'énoncé.
+
+\begin{figure}[H]
+        \begin{center}
+                    \includegraphics[scale=0.5]{__l2.png}
+                        \end{center}
+\end{figure}
+Nous constatons encore qu'en effet la valeur du dépassement (overshoot) est proportionnelle à celle du gain.
 \newpage
 \subsection{M : Impact du gain sur la stabilite du systeme}
 
@@ -337,17 +373,9 @@ GAIN k = 1000 :
 %       Conclusion 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
-\begin{figure}[H]
-        \begin{center}
-        \includegraphics[scale=0.45]{all.png}
-        \end{center}
-\end{figure}
-\begin{figure}[H]
-\begin{center}
-        \includegraphics[scale=0.4]{all_graph.png}
-\end{center}
-\end{figure}
-
+Ce laboratoire a permis d’analyser le comportement d’un banc de test SIRAu en reliant les mesures empiriques à une modélisation par fonction de transfert. Après avoir estimé la fonction de transfert du système, un régulateur PI a été appliqué pour obtenir une réponse en boucle fermée stable et performante.
+\\\\Les diagrammes de Bode, Nyquist et Evans ont confirmé la stabilité du système, avec des marges de phase et de gain positives. Les réponses indicielles ont validé le réglage du régulateur, montrant un dépassement contrôlé et un temps de réponse adapté.
+\\\\L’utilisation de MATLAB et de Control System Designer a permis de valider les résultats et de comparer les approches théoriques et pratiques. Ce travail a renforcé la compréhension des méthodes d’analyse des systèmes asservis et de leur application concrète
 
 \newpage
 \section{annexes}

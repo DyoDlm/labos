@@ -5,16 +5,16 @@
 \contentsline {section}{\numberline {3}Exercice 2 : Rentrons bien dans les details}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}A : Verification graphique}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}B : Fonction de transfert du systeme complet}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}C : Code definissant la fonction de transfert}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}D : Application d'un regulateur PI}{8}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}E : Diagrammes de Bode et Nyquist}{9}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}F : Diagramme d'Evans et reponse indicielle}{11}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}G : G(s) dans "Control System Designer"}{12}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}H : (MATLAB == CSD) ? verification graphique}{14}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}I : Marges de stabilite sur diagramme de Bode}{15}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}J : Lieu des poles (vous nous avez dit de passer cette question)}{16}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}K : Caracteristiques de la reponse indicielle}{17}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}L : Lien entre gain du regulateur et valeurs de depassement}{18}{subsection.3.12}%
-\contentsline {subsection}{\numberline {3.13}M : Impact du gain sur la stabilite du systeme}{19}{subsection.3.13}%
-\contentsline {section}{\numberline {4}Conclusion}{22}{section.4}%
-\contentsline {section}{\numberline {5}annexes}{23}{section.5}%
+\contentsline {subsection}{\numberline {3.3}C : Code definissant la fonction de transfert}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}D : Application d'un regulateur PI}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}E : Diagrammes de Bode et Nyquist}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}F : Diagramme d'Evans et reponse indicielle}{12}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}G : G(s) dans "Control System Designer"}{13}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}H : (MATLAB == CSD) ? verification graphique}{15}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}I : Marges de stabilite sur diagramme de Bode}{16}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}J : Lieu des poles (vous nous avez dit de passer cette question)}{17}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}K : Caracteristiques de la reponse indicielle}{18}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}L : Lien entre gain du regulateur et valeurs de depassement}{19}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}M : Impact du gain sur la stabilite du systeme}{21}{subsection.3.13}%
+\contentsline {section}{\numberline {4}Conclusion}{24}{section.4}%
+\contentsline {section}{\numberline {5}annexes}{25}{section.5}%

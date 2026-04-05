@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  19 MAR 2026 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  5 APR 2026 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -727,27 +727,27 @@ I treat `x_1_2' essentially like `x_1{}_2'.
 
  [5 <./ressources/images/FIG_A_exercice2.png>]
 ! Double subscript.
-l.134 ...a fonction de transfert a partir de $G_m_
+l.134 ... fonction de transfert à partir de $G_m_
                                                   o_t$ * $G_e_l_e$ * $G_m_e_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.134 ...fonction de transfert a partir de $G_m_o_
+l.134 ...onction de transfert à partir de $G_m_o_
                                                   t$ * $G_e_l_e$ * $G_m_e_s$...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.134 ...e transfert a partir de $G_m_o_t$ * $G_e_
+l.134 ... transfert à partir de $G_m_o_t$ * $G_e_
                                                   l_e$ * $G_m_e_s$ tel que :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.134 ...transfert a partir de $G_m_o_t$ * $G_e_l_
+l.134 ...ransfert à partir de $G_m_o_t$ * $G_e_l_
                                                   e$ * $G_m_e_s$ tel que :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.134 ...a partir de $G_m_o_t$ * $G_e_l_e$ * $G_m_
+l.134 ...� partir de $G_m_o_t$ * $G_e_l_e$ * $G_m_
                                                   e_s$ tel que :
 I treat `x_1_2' essentially like `x_1{}_2'.
 
@@ -767,7 +767,32 @@ File: ./ressources/images/FIG_B_ex2.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/images/FIG_B_ex2.png  used on input line 
 142.
 (pdftex.def)             Requested size: 319.19293pt x 304.73889pt.
- [6 <./ressources/images/GS.png> <./ressources/images/FIG_B_ex2.png>]
+! Double subscript.
+l.158 ...mble du système $G_s$ (qu'on nomme $G_f_
+                                                  i_n_a_l$ dans le code au p...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.158 ...le du système $G_s$ (qu'on nomme $G_f_i_
+                                                  n_a_l$ dans le code au poi...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.158 ... du système $G_s$ (qu'on nomme $G_f_i_n_
+                                                  a_l$ dans le code au point...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.158 ...u système $G_s$ (qu'on nomme $G_f_i_n_a_
+                                                  l$ dans le code au point C...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+ [6 <./ressources/images/GS.png> <./ressources/images/FIG_B_ex2.png>] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 162--181
 
  []
@@ -782,8 +807,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--181
 
  []
 
- [7]
-<./ressources/images/g_data_D.png, id=163, 236.38312pt x 516.42938pt>
+ [8]
+<./ressources/images/g_data_D.png, id=168, 236.38312pt x 516.42938pt>
 File: ./ressources/images/g_data_D.png Graphic file (type png)
 <use ./ressources/images/g_data_D.png>
 Package pdftex.def Info: ./ressources/images/g_data_D.png  used on input line 1
@@ -794,14 +819,14 @@ l.194         G_c_
                   f = \frac{2.222e07}{s^2 + 6667 s + 2.222e07}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
- [8 <./ressources/images/g_data_D.png>]
-<./ressources/images/FIG_E_G0_Bode.png, id=170, 423.08063pt x 380.92313pt>
+ [9 <./ressources/images/g_data_D.png>]
+<./ressources/images/FIG_E_G0_Bode.png, id=174, 423.08063pt x 380.92313pt>
 File: ./ressources/images/FIG_E_G0_Bode.png Graphic file (type png)
 <use ./ressources/images/FIG_E_G0_Bode.png>
 Package pdftex.def Info: ./ressources/images/FIG_E_G0_Bode.png  used on input l
 ine 209.
 (pdftex.def)             Requested size: 423.07959pt x 380.92218pt.
- [9 <./ressources/images/FIG_E_G0_Bode.png>]
+ [10 <./ressources/images/FIG_E_G0_Bode.png>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -815,7 +840,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./ressources/images/FIG_E_G0_Nyquist.png, id=177, 623.32875pt x 406.51875pt>
+<./ressources/images/FIG_E_G0_Nyquist.png, id=181, 623.32875pt x 406.51875pt>
 File: ./ressources/images/FIG_E_G0_Nyquist.png Graphic file (type png)
 <use ./ressources/images/FIG_E_G0_Nyquist.png>
 Package pdftex.def Info: ./ressources/images/FIG_E_G0_Nyquist.png  used on inpu
@@ -826,8 +851,8 @@ Overfull \hbox (28.90866pt too wide) in paragraph at lines 216--217
  [] 
  []
 
- [10 <./ressources/images/FIG_E_G0_Nyquist.png>]
-<./ressources/images/FIG_E_Gcf_reponse_indicielle.png, id=184, 636.12656pt x 53
+ [11 <./ressources/images/FIG_E_G0_Nyquist.png>]
+<./ressources/images/FIG_E_Gcf_reponse_indicielle.png, id=188, 636.12656pt x 53
 1.48563pt>
 File: ./ressources/images/FIG_E_Gcf_reponse_indicielle.png Graphic file (type p
 ng)
@@ -835,32 +860,39 @@ ng)
 Package pdftex.def Info: ./ressources/images/FIG_E_Gcf_reponse_indicielle.png  
 used on input line 226.
 (pdftex.def)             Requested size: 381.67888pt x 318.89383pt.
- [11 <./ressources/images/FIG_E_Gcf_reponse_indicielle.png>]
-<./ressources/images/FIG_G_Bode_control_system_designer.png, id=191, 310.15875p
+<./ressources/images/FIG_E_zeros.png, id=189, 423.08063pt x 380.92313pt>
+File: ./ressources/images/FIG_E_zeros.png Graphic file (type png)
+<use ./ressources/images/FIG_E_zeros.png>
+Package pdftex.def Info: ./ressources/images/FIG_E_zeros.png  used on input lin
+e 233.
+(pdftex.def)             Requested size: 211.5398pt x 190.46109pt.
+<./ressources/images/FIG_G_Bode_control_system_designer.png, id=190, 310.15875p
 t x 645.91313pt>
 File: ./ressources/images/FIG_G_Bode_control_system_designer.png Graphic file (
 type png)
 <use ./ressources/images/FIG_G_Bode_control_system_designer.png>
 Package pdftex.def Info: ./ressources/images/FIG_G_Bode_control_system_designer
-.png  used on input line 236.
+.png  used on input line 242.
 (pdftex.def)             Requested size: 232.61848pt x 484.43367pt.
- [12 <./ressources/images/FIG_G_Bode_control_system_designer.png>]
-<./ressources/images/FIG_G_bode_matlab.png, id=198, 423.08063pt x 380.92313pt>
+ [12 <./ressources/images/FIG_E_Gcf_reponse_indicielle.png> <./ressources/image
+s/FIG_E_zeros.png>] [13 <./ressources/images/FIG_G_Bode_control_system_designer
+.png>]
+<./ressources/images/FIG_G_bode_matlab.png, id=206, 423.08063pt x 380.92313pt>
 File: ./ressources/images/FIG_G_bode_matlab.png Graphic file (type png)
 <use ./ressources/images/FIG_G_bode_matlab.png>
 Package pdftex.def Info: ./ressources/images/FIG_G_bode_matlab.png  used on inp
-ut line 245.
+ut line 251.
 (pdftex.def)             Requested size: 423.07959pt x 380.92218pt.
- [13 <./ressources/images/FIG_G_bode_matlab.png>]
-<./ressources/images/FIG_H_GOOOD.png, id=206, 904.88063pt x 626.34pt>
+ [14 <./ressources/images/FIG_G_bode_matlab.png>]
+<./ressources/images/FIG_H_GOOOD.png, id=213, 904.88063pt x 626.34pt>
 File: ./ressources/images/FIG_H_GOOOD.png Graphic file (type png)
 <use ./ressources/images/FIG_H_GOOOD.png>
 Package pdftex.def Info: ./ressources/images/FIG_H_GOOOD.png  used on input lin
-e 254.
+e 260.
 (pdftex.def)             Requested size: 443.3954pt x 306.90927pt.
- [14 <./ressources/images/FIG_H_GOOOD.png>]
+ [15 <./ressources/images/FIG_H_GOOOD.png>]
 
-LaTeX Warning: File `Exo2_B_scop.png' not found on input line 268.
+LaTeX Warning: File `Exo2_B_scop.png' not found on input line 273.
 
 
 ! Package pdftex.def Error: File `Exo2_B_scop.png' not found: using draft setti
@@ -870,34 +902,57 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.268 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
+l.273 ...cludegraphics[scale=0.6]{Exo2_B_scop.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
- [15]
-<./ressources/images/FIG_E_zeros.png, id=219, 423.08063pt x 380.92313pt>
+<__i.png, id=220, 462.528pt x 346.896pt>
+File: __i.png Graphic file (type png)
+<use __i.png>
+Package pdftex.def Info: __i.png  used on input line 279.
+(pdftex.def)             Requested size: 370.02289pt x 277.51717pt.
+
+! LaTeX Error: Unicode character ∘ (U+2218)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282 Une marge de phase de 65∘
+                                  et une marge de gain infinie indiquent un ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+ [16 <./__i.png>]
 File: ./ressources/images/FIG_E_zeros.png Graphic file (type png)
 <use ./ressources/images/FIG_E_zeros.png>
 Package pdftex.def Info: ./ressources/images/FIG_E_zeros.png  used on input lin
-e 277.
+e 290.
 (pdftex.def)             Requested size: 296.15442pt x 266.64436pt.
-<./ressources/images/FIG_K.png, id=220, 903.375pt x 602.25pt>
+<./ressources/images/FIG_K.png, id=229, 903.375pt x 602.25pt>
 File: ./ressources/images/FIG_K.png Graphic file (type png)
 <use ./ressources/images/FIG_K.png>
-Package pdftex.def Info: ./ressources/images/FIG_K.png  used on input line 285.
+Package pdftex.def Info: ./ressources/images/FIG_K.png  used on input line 304.
 
 (pdftex.def)             Requested size: 451.6864pt x 301.12425pt.
- [16 <./ressources/images/FIG_E_zeros.png>] [17 <./ressources/images/FIG_K.png>
-]
-<./ressources/images/FIG_L_5_overshoot.png, id=233, 904.88063pt x 626.34pt>
+ [17]
+<__k2.png, id=235, 722.7pt x 361.35pt>
+File: __k2.png Graphic file (type png)
+<use __k2.png>
+Package pdftex.def Info: __k2.png  used on input line 310.
+(pdftex.def)             Requested size: 361.3491pt x 180.67456pt.
+ [18 <./ressources/images/FIG_K.png> <./__k2.png>]
+<./ressources/images/FIG_L_5_overshoot.png, id=244, 904.88063pt x 626.34pt>
 File: ./ressources/images/FIG_L_5_overshoot.png Graphic file (type png)
 <use ./ressources/images/FIG_L_5_overshoot.png>
 Package pdftex.def Info: ./ressources/images/FIG_L_5_overshoot.png  used on inp
-ut line 294.
+ut line 321.
 (pdftex.def)             Requested size: 452.43921pt x 313.16922pt.
 
-LaTeX Warning: File `FIG_L_12_overshoot.png' not found on input line 301.
+LaTeX Warning: File `FIG_L_12_overshoot.png' not found on input line 328.
 
 
 ! Package pdftex.def Error: File `FIG_L_12_overshoot.png' not found: using draf
@@ -907,70 +962,54 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.301 ...aphics[scale=0.5]{FIG_L_12_overshoot.png}
+l.328 ...aphics[scale=0.5]{FIG_L_12_overshoot.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
- [18 <./ressources/images/FIG_L_5_overshoot.png>]
-<./ressources/images/FIG_M_gain0_1.png, id=241, 903.375pt x 602.25pt>
+ [19 <./ressources/images/FIG_L_5_overshoot.png>]
+<__l2.png, id=253, 867.24pt x 433.62pt>
+File: __l2.png Graphic file (type png)
+<use __l2.png>
+Package pdftex.def Info: __l2.png  used on input line 338.
+(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
+ [20 <./__l2.png>]
+<./ressources/images/FIG_M_gain0_1.png, id=260, 903.375pt x 602.25pt>
 File: ./ressources/images/FIG_M_gain0_1.png Graphic file (type png)
 <use ./ressources/images/FIG_M_gain0_1.png>
 Package pdftex.def Info: ./ressources/images/FIG_M_gain0_1.png  used on input l
-ine 313.
+ine 349.
 (pdftex.def)             Requested size: 451.6864pt x 301.12425pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--315
+Underfull \hbox (badness 10000) in paragraph at lines 345--351
 
  []
 
- [19 <./ressources/images/FIG_M_gain0_1.png>]
-<./ressources/images/FIG_M_gain6.png, id=249, 903.375pt x 602.25pt>
+ [21 <./ressources/images/FIG_M_gain0_1.png>]
+<./ressources/images/FIG_M_gain6.png, id=267, 903.375pt x 602.25pt>
 File: ./ressources/images/FIG_M_gain6.png Graphic file (type png)
 <use ./ressources/images/FIG_M_gain6.png>
 Package pdftex.def Info: ./ressources/images/FIG_M_gain6.png  used on input lin
-e 320.
+e 356.
 (pdftex.def)             Requested size: 451.6864pt x 301.12425pt.
- [20 <./ressources/images/FIG_M_gain6.png>]
-<./ressources/images/FIG_M_gain1000.png, id=256, 903.375pt x 602.25pt>
+ [22 <./ressources/images/FIG_M_gain6.png>]
+<./ressources/images/FIG_M_gain1000.png, id=274, 903.375pt x 602.25pt>
 File: ./ressources/images/FIG_M_gain1000.png Graphic file (type png)
 <use ./ressources/images/FIG_M_gain1000.png>
 Package pdftex.def Info: ./ressources/images/FIG_M_gain1000.png  used on input 
-line 327.
+line 363.
 (pdftex.def)             Requested size: 451.6864pt x 301.12425pt.
- [21 <./ressources/images/FIG_M_gain1000.png>]
+ [23 <./ressources/images/FIG_M_gain1000.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 376--379
 
-LaTeX Warning: File `all.png' not found on input line 342.
-
-
-! Package pdftex.def Error: File `all.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.342 ...    \includegraphics[scale=0.45]{all.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
 
-LaTeX Warning: File `all_graph.png' not found on input line 347.
+Underfull \hbox (badness 10000) in paragraph at lines 376--379
 
+ []
 
-! Package pdftex.def Error: File `all_graph.png' not found: using draft setting
-.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.347 ...includegraphics[scale=0.4]{all_graph.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
- [22] [23] (./main.aux)
+ [24] [25] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -982,13 +1021,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 86A2DC25090E0164EC9C55DA4A441A24;5408.
  ) 
 Here is how much of TeX's memory you used:
- 13779 strings out of 474222
- 220202 string characters out of 5748733
+ 13745 strings out of 474222
+ 219353 string characters out of 5748733
  1937975 words of memory out of 5000000
- 35774 multiletter control sequences out of 15000+600000
+ 35736 multiletter control sequences out of 15000+600000
  564531 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,8n,117p,507b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,8n,117p,507b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -998,10 +1037,10 @@ fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt12.pfb>
-Output written on main.pdf (23 pages, 1356441 bytes).
+Output written on main.pdf (25 pages, 1488128 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 
