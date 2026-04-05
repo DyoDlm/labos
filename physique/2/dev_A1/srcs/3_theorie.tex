@@ -1,27 +1,38 @@
-\subsection{Partie théorique} \label{sec:theorie}
+\section{Partie théorique, Ondes et interférences} \label{sec:theorie}
 
-\subsection{Interférences d'ondes}
+Soit une onde indéformable $p(x,t) = Â \cdot sin(\omega t - kx)$ qui dépend d'une composante spaciale (x) et temporelle (t). Cette onde est définie par k le nombre d'onde et $\omega$ la pulsation tels que k = $\frac{2\pi}{\lambda}$ en [...] et $\omega = 2\pi f$ [rad/s]. p(x,t) est donc définie plus spécifiquement par une longueur d'onde $\lambda$ [m], une fréquence f [Hz] et une amplitude Â.
+\\\\
+Nous nous interessons a deux cas specifiques. En un premier temps aux interferences d'ondes accoustiques, puis aux interferences d'ondes de surfaces circulaires. 
 
-Les interférences se produisent lorsque deux ondes cohérentes se superposent. Pour les ondes acoustiques et les ondes de surface, les grandeurs clés sont la **longueur d'onde** (\(\lambda\)), la **fréquence** (\(f\)), et la **vitesse de propagation** (\(v\)).
-
-
-\subsection{Équations fondamentales}
-
-\subsubsection{Vitesse de propagation}
-
-La vitesse de propagation \(v\) d'une onde est donnée par la relation :
+\subsection{Interférences constructives et destructives}
+Soit deux ondes indéformables p1(x,t) et p2(x,t). L'onde stationnaire résultant de la superposition de p1 et p2, soit par la somme des deux tel que :
 \[
-v = \lambda \cdot f
+    p_m(t) = p1 + p2 = 2 Â cos(k \frac{d_2 - d_1}{2} sin(\omega t - k \frac{d_1 + d_2}{2})
 \]
-où :
-- \(\lambda\) est la longueur d'onde (en mètres),
-- \(f\) est la fréquence (en hertz).
 
-Cette équation est universelle pour toutes les ondes périodiques et découle de la définition de la longueur d'onde comme la distance parcourue par l'onde en une période \(T = \frac{1}{f}\).
+Pour deux ondes cohérentes de même amplitude, l'interférence est donc constructive si la différence de chemin \(\Delta x\) est un multiple entier de \(\lambda\) :
+  \[
+  \Delta x = n \lambda \quad \text{avec } n \in \mathbb{Z}
+  \] et destructive si la différence de chemin \(\Delta x\) est un multiple demi-entier de \(\lambda\) :
+  \[
+  \Delta x = \left(n + \frac{1}{2}\right) \lambda \quad \text{avec } n \in \mathbb{Z}
+  \]
 
----
+Nous pouvons observer ce phenomène graphiquement sur Fig. \ref{fig:ohwaw} :
 
-\subsubsection{Vitesse du son dans l'air}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{ohwaw.png}
+\end{center}
+\label{fig:ohwaw}
+\caption{Illustration d'ondes constructives et destructives}
+\end{figure}
+
+% Include une images pour les deux ?
+
+\subsection{Ondes accoustiques}
+
+Une onde indeformable de pression accoustique peut s'ecrire par...
 
 Pour les ondes acoustiques, la célérité \textbf{c} d'une onde accoustique dans un milieu est donné par :
 \[
@@ -29,38 +40,16 @@ Pour les ondes acoustiques, la célérité \textbf{c} d'une onde accoustique dan
 \]
 Avec gamma ..., R ... et M .....
 \\\\
-La vitesse du son dans l'air dépend donc de la température \(T\) (en degrés Celsius) selon la relation empirique :
+De manière plus générale, la vitesse de propagation \(v\) d'une onde est donnée par la relation :
 \[
-c = 331 + 0.6 \cdot T \quad \text{(en m/s)}
+c = \lambda \cdot f
 \]
-Cette formule est dérivée de la théorie cinétique des gaz et est valable pour des températures proches de la température ambiante.
 
----
 
-\subsubsection{Interférences constructives et destructives}
+\subsection{Ondes de surface circulaires}
 
-Pour deux ondes cohérentes de même amplitude, l'interférence est :
-- **Constructive** si la différence de chemin \(\Delta x\) est un multiple entier de \(\lambda\) :
-  \[
-  \Delta x = n \lambda \quad \text{avec } n \in \mathbb{Z}
-  \]
-- **Destructive** si la différence de chemin \(\Delta x\) est un multiple demi-entier de \(\lambda\) :
-  \[
-  \Delta x = \left(n + \frac{1}{2}\right) \lambda \quad \text{avec } n \in \mathbb{Z}
-  \]
-
-Ces conditions découlent du principe de superposition des ondes et de la définition de la cohérence.
-
----
-
-\subsection{Application aux expériences}
-
-\subsubsection{Trombone de König}
-
-Dans cette expérience, les interférences acoustiques sont observées en mesurant les positions des minima (nœuds) le long du trombone. La distance entre deux minima consécutifs correspond à \(\frac{\lambda}{2}\), car les nœuds sont espacés de \(\frac{\lambda}{2}\) pour les ondes stationnaires.
-
-\subsubsection{Cuve à ondes}
-
-Pour les ondes de surface, les motifs d'interférence sont visualisés directement. La distance entre les franges brillantes (ou sombres) correspond à \(\lambda\), car ces franges résultent d'interférences constructives (ou destructives) entre les ondes émises par les deux sources.
+De même que pour les ondes de pression accoustiques, une onde de surface circulaire peut s'ecrire tel que : ...
+\\\\
+A la seule différence que sa nature géométrique influence l'amplitude de l'onde tel que pour : ... 
 
 
