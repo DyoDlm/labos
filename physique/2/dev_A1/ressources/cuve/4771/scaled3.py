@@ -21,9 +21,8 @@ plt.ylim(int(min(y_coords)/SCALE_FACTOR), int(max(y_coords)/SCALE_FACTOR))
 print(int(max(y_coords)/SCALE_FACTOR))
 plt.savefig('maxima_scaled_plot.png', dpi=300, bbox_inches='tight')
 plt.close()
-
-foyer1 = (221, 122)  # Foyer gauche
-foyer2 = (222, 198)  # Foyer droit
+foyer1 = (188, 99)  # Foyer gauche
+foyer2 = (190, 175)
 
 # Fonction pour générer des points d'une hyperbole
 def generate_hyperbola(foyer1, foyer2, a):

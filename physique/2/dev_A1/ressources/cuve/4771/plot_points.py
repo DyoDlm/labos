@@ -11,7 +11,7 @@ x_coords = data['X'].values
 y_coords = data['Y'].values
 
 # Charger l'image (optionnel, si vous voulez superposer les points sur l'image)
-image_path = '4774.png'  # Remplacez par le chemin de votre image
+image_path = 'worked.png'  # Remplacez par le chemin de votre image
 image = cv2.imread(image_path)
 if image is not None:
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
