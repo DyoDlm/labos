@@ -22,9 +22,8 @@ print(int(max(y_coords)/SCALE_FACTOR))
 plt.savefig('maxima_scaled_plot.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-foyer1 = (221, 122)  # Foyer gauche
-foyer2 = (222, 198)  # Foyer droit
-
+foyer1 = (207, 75)  # Foyer gauche
+foyer2 = (209, 275)  # Foyer droit
 # Fonction pour générer des points d'une hyperbole
 def generate_hyperbola(foyer1, foyer2, a):
     c = np.sqrt((foyer2[0] - foyer1[0])**2 + (foyer2[1] - foyer1[1])**2) / 2
@@ -52,7 +51,7 @@ plt.scatter([foyer1[0]/SCALE_FACTOR, foyer2[0]/SCALE_FACTOR],
             c='blue', s=100, marker='x', label='Foyers')
 
 # Tracer une série d'hyperboles avec différentes valeurs de a
-a_values = np.linspace(30, 80, 30)  # Différentes valeurs de a pour tracer plusieurs hyperboles
+a_values = np.linspace(70, 150, 10)
 for a in a_values:
     x, y_upper, y_lower = generate_hyperbola(foyer1, foyer2, a)
     plt.plot(x, y_upper, 'b-', linewidth=1, alpha=0.5)

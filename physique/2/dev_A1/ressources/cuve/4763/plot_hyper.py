@@ -9,7 +9,7 @@ x_coords = data['X'].values
 y_coords = data['Y'].values
 
 # Charger l'image
-image_path = '4774.png'
+image_path = 'worked.png'
 image = cv2.imread(image_path)
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 height, width = image.shape[:2]
@@ -26,8 +26,8 @@ plt.savefig('maxima_plot.png', dpi=300, bbox_inches='tight')
 plt.close()
 
 # Identifier les foyers (ajustez ces valeurs en fonction de votre image)
-foyer1 = (221, 122)  # Foyer gauche
-foyer2 = (222, 198)  # Foyer droit
+foyer1 = (207, 75)  # Foyer gauche
+foyer2 = (209, 275)  # Foyer droit
 
 # Fonction pour générer des points d'une hyperbole
 def generate_hyperbola(foyer1, foyer2, a):
@@ -53,7 +53,7 @@ plt.ylim(0, 400)
 plt.scatter([foyer1[0], foyer2[0]], [foyer1[1], foyer2[1]], c='blue', s=100, marker='x', label='Foyers')
 
 # Tracer une série d'hyperboles avec différentes valeurs de a
-a_values = np.linspace(30, 100, 20)  # Différentes valeurs de a pour tracer plusieurs hyperboles
+a_values = np.linspace(70, 150, 10)  # Différentes valeurs de a pour tracer plusieurs hyperboles
 print(a_values)
 #a_values = np.array([80, 82, 84, 86])
 #a_values = [40, 90, 110, 140]
