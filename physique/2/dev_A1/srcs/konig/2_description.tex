@@ -1,9 +1,10 @@
 \section{Interférences d'ondes accoustiques}
 Discuter brievement ondes accoustiques.
 \subsection{Description des manipulations}
-Rappeler les parametres dont depend la vitesse du son et ce qu'on va exploiter et commment l'exploiter (discuter le principe de fonctionnement d'un haut parleur electrodynamique et comment il va generer les ondes). Puis Discuter le principe de fonctionnnement d'un microphone et comment il va nous permettre de mesurer les ondes et interferences.
-\\\\
-Mentionner les conditions experimentales du montage (frequence, temperature, etc... ) et comment au travers d'un schema de l'experience les facteurs interagissent entre eux.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Le montage expérimental est constitué d’un générateur de fonctions relié à un haut-parleur dont la membrane émet des ondes acoustiques dans un trombone de König (voir Fig. \ref{fig:montage_konig}). Ce dernier est équipé d’une partie coulissante qui permet de contrôler la distance parcourue par une des ondes superposée à la seconde (en rouge sur Fig. \ref{fig:chemin_konig}). Cette distance est mesurée grâce au banc coulissant gradué supportant le trombonne. La structure du trombonne permet de diviser l’onde incidente en deux ondes qui se superposent après avoir parcouru des chemins différents. Un microphone est placé à la sortie du trombone et est connecté à un oscilloscope afin de mesurer le signal de l'onde stationnaire issu de la superposition des ondes résultant de la division de l'onde incidante générée par le haut-parleur. L’ensemble du dispositif est installé sur une table stable partiellement à l’abri des perturbations extérieures.
 
 \begin{figure}[h!]
     \centering
@@ -11,24 +12,24 @@ Mentionner les conditions experimentales du montage (frequence, temperature, etc
     \begin{minipage}[b]{0.48\linewidth}
     \centering
     \includegraphics[width=\linewidth]{trombonne.png}
-    \caption{$Z_L = 2000 \ohm$}
-    \label{fig:r2000}
+        \caption{Montage du trombonne de konig Ref. \cite{protocole}}
+    \label{fig:montage_konig}
     \end{minipage}
     \hfill
     % Deuxième figure
     \begin{minipage}[b]{0.48\linewidth}
     \centering
         \includegraphics[width=\linewidth]{manip_konig.png}
-        \caption{$Z_L = 2500 \ohm$}
-        \label{fig:r2500}
+        \caption{Schéma des chemins parcourus par les ondes accoustiques}
+        \label{fig:chemin_konig}
     \end{minipage}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+L'installation contient donc un exitateur : le haut-parleur électrodynamique. Il convertit le signal électrique sinusoïdal généré en vibrations mécaniques de sa membrane. Cela produit ainsi une onde acoustique de fréquence contrôlée. L'élément de mesure est donc le microphone. Il permet de capter les variations de pression acoustique résultant des interférences entre les deux ondes cohérentes dans le trombone de König. Il transforme ces variations en un signal électrique qu'il nous est possible de visualiser sur l’oscilloscope. Nous mesurons donc l’amplitude de l’onde résultante et cherchons alors d’identifier les minima d’interférence.  \\\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Pour chaque fréquence comprise entre 900 Hz et 5000 Hz, la partie coulissante du trombone de König est déplacée jusqu’à ce que l’oscilloscope indique deux minima successifs de l’amplitude du signal capté par le microphone. La distance entre ces deux positions, correspondant à une demi-longueur d’onde (λ/2), est mesurée. Ces données permettent de déterminer la longueur d’onde pour chaque fréquence et, par un tracé de λ en fonction de 1/f1/f1/f, de déduire la vitesse du son dans l’air. La température ambiante est également relevée pour comparer la vitesse expérimentale à la valeur théorique.
 
 
-
-A savoir :
-1) pour chaque frequence mesure distance laquelle il doit déplacer la partie coulissante du trombone de König pour que l’intensité du
-son mesurée par le microphone passe par deux minima successifs.
-\\\\
-cela permet de mesurer la longueur d'onde accoustique emise par haut parleur (citer formule de la theorie)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
