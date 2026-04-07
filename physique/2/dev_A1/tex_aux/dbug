@@ -208,8 +208,7 @@ For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
 (./main.aux (./srcs/1_intro.aux) (./srcs/3_theorie.aux)
 (./srcs/konig/2_description.aux) (./srcs/konig/4_resultats.aux)
-(./srcs/konig/5_analyse.aux) (./srcs/cuve/2_description.aux)
-(./srcs/cuve/4_resultats.aux
+(./srcs/cuve/2_description.aux) (./srcs/cuve/4_resultats.aux
 
 LaTeX Warning: Label `tab:mesures' multiply defined.
 
