@@ -9,7 +9,7 @@ def linear_fit(x, a):
     return a * x
 
 popt, pcov = curve_fit(linear_fit, 1/frequencies, lambdas)
-vitesse_son = popt[0]  
+vitesse_son = popt[0]
 incertitude = np.sqrt(np.diag(pcov))[0]  # Incertitude sur a
 
 print(f"Vitesse du son mesurée : {vitesse_son:.3f} ± {incertitude:.3f} m/s")
@@ -18,7 +18,7 @@ plt.figure(figsize=(10, 6))
 plt.scatter(1/frequencies, lambdas, color='red', label='Données expérimentales')
 plt.plot(1/frequencies, linear_fit(1/frequencies, *popt),
          color='blue',
-         label=f'Fit linéaire : $\lambda (1/f) = ({vitesse_son:.2f} \pm {incertitude:.2f} [m/s] $')
+         label=f'Fit linéaire : $\lambda (1/f) = ({vitesse_son:.2f} \pm {incertitude:.2f}) [m/s] $')
 
 plt.xlabel("$1/f$ \ s", fontsize=12)
 plt.ylabel("$\lambda$ \ m", fontsize=12)
