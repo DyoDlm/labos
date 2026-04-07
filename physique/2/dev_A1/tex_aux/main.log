@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  7 APR 2026 12:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  7 APR 2026 12:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,9 +588,6 @@ LaTeX Warning: Label `tab:mesures' multiply defined.
 
 LaTeX Warning: Label `fig:r2000' multiply defined.
 
-
-LaTeX Warning: Label `fig:r2000' multiply defined.
-
 ) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux
 
 LaTeX Warning: Label `fig:r2000' multiply defined.
@@ -1061,82 +1058,60 @@ Overfull \hbox (330.99603pt too wide) in paragraph at lines 17--18
 
 
  <./ressources/images/gamma.png>]
-
-LaTeX Warning: Reference `fig:franges_photo' on page 10 undefined on input line
- 26.
-
-<./ressources/images/4771_interferences_with_hyperboles.png, id=191, 726.7953pt
+<./ressources/images/4771_interferences_with_hyperboles.png, id=192, 726.7953pt
  x 423.2613pt>
 File: ./ressources/images/4771_interferences_with_hyperboles.png Graphic file (
 type png)
 <use ./ressources/images/4771_interferences_with_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4771_interferences_with_hyperboles
 .png  used on input line 31.
-(pdftex.def)             Requested size: 281.85587pt x 164.14122pt.
+(pdftex.def)             Requested size: 305.33789pt x 177.82019pt.
 
-LaTeX Warning: Reference `fig:montage_cuve' on page 10 undefined on input line 
-38.
+LaTeX Warning: Reference `eq:interference' on page 10 undefined on input line 3
+8.
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 38--39
-[]\OT1/cmr/m/n/12 L'installation vi-sible sur Fig.
+LaTeX Warning: Reference `eq:hyperboles' on page 10 undefined on input line 39.
+
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 38--40
+[]\OT1/cmr/m/n/12 Gr^ace ^^Ra la re-la-tion Eq.
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 38--39
-[] \OT1/cmr/m/n/12 contient donc d'abord un
+Underfull \hbox (badness 6204) in paragraph at lines 38--40
+[]\OT1/cmr/m/n/12 , nous pou-vons af-fir-
  []
 
 
-Underfull \hbox (badness 5756) in paragraph at lines 38--39
-\OT1/cmr/m/n/12 exi-ta-teur (dis-po-si-tif pneu-ma-
+Underfull \hbox (badness 1867) in paragraph at lines 38--40
+\OT1/cmr/m/n/12 sur Fig. [][]7[][] cor-res-pondent
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 38--39
-\OT1/cmr/m/n/12 cil-la-tions ac-cous-tiques par un
+Underfull \hbox (badness 3039) in paragraph at lines 38--40
+\OT1/cmr/m/n/12 fronts les plus lu-mi-neux
  []
 
-
-Underfull \hbox (badness 1122) in paragraph at lines 38--39
-\OT1/cmr/m/n/12 conduit souple) pour me-su-rer
- []
-
-<./ressources/images/4771_interferences_with_scaled_hyperboles.png, id=192, 726
+<./ressources/images/4771_interferences_with_scaled_hyperboles.png, id=194, 726
 .7953pt x 494.8086pt>
 File: ./ressources/images/4771_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
 <use ./ressources/images/4771_interferences_with_scaled_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4771_interferences_with_scaled_hyp
-erboles.png  used on input line 47.
+erboles.png  used on input line 48.
 (pdftex.def)             Requested size: 281.85587pt x 191.88734pt.
 
-LaTeX Warning: Reference `fig:montage_cuve' on page 10 undefined on input line 
-54.
+LaTeX Warning: Reference `fig:franges_scaled' on page 10 undefined on input lin
+e 55.
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 54--55
-[]\OT1/cmr/m/n/12 L'installation vi-sible sur Fig.
- []
+LaTeX Warning: Reference `eq:bessel' on page 10 undefined on input line 55.
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 54--55
-[] \OT1/cmr/m/n/12 contient donc d'abord un
- []
-
-
-Underfull \hbox (badness 5756) in paragraph at lines 54--55
-\OT1/cmr/m/n/12 exi-ta-teur (dis-po-si-tif pneu-ma-
- []
-
-
-Underfull \hbox (badness 1107) in paragraph at lines 54--55
-\OT1/cmr/m/n/12 cil-la-tions ac-cous-tiques par un
- []
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 54--55
-\OT1/cmr/m/n/12 conduit souple) pour me-su-rer
+Underfull \hbox (badness 1424) in paragraph at lines 55--56
+[]\OT1/cmr/m/n/12 En ap-pli-quant un fac-teur de
  []
 
 ) [10 <./ressources/images/4771_interferences_with_hyperboles.png> <./ressource
@@ -1197,7 +1172,7 @@ or  <return>  to continue without it.
 
 
 ]
-<./ressources/images/ohwaw.png, id=209, 722.7pt x 578.16pt>
+<./ressources/images/ohwaw.png, id=211, 722.7pt x 578.16pt>
 File: ./ressources/images/ohwaw.png Graphic file (type png)
 <use ./ressources/images/ohwaw.png>
 Package pdftex.def Info: ./ressources/images/ohwaw.png  used on input line 26.
@@ -1278,7 +1253,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 114.
 See the caption package documentation for explanation.
 
-<./ressources/images/IMG_4771.jpeg, id=216, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4771.jpeg, id=218, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4771.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4771.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line 
@@ -1301,7 +1276,7 @@ Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ressources/images/IMG_4774.jpeg, id=217, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4774.jpeg, id=219, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4774.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4774.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4774.jpeg  used on input line 
@@ -1315,13 +1290,13 @@ Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ressources/images/IMG_4763.jpeg, id=218, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4763.jpeg, id=220, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4763.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4763.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4763.jpeg  used on input line 
 162.
 (pdftex.def)             Requested size: 225.4804pt x 169.10344pt.
-<./ressources/images/IMG_4773.jpeg, id=219, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4773.jpeg, id=221, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4773.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4773.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4773.jpeg  used on input line 
@@ -1350,10 +1325,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7545C4A771C4BA1B324F8F1C288076C1;3910.
  ) 
 Here is how much of TeX's memory you used:
- 19477 strings out of 474222
- 373546 string characters out of 5748733
+ 19481 strings out of 474222
+ 373609 string characters out of 5748733
  1937975 words of memory out of 5000000
- 41363 multiletter control sequences out of 15000+600000
+ 41367 multiletter control sequences out of 15000+600000
  567641 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,117p,1063b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1369,10 +1344,10 @@ ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (15 pages, 12272605 bytes).
+Output written on main.pdf (15 pages, 12273449 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 244 compressed objects within 3 object streams
+ 313 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
  64 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
