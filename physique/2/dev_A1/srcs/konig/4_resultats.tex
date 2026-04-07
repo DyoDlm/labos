@@ -1,18 +1,17 @@
-\subsection{Résultats, Analyse et Discussion}
+\subsection{Résultats}
 
-Dans cette section, nous présentons les résultats expérimentaux obtenus lors de l'étude des interférences acoustiques à l'aide du trombone de König. Les mesures ont été réalisées pour des fréquences allant de 900 Hz à 5000 Hz, à une température ambiante de \(23,4 \pm 0,2 \,^\circ\text{C}\) (soit \(296,55 \, \text{K}\)) et une tension constante de \(0,5 \, \text{Vpp}\).
+Nous consacrons dans cette section l'étude des interférences acoustiques à l'aide du trombone de König. Les mesures ont été réalisées pour des fréquences allant de 900 Hz à 5000 Hz, à une température ambiante de \(23,4 \pm 0,2 \,^\circ\text{C}\) (soit \(296,55 \, \text{K}\)) et une tension constante de \(0,5 \, \text{Vpp}\).
 
 \subsubsection{Données expérimentales}
 
-Les résultats des mesures sont résumés dans le \autoref{tab:mesures}. Pour chaque fréquence, nous avons relevé les positions des minima d'interférence, calculé la distance entre ces minima, et déterminé la longueur d'onde \(\lambda\) ainsi que la période \(T\).
-La \autoref{fig:lambda_vs_f} montre la relation entre la fréquence \(f\) et la longueur d'onde \(\lambda\). Comme attendu, \(\lambda\) diminue lorsque la fréquence augmente, conformément à la relation \(\lambda = \frac{v}{f}\), où \(v\) est la vitesse du son.
+Les résultats des mesures se trouvent sur Tab. \ref{tab:interferences}. Pour chaque fréquence, nous relevons les positions des minimas d'interférence et calculons la distance entre ces derniers. Cela permet d'obtenir la longueur d'onde \(\lambda\) que l'on trace en fonction de la periode T obtenue à partir de l'inverse de la fréquence. Les résultats sont graphiquement visibles sur Fig. \ref{fig:lambda}.
 
 \begin{figure}[h!]
     \begin{flushleft}
     \begin{minipage}[b]{0.7\linewidth} % Plus d'espace pour le graphique
         \includegraphics[width=\linewidth]{lambda.png}
-        \caption{$Z_L = 2000\,\Omega$}
-        \label{fig:r2000}
+        \caption{$\lambda$(T)}
+        \label{fig:lambda}
     \end{minipage}
     \hfill
     \begin{minipage}[b]{0.28\linewidth} % Moins d'espace pour le tableau
@@ -40,24 +39,6 @@ La \autoref{fig:lambda_vs_f} montre la relation entre la fréquence \(f\) et la 
 
 
 
-
-
-
-
-
-
-
-
-À partir des données expérimentales, nous avons déterminé la vitesse du son \(v\) en utilisant une régression linéaire sur les valeurs de \(\lambda\) et \(f\). La relation utilisée est :
-\[
-v = \lambda \cdot f
-\]
-
-Les coefficients de la régression linéaire sont :
-\[
-v = a \cdot f + b
-\]
-où \(a = 347,499 \, \text{m/s}\) et \(b = -4,6577 \times 10^{-6}\).
-
-La vitesse du son mesurée est donc de \(347,499 \, \text{m/s}\), ce qui est légèrement supérieur à la valeur théorique de \(345,21 \, \text{m/s}\) calculée à partir de la température ambiante (\(v = 331 + 0,6 \cdot T\)).
+Nous constatons \(\lambda\) diminue lorsque la fréquence augmente. Cela est conforme à la relation Eq. \ref{eq:c} où la célérité c correspond à la vitesse du son.
+\\\\
 

@@ -6,14 +6,14 @@
 \contentsline {subsection}{\numberline {2.3}Ondes de surface circulaires}{4}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Interférences d'ondes accoustiques}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Description des manipulations}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Résultats, Analyse et Discussion}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Résultats}{6}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Données expérimentales}{6}{subsubsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.3}Analyse des résultats, complement}{7}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Une premiere analyse}{7}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Une deuxieme analyse}{7}{subsubsection.3.3.2}%
 \contentsline {section}{\numberline {4}Ondes de surfaces circulaires}{8}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Description des manipulations}{8}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Résultats cuve}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Résultats, Analyse et Discussion}{9}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Determination de la tension superficielle de l'eau}{9}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Hyperboles d'interferences}{10}{subsubsection.4.2.2}%
 \contentsline {section}{\numberline {5}Annexes}{12}{section.5}%
