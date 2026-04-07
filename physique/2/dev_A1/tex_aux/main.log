@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  6 APR 2026 19:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  7 APR 2026 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,7 +578,20 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `fig:r2000' multiply defined.
 
-) (./srcs/cuve/4_resultats.aux) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux
+) (./srcs/cuve/4_resultats.aux
+
+LaTeX Warning: Label `fig:r2000' multiply defined.
+
+
+LaTeX Warning: Label `tab:mesures' multiply defined.
+
+
+LaTeX Warning: Label `fig:r2000' multiply defined.
+
+
+LaTeX Warning: Label `fig:r2000' multiply defined.
+
+) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux
 
 LaTeX Warning: Label `fig:r2000' multiply defined.
 
@@ -874,13 +887,13 @@ or  <return>  to continue without it.
 \openout2 = `./srcs/konig/2_description.aux'.
 
  (./srcs/konig/2_description.tex
-<./ressources/images/trombonne.png, id=143, 800.9925pt x 438.63875pt>
+<./ressources/images/trombonne.png, id=148, 800.9925pt x 438.63875pt>
 File: ./ressources/images/trombonne.png Graphic file (type png)
 <use ./ressources/images/trombonne.png>
 Package pdftex.def Info: ./ressources/images/trombonne.png  used on input line 
 14.
 (pdftex.def)             Requested size: 225.4804pt x 123.47392pt.
-<./ressources/images/manip_konig.png, id=147, 1336.995pt x 561.09625pt>
+<./ressources/images/manip_konig.png, id=152, 1336.995pt x 561.09625pt>
 File: ./ressources/images/manip_konig.png Graphic file (type png)
 <use ./ressources/images/manip_konig.png>
 Package pdftex.def Info: ./ressources/images/manip_konig.png  used on input lin
@@ -933,7 +946,7 @@ You may provide a definition with
 
  (./srcs/konig/4_resultats.tex
 
-Package caption Warning: \label without proper reference on input line 19.
+Package caption Warning: \label without proper reference on input line 15.
 See the caption package documentation for explanation.
 
 
@@ -943,7 +956,7 @@ LaTeX Warning: Reference `tab:mesures' on page 6 undefined on input line 7.
 LaTeX Warning: Reference `fig:lambda_vs_f' on page 6 undefined on input line 8.
 
 
-<./ressources/images/lambda.png, id=158, 722.7pt x 433.62pt>
+<./ressources/images/lambda.png, id=163, 722.7pt x 433.62pt>
 File: ./ressources/images/lambda.png Graphic file (type png)
 <use ./ressources/images/lambda.png>
 Package pdftex.def Info: ./ressources/images/lambda.png  used on input line 13.
@@ -969,7 +982,7 @@ Overfull \hbox (3.20032pt too wide) in paragraph at lines 20--36
 \openout2 = `./srcs/cuve/2_description.aux'.
 
  (./srcs/cuve/2_description.tex
-<./ressources/images/manip_cuve.png, id=172, 730.73pt x 518.93875pt>
+<./ressources/images/manip_cuve.png, id=178, 730.73pt x 518.93875pt>
 File: ./ressources/images/manip_cuve.png Graphic file (type png)
 <use ./ressources/images/manip_cuve.png>
 Package pdftex.def Info: ./ressources/images/manip_cuve.png  used on input line
@@ -1016,11 +1029,118 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--105
  <./ressources/images/manip_cuve.png>]
 \openout2 = `./srcs/cuve/4_resultats.aux'.
 
- (./srcs/cuve/4_resultats.tex) [9
+ (./srcs/cuve/4_resultats.tex
+<./ressources/images/gamma.png, id=185, 462.528pt x 346.896pt>
+File: ./ressources/images/gamma.png Graphic file (type png)
+<use ./ressources/images/gamma.png>
+Package pdftex.def Info: ./ressources/images/gamma.png  used on input line 9.
+(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17             \includegraphics
+                                 {gamma.png}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: ./ressources/images/gamma.png Graphic file (type png)
+<use ./ressources/images/gamma.png>
+Package pdftex.def Info: ./ressources/images/gamma.png  used on input line 17.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (330.99603pt too wide) in paragraph at lines 17--18
+[][] 
+ []
+
+ [9
 
 
 
-]
+ <./ressources/images/gamma.png>]
+
+LaTeX Warning: Reference `fig:franges_photo' on page 10 undefined on input line
+ 26.
+
+<./ressources/images/4771_interferences_with_hyperboles.png, id=191, 726.7953pt
+ x 423.2613pt>
+File: ./ressources/images/4771_interferences_with_hyperboles.png Graphic file (
+type png)
+<use ./ressources/images/4771_interferences_with_hyperboles.png>
+Package pdftex.def Info: ./ressources/images/4771_interferences_with_hyperboles
+.png  used on input line 31.
+(pdftex.def)             Requested size: 281.85587pt x 164.14122pt.
+
+LaTeX Warning: Reference `fig:montage_cuve' on page 10 undefined on input line 
+38.
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 38--39
+[]\OT1/cmr/m/n/12 L'installation vi-sible sur Fig.
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 38--39
+[] \OT1/cmr/m/n/12 contient donc d'abord un
+ []
+
+
+Underfull \hbox (badness 5756) in paragraph at lines 38--39
+\OT1/cmr/m/n/12 exi-ta-teur (dis-po-si-tif pneu-ma-
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 38--39
+\OT1/cmr/m/n/12 cil-la-tions ac-cous-tiques par un
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 38--39
+\OT1/cmr/m/n/12 conduit souple) pour me-su-rer
+ []
+
+<./ressources/images/4771_interferences_with_scaled_hyperboles.png, id=192, 726
+.7953pt x 494.8086pt>
+File: ./ressources/images/4771_interferences_with_scaled_hyperboles.png Graphic
+ file (type png)
+<use ./ressources/images/4771_interferences_with_scaled_hyperboles.png>
+Package pdftex.def Info: ./ressources/images/4771_interferences_with_scaled_hyp
+erboles.png  used on input line 47.
+(pdftex.def)             Requested size: 281.85587pt x 191.88734pt.
+
+LaTeX Warning: Reference `fig:montage_cuve' on page 10 undefined on input line 
+54.
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 54--55
+[]\OT1/cmr/m/n/12 L'installation vi-sible sur Fig.
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 54--55
+[] \OT1/cmr/m/n/12 contient donc d'abord un
+ []
+
+
+Underfull \hbox (badness 5756) in paragraph at lines 54--55
+\OT1/cmr/m/n/12 exi-ta-teur (dis-po-si-tif pneu-ma-
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 54--55
+\OT1/cmr/m/n/12 cil-la-tions ac-cous-tiques par un
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 54--55
+\OT1/cmr/m/n/12 conduit souple) pour me-su-rer
+ []
+
+) [10 <./ressources/images/4771_interferences_with_hyperboles.png> <./ressource
+s/images/4771_interferences_with_scaled_hyperboles.png>]
 \openout2 = `./srcs/cuve/5_analyse.aux'.
 
  (./srcs/cuve/5_analyse.tex)
@@ -1069,7 +1189,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- [10
+ [11
 
 
 
@@ -1077,7 +1197,7 @@ or  <return>  to continue without it.
 
 
 ]
-<./ressources/images/ohwaw.png, id=191, 722.7pt x 578.16pt>
+<./ressources/images/ohwaw.png, id=209, 722.7pt x 578.16pt>
 File: ./ressources/images/ohwaw.png Graphic file (type png)
 <use ./ressources/images/ohwaw.png>
 Package pdftex.def Info: ./ressources/images/ohwaw.png  used on input line 26.
@@ -1103,7 +1223,7 @@ l.60 ...egraphics[scale=0.5]{electrique/r1500.png}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
- [11 <./ressources/images/ohwaw.png>]
+ [12 <./ressources/images/ohwaw.png>]
 ! Undefined control sequence.
 <argument> \millimeter 
                        
@@ -1158,7 +1278,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 114.
 See the caption package documentation for explanation.
 
-<./ressources/images/IMG_4771.jpeg, id=198, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4771.jpeg, id=216, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4771.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4771.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line 
@@ -1181,7 +1301,7 @@ Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ressources/images/IMG_4774.jpeg, id=199, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4774.jpeg, id=217, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4774.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4774.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4774.jpeg  used on input line 
@@ -1195,13 +1315,13 @@ Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ressources/images/IMG_4763.jpeg, id=200, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4763.jpeg, id=218, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4763.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4763.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4763.jpeg  used on input line 
 162.
 (pdftex.def)             Requested size: 225.4804pt x 169.10344pt.
-<./ressources/images/IMG_4773.jpeg, id=201, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4773.jpeg, id=219, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4773.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4773.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4773.jpeg  used on input line 
@@ -1210,8 +1330,8 @@ Package pdftex.def Info: ./ressources/images/IMG_4773.jpeg  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [12] [13 <./ressources/images/IMG_4771.jpeg> <./ressources/images/IMG_4774.jp
-eg>] [14 <./ressources/images/IMG_4763.jpeg> <./ressources/images/IMG_4773.jpeg
+) [13] [14 <./ressources/images/IMG_4771.jpeg> <./ressources/images/IMG_4774.jp
+eg>] [15 <./ressources/images/IMG_4763.jpeg> <./ressources/images/IMG_4773.jpeg
 >] (./main.aux (./srcs/1_intro.aux) (./srcs/3_theorie.aux) (./srcs/konig/2_desc
 ription.aux) (./srcs/konig/4_resultats.aux) (./srcs/konig/5_analyse.aux) (./src
 s/cuve/2_description.aux) (./srcs/cuve/4_resultats.aux) (./srcs/cuve/5_analyse.
@@ -1227,13 +1347,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 795DEA9C82934AFF8D873F1A687CB960;3709.
+(rerunfilecheck)             Checksum: 7545C4A771C4BA1B324F8F1C288076C1;3910.
  ) 
 Here is how much of TeX's memory you used:
- 19443 strings out of 474222
- 372000 string characters out of 5748733
+ 19477 strings out of 474222
+ 373546 string characters out of 5748733
  1937975 words of memory out of 5000000
- 41334 multiletter control sequences out of 15000+600000
+ 41363 multiletter control sequences out of 15000+600000
  567641 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,117p,1063b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1249,10 +1369,10 @@ ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (14 pages, 11291316 bytes).
+Output written on main.pdf (15 pages, 12272605 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

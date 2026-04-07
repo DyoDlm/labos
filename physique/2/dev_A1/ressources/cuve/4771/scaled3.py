@@ -51,17 +51,19 @@ plt.scatter([foyer1[0]/SCALE_FACTOR, foyer2[0]/SCALE_FACTOR],
             c='blue', s=100, marker='x', label='Foyers')
 
 # Tracer une série d'hyperboles avec différentes valeurs de a
-a_values = np.linspace(30, 80, 30)  # Différentes valeurs de a pour tracer plusieurs hyperboles
+#a_values = np.linspace(30, 100, 20)
+#print(a_values)
+a_values = np.linspace(30, 180,40)  # Différentes valeurs de a pour tracer plusieurs hyperboles
+
 for a in a_values:
     x, y_upper, y_lower = generate_hyperbola(foyer1, foyer2, a)
     plt.plot(x, y_upper, 'b-', linewidth=1, alpha=0.5)
     plt.plot(x, y_lower, 'g-', linewidth=1, alpha=0.5)
 
-plt.title("Hyperboles tracées sur les interférences")
-plt.xlabel('Position X')
-plt.ylabel('Position Y')
+plt.xlabel('X \ mm')
+plt.ylabel('Y \ mm')
 plt.xlim(int(min(x_coords)/SCALE_FACTOR), int(max(x_coords)/SCALE_FACTOR))
 plt.ylim(int(min(y_coords)/SCALE_FACTOR), int(max(y_coords)/SCALE_FACTOR))
 plt.legend()
-plt.savefig('interferences_with_scaled_hyperboles.png', dpi=300, bbox_inches='tight')
+plt.savefig('4771_interferences_with_scaled_hyperboles.png', dpi=300, bbox_inches='tight')
 plt.close()

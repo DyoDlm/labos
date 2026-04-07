@@ -212,7 +212,20 @@ For additional information on amsmath, use the `?' option.
 
 LaTeX Warning: Label `fig:r2000' multiply defined.
 
-) (./srcs/cuve/4_resultats.aux) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux
+) (./srcs/cuve/4_resultats.aux
+
+LaTeX Warning: Label `fig:r2000' multiply defined.
+
+
+LaTeX Warning: Label `tab:mesures' multiply defined.
+
+
+LaTeX Warning: Label `fig:r2000' multiply defined.
+
+
+LaTeX Warning: Label `fig:r2000' multiply defined.
+
+) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux
 
 LaTeX Warning: Label `fig:r2000' multiply defined.
 

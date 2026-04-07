@@ -5,11 +5,16 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
 g = 9.81
-h = 0.008
-rho = 900
+h = 0.01
+rho = 990
 
 def v_theorique(lambda_, gamma):
-    return np.sqrt((g * lambda_ / (2 * np.pi) + gamma * 2 * np.pi / (rho * lambda_)) * np.tanh(2 * np.pi * h / lambda_))
+    #lambda_ /= 2
+    #return np.sqrt((g * lambda_ / (2 * np.pi) + gamma * 2 * np.pi / (rho * lambda_)) * np.tanh(2 * np.pi * h / lambda_))
+    return np.sqrt(
+        (g * lambda_ / (2 * np.pi) + 2 * np.pi * gamma / (rho * lambda_))
+        * np.tanh(2 * np.pi * h / lambda_)
+        )
 
 lambda_exp = np.array([0.0119690744752372,
 0.0105726824531262,
@@ -57,12 +62,12 @@ v_fit = v_theorique(l_th, popt)
 
 plt.plot(l_th, v_fit, label="Fit experimental")
 #plt.scatter(l_th, v_th, label="Valeurs theoriques")
-plt.xlim(0.003, 0.013)
+#plt.xlim(0.003, 0.013)
 #plt.scatter(lambda_2, v_exp, label="Valeurs experimentales (x4)")
-plt.scatter(lambda_exp, v_exp, label="Valeurs experimentales (x1,67)")
+plt.scatter(lambda_exp, v_exp, color='r', label="Valeurs experimentales (x1,67)")
 plt.grid()
-plt.xlabel(rf"$\lambda [m]$")
-plt.ylabel(rf"$c[m/s]$")
+plt.xlabel(rf"$ \lambda $" + " \ m")
+plt.ylabel("c \ m/s")
 plt.legend()
 plt.savefig("foo.png")
 print(popt, pcov)
