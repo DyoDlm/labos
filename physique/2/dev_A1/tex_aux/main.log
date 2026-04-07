@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  7 APR 2026 19:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  7 APR 2026 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -901,32 +901,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--31
  []
 
 
-! LaTeX Error: Unicode character λ (U+03BB)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 ...spondant à une demi-longueur d’onde (λ
-                                                  /2), est mesurée. Ces don...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character λ (U+03BB)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 ... chaque fréquence et, par un tracé de λ
-                                                   en fonction de 1/f1/f1/f,...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
+LaTeX Warning: Reference `eq:c_th' on page 5 undefined on input line 32.
 
 ) [5
 
@@ -1339,10 +1314,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4DFA561F3291105946B195CDCC0AA26A;3882.
  ) 
 Here is how much of TeX's memory you used:
- 19488 strings out of 474222
- 373666 string characters out of 5748733
+ 19487 strings out of 474222
+ 373661 string characters out of 5748733
  1937975 words of memory out of 5000000
- 41372 multiletter control sequences out of 15000+600000
+ 41371 multiletter control sequences out of 15000+600000
  567978 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,117p,1063b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1359,7 +1334,7 @@ nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (15 pages, 12279572 bytes).
+Output written on main.pdf (15 pages, 12279605 bytes).
 PDF statistics:
  321 PDF objects out of 1000 (max. 8388607)
  252 compressed objects within 3 object streams
