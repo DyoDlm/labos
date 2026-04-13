@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  7 APR 2026 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  13 APR 2026 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,23 +578,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `tab:mesures' multiply defined.
 
-) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux
-
-LaTeX Warning: Label `fig:r2000' multiply defined.
-
-
-LaTeX Warning: Label `fig:r2000' multiply defined.
-
-
-LaTeX Warning: Label `fig:r2500' multiply defined.
-
-
-LaTeX Warning: Label `fig:r2000' multiply defined.
-
-
-LaTeX Warning: Label `fig:r2500' multiply defined.
-
-))
+) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -615,7 +599,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count353
 \scratchdimen=\dimen263
@@ -1274,60 +1259,116 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 114.
 See the caption package documentation for explanation.
 
-<./ressources/images/IMG_4771.jpeg, id=204, 971.3088pt x 728.4816pt>
-File: ./ressources/images/IMG_4771.jpeg Graphic file (type jpg)
-<use ./ressources/images/IMG_4771.jpeg>
-Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line 
-125.
-(pdftex.def)             Requested size: 225.4804pt x 169.10344pt.
-! Undefined control sequence.
-l.126             \captiof
-                          {Image pre-traitée, Distance entre excitateurs D=...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-File: ./ressources/images/IMG_4771.jpeg Graphic file (type jpg)
-<use ./ressources/images/IMG_4771.jpeg>
-Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line 
-133.
-(pdftex.def)             Requested size: 225.4804pt x 169.10344pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./ressources/images/IMG_4774.jpeg, id=205, 971.3088pt x 728.4816pt>
-File: ./ressources/images/IMG_4774.jpeg Graphic file (type jpg)
-<use ./ressources/images/IMG_4774.jpeg>
-Package pdftex.def Info: ./ressources/images/IMG_4774.jpeg  used on input line 
-144.
-(pdftex.def)             Requested size: 225.4804pt x 169.10344pt.
-File: ./ressources/images/IMG_4771.jpeg Graphic file (type jpg)
-<use ./ressources/images/IMG_4771.jpeg>
-Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line 
-152.
-(pdftex.def)             Requested size: 225.4804pt x 169.10344pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./ressources/images/IMG_4763.jpeg, id=206, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4763.jpeg, id=204, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4763.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4763.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4763.jpeg  used on input line 
-162.
-(pdftex.def)             Requested size: 225.4804pt x 169.10344pt.
-<./ressources/images/IMG_4773.jpeg, id=207, 971.3088pt x 728.4816pt>
-File: ./ressources/images/IMG_4773.jpeg Graphic file (type jpg)
-<use ./ressources/images/IMG_4773.jpeg>
-Package pdftex.def Info: ./ressources/images/IMG_4773.jpeg  used on input line 
-170.
-(pdftex.def)             Requested size: 225.4804pt x 169.10344pt.
+122.
+(pdftex.def)             Requested size: 485.65321pt x 364.23991pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (15.8982pt too wide) in paragraph at lines 122--123
+ [][] 
+ []
 
-) [12] [13 <./ressources/images/IMG_4771.jpeg> <./ressources/images/IMG_4774.jp
-eg>] [14 <./ressources/images/IMG_4763.jpeg> <./ressources/images/IMG_4773.jpeg
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./ressources/images/4763_interferences_with_hyperboles.png, id=205, 726.7953pt
+ x 446.8695pt>
+File: ./ressources/images/4763_interferences_with_hyperboles.png Graphic file (
+type png)
+<use ./ressources/images/4763_interferences_with_hyperboles.png>
+Package pdftex.def Info: ./ressources/images/4763_interferences_with_hyperboles
+.png  used on input line 129.
+(pdftex.def)             Requested size: 363.39676pt x 223.4342pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./ressources/images/4763_interferences_with_scaled_hyperboles.png, id=206, 720
+.291pt x 494.8086pt>
+File: ./ressources/images/4763_interferences_with_scaled_hyperboles.png Graphic
+ file (type png)
+<use ./ressources/images/4763_interferences_with_scaled_hyperboles.png>
+Package pdftex.def Info: ./ressources/images/4763_interferences_with_scaled_hyp
+erboles.png  used on input line 136.
+(pdftex.def)             Requested size: 360.1446pt x 247.40369pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./ressources/images/IMG_4771.jpeg, id=207, 971.3088pt x 728.4816pt>
+File: ./ressources/images/IMG_4771.jpeg Graphic file (type jpg)
+<use ./ressources/images/IMG_4771.jpeg>
+Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line 
+145.
+(pdftex.def)             Requested size: 485.65321pt x 364.23991pt.
+
+Overfull \hbox (15.8982pt too wide) in paragraph at lines 145--146
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+ [12]
+File: ./ressources/images/4771_interferences_with_hyperboles.png Graphic file (
+type png)
+<use ./ressources/images/4771_interferences_with_hyperboles.png>
+Package pdftex.def Info: ./ressources/images/4771_interferences_with_hyperboles
+.png  used on input line 152.
+(pdftex.def)             Requested size: 363.39676pt x 211.63013pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./ressources/images/4771_interferences_with_scaled_hyperboles.png Graphic
+ file (type png)
+<use ./ressources/images/4771_interferences_with_scaled_hyperboles.png>
+Package pdftex.def Info: ./ressources/images/4771_interferences_with_scaled_hyp
+erboles.png  used on input line 158.
+(pdftex.def)             Requested size: 363.39676pt x 247.40369pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./ressources/images/IMG_4774.jpeg, id=215, 971.3088pt x 728.4816pt>
+File: ./ressources/images/IMG_4774.jpeg Graphic file (type jpg)
+<use ./ressources/images/IMG_4774.jpeg>
+Package pdftex.def Info: ./ressources/images/IMG_4774.jpeg  used on input line 
+167.
+(pdftex.def)             Requested size: 485.65321pt x 364.23991pt.
+
+Overfull \hbox (15.8982pt too wide) in paragraph at lines 167--168
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./ressources/images/4774_interferences_with_hyperboles.png, id=216, 603.9363pt
+ x 490.7133pt>
+File: ./ressources/images/4774_interferences_with_hyperboles.png Graphic file (
+type png)
+<use ./ressources/images/4774_interferences_with_hyperboles.png>
+Package pdftex.def Info: ./ressources/images/4774_interferences_with_hyperboles
+.png  used on input line 173.
+(pdftex.def)             Requested size: 301.9674pt x 245.35605pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./ressources/images/4774_interferences_with_scaled_hyperboles.png, id=217, 720
+.291pt x 494.8086pt>
+File: ./ressources/images/4774_interferences_with_scaled_hyperboles.png Graphic
+ file (type png)
+<use ./ressources/images/4774_interferences_with_scaled_hyperboles.png>
+Package pdftex.def Info: ./ressources/images/4774_interferences_with_scaled_hyp
+erboles.png  used on input line 179.
+(pdftex.def)             Requested size: 360.1446pt x 247.40369pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [13 <./ressources/images/IMG_4763.jpeg>] [14 <./ressources/images/4763_interf
+erences_with_hyperboles.png> <./ressources/images/4763_interferences_with_scale
+d_hyperboles.png>] [15 <./ressources/images/IMG_4771.jpeg>] [16] [17 <./ressour
+ces/images/IMG_4774.jpeg>] [18 <./ressources/images/4774_interferences_with_hyp
+erboles.png> <./ressources/images/4774_interferences_with_scaled_hyperboles.png
 >] (./main.aux (./srcs/1_intro.aux) (./srcs/3_theorie.aux) (./srcs/konig/2_desc
 ription.aux) (./srcs/konig/4_resultats.aux) (./srcs/cuve/2_description.aux) (./
 srcs/cuve/4_resultats.aux) (./srcs/cuve/5_analyse.aux) (./srcs/annexes.aux))
@@ -1345,10 +1386,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F1E6E6D234F8D2B8DD1CD3B15E064263;3299.
  ) 
 Here is how much of TeX's memory you used:
- 19457 strings out of 474222
- 372669 string characters out of 5748733
- 1937975 words of memory out of 5000000
- 41351 multiletter control sequences out of 15000+600000
+ 19502 strings out of 474222
+ 374918 string characters out of 5748733
+ 1936975 words of memory out of 5000000
+ 41386 multiletter control sequences out of 15000+600000
  567978 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,117p,1249b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1365,10 +1406,10 @@ nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (14 pages, 12279252 bytes).
+Output written on main.pdf (18 pages, 12006403 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 

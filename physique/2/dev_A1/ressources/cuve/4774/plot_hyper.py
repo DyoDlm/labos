@@ -47,14 +47,14 @@ def generate_hyperbola(foyer1, foyer2, a):
 plt.figure(figsize=(12, 8))
 plt.imshow(image_rgb, extent=[0, width, height, 0])
 plt.scatter(x_coords, y_coords, c='red', s=30, label='Maxima détectés')
-plt.xlim(0, 400)
-plt.ylim(0, 400)
-# Tracer les foyers
+plt.xlim(int(min(x_coords)), int(max(x_coords)))
+plt.ylim(int(min(y_coords)), int(max(y_coords)))
+
 plt.scatter([foyer1[0], foyer2[0]], [foyer1[1], foyer2[1]], c='blue', s=100, marker='x', label='Foyers')
 
 # Tracer une série d'hyperboles avec différentes valeurs de a
-a_values = np.linspace(30, 100, 20)  # Différentes valeurs de a pour tracer plusieurs hyperboles
-print(a_values)
+#a_values = np.linspace(30, 100, 20)  # Différentes valeurs de a pour tracer plusieurs hyperboles
+a_values = np.linspace(30, 80, 30)
 #a_values = np.array([80, 82, 84, 86])
 #a_values = [40, 90, 110, 140]
 for a in a_values:
@@ -62,9 +62,8 @@ for a in a_values:
     plt.plot(x, y_upper, 'b-', linewidth=1, alpha=0.5)
     plt.plot(x, y_lower, 'g-', linewidth=1, alpha=0.5)
 
-plt.title("Hyperboles tracées sur les interférences")
-plt.xlabel('Position X (pixels)')
-plt.ylabel('Position Y (pixels)')
-plt.legend()
+plt.xlabel('X \\ pixels')
+plt.ylabel('Y \\ pixels')
+plt.legend(loc='upper right')
 plt.savefig('interferences_with_hyperboles.png', dpi=300, bbox_inches='tight')
 plt.close()

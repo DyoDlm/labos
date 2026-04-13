@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import cv2
 
-SCALE_FACTOR = 17
-
+SCALE_FACTOR = 20
 data = pd.read_csv('results.csv')
 x_coords = data['X'].values
 y_coords = data['Y'].values
@@ -57,9 +56,8 @@ for a in a_values:
     plt.plot(x, y_upper, 'b-', linewidth=1, alpha=0.5)
     plt.plot(x, y_lower, 'g-', linewidth=1, alpha=0.5)
 
-plt.title("Hyperboles tracées sur les interférences")
-plt.xlabel('Position X')
-plt.ylabel('Position Y')
+plt.xlabel('X \\ mm')
+plt.ylabel('Y \\ mm')
 plt.xlim(int(min(x_coords)/SCALE_FACTOR), int(max(x_coords)/SCALE_FACTOR))
 plt.ylim(int(min(y_coords)/SCALE_FACTOR), int(max(y_coords)/SCALE_FACTOR))
 plt.legend()

@@ -66,8 +66,8 @@ for a in a_values:
 plt.xlim(int(min(x_coords)), int(max(x_coords)))
 plt.ylim(int(min(y_coords)), int(max(y_coords)))
 
-plt.xlabel('Position X (pixels)')
-plt.ylabel('Position Y (pixels)')
+plt.xlabel('X \\ pixels')
+plt.ylabel('Y \\ pixels')
 plt.legend()
 plt.savefig('interferences_with_hyperboles.png', dpi=300, bbox_inches='tight')
 plt.close()

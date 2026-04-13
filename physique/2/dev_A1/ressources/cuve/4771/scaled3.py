@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import cv2
 
-SCALE_FACTOR = 17
+SCALE_FACTOR = 20
 
 data = pd.read_csv('results.csv')
 x_coords = data['X'].values
