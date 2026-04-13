@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  13 APR 2026 18:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  13 APR 2026 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,7 +799,7 @@ See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60     \caption
+l.58     \caption
                  {eq:omegaK}
 If you do not understand this error, please take a closer look
 at the documentation of the `caption' package, especially the
@@ -819,7 +819,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 \\C
+l.62 \\C
         e qui nous permet d'extraire la célérité en fonction de la longue...
 
 Your command was ignored.
@@ -833,7 +833,7 @@ See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68         \caption
+l.66         \caption
                      {eq:cele}
 If you do not understand this error, please take a closer look
 at the documentation of the `caption' package, especially the
@@ -842,13 +842,19 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
+Overfull \hbox (5.39699pt too wide) in paragraph at lines 70--71
+[]\OT1/cmr/m/n/12 Que l'on peut ap-proxi-mer dans l'air ^^Ra pres-sion at-mosph
+^^Serique en fonc-tion de la temp^^Serature
+ []
+
+
 ! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 L
+l.89 L
       a celerite des ondes a la surfaces d'un liquide peut dans de certaines...
 
 Your command was ignored.
@@ -859,13 +865,13 @@ or  <return>  to continue without it.
 \openout2 = `./srcs/konig/2_description.aux'.
 
  (./srcs/konig/2_description.tex
-<./ressources/images/trombonne.png, id=133, 800.9925pt x 438.63875pt>
+<./ressources/images/trombonne.png, id=135, 800.9925pt x 438.63875pt>
 File: ./ressources/images/trombonne.png Graphic file (type png)
 <use ./ressources/images/trombonne.png>
 Package pdftex.def Info: ./ressources/images/trombonne.png  used on input line 
 14.
 (pdftex.def)             Requested size: 225.4804pt x 123.47392pt.
-<./ressources/images/manip_konig.png, id=137, 1336.995pt x 561.09625pt>
+<./ressources/images/manip_konig.png, id=139, 1336.995pt x 561.09625pt>
 File: ./ressources/images/manip_konig.png Graphic file (type png)
 <use ./ressources/images/manip_konig.png>
 Package pdftex.def Info: ./ressources/images/manip_konig.png  used on input lin
@@ -892,10 +898,11 @@ LaTeX Warning: Reference `eq:c_th' on page 5 undefined on input line 32.
 \openout2 = `./srcs/konig/4_resultats.aux'.
 
  (./srcs/konig/4_resultats.tex
-<./ressources/images/konig.png, id=148, 722.7pt x 433.62pt>
-File: ./ressources/images/konig.png Graphic file (type png)
-<use ./ressources/images/konig.png>
-Package pdftex.def Info: ./ressources/images/konig.png  used on input line 12.
+<./ressources/images/konig_avec_offset.png, id=150, 722.7pt x 433.62pt>
+File: ./ressources/images/konig_avec_offset.png Graphic file (type png)
+<use ./ressources/images/konig_avec_offset.png>
+Package pdftex.def Info: ./ressources/images/konig_avec_offset.png  used on inp
+ut line 12.
 (pdftex.def)             Requested size: 328.82707pt x 197.29741pt.
 
 Overfull \hbox (3.20032pt too wide) in paragraph at lines 19--35
@@ -918,11 +925,11 @@ I treat `x_1_2' essentially like `x_1{}_2'.
 
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./ressources/imag
-es/konig.png>]
+es/konig_avec_offset.png>]
 \openout2 = `./srcs/cuve/2_description.aux'.
 
  (./srcs/cuve/2_description.tex
-<./ressources/images/manip_cuve.png, id=160, 730.73pt x 518.93875pt>
+<./ressources/images/manip_cuve.png, id=162, 730.73pt x 518.93875pt>
 File: ./ressources/images/manip_cuve.png Graphic file (type png)
 <use ./ressources/images/manip_cuve.png>
 Package pdftex.def Info: ./ressources/images/manip_cuve.png  used on input line
@@ -969,7 +976,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--107
 
 LaTeX Warning: Reference `eq:c' on page 8 undefined on input line 6.
 
-<./ressources/images/gamma.png, id=171, 462.528pt x 346.896pt>
+<./ressources/images/gamma.png, id=173, 462.528pt x 346.896pt>
 File: ./ressources/images/gamma.png Graphic file (type png)
 <use ./ressources/images/gamma.png>
 Package pdftex.def Info: ./ressources/images/gamma.png  used on input line 11.
@@ -1017,7 +1024,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
 
  <./ressources/images/gamma.png>]
-<./ressources/images/4771_interferences_with_hyperboles.png, id=179, 726.7953pt
+<./ressources/images/4771_interferences_with_hyperboles.png, id=181, 726.7953pt
  x 423.2613pt>
 File: ./ressources/images/4771_interferences_with_hyperboles.png Graphic file (
 type png)
@@ -1052,7 +1059,7 @@ Underfull \hbox (badness 3039) in paragraph at lines 60--62
 \OT1/cmr/m/n/12 fronts les plus lu-mi-neux
  []
 
-<./ressources/images/4771_interferences_with_scaled_hyperboles.png, id=181, 726
+<./ressources/images/4771_interferences_with_scaled_hyperboles.png, id=183, 726
 .7953pt x 494.8086pt>
 File: ./ressources/images/4771_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
@@ -1178,7 +1185,7 @@ or  <return>  to continue without it.
 
 
 ]
-<./ressources/images/ohwaw.png, id=198, 722.7pt x 578.16pt>
+<./ressources/images/ohwaw.png, id=200, 722.7pt x 578.16pt>
 File: ./ressources/images/ohwaw.png Graphic file (type png)
 <use ./ressources/images/ohwaw.png>
 Package pdftex.def Info: ./ressources/images/ohwaw.png  used on input line 26.
@@ -1259,7 +1266,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 114.
 See the caption package documentation for explanation.
 
-<./ressources/images/IMG_4763.jpeg, id=204, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4763.jpeg, id=206, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4763.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4763.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4763.jpeg  used on input line 
@@ -1273,7 +1280,7 @@ Overfull \hbox (15.8982pt too wide) in paragraph at lines 122--123
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./ressources/images/4763_interferences_with_hyperboles.png, id=205, 726.7953pt
+<./ressources/images/4763_interferences_with_hyperboles.png, id=207, 726.7953pt
  x 446.8695pt>
 File: ./ressources/images/4763_interferences_with_hyperboles.png Graphic file (
 type png)
@@ -1284,7 +1291,7 @@ Package pdftex.def Info: ./ressources/images/4763_interferences_with_hyperboles
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./ressources/images/4763_interferences_with_scaled_hyperboles.png, id=206, 720
+<./ressources/images/4763_interferences_with_scaled_hyperboles.png, id=208, 720
 .291pt x 494.8086pt>
 File: ./ressources/images/4763_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
@@ -1295,7 +1302,7 @@ erboles.png  used on input line 136.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./ressources/images/IMG_4771.jpeg, id=207, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4771.jpeg, id=209, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4771.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4771.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line 
@@ -1328,7 +1335,7 @@ erboles.png  used on input line 158.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./ressources/images/IMG_4774.jpeg, id=215, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4774.jpeg, id=217, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4774.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4774.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4774.jpeg  used on input line 
@@ -1342,7 +1349,7 @@ Overfull \hbox (15.8982pt too wide) in paragraph at lines 167--168
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./ressources/images/4774_interferences_with_hyperboles.png, id=216, 603.9363pt
+<./ressources/images/4774_interferences_with_hyperboles.png, id=218, 603.9363pt
  x 490.7133pt>
 File: ./ressources/images/4774_interferences_with_hyperboles.png Graphic file (
 type png)
@@ -1353,7 +1360,7 @@ Package pdftex.def Info: ./ressources/images/4774_interferences_with_hyperboles
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./ressources/images/4774_interferences_with_scaled_hyperboles.png, id=217, 720
+<./ressources/images/4774_interferences_with_scaled_hyperboles.png, id=219, 720
 .291pt x 494.8086pt>
 File: ./ressources/images/4774_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
@@ -1383,11 +1390,11 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F1E6E6D234F8D2B8DD1CD3B15E064263;3299.
+(rerunfilecheck)             Checksum: 5B951D379548B39373727D93795E079B;3423.
  ) 
 Here is how much of TeX's memory you used:
- 19502 strings out of 474222
- 374918 string characters out of 5748733
+ 19503 strings out of 474222
+ 375044 string characters out of 5748733
  1936975 words of memory out of 5000000
  41386 multiletter control sequences out of 15000+600000
  567978 words of font info for 70 fonts, out of 8000000 for 9000
@@ -1406,10 +1413,10 @@ nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (18 pages, 12006403 bytes).
+Output written on main.pdf (18 pages, 12005894 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
  212 words of extra memory for PDF output out of 10000 (max. 10000000)
 

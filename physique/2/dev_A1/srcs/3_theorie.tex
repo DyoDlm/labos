@@ -11,7 +11,7 @@ Soit une onde indéformable définie par l'équation suivante :
 où \(x\) est la composante spatiale et \(t\) la composante temporelle. Cette onde est caractérisée par :
    \(k\), le nombre d'onde, défini par :
     \begin{equation}
-        k = \frac{2\pi}{\lambda}
+        k = \frac{2\pi}{\lambda} \quad \text{[rad/m]}
         \label{eq:k}
     \end{equation}
     \(\omega\), la pulsation, définie par :
@@ -51,12 +51,10 @@ Ces phénomènes s'appliquent tant aux ondes accoustiques qu'aux ondes de surfac
 \subsection{Ondes acoustiques}
 \label{subsec:acoustique}
 
-Les ondes acoustiques suivent la forme générale d'une onde indéformable présentée dans l'Équation \ref{eq:onde}.
-\\
-L'amplitude constante \(A\) ne dépend pas de la position \(x\). Les nœuds correspondant à l'amplitude minimale sont espacés de \(\frac{\lambda}{2}\). Ce comportement est propre aux ondes stationnaires dans un milieu unidimensionnel. Selon le protocole \cite{protocole}, la célérité est définie comme le rapport :
+Les ondes acoustiques suivent la forme générale d'une onde indéformable présentée dans la relation Eq. \ref{eq:onde}. L'amplitude constante \(A\) ne dépend pas de la position \(x\). Selon la relation d'Alembert (voir Ref. \cite{protocole}), la célérité est définie comme le rapport :
 
 \begin{equation}
-    c = \frac{\omega}{k}
+    c = \frac{\omega}{k} \quad \text{[m/s]}
     \caption{eq:omegaK}
     \label{eq:foo}
 \end{equation}
@@ -67,6 +65,12 @@ L'amplitude constante \(A\) ne dépend pas de la position \(x\). Les nœuds corr
         c = \frac{\lambda}{T}
         \caption{eq:cele}
             \label{eq:celerite}
+\end{equation}
+
+Que l'on peut approximer dans l'air à pression atmosphérique en fonction de la température tel que (voir Ref. \cite{protocole}) : 
+\begin{equation}
+    v = 331 + 0.6 \cdot \theta
+    \label{eq:c_approx}
 \end{equation}
 
 \subsection{Ondes de surface circulaires}

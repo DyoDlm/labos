@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.3}Ondes de surface circulaires}{4}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Interférences d'ondes accoustiques}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Description des manipulations}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Résultats}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Résultats, Analyse et Discussion}{6}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Données expérimentales}{6}{subsubsection.3.2.1}%
 \contentsline {section}{\numberline {4}Ondes de surfaces circulaires}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Description des manipulations}{7}{subsection.4.1}%
