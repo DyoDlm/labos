@@ -27,7 +27,7 @@ Cours electronique, \textit{Pont RLC},
                 \caption{Illustration d'ondes constructives et destructives.}
                     \label{fig:ohwaw}
 \end{figure}
-
+\newpage
 
 \subsection{Ondes accoustiques}
 
@@ -63,7 +63,7 @@ Cours electronique, \textit{Pont RLC},
             \caption{$Z_L = 1500 \ohm$}
         \label{fig:r1500}
 \end{figure}
-\newpage
+    \newpage
 
 \subsubsection{Calculs et incertitudes}
 \\Grâce à Eq. \ref{eq:celerite} et sachant que \(\lambda\) est obtenue par la differences entre positions des minimas à \(\pm \SI{1}{\milli\meter}\), l'incertitude sur \(\lambda\) est alors de \(\pm \SI{0.002}{\meter}\). L'incertitude absolue sur \( c \) est déjà obtenue par le fit du code python suivant :
@@ -83,7 +83,7 @@ Cours electronique, \textit{Pont RLC},
 
 \\print(f"Vitesse son : {vitesse\_son:.3f} ± {incertitude:.3f} m/s")
 \\print(f"b : {b} +/- {incert\_b}")
-
+\newpage
 \subsection{Ondes de surface circulaires}
 
 
@@ -138,9 +138,9 @@ Cours electronique, \textit{Pont RLC},
 \begin{center}
     \begin{tabular}{|c|c|c|}
         \hline
-        \textbf{\(\Delta \lambda_{\text{c}}\) \ m} & 
-        \textbf{\(\Delta T\) \ s} &
-        \textbf{\(\Delta c\) \ m/s} \\
+        \textbf{\(\Delta \lambda_{\text{c}}\) $\backslash$ m} & 
+        \textbf{\(\Delta T\) $\backslash$ s} &
+        \textbf{\(\Delta c\) $\backslash$ m/s} \\
 \hline
         $8.46 \times 10^{-7}$ & 0.00228 & 0.0100 \\
 $7.48 \times 10^{-7}$ & 0.00155 & 0.0088 \\
@@ -153,91 +153,100 @@ $2.96 \times 10^{-7}$ & 0.00010 & 0.0035 \\
 $2.64 \times 10^{-7}$ & 0.00008 & 0.0031 \\
 \hline
 \end{tabular}
-\caption{Incertitudes recalculées sur \(\lambda_{\text{c}}\), \(T\), et \(c\)}
+    \captionof{table}{Incertitudes recalculées sur \(\lambda_{\text{c}}\), \(T\), et \(c\)}
 \end{table}
+\newpage
 
-\(\lambda\) est mesurée avec un facteur de grossissement, et l'incertitude sur \(\lambda_{\text{corr}}\) est calculée à partir des incertitudes sur \(x_1\) et \(x_2\) :
-    \[
-    \Delta \lambda_{\text{corr}} = \lambda_{\text{corr}} \cdot \sqrt{\left(\frac{\Delta x_1}{x_1}\right)^2 + \left(\frac{\Delta x_2}{x_2}\right)^2}
-    \]
-    où \(\Delta x_1 = \Delta x_2 = \SI{0.001}{\meter}\).
-
-La période \(T\) est obtenue à partir de la fréquence \(f\), avec une incertitude \(\Delta f = \SI{0.5}{\hertz}\) :
-    \[
-    \Delta T = \frac{\Delta f}{f^2}
-    \]
-
-La vitesse de phase \(c\) est donnée par :
-    \[
-    c = \frac{\lambda_{\text{corr}}}{T}
-    \]
-
-L'incertitude sur \(c\) est calculée par propagation des incertitudes :
-
-    \[
-    \Delta c = c \cdot \sqrt{\left(\frac{\Delta \lambda_{\text{corr}}}{\lambda_{\text{corr}}}\right)^2 + \left(\frac{\Delta T}{T}\right)^2}
-    \]
-
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{IMG_4763.jpeg}
         \caption{Image pre-traitée, Distance entre excitateurs D = (0.113 +/- 0.001) m à fréquence f = (25.2 +/- 0.1) Hz (TO DEFINE) }
     \label{fig:4763_origin}
 \end{figure}
-
-\begin{figure}[h]
+\newpage
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{4763_interferences_with_hyperboles.png}
     \caption{Image post-traitement avec superposition}
     \label{fig:4763_pixels}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{4763_interferences_with_scaled_hyperboles.png}
     \caption{image post-traitement sans superposition a l'echelle}
     \label{fig:4763_scaled}
 \end{figure}
 
+\newpage
 
-
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
         \includegraphics[scale=0.5]{IMG_4771.jpeg}
     \caption{Image pre-traitée, Distance entre excitateurs D=0.041m à fréquence f = (19.6 +/- 0.1) Hz (TO DEFINE)}
     \label{fig:4771_origin}
 \end{figure}
 \newpage
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
         \includegraphics[scale=0.5]{4771_interferences_with_hyperboles.png}
         \caption{Image post-traitement avec superposition}
         \label{fig:4771_pixels}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
         \includegraphics[scale=0.5]{4771_interferences_with_scaled_hyperboles.png}
         \caption{Image post-traitement sans superposition a l'echelle}
         \label{fig:4771_scaled}
 \end{figure}
+\newpage
 
 
-
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{IMG_4774.jpeg}
     \caption{Image pre-traitée, Distance entre excitateurs D=0.041 +/- 0.001 m à fréquence d'excitation f = (25.2 +/- 0.1) Hz (TO DEFINE)}
     \label{fig:4774_origin}
 \end{figure}
-\begin{figure}[h]
+\newpage
+\begin{figure}[ht]
     \centering
         \includegraphics[scale=0.5]{4774_interferences_with_hyperboles.png}
         \caption{Image post-traitement avec superposition}
         \label{fig:4774_pixels}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
         \includegraphics[scale=0.5]{4774_interferences_with_scaled_hyperboles.png}
         \caption{Image post-traitement sans superposition a l'echelle}
         \label{fig:4774_scaled}
 \end{figure}
+\newpage
+
+
+\subsubsection{Calculs et Incertitudes}
+
+\(\lambda\) est mesurée avec un facteur de grossissement. L'incertitude sur \(\lambda_{\text{corr}}\) est donc calculée à partir des incertitudes sur \(x_1\) et \(x_2\). Soit :
+
+\[
+    \Delta \lambda_{\text{corr}} = \lambda_{\text{corr}} \cdot \sqrt{\left(\frac{\Delta x_1}{x_1}\right)^2 + \left(\frac{\Delta x_2}{x_2}\right)^2}
+\]
+
+où \(\Delta x_1 = \Delta x_2 = \SI{0.001}{\meter}\).
+\\
+
+La période \(T\) est obtenue à partir de la fréquence \(f\), avec une incertitude \(\Delta f = \SI{0.5}{\hertz}\) :
+\[
+    \Delta T = \frac{\Delta f}{f^2}
+\]
+\\
+La vitesse de phase \(c\) est donnée par :
+\[
+    c = \frac{\lambda_{\text{corr}}}{T}
+\]
+\\
+L'incertitude sur \(c\) est calculée par propagation des incertitudes :
+
+\[
+    \Delta c = c \cdot \sqrt{\left(\frac{\Delta \lambda_{\text{corr}}}{\lambda_{\text{corr}}}\right)^2 + \left(\frac{\Delta T}{T}\right)^2}
+\]
