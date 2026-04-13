@@ -10,11 +10,11 @@ def linear_fit(x, a):
 
 popt, pcov = curve_fit(linear_fit, 1/frequencies, lambdas)
 vitesse_son, b = popt
-incertitude, incert_b = np.sqrt(np.diag(pcov))# Incertitude sur a
+incertitude, incert_b = np.sqrt(np.diag(pcov))
 
-print(f"Vitesse du son mesurée : {vitesse_son:.3f} ± {incertitude:.3f} m/s")
+print(f"Vitesse son : {vitesse_son:.3f} ± {incertitude:.3f} m/s")
 print(f"b : {b} +/- {incert_b}")
-plt.figure(figsize=(10, 6))
+plt.figure()
 plt.scatter(1/frequencies, lambdas, color='red', label='Données expérimentales')
 plt.plot(1/frequencies, linear_fit(1/frequencies, *popt),
          color='blue',
@@ -25,5 +25,4 @@ plt.ylabel("$\lambda$ \ m", fontsize=12)
 plt.legend(fontsize=12)
 plt.grid(True, linestyle='--', alpha=0.7)
 
-# Affichage
 plt.savefig("konig.png")

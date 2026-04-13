@@ -31,14 +31,16 @@ Cours electronique, \textit{Pont RLC},
 
 \subsection{Ondes accoustiques}
 
+\subsubsection{Data et graphiques}
+
 \begin{center}
     \begin{tabular}{|c|c|c|c|c|}
         \hline
-        \textbf{f $\pm$ 1Hz} &
-        \textbf{x minima 1 $\pm$ 1mm} &
-        \textbf{x minima 2 $\pm$ 1mm} &
-        \textbf{$\delta$x $\pm$ 1mm} &
-        $\lambda$ $\pm$ 0.002 m \\
+        \textbf{f} $\pm$ 1 $\backslash$ Hz &
+        \textbf{$m 1$} $\pm$ 1 $\backslash$ mm &
+        \textbf{$m_2$} $\pm$ 1 $\backslash$ mm &
+        \textbf{$\Delta$m} $\pm$ 2 $\backslash$ mm &
+        $\lambda$ $\pm$ 0.002 $\backslash$ m \\
         \hline
         900  & 99  & 291 & 192 & 0,384 \\
         1300 & 90  & 225 & 135 & 0,270 \\
@@ -52,7 +54,7 @@ Cours electronique, \textit{Pont RLC},
         5000 & 26  & 60  & 34  & 0,068 \\
         \hline
     \end{tabular}
-    \captionof{table}{Mesures des interférences acoustiques.}
+    \captionof{table}{Mesures des interférences acoustiques (m $\rightarrow$ minimas}
     \label{tab:interferences}
 \end{center}
 \begin{figure}[ht]
@@ -63,17 +65,35 @@ Cours electronique, \textit{Pont RLC},
 \end{figure}
 \newpage
 
+\subsubsection{Calculs et incertitudes}
+\\Grâce à Eq. \ref{eq:celerite} et sachant que \(\lambda\) est obtenue par la differences entre positions des minimas à \(\pm \SI{1}{\milli\meter}\), l'incertitude sur \(\lambda\) est alors de \(\pm \SI{0.002}{\meter}\). L'incertitude absolue sur \( c \) est déjà obtenue par le fit du code python suivant :
+\\\\import numpy as np
+\\import matplotlib.pyplot as plt
+\\from scipy.optimize import curve\_fit
+\\
+\\frequencies = np.array([900, 1300, 1700, 2150, 2550, 3000, 3500, 4000, 4500, 5000]) 
+\\lambdas = np.array([0.384, 0.270, 0.206, 0.162, 0.136, 0.114, 0.098, 0.086, 0.076, 0.068])
+
+\\\\def linear\_fit(x, a):
+    \\  return a * x
+
+\\popt, pcov = curve\_fit(linear\_fit, 1/frequencies, lambdas)
+\\vitesse\_son, b = popt
+\\incertitude, incert\_b = np.sqrt(np.diag(pcov))
+
+\\print(f"Vitesse son : {vitesse\_son:.3f} ± {incertitude:.3f} m/s")
+\\print(f"b : {b} +/- {incert\_b}")
 
 \subsection{Ondes de surface circulaires}
 
 
-
+\subsubsection{Data et graphiques}
 
 \begin{center}
     \begin{tabular}{|c|c|c|}
         \hline
-        \textbf{Fréquence / \si{\hertz} $\pm$ 0,5} &
-        \textbf{Distance / \si{\millimeter} $\pm$ 1} &
+        \textbf{f} $\pm$ 0,5  $\backslash$ Hz &
+        \textbf{D} $\pm$ 1 $\backslash$ mm &
         \textbf{Nb mesures} \\
         \hline
         14,8 & 20,00 & 2 \\
@@ -95,10 +115,10 @@ Cours electronique, \textit{Pont RLC},
 \begin{center}
     \begin{tabular}{|c|c|c|c|}
         \hline
-        \textbf{Lambda / \si{\millimeter}} &
-        \textbf{Période} &
-        \textbf{c} &
-        \textbf{Lambda corrigé} \\
+        \textbf{$\lambda$} $\pm 0.01$ $\backslash$ cm &
+        \textbf{T} $\pm \Delta T$ $\backslash$ s &
+        \textbf{c} $\pm \Delta c$ $\backslash$ m/s &
+        \textbf{$\lambda_c$} $\Delta \lambda_c$ $\backslash$ m} \\
         \hline
         20,00 & 0,0676 & 0,296 & 0,0120 \\
         17,67 & 0,0556 & 0,318 & 0,0106 \\
@@ -115,7 +135,48 @@ Cours electronique, \textit{Pont RLC},
     \label{tab:vitesse_phase}
 \end{center}
 
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{\(\Delta \lambda_{\text{c}}\) \ m} & 
+        \textbf{\(\Delta T\) \ s} &
+        \textbf{\(\Delta c\) \ m/s} \\
+\hline
+        $8.46 \times 10^{-7}$ & 0.00228 & 0.0100 \\
+$7.48 \times 10^{-7}$ & 0.00155 & 0.0088 \\
+$6.77 \times 10^{-7}$ & 0.00114 & 0.0080 \\
+$4.97 \times 10^{-7}$ & 0.00052 & 0.0059 \\
+$4.23 \times 10^{-7}$ & 0.00030 & 0.0050 \\
+$3.63 \times 10^{-7}$ & 0.00020 & 0.0043 \\
+$3.17 \times 10^{-7}$ & 0.00013 & 0.0038 \\
+$2.96 \times 10^{-7}$ & 0.00010 & 0.0035 \\
+$2.64 \times 10^{-7}$ & 0.00008 & 0.0031 \\
+\hline
+\end{tabular}
+\caption{Incertitudes recalculées sur \(\lambda_{\text{c}}\), \(T\), et \(c\)}
+\end{table}
 
+\(\lambda\) est mesurée avec un facteur de grossissement, et l'incertitude sur \(\lambda_{\text{corr}}\) est calculée à partir des incertitudes sur \(x_1\) et \(x_2\) :
+    \[
+    \Delta \lambda_{\text{corr}} = \lambda_{\text{corr}} \cdot \sqrt{\left(\frac{\Delta x_1}{x_1}\right)^2 + \left(\frac{\Delta x_2}{x_2}\right)^2}
+    \]
+    où \(\Delta x_1 = \Delta x_2 = \SI{0.001}{\meter}\).
+
+La période \(T\) est obtenue à partir de la fréquence \(f\), avec une incertitude \(\Delta f = \SI{0.5}{\hertz}\) :
+    \[
+    \Delta T = \frac{\Delta f}{f^2}
+    \]
+
+La vitesse de phase \(c\) est donnée par :
+    \[
+    c = \frac{\lambda_{\text{corr}}}{T}
+    \]
+
+L'incertitude sur \(c\) est calculée par propagation des incertitudes :
+
+    \[
+    \Delta c = c \cdot \sqrt{\left(\frac{\Delta \lambda_{\text{corr}}}{\lambda_{\text{corr}}}\right)^2 + \left(\frac{\Delta T}{T}\right)^2}
+    \]
 
 \begin{figure}[h]
     \centering
