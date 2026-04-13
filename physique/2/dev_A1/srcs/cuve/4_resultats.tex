@@ -17,7 +17,7 @@ Afin de determiner la tension superficielle du liquide, nous mesurons la célér
         \label{tab:mesures}
         \begin{tabular}{|c|c|}
             \hline
-            c $\pm ... m/s$ & $\lambda$ $\pm$ 0.001 m \\
+            c $\pm \Delta c \backslash m/s$ & $\lambda$ $\pm \Delta \lambda$ $\backslash$ m \\
             \hline 
             0,296 & 0,0120 \\
             0,318 & 0,0106 \\
@@ -34,10 +34,7 @@ Afin de determiner la tension superficielle du liquide, nous mesurons la célér
     \end{minipage}
     \end{flushleft}
 \end{figure}
- Comme nous imposons la fréquence à laquelle sont générées les ondes, nous obtenons la période grâce à l'inverse de celle-ci (voir Eq. \ref{eq:t}). La propagation d'incertitude :
- \\\\...\\\\
-
-Nous obtenons la longueur d'onde de manière moins précise. En effet, pour ce faire, nous mesurons le nombres de... . La propagation d'incertitude : 
+Les incertitudes absolues $\Delta c$ sont définies en annexes (voir Tab. \ref{tab:c_incert}). L'incertitude moyenne est égale à ... [rad/s] ce qui est relativement bas. En revanche, la longueur d'onde de manière encore moins précise, soit en moyenne de ... [m]. En effet, pour ce faire, nous mesurons le nombres d'impulsions pour une distance donnée (voir Tab. \ref{tab:lambdas}).  propagation d'incertitude : 
 \\\\...\\\\
 
 La tension superficielle semble etre beaucoup trop haute pour un liquide. 
@@ -82,5 +79,17 @@ La superposition de l'image de l'écran de l'installation et les hyperboles mont
 
 Alors que si nous gardons la fréquence des impulsions, mais que nous conservons la distance qui les sépare $\rightarrow$ CONSEQUENCE (voir Fig. \ref{fig:cuve_...Hz_...D}).
 
-
+\begin{table}[h]
+\centering
+\caption{Observations des interférences en fonction de la fréquence et de la distance entre les excitateurs}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Mesure & Fréquence \( f \) (\si{\hertz}) & Distance \( D \) (\si{\millimeter}) & Longueur d'onde \(\lambda\) & Espacement des franges \\
+\hline
+1 & 25.2 & 41 & \(\lambda_1 = \frac{v}{25.2}\) & Référence \\
+2 & 19.6 & 41 & \(\lambda_2 = \frac{v}{19.6} > \lambda_1\) & Franges plus espacées \\
+3 & 25.2 & 113 & \(\lambda_3 = \lambda_1\) & Franges plus serrées (environ 36\% de l'espacement initial) \\
+\hline
+\end{tabular}
+\end{table}
 
