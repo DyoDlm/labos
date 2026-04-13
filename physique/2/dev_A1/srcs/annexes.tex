@@ -40,7 +40,7 @@ Cours electronique, \textit{Pont RLC},
         \textbf{$m 1$} $\pm$ 1 $\backslash$ mm &
         \textbf{$m_2$} $\pm$ 1 $\backslash$ mm &
         \textbf{$\Delta$m} $\pm$ 2 $\backslash$ mm &
-        $\lambda$ $\pm$ 0.002 $\backslash$ m \\
+        $\lambda$ $\pm$ 0.004 $\backslash$ m \\
         \hline
         900  & 99  & 291 & 192 & 0,384 \\
         1300 & 90  & 225 & 135 & 0,270 \\
@@ -54,7 +54,7 @@ Cours electronique, \textit{Pont RLC},
         5000 & 26  & 60  & 34  & 0,068 \\
         \hline
     \end{tabular}
-    \captionof{table}{Mesures des interférences acoustiques (m $\rightarrow$ minimas}
+    \captionof{table}{Mesures des interférences acoustiques (m $\rightarrow$ minimas)}
     \label{tab:interferences}
 \end{center}
 \begin{figure}[ht]
@@ -65,7 +65,7 @@ Cours electronique, \textit{Pont RLC},
 \end{figure}
     \newpage
 
-\subsubsection{Calculs et incertitudes}
+\subsubsection{Détails calculs et propagation d'incertitudes}
 \\Grâce à Eq. \ref{eq:celerite} et sachant que \(\lambda\) est obtenue par la differences entre positions des minimas à \(\pm \SI{1}{\milli\meter}\), l'incertitude sur \(\lambda\) est alors de \(\pm \SI{0.002}{\meter}\). L'incertitude absolue sur \( c \) est déjà obtenue par le fit du code python suivant :
 \\\\import numpy as np
 \\import matplotlib.pyplot as plt
@@ -157,21 +157,21 @@ $2.64 \times 10^{-7}$ & 0.00008 & 0.0031 \\
 \end{table}
 \newpage
 
-\begin{figure}[ht]
+\begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{IMG_4763.jpeg}
         \caption{Image pre-traitée, Distance entre excitateurs D = (0.113 +/- 0.001) m à fréquence f = (25.2 +/- 0.1) Hz (TO DEFINE) }
     \label{fig:4763_origin}
 \end{figure}
 \newpage
-\begin{figure}[ht]
+\begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{4763_interferences_with_hyperboles.png}
     \caption{Image post-traitement avec superposition}
     \label{fig:4763_pixels}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{4763_interferences_with_scaled_hyperboles.png}
     \caption{image post-traitement sans superposition a l'echelle}
@@ -180,20 +180,20 @@ $2.64 \times 10^{-7}$ & 0.00008 & 0.0031 \\
 
 \newpage
 
-\begin{figure}[ht]
+\begin{figure}[h!]
     \centering
         \includegraphics[scale=0.5]{IMG_4771.jpeg}
     \caption{Image pre-traitée, Distance entre excitateurs D=0.041m à fréquence f = (19.6 +/- 0.1) Hz (TO DEFINE)}
     \label{fig:4771_origin}
 \end{figure}
 \newpage
-\begin{figure}[ht]
+\begin{figure}[h!]
     \centering
         \includegraphics[scale=0.5]{4771_interferences_with_hyperboles.png}
         \caption{Image post-traitement avec superposition}
         \label{fig:4771_pixels}
 \end{figure}
-\begin{figure}[ht]
+\begin{figure}[h!]
     \centering
         \includegraphics[scale=0.5]{4771_interferences_with_scaled_hyperboles.png}
         \caption{Image post-traitement sans superposition a l'echelle}
@@ -202,20 +202,20 @@ $2.64 \times 10^{-7}$ & 0.00008 & 0.0031 \\
 \newpage
 
 
-\begin{figure}[ht]
+\begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{IMG_4774.jpeg}
     \caption{Image pre-traitée, Distance entre excitateurs D=0.041 +/- 0.001 m à fréquence d'excitation f = (25.2 +/- 0.1) Hz (TO DEFINE)}
     \label{fig:4774_origin}
 \end{figure}
 \newpage
-\begin{figure}[ht]
+\begin{figure}[h!]
     \centering
         \includegraphics[scale=0.5]{4774_interferences_with_hyperboles.png}
         \caption{Image post-traitement avec superposition}
         \label{fig:4774_pixels}
 \end{figure}
-\begin{figure}[ht]
+\begin{figure}[h!]
     \centering
         \includegraphics[scale=0.5]{4774_interferences_with_scaled_hyperboles.png}
         \caption{Image post-traitement sans superposition a l'echelle}
@@ -224,7 +224,7 @@ $2.64 \times 10^{-7}$ & 0.00008 & 0.0031 \\
 \newpage
 
 
-\subsubsection{Calculs et Incertitudes}
+\subsubsection{Details de calculs et propagationd d'incertitudes}
 
 \(\lambda\) est mesurée avec un facteur de grossissement. L'incertitude sur \(\lambda_{\text{corr}}\) est donc calculée à partir des incertitudes sur \(x_1\) et \(x_2\). Soit :
 
