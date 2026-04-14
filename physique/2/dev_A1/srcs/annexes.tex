@@ -267,3 +267,20 @@ L'incertitude sur \(c\) est calculée par propagation des incertitudes :
 \[
     \Delta c = c \cdot \sqrt{\left(\frac{\Delta \lambda_{\text{c}}}{\lambda_{\text{c}}\right)^2 + \left(\frac{\Delta T}{T}\right)^2}
 \]
+
+\begin{equation}
+    \Delta \gamma = \sqrt{
+    \left( \frac{\partial \gamma}{\partial c} \Delta c \right)^2 +
+    \left( \frac{\partial \gamma}{\partial \lambda} \Delta \lambda \right)^2 +
+    \left( \frac{\partial \gamma}{\partial d} \Delta d \right)^2
+    }
+    \label{eq:incertitude_gamma}
+\end{equation}
+
+où les dérivées partielles sont calculées comme suit :
+
+\begin{align}
+    \frac{\partial \gamma}{\partial c} &= \frac{\rho}{\pi} \cdot \frac{c}{\tanh\left(\frac{2\pi d}{\lambda}\right)} \cdot \lambda, \\
+    \frac{\partial \gamma}{\partial \lambda} &= \frac{\rho}{2\pi} \left( \frac{c^2}{\tanh\left(\frac{2\pi d}{\lambda}\right)} - \frac{g \lambda}{2\pi} \right) + \frac{\rho}{2\pi} \left( \frac{4\pi d c^2}{\lambda^2 \sinh^2\left(\frac{2\pi d}{\lambda}\right)} + \frac{g \lambda}{2\pi} \right), \\
+    \frac{\partial \gamma}{\partial d} &= -\frac{\rho c^2}{\pi \sinh\left(\frac{4\pi d}{\lambda}\right)} \cdot \frac{4\pi}{\lambda}.
+\end{align}

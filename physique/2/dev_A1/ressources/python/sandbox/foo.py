@@ -4,12 +4,13 @@ import matplotlib.pyplot as plt
 
 # Constantes
 g = 9.81  # m/s²
-h = 0.01  # Hauteur d'eau en m (1.5 cm)
+h = 0.01  #
 rho = 997  # Densité de l'eau savonneuse en kg/m³
 SCALE = 1.67
+
 # Données expérimentales
 f = np.array([14.8, 18.0, 20.9, 31.0, 40.6, 49.6, 61.1, 70.1, 79.2])
-D = np.array([40, 53, 48, 47, 60, 60, 45, 49, 50])  # en mm
+D = np.array([40, 53, 48, 47, 60, 60, 45, 49, 50])  #  mm
 N = np.array([2, 3, 3, 4, 6, 7, 6, 7, 8])
 
 # Conversion en mètres
@@ -29,13 +30,22 @@ def v_theorique(lambda_, gamma):
         * np.tanh((2 * np.pi * h) / lambda_)
     )
 
+
 # Fonction de fit
 def fit_function(lambda_, gamma):
-    return v_theorique(lambda_, gamma)
+    return v_theor./:q! 
+ique(lambda_, gamma)
 
 # Fit des données
 popt, pcov = curve_fit(fit_function, lambda_exp, v_exp, p0=[0.03], maxfev=10000)
+
 gamma_opt = popt[0]
+
+a, b = popt
+i_a, i_b = np.sqrt(np.diag(pcov))
+print(a, b)
+print(i_a, i_b)
+
 
 # Affichage de la tension superficielle ajustée
 print(f"Tension superficielle ajustée : {gamma_opt:.4f} N/m")
