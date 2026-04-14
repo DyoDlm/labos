@@ -5,20 +5,20 @@
 \contentsline {subsection}{\numberline {2.2}Ondes acoustiques}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Ondes de surface circulaires}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}foo}{4}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Interférences d'ondes accoustiques}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Description des manipulations}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Résultats, Analyse et Discussion}{6}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Données expérimentales}{6}{subsubsection.3.2.1}%
-\contentsline {section}{\numberline {4}Ondes de surfaces circulaires}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Description des manipulations}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Résultats, Analyse et Discussion}{8}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Determination de la tension superficielle de l'eau}{8}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Hyperboles d'interferences}{9}{subsubsection.4.2.2}%
-\contentsline {section}{\numberline {5}Annexes}{12}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Ondes accoustiques}{13}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Data et graphiques}{13}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Détails calculs et propagation d'incertitudes}{14}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Ondes de surface circulaires}{15}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Data et graphiques}{15}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Details de calculs et propagationd d'incertitudes}{22}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Interferences : codes python des hyperboles}{22}{subsubsection.5.2.3}%
+\contentsline {section}{\numberline {3}Interférences d'ondes accoustiques}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Description des manipulations}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Résultats, Analyse et Discussion}{7}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Données expérimentales}{7}{subsubsection.3.2.1}%
+\contentsline {section}{\numberline {4}Ondes de surfaces circulaires}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Description des manipulations}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Résultats, Analyse et Discussion}{9}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Determination de la tension superficielle de l'eau}{9}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Hyperboles d'interferences}{10}{subsubsection.4.2.2}%
+\contentsline {section}{\numberline {5}Annexes}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Ondes accoustiques}{14}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Data et graphiques}{14}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Détails calculs et propagation d'incertitudes}{15}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Ondes de surface circulaires}{16}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Data et graphiques}{16}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Details de calculs et propagationd d'incertitudes}{23}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Interferences : codes python des hyperboles}{23}{subsubsection.5.2.3}%
