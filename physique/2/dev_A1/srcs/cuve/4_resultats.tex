@@ -3,14 +3,13 @@
 
 \subsubsection{Determination de la tension superficielle de l'eau}
 
-Afin de determiner la tension superficielle du liquide, nous mesurons d'abord le grossissement g(x) = $\frac{x_1}{x_2}$ qui s'effectue entre l'objet et sa projection sur l'écran. Nous obtenons alors avec un carré (x = y) le rapport de grossissement ($\frac{x1}{x2} \approx \frac{y1}{y2}$) de $\approx$ 1.67 $\pm 0.15 $ (voir details en annexe). 
+Afin de determiner la tension superficielle du liquide, nous mesurons d'abord le grossissement g($x_1$, $x_2$) = $\frac{x_1}{x_2}$ qui s'effectue entre l'objet et sa projection sur l'écran. Nous obtenons alors avec un carré (x = y) le rapport de grossissement ($\frac{x1}{x2} \approx \frac{y1}{y2}$) de $\approx$ 1.67 $\pm 0.15 $ (voir details en annexe). 
 \\\\
-Puis, nous mesurons la célérité de l'onde afin de la tracer en fonction de la longueur d'onde (voir Fig. \ref{fig:gamma}). Nous obtenons alors la tension superficielle en fitant à partir de la célérité (c) que l'on obtient par Eq. \ref{eq:c} à partir de la période et de la longueur d'onde. On obtient cette dernière a partir d'une moyenne des longueurs d'ondes mesurées (voir Tab. \ref{tab:lambda} en annexes).
+Puis, nous mesurons la célérité de l'onde afin de la tracer en fonction de la longueur d'onde (voir Fig. \ref{fig:gamma}) que l'on obtient à partir des valeurs sur Tab. \ref{tab:minimas_gamma}. Nous obtenons alors la tension superficielle en fitant à partir de la célérité (c) que l'on obtient par Eq. \ref{eq:c} à partir de la période et de la longueur d'onde.
 \begin{figure}[h!]
-    \begin{flushleft}
     \begin{minipage}[b]{0.7\linewidth}
         \includegraphics[width=\linewidth]{fit_tension_superficielle.png}
-        \caption{$\lambda$(T)}
+        \caption{$v_\phi (\lambda)$}
         \label{fig:gamma}
     \end{minipage}
     \hfill
@@ -20,7 +19,6 @@ Puis, nous mesurons la célérité de l'onde afin de la tracer en fonction de la
             \hline
             $\lambda$ $\pm \Delta \lambda$ $\backslash$ m &
             c $\pm \Delta c \backslash m/s$ \\
-
             \hline 
 0.01197     & 0.177    \\
 0.01057     & 0.190    \\
@@ -35,7 +33,6 @@ Puis, nous mesurons la célérité de l'onde afin de la tracer en fonction de la
         \end{tabular}
         \captionof{table}{Mesures interférences acoustiques avec $\Delta \lambda et \Delta c$ en annexes}
     \end{minipage}
-    \end{flushleft}
 \end{figure}
 
 Nous obtenons alors $\gamma = 0,044 \pm --- Nm^-1$. Cette valeur est relativement basse pour de l'eau ou $\gamma_e_a_u \approx 0.0723 \frac{N}{m}$. Nous constatons que les incertituous augmentent de manière exponentielle à mesure que l'on baisse la fréquence (voir Tab. \ref{tab:incertitudes_gamma}). Nous pouvons le voir sur le graphique Fig. \ref{fig:gamma} ou le rapport c($\lambda$) s'écartent du fit à mesure que la longueur d'onde augmente. Sans que nous sachions exactement pourquoi, la tension ($\gamma$) obtenue est dans le bon ordre de grandeur et l'hypothèse qu'un hypotenseur tel que le savon ait été mélangé à l'eau utilisée pour l'expérience est fortement probable.
@@ -47,51 +44,29 @@ Les causes de ce détachement peuvent tant être de nature systèmatique qu'acci
 Dans cette expérience, les ondes de surfaces générées par les deux excitateurs interfèrent les unes avec les autres. Elles constituent des franges d'interférences tel qu'on peut le voir sur Fig. \ref{fig:franges_photo}. Les maximas d'intensité (en rouge) représentent les interférences constructives entre les ondes dessinant les franges.
 \begin{figure}[h!]
     \centering
-    % Première figure
-    \begin{minipage}[h]{0.65\linewidth}
-    \includegraphics[width=\linewidth]{4771_interferences_with_hyperboles.png}
-    \caption{$Z_L = 2000 \ohm$}
+    \includegraphics[width=\linewidth]{4774_interferences_with_hyperboles.png}
+        \caption{Excitation à 25.2 $\pm 0.5 Hz$ avec D = 41 $\pm 1$ mm entre excitateurs}
     \label{fig:franges_photo}
-    \end{minipage}
-    \hfill
-    % Deuxième figure
-    \begin{minipage}[h]{0.3\linewidth}
-        Grâce à la relation Eq. \ref{eq:interference}, nous pouvons affirmer que les fronts sombres sur Fig. \ref{fig:franges_photo} correspondent aux noeuds de l'onde interférentielle alors que les fronts les plus lumineux représentent les ventres de l'onde. Ce sont sur ces derniers que nous
-        tracons les hyperboles décrites avec la relation E. \ref{eq:hyperboles}.
-    \end{minipage}
-\end{figure}
-
+    \end{figure}
+Grâce à la relation Eq. \ref{eq:interference}, nous pouvons affirmer que les fronts sombres sur Fig. \ref{fig:franges_photo} correspondent aux noeuds de l'onde interférentielle alors que les fronts les plus lumineux représentent les ventres de l'onde. Ce sont sur ces derniers que nous tracons les hyperboles décrites avec la relation E. \ref{eq:hyperboles}.
+\\\\
 La superposition de l'image de l'écran de l'installation et les hyperboles montrent toutefois une correlation entre les deux. Bien que seules quelques hyperboles suivent relativement bien les maximas, nous constatons que les courbes évoluent avec les franges constructives des interférences. 
 
 \begin{figure}[h!]
     \centering
     % Première figure
     \begin{minipage}[h]{0.65\linewidth}
-    \includegraphics[width=\linewidth]{4771_interferences_with_scaled_hyperboles.png}
-    \caption{$Z_L = 2000 \ohm$}
-    \label{fig:r2000}
+    \includegraphics[width=\linewidth]{4774_interferences_with_scaled_hyperboles.png}
+    \caption{Maximas et hyperboles sans superposition de l'image}
+    \label{fig:4774_scaled}
     \end{minipage}
     \hfill
     % Deuxième figure
     \begin{minipage}[h]{0.33\linewidth}
-        En appliquant un facteur de conversion (pixels $\rightarrow$ mm) Nous constatons plus clairement sur Fig. \ref{fig:franges_scaled} que l'amplitude des interférences diminue avec la distance comme le décrit la fonction de bessel dans la relation Eq. \ref{eq:bessel}. En effet, la précision des maximas est moindre. 
+        En appliquant un facteur de conversion (pixels $\rightarrow$ mm), nous constatons plus clairement sur Fig. \ref{fig:franges_scaled} que l'amplitude des interférences diminue avec la distance comme le décrit la fonction de bessel dans la relation Eq. \ref{eq:bessel}. En effet, la précision des maximas est moindre quel que soit la fréquence ou la distance entre excitateurs (voir Figs. \ref{fig:4771_scaled}, \ref{fig:4763_scaled}). 
     \end{minipage}
 \end{figure}
-       Si nous conservons la même distance \(D\) entre les excitateurs mais augmentons la fréquence, la longueur d'onde \(\lambda\) diminue (voir figure~\ref{fig:cuve_50Hz_41mm}), ce qui resserre les franges d'interférence.
-
-Alors que si nous gardons la fréquence des impulsions, mais que nous conservons la distance qui les sépare $\rightarrow$ CONSEQUENCE (voir Fig. \ref{fig:cuve_...Hz_...D}).
-
-\begin{table}[h]
-\centering
-\caption{Observations des interférences en fonction de la fréquence et de la distance entre les excitateurs}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-Mesure & Fréquence \( f \) (\si{\hertz}) & Distance \( D \) (\si{\millimeter}) & Longueur d'onde \(\lambda\) & Espacement des franges \\
-\hline
-1 & 25.2 & 41 & \(\lambda_1 = \frac{v}{25.2}\) & Référence \\
-2 & 19.6 & 41 & \(\lambda_2 = \frac{v}{19.6} > \lambda_1\) & Franges plus espacées \\
-3 & 25.2 & 113 & \(\lambda_3 = \lambda_1\) & Franges plus serrées (environ 36\% de l'espacement initial) \\
-\hline
-\end{tabular}
-\end{table}
+\\
+Si nous conservons la même distance \(D\) entre les excitateurs mais que nous diminuons la fréquence : la longueur d'onde \(\lambda\) diminue (voir figure~\ref{fig:4771_scaled}) ; ce qui espace les franges d'interférence et laisse apparement des maximas intenses. En revanche, si nous gardons la fréquence des impulsions, mais que nous conservons la distance qui les sépare, le nombre de franges visibles augmente (voir Fig. \ref{fig:4763_scaled}). L'espacement latéral en revanche diminue au même temps qu'augmente l'angle d'ouverture. Nous pouvons également constater une meilleure résolution spatiale  
+\\\\
 

@@ -1,14 +1,14 @@
 \section{Partie théorique : Ondes et interférences}
 \label{sec:theorie}
 
-Une onde indéformable est décrite par l'équation suivante, où \(x\) représente la composante spatiale et \(t\) la composante temporelle :
+Une onde indéformable est décrite par l'équation suivante où \(x\) représente la composante spatiale et \(t\) la composante temporelle :
 
 \begin{equation}
     p(x,t) = A \cdot \sin(\omega t - kx)
     \label{eq:onde}
 \end{equation}
 
-Cette onde est caractérisée par le nombre d'onde \(k = \frac{2\pi}{\lambda}\) [rad/m] et la pulsation \(\omega = 2\pi f\) [rad/s], où \(\lambda\) est la longueur d'onde [m] et \(f\) la fréquence [Hz]. L'amplitude \(A\) définit l'intensité maximale de l'onde.
+Cette onde est caractérisée par le nombre d'onde \(k = \frac{2\pi}{\lambda}\) [rad/m] et la pulsation \(\omega = 2\pi f\) [rad/s] où \(\lambda\) est la longueur d'onde [m] et \(f\) la fréquence [Hz]. L'amplitude \(A\) définit l'intensité maximale de l'onde.
 \\\\
 Cette section aborde deux cas spécifiques : les interférences d'ondes acoustiques dans un milieu non dispersif (l'air) et les interférences d'ondes de surface circulaires dans un milieu potentiellement dispersif (l'eau).
 
@@ -95,5 +95,29 @@ En isolant $\gamma$, nous obtenons :
     \gamma = \frac{\rho \lambda}{2\pi} \left( \frac{c^2}{\tanh\left(\frac{2\pi d}{\lambda}\right)} - \frac{g \lambda}{2\pi} \right)
     \label{eq:gamma_isole}
 \end{equation}
+
+\subsection{foo}
+L'équation des hyperboles d'interférence en coordonnées cartésiennes est :
+
+\begin{equation}
+    \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1
+    \label{eq:hyperbole_final}
+\end{equation}
+
+où les paramètres sont définis par :
+
+\begin{align}
+    a &= \begin{cases}
+    \frac{n\lambda}{2} & \text{pour les interférences constructives} \\
+    \frac{(2n+1)\lambda}{4} & \text{pour les interférences destructives}
+    \end{cases} \label{eq:a_param} \\
+    b &= \sqrt{\left(\frac{D}{2}\right)^2 - a^2} \label{eq:b_param}
+\end{align}
+
+avec :
+\begin{itemize}
+\item \(n\) : ordre de l'hyperbole (\(n = 0, 1, 2, \ldots\))
+\item \(\lambda\) : longueur d'onde
+\item \(D\) : distance entre les deux sources
 
 Les interférences entre deux sources d'ondes de surface forment alors des motifs hyperboliques qui reflétant en image (voir Fig. \ref{fig:intro}) la nature bidimensionnelle de leur propagation.
