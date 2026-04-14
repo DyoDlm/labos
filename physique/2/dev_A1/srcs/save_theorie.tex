@@ -1,0 +1,95 @@
+\section{Partie théorique : Ondes et interférences}
+\label{sec:theorie}
+
+Soit une onde indéformable définie par l'équation suivante :
+
+\begin{equation}
+    p(x,t) = A \cdot \sin(\omega t - kx)
+    \label{eq:onde}
+\end{equation}
+\\
+où \(x\) est la composante spatiale et \(t\) la composante temporelle. Cette onde est caractérisée par :
+   \(k\), le nombre d'onde, défini par :
+    \begin{equation}
+        k = \frac{2\pi}{\lambda} \quad \text{[rad/m]}
+        \label{eq:k}
+    \end{equation}
+    \(\omega\), la pulsation, définie par :
+    \begin{equation}
+        \omega = 2\pi f \quad \text{[rad/s]}
+        \label{eq:omega}
+    \end{equation}
+\\
+L'onde \(p(x,t)\) est donc spécifiquement définie par une longueur d'onde \(\lambda\) [m], une fréquence \(f\) [Hz], et une amplitude \(A\).
+\\\\
+Nous nous intéressons à deux cas spécifiques : les interférences d'ondes acoustiques et les interférences d'ondes de surface circulaires.
+
+\subsection{Interférences d'ondes indéformables}
+\label{subsec:interferences}
+
+Soit deux ondes indéformables \(p_1(x,t)\) et \(p_2(x,t)\). L'onde stationnaire résultant de la superposition de \(p_1\) et \(p_2\) est donnée par la somme des deux ondes :
+
+\begin{equation}
+    p_m(t) = p_1 + p_2 = 2A \cos\left(k \frac{d_2 - d_1}{2}\right) \sin\left(\omega t - k \frac{d_1 + d_2}{2}\right)
+    \label{eq:station}
+\end{equation}
+\\
+Pour deux ondes cohérentes de même amplitude, l'interférence est soit constructive si la différence de chemin \(\Delta x\) est un multiple entier de \(\lambda\) :
+    \begin{equation}
+        \Delta x = n \lambda \quad \text{avec } n \in \mathbb{Z}
+        \label{eq:constructive}
+    \end{equation}
+    \\Soit destructive si la différence de chemin \(\Delta x\) est un multiple demi-entier de \(\lambda\) :
+    \begin{equation}
+        \Delta x = \left(n + \frac{1}{2}\right) \lambda \quad \text{avec } n \in \mathbb{Z}
+        \label{eq:destructive}
+    \end{equation}
+
+\\\\
+Ces phénomènes s'appliquent tant aux ondes accoustiques qu'aux ondes de surfaces. Nous pouvons observer ce phénomène graphiquement sur la Figure \ref{fig:ohwaw} en annexes.
+
+\subsection{Ondes acoustiques}
+\label{subsec:acoustique}
+
+Les ondes acoustiques suivent la forme générale d'une onde indéformable présentée dans la relation Eq. \ref{eq:onde}. L'amplitude constante \(A\) ne dépend pas de la position \(x\). Selon la relation d'Alembert (voir Ref. \cite{protocole}), la célérité est définie comme le rapport :
+
+\begin{equation}
+    c = \frac{\omega}{k} \quad \text{[m/s]}
+    \caption{eq:omegaK}
+    \label{eq:foo}
+\end{equation}
+
+\\Ce qui nous permet d'extraire la célérité en fonction de la longueur d'onde \(\lambda\) et de la période \(T\) par la relation suivante :
+
+\begin{equation}
+        c = \frac{\lambda}{T}
+        \caption{eq:cele}
+            \label{eq:celerite}
+\end{equation}
+
+Que l'on peut approximer dans l'air à pression atmosphérique en fonction de la température tel que (voir Ref. \cite{protocole}) : 
+\begin{equation}
+    v = 331 + 0.6 \cdot \theta
+    \label{eq:c_approx}
+\end{equation}
+
+\subsection{Ondes de surface circulaires}
+\label{subsec:surface}
+
+Les ondes de surface circulaires partagent la même base théorique que les ondes acoustiques, mais leur propagation est influencée par la géométrie du milieu.
+
+A la difference d'une onde accoustique l'onde s'écrit lorsqu'elle est harmonique :
+\begin{equation}
+    h(r,t) = A(r) \cdot \sin(\omega t - kr)
+    \label{eq:surface}
+\end{equation}
+où A(r) est une fonction de Bessel avec \(r\) la distance radiale.
+
+\\
+La celerite des ondes a la surfaces d'un liquide peut dans de certaines conditions être dispersive Ref. \cite{protocole}. Elle depend donc de la profondeur \(d\) et de la longueur d'onde \(\lambda\) :
+
+\begin{equation}
+    v(l) = ...
+    \label{eq:bar}
+\end{equation}
+où \(g\) est l'accélération gravitationnelle.
