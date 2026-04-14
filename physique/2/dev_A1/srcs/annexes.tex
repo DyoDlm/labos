@@ -24,7 +24,7 @@ Cours electronique, \textit{Pont RLC},
             \item \textbf{Description manipulations}
                 : fautes d'orthographes
             \item \textbf{Résultats et analyse}
-                : Mise en forme des tableaux et équations
+                : Mise en forme des tableaux et équations + vérification numérique $\Delta \gamma$
             \item \textbf{Conclusion}
                 : Reformulation de syntaxe douteuse et fautes d'orthographes
 \end{thebibliography}
@@ -91,74 +91,32 @@ La longueur d'onde $\lambda$ est obtenue par double de m. Soit $\Delta \lambda$ 
 \subsubsection{Data et graphiques}
 
 \begin{center}
-    \begin{tabular}{|c|c|c|c|c|}
+    \begin{tabular}{|c|c|c|c|c|c|}
         \hline
-        \textbf{f} $\pm$ 0,5  $\backslash$ Hz &
-        \textbf{D} $\pm$ 1 $\backslash$ mm &
-        \textbf{$\lambda$} $\pm \Delta \lambda$ $\backslash$ mm &
-        \textbf{$\Delta \lambda$} $\backslash$ mm &
-        \textbf{Nb mesures} \\
+            \(f \pm 0.5\) Hz & \(D \pm 1\) $\backslash$ mm & \(N\) & \(\lambda \pm \Delta\lambda\) $\backslash$ m & \(\lambda_c \pm \Delta\lambda_c\) $\backslash$ m & \(c \pm \Delta c\) $\backslash$ m/s \\
         \hline
-14.8 & 40 & 40.00 & 0.25 & 2 \\
-18.0 & 53 & 26.50 & 0.11 & 3 \\
-20.9 & 48 & 24.00 & 0.11 & 3 \\
-31.0 & 47 & 15.67 & 0.06 & 4 \\
-40.6 & 60 & 12.00 & 0.03 & 6 \\
-49.6 & 60 & 10.00 & 0.02 & 7 \\
-61.1 & 45 & 9.00 & 0.02 & 6 \\
-70.1 & 49 & 8.17 & 0.02 & 7 \\
-79.2 & 50 & 7.14 & 0.02 & 8 \\
-       \hline
+        14.8 & 40 & 2 & \(0.02000 \pm 0.00102\) & \(0.0120 \pm 0.0007\) & \(0.177 \pm 0.013\) \\
+        18.0 & 53 & 3 & \(0.01767 \pm 0.00061\) & \(0.0106 \pm 0.0005\) & \(0.191 \pm 0.012\) \\
+        20.9 & 48 & 3 & \(0.01600 \pm 0.00055\) & \(0.0096 \pm 0.0004\) & \(0.200 \pm 0.011\) \\
+        31.0 & 47 & 4 & \(0.01175 \pm 0.00031\) & \(0.0070 \pm 0.0003\) & \(0.218 \pm 0.011\) \\
+        40.6 & 60 & 5 & \(0.01200 \pm 0.00025\) & \(0.0060 \pm 0.0002\) & \(0.242 \pm 0.009\) \\
+        49.6 & 60 & 6 & \(0.01000 \pm 0.00018\) & \(0.0051 \pm 0.0002\) & \(0.254 \pm 0.008\) \\
+        61.1 & 45 & 5 & \(0.00900 \pm 0.00020\) & \(0.0045 \pm 0.0002\) & \(0.275 \pm 0.007\) \\
+        70.1 & 49 & 6 & \(0.00817 \pm 0.00015\) & \(0.0042 \pm 0.0001\) & \(0.294 \pm 0.007\) \\
+        79.2 & 50 & 7 & \(0.00714 \pm 0.00011\) & \(0.0037 \pm 0.0001\) & \(0.296 \pm 0.007\) \\
+        \hline
     \end{tabular}
-    \captionof{table}{Mesures des distances D, des fréquences f et des longueurs d'onde $\lambda = \frac{D}{N}$ avec N le nombre de mesures.}
+    \captionof{table}{Mesures des distances D, des fréquences f et des longueurs d'onde $\lambda = \frac{D}{N}$ avec N le nombre de mesures et $lambda_c$ la longueur d'onde corrigée en fonction du facteur de grossissement.}
     \label{tab:minimas_gamma}
 \end{center}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{incertitudes_lambda_c.png}
+    \label{fig:incert}
+    \caption{Incertitude de $\lambda_c$ en fonction de la fréquence}
+\end{figure}
 
 
-\begin{center}
-    \begin{tabular}{|c|c|c|}
-        \hline
-        \textbf{T} $\pm$ \(\Delta T\) $\backslash$ s &
-        \textbf{c} $\pm$ \(\Delta c\) $\backslash$ m/s &
-        \textbf{$\lambda_c$} $\pm$ \(\Delta \lambda_c\) $\backslash$ m \\
-        \hline
-0.0676 $\pm$ 0.00228 & 0.988 $\pm$ 0.0248 & 0.06684 $\pm$ 0.0042 \\
-0.0556 $\pm$ 0.00155 & 0.796 $\pm$ 0.0148 & 0.04427 $\pm$ 0.0017 \\
-0.0478 $\pm$ 0.00114 & 0.837 $\pm$ 0.0154 & 0.04009 $\pm$ 0.0017\\
-0.0323 $\pm$ 0.00052 & 0.809 $\pm$ 0.0101 & 0.02622 $\pm$ 0.0013\\
-0.0246 $\pm$ 0.00030 & 0.813 $\pm$ 0.0074 & 0.02005 $\pm$ 0.0005\\
-0.0202 $\pm$ 0.00020 & 0.828 $\pm$ 0.0066 & 0.01671 $\pm$ 0.0003\\
-0.0164 $\pm$ 0.00013 & 0.916 $\pm$ 0.0084 & 0.01504 $\pm$ 0.0005\\
-0.0143 $\pm$ 0.00010 & 0.955 $\pm$ 0.0074 & 0.01387 $\pm$ 0.0003 \\
-0.0126 $\pm$ 0.00008 & 0.944 $\pm$ 0.0062 & 0.01185 $\pm$ 0.0003
-        \hline
-    \end{tabular}
-    \captionof{table}{Vitesse de phase et longueurs d'onde corrigées.}
-    \label{tab:vitesse_phase}
-\end{center}
-
-
-\begin{center}
-    \begin{tabular}{|c|c|c|}
-        \hline
-        \textbf{T} $\pm$ \(\Delta T\) $\backslash$ s &
-        \textbf{c} $\pm$ \(\Delta c\) $\backslash$ m/s &
-        \textbf{$\lambda_c$} $\pm$ \(\Delta \lambda_c\) $\backslash$ m \\
-        \hline
-0.0676 $\pm$ 0.00228 & 0.988 $\pm$ 0.0248 & 0.06684 $\pm$ 0.0042 \\
-0.0556 $\pm$ 0.00155 & 0.796 $\pm$ 0.0148 & 0.04427 $\pm$ 0.0017 \\
-0.0478 $\pm$ 0.00114 & 0.837 $\pm$ 0.0154 & 0.04009 $\pm$ 0.0017\\
-0.0323 $\pm$ 0.00052 & 0.809 $\pm$ 0.0101 & 0.02622 $\pm$ 0.0013\\
-0.0246 $\pm$ 0.00030 & 0.813 $\pm$ 0.0074 & 0.02005 $\pm$ 0.0005\\
-0.0202 $\pm$ 0.00020 & 0.828 $\pm$ 0.0066 & 0.01671 $\pm$ 0.0003\\
-0.0164 $\pm$ 0.00013 & 0.916 $\pm$ 0.0084 & 0.01504 $\pm$ 0.0005\\
-0.0143 $\pm$ 0.00010 & 0.955 $\pm$ 0.0074 & 0.01387 $\pm$ 0.0003 \\
-0.0126 $\pm$ 0.00008 & 0.944 $\pm$ 0.0062 & 0.01185 $\pm$ 0.0003
-        \hline
-    \end{tabular}
-    \captionof{table}{Vitesse de phase et longueurs d'onde corrigées.}
-    \label{tab:incertitudes_gamma}
-\end{center}
 \newpage
 
 

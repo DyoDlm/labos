@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  14 APR 2026 19:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  14 APR 2026 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -744,58 +744,13 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
-
-! LaTeX Error: Unicode character λ (U+03BB)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...propriétés fondamentales des ondes (c, λ
-                                                  , f, etc., voir section~\r...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-LaTeX Warning: Reference `sec:th' on page 2 undefined on input line 8.
-
-
-! LaTeX Error: Unicode character γ (U+03B3)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...t d'en déduire sa tension superficielle γ
-                                                  .
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
 ! Double subscript.
-l.10 ... acoustiques, avec cair=348.84±1.85 $c_a_
+l.9 ...uperposition d'ondes acoustiques avec $c_a_
                                                   i_r$ = 348.84 $\pm$ 1.85 (...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.10 ...coustiques, avec cair=348.84±1.85 $c_a_i_
+l.9 ...erposition d'ondes acoustiques avec $c_a_i_
                                                   r$ = 348.84 $\pm$ 1.85 (co...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
@@ -807,30 +762,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 ... 1.85 (contre une valeur théorique de ≈
+l.9 ...$ 1.85 (contre une valeur théorique de ≈
                                                   345±0.1 m/s à températu...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character γ (U+03B3)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 ...robablement de l’eau savonneuse) avec γ
-                                                  =0.044±…~N/m ainsi que ...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--11
-
- []
 
 <./ressources/images/4763_interferences_with_hyperboles.png, id=134, 726.7953pt
  x 446.8695pt>
@@ -838,9 +774,24 @@ File: ./ressources/images/4763_interferences_with_hyperboles.png Graphic file (
 type png)
 <use ./ressources/images/4763_interferences_with_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4763_interferences_with_hyperboles
-.png  used on input line 14.
+.png  used on input line 13.
 (pdftex.def)             Requested size: 363.39676pt x 223.4342pt.
-) [2
+)
+Underfull \hbox (badness 10000) in paragraph at lines 3--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--50
+
+ []
+
+ [2
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./ressources/imag
 es/4763_interferences_with_hyperboles.png>]
@@ -1200,7 +1151,10 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./ressources/images/code_konig.png, id=282, 816.04875pt x 589.20125pt>
+
+LaTeX Warning: Reference `eq:celerite' on page 15 undefined on input line 76.
+
+<./ressources/images/code_konig.png, id=281, 816.04875pt x 589.20125pt>
 File: ./ressources/images/code_konig.png Graphic file (type png)
 <use ./ressources/images/code_konig.png>
 Package pdftex.def Info: ./ressources/images/code_konig.png  used on input line
@@ -1209,165 +1163,88 @@ Package pdftex.def Info: ./ressources/images/code_konig.png  used on input line
  [15 <./ressources/images/code_konig.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 113.
+(caption)                particular \caption on input line 109.
 See the caption package documentation for explanation.
 
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.134         \hline
-                    
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.134         \hline
-                    
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.134         \hline
-                    
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.134         \hline
-                    
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 136.
-See the caption package documentation for explanation.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.157         \hline
-                    
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.157         \hline
-                    
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.157         \hline
-                    
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.157         \hline
-                    
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 159.
-See the caption package documentation for explanation.
-
- [16]
-<./ressources/images/IMG_4763.jpeg, id=295, 971.3088pt x 728.4816pt>
+<./ressources/images/incertitudes_lambda_c.png, id=288, 630.9171pt x 379.4175pt
+>
+File: ./ressources/images/incertitudes_lambda_c.png Graphic file (type png)
+<use ./ressources/images/incertitudes_lambda_c.png>
+Package pdftex.def Info: ./ressources/images/incertitudes_lambda_c.png  used on
+ input line 114.
+(pdftex.def)             Requested size: 315.45778pt x 189.70828pt.
+ [16 <./ressources/images/incertitudes_lambda_c.png>]
+<./ressources/images/IMG_4763.jpeg, id=296, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4763.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4763.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4763.jpeg  used on input line 
-167.
+125.
 (pdftex.def)             Requested size: 485.65321pt x 364.23991pt.
  [17 <./ressources/images/IMG_4763.jpeg>]
 File: ./ressources/images/4763_interferences_with_hyperboles.png Graphic file (
 type png)
 <use ./ressources/images/4763_interferences_with_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4763_interferences_with_hyperboles
-.png  used on input line 174.
+.png  used on input line 132.
 (pdftex.def)             Requested size: 363.39676pt x 223.4342pt.
-<./ressources/images/4763_interferences_with_scaled_hyperboles.png, id=301, 720
+<./ressources/images/4763_interferences_with_scaled_hyperboles.png, id=302, 720
 .291pt x 494.8086pt>
 File: ./ressources/images/4763_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
 <use ./ressources/images/4763_interferences_with_scaled_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4763_interferences_with_scaled_hyp
-erboles.png  used on input line 181.
+erboles.png  used on input line 139.
 (pdftex.def)             Requested size: 360.1446pt x 247.40369pt.
  [18 <./ressources/images/4763_interferences_with_scaled_hyperboles.png>]
-<./ressources/images/IMG_4771.jpeg, id=308, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4771.jpeg, id=309, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4771.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4771.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line 
-190.
+148.
 (pdftex.def)             Requested size: 485.65321pt x 364.23991pt.
  [19 <./ressources/images/IMG_4771.jpeg>]
-<./ressources/images/4771_interferences_with_hyperboles.png, id=315, 726.7953pt
+<./ressources/images/4771_interferences_with_hyperboles.png, id=316, 726.7953pt
  x 423.2613pt>
 File: ./ressources/images/4771_interferences_with_hyperboles.png Graphic file (
 type png)
 <use ./ressources/images/4771_interferences_with_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4771_interferences_with_hyperboles
-.png  used on input line 197.
+.png  used on input line 155.
 (pdftex.def)             Requested size: 363.39676pt x 211.63013pt.
-<./ressources/images/4771_interferences_with_scaled_hyperboles.png, id=316, 726
+<./ressources/images/4771_interferences_with_scaled_hyperboles.png, id=317, 726
 .7953pt x 494.8086pt>
 File: ./ressources/images/4771_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
 <use ./ressources/images/4771_interferences_with_scaled_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4771_interferences_with_scaled_hyp
-erboles.png  used on input line 203.
+erboles.png  used on input line 161.
 (pdftex.def)             Requested size: 363.39676pt x 247.40369pt.
  [20 <./ressources/images/4771_interferences_with_hyperboles.png> <./ressources
 /images/4771_interferences_with_scaled_hyperboles.png>]
-<./ressources/images/IMG_4774.jpeg, id=324, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4774.jpeg, id=325, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4774.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4774.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4774.jpeg  used on input line 
-212.
+170.
 (pdftex.def)             Requested size: 485.65321pt x 364.23991pt.
  [21 <./ressources/images/IMG_4774.jpeg>]
 File: ./ressources/images/4774_interferences_with_hyperboles.png Graphic file (
 type png)
 <use ./ressources/images/4774_interferences_with_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4774_interferences_with_hyperboles
-.png  used on input line 219.
+.png  used on input line 177.
 (pdftex.def)             Requested size: 301.9674pt x 245.35605pt.
 File: ./ressources/images/4774_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
 <use ./ressources/images/4774_interferences_with_scaled_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4774_interferences_with_scaled_hyp
-erboles.png  used on input line 225.
+erboles.png  used on input line 183.
 (pdftex.def)             Requested size: 360.1446pt x 247.40369pt.
  [22]
 ! Missing } inserted.
 <inserted text> 
                 }
-l.247 \]
+l.205 \]
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1382,7 +1259,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.252 
+l.210 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1391,7 +1268,7 @@ or  <return>  to continue without it.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.266 ...t)^2 + \left(\frac{\Delta T}{T}\right)^2}
+l.224 ...t)^2 + \left(\frac{\Delta T}{T}\right)^2}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1399,32 +1276,32 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<./ressources/images/code_gamma.png, id=335, 707.64375pt x 841.1425pt>
+<./ressources/images/code_gamma.png, id=336, 707.64375pt x 841.1425pt>
 File: ./ressources/images/code_gamma.png Graphic file (type png)
 <use ./ressources/images/code_gamma.png>
 Package pdftex.def Info: ./ressources/images/code_gamma.png  used on input line
- 290.
+ 248.
 (pdftex.def)             Requested size: 424.58952pt x 504.6894pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ressources/images/code_hyper_scaled.png, id=336, 864.22874pt x 947.54pt>
+<./ressources/images/code_hyper_scaled.png, id=337, 864.22874pt x 947.54pt>
 File: ./ressources/images/code_hyper_scaled.png Graphic file (type png)
 <use ./ressources/images/code_hyper_scaled.png>
 Package pdftex.def Info: ./ressources/images/code_hyper_scaled.png  used on inp
-ut line 298.
+ut line 256.
 (pdftex.def)             Requested size: 518.54124pt x 568.52838pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ressources/images/code_hyper.png, id=337, 864.22874pt x 272.01625pt>
+<./ressources/images/code_hyper.png, id=338, 864.22874pt x 272.01625pt>
 File: ./ressources/images/code_hyper.png Graphic file (type png)
 <use ./ressources/images/code_hyper.png>
 Package pdftex.def Info: ./ressources/images/code_hyper.png  used on input line
- 305.
+ 263.
 (pdftex.def)             Requested size: 691.38393pt x 217.61328pt.
 
-Overfull \hbox (162.44717pt too wide) in paragraph at lines 305--307
+Overfull \hbox (162.44717pt too wide) in paragraph at lines 263--265
  [][] 
  []
 
@@ -1432,7 +1309,7 @@ Overfull \hbox (162.44717pt too wide) in paragraph at lines 305--307
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ! Undefined control sequence.
-l.313 \subsubse
+l.271 \subsubse
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1470,20 +1347,20 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3BAFE26D80411C73EF8D44EBA551970C;4852.
+(rerunfilecheck)             Checksum: D59F7F7008E36DDCBE9EC8383DF48CBA;4978.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 1 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 19558 strings out of 474222
- 376450 string characters out of 5748733
- 1942975 words of memory out of 5000000
- 41413 multiletter control sequences out of 15000+600000
+ 19563 strings out of 474222
+ 376822 string characters out of 5748733
+ 1939975 words of memory out of 5000000
+ 41419 multiletter control sequences out of 15000+600000
  567978 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,17n,117p,1324b,1091s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,17n,117p,1324b,1088s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -1498,10 +1375,10 @@ nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type
 nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (26 pages, 12384053 bytes).
+Output written on main.pdf (26 pages, 12458461 bytes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
- 355 compressed objects within 4 object streams
- 99 named destinations out of 1000 (max. 500000)
- 288 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 454 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 
