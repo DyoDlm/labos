@@ -83,6 +83,9 @@ Cours electronique, \textit{Pont RLC},
 
 \\print(f"Vitesse son : {vitesse\_son:.3f} ± {incertitude:.3f} m/s")
 \\print(f"b : {b} +/- {incert\_b}")
+\\\\
+
+La longueur d'onde $\lambda$ est obtenue par double de m. Soit $\Delta \lambda$ = $2 \cdot \Delta m$.  
 \newpage
 \subsection{Ondes de surface circulaires}
 
@@ -90,22 +93,24 @@ Cours electronique, \textit{Pont RLC},
 \subsubsection{Data et graphiques}
 
 \begin{center}
-    \begin{tabular}{|c|c|c|}
+    \begin{tabular}{|c|c|c|c|c|}
         \hline
         \textbf{f} $\pm$ 0,5  $\backslash$ Hz &
         \textbf{D} $\pm$ 1 $\backslash$ mm &
+        \textbf{$\lambda$} $\pm \Delta \lambda$ $\backslash$ mm &
+        \textbf{$\Delta \lambda$} $\backslash$ mm &
         \textbf{Nb mesures} \\
         \hline
-        14,8 & 20,00 & 2 \\
-        18,0 & 17,67 & 3 \\
-        20,9 & 16,00 & 3 \\
-        31,0 & 11,75 & 4 \\
-        40,6 & 10,00 & 6 \\
-        49,6 & 8,57  & 7 \\
-        61,1 & 7,50 & 6 \\
-        70,1 & 7,00 & 7 \\
-        79,2 & 6,25 & 8 \\
-        \hline
+14.8 & 40 & 20.00 & 0.25 & 2 \\
+18.0 & 53 & 17.67 & 0.11 & 3 \\
+20.9 & 48 & 16.00 & 0.11 & 3 \\
+31.0 & 47 & 11.75 & 0.06 & 4 \\
+40.6 & 60 & 10.00 & 0.03 & 6 \\
+49.6 & 60 & 8.57  & 0.02 & 7 \\
+61.1 & 45 & 7.50  & 0.02 & 6 \\
+70.1 & 49 & 7.00  & 0.02 & 7 \\
+79.2 & 50 & 6.25  & 0.02 & 8 \\
+       \hline
     \end{tabular}
     \captionof{table}{Mesures des distances en fonction de la fréquence.}
     \label{tab:mesures_distances}
@@ -113,22 +118,21 @@ Cours electronique, \textit{Pont RLC},
 
 
 \begin{center}
-    \begin{tabular}{|c|c|c|c|}
+    \begin{tabular}{|c|c|c|}
         \hline
-        \textbf{$\lambda$} $\pm 0.01$ $\backslash$ cm &
         \textbf{T} $\pm \Delta T$ $\backslash$ s &
         \textbf{c} $\pm \Delta c$ $\backslash$ m/s &
-        \textbf{$\lambda_c$} $\Delta \lambda_c$ $\backslash$ m} \\
+        \textbf{$\lambda_c$} $\pm \Delta \lambda_c$ $\backslash$ m} \\
         \hline
-        20,00 & 0,0676 & 0,296 & 0,0120 \\
-        17,67 & 0,0556 & 0,318 & 0,0106 \\
-        16,00 & 0,0478 & 0,334 & 0,0096 \\
-        11,75 & 0,0323 & 0,364 & 0,0070 \\
-        10,00 & 0,0246 & 0,406 & 0,0060 \\
-        8,57  & 0,0202 & 0,425 & 0,0051 \\
-        7,50  & 0,0164 & 0,458 & 0,0045 \\
-        7,00  & 0,0143 & 0,491 & 0,0042 \\
-        6,25  & 0,0126 & 0,495 & 0,0037 \\
+        0.0676 & 0.296 & 0.012 \\
+        0.0556 & 0.318 & 0.011 \\
+        0.0478 & 0.334 & 0.010 \\
+        0.0323 & 0.364 & 0.007 \\
+        0.0246 & 0.406 & 0.006 \\
+        0.0202 & 0.425 & 0.005 \\
+        0.0164 & 0.458 & 0.005 \\
+        0.0143 & 0.491 & 0.004 \\
+        0.0126 & 0.495 & 0.004 \\
         \hline
     \end{tabular}
     \captionof{table}{Vitesse de phase et longueurs d'onde corrigées.}
@@ -142,18 +146,18 @@ Cours electronique, \textit{Pont RLC},
         \textbf{\(\Delta T\) $\backslash$ s} &
         \textbf{\(\Delta c\) $\backslash$ m/s} \\
 \hline
-        $8.46 \times 10^{-7}$ & 0.00228 & 0.0100 \\
-$7.48 \times 10^{-7}$ & 0.00155 & 0.0088 \\
-$6.77 \times 10^{-7}$ & 0.00114 & 0.0080 \\
-$4.97 \times 10^{-7}$ & 0.00052 & 0.0059 \\
-$4.23 \times 10^{-7}$ & 0.00030 & 0.0050 \\
-$3.63 \times 10^{-7}$ & 0.00020 & 0.0043 \\
-$3.17 \times 10^{-7}$ & 0.00013 & 0.0038 \\
-$2.96 \times 10^{-7}$ & 0.00010 & 0.0035 \\
-$2.64 \times 10^{-7}$ & 0.00008 & 0.0031 \\
+\(1.20 \times 10^{-6}\) & 0.0023 & 0.0100 \\
+\(1.06 \times 10^{-6}\) & 0.0016 & 0.0088 \\
+\(9.60 \times 10^{-7}\) & 0.0011 & 0.0080 \\
+\(7.00 \times 10^{-7}\) & 0.0005 & 0.0059 \\
+\(6.00 \times 10^{-7}\) & 0.0003 & 0.0050 \\
+\(5.10 \times 10^{-7}\) & 0.0002 & 0.0043 \\
+\(4.50 \times 10^{-7}\) & 0.0001 & 0.0038 \\
+\(4.20 \times 10^{-7}\) & 0.0001 & 0.0035 \\
+\(3.70 \times 10^{-7}\) & 0.0001 & 0.0031 \\
 \hline
 \end{tabular}
-    \captionof{table}{Incertitudes recalculées sur \(\lambda_{\text{c}}\), \(T\), et \(c\)}
+    \captionof{table}{Incertitudes absolues sur \(\lambda_{\text{c}}\), \(T\), et \(c\)}
 \end{table}
 \newpage
 
@@ -226,10 +230,19 @@ $2.64 \times 10^{-7}$ & 0.00008 & 0.0031 \\
 
 \subsubsection{Details de calculs et propagationd d'incertitudes}
 
-\(\lambda\) est mesurée avec un facteur de grossissement. L'incertitude sur \(\lambda_{\text{corr}}\) est donc calculée à partir des incertitudes sur \(x_1\) et \(x_2\). Soit :
+\textbf{Incertitudes mesure tension superficielle}
+
+Les longueurs d'onde sans le grossissement sont mesurées par rapport au quotient du nombre mesurées de ces dernières (N) et la distance mesurée D. Soit :
+\[
+    \Delta \lambda = \frac{\Delta D}{D \cdot N}
+\]
+avec $\Delta D = 0.001 m$.
+
+
+La véritable longueur d'onde ($\Lambda_c$) est alors est mesurée avec un facteur de grossissement. L'incertitude sur \(\lambda_{\text{c}}\) est donc calculée à partir des incertitudes sur \(x_1\) et \(x_2\) et de $\lambda$. Soit :
 
 \[
-    \Delta \lambda_{\text{corr}} = \lambda_{\text{corr}} \cdot \sqrt{\left(\frac{\Delta x_1}{x_1}\right)^2 + \left(\frac{\Delta x_2}{x_2}\right)^2}
+    \Delta \lambda_{\text{c}} = \lambda_{\text{c}} \cdot \sqrt{\left(\frac{\Delta x_1}{x_1}\right)^2 + \left(\frac{\Delta x_2}{x_2}\right)^2 + \left(\frac{\Delta \lambda}{\lambda}\right)^2
 \]
 
 où \(\Delta x_1 = \Delta x_2 = \SI{0.001}{\meter}\).
@@ -248,5 +261,5 @@ La vitesse de phase \(c\) est donnée par :
 L'incertitude sur \(c\) est calculée par propagation des incertitudes :
 
 \[
-    \Delta c = c \cdot \sqrt{\left(\frac{\Delta \lambda_{\text{corr}}}{\lambda_{\text{corr}}}\right)^2 + \left(\frac{\Delta T}{T}\right)^2}
+    \Delta c = c \cdot \sqrt{\left(\frac{\Delta \lambda_{\text{c}}}{\lambda_{\text{c}}\right)^2 + \left(\frac{\Delta T}{T}\right)^2}
 \]
