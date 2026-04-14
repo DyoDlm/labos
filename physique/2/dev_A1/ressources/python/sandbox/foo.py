@@ -21,11 +21,8 @@ lambda_exp = D_m / (N* SCALE)
 
 # Calcul des vitesses expérimentales
 v_exp = lambda_exp * f
-
 print(lambda_exp)
 print(v_exp)
-
-# Fonction théorique de la vitesse de phase
 def v_theorique(lambda_, gamma):
     return np.sqrt(
         (g * lambda_ / (2 * np.pi) + (2 * np.pi * gamma) / (rho * lambda_))
@@ -45,7 +42,7 @@ print(f"Tension superficielle ajustée : {gamma_opt:.4f} N/m")
 
 # Tracer les données et le fit
 l_th = np.linspace(min(lambda_exp) - min(lambda_exp)/10,
-                   max(lambda_exp) + max(lambda_exp) ,
+                   max(lambda_exp),# + max(lambda_exp)/10,
                    400)
 
 v_fit = v_theorique(l_th, gamma_opt)
