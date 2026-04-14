@@ -1,0 +1,32 @@
+\section{Interférences d'ondes accoustiques}
+\subsection{Description des manipulations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Le montage expérimental est constitué d’un générateur de fonctions relié à un haut-parleur dont la membrane émet des ondes acoustiques dans un trombone de König (voir Fig. \ref{fig:montage_konig}). Ce dernier est équipé d’une partie coulissante qui permet de contrôler la distance parcourue par une des ondes superposée à la seconde (en rouge sur Fig. \ref{fig:chemin_konig}). Cette distance est mesurée grâce au banc coulissant gradué supportant le trombonne. La structure du trombonne permet de diviser l’onde incidente en deux ondes qui se superposent après avoir parcouru des chemins différents. Un microphone est placé à la sortie du trombone et est connecté à un oscilloscope afin de mesurer le signal de l'onde stationnaire issu de la superposition des ondes résultant de la division de l'onde incidante générée par le haut-parleur. L’ensemble du dispositif est installé sur une table stable partiellement à l’abri des perturbations extérieures.
+
+\begin{figure}[h!]
+    \centering
+    % Première figure
+    \begin{minipage}[b]{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{trombonne.png}
+        \caption{Montage du trombonne de konig Ref. \cite{protocole}}
+    \label{fig:montage_konig}
+    \end{minipage}
+    \hfill
+    % Deuxième figure
+    \begin{minipage}[b]{0.48\linewidth}
+    \centering
+        \includegraphics[width=\linewidth]{manip_konig.png}
+        \caption{Schéma des chemins parcourus par les ondes accoustiques}
+        \label{fig:chemin_konig}
+    \end{minipage}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+L'installation contient donc un exitateur : le haut-parleur électrodynamique. Il convertit le signal électrique sinusoïdal généré en vibrations mécaniques de sa membrane. Cela produit ainsi une onde acoustique de fréquence contrôlée et alimenté à 0.5Vpp. L'élément de mesure est alors le microphone. Il permet de capter les variations de pression acoustique résultant des interférences entre les deux ondes cohérentes dans le trombone de König. Il transforme ces variations en un signal électrique qu'il nous est possible de visualiser sur l’oscilloscope. Nous mesurons donc l’amplitude de l’onde résultante et cherchons alors d’identifier les minima d’interférence que l'on connaît en cherchant cos($\theta$) = 1 dans la relation Eq. \ref{eq:superposition}.  \\\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Plus concrètement, pour une dizaines de points pour des fréquences comprises entre 900 Hz et 5000 Hz, nous déplaçons la partie coulissante du trombone de König est jusqu’à ce que l’oscilloscope indique deux minimas successifs de l’amplitude du signal capté par le microphone. La distance entre ces deux positions correspond à une demi-longueur d’onde ($\lambda$/2) que l'on obtient en resolvant Eq. \ref{eq:minima}. Ces données permettent de déterminer la longueur d’onde pour chaque fréquence. Elles permettent d'en déduire la vitesse du son dans l'air que l'on compare avec sa valeur théorique (voir Eq. \ref{eq:c_th}) en mesurant la température de l'air ambiant.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
