@@ -47,14 +47,18 @@ v_exp = np.array([0.296,
 0.45825,
 0.4907,
 0.495
-]) 
+])
+lambda_initial = np.array([0.0400, 0.0265, 0.0240, 0.0157, 0.0120, 0.0100, 0.0090, 0.0083, 0.0071])
+
+v_exp = np.array([0.592, 0.477, 0.5016, 0.485666666666667, 0.4872, 0.496, 0.5499, 0.572483333333333, 0.565714285714286])
+lambda_exp = np.array([0.04, 0.0265, 0.024, 0.0156666666666667, 0.012, 0.01, 0.009, 0.00816666666666667, 0.00714285714285714])
 
 def fit_function(lambda_, gamma):
     return v_theorique(lambda_, gamma)
 
 popt, pcov = curve_fit(fit_function, lambda_exp, v_exp, p0=[0.072])
 
-l_th = np.linspace(0.0038, 0.012, 400)
+l_th = np.linspace(min(lambda_exp), max(lambda_exp) + 0.001, 400)
 
 v_th = v_theorique(l_th, 0.072)
 

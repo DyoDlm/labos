@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  14 APR 2026 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  14 APR 2026 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1338,73 +1338,57 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 115.
 See the caption package documentation for explanation.
 
-! Extra }, or forgotten \endgroup.
-l.125 ...$} $\pm \Delta \lambda_c$ $\backslash$ m}
-                                                   \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.136         \hline
+                    
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! You can't use `\hrule' here except with leaders.
+\hline ->\noalign {\ifnum 0=`}\fi \hrule 
+                                         \@height \arrayrulewidth \futurelet...
+l.136         \hline
+                    
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \futurelet 
+l.136         \hline
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \futurelet 
+l.136         \hline
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 138.
 See the caption package documentation for explanation.
 
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 160.
-See the caption package documentation for explanation.
-
-! Extra }, or forgotten \endgroup.
-\@endfloatbox ...pagefalse \outer@nobreak \egroup 
-                                                  \color@endbox 
-l.161 \end{table}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Too many }'s.
-\color@endbox ->\color@endgroup \egroup 
-                                        
-l.161 \end{table}
-                 
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-
-! LaTeX Error: \begin{document} ended by \end{table}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.161 \end{table}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.161 \end{table}
-                 
-Things are pretty mixed up, but I think the worst is over.
-
  [15]
-<./ressources/images/IMG_4763.jpeg, id=253, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4763.jpeg, id=251, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4763.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4763.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4763.jpeg  used on input line 
-166.
+145.
 (pdftex.def)             Requested size: 485.65321pt x 364.23991pt.
 
-Overfull \hbox (15.8982pt too wide) in paragraph at lines 166--167
+Overfull \hbox (15.8982pt too wide) in paragraph at lines 145--146
  [][] 
  []
 
@@ -1413,25 +1397,25 @@ File: ./ressources/images/4763_interferences_with_hyperboles.png Graphic file (
 type png)
 <use ./ressources/images/4763_interferences_with_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4763_interferences_with_hyperboles
-.png  used on input line 173.
+.png  used on input line 152.
 (pdftex.def)             Requested size: 363.39676pt x 223.4342pt.
-<./ressources/images/4763_interferences_with_scaled_hyperboles.png, id=259, 720
+<./ressources/images/4763_interferences_with_scaled_hyperboles.png, id=257, 720
 .291pt x 494.8086pt>
 File: ./ressources/images/4763_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
 <use ./ressources/images/4763_interferences_with_scaled_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4763_interferences_with_scaled_hyp
-erboles.png  used on input line 180.
+erboles.png  used on input line 159.
 (pdftex.def)             Requested size: 360.1446pt x 247.40369pt.
  [17 <./ressources/images/4763_interferences_with_scaled_hyperboles.png>]
-<./ressources/images/IMG_4771.jpeg, id=267, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4771.jpeg, id=265, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4771.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4771.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4771.jpeg  used on input line 
-189.
+168.
 (pdftex.def)             Requested size: 485.65321pt x 364.23991pt.
 
-Overfull \hbox (15.8982pt too wide) in paragraph at lines 189--190
+Overfull \hbox (15.8982pt too wide) in paragraph at lines 168--169
  [][] 
  []
 
@@ -1440,49 +1424,49 @@ File: ./ressources/images/4771_interferences_with_hyperboles.png Graphic file (
 type png)
 <use ./ressources/images/4771_interferences_with_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4771_interferences_with_hyperboles
-.png  used on input line 196.
+.png  used on input line 175.
 (pdftex.def)             Requested size: 363.39676pt x 211.63013pt.
 File: ./ressources/images/4771_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
 <use ./ressources/images/4771_interferences_with_scaled_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4771_interferences_with_scaled_hyp
-erboles.png  used on input line 202.
+erboles.png  used on input line 181.
 (pdftex.def)             Requested size: 363.39676pt x 247.40369pt.
  [19]
-<./ressources/images/IMG_4774.jpeg, id=280, 971.3088pt x 728.4816pt>
+<./ressources/images/IMG_4774.jpeg, id=278, 971.3088pt x 728.4816pt>
 File: ./ressources/images/IMG_4774.jpeg Graphic file (type jpg)
 <use ./ressources/images/IMG_4774.jpeg>
 Package pdftex.def Info: ./ressources/images/IMG_4774.jpeg  used on input line 
-211.
+190.
 (pdftex.def)             Requested size: 485.65321pt x 364.23991pt.
 
-Overfull \hbox (15.8982pt too wide) in paragraph at lines 211--212
+Overfull \hbox (15.8982pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
  [20 <./ressources/images/IMG_4774.jpeg>]
-<./ressources/images/4774_interferences_with_hyperboles.png, id=286, 603.9363pt
+<./ressources/images/4774_interferences_with_hyperboles.png, id=284, 603.9363pt
  x 490.7133pt>
 File: ./ressources/images/4774_interferences_with_hyperboles.png Graphic file (
 type png)
 <use ./ressources/images/4774_interferences_with_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4774_interferences_with_hyperboles
-.png  used on input line 218.
+.png  used on input line 197.
 (pdftex.def)             Requested size: 301.9674pt x 245.35605pt.
-<./ressources/images/4774_interferences_with_scaled_hyperboles.png, id=287, 720
+<./ressources/images/4774_interferences_with_scaled_hyperboles.png, id=285, 720
 .291pt x 494.8086pt>
 File: ./ressources/images/4774_interferences_with_scaled_hyperboles.png Graphic
  file (type png)
 <use ./ressources/images/4774_interferences_with_scaled_hyperboles.png>
 Package pdftex.def Info: ./ressources/images/4774_interferences_with_scaled_hyp
-erboles.png  used on input line 224.
+erboles.png  used on input line 203.
 (pdftex.def)             Requested size: 360.1446pt x 247.40369pt.
  [21 <./ressources/images/4774_interferences_with_hyperboles.png> <./ressources
 /images/4774_interferences_with_scaled_hyperboles.png>]
 ! Missing } inserted.
 <inserted text> 
                 }
-l.246 \]
+l.225 \]
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1491,14 +1475,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--250
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.264 ...t)^2 + \left(\frac{\Delta T}{T}\right)^2}
+l.243 ...t)^2 + \left(\frac{\Delta T}{T}\right)^2}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1524,31 +1508,30 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F5B46D205BD28FB22644E7FF0D1638ED;4387.
  ) 
 Here is how much of TeX's memory you used:
- 19522 strings out of 474222
- 375364 string characters out of 5748733
- 1940975 words of memory out of 5000000
+ 19521 strings out of 474222
+ 375357 string characters out of 5748733
+ 1937975 words of memory out of 5000000
  41394 multiletter control sequences out of 15000+600000
  567978 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,117p,1249b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (22 pages, 12017086 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (22 pages, 12008916 bytes).
 PDF statistics:
- 385 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 82 named destinations out of 1000 (max. 500000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
  244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
