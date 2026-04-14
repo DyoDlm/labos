@@ -57,33 +57,18 @@ Cours electronique, \textit{Pont RLC},
     \captionof{table}{Mesures des interférences acoustiques (m $\rightarrow$ minimas)}
     \label{tab:interferences}
 \end{center}
-\begin{figure}[ht]
-	\centering
-        \includegraphics[scale=0.5]{electrique/r1500.png}
-            \caption{$Z_L = 1500 \ohm$}
-        \label{fig:r1500}
-\end{figure}
     \newpage
 
 \subsubsection{Détails calculs et propagation d'incertitudes}
 \\Grâce à Eq. \ref{eq:celerite} et sachant que \(\lambda\) est obtenue par la differences entre positions des minimas à \(\pm \SI{1}{\milli\meter}\), l'incertitude sur \(\lambda\) est alors de \(\pm \SI{0.002}{\meter}\). L'incertitude absolue sur \( c \) est déjà obtenue par le fit du code python suivant :
-\\\\import numpy as np
-\\import matplotlib.pyplot as plt
-\\from scipy.optimize import curve\_fit
-\\
-\\frequencies = np.array([900, 1300, 1700, 2150, 2550, 3000, 3500, 4000, 4500, 5000]) 
-\\lambdas = np.array([0.384, 0.270, 0.206, 0.162, 0.136, 0.114, 0.098, 0.086, 0.076, 0.068])
 
-\\\\def linear\_fit(x, a):
-    \\  return a * x
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.6]{code_konig.png}
+    \label{fig:code_konig}
+    \caption{Script du fit de vitesse du son dans l'air}
+\end{figure}
 
-\\popt, pcov = curve\_fit(linear\_fit, 1/frequencies, lambdas)
-\\vitesse\_son, b = popt
-\\incertitude, incert\_b = np.sqrt(np.diag(pcov))
-
-\\print(f"Vitesse son : {vitesse\_son:.3f} ± {incertitude:.3f} m/s")
-\\print(f"b : {b} +/- {incert\_b}")
-\\\\
 
 La longueur d'onde $\lambda$ est obtenue par double de m. Soit $\Delta \lambda$ = $2 \cdot \frac{\Delta m}{m}$.  
 \newpage
@@ -284,3 +269,32 @@ où les dérivées partielles sont calculées comme suit :
     \frac{\partial \gamma}{\partial \lambda} &= \frac{\rho}{2\pi} \left( \frac{c^2}{\tanh\left(\frac{2\pi d}{\lambda}\right)} - \frac{g \lambda}{2\pi} \right) + \frac{\rho}{2\pi} \left( \frac{4\pi d c^2}{\lambda^2 \sinh^2\left(\frac{2\pi d}{\lambda}\right)} + \frac{g \lambda}{2\pi} \right), \\
     \frac{\partial \gamma}{\partial d} &= -\frac{\rho c^2}{\pi \sinh\left(\frac{4\pi d}{\lambda}\right)} \cdot \frac{4\pi}{\lambda}.
 \end{align}
+
+\textbf{Code python du fit de gamma}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.6]{code_gamma.png}
+    \label{fig:code_gamma}
+    \caption{Script du fit de la tension superficielle $\gamma$}
+\end{figure}
+
+\subsubsection{Interferences : codes python des hyperboles}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.6]{code_hyper_scaled.png}
+    \label{fig:code_hyper}
+    \caption{Script de la superposition des hyperboles et des maximas à l'echelle}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.8]{code_hyper.png}
+    \label{fig:code_hyper}
+    \caption{Partie du script afin d'afficher l'image post-traitement superposée aux hzperboles}
+\end{figure}
+
+
+
+
+\subsubse
