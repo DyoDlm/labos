@@ -13,47 +13,45 @@ Le dispositif expérimental (Figure 2 du protocole) comprend :
 
 Le déplacement du piézo courbe la lame, déviant le laser. La photodiode convertit cette déviation en signal électrique, permettant de tracer $d(V)$.
 
-\subsubsection{Mesure de l'hysterese}
-
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.3]{hysterese.png}
+    \includegraphics[scale=0.4]{schema_hysterese.png}
     \label{fig:schema_hysterese}
     \caption{Schema du dispositif de mesure de l'hysterese}
 \end{figure}
 
 
-\subsubsection{Mesure du fluage}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.3]{fluage.png}
-    \label{fig:schema_fluage}
-    \caption{Schema du dispositif de mesure du fluage}
-\end{figure}
-
 
 \subsection{Théorie : Hystérèse et fluage}
 \subsubsection{Hystérèse}
 L'hystérèse dans les matériaux piézo-électriques résulte de :
+
 \begin{itemize}
     \item La \textbf{réorientation des domaines ferroélectriques} sous champ électrique.
     \item Les \textbf{frottements internes} et inerties mécaniques.
 \end{itemize}
 Le coefficient de non-linéarité est calculé comme :
-\[
-\text{Non-linéarité (\%)} = \frac{\text{Écart max (C-D)}}{\text{Plage totale (A-B)}} \times 100
-\]
+
+\begin{equation}
+    \text{Non-linéarité (\%)} = \frac{\text{Écart max (C-D)}}{\text{Plage totale (A-B)}} \times 100
+    \label{eq:eq_lin}
+\end{equation}
+
 où A-B = déplacement total, C-D = écart maximal par rapport à la linéarité (Figure 1).
 
 \subsubsection{Fluage (Creep)}
 Le fluage décrit la \textbf{réponse temporelle} du piézo à un saut de tension. Il est modélisé par :
-\[
-y(t) = a \left(1 - e^{-t/\tau}\right) + b \quad \text{(montée)}
-\]
-\[
-y(t) = a e^{-t/\tau} + b \quad \text{(descente)}
-\]
+
+\begin{equation}
+    y(t) = a \left(1 - e^{-t/\tau}\right) + b \quad \text{(montée)}
+    \label{eq:t_m}
+\end{equation}
+
+\begin{equation}
+    y(t) = a e^{-t/\tau} + b \quad \text{(descente)}
+    \label{eq:t_d}
+\end{equation}
+
 où $\tau$ est la constante de temps (typiquement de l'ordre de la ms à la s).
 
 \subsection{Resultats et Analyse}
