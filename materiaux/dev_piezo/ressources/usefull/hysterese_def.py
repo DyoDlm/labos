@@ -146,8 +146,8 @@ for tension, files in groups.items():
         f"Courbes d’hystérèse - {tension}"
     )
 
-    ax_hys.set_xlabel("Canal A (V)")
-    ax_hys.set_ylabel("Canal B (V)")
+    ax_hys.set_xlabel("Tension")
+    ax_hys.set_ylabel("Deplacement")
 
     ax_hys.grid(True)
     ax_hys.legend()

@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # PARAMETRES INITIAUX
 # ============================================================
 threshold = 200  # Seuil d'intensité pour détecter les maxima
-neighborhood_size = 10  # Taille du voisinage pour limiter à 1 maxima par bloc de 10x10 pixels
+neighborhood_size = 20  # Taille du voisinage pour limiter à 1 maxima par bloc de 10x10 pixels
 radius = 3  # Rayon des cercles pour les maxima
 thickness = -1  # Épaisseur des cercles (-1 pour remplir)
 
