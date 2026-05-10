@@ -38,7 +38,52 @@ où $\tau$ est la constante de temps (typiquement de l'ordre de la ms à la s).
 
 \subsubsection{Hysterese}
 
-Si nous plotons ...
+Chaque courbe d'hysterese (voir Fig. \ref{fig:1V_hyst}) nous permet de tracer d(V) (voir Fig. \ref{fig:1V_lin}). Pour 1V sur les graphiques susmentionnés, nous constatons que la pente diminue en fonction de la fréquence (ou l'inverse).
+
+\begin{figure}[H]
+    \centering
+    % Première figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{1V_dV.png}
+            \caption{$Z_L = 2000 \ohm$}
+        \label{fig:r2000}
+    \end{minipage}
+    \hfill
+    % Deuxième figure
+    \begin{minipage}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{1V_lineaire.png}
+            \caption{$Z_L = 2500 \ohm$}
+        \label{fig:r2500}
+    \end{minipage}
+\end{figure}
+
+C'est également le cas pour 2V comme nous l'observer sur Fig. \ref{fig:2V_lin} et pour 3V sur Fig. \ref{fig:3V_lin}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{2V_lineaire.png}
+    \label{fig:2V_lin}
+    \caption{d(V) pour 2V}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{3V_lineaire.png}
+    \label{fig:3V_lin}
+    \caption{d(V) pour 3V}
+\end{figure}
+
+Or, fort est de constater que plus la tension est élevée, plus la différence entre les pentes est élevée entre les différentes fréquences. Nous pouvons observer les différentes pentes sur Fig. \ref{fig:pentes} d'après les valeurs dans Tab. \ref{tab:pentes} dont le pourcentage de non-linearite est donné par ...
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{.png}
+    \label{fig:3V_lin}
+    \caption{d(V) pour 3V}
+\end{figure}
+
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -67,6 +112,17 @@ Si nous plotons ...
 \end{table}
 
 \subsubsection{Fluage}
+\
+
+En un second temps, nous imposons un signal carré au système. Nous mesurons la réponse électrique de l'échantillon piezo comme nous pouvons l'observer sur Fig.\ref{fig:fluage}. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{fluage_fit_montée_descente.png}
+    \label{fig:fluage}
+    \caption{Courbe de fluage}
+\end{figure}
+
+Nous determinons les temps de montée et de descente sur Fig. ... . Nous constatons que le temps de montée est plus bas que le temps de descente (tau1 > tau2). 
 
 \begin{table}[h]
 \centering
@@ -84,3 +140,7 @@ $B$ & $-3.102036 \times 10^{-2} \pm 5.33 \times 10^{-5}$ & $-1.933693 \times 10^
 \end{tabular}
 \label{tab:resultats_fluage}
 \end{table}
+
+Cela s'explique par le fait que ...
+
+
