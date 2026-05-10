@@ -34,11 +34,11 @@ def decay_model(t, A, tau, B):
 # ============================================================
 # Fenêtre pour la montée (0.88 à 0.90 s)
 rise_start_time = 0.855
-rise_end_time = 0.90
+rise_end_time = 1
 
 # Fenêtre pour la descente (0.38 à 0.40 s)
 decay_start_time = 0.355
-decay_end_time = 0.40
+decay_end_time = 0.8
 
 # Trouver les indices correspondants dans t
 rise_start_idx = np.argmin(np.abs(t - rise_start_time))
