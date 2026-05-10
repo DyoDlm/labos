@@ -15,7 +15,9 @@
 
 \hypersetup{
 	colorlinks=true,
-	linkcolor=blue,
+	linkcolor=bluenin:q! 
+    :q! 
+    ,
 	citecolor=blue,
 	filecolor=magenta,
 	urlcolor=blue
@@ -39,6 +41,24 @@
 \newpage
 
 \section{Introduction}
+La piézo-électricité est un phénomène physique présent dans certains matériaux (comme les céramiques PZT ou le quartz), qui permet une conversion bidirectionnelle entre énergie mécanique et énergie électrique. Ces matériaux sont largement utilisés comme actuateurs (pour des déplacements nanométriques précis) ou capteurs (détection d’ondes ultrasonores, alignement de fibres optiques, etc.).
+Ce laboratoire vise à caractériser expérimentalement les propriétés d’un matériau piézo-électrique, en étudiant :
+L’hystérèse et le fluage (creep), deux phénomènes non-linéaires intrinsèques aux matériaux piézo-électriques.
+\\\\
+La relation déplacement-tension (d(V)) via un interféromètre de Michelson, pour mesurer des nano-déplacements avec une précision sub-nanométrique.
+\\\\
+Les objectifs pédagogiques sont :
+Mesurer et analyser les courbes d(V) pour différents signaux (triangulaires, carrés).
+
+\item Quantifier la non-linéarité (hystérèse) et le fluage (creep).
+
+\item Monter et aligner un interféromètre pour mesurer des déplacements de l’ordre du nanomètre.
+
+\item Comprendre les principes de l’interférométrie optique et son application à la métrologie de haute précision.
+
+
+
+
 
 %====================================
 %	 EXPERIENCE 1
@@ -50,6 +70,11 @@
 %   EXPERIENCE 2	
 %====================================
 \include{./srcs/interferometrie.tex}
+
+
+% Todo : ANALYSE ET INCERTITUDES
+%   Pour l’hystérèse : précision de la photodiode, stabilité du laser.
+%   Pour l’interféromètre : résolution de la CCD, vibrations.
 
 
 \section{Conclusion}

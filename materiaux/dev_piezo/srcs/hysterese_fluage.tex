@@ -1,4 +1,86 @@
 \section{Hysteres et fluage}
-\subsection{Description et théorie}
 
-\subsection{Resultats, Analyse et Discussion}
+
+\subsection{Description du dispositif}
+Le dispositif expérimental (Figure 2 du protocole) comprend :
+\begin{itemize}
+    \item Un \textbf{laser He-Ne} ($\lambda = 632.8$ nm) projeté sur une \textbf{lame flexible miroir} (Invar).
+    \item Un \textbf{actuateur piézo-électrique} (P-117-00, déplacement max = 82 $\mu$m pour 150 V).
+    \item Une \textbf{photodiode 4 quadrants} pour mesurer la déviation du faisceau.
+    \item Un \textbf{générateur de fonctions} (signaux triangulaires/carrés) et un \textbf{oscilloscope USB PicoScope}.
+\end{itemize}
+Le déplacement du piézo courbe la lame, déviant le laser. La photodiode convertit cette déviation en signal électrique, permettant de tracer $d(V)$.
+
+\subsection{Théorie : Hystérèse et fluage}
+\subsubsection{Hystérèse}
+L'hystérèse dans les matériaux piézo-électriques résulte de :
+\begin{itemize}
+    \item La \textbf{réorientation des domaines ferroélectriques} sous champ électrique.
+    \item Les \textbf{frottements internes} et inerties mécaniques.
+\end{itemize}
+Le coefficient de non-linéarité est calculé comme :
+\[
+\text{Non-linéarité (\%)} = \frac{\text{Écart max (C-D)}}{\text{Plage totale (A-B)}} \times 100
+\]
+où A-B = déplacement total, C-D = écart maximal par rapport à la linéarité (Figure 1).
+
+\subsubsection{Fluage (Creep)}
+Le fluage décrit la \textbf{réponse temporelle} du piézo à un saut de tension. Il est modélisé par :
+\[
+y(t) = a \left(1 - e^{-t/\tau}\right) + b \quad \text{(montée)}
+\]
+\[
+y(t) = a e^{-t/\tau} + b \quad \text{(descente)}
+\]
+où $\tau$ est la constante de temps (typiquement de l'ordre de la ms à la s).
+
+\subsection{Resultats et Analyse}
+
+\subsubsection{Hysterese}
+
+Si nous plotons ...
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Fichier} & \textbf{$a$} & \textbf{$da$} & \textbf{$b$} & \textbf{$db$} & \textbf{Non-linéarité (\%)} \\
+\hline
+1V5Hz\_15.csv   & 0.022269 & 0.000012 & -0.008241 & 0.000019 & 19.836590 \\
+\hline
+1V10Hz\_15.csv  & 0.018545 & 0.000017 & -0.001450 & 0.000026 & 29.323469 \\
+\hline
+1V20Hz\_15.csv  & 0.010608 & 0.000019 & 0.009157 & 0.000028 & 41.177689 \\
+\hline
+2V5Hz\_15.csv   & 0.023540 & 0.000014 & -0.009284 & 0.000022 & 22.120170 \\
+\hline
+2V10Hz\_15.csv  & 0.017281 & 0.000017 & -0.002593 & 0.000027 & 30.324745 \\
+\hline
+2V20Hz\_15.csv  & 0.010307 & 0.000019 & 0.009588 & 0.000030 & 40.316760 \\
+\hline
+3V5Hz\_15.csv   & 0.020062 & 0.000013 & -0.005603 & 0.000022 & 22.684739 \\
+\hline
+3V10Hz\_15.csv  & 0.015965 & 0.000017 & -0.000667 & 0.000029 & 30.508932 \\
+\hline
+\end{tabular}
+\caption{Paramètres de régression linéaire et non-linéarité mesurés pour différentes amplitudes et fréquences.}
+\label{tab:nonlinearite}
+\end{table}
+
+\subsubsection{Fluage}
+
+\begin{table}[h]
+\centering
+\caption{Résultats de l'ajustement exponentiel pour la montée et la descente}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Paramètre} & \textbf{Montée} & \textbf{Descente} \\
+\hline
+$A$ & $8.651228 \times 10^{-2} \pm 4.91 \times 10^{-5}$ & $8.352762 \times 10^{-2} \pm 3.15 \times 10^{-5}$ \\
+\hline
+$\tau$ (s) & $1.051606 \times 10^{-2} \pm 1.44 \times 10^{-5}$ & $1.078764 \times 10^{-2} \pm 1.00 \times 10^{-5}$ \\
+\hline
+$B$ & $-3.102036 \times 10^{-2} \pm 5.33 \times 10^{-5}$ & $-1.933693 \times 10^{-2} \pm 1.82 \times 10^{-5}$ \\
+\hline
+\end{tabular}
+\label{tab:resultats_fluage}
+\end{table}
