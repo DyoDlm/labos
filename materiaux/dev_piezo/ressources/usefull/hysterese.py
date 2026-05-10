@@ -3,13 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# ============================================================
-# MODELE LINEAIRE
-# ============================================================
-
-def linear_model(x, a, b):
-    return a * x + b
-
 
 # ============================================================
 # CONFIGURATION DES FICHIERS
@@ -58,8 +51,7 @@ for tension, files in groups.items():
 
         # ----------------------------------------------------
         # Lecture CSV
-        # ----------------------------------------------------
-
+        # --------------------------------------------------
         df = pd.read_csv(
             file,
             skiprows=2
@@ -70,6 +62,7 @@ for tension, files in groups.items():
         # ----------------------------------------------------
 
         time = df.iloc[:, 0].values
+
         canal_A = df.iloc[:, 1].values
         canal_B = df.iloc[:, 2].values / 1000  # mV -> V
 
@@ -88,49 +81,36 @@ for tension, files in groups.items():
 
         else:
             freq = "?"
+        
+        xmax = max(canal_A)
+        xmin = min(canal_A)
+
+        until = 0
+
+        for i in range(len(canal_A)):
+            if canal_A[i] == xmax:
+                until = i
+                break 
+
+        print(until)
+        AB_factor = xmax-xmin
+
+
 
         # ====================================================
         # COURBE D'HYSTERESE
         # ====================================================
 
+        #ax_hys.plot(
+        #    canal_A,
+        #    canal_B,
+        #    linewidth=1.5,
+        #    label=freq
+        #)
         ax_hys.plot(
-            canal_A,
-            canal_B,
-            linewidth=1.5,
-            label=freq
+           np.array([canal_A[2500], canal_A[7500]]),
+            np.array([canal_B[2500], canal_B[7500]])
         )
-
-        # ====================================================
-        # REGRESSION LINEAIRE
-        # ====================================================
-
-        popt, _ = curve_fit(
-            linear_model,
-            canal_A,
-            canal_B
-        )
-
-        a, b = popt
-
-        x_fit = np.linspace(
-            np.min(canal_A),
-            np.max(canal_A),
-            1000
-        )
-
-        y_fit = linear_model(x_fit, a, b)
-
-        # ====================================================
-        # COURBE LINEAIRE
-        # ====================================================
-
-        ax_lin.plot(
-            x_fit,
-            y_fit,
-            linewidth=2,
-            label=freq
-        )
-
     # ========================================================
     # MISE EN FORME HYSTERESE
     # ========================================================

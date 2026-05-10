@@ -183,6 +183,9 @@ For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
 (./main.aux (./srcs/hysterese_fluage.aux
 
+LaTeX Warning: Label `fig:2V_lin' multiply defined.
+
+
 LaTeX Warning: Label `fig:3V_lin' multiply defined.
 
 ) (./srcs/interferometrie.aux) (./srcs/annexes.aux
