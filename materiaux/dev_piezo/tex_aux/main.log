@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  10 MAY 2026 16:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  10 MAY 2026 17:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,6 +466,27 @@ LaTeX Warning: Label `fig:3V_lin' multiply defined.
 
 ) (./srcs/interferometrie.aux) (./srcs/annexes.aux
 
+LaTeX Warning: Label `fig:franges' multiply defined.
+
+
+LaTeX Warning: Label `fig:franges' multiply defined.
+
+
+LaTeX Warning: Label `fig:franges' multiply defined.
+
+
+LaTeX Warning: Label `fig:franges' multiply defined.
+
+
+LaTeX Warning: Label `fig:franges' multiply defined.
+
+
+LaTeX Warning: Label `fig:franges' multiply defined.
+
+
+LaTeX Warning: Label `fig:franges' multiply defined.
+
+
 LaTeX Warning: Label `tab:coeff_reflexion' multiply defined.
 
 ))
@@ -774,7 +795,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 ...piezzo-electrique}{9}{subsubsection.3.3.2}
+l.16 ...iezzo-electrique}{10}{subsubsection.3.3.2}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -786,7 +807,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 ...{\numberline {4}Conclusion}{10}{section.4}
+l.17 ...{\numberline {4}Conclusion}{11}{section.4}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -798,7 +819,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 ...on}{\numberline {5}Annexes}{12}{section.5}
+l.18 ...on}{\numberline {5}Annexes}{13}{section.5}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -810,7 +831,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 ...1}Hysterese et fluage}{12}{subsection.5.1}
+l.19 ...1}Hysterese et fluage}{13}{subsection.5.1}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -822,7 +843,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 ... {5.2}Interferometrie}{12}{subsection.5.2}
+l.20 ... {5.2}Interferometrie}{13}{subsection.5.2}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1065,7 +1086,14 @@ File: ./ressources/images/1.jpg Graphic file (type jpg)
 <use ./ressources/images/1.jpg>
 Package pdftex.def Info: ./ressources/images/1.jpg  used on input line 51.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
-) [9 <./ressources/images/1.jpg>] [10
+<./ressources/images/superposition_5_to_20.png, id=183, 803.0pt x 602.25pt>
+File: ./ressources/images/superposition_5_to_20.png Graphic file (type png)
+<use ./ressources/images/superposition_5_to_20.png>
+Package pdftex.def Info: ./ressources/images/superposition_5_to_20.png  used on
+ input line 62.
+(pdftex.def)             Requested size: 401.49902pt x 301.12425pt.
+ [9 <./ressources/images/1.jpg>]) [10 <./ressources/images/superposition_5_to_2
+0.png (PNG copy)>] [11
 
 
 ]
@@ -1115,10 +1143,117 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- [11
+ [12
 
-]) [12] (./main.aux (./srcs/hysterese_fluage.aux) (./srcs/interferometrie.aux) 
-(./srcs/annexes.aux))
+]
+
+LaTeX Warning: File `1V.jpg' not found on input line 61.
+
+
+! Package pdftex.def Error: File `1V.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61     \includegraphics[scale=0.5]{1V.jpg}
+                                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `5V.jpg' not found on input line 69.
+
+
+! Package pdftex.def Error: File `5V.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69     \includegraphics[scale=0.5]{5V.jpg}
+                                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `10V.jpg' not found on input line 77.
+
+
+! Package pdftex.def Error: File `10V.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77     \includegraphics[scale=0.5]{10V.jpg}
+                                             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `15V.jpg' not found on input line 85.
+
+
+! Package pdftex.def Error: File `15V.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85     \includegraphics[scale=0.5]{15V.jpg}
+                                             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ [13]
+
+LaTeX Warning: File `20V.jpg' not found on input line 93.
+
+
+! Package pdftex.def Error: File `20V.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93     \includegraphics[scale=0.5]{20V.jpg}
+                                             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `25V.jpg' not found on input line 101.
+
+
+! Package pdftex.def Error: File `25V.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101     \includegraphics[scale=0.5]{25V.jpg}
+                                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `30V.jpg' not found on input line 109.
+
+
+! Package pdftex.def Error: File `30V.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109     \includegraphics[scale=0.5]{30V.jpg}
+                                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) [14] (./main.aux (./srcs/hysterese_fluage.aux) (./srcs/interferometrie.aux) (
+./srcs/annexes.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1133,10 +1268,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BCC0B80B5EA4777DFCEFC5E00DC7C913;3191.
  ) 
 Here is how much of TeX's memory you used:
- 13693 strings out of 474222
- 216915 string characters out of 5748733
+ 13923 strings out of 474222
+ 221047 string characters out of 5748733
  1936975 words of memory out of 5000000
- 35674 multiletter control sequences out of 15000+600000
+ 35894 multiletter control sequences out of 15000+600000
  565215 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,117p,442b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1151,10 +1286,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (12 pages, 1487029 bytes).
+Output written on main.pdf (14 pages, 2234688 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
