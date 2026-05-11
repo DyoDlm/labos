@@ -86,34 +86,36 @@ C'est également le cas pour 2V comme nous l'observer sur Fig. \ref{fig:2V_lin} 
 
 
 Or, fort est de constater que plus la tension est élevée, plus la différence entre les pentes est élevée entre les différentes fréquences. Nous pouvons observer les différentes pentes sur Fig. \ref{fig:pentes} d'après les valeurs dans Tab. \ref{tab:pentes} dont le pourcentage de non-linearite est donné par ...
+
 \begin{table}[h]
 \centering
-\caption{Résultats des mesures d'hystérésis pour différentes tensions et fréquences}
-\label{tab:hysteresis_results}
-\begin{tabular}{|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
-\textbf{Fichier} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{AB (V)} & \textbf{CD (V)} & \textbf{Non-linéarité} \\
+    \textbf{U / V} & \textbf{f / Hz} & \textbf{AB $\pm$ 0.01 V} & \textbf{CD $\pm$ 0.06 V} & \textbf{Non-linéarité $\pm$ 0.027 $\%$} \\
 \hline
-1V5Hz\_15.csv & 0.013 & 0.036 & (1.453, 0.0274) & (1.453, 0.0201) & 0.022 & 0.007 & 0.328 \\
+    1 & 5 & 0.022 & 0.007 & 0.328 \\
 \hline
-1V10Hz\_15.csv & 0.016 & 0.036 & (1.505, 0.0316) & (1.505, 0.0210) & 0.020 & 0.011 & 0.519 \\
+    2 & 5 & 0.046 & 0.017 & 0.381 \\
 \hline
-1V20Hz\_15.csv & 0.017 & 0.032 & (1.526, 0.0310) & (1.526, 0.0194) & 0.015 & 0.012 & 0.760 \\
+    3 & 5 & 0.056 & 0.024 & 0.421 \\
 \hline
-2V5Hz\_15.csv & 0.003 & 0.049 & (1.563, 0.0353) & (1.563, 0.0179) & 0.046 & 0.017 & 0.381 \\
+    1 & 10 & 0.020 & 0.011 & 0.519 \\
 \hline
-2V10Hz\_15.csv & 0.005 & 0.041 & (1.679, 0.0364) & (1.679, 0.0157) & 0.036 & 0.021 & 0.571 \\
+    2 & 10 & 0.036 & 0.021 & 0.571 \\
 \hline
-2V20Hz\_15.csv & 0.011 & 0.039 & (1.549, 0.0363) & (1.549, 0.0143) & 0.028 & 0.022 & 0.783 \\
+    3 & 10 & 0.050 & 0.029 & 0.587 \\
 \hline
-3V5Hz\_15.csv & -0.003 & 0.053 & (1.735, 0.0405) & (1.735, 0.0167) & 0.056 & 0.024 & 0.421 \\
+    1 & 20 & 0.015 & 0.012 & 0.760 \\
 \hline
-3V10Hz\_15.csv & -0.001 & 0.049 & (1.833, 0.0427) & (1.833, 0.0133) & 0.050 & 0.029 & 0.587 \\
+    3 & 20 & 0.039 & 0.030 & 0.765 \\
 \hline
-3V20Hz\_15.csv & 0.004 & 0.043 & (1.614, 0.0389) & (1.614, 0.0094) & 0.039 & 0.030 & 0.765 \\
+    2 & 20 & 0.028 & 0.022 & 0.783 \\
 \hline
 \end{tabular}
+    \caption{Résultats des mesures d'hystérésis pour différentes tensions et fréquences, classés par ordre croissant de non-linéarité.}
+    \label{tab:hysteresis_results_sorted}
 \end{table}
+Les incertitudes sur les mesures des tensions U et des fréquences f sont négligeables.
 
 \begin{figure}[H]
     \centering

@@ -25,32 +25,70 @@ Christophe Soares, \textit{Mesure de reflexion d'un cable coaxial avec $Z_L$ = 5
 
 \subsection{Hysterese et fluage}
 
+Mesures de A, B, C, D pour le coefficient de non-linearite :
 
-\begin{table}[h!]
+
+\begin{table}[h]
 \centering
-\caption{Coefficient de réflexion en fonction de l’impédance de charge}
-\label{tab:coeff_reflexion}
-\begin{tabular}{|c|c|}
+\caption{Coordonnées des points A, B, C et D pour différentes tensions et fréquences.}
+\label{tab:points}
+\begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-$Z_L$ ($\Omega$) & $\rho$ \\
+\textbf{Tension (V)} & \textbf{Fréquence (Hz)} & \textbf{Point A (x, y)} & \textbf{Point B (x, y)} & \textbf{Point C (x, y)} & \textbf{Point D (x, y)} \\
 \hline
-5    & -0.834 \\
-10   & -0.694 \\
-15   & -0.573 \\
-20   & -0.469 \\
-25   & -0.377 \\
-30   & -0.297 \\
-35   & -0.225 \\
-40   & -0.161 \\
-100  &  0.288 \\
-500  &  0.801 \\
-1500 &  0.929 \\
-2000 &  0.946 \\
-2500 &  0.957 \\
+1 & 5 & (1.074862, 0.01348918) & (1.951201, 0.03586993) & (1.356548, 0.02529679) & (1.477096, 0.02048097) \\
 \hline
-%\caption{Mesures expérimentales et coefficient de réflexion calcules par Eq. \ref{eq:rhoo}}
+1 & 10 & (1.130558, 0.01563158) & (1.898251, 0.03612171) & (1.165197, 0.02352367) & (1.945250, 0.03196966) \\
+\hline
+1 & 20 & (1.218604, 0.01717277) & (1.738792, 0.03237861) & (0.992309, 0.02085635) & (1.976684, 0.02823878) \\
+\hline
+2 & 5 & (0.647755, 0.00335093) & (2.330546, 0.04896695) & (0.520493, 0.00733970) & (1.629841, 0.01899167) \\
+\hline
+2 & 10 & (0.840480, 0.00515458) & (2.217017, 0.04147618) & (0.509354, 0.00951262) & (1.727805, 0.01625111) \\
+\hline
+2 & 20 & (0.974761, 0.01098361) & (2.036653, 0.03909879) & (0.503555, 0.01666158) & (2.463607, 0.03236182) \\
+\hline
+3 & 5 & (0.398267, -0.00327464) & (2.862636, 0.05312357) & (1.627705, 0.03853267) & (1.816919, 0.01807916) \\
+\hline
+3 & 10 & (0.572070, -0.00143742) & (2.623219, 0.04882046) & (-0.000916, 0.00426954) & (2.062288, 0.01761223) \\
+\hline
+3 & 20 & (0.621815, 0.00404981) & (2.295755, 0.04261604) & (-0.001221, 0.01149632) & (2.307504, 0.01758629) \\
+\hline
 \end{tabular}
 \end{table}
+
+Calcul incertitude : 
+
+Le coefficient de non-linéarité est défini par :
+\[
+K = \frac{\text{CD}}{\text{AB}}
+\]
+
+Les incertitudes sur \(\text{AB}\) et \(\text{CD}\) sont :
+\[
+\Delta \text{AB} = \pm 0.02 \, \text{V}, \quad \Delta \text{CD} = \pm 0.06 \, \text{V}
+\]
+
+L'incertitude relative sur \(K\) est donnée par :
+\[
+\frac{\Delta K}{K} = \sqrt{\left( \frac{\Delta \text{CD}}{\text{CD}} \right)^2 + \left( \frac{\Delta \text{AB}}{\text{AB}} \right)^2}
+\]
+
+L'incertitude absolue sur \(K\) est :
+\[
+\Delta K = K \times \sqrt{\left( \frac{\Delta \text{CD}}{\text{CD}} \right)^2 + \left( \frac{\Delta \text{AB}}{\text{AB}} \right)^2}
+\]
+
+\[
+\text{AB} = 0.022\,\text{V}, \quad \text{CD} = 0.005\,\text{V}, \quad K = \frac{0.005}{0.022} \approx 0.227
+\]
+\[
+\frac{\Delta K}{K} = \sqrt{\left( \frac{0.06}{0.005} \right)^2 + \left( \frac{0.02}{0.022} \right)^2} \approx 12.03
+\]
+\[
+\Delta K = 0.227 \times 12.03 \approx 2.73
+\]
+
 
 \subsection{Interferometrie}
 
