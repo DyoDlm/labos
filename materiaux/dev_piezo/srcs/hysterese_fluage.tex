@@ -13,6 +13,16 @@ Le dispositif expérimental (Figure 2 du protocole) comprend :
 
 Le déplacement du piézo courbe la lame, déviant le laser. La photodiode convertit cette déviation en signal électrique, permettant de tracer $d(V)$.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Notre montage repose sur un système optique et électronique conçu pour étudier le comportement d’un matériau piézoélectrique. Le laser He-Ne (de longueur d’onde 632,8 nm) émet un faisceau rouge (voir Fig. \ref{fig:schema_hysterese}) qui est dirigé vers une lame flexible en Invar, polie comme un miroir. Cette lame est fixée à un actuateur piézoélectrique (modèle P-117-00), capable de se déformer sous l’effet d’une tension électrique, avec un déplacement maximal de 82 µm pour une tension de 150 V.
+\\\\
+Lorsqu’une tension est appliquée à l’actuateur, celui-ci se contracte ou s’allonge, ce qui fait fléchir la lame flexible. Cette déformation modifie l’angle du miroir, et donc la direction du faisceau laser réfléchi.Le faisceau dévié est ensuite capté par une photodiode à quatre quadrants. Cet élément clé permet de mesurer avec précision la déviation du laser en convertissant la position du spot lumineux en un signal électrique. Plus la lame se courbe, plus le faisceau est dévié, et plus le signal généré par la photodiode varie.
+\\\\
+Pour piloter l’actuateur, on utilise un générateur de fonctions qui produit des signaux triangulaires ou carrés (par exemple, une rampe de 1 Hz à 3 Vpp avec un offset de 1,5 V pour éviter les tensions négatives, interdites pour le piézo). Un boîtier électronique amplifie ces signaux (par un facteur 10) pour atteindre les tensions nécessaires au fonctionnement du piézo. Enfin, un oscilloscope USB PicoScope permet de visualiser en temps réel : Le signal de consigne (tension envoyée par le générateur).
+        Le signal de mesure (réponse du piézo, via la photodiode). En superposant ces deux signaux, on peut tracer la courbe déplacement en fonction de la tension (d(V)) et observer des phénomènes comme l’hystérésis ou le fluage.
+
+
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{schema_hysterese.png}
