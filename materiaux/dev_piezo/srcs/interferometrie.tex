@@ -1,58 +1,51 @@
 \section{Interferometrie}
 \subsection{Principe de l'interféromètre de Michelson}
+\subsection{Principe de l'interféromètre de Michelson}
 
+L'interféromètre de Michelson est un outil optique qui permet de mesurer des déplacements extrêmement précis, de l'ordre du nanomètre. Dans notre expérience, son fonctionnement repose sur l'utilisation d'un laser He-Ne d'une puissance de 5 mW et d'une longueur d'onde $\lambda = 633$ nm. Le faisceau lumineux émis par ce laser atteint une lame séparatrice, souvent appelée \textit{beam splitter}, qui divise le faisceau en deux bras perpendiculaires.
+\\\\
+Le premier bras, appelé bras fixe, dirige le faisceau vers un miroir statique qui ne bouge pas. Le second bras, appelé bras mobile, permet au faisceau de traverser la lame séparatrice et d'atteindre un miroir monté sur un actuateur piézoélectrique. Ce miroir peut se déplacer sous l'effet d'une tension électrique appliquée à l'actuateur.Les deux faisceaux réfléchis par les miroirs reviennent vers la lame séparatrice, où ils interfèrent. Selon la différence de marche $\delta$ entre les deux bras, on observe sur un détecteur CCD des franges d'interférence, c'est-à-dire des zones claires et sombres alternées.
+\\\\
+La différence de marche $\delta$ dépend directement du déplacement $d$ du miroir mobile. Dans notre montage, l'angle d'incidence $\theta$ est quasi nul, ce qui signifie que le faisceau est perpendiculaire aux miroirs. Ainsi, on peut simplifier la relation entre $\delta$ et $d$ par l'équation suivante :
+\[
+\delta \approx 2d
+\]
+Cela signifie qu'un déplacement de $d = \frac{\lambda}{2}$ (soit 316,5 nm pour $\lambda = 633$ nm) décale les franges d'une période complète.
+\\\\
+Les franges apparaissent car les ondes lumineuses des deux bras interfèrent entre elles. Lorsque les ondes sont en phase, on observe des interférences constructives, ce qui produit des franges claires. À l'inverse, lorsque les ondes sont déphasées, on observe des interférences destructives, ce qui produit des franges sombres. L'espacement entre les franges dépend de la longueur d'onde du laser et de l'angle entre les miroirs.
+\\\\
+Même si le piézo se déplace parallèlement à l'axe du détecteur CCD, les franges se déplacent perpendiculairement sur le détecteur. Cela s'explique par la géométrie de l'interféromètre : un déplacement du miroir mobile modifie la différence de marche $\delta$, ce qui décale le motif d'interférence dans une direction orthogonale à l'axe optique. 
+\\\\
+Pour un décalage d'une frange, la différence de marche varie de $\lambda$ (633 nm). Comme $\delta \approx 2d$, on a :
+\[
+2d = \lambda \implies d = \frac{\lambda}{2} = 316,5 \text{ nm}
+\]
+Ainsi, un déplacement de 316,5 nm du piézo décale les franges d'une unité. Si on arrive à distinguer un décalage de 1/10ème de frange, le déplacement minimal détectable est de l'ordre de 31,65 nm. Cela montre la précision nanométrique de cette méthode.
+
+\subsection{Application : Mesure du coefficient piézoélectrique}
+
+Pour déterminer le coefficient piézoélectrique $d_{33}$, qui relie la tension appliquée au déplacement, on suit la démarche suivante.
+
+On applique des tensions croissantes $V_1, V_2, V_3, \dots$ au piézo via le générateur de fonctions. Pour chaque tension, on mesure le nombre de franges $n$ déplacées sur le détecteur CCD. Sachant que chaque frange correspond à un déplacement de 316,5 nm, on convertit le nombre de franges en déplacement $d$ :
+\[
+d = n \cdot \frac{\lambda}{2} = n \cdot 316,5 \text{ nm}
+\]
+
+En traçant la courbe $d(V)$, on obtient une droite dont la pente correspond au coefficient piézoélectrique $d_{33}$, exprimé en nm/V. Ce coefficient se calcule par :
+\[
+d_{33} = \frac{\Delta d}{\Delta V} = \frac{n \cdot \frac{\lambda}{2}}{\Delta V}
+\]
+
+Par exemple, si pour une tension de 10 V on observe un décalage de 5 franges, alors :
+\[
+d = 5 \cdot 316,5 \text{ nm} = 1582,5 \text{ nm}
+\]
+\[
+d_{33} = \frac{1582,5 \text{ nm}}{10 \text{ V}} = 158,25 \text{ nm/V}
+\]
+
+Il est important de noter que plus on mesure de points $(V, n)$, plus la pente sera précise. Si la courbe $d(V)$ n'est pas parfaitement linéaire, cela peut indiquer une non-linéarité ou un fluage du matériau piézoélectrique.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Principe de l’interféromètre de Michelson (Figure 3)
-L’interféromètre de Michelson est un outil optique qui permet de mesurer des déplacements extrêmement précis, de l’ordre du nanomètre. Voici son fonctionnement dans notre expérience :
-
-
-Un laser He-Ne (5 mW, λ = 633 nm) émet un faisceau qui arrive sur une lame séparatrice (souvent appelée beam splitter). Cette lame divise le faisceau en deux bras perpendiculaires :
-
-Un bras fixe : le faisceau est réfléchi vers un miroir statique.
-Un bras mobile : le faisceau traverse la lame et atteint un miroir monté sur l’actuateur piézoélectrique.
-
-
-Les deux faisceaux réfléchis par les miroirs reviennent vers la lame séparatrice, où ils interfèrent. Selon la différence de marche (δ) entre les deux bras, on observe sur un détecteur CCD des franges d’interférence (zones claires et sombres alternées).
-
-
-La différence de marche δ dépend du déplacement d du miroir mobile (monté sur le piézo) :
-
-δ=2d⋅cos⁡(θ)  \delta = 2d \cdot \cos(\theta)δ=2d⋅cos(θ)
-Dans notre montage, l’angle d’incidence θ est quasi nul (faisceau perpendiculaire), donc δ ≈ 2d.
-
-Cela signifie qu’un déplacement d = λ/2 (soit 316,5 nm pour λ = 633 nm) décale les franges d’une période complète.
-
-
-Pourquoi voit-on des franges ?
-
-Les franges apparaissent car les ondes lumineuses des deux bras interfèrent constructivement (franges claires) ou destructivement (franges sombres) selon leur différence de phase. L’espacement entre les franges dépend de la longueur d’onde du laser et de l’angle entre les miroirs.
-
-
-Pourquoi les franges bougent-elles latéralement ?
-
-Même si le piézo se déplace parallèlement à l’axe du CCD, les franges se déplacent perpendiculairement sur le détecteur. Cela s’explique par la géométrie de l’interféromètre : un déplacement du miroir mobile modifie la différence de marche, ce qui décale le motif d’interférence dans une direction orthogonale à l’axe optique.
-
-
-Calcul du déplacement par frange :
-
-Pour un décalage d’une frange, la différence de marche varie de λ (633 nm). Comme δ ≈ 2d, on a :
-
-2d=λ  ⟹  d=λ2=316,5 nm  2d = \lambda \implies d = \frac{\lambda}{2} = 316,5 \text{ nm}2d=λ⟹d=2λ​=316,5 nm
-Ainsi, un déplacement de 316,5 nm du piézo décale les franges d’une unité.
-
-Résolution du montage :
-
-Si on arrive à distinguer un décalage de 1/10ème de frange, le déplacement minimal détectable est de ~31,65 nm. Cela montre la précision nanométrique de cette méthode !
-
-Application à la mesure du coefficient piézoélectrique
-Pour déterminer le coefficient piézoélectrique (liant la tension appliquée au déplacement), on procède comme suit :
-
-On applique des tensions croissantes (V₁, V₂, V₃, ...) au piézo via le générateur.
-On mesure pour chaque tension le nombre de franges déplacées sur le CCD.
-Sachant que 1 frange = 316,5 nm, on convertit le nombre de franges en déplacement d.
-On trace alors la courbe d(V) et on en déduit la pente, qui correspond au coefficient piézoélectrique (en nm/V).
-
-
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{schema_inter.png}

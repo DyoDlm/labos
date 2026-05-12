@@ -1,20 +1,22 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}Hysteres et fluage}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Description du dispositif}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Théorie : Hystérèse et fluage}{3}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Hystérèse}{3}{subsubsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2}Théorie : Hystérèse et fluage}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Hystérèse}{4}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Fluage (Creep)}{4}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Resultats et Analyse}{4}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Hysterese}{4}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Fluage}{6}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3}Resultats et Analyse}{5}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Hysterese}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Fluage}{7}{subsubsection.2.3.2}%
 \contentsline {section}{\numberline {3}Interferometrie}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Principe de l'interféromètre de Michelson}{8}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Franges et déplacement}{9}{subsubsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}Théorie : Coefficient piézo-électrique}{9}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Resulats et Analyse}{9}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Franges et nano-deplacement}{9}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Coefficient piezzo-electrique}{11}{subsubsection.3.3.2}%
-\contentsline {section}{\numberline {4}Conclusion}{12}{section.4}%
-\contentsline {section}{\numberline {5}Annexes}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Hysterese et fluage}{14}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Interferometrie}{15}{subsection.5.2}%
+\contentsline {subsection}{\numberline {3.2}Principe de l'interféromètre de Michelson}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Application : Mesure du coefficient piézoélectrique}{9}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Franges et déplacement}{10}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}Théorie : Coefficient piézo-électrique}{10}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Resulats et Analyse}{10}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Franges et nano-deplacement}{10}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Coefficient piezzo-electrique}{12}{subsubsection.3.5.2}%
+\contentsline {section}{\numberline {4}Conclusion}{13}{section.4}%
+\contentsline {section}{\numberline {5}Annexes}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Hysterese et fluage}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Interferometrie}{16}{subsection.5.2}%
