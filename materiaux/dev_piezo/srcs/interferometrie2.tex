@@ -60,18 +60,14 @@ Soit constructive quand les crêtes des ondes coïncident (produisant une frange
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{yay.jpg}
+    \includegraphics[scale=0.5]{yay.png}
     \label{fig:yay}
     \caption{Figure d'interférence observée sur le détecteur CCD.}
 \end{figure}
 
-\textbf{Dépendance de l'espacement entre les franges :}
-L'espacement entre les franges dépend principalement de deux paramètres :
-\begin{itemize}
-    \item \textbf{La longueur d'onde $\lambda$ du laser} (ici, $\lambda = 633$ nm). Plus $\lambda$ est grande, plus les franges sont espacées.
-    \item \textbf{L'angle entre les miroirs} : Dans notre montage, les miroirs sont alignés de manière à ce que les faisceaux soient quasi perpendiculaires à la lame séparatrice, ce qui simplifie la relation entre le déplacement du miroir et le décalage des franges.
-\end{itemize}
-Dans notre configuration, où l'angle d'incidence $\theta$ est quasi nul, la différence de marche $\delta$ entre les deux bras de l'interféromètre est donnée par :
+L'espacement entre les franges dépend principalement de la longueur d'onde $\lambda$ du laser et de l'angle des miroirs. En soi, plus $\lambda$ est grande, plus les franges sont espacées. Dans notre montage, les miroirs sont alignés de manière à ce que les faisceaux soient quasi perpendiculaires à la lame séparatrice afin de simplifier la relation entre le déplacement du miroir et le décalage des franges.
+\\\\
+Ainsi, quand l'angle d'incidence $\theta$ est quasi nul, la différence de marche $\delta$ entre les deux bras de l'interféromètre est donnée par :
 \[
 \delta \approx 2d
 \]
@@ -80,7 +76,12 @@ où $d$ est le déplacement du miroir mobile. Ainsi, un décalage d'une frange c
 2d = \lambda \implies d = \frac{\lambda}{2} = \frac{633 \text{ nm}}{2} = 316,5 \text{ nm}
 \]
 
-\textbf{Déplacement latéral des franges :}
+
+%%% Todo
+%   inclure voltage puis ca puis coeff
+%%%
+
+On peut se demander dès lors pourquoi le déplacement des franges est latéral (perpendiculaire aux franges).
 Bien que le piézoélectrique se déplace \textbf{parallèlement à l'axe du CCD}, les franges se déplacent \textbf{perpendiculairement} sur le détecteur. Ce comportement contre-intuitif s'explique par la géométrie de l'interféromètre de Michelson :
 \begin{itemize}
     \item Le déplacement du miroir mobile modifie la \textbf{différence de marche $\delta$} entre les deux bras.
