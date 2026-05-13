@@ -4,12 +4,12 @@
 \contentsline {subsection}{\numberline {2.2}Théorie : Hystérésis et fluage}{4}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Hystérésis}{4}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Fluage (Creep)}{4}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Résultats et Analyse}{5}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Hystérésis}{5}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Fluage}{7}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3}Résultats et Analyse}{6}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Hystérésis}{6}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Fluage}{8}{subsubsection.2.3.2}%
 \contentsline {section}{\numberline {3}Interférométrie}{9}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Description du dispositif expérimental}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Théorie}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Théorie}{10}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Résultats et Analyse}{10}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Franges et nano-déplacement}{10}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Coefficient piézoélectrique}{12}{subsubsection.3.3.2}%

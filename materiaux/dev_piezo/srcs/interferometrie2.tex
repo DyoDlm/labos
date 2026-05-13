@@ -2,14 +2,11 @@
 
 \subsection{Description du dispositif expérimental}
 
-Notre montage utilise un **interféromètre de Michelson** pour mesurer des déplacements nanométriques. Le système repose sur un **laser He-Ne** (5 mW, $\lambda = 633$ nm) dont le faisceau est divisé en deux bras perpendiculaires par une **lame séparatrice** (*beam splitter*) :
-- Un **bras fixe** avec un miroir statique.
-- Un **bras mobile** où le miroir est monté sur un **actuateur piézoélectrique** (P-117-00).
-
-Lorsque le piézoélectrique se déplace sous l’effet d’une tension électrique, le miroir mobile se translate, modifiant la **différence de marche** entre les deux bras. Les faisceaux réfléchis interfèrent au niveau de la lame séparatrice, produisant sur le **détecteur CCD** un motif de **franges d’interférence** (zones claires et sombres alternées).
-
-Bien que le piézoélectrique se déplace **parallèlement à l’axe du CCD**, les franges se déplacent **perpendiculairement** sur le détecteur. Ce comportement est dû à la géométrie de l’interféromètre : une modification de la différence de marche décale le motif d’interférence dans une direction orthogonale à l’axe optique.
-
+Notre montage utilise un interféromètre de Michelson pour mesurer des déplacements nanométriques. Un laser He-Ne (5 mW, λ = 633 nm) émet un faisceau divisé en deux bras perpendiculaires par une lame séparatrice (en bleu sur la Fig. \ref{fig:schema_inter}). Un miroir fixe et un miroir mobile monté sur l'actuateur piézoélectrique réfléchissent la lumière vers le détecteur. La séparation et "recombinaison" du faisceai crée ainsi des interférences (entre faisceaux vert et rouge sur Fig. \ref{fig:schema_inter}). 
+\\\\
+En effet, lorsque le piézoélectrique se déplace sous l’effet d’une tension électrique le miroir mobile se translate, car il est solidaire avec l'actuateur. Cela modifie la différence de marche entre les deux bras. Les faisceaux réfléchis interfèrent au niveau de la lame séparatrice. Cela permet de produire sur le détecteur CCD un motif de franges d’interférence (zones claires et sombres alternées) qui sont agrandies par un objectif de microscope (en jaune sur schéma).
+\\\\
+!!! Décrire plus en détail comment
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{schema_inter.png}
@@ -19,7 +16,7 @@ Bien que le piézoélectrique se déplace **parallèlement à l’axe du CCD**, 
 
 \subsection{Théorie}
 
-L’interféromètre de Michelson permet de relier le déplacement $d$ du miroir mobile à la **différence de marche** $\delta$ entre les deux bras. Dans notre montage, où l’angle d’incidence est quasi nul, cette relation se simplifie en :
+L’interféromètre de Michelson permet de relier le déplacement $d$ du miroir mobile à la différence de marche $\delta$ entre les deux bras. Dans notre montage, où l’angle d’incidence est quasi nul, cette relation se simplifie en :
 \begin{equation}
     \delta \approx 2d
     \label{eq:delta}
@@ -31,7 +28,7 @@ Un décalage d’une frange correspond à une variation de $\delta$ de $\lambda$
     \label{eq:deplacement_frange}
 \end{equation}
 
-Le **coefficient piézoélectrique** $d_{33}$, qui relie la tension appliquée $V$ au déplacement $d$, est défini par :
+Le coefficient piézoélectrique $d_{33}$ relie la tension appliquée $V$ au déplacement $d$, est défini par :
 \begin{equation}
     d = d_{33} \cdot V
     \label{eq:d33_def}
@@ -49,7 +46,7 @@ En mesurant le nombre de franges $n$ décalées pour une tension $\Delta V$, on 
 
 \subsubsection{Franges et nano-déplacement}
 
-Une fois le montage de l'interféromètre de Michelson aligné avec précision, nous avons observé sur le détecteur CCD un **motif d'interférence caractéristique**, composé de franges claires et sombres alternées (voir Figure \ref{fig:franges}).
+Nous observons sur le détecteur CCD un motif d'interférence caractéristique composé de franges claires et sombres alternées sur Fig. \ref{fig:franges}.
 
 \begin{figure}[H]
     \centering
@@ -58,13 +55,15 @@ Une fois le montage de l'interféromètre de Michelson aligné avec précision, 
     \caption{Figure d'interférence observée sur le détecteur CCD.}
 \end{figure}
 
-\textbf{Origine des franges d'interférence :}
-Les franges observées résultent de l'**interférence** entre les deux faisceaux lumineux réfléchis par les miroirs fixe et mobile. Lorsque ces faisceaux se rejoignent au niveau de la lame séparatrice, leurs ondes lumineuses se superposent. Selon leur **différence de phase**, cette superposition peut être :
-\begin{itemize}
-    \item \textbf{Constructive} : les crêtes des ondes coïncident, ce qui produit une frange \textbf{claire}.
-    \item \textbf{Destructive} : les crêtes d'une onde coïncident avec les creux de l'autre, ce qui produit une frange \textbf{sombre}.
-\end{itemize}
-Ce phénomène est typique des interféromètres et peut être visualisé et simulé à l'aide de l'outil en ligne suivant : \url{https://javalab.org/en/michelson_interferometer_en/}.
+Ces franges d'interférence résultent de l'interférence entre les deux faisceaux lumineux réfléchis par les miroirs fixe et mobile. Lorsque ces faisceaux se rejoignent au niveau de la lame séparatrice, leurs ondes lumineuses se superposent. Selon leur différence de phase, la superposition peut être :
+Soit constructive quand les crêtes des ondes coïncident (produisant une frange claire), soit destructive quand les crêtes d'une onde coïncident avec les creux de l'autre (produit une frange sombre. Ce phénomène ondulatoire est visible sur Fig. \ref{fig:yay}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{yay.jpg}
+    \label{fig:yay}
+    \caption{Figure d'interférence observée sur le détecteur CCD.}
+\end{figure}
 
 \textbf{Dépendance de l'espacement entre les franges :}
 L'espacement entre les franges dépend principalement de deux paramètres :

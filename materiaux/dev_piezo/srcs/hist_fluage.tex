@@ -38,10 +38,11 @@ Le fluage décrit la réponse temporelle du piézoélectrique à un saut de tens
 \end{equation}
 où $\tau$ est la constante de temps, typiquement de l’ordre de la milliseconde à la seconde.
 
+\newpage
 \subsection{Résultats et Analyse}
 
 \subsubsection{Hystérésis}
-Les courbes d’hystérésis obtenues pour des tensions de 1 V, 2 V et 3 V (voir Figures \ref{fig:1V_hyst}, \ref{fig:2V_lin} et \ref{fig:3V_lin}) montrent une boucle caractéristique dont la largeur augmente avec la tension appliquée. Cette observation confirme que la non-linéarité du matériau piézoélectrique est plus marquée à haute tension.
+Nous pouvons observer les courbes d’hystérésis obtenues pour des tensions de 1 V, 2 V et 3 V (voir Figs. \ref{fig:1V_hyst}, \ref{fig:2V_lin} et \ref{fig:3V_lin}). Ces dernières montrent une boucle caractéristique dont la largeur augmente avec la tension appliquée (voir aussi sur Tab. \ref{tab:hysteresis_results_sorted}). Cette observation confirme que la non-linéarité du matériau piézoélectrique est plus marquée à haute tension.
 
 \begin{figure}[H]
     \centering
@@ -64,7 +65,7 @@ Les courbes d’hystérésis obtenues pour des tensions de 1 V, 2 V et 3 V (voir
     \label{fig:3V_lin}
 \end{figure}
 
-Les résultats du Tableau \ref{tab:hysteresis_results_sorted} montrent que la non-linéarité augmente avec la fréquence et la tension. Par exemple, pour une tension de 1 V, la non-linéarité passe de 0,328 \% à 5 Hz à 0,760 \% à 20 Hz. Cette tendance s’accentue pour des tensions plus élevées : à 3 V et 20 Hz, la non-linéarité atteint 0,765 \%. Cela s’explique par le fait que les domaines ferroélectriques du matériau ont moins de temps pour s’aligner à haute fréquence, ce qui augmente les frottements internes et donc la non-linéarité.
+Les résultats du Tableau \ref{tab:hysteresis_results_sorted} montrent que la non-linéarité augmente avec la fréquence et la tension. Par exemple, pour une tension de 1 V, la non-linéarité passe de 0,328 \% à 5 Hz à 0,760 \% à 20 Hz. Cette tendance s’accentue pour des tensions plus élevées : à 3 V et 20 Hz, la non-linéarité atteint 0,765 \%. Cela s’explique par le fait que les domaines ferroélectriques du matériau ont moins de temps pour s’aligner à haute fréquence. Cela est ce qui augmente les frottements internes et donc la non-linéarité définit précédement par la relation Eq. \ref{eq:eq_lin}.
 
 \begin{table}[h]
 \centering
@@ -95,26 +96,20 @@ Les résultats du Tableau \ref{tab:hysteresis_results_sorted} montrent que la no
     \label{tab:hysteresis_results_sorted}
 \end{table}
 
-La Figure \ref{fig:pentes} illustre l’évolution des pentes des courbes $d(V)$ en fonction de la fréquence et de la tension. On observe que les pentes diminuent avec l’augmentation de la fréquence, ce qui indique une réponse moins efficace du matériau à haute fréquence. De plus, pour une fréquence donnée, la pente est plus faible à haute tension, ce qui suggère une saturation partielle du matériau piézoélectrique.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.5]{pentes.png}
-    \caption{Évolution des pentes des courbes $d(V)$ en fonction de la fréquence et de la tension.}
-    \label{fig:pentes}
 \end{figure}
 
+\newpage
 \subsubsection{Fluage}
-En appliquant un signal carré au système, nous avons mesuré la réponse temporelle du piézoélectrique, comme illustré sur la Figure \ref{fig:fluage}. Les courbes de montée et de descente ont été ajustées avec les équations \ref{eq:t_m} et \ref{eq:t_d}, respectivement.
+En appliquant un signal carré au système, nous mesurons la réponse temporelle du piézoélectrique (voir Fig. \ref{fig:fluage}). Les courbes de montée et de descente ont été ajustées avec les équations Eqs. \ref{eq:t_m} et \ref{eq:t_d}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{fluage_fit_montée_descente.png}
+    \includegraphics[scale=0.45]{fluage_fit_montée_descente.png}
     \caption{Courbe de fluage montrant la réponse temporelle du piézoélectrique à un saut de tension.}
     \label{fig:fluage}
 \end{figure}
 
-Les résultats de l’ajustement exponentiel sont présentés dans le Tableau \ref{tab:resultats_fluage}. On constate que la constante de temps $\tau$ pour la montée ($1,0516 \times 10^{-2}$ s) est légèrement inférieure à celle de la descente ($1,0788 \times 10^{-2}$ s). Cela signifie que le piézoélectrique atteint plus rapidement sa position finale lors de la montée que lors de la descente.
+On constate que l'ajustement correspond fortement au mesures. Les résultats de l’ajustement exponentiel sont présentés dans le Tableau \ref{tab:resultats_fluage} et nous permet d'affirmer que la constante de temps $\tau$ pour la montée, avec $\tau_m \approx$ 10,5 ms, est légèrement inférieure à celle de la descente avec $\tau_d \approx$ 10,8 ms (voir Tab. \ref{tab:fluage_res}). Cela signifie que le piézoélectrique atteint plus rapidement sa position finale lors de la montée que lors de la descente.
 
 \begin{table}[h]
 \centering
@@ -130,7 +125,7 @@ $\tau$ (s) & $1.051606 \times 10^{-2} \pm 1.44 \times 10^{-5}$ & $1.078764 \time
 $B$ & $-3.102036 \times 10^{-2} \pm 5.33 \times 10^{-5}$ & $-1.933693 \times 10^{-2} \pm 1.82 \times 10^{-5}$ \\
 \hline
 \end{tabular}
-\label{tab:resultats_fluage}
+\label{tab:fluage_res}
 \end{table}
 
-    Cette différence entre les constantes de temps de montée et de descente peut s’expliquer par des **effets d’hystérésis internes** dans le matériau. Lors de la montée, les domaines ferroélectriques s’alignent rapidement sous l’effet du champ électrique, tandis que lors de la descente, les frottements internes et les inerties mécaniques ralentissent le retour à l’état initial. Cela montre que le comportement du piézoélectrique n’est pas parfaitement symétrique entre la charge et la décharge, ce qui est typique des matériaux ferroélectriques.
+Cette différence entre les constantes de temps de montée et de descente peut s’expliquer par les effets d’hystérésis internes. Lors de la montée, les domaines ferroélectriques s’alignent rapidement sous l’effet du champ électrique alors que lors de la descente les frottements internes et les inerties mécaniques ralentissent le retour à l’état initial. Cela montre que le comportement du piézoélectrique n’est pas parfaitement symétrique entre la charge et la décharge.

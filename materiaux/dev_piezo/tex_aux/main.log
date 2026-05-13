@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  13 MAY 2026 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  13 MAY 2026 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -681,7 +681,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7 ...3}Résultats et Analyse}{5}{subsection.2.3}
+l.7 ...3}Résultats et Analyse}{6}{subsection.2.3}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -693,7 +693,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 ...2.3.1}Hystérésis}{5}{subsubsection.2.3.1}
+l.8 ...2.3.1}Hystérésis}{6}{subsubsection.2.3.1}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -705,7 +705,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ...line {2.3.2}Fluage}{7}{subsubsection.2.3.2}
+l.9 ...line {2.3.2}Fluage}{8}{subsubsection.2.3.2}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -741,7 +741,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 ...mberline {3.2}Théorie}{9}{subsection.3.2}
+l.12 ...berline {3.2}Théorie}{10}{subsection.3.2}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -872,7 +872,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Package caption Warning: \label without proper reference on input line 13.
+Package caption Warning: \label without proper reference on input line 15.
 See the caption package documentation for explanation.
 
 
@@ -880,12 +880,17 @@ LaTeX Warning: Reference `fig:schema_hysterese' on page 3 undefined on input li
 ne 4.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
  []
 
@@ -893,17 +898,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
 File: ./ressources/images/schema_hysterese.png Graphic file (type png)
 <use ./ressources/images/schema_hysterese.png>
 Package pdftex.def Info: ./ressources/images/schema_hysterese.png  used on inpu
-t line 12.
+t line 14.
 (pdftex.def)             Requested size: 481.38997pt x 276.2271pt.
 
-Overfull \hbox (11.63495pt too wide) in paragraph at lines 12--14
+Overfull \hbox (11.63495pt too wide) in paragraph at lines 14--16
  [][] 
  []
 
  [3
 
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4 <./ressources/
-images/schema_hysterese.png>]
+] [4 <./ressources/images/schema_hysterese.png>] [5]
 
 ! LaTeX Error: Undefined color `bluenin:q! :q!'.
 
@@ -911,7 +915,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 ...2 V et 3 V (voir Figures \ref{fig:1V_hyst}
+l.45 ..., 2 V et 3 V (voir Figs. \ref{fig:1V_hyst}
                                                   , \ref{fig:2V_lin} et \ref...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -924,8 +928,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 ...igures \ref{fig:1V_hyst}, \ref{fig:2V_lin}
-                                                   et \ref{fig:3V_lin}) mont...
+l.45 ... Figs. \ref{fig:1V_hyst}, \ref{fig:2V_lin}
+                                                   et \ref{fig:3V_lin}). Ces...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -937,28 +941,41 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 ...yst}, \ref{fig:2V_lin} et \ref{fig:3V_lin}
-                                                  ) montrent une boucle cara...
+l.45 ...yst}, \ref{fig:2V_lin} et \ref{fig:3V_lin}
+                                                  ). Ces dernières montrent...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<./ressources/images/1_1V.png, id=137, 578.16pt x 433.62pt>
+
+! LaTeX Error: Undefined color `bluenin:q! :q!'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 ...r Tab. \ref{tab:hysteresis_results_sorted}
+                                                  ). Cette observation confi...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./ressources/images/1_1V.png, id=142, 578.16pt x 433.62pt>
 File: ./ressources/images/1_1V.png Graphic file (type png)
 <use ./ressources/images/1_1V.png>
-Package pdftex.def Info: ./ressources/images/1_1V.png  used on input line 46.
+Package pdftex.def Info: ./ressources/images/1_1V.png  used on input line 49.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
-<./ressources/images/2_2V.png, id=138, 578.16pt x 433.62pt>
+<./ressources/images/2_2V.png, id=143, 578.16pt x 433.62pt>
 File: ./ressources/images/2_2V.png Graphic file (type png)
 <use ./ressources/images/2_2V.png>
-Package pdftex.def Info: ./ressources/images/2_2V.png  used on input line 53.
+Package pdftex.def Info: ./ressources/images/2_2V.png  used on input line 56.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [5 <./ressources/images/1_1V.png>]
-<./ressources/images/3_3V.png, id=148, 578.16pt x 433.62pt>
+<./ressources/images/3_3V.png, id=144, 578.16pt x 433.62pt>
 File: ./ressources/images/3_3V.png Graphic file (type png)
 <use ./ressources/images/3_3V.png>
-Package pdftex.def Info: ./ressources/images/3_3V.png  used on input line 60.
+Package pdftex.def Info: ./ressources/images/3_3V.png  used on input line 63.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
+ [6 <./ressources/images/1_1V.png> <./ressources/images/2_2V.png>]
 
 ! LaTeX Error: Undefined color `bluenin:q! :q!'.
 
@@ -966,14 +983,80 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65 ...ableau \ref{tab:hysteresis_results_sorted}
+l.68 ...ableau \ref{tab:hysteresis_results_sorted}
                                                    montrent que la non-liné...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+! LaTeX Error: Undefined color `bluenin:q! :q!'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ...dement par la relation Eq. \ref{eq:eq_lin}
+                                                  .
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.99 \end{figure}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.99 \end{figure}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.99 \end{figure}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \end{figure}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.99 \end{figure}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+ [7 <./ressources/images/3_3V.png>]
+
+! LaTeX Error: Undefined color `bluenin:q! :q!'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 ...zoélectrique (voir Fig. \ref{fig:fluage}
+                                                  ). Les courbes de montée ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 ! LaTeX Error: Undefined color `bluenin:q! :q!'.
@@ -982,38 +1065,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 La Figure \ref{fig:pentes}
-                                illustre l’évolution des pentes des courb...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
- [6 <./ressources/images/2_2V.png> <./ressources/images/3_3V.png>]
-
-LaTeX Warning: File `pentes.png' not found on input line 100.
-
-
-! Package pdftex.def Error: File `pentes.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100     \includegraphics[scale=0.5]{pentes.png}
-                                                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Undefined color `bluenin:q! :q!'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.106 ... illustré sur la Figure \ref{fig:fluage}
-                                                  . Les courbes de montée e...
-
+l.103 ...�es avec les équations Eqs. \ref{eq:t_m}
+                                                   et \ref{eq:t_d}.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1024,33 +1077,29 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 ...justées avec les équations \ref{eq:t_m}
-                                                   et \ref{eq:t_d}, respecti...
-
+l.103 ...uations Eqs. \ref{eq:t_m} et \ref{eq:t_d}
+                                                  .
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Undefined color `bluenin:q! :q!'.
+Overfull \hbox (19.39685pt too wide) in paragraph at lines 103--104
+\OT1/cmr/m/n/12 En ap-pli-quant un sig-nal carr^^Se au syst^^Reme, nous mesuron
+s la r^^Seponse tem-porelle du pi^^Sezo^^Selectrique
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.106 ...s équations \ref{eq:t_m} et \ref{eq:t_d}
-                                                  , respectivement.
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<./ressources/images/fluage_fit_montée_descente.png, id=162, 867.24pt x 578.16
+<./ressources/images/fluage_fit_montée_descente.png, id=167, 867.24pt x 578.16
 pt>
 File: ./ressources/images/fluage_fit_montée_descente.png Graphic file (type pn
 g)
 <use ./ressources/images/fluage_fit_montée_descente.png>
 Package pdftex.def Info: ./ressources/images/fluage_fit_montée_descente.png  u
-sed on input line 110.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- [7]
+sed on input line 107.
+(pdftex.def)             Requested size: 390.2544pt x 260.16959pt.
+
+LaTeX Warning: Reference `tab:resultats_fluage' on page 8 undefined on input li
+ne 112.
+
 
 ! LaTeX Error: Undefined color `bluenin:q! :q!'.
 
@@ -1058,24 +1107,87 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115 ...ans le Tableau \ref{tab:resultats_fluage}
-                                                  . On constate que la const...
+l.112 ...$ 10,8 ms (voir Tab. \ref{tab:fluage_res}
+                                                  ). Cela signifie que le pi...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (16.22003pt too wide) in paragraph at lines 112--113
+[]\OT1/cmr/m/n/12 On con-state que l'ajustement cor-re-spond forte-ment au mesu
+res. Les r^^Sesultats de l'ajustement
+ []
 
 ) [8 <./ressources/images/fluage_fit_montée_descente.png>]
 \openout2 = `./srcs/interferometrie2.aux'.
 
  (./srcs/interferometrie2.tex
-<./ressources/images/schema_inter.png, id=178, 1203.49625pt x 690.58pt>
+
+! LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...ts nanométriques. Un laser He-Ne (5 mW, λ
+                                                   = 633 nm) émet un faisce...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Undefined color `bluenin:q! :q!'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...(en bleu sur la Fig. \ref{fig:schema_inter}
+                                                  ). Un miroir fixe et un mi...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package caption Warning: \label without proper reference on input line 14.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:schema_inter' on page 9 undefined on input line 5
+.
+
+
+Overfull \hbox (37.50499pt too wide) in paragraph at lines 5--10
+\OT1/cmr/m/n/12 Notre mon-tage utilise un in-terf^^Serom^^Retre de Michel-son p
+our mesurer des d^^Seplacements nanom^^Setriques.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Overfull \hbox (13.97005pt too wide) in paragraph at lines 5--10
+\OT1/cmr/m/n/12 per-pen-dic-u-laire-ment sur le d^^Setecteur. Ce com-porte-ment
+ est d^u ^^Ra la g^^Seom^^Setrie de l'interf^^Serom^^Retre
+ []
+
+<./ressources/images/schema_inter.png, id=177, 1203.49625pt x 690.58pt>
 File: ./ressources/images/schema_inter.png Graphic file (type png)
 <use ./ressources/images/schema_inter.png>
 Package pdftex.def Info: ./ressources/images/schema_inter.png  used on input li
-ne 15.
+ne 13.
 (pdftex.def)             Requested size: 481.38997pt x 276.2271pt.
 
-Overfull \hbox (11.63495pt too wide) in paragraph at lines 15--17
+Overfull \hbox (11.63495pt too wide) in paragraph at lines 13--15
  [][] 
  []
 
@@ -1091,7 +1203,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 ... alternées (voir Figure \ref{fig:franges}
+l.50 ... alternées (voir Figure \ref{fig:franges}
                                                   ).
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1101,27 +1213,27 @@ Package caption Warning: \label without proper reference on input line 148.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:franges' on page 10 undefined on input line 52.
+LaTeX Warning: Reference `fig:franges' on page 10 undefined on input line 50.
 
-<./ressources/images/1.jpg, id=186, 642.4pt x 481.8pt>
+<./ressources/images/1.jpg, id=185, 642.4pt x 481.8pt>
 File: ./ressources/images/1.jpg Graphic file (type jpg)
 <use ./ressources/images/1.jpg>
-Package pdftex.def Info: ./ressources/images/1.jpg  used on input line 56.
+Package pdftex.def Info: ./ressources/images/1.jpg  used on input line 54.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
 
-Overfull \hbox (13.95593pt too wide) in paragraph at lines 61--63
+Overfull \hbox (13.95593pt too wide) in paragraph at lines 59--61
 []\OT1/cmr/bx/n/12 Origine des franges d'interf^^Serence : \OT1/cmr/m/n/12 Les 
 franges ob-serv^^Sees r^^Sesultent de l'**interf^^Serence**
  []
 
  [10 <./ressources/images/1.jpg>]
-Overfull \hbox (9.46223pt too wide) in paragraph at lines 84--86
+Overfull \hbox (9.46223pt too wide) in paragraph at lines 82--84
 \OT1/cmr/bx/n/12 all^^Relement ^^Ra l'axe du CCD\OT1/cmr/m/n/12 , les franges s
 e d^^Seplacent \OT1/cmr/bx/n/12 per-pen-dic-u-laire-ment \OT1/cmr/m/n/12 sur le
  d^^Setecteur.
  []
 
- [11]
+ [11{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 ! LaTeX Error: Undefined color `bluenin:q! :q!'.
 
@@ -1129,7 +1241,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.108 ... le Tableau \ref{tab:deplacement_franges}
+l.106 ... le Tableau \ref{tab:deplacement_franges}
                                                   .
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1141,25 +1253,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 ...(V)$ (voir Figure \ref{fig:superposition}
+l.127 ...(V)$ (voir Figure \ref{fig:superposition}
                                                   ), où $d$ est le déplace...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Package caption Warning: \label without proper reference on input line 137.
+Package caption Warning: \label without proper reference on input line 135.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:superposition' on page 12 undefined on input line
- 129.
+ 127.
 
-<./ressources/images/superposition_5_to_20_20.png, id=204, 803.0pt x 602.25pt>
+<./ressources/images/superposition_5_to_20_20.png, id=205, 803.0pt x 602.25pt>
 File: ./ressources/images/superposition_5_to_20_20.png Graphic file (type png)
 <use ./ressources/images/superposition_5_to_20_20.png>
 Package pdftex.def Info: ./ressources/images/superposition_5_to_20_20.png  used
- on input line 136.
+ on input line 134.
 (pdftex.def)             Requested size: 401.49902pt x 301.12425pt.
  [12]
 
@@ -1169,27 +1281,27 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 La Figure \ref{fig:coeff}
+l.139 La Figure \ref{fig:coeff}
                                 présente la courbe $d(V)$ obtenue expérime...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Package caption Warning: \label without proper reference on input line 149.
+Package caption Warning: \label without proper reference on input line 147.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:coeff' on page 13 undefined on input line 141.
+LaTeX Warning: Reference `fig:coeff' on page 13 undefined on input line 139.
 
-<./ressources/images/coeff.png, id=212, 578.16pt x 433.62pt>
+<./ressources/images/coeff.png, id=213, 578.16pt x 433.62pt>
 File: ./ressources/images/coeff.png Graphic file (type png)
 <use ./ressources/images/coeff.png>
-Package pdftex.def Info: ./ressources/images/coeff.png  used on input line 148.
+Package pdftex.def Info: ./ressources/images/coeff.png  used on input line 146.
 
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
  [13 <./ressources/images/superposition_5_to_20_20.png (PNG copy)>])
-Overfull \hbox (24.6843pt too wide) in paragraph at lines 165--61
+Overfull \hbox (24.6843pt too wide) in paragraph at lines 163--61
 []\OT1/cmr/m/n/12 En con-clu-sion, cette exp^^Serience a per-mis de valider la 
 pr^^Secision de la m^^Sethode in-terf^^Serom^^Setrique
  []
@@ -1209,17 +1321,8 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Undefined color `bluenin:q! :q!'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.75 ...tats du Tableau~\ref{tab:resultats_fluage}
-                                                   montrent que la constante...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `tab:resultats_fluage' on page 15 undefined on input l
+ine 75.
 
  [15
 
@@ -1343,13 +1446,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9E25BFB4577DC769DE31D5676CCFED86;2866.
  ) 
 Here is how much of TeX's memory you used:
- 13814 strings out of 474222
- 219611 string characters out of 5748734
+ 13784 strings out of 474222
+ 218999 string characters out of 5748734
  1938975 words of memory out of 5000000
- 35774 multiletter control sequences out of 15000+600000
+ 35745 multiletter control sequences out of 15000+600000
  565892 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,117p,815b,494s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,10n,117p,706b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -1361,10 +1464,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (21 pages, 3366383 bytes).
+Output written on main.pdf (21 pages, 3366903 bytes).
 PDF statistics:
  346 PDF objects out of 1000 (max. 8388607)
  274 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
+ 74 named destinations out of 1000 (max. 500000)
  228 words of extra memory for PDF output out of 10000 (max. 10000000)
 
