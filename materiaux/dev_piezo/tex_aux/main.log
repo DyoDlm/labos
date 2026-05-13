@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  13 MAY 2026 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  13 MAY 2026 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -789,7 +789,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 ...{\numberline {4}Conclusion}{15}{section.4}
+l.16 ...{\numberline {4}Conclusion}{14}{section.4}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -801,7 +801,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 ...on}{\numberline {5}Annexes}{17}{section.5}
+l.17 ...on}{\numberline {5}Annexes}{16}{section.5}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -813,7 +813,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 ...1}Hysterese et fluage}{17}{subsection.5.1}
+l.18 ...1}Hysterese et fluage}{16}{subsection.5.1}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -825,7 +825,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 ... {5.2}Interferometrie}{18}{subsection.5.2}
+l.19 ... {5.2}Interferometrie}{17}{subsection.5.2}
                                                   %
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1264,6 +1264,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
  []
 
+
+! LaTeX Error: Undefined color `bluenin:q! :q!'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 ...a relation Eq. \ref{eq:deplacement_frange}
+                                                  , à un déplacement du pi...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
  [11 <./ressources/images/yay.png>]
 
 ! LaTeX Error: Undefined color `bluenin:q! :q!'.
@@ -1272,10 +1290,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.108 ... le Tableau \ref{tab:deplacement_franges}
-                                                  .
+l.98 ...partir de la relation Eq. \ref{eq:1frange}
+                                                  ). Soit :
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (15.98975pt too wide) in paragraph at lines 98--99
+\OML/cmm/m/it/12 V[]; V[]; V[]; [] $ \OT1/cmr/m/n/12 au pi^^Sezo^^Selectrique e
+t mesurons em-pirique-ment (vi-suelle-ment). la ten-sion n^^Sec^^Sessaire
+ []
+
+
+Overfull \hbox (26.80788pt too wide) in paragraph at lines 98--99
+\OT1/cmr/m/n/12 pour d^^Seplacer les franges de leur ^^Sepaisseur (bien que nou
+s pou-vons trou-ver la ten-sion th^^Seoriquement
+ []
 
 
 ! LaTeX Error: Undefined color `bluenin:q! :q!'.
@@ -1284,25 +1314,30 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 ...(V)$ (voir Figure \ref{fig:superposition}
-                                                  ), où $d$ est le déplace...
-
+l.104 ...bservons sur Fig. \ref{fig:superposition}
+                                                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Package caption Warning: \label without proper reference on input line 137.
+Package caption Warning: \label without proper reference on input line 109.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:superposition' on page 12 undefined on input line
- 129.
+ 104.
 
-<./ressources/images/superposition_5_to_20_20.png, id=207, 803.0pt x 602.25pt>
+
+Overfull \hbox (0.8874pt too wide) in paragraph at lines 104--105
+[]\OT1/cmr/m/n/12 Or, nous ap-pliquons ^^Ra chaque fois une valeur ap-prox-i-ma
+-tive de 5V comme nous l'observons
+ []
+
+<./ressources/images/superposition_5_to_20_20.png, id=208, 803.0pt x 602.25pt>
 File: ./ressources/images/superposition_5_to_20_20.png Graphic file (type png)
 <use ./ressources/images/superposition_5_to_20_20.png>
 Package pdftex.def Info: ./ressources/images/superposition_5_to_20_20.png  used
- on input line 136.
+ on input line 108.
 (pdftex.def)             Requested size: 401.49902pt x 301.12425pt.
  [12{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
@@ -1312,32 +1347,36 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 La Figure \ref{fig:coeff}
-                                présente la courbe $d(V)$ obtenue expérime...
+l.113 ...(V)$ (voir Figure \ref{fig:superposition}
+                                                  ) où $d$ est le déplacem...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Package caption Warning: \label without proper reference on input line 149.
+Package caption Warning: \label without proper reference on input line 109.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:coeff' on page 13 undefined on input line 141.
+LaTeX Warning: Reference `fig:superposition' on page 13 undefined on input line
+ 113.
 
-<./ressources/images/coeff.png, id=216, 578.16pt x 433.62pt>
-File: ./ressources/images/coeff.png Graphic file (type png)
-<use ./ressources/images/coeff.png>
-Package pdftex.def Info: ./ressources/images/coeff.png  used on input line 148.
 
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [13 <./ressources/images/superposition_5_to_20_20.png (PNG copy)>])
-Overfull \hbox (24.6843pt too wide) in paragraph at lines 165--61
-[]\OT1/cmr/m/n/12 En con-clu-sion, cette exp^^Serience a per-mis de valider la 
-pr^^Secision de la m^^Sethode in-terf^^Serom^^Setrique
- []
+! LaTeX Error: Undefined color `bluenin:q! :q!'.
 
- [14 <./ressources/images/coeff.png>]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 ...fini par la relation Eq. \ref{eq:d33_def}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:coeff' on page 13 undefined on input line 116.
+
+) [13 <./ressources/images/superposition_5_to_20_20.png (PNG copy)>]
 
 ! LaTeX Error: Undefined color `bluenin:q! :q!'.
 
@@ -1352,10 +1391,10 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `tab:resultats_fluage' on page 15 undefined on input l
+LaTeX Warning: Reference `tab:resultats_fluage' on page 14 undefined on input l
 ine 75.
 
- [15
+ [14
 
 
 ]
@@ -1405,7 +1444,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
- [16
+ [15
 
 ]
 Overfull \hbox (241.74008pt too wide) in paragraph at lines 35--58
@@ -1427,40 +1466,40 @@ l.99     \includegraphics[scale=0.5]{1V.jpg}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
- [17]
-<./ressources/images/5V.jpg, id=248, 642.4pt x 481.8pt>
+ [16]
+<./ressources/images/5V.jpg, id=242, 642.4pt x 481.8pt>
 File: ./ressources/images/5V.jpg Graphic file (type jpg)
 <use ./ressources/images/5V.jpg>
 Package pdftex.def Info: ./ressources/images/5V.jpg  used on input line 107.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
-<./ressources/images/10V.jpg, id=249, 642.4pt x 481.8pt>
+<./ressources/images/10V.jpg, id=243, 642.4pt x 481.8pt>
 File: ./ressources/images/10V.jpg Graphic file (type jpg)
 <use ./ressources/images/10V.jpg>
 Package pdftex.def Info: ./ressources/images/10V.jpg  used on input line 115.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
- [18 <./ressources/images/5V.jpg>]
-<./ressources/images/15V.jpg, id=256, 642.4pt x 481.8pt>
+ [17 <./ressources/images/5V.jpg>]
+<./ressources/images/15V.jpg, id=250, 642.4pt x 481.8pt>
 File: ./ressources/images/15V.jpg Graphic file (type jpg)
 <use ./ressources/images/15V.jpg>
 Package pdftex.def Info: ./ressources/images/15V.jpg  used on input line 123.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
-<./ressources/images/20V.jpg, id=257, 642.4pt x 481.8pt>
+<./ressources/images/20V.jpg, id=251, 642.4pt x 481.8pt>
 File: ./ressources/images/20V.jpg Graphic file (type jpg)
 <use ./ressources/images/20V.jpg>
 Package pdftex.def Info: ./ressources/images/20V.jpg  used on input line 131.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
- [19 <./ressources/images/10V.jpg> <./ressources/images/15V.jpg>]
-<./ressources/images/25V.jpg, id=265, 642.4pt x 481.8pt>
+ [18 <./ressources/images/10V.jpg> <./ressources/images/15V.jpg>]
+<./ressources/images/25V.jpg, id=258, 642.4pt x 481.8pt>
 File: ./ressources/images/25V.jpg Graphic file (type jpg)
 <use ./ressources/images/25V.jpg>
 Package pdftex.def Info: ./ressources/images/25V.jpg  used on input line 139.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
-<./ressources/images/30V.jpg, id=266, 642.4pt x 481.8pt>
+<./ressources/images/30V.jpg, id=259, 642.4pt x 481.8pt>
 File: ./ressources/images/30V.jpg Graphic file (type jpg)
 <use ./ressources/images/30V.jpg>
 Package pdftex.def Info: ./ressources/images/30V.jpg  used on input line 147.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
- [20 <./ressources/images/20V.jpg> <./ressources/images/25V.jpg>]) [21 <./resso
+ [19 <./ressources/images/20V.jpg> <./ressources/images/25V.jpg>]) [20 <./resso
 urces/images/30V.jpg>] (./main.aux (./srcs/hist_fluage.aux) (./srcs/interferome
 trie2.aux) (./srcs/annexes.aux))
  ***********
@@ -1477,13 +1516,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9E25BFB4577DC769DE31D5676CCFED86;2866.
  ) 
 Here is how much of TeX's memory you used:
- 13794 strings out of 474222
- 219280 string characters out of 5748734
+ 13779 strings out of 474222
+ 218869 string characters out of 5748734
  1938975 words of memory out of 5000000
- 35754 multiletter control sequences out of 15000+600000
+ 35742 multiletter control sequences out of 15000+600000
  565892 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,117p,706b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,10n,117p,706b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -1495,10 +1534,10 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (21 pages, 3449700 bytes).
+Output written on main.pdf (20 pages, 3416977 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 342 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 
