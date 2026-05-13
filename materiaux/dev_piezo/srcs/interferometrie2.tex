@@ -2,7 +2,7 @@
 
 \subsection{Description du dispositif expérimental}
 
-Notre montage utilise un interféromètre de Michelson pour mesurer des déplacements nanométriques. Un laser He-Ne (5 mW, λ = 633 nm) émet un faisceau divisé en deux bras perpendiculaires par une lame séparatrice (en bleu sur la Fig. \ref{fig:schema_inter}). Un miroir fixe et un miroir mobile monté sur l'actuateur piézoélectrique réfléchissent la lumière vers le détecteur. La séparation et "recombinaison" du faisceai crée ainsi des interférences (entre faisceaux vert et rouge sur Fig. \ref{fig:schema_inter}). 
+Notre montage utilise un interféromètre de Michelson pour mesurer des déplacements nanométriques. Un laser He-Ne (5 mW, λ = 633 nm) émet un faisceau divisé en deux bras perpendiculaires par une lame séparatrice (en bleu sur la Fig. 6). Un miroir fixe et un miroir mobile monté sur l'actuateur piézoélectrique réfléchissent la lumière vers le détecteur. La séparation et "recombinaison" du faisceai crée ainsi des interférences (entre faisceaux vert et rouge sur Fig. 6). 
 \\\\
 En effet, lorsque le piézoélectrique se déplace sous l’effet d’une tension électrique le miroir mobile se translate, car il est solidaire avec l'actuateur. Cela modifie la différence de marche entre les deux bras. Les faisceaux réfléchis interfèrent au niveau de la lame séparatrice. Cela permet de produire sur le détecteur CCD un motif de franges d’interférence (zones claires et sombres alternées) qui sont agrandies par un objectif de microscope (en jaune sur schéma).
 \\\\
@@ -14,7 +14,7 @@ En effet, lorsque le piézoélectrique se déplace sous l’effet d’une tensio
     \caption{Schéma du dispositif de l'interféromètre de Michelson.}
 \end{figure}
 
-\subsection{Théorie}
+\subsection{Rappels théoriques}
 
 L’interféromètre de Michelson permet de relier le déplacement $d$ du miroir mobile à la différence de marche $\delta$ entre les deux bras. Dans notre montage, où l’angle d’incidence est quasi nul, cette relation se simplifie en :
 \begin{equation}
@@ -46,7 +46,7 @@ En mesurant le nombre de franges $n$ décalées pour une tension $\Delta V$, on 
 
 \subsubsection{Franges et nano-déplacement}
 
-Nous observons sur le détecteur CCD un motif d'interférence caractéristique composé de franges claires et sombres alternées sur Fig. \ref{fig:franges}.
+Nous observons sur le détecteur CCD un motif d'interférence caractéristique composé de franges claires et sombres alternées sur Fig. 7.
 
 \begin{figure}[H]
     \centering
@@ -56,7 +56,7 @@ Nous observons sur le détecteur CCD un motif d'interférence caractéristique c
 \end{figure}
 
 Ces franges d'interférence résultent de l'interférence entre les deux faisceaux lumineux réfléchis par les miroirs fixe et mobile. Lorsque ces faisceaux se rejoignent au niveau de la lame séparatrice, leurs ondes lumineuses se superposent. Selon leur différence de phase, la superposition peut être :
-Soit constructive quand les crêtes des ondes coïncident (produisant une frange claire), soit destructive quand les crêtes d'une onde coïncident avec les creux de l'autre (produit une frange sombre. Ce phénomène ondulatoire est visible sur Fig. \ref{fig:yay}.
+Soit constructive quand les crêtes des ondes coïncident (produisant une frange claire), soit destructive quand les crêtes d'une onde coïncident avec les creux de l'autre (produit une frange sombre. Ce phénomène ondulatoire est visible sur Fig. 8.
 
 \begin{figure}[H]
     \centering
@@ -101,28 +101,21 @@ Pour déterminer le coefficient piézoélectrique $d_{33}$, nous appliquons des 
 d_{33,\text{théorique}} = \frac{82 \text{ µm}}{150 \text{ V}} = 546,67 \text{ nm/V}
 \]
 
-Or, nous appliquons à chaque fois une valeur approximative de 5V comme nous l'observons sur Fig. \ref{fig:superposition}
+Or, nous appliquons à chaque fois une valeur approximative de 5V comme nous l'observons sur Fig. 9.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{superposition_5_to_20_20.png}
+    \label{fig:superposition}
+    \caption{Superposition des figures d'interférence pour différentes tensions appliquées (5 V rouge, 10 V vert, 15 V jaune, 20 V bleu)}
+ \end{figure}
+
+À partir de ces mesures, nous traçons la courbe $d(V)$ où $d$ est le déplacement calculé à partir du nombre de franges décalées. La pente de cette courbe donne directement le coefficient piézoélectrique $d_{33}$, défini par la relation Eq. \ref{eq:d33_def} que l'on présente expérimentalement en ajustant une droite à ces données sur Fig. 10. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{superposition_5_to_20_20.png}
-    \label{fig:superposition}
-    \caption{Superposition des figures d'interférence pour différentes tensions appliquées (5 V, 10 V, 15 V, 20 V). Chaque courbe montre un décalage progressif des franges avec l'augmentation de la tension.}
+    \includegraphics[scale=0.6]{coeff.png}
+    \label{fig:coeff}
+    \caption{Coefficient piezzo-electrique}
 \end{figure}
+avec $d_3_3$ = 63,3 nm/V qui s'avère être 1/10 de la longeur d'onde émise par le laser.
 
-À partir de ces mesures, nous traçons la courbe $d(V)$ (voir Figure \ref{fig:superposition}) où $d$ est le déplacement calculé à partir du nombre de franges décalées. La pente de cette courbe donne directement le coefficient piézoélectrique $d_{33}$, défini par la relation Eq. \ref{eq:d33_def}
-
-
-que l'on présente expérimentalement en ajustant une droite à ces données sur Fig. \ref{fig:coeff}. Nous déterminons la pente qui correspond au coefficient piézoélectrique $d_{33}$ :
-\[
-d_{33} = \text{[valeur mesurée]} \pm \text{[incertitude]} \text{ nm/V}
-\]
-qui s'avère être relativement proche de la tension théorique.
-
-
-Le fabricant du piézoélectrique (modèle P-117-00) indique un déplacement maximal de 82 µm pour une tension de 150 V, ce qui correspond à un coefficient théorique de :
-\[
-d_{33,\text{théorique}} = \frac{82 \text{ µm}}{150 \text{ V}} = 546,67 \text{ nm/V}
-\]
-
-!!! DiSCUTER INCERTITUDES   !!!!

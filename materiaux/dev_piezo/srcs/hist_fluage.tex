@@ -1,7 +1,16 @@
+\section{Introduction}
+Dans le cadre de ce laboratoire, nous avons étudié les propriétés des matériaux piézoélectriques, en particulier leur comportement sous l'effet de tensions électriques. Les matériaux piézoélectriques sont largement utilisés dans des applications nécessitant des déplacements précis, comme l'alignement de fibres optiques ou les microscopes à force atomique. Leur comportement est caractérisé par des phénomènes tels que l'\textbf{hystérésis} et le \textbf{fluage}, qui influencent leur réponse à une tension appliquée.
+
+Pour analyser ces propriétés, nous avons utilisé deux approches expérimentales :
+Mesure de l'hystérésis et du fluage : En utilisant un système optique basé sur un laser He-Ne, une lame flexible et une photodiode à quatre quadrants, nous avons mesuré la réponse du piézoélectrique à des signaux triangulaires et carrés. Cela nous a permis de quantifier la non-linéarité et les constantes de temps associées au fluage.
+Cette méthode nous a permis de mesurer des déplacements nanométriques avec une grande précision. En observant les franges d'interférence, nous avons pu déterminer le \textbf{coefficient piézoélectrique} $d_{33}$ du matériau étudié.
+
+L'objectif de ce rapport est de présenter les résultats obtenus pour ces deux expériences, en mettant en évidence les relations entre la tension appliquée, le déplacement et les phénomènes de non-linéarité et de fluage. Nous analyserons également la précision de la méthode interférométrique et comparerons nos résultats avec les valeurs théoriques attendues.
+
 \section{Hystérésis et fluage}
 
 \subsection{Description du dispositif}
-Notre montage repose sur un système optique et électronique conçu pour étudier le comportement d’un matériau piézoélectrique. Le laser He-Ne (de longueur d’onde 632,8 nm) émet un faisceau rouge (voir Fig. \ref{fig:schema_hysterese}) qui est dirigé vers une lame flexible polie comme un miroir. Cette lame est fixée à un actuateur piézoélectrique capable de se déformer sous l’effet d’une tension électrique.
+Notre montage repose sur un système optique et électronique conçu pour étudier le comportement d’un matériau piézoélectrique. Le laser He-Ne (de longueur d’onde 632,8 nm) émet un faisceau rouge (voir Fig. 1) qui est dirigé vers une lame flexible polie comme un miroir. Cette lame est fixée à un actuateur piézoélectrique capable de se déformer sous l’effet d’une tension électrique.
 \\\\
 Lorsqu’une tension est appliquée à l’actuateur, ce dernier se contracte ou s’allonge. Cette différence de l'allongement fait fléchir la lame flexible. Cette déformation modifie l’angle du miroir et par conséquent la direction du faisceau laser réfléchi. Le faisceau dévié est ensuite capté par une photodiode à quatre quadrant dont le rôle est de mesurer avec précision la déviation du laser en convertissant la position du spot lumineux en un signal électrique. Plus la lame se courbe, plus le faisceau est dévié, et plus le signal généré par la photodiode varie.
 \\\\
@@ -16,7 +25,7 @@ Un boîtier électronique amplifie les signaux générés pour atteindre les ten
     \caption{Schéma du dispositif de mesure de l'hystérésis.}
 \end{figure}
 
-\subsection{Théorie : Hystérésis et fluage}
+\subsection{Rappels théoriques}
 
 \subsubsection{Hystérésis}
 L'hystérésis dans les matériaux piézoélectriques résulte de la réorientation des domaines ferroélectriques sous champ électrique, ainsi que des frottements internes et des inerties mécaniques. Ce phénomène se manifeste par une boucle dans la courbe $d(V)$, où la réponse du matériau dépend de l’histoire des tensions appliquées. Le coefficient de non-linéarité est calculé comme suit :
@@ -26,7 +35,7 @@ L'hystérésis dans les matériaux piézoélectriques résulte de la réorientat
 \end{equation}
 où A-B représente le déplacement total entre les points extrêmes de la boucle, et C-D représente l’écart maximal par rapport à une réponse linéaire idéale (voir Figure 1 du protocole).
 
-\subsubsection{Fluage (Creep)}
+\subsubsection{Fluage}
 Le fluage décrit la réponse temporelle du piézoélectrique à un saut de tension. Il est modélisé par des équations exponentielles pour la montée et la descente :
 \begin{equation}
     y(t) = a \left(1 - e^{-t/\tau}\right) + b \quad \text{(montée)}
@@ -38,7 +47,6 @@ Le fluage décrit la réponse temporelle du piézoélectrique à un saut de tens
 \end{equation}
 où $\tau$ est la constante de temps, typiquement de l’ordre de la milliseconde à la seconde.
 
-\newpage
 \subsection{Résultats et Analyse}
 
 \subsubsection{Hystérésis}
@@ -109,11 +117,10 @@ En appliquant un signal carré au système, nous mesurons la réponse temporelle
     \label{fig:fluage}
 \end{figure}
 
-On constate que l'ajustement correspond fortement au mesures. Les résultats de l’ajustement exponentiel sont présentés dans le Tableau \ref{tab:resultats_fluage} et nous permet d'affirmer que la constante de temps $\tau$ pour la montée, avec $\tau_m \approx$ 10,5 ms, est légèrement inférieure à celle de la descente avec $\tau_d \approx$ 10,8 ms (voir Tab. \ref{tab:fluage_res}). Cela signifie que le piézoélectrique atteint plus rapidement sa position finale lors de la montée que lors de la descente.
+On constate que l'ajustement correspond fortement au mesures. Les résultats de l’ajustement exponentiel sont présentés dans le Tableau \ref{tab:fluage_res} et nous permet d'affirmer que la constante de temps $\tau$ pour la montée, avec $\tau_m \approx$ 10,5 ms, est légèrement inférieure à celle de la descente avec $\tau_d \approx$ 10,8 ms (voir Tab. \ref{tab:fluage_res}). Cela signifie que le piézoélectrique atteint plus rapidement sa position finale lors de la montée que lors de la descente.
 
 \begin{table}[h]
 \centering
-\caption{Résultats de l'ajustement exponentiel pour la montée et la descente.}
 \begin{tabular}{|c|c|c|}
 \hline
 \textbf{Paramètre} & \textbf{Montée} & \textbf{Descente} \\
@@ -125,6 +132,7 @@ $\tau$ (s) & $1.051606 \times 10^{-2} \pm 1.44 \times 10^{-5}$ & $1.078764 \time
 $B$ & $-3.102036 \times 10^{-2} \pm 5.33 \times 10^{-5}$ & $-1.933693 \times 10^{-2} \pm 1.82 \times 10^{-5}$ \\
 \hline
 \end{tabular}
+\caption{Résultats de l'ajustement exponentiel pour la montée et la descente.}
 \label{tab:fluage_res}
 \end{table}
 
