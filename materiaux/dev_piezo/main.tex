@@ -39,37 +39,26 @@
 \tableofcontents
 
 \newpage
-
 \section{Introduction}
-La piézo-électricité est un phénomène physique présent dans certains matériaux (comme les céramiques PZT ou le quartz), qui permet une conversion bidirectionnelle entre énergie mécanique et énergie électrique. Ces matériaux sont largement utilisés comme actuateurs (pour des déplacements nanométriques précis) ou capteurs (détection d’ondes ultrasonores, alignement de fibres optiques, etc.).
-Ce laboratoire vise à caractériser expérimentalement les propriétés d’un matériau piézo-électrique, en étudiant :
-L’hystérèse et le fluage (creep), deux phénomènes non-linéaires intrinsèques aux matériaux piézo-électriques.
-\\\\
-La relation déplacement-tension (d(V)) via un interféromètre de Michelson, pour mesurer des nano-déplacements avec une précision sub-nanométrique.
-\\\\
-Les objectifs pédagogiques sont :
-Mesurer et analyser les courbes d(V) pour différents signaux (triangulaires, carrés).
+Dans le cadre de ce laboratoire, nous avons étudié les propriétés des matériaux piézoélectriques, en particulier leur comportement sous l'effet de tensions électriques. Les matériaux piézoélectriques sont largement utilisés dans des applications nécessitant des déplacements précis, comme l'alignement de fibres optiques ou les microscopes à force atomique. Leur comportement est caractérisé par des phénomènes tels que l'\textbf{hystérésis} et le \textbf{fluage}, qui influencent leur réponse à une tension appliquée.
 
-\item Quantifier la non-linéarité (hystérèse) et le fluage (creep).
+Pour analyser ces propriétés, nous avons utilisé deux approches expérimentales :
+Mesure de l'hystérésis et du fluage : En utilisant un système optique basé sur un laser He-Ne, une lame flexible et une photodiode à quatre quadrants, nous avons mesuré la réponse du piézoélectrique à des signaux triangulaires et carrés. Cela nous a permis de quantifier la non-linéarité et les constantes de temps associées au fluage.
+Cette méthode nous a permis de mesurer des déplacements nanométriques avec une grande précision. En observant les franges d'interférence, nous avons pu déterminer le \textbf{coefficient piézoélectrique} $d_{33}$ du matériau étudié.
 
-\item Monter et aligner un interféromètre pour mesurer des déplacements de l’ordre du nanomètre.
-
-\item Comprendre les principes de l’interférométrie optique et son application à la métrologie de haute précision.
-
-
-
+L'objectif de ce rapport est de présenter les résultats obtenus pour ces deux expériences, en mettant en évidence les relations entre la tension appliquée, le déplacement et les phénomènes de non-linéarité et de fluage. Nous analyserons également la précision de la méthode interférométrique et comparerons nos résultats avec les valeurs théoriques attendues.
 
 
 %====================================
 %	 EXPERIENCE 1
 %====================================
-\include{./srcs/hysterese_fluage.tex}
-
+    %\include{./srcs/hysterese_fluage.tex}
+\include{./srcs/hist_fluage.tex}
 
 %====================================
 %   EXPERIENCE 2	
 %====================================
-\include{./srcs/interferometrie.tex}
+\include{./srcs/interferometrie2.tex}
 
 
 % Todo : ANALYSE ET INCERTITUDES
@@ -77,8 +66,17 @@ Mesurer et analyser les courbes d(V) pour différents signaux (triangulaires, ca
 %   Pour l’interféromètre : résolution de la CCD, vibrations.
 
 
-\section{Conclusion}
 
+\section{Conclusion}
+Dans ce laboratoire, nous avons étudié les propriétés des matériaux piézoélectriques à travers deux expériences complémentaires : l'analyse de l'hystérésis et du fluage, et la mesure interférométrique des déplacements.
+
+Pour l'\textbf{hystérésis}, nous avons observé que la non-linéarité du matériau augmente avec la fréquence et la tension appliquée. Par exemple, pour une tension de 1 V, la non-linéarité passe de 0,328\% à 5 Hz à 0,760\% à 20 Hz. Cette tendance s'accentue pour des tensions plus élevées, comme le montre le Tableau~\ref{tab:hysteresis_results_sorted}. Ces résultats confirment que les domaines ferroélectriques du matériau ont moins de temps pour s'aligner à haute fréquence, ce qui augmente les frottements internes et donc la non-linéarité.
+
+Concernant le \textbf{fluage}, nous avons mesuré les constantes de temps pour la montée et la descente du piézoélectrique. Les résultats du Tableau~\ref{tab:resultats_fluage} montrent que la constante de temps pour la montée ($\tau = 1,0516 \times 10^{-2}$ s) est légèrement inférieure à celle de la descente ($\tau = 1,0788 \times 10^{-2}$ s). Cela indique que le piézoélectrique atteint plus rapidement sa position finale lors de la montée que lors de la descente, probablement en raison des effets d'hystérésis internes.
+
+Enfin, grâce à l'\textbf{interféromètre de Michelson}, nous avons pu mesurer des déplacements nanométriques avec une grande précision. En traçant la courbe $d(V)$, nous avons déterminé le coefficient piézoélectrique $d_{33}$ du matériau. Nos résultats expérimentaux sont cohérents avec les spécifications du fabricant pour le modèle P-117-00, bien que des écarts mineurs puissent s'expliquer par des incertitudes de mesure ou des imperfections dans l'alignement de l'interféromètre.
+
+Ces expériences nous ont permis de mieux comprendre le comportement des matériaux piézoélectriques et de valider l'utilisation de l'interférométrie pour des mesures de précision. Les résultats obtenus pourraient être utiles pour des applications nécessitant un contrôle fin des déplacements, comme dans les systèmes de positionnement nanométrique.
 
 %=====================================
 %	ANNEXES 

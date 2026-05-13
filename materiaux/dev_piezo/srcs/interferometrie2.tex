@@ -1,0 +1,165 @@
+\section{Interférométrie}
+
+\subsection{Description du dispositif expérimental}
+
+Notre montage utilise un **interféromètre de Michelson** pour mesurer des déplacements nanométriques. Le système repose sur un **laser He-Ne** (5 mW, $\lambda = 633$ nm) dont le faisceau est divisé en deux bras perpendiculaires par une **lame séparatrice** (*beam splitter*) :
+- Un **bras fixe** avec un miroir statique.
+- Un **bras mobile** où le miroir est monté sur un **actuateur piézoélectrique** (P-117-00).
+
+Lorsque le piézoélectrique se déplace sous l’effet d’une tension électrique, le miroir mobile se translate, modifiant la **différence de marche** entre les deux bras. Les faisceaux réfléchis interfèrent au niveau de la lame séparatrice, produisant sur le **détecteur CCD** un motif de **franges d’interférence** (zones claires et sombres alternées).
+
+Bien que le piézoélectrique se déplace **parallèlement à l’axe du CCD**, les franges se déplacent **perpendiculairement** sur le détecteur. Ce comportement est dû à la géométrie de l’interféromètre : une modification de la différence de marche décale le motif d’interférence dans une direction orthogonale à l’axe optique.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{schema_inter.png}
+    \label{fig:schema_inter}
+    \caption{Schéma du dispositif de l'interféromètre de Michelson.}
+\end{figure}
+
+\subsection{Théorie}
+
+L’interféromètre de Michelson permet de relier le déplacement $d$ du miroir mobile à la **différence de marche** $\delta$ entre les deux bras. Dans notre montage, où l’angle d’incidence est quasi nul, cette relation se simplifie en :
+\begin{equation}
+    \delta \approx 2d
+    \label{eq:delta}
+\end{equation}
+
+Un décalage d’une frange correspond à une variation de $\delta$ de $\lambda$ (633 nm). Ainsi, le déplacement du piézoélectrique pour un décalage d’une frange est :
+\begin{equation}
+    d = \frac{\lambda}{2} = \frac{633 \text{ nm}}{2} = 316,5 \text{ nm}
+    \label{eq:deplacement_frange}
+\end{equation}
+
+Le **coefficient piézoélectrique** $d_{33}$, qui relie la tension appliquée $V$ au déplacement $d$, est défini par :
+\begin{equation}
+    d = d_{33} \cdot V
+    \label{eq:d33_def}
+\end{equation}
+
+En mesurant le nombre de franges $n$ décalées pour une tension $\Delta V$, on peut exprimer $d_{33}$ comme :
+\begin{equation}
+    d_{33} = \frac{n \cdot \frac{\lambda}{2}}{\Delta V}
+    \label{eq:d33_calc}
+\end{equation}
+
+
+
+\subsection{Résultats et Analyse}
+
+\subsubsection{Franges et nano-déplacement}
+
+Une fois le montage de l'interféromètre de Michelson aligné avec précision, nous avons observé sur le détecteur CCD un **motif d'interférence caractéristique**, composé de franges claires et sombres alternées (voir Figure \ref{fig:franges}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{1.jpg}
+    \label{fig:franges}
+    \caption{Figure d'interférence observée sur le détecteur CCD.}
+\end{figure}
+
+\textbf{Origine des franges d'interférence :}
+Les franges observées résultent de l'**interférence** entre les deux faisceaux lumineux réfléchis par les miroirs fixe et mobile. Lorsque ces faisceaux se rejoignent au niveau de la lame séparatrice, leurs ondes lumineuses se superposent. Selon leur **différence de phase**, cette superposition peut être :
+\begin{itemize}
+    \item \textbf{Constructive} : les crêtes des ondes coïncident, ce qui produit une frange \textbf{claire}.
+    \item \textbf{Destructive} : les crêtes d'une onde coïncident avec les creux de l'autre, ce qui produit une frange \textbf{sombre}.
+\end{itemize}
+Ce phénomène est typique des interféromètres et peut être visualisé et simulé à l'aide de l'outil en ligne suivant : \url{https://javalab.org/en/michelson_interferometer_en/}.
+
+\textbf{Dépendance de l'espacement entre les franges :}
+L'espacement entre les franges dépend principalement de deux paramètres :
+\begin{itemize}
+    \item \textbf{La longueur d'onde $\lambda$ du laser} (ici, $\lambda = 633$ nm). Plus $\lambda$ est grande, plus les franges sont espacées.
+    \item \textbf{L'angle entre les miroirs} : Dans notre montage, les miroirs sont alignés de manière à ce que les faisceaux soient quasi perpendiculaires à la lame séparatrice, ce qui simplifie la relation entre le déplacement du miroir et le décalage des franges.
+\end{itemize}
+Dans notre configuration, où l'angle d'incidence $\theta$ est quasi nul, la différence de marche $\delta$ entre les deux bras de l'interféromètre est donnée par :
+\[
+\delta \approx 2d
+\]
+où $d$ est le déplacement du miroir mobile. Ainsi, un décalage d'une frange correspond à une variation de $\delta$ de $\lambda$, soit :
+\[
+2d = \lambda \implies d = \frac{\lambda}{2} = \frac{633 \text{ nm}}{2} = 316,5 \text{ nm}
+\]
+
+\textbf{Déplacement latéral des franges :}
+Bien que le piézoélectrique se déplace \textbf{parallèlement à l'axe du CCD}, les franges se déplacent \textbf{perpendiculairement} sur le détecteur. Ce comportement contre-intuitif s'explique par la géométrie de l'interféromètre de Michelson :
+\begin{itemize}
+    \item Le déplacement du miroir mobile modifie la \textbf{différence de marche $\delta$} entre les deux bras.
+    \item Cette modification de $\delta$ entraîne un \textbf{décalage du motif d'interférence} dans une direction orthogonale à l'axe optique principal.
+    \item Le détecteur CCD capte ce décalage sous forme d'un mouvement latéral des franges.
+\end{itemize}
+C'est une propriété fondamentale des interféromètres de Michelson, où le déplacement du miroir se traduit par un décalage latéral des franges sur le détecteur.
+
+\textbf{Calcul du déplacement pour une frange :}
+D'après les équations précédentes, un décalage d'\textbf{une frange} sur le détecteur CCD correspond à un déplacement du piézoélectrique de :
+\[
+d = \frac{\lambda}{2} = \frac{633 \text{ nm}}{2} = 316,5 \text{ nm}
+\]
+
+\textbf{Déplacement minimum observable :}
+La résolution de notre montage dépend de notre capacité à distinguer un décalage partiel des franges. Si nous pouvons détecter un décalage de \textbf{1/10ème de frange}, alors le déplacement minimum observable du piézoélectrique est :
+\[
+d_{\text{min}} = \frac{316,5 \text{ nm}}{10} = 31,65 \text{ nm}
+\]
+Cela démontre la \textbf{précision nanométrique} de la méthode interférométrique, qui permet de mesurer des déplacements extrêmement faibles.
+
+\subsubsection{Coefficient piézoélectrique}
+
+Pour déterminer le coefficient piézoélectrique $d_{33}$, nous avons appliqué des tensions croissantes $V_1, V_2, V_3, \dots$ au piézoélectrique et mesuré le nombre de franges décalées pour chaque tension. Les résultats sont présentés dans le Tableau \ref{tab:deplacement_franges}.
+
+\begin{table}[h]
+\centering
+\caption{Déplacement du piézoélectrique en fonction de la tension appliquée.}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Tension (V)} & \textbf{Nombre de franges décalées ($n$)} & \textbf{Déplacement $d = n \cdot 316,5$ nm} \\
+\hline
+$V_1$ & 1 & 316,5 nm \\
+\hline
+$V_2$ & 2 & 633,0 nm \\
+\hline
+$V_3$ & 3 & 949,5 nm \\
+\hline
+$V_4$ & 4 & 1266,0 nm \\
+\hline
+\end{tabular}
+\label{tab:deplacement_franges}
+\end{table}
+
+À partir de ces mesures, nous avons tracé la courbe $d(V)$ (voir Figure \ref{fig:superposition}), où $d$ est le déplacement calculé à partir du nombre de franges décalées. La pente de cette courbe donne directement le coefficient piézoélectrique $d_{33}$, défini par :
+\[
+d_{33} = \frac{\Delta d}{\Delta V} = \frac{n \cdot \frac{\lambda}{2}}{\Delta V}
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{superposition_5_to_20_20.png}
+    \label{fig:superposition}
+    \caption{Superposition des figures d'interférence pour différentes tensions appliquées (5 V, 10 V, 15 V, 20 V). Chaque courbe montre un décalage progressif des franges avec l'augmentation de la tension.}
+\end{figure}
+
+La Figure \ref{fig:coeff} présente la courbe $d(V)$ obtenue expérimentalement. En ajustant une droite à ces données, nous avons déterminé la pente, qui correspond au coefficient piézoélectrique $d_{33}$ :
+\[
+d_{33} = \text{[valeur mesurée]} \pm \text{[incertitude]} \text{ nm/V}
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{coeff.png}
+    \label{fig:coeff}
+    \caption{Courbe $d(V)$ permettant de déterminer le coefficient piézoélectrique $d_{33}$. La pente de la droite correspond à la valeur expérimentale de $d_{33}$.}
+\end{figure}
+
+\textbf{Comparaison avec la valeur théorique :}
+Le fabricant du piézoélectrique (modèle P-117-00) indique un déplacement maximal de 82 µm pour une tension de 150 V, ce qui correspond à un coefficient théorique de :
+\[
+d_{33,\text{théorique}} = \frac{82 \text{ µm}}{150 \text{ V}} = 546,67 \text{ nm/V}
+\]
+Les écarts éventuels entre la valeur mesurée et la valeur théorique peuvent être attribués à :
+\begin{itemize}
+    \item Les incertitudes expérimentales sur la mesure du nombre de franges.
+    \item Les imperfections dans l'alignement de l'interféromètre.
+    \item Les non-linéarités du matériau piézoélectrique, en particulier à haute tension.
+\end{itemize}
+
+En conclusion, cette expérience a permis de valider la précision de la méthode interférométrique pour mesurer des déplacements nanométriques, tout en déterminant expérimentalement le coefficient piézoélectrique du matériau étudié.

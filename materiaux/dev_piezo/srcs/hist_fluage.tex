@@ -1,0 +1,134 @@
+\section{Hystérésis et fluage}
+
+\subsection{Description du dispositif}
+Notre montage repose sur un système optique et électronique conçu pour étudier le comportement d’un matériau piézoélectrique. Le laser He-Ne (de longueur d’onde 632,8 nm) émet un faisceau rouge (voir Fig. \ref{fig:schema_hysterese}) qui est dirigé vers une lame flexible polie comme un miroir. Cette lame est fixée à un actuateur piézoélectrique (modèle P-117-00), capable de se déformer sous l’effet d’une tension électrique, avec un déplacement maximal de 82 µm pour une tension de 150 V.
+\\\\
+Lorsqu’une tension est appliquée à l’actuateur, celui-ci se contracte ou s’allonge, ce qui fait fléchir la lame flexible. Cette déformation modifie l’angle du miroir, et donc la direction du faisceau laser réfléchi. Le faisceau dévié est ensuite capté par une photodiode à quatre quadrants. Cet élément clé permet de mesurer avec précision la déviation du laser en convertissant la position du spot lumineux en un signal électrique. Plus la lame se courbe, plus le faisceau est dévié, et plus le signal généré par la photodiode varie.
+\\\\
+Pour piloter l’actuateur, on utilise un générateur de fonctions qui produit des signaux triangulaires ou carrés (par exemple, une rampe de 1 Hz à 3 Vpp avec un offset de 1,5 V pour éviter les tensions négatives, interdites pour le piézo). Un boîtier électronique amplifie ces signaux (par un facteur 10) pour atteindre les tensions nécessaires au fonctionnement du piézo. Enfin, un oscilloscope USB PicoScope permet de visualiser en temps réel le signal de consigne (tension envoyée par le générateur) et le signal de mesure (réponse du piézo, via la photodiode). En superposant ces deux signaux, on peut tracer la courbe déplacement en fonction de la tension $d(V)$ et observer des phénomènes comme l’hystérésis ou le fluage.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{schema_hysterese.png}
+    \label{fig:schema_hysterese}
+    \caption{Schéma du dispositif de mesure de l'hystérésis.}
+\end{figure}
+
+\subsection{Théorie : Hystérésis et fluage}
+
+\subsubsection{Hystérésis}
+L'hystérésis dans les matériaux piézoélectriques résulte de la réorientation des domaines ferroélectriques sous champ électrique, ainsi que des frottements internes et des inerties mécaniques. Ce phénomène se manifeste par une boucle dans la courbe $d(V)$, où la réponse du matériau dépend de l’histoire des tensions appliquées. Le coefficient de non-linéarité est calculé comme suit :
+\begin{equation}
+    \text{Non-linéarité (\%)} = \frac{\text{Écart max (C-D)}}{\text{Plage totale (A-B)}} \times 100
+    \label{eq:eq_lin}
+\end{equation}
+où A-B représente le déplacement total entre les points extrêmes de la boucle, et C-D représente l’écart maximal par rapport à une réponse linéaire idéale (voir Figure 1 du protocole).
+
+\subsubsection{Fluage (Creep)}
+Le fluage décrit la réponse temporelle du piézoélectrique à un saut de tension. Il est modélisé par des équations exponentielles pour la montée et la descente :
+\begin{equation}
+    y(t) = a \left(1 - e^{-t/\tau}\right) + b \quad \text{(montée)}
+    \label{eq:t_m}
+\end{equation}
+\begin{equation}
+    y(t) = a e^{-t/\tau} + b \quad \text{(descente)}
+    \label{eq:t_d}
+\end{equation}
+où $\tau$ est la constante de temps, typiquement de l’ordre de la milliseconde à la seconde.
+
+\subsection{Résultats et Analyse}
+
+\subsubsection{Hystérésis}
+Les courbes d’hystérésis obtenues pour des tensions de 1 V, 2 V et 3 V (voir Figures \ref{fig:1V_hyst}, \ref{fig:2V_lin} et \ref{fig:3V_lin}) montrent une boucle caractéristique dont la largeur augmente avec la tension appliquée. Cette observation confirme que la non-linéarité du matériau piézoélectrique est plus marquée à haute tension.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{1_1V.png}
+    \caption{Courbe d'hystérésis pour une tension de 1 V.}
+    \label{fig:1V_hyst}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{2_2V.png}
+    \caption{Courbe $d(V)$ pour une tension de 2 V.}
+    \label{fig:2V_lin}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{3_3V.png}
+    \caption{Courbe $d(V)$ pour une tension de 3 V.}
+    \label{fig:3V_lin}
+\end{figure}
+
+Les résultats du Tableau \ref{tab:hysteresis_results_sorted} montrent que la non-linéarité augmente avec la fréquence et la tension. Par exemple, pour une tension de 1 V, la non-linéarité passe de 0,328 \% à 5 Hz à 0,760 \% à 20 Hz. Cette tendance s’accentue pour des tensions plus élevées : à 3 V et 20 Hz, la non-linéarité atteint 0,765 \%. Cela s’explique par le fait que les domaines ferroélectriques du matériau ont moins de temps pour s’aligner à haute fréquence, ce qui augmente les frottements internes et donc la non-linéarité.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+    \textbf{U / V} & \textbf{f / Hz} & \textbf{AB $\pm$ 0.01 V} & \textbf{CD $\pm$ 0.06 V} & \textbf{Non-linéarité $\pm$ 0.027 \%} \\
+\hline
+    1 & 5 & 0.022 & 0.007 & 0.328 \\
+\hline
+    2 & 5 & 0.046 & 0.017 & 0.381 \\
+\hline
+    3 & 5 & 0.056 & 0.024 & 0.421 \\
+\hline
+    1 & 10 & 0.020 & 0.011 & 0.519 \\
+\hline
+    2 & 10 & 0.036 & 0.021 & 0.571 \\
+\hline
+    3 & 10 & 0.050 & 0.029 & 0.587 \\
+\hline
+    1 & 20 & 0.015 & 0.012 & 0.760 \\
+\hline
+    3 & 20 & 0.039 & 0.030 & 0.765 \\
+\hline
+    2 & 20 & 0.028 & 0.022 & 0.783 \\
+\hline
+\end{tabular}
+    \caption{Résultats des mesures d'hystérésis pour différentes tensions et fréquences, classés par ordre croissant de non-linéarité. Les incertitudes sur les mesures des tensions $U$ et des fréquences $f$ sont négligeables.}
+    \label{tab:hysteresis_results_sorted}
+\end{table}
+
+La Figure \ref{fig:pentes} illustre l’évolution des pentes des courbes $d(V)$ en fonction de la fréquence et de la tension. On observe que les pentes diminuent avec l’augmentation de la fréquence, ce qui indique une réponse moins efficace du matériau à haute fréquence. De plus, pour une fréquence donnée, la pente est plus faible à haute tension, ce qui suggère une saturation partielle du matériau piézoélectrique.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{pentes.png}
+    \caption{Évolution des pentes des courbes $d(V)$ en fonction de la fréquence et de la tension.}
+    \label{fig:pentes}
+\end{figure}
+
+\subsubsection{Fluage}
+En appliquant un signal carré au système, nous avons mesuré la réponse temporelle du piézoélectrique, comme illustré sur la Figure \ref{fig:fluage}. Les courbes de montée et de descente ont été ajustées avec les équations \ref{eq:t_m} et \ref{eq:t_d}, respectivement.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{fluage_fit_montée_descente.png}
+    \caption{Courbe de fluage montrant la réponse temporelle du piézoélectrique à un saut de tension.}
+    \label{fig:fluage}
+\end{figure}
+
+Les résultats de l’ajustement exponentiel sont présentés dans le Tableau \ref{tab:resultats_fluage}. On constate que la constante de temps $\tau$ pour la montée ($1,0516 \times 10^{-2}$ s) est légèrement inférieure à celle de la descente ($1,0788 \times 10^{-2}$ s). Cela signifie que le piézoélectrique atteint plus rapidement sa position finale lors de la montée que lors de la descente.
+
+\begin{table}[h]
+\centering
+\caption{Résultats de l'ajustement exponentiel pour la montée et la descente.}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Paramètre} & \textbf{Montée} & \textbf{Descente} \\
+\hline
+$A$ & $8.651228 \times 10^{-2} \pm 4.91 \times 10^{-5}$ & $8.352762 \times 10^{-2} \pm 3.15 \times 10^{-5}$ \\
+\hline
+$\tau$ (s) & $1.051606 \times 10^{-2} \pm 1.44 \times 10^{-5}$ & $1.078764 \times 10^{-2} \pm 1.00 \times 10^{-5}$ \\
+\hline
+$B$ & $-3.102036 \times 10^{-2} \pm 5.33 \times 10^{-5}$ & $-1.933693 \times 10^{-2} \pm 1.82 \times 10^{-5}$ \\
+\hline
+\end{tabular}
+\label{tab:resultats_fluage}
+\end{table}
+
+    Cette différence entre les constantes de temps de montée et de descente peut s’expliquer par des **effets d’hystérésis internes** dans le matériau. Lors de la montée, les domaines ferroélectriques s’alignent rapidement sous l’effet du champ électrique, tandis que lors de la descente, les frottements internes et les inerties mécaniques ralentissent le retour à l’état initial. Cela montre que le comportement du piézoélectrique n’est pas parfaitement symétrique entre la charge et la décharge, ce qui est typique des matériaux ferroélectriques.
