@@ -1,0 +1,333 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, quotes}
+
+% --- Page layout ---
+\geometry{
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=2.5cm
+}
+
+\graphicspath{ {./ressources/Lab3Figures/} }
+
+% --- Title Page ---
+\title{
+    \textbf{Laboratoire 3 : Commande de systèmes dynamiques} 
+    \vspace{0.5cm}
+    \large Analyse et synthèse de régulateurs P, PI, PID
+}
+\author{Alexander Seite et Nathan Vidonne}
+\date{\today}
+
+\begin{document}
+
+% ============================================================
+% PAGE DE GARDE
+% ============================================================
+\maketitle
+\newpage
+
+% ============================================================
+% TABLE DES MATIÈRES
+% ============================================================
+\tableofcontents
+\newpage
+
+% ============================================================
+% INTRODUCTION
+% ============================================================
+\section{Introduction}
+Ce rapport présente l'analyse et la synthèse de régulateurs pour un système dynamique modélisé par la fonction de transfert  $G_s(s)$ . L'objectif est d'analyser la réponse indicielle en boucle ouverte (BO) et en boucle fermée (BF) afin d'étudier en un second temps les marges de stabilité (phase et gain) pour différents régulateurs. Cela permet enfin de comparer les performances des régulateurs \textbf{P}, \textbf{PI}, et \textbf{PID} en termes de temps de réponse, dépassement, et rejet des perturbations.
+\\\\
+Tous les paramètres du système et ses sous-systèmes sont donnés ci-bas :
+
+\[
+K_{s1} = 2 \times 10^{-3}, \quad K_{s2} = 2.5 \times 10^4, \quad T_1 = 0.0005  \text{s}, \quad T_2 = 0.01  \text{s}, \quad T_3 = 0.1  \text{s}
+\]
+
+La fonction de transfert en boucle ouverte est tel que :
+\[
+G_s(s) = \frac{K_{\text{total}}}{s(T_1 s + 1)(T_2 s + 1)(T_3 s + 1)}, \quad \text{où} \quad K_{\text{total}} = K_{s1} \cdot K_{s2} = 50  \text{rad/s/V}
+\]
+
+que l'on trace pour le système grâce à Simulink tel que sur Fig. \ref{fig:schema1}. (Toutes l'analyse à été réalisée sur online MATLAB (qui a de très gros problèmes à régler...) donc certains graphiques ont été refaits au propre grâce à du code matlab et à l'aide de l'IA. Pour donner un exemple : au lieu de plot deux courbes sur un même graphique depuis simulin notamment pour les points E et F, je n'ai pas réussi à trouver le double scope donc au nom de l'art de présenter,.... Toute la méthodologie est expliquée da)
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{schema1.png}
+    \caption{Schema Simulink de la réponse indicielle en boucle ouverte du système}
+    \label{fig:A}
+\end{figure}
+
+
+
+\newpage
+% ============================================================
+% POINT A : RÉPONSE INDICIELLE EN BOUCLE OUVERTE
+% ============================================================
+\section{Point A : Réponse indicielle en boucle ouverte}
+La réponse indicielle du système  $G_s(s)$  est simulée pour une entrée en échelon unitaire. La figure \ref{fig:A} montre que la sortie atteint $\SI{50}{rad/s}$ après un temps de stabilisation long. Nous constatons qu'il s'agit d'un système semblable à celui d'un second ordre sous-amorti.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{A.png}
+    \caption{Réponse indicielle en boucle ouverte de  $G_s(s)$.}
+    \label{fig:A}
+\end{figure}
+
+% ============================================================
+% POINT B : TENSION POUR ATTEINDRE 50 RAD/S
+% ============================================================
+\section{Point B : Tension nécessaire pour atteindre \SI{50}{rad/s}}
+Pour atteindre une vitesse de $\SI{50}{rad/s}$ en boucle ouverte, la tension d'entrée  u  est calculée comme suit :
+
+$u = \frac{y_{\text{ref}}}{K_{\text{total}}} = \frac{50}{50} = \SI{1}{V}$
+
+
+\newpage
+
+% ============================================================
+% POINT C : DIAGRAMME DE BODE DE  G_s(s)  AVEC  K_P = 1 
+% ============================================================
+\section{Point C : Diagramme de Bode de $G_s(s)$  avec  $K_P$ = 1 }
+Le diagramme de Bode de  $G_s(s)$  (figure \ref{fig:C}) permet de déterminer les marges de stabilité :
+
+\[
+    \text{PM} = \SI{101}{\degree}  (\text{à } \omega_{cp} = \SI{54}{rad/s}), \quad \text{GM} = \SI{+12}{dB}  (\text{à } \omega_{cg} = \SI{100}{rad/s})
+\]
+
+Un calcul analytique pour une marge de phase cible de \SI{65}{\degree} donne :
+\[
+    K_{P,\text{calculé}} = 0.125 \quad (\text{à } \omega_c = \SI{54}{rad/s})
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{C0.png}
+    \caption{Diagramme de Bode de $G_s(s)$ avec $K_P$ = 1.}
+    \label{fig:C}
+\end{figure}
+
+\newpage
+% ============================================================
+% POINT D : GAIN D'ENTRÉE ET CORRECTION  K_e 
+% ============================================================
+\section{Point D : Gain d'entrée et correction  $K_e$ }
+Avec  $K_P$ = 0.05  (valeur conservative retenue pour les simulations), le gain statique en boucle fermée est :
+
+\[
+    G_{cl}(0) = \frac{K_P \cdot K_{\text{total}}}{1 + K_P \cdot K_{\text{total}}} = \frac{0.05 \times 50}{1 + 0.05 \times 50} = 0.714  (\SI{71.4}{\percent} \text{ de la consigne})$
+\]
+
+Pour compenser cette erreur statique, un gain $K_e$  est introduit :
+
+\[
+    K_e = \frac{1}{G_{cl}(0)} = 1.4
+\]
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{schema2.png}
+    \caption{Réponses indicielles pour Boucle fermée et ouverte}
+    \label{fig:A}
+\end{figure}
+
+
+\newpage
+
+% ============================================================
+% POINT E : COMPARAISON BO VS BF
+% ============================================================
+\section{Point E : Comparaison boucle ouverte vs boucle fermée}
+\subsection{Sans correction  $K_e$ (E1)}
+La figure \ref{fig:E1} compare les réponses temporelles en boucle ouverte et en boucle fermée sans correction  $K_e$. La boucle fermée se stabilise à $\SI{35.7}{rad/s}$ ($\SI{71.4}{\percent}$ de la consigne).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{E1.png}
+    \caption{Comparaison BO vs BF sans correction  $K_e$.}
+    \label{fig:E$}
+\end{figure}
+
+\subsection{Avec correction  $K_e$ = 1.4  (E2)}
+La figure \ref{fig:E2} montre que la boucle fermée atteint $\SI{50}{rad/s}$ avec un temps de réponse réduit ($t_r \approx \SI{0.1}{s} vs \SI{0.5}{s}$ en BO).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{E2.png}
+    \caption{Comparaison BO vs BF avec correction $K_e$ = 1.4.}
+    \label{fig:E2}
+\end{figure}
+
+\newpage
+
+% ============================================================
+% POINT F : EFFET D'UNE PERTURBATION DE 1 MNM
+% ============================================================
+\section{Point F : Effet d'une perturbation de $\SI{1}{mNm}$}
+Une perturbation de $\SI{1}{mNm}$ est appliquée à  t = $\SI{1}{s}$ . Les déviations statiques sont :
+
+\[
+    \text{BO : } \Delta Y = K_{s2} \cdot d = \SI{25}{rad/s}, \quad \text{BF : } \Delta Y = \frac{K_{s2} \cdot d}{1 + K_P \cdot K_{\text{total}}} = \SI{0.49}{rad/s}
+\]
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{schema3.png}
+    \caption{Schema Simulink pour observer la réponse du systeme à une perturbation}
+    \label{fig:A}
+\end{figure}
+
+
+La figure \ref{fig:F} montre que la boucle fermée rejette efficacement la perturbation.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{F.png}
+    \caption{Effet d'une perturbation de $\SI{1}{mNm}$ en BO et BF. (refait avec code matlab)}
+    \label{fig:F}
+\end{figure}
+
+\newpage
+
+% ============================================================
+% POINT G : DIAGRAMME DE BODE DE  G_0(s) = K_P \cdot G_s(s) 
+% ============================================================
+\section{Point G : Diagramme de Bode de  $G_0(s) = K_P \cdot G_s(s)$}
+Le diagramme de Bode de $G_0(s)$ avec $K_P = 0.05$  (figure \ref{fig:G}) montre :
+
+\[
+    \text{PM} = \SI{101}{\degree}, \quad \text{GM} = \SI{+12}{dB}, \quad G_0(0) = \SI{-6}{dB}  (\text{système de classe 0})
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{G.png}
+    \caption{Diagramme de Bode de  $G_0(s)$ avec  $K_P$ = 0.05 .}
+    \label{fig:G}
+\end{figure}
+
+\newpage
+
+% ============================================================
+% POINTS H & I : RÉGULATEUR PI
+% ============================================================
+\section{Points H  I : Régulateur PI}
+
+Le régulateur PI est conçu avec :
+
+\[
+    C_{PI}(s) = C \cdot \frac{1 + T_i s}{T_i s}, \quad \text{où} \quad C = 0.5744, \quad T_i = T_3 = \SI{0.1}{s}
+\]
+
+Le diagramme de Bode de  $G_0(s) = R_{PI}(s) \cdot G_s(s)$ (figure \ref{fig:I}) donne ainsi :
+
+\[
+    \text{PM} = \SI{70}{\degree}, \quad \text{GM} = \SI{+15}{dB}
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{HI.png}
+    \caption{Diagramme de Bode de  $G_0(s)$ avec régulateur PI.}
+    \label{fig:I}
+\end{figure}
+
+\newpage
+
+% ============================================================
+% POINTS J & K : RÉGULATEUR PID
+% ============================================================
+\section{Points J  K : Régulateur PID}
+Le régulateur PID utilise :
+
+\[
+    C_{PID}(s) = K_P \cdot \frac{(T_i s + 1)(T_d s + 1)}{T_i s}, \quad \text{où} \quad K_P = 0.125, \quad T_i = T_3 = \SI{0.1}{s}, \quad T_d = T_2 = \SI{0.01}{s}
+\]
+
+
+Le diagramme de Bode de $G_0(s)$ avec PID (figure \ref{fig:K}) montre :
+
+\[
+    \text{PM} = \SI{65}{\degree}, \quad \text{GM} = \SI{+10}{dB}
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{JK.png}
+    \caption{Diagramme de Bode de $G_0(s)$ avec régulateur PID.}
+    \label{fig:K}
+\end{figure}
+
+\newpage
+
+% ============================================================
+% COMPARAISON P VS PI VS PID
+% ============================================================
+\section{Comparaison P vs PI vs PID}
+La figure \ref{fig:J} compare les réponses temporelles des trois régulateurs face à une perturbation de $\SI{1}{mNm} \text{à } t = \SI{1}{s}$  :
+\begin{itemize}
+    \item \textbf{P} : Réponse lente avec un dépassement modéré.
+    \item \textbf{PI} : Meilleure rejection de la perturbation, mais temps de réponse plus long.
+    \item \textbf{PID} : Réponse la plus rapide avec un dépassement minimal.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{all.png}
+    \caption{Comparaison des réponses temporelles avec régulateurs P, PI, et PID.}
+    \label{fig:J}
+\end{figure}
+
+\newpage
+
+% ============================================================
+% CONCLUSION
+% ============================================================
+\section{Conclusion}
+\subsection{Paramètres des régulateurs}
+%
+%\begin{table}[H]
+%    \centering
+%    \caption{Paramètres des régulateurs en forme parallèle (Simulink).}
+%    \label{tab:parametres}
+%    \begin{tabular}{lccc}
+%        \toprule
+%        \textbf{Régulateur} & \textbf{P} & \textbf{I} & \textbf{D} 
+%        \midrule
+%        P & 0.05 & - & - 
+%        PI & 0.5744 & 5.744 & - 
+%        PID & 0.125 & 1.25 & 0.00125 
+%        \bottomrule
+%    \end{tabular}
+%\end{table}
+
+\subsection{Performances comparées}
+\begin{itemize}
+    \item \textbf{Stabilité} : Le régulateur P offre la plus grande marge de phase ($\SI{101}{\degree}$), mais le PID permet un bon compromis entre stabilité et rapidité.
+    \item \textbf{Rapidité} : Le PID est le plus rapide ($t_r \approx \SI{0.05}{s}$), suivi du PI et du P.
+    \item \textbf{Rejet des perturbations} : Le PID et le PI rejettent mieux les perturbations que le P seul.
+\end{itemize}
+
+\subsection{Bilan}
+Le régulateur \textbf{PID} est le plus performant pour ce système, combinant rapidité, stabilité, et rejet des perturbations. Cependant, le choix final dépend des exigences spécifiques de l'application (par exemple, tolérance au dépassement ou simplicité de mise en œuvre).
+
+\end{document}

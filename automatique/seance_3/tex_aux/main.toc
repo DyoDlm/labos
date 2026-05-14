@@ -1,18 +1,19 @@
 \babel@toc {french}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {section}{\numberline {2}Point A : Réponse indicielle en boucle ouverte}{3}{section.2}%
-\contentsline {section}{\numberline {3}Point B : Tension nécessaire pour atteindre \SI {50}{rad/s}}{3}{section.3}%
-\contentsline {section}{\numberline {4}Point C : Diagramme de Bode de $G_s(s)$ avec $K_P$ = 1 }{4}{section.4}%
-\contentsline {section}{\numberline {5}Point D : Gain d'entrée et correction $K_e$ }{4}{section.5}%
-\contentsline {section}{\numberline {6}Point E : Comparaison boucle ouverte vs boucle fermée}{5}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Sans correction $K_e$ (E1)}{5}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Avec correction $K_e$ = 1.4 (E2)}{5}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Point F : Effet d'une perturbation de $\SI {1}{mNm}$}{7}{section.7}%
-\contentsline {section}{\numberline {8}Point G : Diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$}{8}{section.8}%
-\contentsline {section}{\numberline {9}Points H I : Régulateur PI}{9}{section.9}%
-\contentsline {section}{\numberline {10}Points J K : Régulateur PID}{10}{section.10}%
-\contentsline {section}{\numberline {11}Comparaison P vs PI vs PID}{11}{section.11}%
-\contentsline {section}{\numberline {12}Conclusion}{12}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Paramètres des régulateurs}{12}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Performances comparées}{12}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Bilan}{12}{subsection.12.3}%
+\contentsline {section}{\numberline {2}Point A : Réponse indicielle en boucle ouverte}{4}{section.2}%
+\contentsline {section}{\numberline {3}Point B : Tension nécessaire pour atteindre \SI {50}{rad/s}}{5}{section.3}%
+\contentsline {section}{\numberline {4}Point C : Diagramme de Bode de $G_s(s)$ avec $K_P = 1$}{6}{section.4}%
+\contentsline {paragraph}{Étape 1 — Marges actuelles avec $K_P = 1$.}{6}{section*.4}%
+\contentsline {paragraph}{Étape 2 — Trouver $\omega _c$ tel que $\varphi (\omega _c) = -115°$.}{6}{section*.5}%
+\contentsline {paragraph}{Étape 3 — Calcul de $|G_s(j\omega _c)|$.}{6}{section*.6}%
+\contentsline {paragraph}{Étape 4 — Gain $K_P$.}{6}{section*.7}%
+\contentsline {section}{\numberline {5}Point D : Gain d'entrée et correction $K_e$}{8}{section.5}%
+\contentsline {section}{\numberline {6}Point E : Comparaison boucle ouverte vs boucle fermée}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Sans correction $K_e$ (E1)}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Avec correction $K_e = 1{,}4$ (E2)}{9}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Point F : Effet d'une perturbation de \SI {1}{mNm}}{11}{section.7}%
+\contentsline {section}{\numberline {8}Point G : Diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$}{13}{section.8}%
+\contentsline {section}{\numberline {9}Points H \& I : Régulateur PI}{14}{section.9}%
+\contentsline {section}{\numberline {10}Points J \& K : Régulateur PID}{16}{section.10}%
+\contentsline {section}{\numberline {11}Comparaison P vs PI vs PID}{17}{section.11}%
+\contentsline {section}{\numberline {12}Conclusion}{18}{section.12}%

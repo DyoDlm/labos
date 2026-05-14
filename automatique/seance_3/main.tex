@@ -28,7 +28,7 @@
 % --- Title Page ---
 \title{
     \textbf{Laboratoire 3 : Commande de systèmes dynamiques} 
-    \vspace{0.5cm}
+    \vspace{0.5cm}\\
     \large Analyse et synthèse de régulateurs P, PI, PID
 }
 \author{Alexander Seite et Nathan Vidonne}
@@ -52,251 +52,512 @@
 % INTRODUCTION
 % ============================================================
 \section{Introduction}
-Ce rapport présente l'analyse et la synthèse de régulateurs pour un système dynamique modélisé par la fonction de transfert  $G_s(s)$ . L'objectif est d'analyser la réponse indicielle en boucle ouverte (BO) et en boucle fermée (BF) afin d'étudier en un second temps les marges de stabilité (phase et gain) pour différents régulateurs. Cela permet enfin de comparer les performances des régulateurs \textbf{P}, \textbf{PI}, et \textbf{PID} en termes de temps de réponse, dépassement, et rejet des perturbations.
-\\\\
-Tous les paramètres du système et ses sous-systèmes sont donnés ci-bas :
 
+Ce rapport présente l'analyse et la synthèse de régulateurs pour un système dynamique
+modélisé par la fonction de transfert $G_s(s)$. L'objectif est d'analyser la réponse
+indicielle en boucle ouverte (BO) et en boucle fermée (BF) afin d'étudier en un second
+temps les marges de stabilité (phase et gain) pour différents régulateurs. Cela permet
+enfin de comparer les performances des régulateurs \textbf{P}, \textbf{PI}, et
+\textbf{PID} en termes de temps de réponse, dépassement, et rejet des perturbations.
+La méthode de dimensionnement utilisée est la méthode de Bode et les simulations ont
+été réalisées avec MATLAB et Simulink.\\[6pt]
+
+Tous les paramètres du système sont donnés ci-dessous :
 \[
-K_{s1} = 2 \times 10^{-3}, \quad K_{s2} = 2.5 \times 10^4, \quad T_1 = 0.0005  \text{s}, \quad T_2 = 0.01  \text{s}, \quad T_3 = 0.1  \text{s}
+K_{s1} = 2 \times 10^{-3}\ \text{N·m/V}, \quad
+K_{s2} = 2{,}5 \times 10^4\ \frac{\text{rad/s}}{\text{N·m}}, \quad
+T_1 = 0{,}0005\ \text{s}, \quad
+T_2 = 0{,}01\ \text{s}, \quad
+T_3 = 0{,}1\ \text{s}
 \]
 
-La fonction de transfert en boucle ouverte est tel que :
+La fonction de transfert en boucle ouverte est :
 \[
-G_s(s) = \frac{K_{\text{total}}}{s(T_1 s + 1)(T_2 s + 1)(T_3 s + 1)}, \quad \text{où} \quad K_{\text{total}} = K_{s1} \cdot K_{s2} = 50  \text{rad/s/V}
+G_s(s) = \frac{K_{\text{total}}}{(T_1 s + 1)(T_2 s + 1)(T_3 s + 1)},
+\qquad \text{où} \qquad
+K_{\text{total}} = K_{s1} \cdot K_{s2} = 50\ \text{(rad/s)/V}
 \]
 
+Le pôle dominant est celui associé à $T_3 = 0{,}1$\,s ($\omega_3 = 10$\,rad/s), car c'est
+lui qui impose la dynamique la plus lente au système.
 
+\newpage
 % ============================================================
 % POINT A : RÉPONSE INDICIELLE EN BOUCLE OUVERTE
 % ============================================================
 \section{Point A : Réponse indicielle en boucle ouverte}
-La réponse indicielle du système  $G_s(s)$  est simulée pour une entrée en échelon unitaire. La figure \ref{fig:A} montre que la sortie atteint $\SI{50}{rad/s}$ après un temps de stabilisation long. Nous constatons qu'il s'agit d'un système semblable à celui d'un second ordre sous-amorti.
+
+\textit{Méthodologie :} Le système $G_s(s)$ est construit directement sous MATLAB via la
+commande \texttt{tf()} à partir des paramètres numériques donnés, sans recours à un outil
+graphique interactif. La réponse indicielle est ensuite obtenue par la commande
+\texttt{step()} appliquée à la fonction de transfert en boucle ouverte. Le schéma
+Simulink correspondant est représenté à la figure~\ref{fig:schema1} : il place en cascade
+trois blocs du premier ordre précédés du gain $K_{s1}$ et suivis du gain $K_{s2}$,
+conformément au schéma bloc du sujet de laboratoire.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.45]{A.png}
-    \caption{Réponse indicielle en boucle ouverte de  $G_s(s)$.}
+    \includegraphics[scale=0.45]{schema1.png}
+    \caption{Schéma Simulink de la réponse indicielle en boucle ouverte du système.}
+    \label{fig:schema1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{A.png}
+    \caption{Réponse indicielle en boucle ouverte de $G_s(s)$ pour une entrée de 1\,V.}
     \label{fig:A}
 \end{figure}
 
+La figure~\ref{fig:A} montre que la sortie suit une croissance monotone et se stabilise
+asymptotiquement à 50\,rad/s, valeur qui correspond exactement au gain statique
+$K_s = 50$\,(rad/s)/V. La réponse est purement apériodique (aucun dépassement).
+Le temps de montée est d'environ $0{,}1$\,s, dominé par les pôles rapides $T_1$ et $T_2$,
+tandis que le temps de réponse à 95\,\% atteint environ $0{,}5$\,s, gouverné par le pôle
+dominant $T_3 = 0{,}1$\,s.
+
+\newpage
 % ============================================================
 % POINT B : TENSION POUR ATTEINDRE 50 RAD/S
 % ============================================================
 \section{Point B : Tension nécessaire pour atteindre \SI{50}{rad/s}}
-Pour atteindre une vitesse de $\SI{50}{rad/s}$ en boucle ouverte, la tension d'entrée  u  est calculée comme suit :
 
-$u = \frac{y_{\text{ref}}}{K_{\text{total}}} = \frac{50}{50} = \SI{1}{V}$
+\textit{Méthodologie :} Ce point est résolu par calcul analytique pur, sans simulation.
+On applique le théorème de la valeur finale pour relier la valeur statique de la sortie
+à l'amplitude de l'entrée échelon, puis on inverse la relation.\\[6pt]
 
-
-\newpage
-
-% ============================================================
-% POINT C : DIAGRAMME DE BODE DE  G_s(s)  AVEC  K_P = 1 
-% ============================================================
-\section{Point C : Diagramme de Bode de $G_s(s)$  avec  $K_P$ = 1 }
-Le diagramme de Bode de  $G_s(s)$  (figure \ref{fig:C}) permet de déterminer les marges de stabilité :
-
+En régime permanent ($t \to \infty$), le théorème de la valeur finale donne pour une
+entrée échelon $U$ :
 \[
-    \text{PM} = \SI{101}{\degree}  (\text{à } \omega_{cp} = \SI{54}{rad/s}), \quad \text{GM} = \SI{+12}{dB}  (\text{à } \omega_{cg} = \SI{100}{rad/s})
+Y(\infty) = \lim_{s \to 0}\, s \cdot G_s(s) \cdot \frac{U}{s}
+           = G_s(0) \cdot U = K_s \cdot U = 50\,U
 \]
 
-Un calcul analytique pour une marge de phase cible de \SI{65}{\degree} donne :
+Pour obtenir $Y(\infty) = 50$\,rad/s :
 \[
-    K_{P,\text{calculé}} = 0.125 \quad (\text{à } \omega_c = \SI{54}{rad/s})
+U = \frac{Y(\infty)}{K_s} = \frac{50}{50} = \SI{1}{V}
+\]
+
+Une tension d'entrée de \textbf{1\,V} suffit pour stabiliser la sortie à exactement
+50\,rad/s en boucle ouverte, ce que confirme directement la lecture de la
+figure~\ref{fig:A}.
+
+\newpage
+% ============================================================
+% POINT C : DIAGRAMME DE BODE DE G_s(s) AVEC K_P = 1
+% ============================================================
+\section{Point C : Diagramme de Bode de $G_s(s)$ avec $K_P = 1$}
+
+\textit{Méthodologie :} Le diagramme de Bode est tracé avec \texttt{margin(Gs)} pour
+$K_P = 1$, ce qui permet de lire directement les marges brutes du système non compensé.
+On calcule ensuite analytiquement le module $|G_s(j\omega_c)|$ à la pulsation
+$\omega_c = 54$\,rad/s, qui est la pulsation où la phase vaut $-115°$ (correspondant à
+une marge de phase cible de 65°). Le gain $K_P$ est alors déduit par inversion :
+$K_P = 1/|G_s(j\omega_c)|$. Aucun outil graphique interactif n'est utilisé à ce stade.\\[6pt]
+
+Pour qu'un système en boucle fermée présente une réponse indicielle sans dépassement,
+il faut une marge de phase $\varphi_m \geq 65°$.
+
+\paragraph{Étape 1 — Marges actuelles avec $K_P = 1$.}
+La figure~\ref{fig:C} donne :
+\[
+\text{PM} = 21{,}9°\ \text{à}\ \omega = 212\ \text{rad/s}, \qquad
+\text{GM} = 13{,}3\ \text{dB}\ \text{à}\ \omega = 470\ \text{rad/s}
+\]
+La marge de phase est insuffisante ($21{,}9° < 65°$), confirmant la nécessité d'une
+réduction de gain.
+
+\paragraph{Étape 2 — Trouver $\omega_c$ tel que $\varphi(\omega_c) = -115°$.}
+\[
+\varphi(\omega) = -\arctan(\omega T_1) - \arctan(\omega T_2) - \arctan(\omega T_3)
+\]
+Cette condition est satisfaite pour $\omega_c \approx 54$\,rad/s.
+
+\paragraph{Étape 3 — Calcul de $|G_s(j\omega_c)|$.}
+\begin{align}
+|G_s(j \cdot 54)| &=
+  \frac{50}{\sqrt{1+(54 \times 0{,}0005)^2}
+  \cdot \sqrt{1+(54 \times 0{,}01)^2}
+  \cdot \sqrt{1+(54 \times 0{,}1)^2}} \notag \\
+  &= \frac{50}{\sqrt{1{,}000729}
+     \cdot \sqrt{1{,}2916}
+     \cdot \sqrt{30{,}16}}
+   = \frac{50}{1{,}000364 \times 1{,}137 \times 5{,}492}
+  \approx \frac{50}{6{,}244} \approx 8{,}0
+\end{align}
+
+\paragraph{Étape 4 — Gain $K_P$.}
+\[
+K_P = \frac{1}{|G_s(j\omega_c)|} \approx \frac{1}{8{,}0} \approx 0{,}125\ \text{V·s/rad}
 \]
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.4]{C0.png}
-    \caption{Diagramme de Bode de $G_s(s)$ avec $K_P$ = 1.}
+    \includegraphics[width=0.75\linewidth]{C0.png}
+    \caption{Diagramme de Bode de $G_s(s)$ avec $K_P = 1$.
+             PM\,=\,21,9° à 212\,rad/s (insuffisant), GM\,=\,13,3\,dB à 470\,rad/s.}
     \label{fig:C}
 \end{figure}
 
-% ============================================================
-% POINT D : GAIN D'ENTRÉE ET CORRECTION  K_e 
-% ============================================================
-\section{Point D : Gain d'entrée et correction  $K_e$ }
-Avec  $K_P$ = 0.05  (valeur conservative retenue pour les simulations), le gain statique en boucle fermée est :
-
-\[
-    G_{cl}(0) = \frac{K_P \cdot K_{\text{total}}}{1 + K_P \cdot K_{\text{total}}} = \frac{0.05 \times 50}{1 + 0.05 \times 50} = 0.714  (\SI{71.4}{\percent} \text{ de la consigne})$
-\]
-
-Pour compenser cette erreur statique, un gain $K_e$  est introduit :
-
-\[
-    K_e = \frac{1}{G_{cl}(0)} = 1.4
-\]
+La valeur $K_P \approx 0{,}125$\,V·s/rad assure une marge de phase de 65° et donc une
+réponse indicielle en boucle fermée sans dépassement. Dans la simulation Simulink,
+une valeur plus conservative $K_P = 0{,}05$ a été retenue, offrant une marge de phase
+de 101° — ce choix est justifié et commenté au point G.
 
 \newpage
+% ============================================================
+% POINT D : GAIN D'ENTRÉE ET CORRECTION K_e
+% ============================================================
+\section{Point D : Gain d'entrée et correction $K_e$}
 
+\textit{Méthodologie :} Ce calcul est purement analytique. On utilise la formule de
+Black pour déterminer le gain statique en boucle fermée, puis on en déduit le facteur
+correcteur $K_e$ à appliquer en entrée. Aucune simulation n'est nécessaire : la valeur
+de $K_e$ est calculée directement depuis $K_P$ et $K_s$.\\[6pt]
+
+Avec un régulateur proportionnel $K_P$ en boucle fermée à retour unitaire,
+le gain statique est (formule de Black) :
+\[
+G_{cl}(0) = \frac{K_P \cdot K_s}{1 + K_P \cdot K_s}
+\]
+
+Avec $K_P = 0{,}05$ (valeur simulée) et $K_s = 50$ :
+\[
+G_{cl}(0) = \frac{0{,}05 \times 50}{1 + 0{,}05 \times 50}
+          = \frac{2{,}5}{3{,}5} \approx 0{,}714
+\qquad (\SI{71.4}{\percent}\ \text{de la consigne})
+\]
+
+La sortie n'atteindrait que 71,4\,\% de la consigne (environ 35,7\,rad/s pour une
+consigne de 50\,rad/s). Pour corriger ce défaut, on introduit un gain d'entrée $K_e$
+tel que $K_e \times G_{cl}(0) = 1$ :
+\[
+K_e = \frac{1}{G_{cl}(0)} = \frac{1 + K_P \cdot K_s}{K_P \cdot K_s}
+    = \frac{3{,}5}{2{,}5} = 1{,}4
+\]
+
+Ce gain est visible dans le schéma Simulink (figure~\ref{fig:schema2}) sur le bloc
+$K_\text{entrée}$. En multipliant la consigne par $K_e$, la sortie du système asservi
+atteint exactement la valeur demandée en régime permanent.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{schema2.png}
+    \caption{Schéma Simulink pour la comparaison BO/BF avec gain correcteur $K_e$.}
+    \label{fig:schema2}
+\end{figure}
+
+\newpage
 % ============================================================
 % POINT E : COMPARAISON BO VS BF
 % ============================================================
 \section{Point E : Comparaison boucle ouverte vs boucle fermée}
-\subsection{Sans correction  $K_e$ (E1)}
-La figure \ref{fig:E1} compare les réponses temporelles en boucle ouverte et en boucle fermée sans correction  $K_e$. La boucle fermée se stabilise à $\SI{35.7}{rad/s}$ ($\SI{71.4}{\percent}$ de la consigne).
+
+\textit{Méthodologie :} Les deux systèmes (boucle ouverte et boucle fermée) sont
+simulés en parallèle via \texttt{step()} sous MATLAB pour la même entrée échelon,
+sans recours à Simulink ni à Control System Designer. On génère deux figures distinctes :
+d'abord sans $K_e$ pour illustrer l'erreur statique, puis avec $K_e = 1{,}4$ pour la
+comparaison dynamique.
+
+\subsection{Sans correction $K_e$ (E1)}
+
+La figure~\ref{fig:E1} compare les réponses en boucle ouverte et en boucle fermée sans
+correction $K_e$. L'erreur statique du régulateur P est clairement visible : la boucle
+fermée se stabilise à environ 35,7\,rad/s (71,4\,\% de la consigne), conformément au
+calcul $G_{cl}(0) = 0{,}714$, tandis que la boucle ouverte atteint correctement
+50\,rad/s mais avec un temps de réponse de $\approx 0{,}5$\,s.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{E1.png}
-    \caption{Comparaison BO vs BF sans correction  $K_e$.}
-    \label{fig:E$}
+    \includegraphics[width=0.75\linewidth]{E1.png}
+    \caption{Comparaison BO (jaune) vs BF (bleu) sans correction $K_e$.
+             La BF se stabilise à $\approx 35{,}7$\,rad/s (71,4\,\% de la consigne) —
+             erreur statique visible.}
+    \label{fig:E1}
 \end{figure}
 
-\subsection{Avec correction  $K_e$ = 1.4  (E2)}
-La figure \ref{fig:E2} montre que la boucle fermée atteint $\SI{50}{rad/s}$ avec un temps de réponse réduit ($t_r \approx \SI{0.1}{s} vs \SI{0.5}{s}$ en BO).
+\subsection{Avec correction $K_e = 1{,}4$ (E2)}
+
+La figure~\ref{fig:E2} montre qu'avec $K_e = 1{,}4$, les deux systèmes atteignent
+désormais 50\,rad/s en régime permanent. La boucle fermée (orange) présente une
+dynamique nettement supérieure à la boucle ouverte (bleu) :
+\begin{itemize}
+    \item Temps de réponse à 5\,\% en BF : $t_r \approx 0{,}10$\,s
+          contre $\approx 0{,}50$\,s en BO — gain de rapidité d'un facteur 5.
+    \item Réponse apériodique dans les deux cas (pas de dépassement),
+          ce qui confirme $\varphi_m > 65°$.
+    \item La BO est dominée par le pôle lent $T_3 = 0{,}1$\,s ;
+          la BF déplace les pôles dominants plus loin dans le demi-plan gauche.
+\end{itemize}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{E2.png}
-    \caption{Comparaison BO vs BF avec correction $K_e$ = 1.4.}
+    \includegraphics[width=0.75\linewidth]{E2.png}
+    \caption{Comparaison BO (bleu) vs BF (orange) avec correction $K_e = 1{,}4$.
+             Les deux atteignent 50\,rad/s, mais la BF est $5\times$ plus rapide
+             ($t_r \approx 0{,}1$\,s vs $0{,}5$\,s).}
     \label{fig:E2}
 \end{figure}
 
 \newpage
-
 % ============================================================
 % POINT F : EFFET D'UNE PERTURBATION DE 1 MNM
 % ============================================================
-\section{Point F : Effet d'une perturbation de $\SI{1}{mNm}$}
-Une perturbation de $\SI{1}{mNm}$ est appliquée à  t = $\SI{1}{s}$ . Les déviations statiques sont :
+\section{Point F : Effet d'une perturbation de \SI{1}{mNm}}
 
-\[
-    \text{BO : } \Delta Y = K_{s2} \cdot d = \SI{25}{rad/s}, \quad \text{BF : } \Delta Y = \frac{K_{s2} \cdot d}{1 + K_P \cdot K_{\text{total}}} = \SI{0.49}{rad/s}
-\]
-
-La figure \ref{fig:F} montre que la boucle fermée rejette efficacement la perturbation.
+\textit{Méthodologie :} La fonction de transfert perturbation$\to$sortie est calculée
+analytiquement via le principe de superposition. La réponse à la perturbation est
+simulée séparément avec \texttt{step()} puis ajoutée à la réponse de consigne avec un
+décalage temporel de 1\,s. Le graphique superpose BO et BF sur la même figure avec
+annotations des déviations statiques. Le schéma Simulink correspondant est présenté
+à la figure~\ref{fig:schema3}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{F.png}
-    \caption{Effet d'une perturbation de $\SI{1}{mNm}$ en BO et BF.}
+    \includegraphics[scale=0.45]{schema3.png}
+    \caption{Schéma Simulink avec injection de perturbation (Step à $t = 1$\,s).
+             Voie haute : boucle ouverte. Voie basse : boucle fermée avec $K_P$ et $K_e$.}
+    \label{fig:schema3}
+\end{figure}
+
+Une perturbation $d = 1$\,mNm $= 10^{-3}$\,N·m est injectée au nœud de sommation
+situé entre les blocs $K_{s1}/(1+sT_1)$ et $K_{s2}$, conformément au schéma du sujet.
+La fonction de transfert perturbation$\to$sortie en boucle fermée avec régulateur P est :
+\[
+H_\text{pert}(s) =
+  \frac{\dfrac{K_{s2}}{(1+sT_2)(1+sT_3)}}{1 + K_P \cdot G_s(s)}
+\]
+
+En régime permanent (théorème de la valeur finale pour un échelon de perturbation
+$P_\text{pert} = 10^{-3}$\,N·m) :
+\[
+\Delta Y_{\infty,\,\text{BF}} =
+  H_\text{pert}(0) \cdot P_\text{pert} =
+  \frac{K_{s2} \cdot P_\text{pert}}{1 + K_P \cdot K_s} =
+  \frac{25000 \times 10^{-3}}{1 + 0{,}05 \times 50} =
+  \frac{25}{3{,}5} \approx +7{,}1\ \text{rad/s}
+\]
+\[
+\Delta Y_{\infty,\,\text{BO}} =
+  K_{s2} \cdot P_\text{pert} = 25000 \times 10^{-3} = +25\ \text{rad/s}
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{F.png}
+    \caption{Effet de la perturbation de 1\,mNm à $t = 1$\,s en BO et BF.
+             BF : déviation $\approx +7{,}1$\,rad/s. BO : déviation $\approx +25$\,rad/s.}
     \label{fig:F}
 \end{figure}
 
+La figure~\ref{fig:F} met en évidence l'effet de la perturbation. En boucle fermée,
+la rétroaction réduit la déviation d'un facteur $(1 + K_P \cdot K_s) = 3{,}5$ par
+rapport à la boucle ouverte, mais l'erreur reste \textit{permanente} : la sortie ne
+revient pas à la consigne. En boucle ouverte, aucun mécanisme de rejet n'existe et la
+déviation atteint directement $+25$\,rad/s. Il faudra une action intégrale pour
+éliminer complètement cette erreur statique résiduelle.
+
 \newpage
-
 % ============================================================
-% POINT G : DIAGRAMME DE BODE DE  G_0(s) = K_P \cdot G_s(s) 
+% POINT G : DIAGRAMME DE BODE DE G_0(s) = K_P . G_s(s)
 % ============================================================
-\section{Point G : Diagramme de Bode de  $G_0(s) = K_P \cdot G_s(s)$}
-Le diagramme de Bode de $G_0(s)$ avec $K_P = 0.05$  (figure \ref{fig:G}) montre :
+\section{Point G : Diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$}
 
-\[
-    \text{PM} = \SI{101}{\degree}, \quad \text{GM} = \SI{+12}{dB}, \quad G_0(0) = \SI{-6}{dB}  (\text{système de classe 0})
-\]
+\textit{Méthodologie :} Le diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$ est tracé
+avec \texttt{margin()} pour la valeur simulée $K_P = 0{,}05$. On calcule explicitement
+le gain statique $G_0(0) = K_P \cdot K_s$ et on l'exprime en dB pour l'identifier sur
+le graphe. La comparaison avec le schéma 6.12 du polycopié est ensuite faite en
+observant la pente à basse fréquence.\\[6pt]
+
+La figure~\ref{fig:G} présente le diagramme de Bode de $G_0(s)$ avec $K_P = 0{,}05$.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{G.png}
-    \caption{Diagramme de Bode de  $G_0(s)$ avec  $K_P$ = 0.05 .}
+    \includegraphics[width=0.75\linewidth]{G.png}
+    \caption{Diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$ avec $K_P = 0{,}05$.
+             PM\,=\,101° à $\omega_c = 22{,}3$\,rad/s, GM\,=\,39{,}4\,dB à 470\,rad/s.}
     \label{fig:G}
 \end{figure}
 
-\newpage
+On relève les points suivants, en comparaison avec le schéma 6.12 du polycopié :
 
+\begin{itemize}
+    \item \textbf{Pente à basse fréquence : 0\,dB/dec.} Le gain statique de boucle
+          vaut $G_0(0) = K_P \cdot K_s = 0{,}05 \times 50 = 2{,}5 \approx +8$\,dB.
+          Cette pente nulle est caractéristique d'un \textbf{système de classe 0} :
+          elle implique une erreur statique permanente face à une perturbation échelon,
+          conformément à l'observation du point F. Le schéma 6.12 montre au contraire
+          un profil idéal à $-20$\,dB/dec à basse fréquence (présence d'un intégrateur),
+          ce que notre $G_0$ avec P seul ne possède pas.
+
+    \item \textbf{Fréquence de croisement $\omega_c = 22{,}3$\,rad/s, PM\,=\,101°.}
+          La marge de phase très élevée garantit l'absence de dépassement, mais résulte
+          d'un choix conservatif de $K_P = 0{,}05$ (au lieu de 0,125 calculé au point C).
+          Ce choix ralentit volontairement la dynamique pour bénéficier d'une robustesse
+          accrue.
+
+    \item \textbf{Marge de gain GM\,=\,39{,}4\,dB à 470\,rad/s.} Le système tolère
+          une augmentation de gain d'un facteur $10^{39{,}4/20} \approx 93$ avant
+          d'osciller, ce qui représente une robustesse très importante.
+\end{itemize}
+
+\newpage
 % ============================================================
 % POINTS H & I : RÉGULATEUR PI
 % ============================================================
-\section{Points H  I : Régulateur PI}
+\section{Points H \& I : Régulateur PI}
 
-Le régulateur PI est conçu avec :
+\textit{Méthodologie :} Le choix du régulateur PI découle directement de l'analyse du
+point G : l'absence d'intégrateur dans $G_0$ est la cause de l'erreur statique de
+perturbation. On montre par le théorème de la valeur finale qu'un intégrateur dans la
+boucle annule cette erreur. Le gain $C$ du PI est ensuite déterminé via Control System
+Designer en imposant la compensation du pôle dominant $T_3$ par le zéro du PI.
+Le diagramme de Bode résultant est tracé avec \texttt{margin()} pour vérifier les marges
+obtenues.\\[6pt]
 
+L'erreur statique observée au point F est liée à l'absence d'action intégrale dans le
+régulateur. Pour l'éliminer, il faut que $G_0(j\omega) \to \infty$ quand $\omega \to 0$,
+ce qui s'obtient en ajoutant un pôle en $s = 0$ dans le régulateur.\\[6pt]
+
+\textbf{Lien avec le point G :} sur le diagramme de Bode, l'intégrateur fait passer
+la pente à basse fréquence de 0\,dB/dec à $-20$\,dB/dec. Cela correspond au profil
+idéal du schéma 6.12 du polycopié. Par le théorème de la valeur finale, l'erreur
+statique face à une perturbation échelon devient nulle :
 \[
-    C_{PI}(s) = C \cdot \frac{1 + T_i s}{T_i s}, \quad \text{où} \quad C = 0.5744, \quad T_i = T_3 = \SI{0.1}{s}
+\lim_{t \to \infty} e(t)
+= \lim_{s \to 0} s \cdot \frac{H_\text{pert}(s)}{s} = 0
+\qquad \text{si } G_0(s) \text{ comporte un facteur } 1/s
 \]
 
-Le diagramme de Bode de  $G_0(s) = R_{PI}(s) \cdot G_s(s)$ (figure \ref{fig:I}) donne ainsi :
-
+Le régulateur PI prend la forme suivante, avec $T_n = T_3 = 0{,}1$\,s (compensation
+du pôle dominant par annulation pôle-zéro) :
 \[
-    \text{PM} = \SI{70}{\degree}, \quad \text{GM} = \SI{+15}{dB}
+G_R(s) = C \cdot \frac{1 + T_n \cdot s}{T_n \cdot s},
+\qquad C = 0{,}5744, \qquad T_n = T_3 = \SI{0.1}{s}
 \]
+
+Le zéro du PI en $s = -1/T_n = -10$\,rad/s compense exactement le pôle dominant
+$s_3 = -1/T_3$. Les deux pôles restants ($T_1$, $T_2$) et l'intégrateur définissent
+alors la dynamique résultante.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{HI.png}
-    \caption{Diagramme de Bode de  $G_0(s)$ avec régulateur PI.}
+    \includegraphics[width=0.75\linewidth]{HI.png}
+    \caption{Diagramme de Bode de $G_0(s) = R_{PI}(s) \cdot G_s(s)$.
+             PM\,=\,73,7° à $\omega_c = 27{,}7$\,rad/s, GM\,=\,37{,}3\,dB.
+             Pente $-20$\,dB/dec à basse fréquence (intégrateur actif).}
     \label{fig:I}
 \end{figure}
 
-\newpage
+L'analyse du diagramme confirme que l'intégrateur est actif ($G_0(0) \to \infty$,
+pente $-20$\,dB/dec en amplitude et $-90°$ en phase à basse fréquence). Le zéro du PI
+crée un maximum de phase local autour de $\omega = 10$\,rad/s qui remonte la marge de
+phase à PM\,=\,73{,}7°\,$> 65°$ : l'absence de dépassement est garantie. La fréquence
+de coupure $\omega_c = 27{,}7$\,rad/s est légèrement supérieure à celle du régulateur P
+seul (22{,}3\,rad/s), ce qui traduit une dynamique plus rapide. Avec ce régulateur PI,
+la perturbation de 1\,mNm ne provoque plus d'erreur statique : l'intégrateur accumule
+l'erreur jusqu'à ramener la sortie exactement à la consigne.
 
+\newpage
 % ============================================================
 % POINTS J & K : RÉGULATEUR PID
 % ============================================================
-\section{Points J  K : Régulateur PID}
-Le régulateur PID utilise :
+\section{Points J \& K : Régulateur PID}
 
+\textit{Méthodologie :} Le passage au PID consiste à ajouter un terme dérivateur qui
+compense le second pôle $T_2$, en plus de la compensation de $T_3$ déjà assurée par
+le PI. Les paramètres $T_i = T_3$ et $T_d = T_2$ sont déduits analytiquement
+(annulations pôle-zéro successives). Les trois régulateurs P, PI et PID sont ensuite
+comparés sur le même graphe temporel simulé avec \texttt{step()} et superposition de
+la perturbation à $t = 1$\,s. Le Bode de $G_0$ avec PID est tracé avec
+\texttt{margin()} pour commenter la marge de phase et la pulsation de coupure.\\[6pt]
+
+Le régulateur PID est défini par :
 \[
-    C_{PID}(s) = K_P \cdot \frac{(T_i s + 1)(T_d s + 1)}{T_i s}, \quad \text{où} \quad K_P = 0.125, \quad T_i = T_3 = \SI{0.1}{s}, \quad T_d = T_2 = \SI{0.01}{s}
+C_{PID}(s) = K_P \cdot \frac{(1 + T_i\,s)(1 + T_d\,s)}{T_i\,s},
+\qquad K_P = 0{,}125, \quad T_i = T_3 = \SI{0.1}{s}, \quad T_d = T_2 = \SI{0.01}{s}
 \]
 
-
-Le diagramme de Bode de $G_0(s)$ avec PID (figure \ref{fig:K}) montre :
-
+Les paramètres en forme parallèle pour le bloc PID de Simulink sont :
 \[
-    \text{PM} = \SI{65}{\degree}, \quad \text{GM} = \SI{+10}{dB}
+P = K_P = 0{,}125, \qquad
+I = \frac{K_P}{T_i} = 1{,}25, \qquad
+D = K_P \cdot T_d = 1{,}25 \times 10^{-3}
 \]
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{JK.png}
+    \includegraphics[width=0.75\linewidth]{JK.png}
     \caption{Diagramme de Bode de $G_0(s)$ avec régulateur PID.}
     \label{fig:K}
 \end{figure}
 
-\newpage
+Par rapport au PI, le PID présente deux zéros réels (en $-1/T_3$ et $-1/T_2$) qui
+relèvent davantage la phase dans la zone de coupure. La pente reste $-20$\,dB/dec
+à basse fréquence (système de type 1, rejet des perturbations conservé), mais la
+pulsation de coupure est plus élevée, ce qui accélère la dynamique en boucle fermée.
 
+\newpage
 % ============================================================
 % COMPARAISON P VS PI VS PID
 % ============================================================
 \section{Comparaison P vs PI vs PID}
-La figure \ref{fig:J} compare les réponses temporelles des trois régulateurs face à une perturbation de $\SI{1}{mNm} \text{à } t = \SI{1}{s}$  :
+
+\textit{Méthodologie :} Les trois boucles fermées sont simulées en parallèle avec
+\texttt{step()} pour la même consigne. La perturbation de 1\,mNm est ajoutée par
+superposition à $t = 1$\,s sur chaque signal, en utilisant la fonction de transfert
+perturbation$\to$sortie propre à chaque régulateur.\\[6pt]
+
+La figure~\ref{fig:J} compare les réponses temporelles des trois régulateurs face
+à une perturbation de 1\,mNm appliquée à $t = 1$\,s :
+
 \begin{itemize}
-    \item \textbf{P} : Réponse lente avec un dépassement modéré.
-    \item \textbf{PI} : Meilleure rejection de la perturbation, mais temps de réponse plus long.
-    \item \textbf{PID} : Réponse la plus rapide avec un dépassement minimal.
+    \item \textbf{P} : réponse rapide, mais erreur statique permanente après la
+          perturbation ($\approx +7{,}1$\,rad/s). Gain de rapidité par rapport à la BO,
+          mais rejet de perturbation incomplet.
+    \item \textbf{PI} : l'intégrateur annule l'erreur statique de perturbation ;
+          la sortie revient à la consigne après un transitoire. La dynamique est
+          légèrement plus lente que le PID.
+    \item \textbf{PID} : rejet de perturbation identique au PI (intégrateur présent),
+          mais transitoire plus rapide grâce au terme dérivateur qui compense $T_2$.
 \end{itemize}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{all.png}
-    \caption{Comparaison des réponses temporelles avec régulateurs P, PI, et PID.}
+    \includegraphics[width=0.75\linewidth]{all.png}
+    \caption{Comparaison des réponses temporelles avec régulateurs P, PI et PID
+             face à une perturbation de 1\,mNm à $t = 1$\,s.}
     \label{fig:J}
 \end{figure}
 
 \newpage
-
 % ============================================================
 % CONCLUSION
 % ============================================================
 \section{Conclusion}
-\subsection{Paramètres des régulateurs}
-%
-%\begin{table}[H]
-%    \centering
-%    \caption{Paramètres des régulateurs en forme parallèle (Simulink).}
-%    \label{tab:parametres}
-%    \begin{tabular}{lccc}
-%        \toprule
-%        \textbf{Régulateur} & \textbf{P} & \textbf{I} & \textbf{D} 
-%        \midrule
-%        P & 0.05 & - & - 
-%        PI & 0.5744 & 5.744 & - 
-%        PID & 0.125 & 1.25 & 0.00125 
-%        \bottomrule
-%    \end{tabular}
-%\end{table}
 
-\subsection{Performances comparées}
-\begin{itemize}
-    \item \textbf{Stabilité} : Le régulateur P offre la plus grande marge de phase ($\SI{101}{\degree}$), mais le PID permet un bon compromis entre stabilité et rapidité.
-    \item \textbf{Rapidité} : Le PID est le plus rapide ($t_r \approx \SI{0.05}{s}$), suivi du PI et du P.
-    \item \textbf{Rejet des perturbations} : Le PID et le PI rejettent mieux les perturbations que le P seul.
-\end{itemize}
+Ce laboratoire a permis d'étudier et de comparer l'effet des régulateurs P, PI et PID
+sur un système d'entraînement électrique rotatif du troisième ordre, en utilisant la
+méthode de Bode comme outil de dimensionnement.
 
-\subsection{Bilan}
-Le régulateur \textbf{PID} est le plus performant pour ce système, combinant rapidité, stabilité, et rejet des perturbations. Cependant, le choix final dépend des exigences spécifiques de l'application (par exemple, tolérance au dépassement ou simplicité de mise en œuvre).
+Le \textbf{régulateur P}, dimensionné pour une marge de phase de 65°
+($K_P \approx 0{,}125$ à $\omega_c = 54$\,rad/s), améliore significativement la rapidité
+de la boucle fermée par rapport à la boucle ouverte (temps de réponse divisé par 5).
+Une valeur plus conservative $K_P = 0{,}05$ (PM\,=\,101°) a été retenue en simulation.
+Cependant, le régulateur P laisse subsister une erreur statique permanente face aux
+perturbations : le gain de boucle étant fini à fréquence nulle (système de classe 0,
+pente 0\,dB/dec sur le Bode), le rejet est partiel.
+
+L'ajout du terme intégrateur (\textbf{régulateur PI} avec $T_n = T_3 = 0{,}1$\,s)
+résout ce problème en portant le gain de boucle à l'infini en régime stationnaire
+(classe 1, pente $-20$\,dB/dec). La marge de phase obtenue (PM\,=\,73{,}7°
+à $\omega_c = 27{,}7$\,rad/s) garantit l'absence de dépassement et un rejet complet
+des perturbations échelon.
+
+Enfin, le \textbf{régulateur PID} améliore encore la dynamique en compensant le second
+pôle $T_2$ via le terme dérivateur, tout en conservant les propriétés de rejet du PI.
+La méthode de Bode s'avère un outil puissant et systématique pour le dimensionnement
+de ces régulateurs, permettant de relier directement les marges de stabilité aux
+performances temporelles du système.
 
 \end{document}
