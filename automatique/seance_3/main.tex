@@ -201,13 +201,10 @@ réponse indicielle en boucle fermée sans dépassement.
 % ============================================================
 \section{Point D : Gain d'entrée et correction $K_e$}
 
-\textit{Méthodologie :} Ce calcul est purement analytique. On utilise la formule de
-Black pour déterminer le gain statique en boucle fermée, puis on en déduit le facteur
-correcteur $K_e$ à appliquer en entrée. Aucune simulation n'est nécessaire : la valeur
-de $K_e$ est calculée directement depuis $K_P$ et $K_s$.\\[6pt]
+On utilise la formule de Black pour déterminer le gain statique en boucle fermée, puis on en déduit le facteur
+correcteur $K_e$ à appliquer en entrée. La valeur de $K_e$ est calculée directement depuis $K_P$ et $K_s$.\\[6pt]
 
-Avec un régulateur proportionnel $K_P$ en boucle fermée à retour unitaire,
-le gain statique est (formule de Black) :
+Avec un régulateur proportionnel $K_P$ en boucle fermée, le gain statique est :
 \[
 G_{cl}(0) = \frac{K_P \cdot K_s}{1 + K_P \cdot K_s}
 \]
@@ -220,16 +217,15 @@ G_{cl}(0) = \frac{0{,}05 \times 50}{1 + 0{,}05 \times 50}
 \]
 
 La sortie n'atteindrait que 71,4\,\% de la consigne (environ 35,7\,rad/s pour une
-consigne de 50\,rad/s). Pour corriger ce défaut, on introduit un gain d'entrée $K_e$
+consigne de 50\,rad/s). Pour corriger, on pose $K_e$
 tel que $K_e \times G_{cl}(0) = 1$ :
 \[
 K_e = \frac{1}{G_{cl}(0)} = \frac{1 + K_P \cdot K_s}{K_P \cdot K_s}
     = \frac{3{,}5}{2{,}5} = 1{,}4
 \]
 
-Ce gain est visible dans le schéma Simulink (figure~\ref{fig:schema2}) sur le bloc
-$K_\text{entrée}$. En multipliant la consigne par $K_e$, la sortie du système asservi
-atteint exactement la valeur demandée en régime permanent.
+Ce gain est visible dans le schéma Simulink (voir Fig. \ref{fig:schema2}) sur le bloc
+$K_\text{entrée}$. On dit merci au régulateur d'être utile.
 
 \begin{figure}[H]
     \centering
@@ -267,6 +263,7 @@ calcul $G_{cl}(0) = 0{,}714$, tandis que la boucle ouverte atteint correctement
     \label{fig:E1}
 \end{figure}
 
+\newpage
 \subsection{Avec correction $K_e = 1{,}4$ (E2)}
 
 La figure~\ref{fig:E2} montre qu'avec $K_e = 1{,}4$, les deux systèmes atteignent
