@@ -29,7 +29,7 @@
 \title{
     \textbf{Laboratoire 3 : Commande de systèmes dynamiques} 
     \vspace{0.5cm}
-    \large Exercice 1 – Analyse et synthèse de régulateurs P, PI, PID
+    \large Analyse et synthèse de régulateurs P, PI, PID
 }
 \author{Alexander Seite et Nathan Vidonne}
 \date{\today}
@@ -52,29 +52,25 @@
 % INTRODUCTION
 % ============================================================
 \section{Introduction}
-Ce rapport présente l'analyse et la synthèse de régulateurs pour un système dynamique modélisé par la fonction de transfert  $G_s(s)$ . L'objectif est de :
-\begin{itemize}
-    \item Analyser la réponse indicielle en boucle ouverte (BO) et en boucle fermée (BF).
-    \item Étudier les marges de stabilité (phase et gain) pour différents régulateurs.
-    \item Comparer les performances des régulateurs \textbf{P}, \textbf{PI}, et \textbf{PID} en termes de temps de réponse, dépassement, et rejet des perturbations.
-\end{itemize}
+Ce rapport présente l'analyse et la synthèse de régulateurs pour un système dynamique modélisé par la fonction de transfert  $G_s(s)$ . L'objectif est d'analyser la réponse indicielle en boucle ouverte (BO) et en boucle fermée (BF) afin d'étudier en un second temps les marges de stabilité (phase et gain) pour différents régulateurs. Cela permet enfin de comparer les performances des régulateurs \textbf{P}, \textbf{PI}, et \textbf{PID} en termes de temps de réponse, dépassement, et rejet des perturbations.
+\\\\
+Tous les paramètres du système et ses sous-systèmes sont donnés ci-bas :
 
-Les paramètres du système sont :
+\[
+K_{s1} = 2 \times 10^{-3}, \quad K_{s2} = 2.5 \times 10^4, \quad T_1 = 0.0005  \text{s}, \quad T_2 = 0.01  \text{s}, \quad T_3 = 0.1  \text{s}
+\]
 
-$K_{s1} = 2 \times 10^{-3}, \quad K_{s2} = 2.5 \times 10^4, \quad T_1 = 0.0005  \text{s}, \quad T_2 = 0.01  \text{s}, \quad T_3 = 0.1  \text{s}$
+La fonction de transfert en boucle ouverte est tel que :
+\[
+G_s(s) = \frac{K_{\text{total}}}{s(T_1 s + 1)(T_2 s + 1)(T_3 s + 1)}, \quad \text{où} \quad K_{\text{total}} = K_{s1} \cdot K_{s2} = 50  \text{rad/s/V}
+\]
 
-La fonction de transfert en boucle ouverte est :
-
-$G_s(s) = \frac{K_{\text{total}}}{s(T_1 s + 1)(T_2 s + 1)(T_3 s + 1)}, \quad \text{où} \quad K_{\text{total}} = K_{s1} \cdot K_{s2} = 50  \text{rad/s/V}$
-
-
-\newpage
 
 % ============================================================
 % POINT A : RÉPONSE INDICIELLE EN BOUCLE OUVERTE
 % ============================================================
 \section{Point A : Réponse indicielle en boucle ouverte}
-La réponse indicielle du système  $G_s(s)$  est simulée pour une entrée en échelon unitaire. La figure \ref{fig:A} montre que la sortie atteint $\SI{50}{rad/s}$ après un temps de stabilisation long, caractéristique d'un système du 3ème ordre avec des pôles dominants.
+La réponse indicielle du système  $G_s(s)$  est simulée pour une entrée en échelon unitaire. La figure \ref{fig:A} montre que la sortie atteint $\SI{50}{rad/s}$ après un temps de stabilisation long. Nous constatons qu'il s'agit d'un système semblable à celui d'un second ordre sous-amorti.
 
 \begin{figure}[H]
     \centering
@@ -82,8 +78,6 @@ La réponse indicielle du système  $G_s(s)$  est simulée pour une entrée en �
     \caption{Réponse indicielle en boucle ouverte de  $G_s(s)$.}
     \label{fig:A}
 \end{figure}
-
-\newpage
 
 % ============================================================
 % POINT B : TENSION POUR ATTEINDRE 50 RAD/S
@@ -102,12 +96,14 @@ $u = \frac{y_{\text{ref}}}{K_{\text{total}}} = \frac{50}{50} = \SI{1}{V}$
 \section{Point C : Diagramme de Bode de $G_s(s)$  avec  $K_P$ = 1 }
 Le diagramme de Bode de  $G_s(s)$  (figure \ref{fig:C}) permet de déterminer les marges de stabilité :
 
-$\text{PM} = \SI{101}{\degree}  (\text{à } \omega_{cp} = \SI{54}{rad/s}), \quad \text{GM} = \SI{+12}{dB}  (\text{à } \omega_{cg} = \SI{100}{rad/s})$
+\[
+    \text{PM} = \SI{101}{\degree}  (\text{à } \omega_{cp} = \SI{54}{rad/s}), \quad \text{GM} = \SI{+12}{dB}  (\text{à } \omega_{cg} = \SI{100}{rad/s})
+\]
 
 Un calcul analytique pour une marge de phase cible de \SI{65}{\degree} donne :
-
-$K_{P,\text{calculé}} = 0.125 \quad (\text{à } \omega_c = \SI{54}{rad/s})$
-
+\[
+    K_{P,\text{calculé}} = 0.125 \quad (\text{à } \omega_c = \SI{54}{rad/s})
+\]
 
 \begin{figure}[H]
     \centering
@@ -116,20 +112,21 @@ $K_{P,\text{calculé}} = 0.125 \quad (\text{à } \omega_c = \SI{54}{rad/s})$
     \label{fig:C}
 \end{figure}
 
-\newpage
-
 % ============================================================
 % POINT D : GAIN D'ENTRÉE ET CORRECTION  K_e 
 % ============================================================
 \section{Point D : Gain d'entrée et correction  $K_e$ }
 Avec  $K_P$ = 0.05  (valeur conservative retenue pour les simulations), le gain statique en boucle fermée est :
 
-$G_{cl}(0) = \frac{K_P \cdot K_{\text{total}}}{1 + K_P \cdot K_{\text{total}}} = \frac{0.05 \times 50}{1 + 0.05 \times 50} = 0.714  (\SI{71.4}{\percent} \text{ de la consigne})$
+\[
+    G_{cl}(0) = \frac{K_P \cdot K_{\text{total}}}{1 + K_P \cdot K_{\text{total}}} = \frac{0.05 \times 50}{1 + 0.05 \times 50} = 0.714  (\SI{71.4}{\percent} \text{ de la consigne})$
+\]
 
 Pour compenser cette erreur statique, un gain $K_e$  est introduit :
 
-$K_e = \frac{1}{G_{cl}(0)} = 1.4$
-
+\[
+    K_e = \frac{1}{G_{cl}(0)} = 1.4
+\]
 
 \newpage
 
@@ -165,7 +162,9 @@ La figure \ref{fig:E2} montre que la boucle fermée atteint $\SI{50}{rad/s}$ ave
 \section{Point F : Effet d'une perturbation de $\SI{1}{mNm}$}
 Une perturbation de $\SI{1}{mNm}$ est appliquée à  t = $\SI{1}{s}$ . Les déviations statiques sont :
 
-$\text{BO : } \Delta Y = K_{s2} \cdot d = \SI{25}{rad/s}, \quad \text{BF : } \Delta Y = \frac{K_{s2} \cdot d}{1 + K_P \cdot K_{\text{total}}} = \SI{0.49}{rad/s}$
+\[
+    \text{BO : } \Delta Y = K_{s2} \cdot d = \SI{25}{rad/s}, \quad \text{BF : } \Delta Y = \frac{K_{s2} \cdot d}{1 + K_P \cdot K_{\text{total}}} = \SI{0.49}{rad/s}
+\]
 
 La figure \ref{fig:F} montre que la boucle fermée rejette efficacement la perturbation.
 
@@ -184,7 +183,9 @@ La figure \ref{fig:F} montre que la boucle fermée rejette efficacement la pertu
 \section{Point G : Diagramme de Bode de  $G_0(s) = K_P \cdot G_s(s)$}
 Le diagramme de Bode de $G_0(s)$ avec $K_P = 0.05$  (figure \ref{fig:G}) montre :
 
-$\text{PM} = \SI{101}{\degree}, \quad \text{GM} = \SI{+12}{dB}, \quad G_0(0) = \SI{-6}{dB}  (\text{système de classe 0})$
+\[
+    \text{PM} = \SI{101}{\degree}, \quad \text{GM} = \SI{+12}{dB}, \quad G_0(0) = \SI{-6}{dB}  (\text{système de classe 0})
+\]
 
 \begin{figure}[H]
     \centering
@@ -199,13 +200,18 @@ $\text{PM} = \SI{101}{\degree}, \quad \text{GM} = \SI{+12}{dB}, \quad G_0(0) = \
 % POINTS H & I : RÉGULATEUR PI
 % ============================================================
 \section{Points H  I : Régulateur PI}
+
 Le régulateur PI est conçu avec :
 
-$C_{PI}(s) = C \cdot \frac{1 + T_i s}{T_i s}, \quad \text{où} \quad C = 0.5744, \quad T_i = T_3 = \SI{0.1}{s}$
+\[
+    C_{PI}(s) = C \cdot \frac{1 + T_i s}{T_i s}, \quad \text{où} \quad C = 0.5744, \quad T_i = T_3 = \SI{0.1}{s}
+\]
 
-Le diagramme de Bode de  $G_0(s) = R_{PI}(s) \cdot G_s(s)$ (figure \ref{fig:I}) donne :
+Le diagramme de Bode de  $G_0(s) = R_{PI}(s) \cdot G_s(s)$ (figure \ref{fig:I}) donne ainsi :
 
-$\text{PM} = \SI{70}{\degree}, \quad \text{GM} = \SI{+15}{dB}$
+\[
+    \text{PM} = \SI{70}{\degree}, \quad \text{GM} = \SI{+15}{dB}
+\]
 
 \begin{figure}[H]
     \centering
@@ -222,11 +228,16 @@ $\text{PM} = \SI{70}{\degree}, \quad \text{GM} = \SI{+15}{dB}$
 \section{Points J  K : Régulateur PID}
 Le régulateur PID utilise :
 
-$C_{PID}(s) = K_P \cdot \frac{(T_i s + 1)(T_d s + 1)}{T_i s}, \quad \text{où} \quad K_P = 0.125, \quad T_i = T_3 = \SI{0.1}{s}, \quad T_d = T_2 = \SI{0.01}{s}$
+\[
+    C_{PID}(s) = K_P \cdot \frac{(T_i s + 1)(T_d s + 1)}{T_i s}, \quad \text{où} \quad K_P = 0.125, \quad T_i = T_3 = \SI{0.1}{s}, \quad T_d = T_2 = \SI{0.01}{s}
+\]
+
 
 Le diagramme de Bode de $G_0(s)$ avec PID (figure \ref{fig:K}) montre :
 
-$\text{PM} = \SI{65}{\degree}, \quad \text{GM} = \SI{+10}{dB}$
+\[
+    \text{PM} = \SI{65}{\degree}, \quad \text{GM} = \SI{+10}{dB}
+\]
 
 \begin{figure}[H]
     \centering

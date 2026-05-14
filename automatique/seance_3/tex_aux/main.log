@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  14 MAY 2026 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  14 MAY 2026 15:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -854,206 +854,246 @@ dvips/cm-super/cm-super-t1.enc}] (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] [3]
-<./ressources/Lab3Figures/A.png, id=121, 968.61874pt x 651.43375pt>
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
+
+ []
+
+<./ressources/Lab3Figures/A.png, id=113, 968.61874pt x 651.43375pt>
 File: ./ressources/Lab3Figures/A.png Graphic file (type png)
 <use ./ressources/Lab3Figures/A.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/A.png  used on input line 81.
+Package pdftex.def Info: ./ressources/Lab3Figures/A.png  used on input line 77.
 
 (pdftex.def)             Requested size: 435.8744pt x 293.14247pt.
- [4 <./ressources/Lab3Figures/A.png>]
-[5]
+[3 <./ressources/Lab3Figures/A.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 102.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 102.
+(hyperref)                removing `math shift' on input line 96.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 102.
+(hyperref)                removing `subscript' on input line 96.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 102.
+(hyperref)                removing `math shift' on input line 96.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 102.
+(hyperref)                removing `math shift' on input line 96.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 102.
+(hyperref)                removing `subscript' on input line 96.
 
-<./ressources/Lab3Figures/C0.png, id=137, 1128.215pt x 793.96625pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 96.
+
+<./ressources/Lab3Figures/C0.png, id=128, 1128.215pt x 793.96625pt>
 File: ./ressources/Lab3Figures/C0.png Graphic file (type png)
 <use ./ressources/Lab3Figures/C0.png>
 Package pdftex.def Info: ./ressources/Lab3Figures/C0.png  used on input line 11
-4.
+0.
 (pdftex.def)             Requested size: 451.278pt x 317.58087pt.
-[6 <./ressources/Lab3Figures/C0.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 124.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 124.
+(hyperref)                removing `math shift' on input line 118.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 124.
-
-[7]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 140.
+(hyperref)                removing `subscript' on input line 118.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 140.
+(hyperref)                removing `math shift' on input line 118.
+
+! Display math should end with $$.
+<to be read again> 
+                    
+l.122 ...{71.4}{\percent} \text{ de la consigne})$
+                                                  
+? Q
+OK, entering \batchmode...
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 \]
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.123 \]
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.123 \]
+        
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+ [4 <./ressources/Lab3Figures/C0.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 137.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 140.
+(hyperref)                removing `subscript' on input line 137.
 
 
-LaTeX Warning: Reference `fig:E1' on page 8 undefined on input line 141.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 137.
 
-<./ressources/Lab3Figures/E1.png, id=150, 1304.875pt x 859.21pt>
+
+LaTeX Warning: Reference `fig:E1' on page 5 undefined on input line 138.
+
+<./ressources/Lab3Figures/E1.png, id=135, 1304.875pt x 859.21pt>
 File: ./ressources/Lab3Figures/E1.png Graphic file (type png)
 <use ./ressources/Lab3Figures/E1.png>
 Package pdftex.def Info: ./ressources/Lab3Figures/E1.png  used on input line 14
-5.
+2.
 (pdftex.def)             Requested size: 456.71309pt x 300.72801pt.
 
-Overfull \hbox (1.46898pt too wide) in paragraph at lines 145--146
+Overfull \hbox (1.46898pt too wide) in paragraph at lines 142--143
  [][] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 150.
+(hyperref)                removing `subscript' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 147.
 
-<./ressources/Lab3Figures/E2.png, id=152, 1367.1075pt x 897.3525pt>
+<./ressources/Lab3Figures/E2.png, id=137, 1367.1075pt x 897.3525pt>
 File: ./ressources/Lab3Figures/E2.png Graphic file (type png)
 <use ./ressources/Lab3Figures/E2.png>
 Package pdftex.def Info: ./ressources/Lab3Figures/E2.png  used on input line 15
-5.
-(pdftex.def)             Requested size: 478.4948pt x 314.07808pt.
-
-Overfull \hbox (23.25069pt too wide) in paragraph at lines 155--156
- [][] 
- []
-
-[8 <./ressources/Lab3Figures/E1.png>] [9 <./ressources/Lab3Figures/E2.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 165.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 165.
-
-<./ressources/Lab3Figures/F.png, id=167, 1367.1075pt x 897.3525pt>
-File: ./ressources/Lab3Figures/F.png Graphic file (type png)
-<use ./ressources/Lab3Figures/F.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/F.png  used on input line 174
-.
-(pdftex.def)             Requested size: 478.4948pt x 314.07808pt.
-
-Overfull \hbox (23.25069pt too wide) in paragraph at lines 174--175
- [][] 
- []
-
-[10 <./ressources/Lab3Figures/F.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 184.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 184.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cdot' on input line 184.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 184.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
-
-<./ressources/Lab3Figures/G.png, id=176, 1367.1075pt x 897.3525pt>
-File: ./ressources/Lab3Figures/G.png Graphic file (type png)
-<use ./ressources/Lab3Figures/G.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/G.png  used on input line 191
-.
-(pdftex.def)             Requested size: 478.4948pt x 314.07808pt.
-
-Overfull \hbox (23.25069pt too wide) in paragraph at lines 191--192
- [][] 
- []
-
-[11 <./ressources/Lab3Figures/G.png>]
-<./ressources/Lab3Figures/HI.png, id=184, 1367.1075pt x 897.3525pt>
-File: ./ressources/Lab3Figures/HI.png Graphic file (type png)
-<use ./ressources/Lab3Figures/HI.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/HI.png  used on input line 21
 2.
 (pdftex.def)             Requested size: 478.4948pt x 314.07808pt.
 
-Overfull \hbox (23.25069pt too wide) in paragraph at lines 212--213
+Overfull \hbox (23.25069pt too wide) in paragraph at lines 152--153
  [][] 
  []
 
-[12 <./ressources/Lab3Figures/HI.png>]
-<./ressources/Lab3Figures/JK.png, id=192, 1362.08875pt x 817.0525pt>
+ [5 <./ressources/Lab3Figures/E1.png>] [6 <./ressources/Lab3Figures/E2.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 162.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 162.
+
+<./ressources/Lab3Figures/F.png, id=152, 1367.1075pt x 897.3525pt>
+File: ./ressources/Lab3Figures/F.png Graphic file (type png)
+<use ./ressources/Lab3Figures/F.png>
+Package pdftex.def Info: ./ressources/Lab3Figures/F.png  used on input line 173
+.
+(pdftex.def)             Requested size: 478.4948pt x 314.07808pt.
+
+Overfull \hbox (23.25069pt too wide) in paragraph at lines 173--174
+ [][] 
+ []
+
+ [7 <./ressources/Lab3Figures/F.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cdot' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 183.
+
+<./ressources/Lab3Figures/G.png, id=161, 1367.1075pt x 897.3525pt>
+File: ./ressources/Lab3Figures/G.png Graphic file (type png)
+<use ./ressources/Lab3Figures/G.png>
+Package pdftex.def Info: ./ressources/Lab3Figures/G.png  used on input line 192
+.
+(pdftex.def)             Requested size: 478.4948pt x 314.07808pt.
+
+Overfull \hbox (23.25069pt too wide) in paragraph at lines 192--193
+ [][] 
+ []
+
+ [8 <./ressources/Lab3Figures/G.png>]
+<./ressources/Lab3Figures/HI.png, id=169, 1367.1075pt x 897.3525pt>
+File: ./ressources/Lab3Figures/HI.png Graphic file (type png)
+<use ./ressources/Lab3Figures/HI.png>
+Package pdftex.def Info: ./ressources/Lab3Figures/HI.png  used on input line 21
+8.
+(pdftex.def)             Requested size: 478.4948pt x 314.07808pt.
+
+Overfull \hbox (23.25069pt too wide) in paragraph at lines 218--219
+ [][] 
+ []
+
+ [9 <./ressources/Lab3Figures/HI.png>]
+<./ressources/Lab3Figures/JK.png, id=178, 1362.08875pt x 817.0525pt>
 File: ./ressources/Lab3Figures/JK.png Graphic file (type png)
 <use ./ressources/Lab3Figures/JK.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/JK.png  used on input line 23
-3.
+Package pdftex.def Info: ./ressources/Lab3Figures/JK.png  used on input line 24
+4.
 (pdftex.def)             Requested size: 476.7382pt x 285.97266pt.
 
-Overfull \hbox (21.4941pt too wide) in paragraph at lines 233--234
+Overfull \hbox (21.4941pt too wide) in paragraph at lines 244--245
  [][] 
  []
 
-[13 <./ressources/Lab3Figures/JK.png>]
-<./ressources/Lab3Figures/all.png, id=201, 1362.08875pt x 817.0525pt>
+ [10 <./ressources/Lab3Figures/JK.png>]
+<./ressources/Lab3Figures/all.png, id=186, 1362.08875pt x 817.0525pt>
 File: ./ressources/Lab3Figures/all.png Graphic file (type png)
 <use ./ressources/Lab3Figures/all.png>
 Package pdftex.def Info: ./ressources/Lab3Figures/all.png  used on input line 2
-53.
+64.
 (pdftex.def)             Requested size: 476.7382pt x 285.97266pt.
 
-Overfull \hbox (21.4941pt too wide) in paragraph at lines 253--254
+Overfull \hbox (21.4941pt too wide) in paragraph at lines 264--265
  [][] 
  []
 
-[14 <./ressources/Lab3Figures/all.png>] [15] (./main.aux)
+ [11 <./ressources/Lab3Figures/all.png>] [12] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
 
 LaTeX Warning: There were undefined references.
 
@@ -1061,33 +1101,32 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 962F6D091BE55AEBD20822E8B8E6CCF2;3821.
  ) 
 Here is how much of TeX's memory you used:
- 28317 strings out of 474222
- 570553 string characters out of 5748734
+ 28316 strings out of 474222
+ 570594 string characters out of 5748734
  1930975 words of memory out of 5000000
- 50130 multiletter control sequences out of 15000+600000
+ 50132 multiletter control sequences out of 15000+600000
  575247 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,93p,434b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,7n,93p,564b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-bx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (15 pages, 1256138 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx10
+95.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc109
+5.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
+.pfb>
+Output written on main.pdf (12 pages, 1235990 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
  194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
