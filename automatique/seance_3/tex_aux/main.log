@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  14 MAY 2026 20:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  14 MAY 2026 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,7 +740,11 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
 \l__pdf_internal_box=\box76
 )
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `fig:schema1' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -859,299 +863,319 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--64
 
  []
 
-[3{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
-1.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
+
+ []
+
+<./ressources/Lab3Figures/what.png, id=97, 537.00626pt x 784.9325pt>
+File: ./ressources/Lab3Figures/what.png Graphic file (type png)
+<use ./ressources/Lab3Figures/what.png>
+Package pdftex.def Info: ./ressources/Lab3Figures/what.png  used on input line 
+88.
+(pdftex.def)             Requested size: 161.10312pt x 235.48155pt.
+[3{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./ressources/La
+b3Figures/what.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+02.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<./ressources/Lab3Figures/schema1.png, id=105, 780.9175pt x 186.6975pt>
+<./ressources/Lab3Figures/schema1.png, id=110, 975.645pt x 176.66pt>
 File: ./ressources/Lab3Figures/schema1.png Graphic file (type png)
 <use ./ressources/Lab3Figures/schema1.png>
 Package pdftex.def Info: ./ressources/Lab3Figures/schema1.png  used on input li
-ne 100.
-(pdftex.def)             Requested size: 351.40962pt x 84.01309pt.
-<./ressources/Lab3Figures/A.png, id=107, 968.61874pt x 651.43375pt>
+ne 111.
+(pdftex.def)             Requested size: 536.60641pt x 97.16328pt.
+
+Overfull \hbox (81.3623pt too wide) in paragraph at lines 111--112
+ [][] 
+ []
+
+<./ressources/Lab3Figures/A.png, id=111, 968.61874pt x 651.43375pt>
 File: ./ressources/Lab3Figures/A.png Graphic file (type png)
 <use ./ressources/Lab3Figures/A.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/A.png  used on input line 107
+Package pdftex.def Info: ./ressources/Lab3Figures/A.png  used on input line 118
 .
 (pdftex.def)             Requested size: 341.43307pt x 229.62544pt.
- [4 <./ressources/Lab3Figures/schema1.png> <./ressources/Lab3Figures/A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
+[4 <./ressources/Lab3Figures/schema1.png> <./ressources/Lab3Figures/A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 149.
+(hyperref)                removing `math shift' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 149.
+(hyperref)                removing `subscript' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 149.
+(hyperref)                removing `math shift' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 149.
+(hyperref)                removing `math shift' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 149.
+(hyperref)                removing `subscript' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 149.
+(hyperref)                removing `math shift' on input line 151.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 154.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 156.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 154.
-
-Missing character: There is no ° in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--157
-
- []
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 159.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 159.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 156.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 164.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 161.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 164.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 161.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 167.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 163.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 167.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 163.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 167.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 167.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
 
 Missing character: There is no ° in font cmr10!
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 171.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 171.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
 
 Missing character: There is no ° in font cmr10!
-<./ressources/Lab3Figures/C0.png, id=128, 1128.215pt x 793.96625pt>
+<./ressources/Lab3Figures/C0.png, id=130, 1128.215pt x 793.96625pt>
 File: ./ressources/Lab3Figures/C0.png Graphic file (type png)
 <use ./ressources/Lab3Figures/C0.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/C0.png  used on input line 19
-6.
+Package pdftex.def Info: ./ressources/Lab3Figures/C0.png  used on input line 18
+9.
 (pdftex.def)             Requested size: 341.43307pt x 240.27548pt.
-[6] [7 <./ressources/Lab3Figures/C0.png>]
+[6 <./ressources/Lab3Figures/C0.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 211.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 211.
+(hyperref)                removing `math shift' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 211.
+(hyperref)                removing `subscript' on input line 202.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--217
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 202.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--208
 
  []
 
-<./ressources/Lab3Figures/schema2.png, id=147, 928.46875pt x 338.26375pt>
+<./ressources/Lab3Figures/schema2.png, id=140, 928.46875pt x 338.26375pt>
 File: ./ressources/Lab3Figures/schema2.png Graphic file (type png)
 <use ./ressources/Lab3Figures/schema2.png>
 Package pdftex.def Info: ./ressources/Lab3Figures/schema2.png  used on input li
-ne 245.
+ne 236.
 (pdftex.def)             Requested size: 417.80708pt x 152.21727pt.
-[8 <./ressources/Lab3Figures/schema2.png>]
+[7 <./ressources/Lab3Figures/schema2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 262.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 262.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 262.
+(hyperref)                removing `subscript' on input line 253.
 
-<./ressources/Lab3Figures/E1.png, id=155, 1304.875pt x 859.21pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 253.
+
+<./ressources/Lab3Figures/E1.png, id=150, 1304.875pt x 859.21pt>
 File: ./ressources/Lab3Figures/E1.png Graphic file (type png)
 <use ./ressources/Lab3Figures/E1.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/E1.png  used on input line 27
-2.
+Package pdftex.def Info: ./ressources/Lab3Figures/E1.png  used on input line 26
+3.
 (pdftex.def)             Requested size: 341.43307pt x 224.81837pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 279.
+(hyperref)                removing `math shift' on input line 270.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 279.
+(hyperref)                removing `subscript' on input line 270.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 279.
+(hyperref)                removing `math shift' on input line 270.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 288.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 279.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 288.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 279.
 
 Missing character: There is no ° in font cmr10!
-<./ressources/Lab3Figures/E2.png, id=157, 1367.1075pt x 897.3525pt>
+<./ressources/Lab3Figures/E2.png, id=152, 1367.1075pt x 897.3525pt>
 File: ./ressources/Lab3Figures/E2.png Graphic file (type png)
 <use ./ressources/Lab3Figures/E2.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/E2.png  used on input line 29
-5.
+Package pdftex.def Info: ./ressources/Lab3Figures/E2.png  used on input line 28
+6.
 (pdftex.def)             Requested size: 341.43307pt x 224.1048pt.
-[9 <./ressources/Lab3Figures/E1.png>] [10 <./ressources/Lab3Figures/E2.png>]
-<./ressources/Lab3Figures/schema3.png, id=173, 1207.51125pt x 330.23375pt>
+[8 <./ressources/Lab3Figures/E1.png>] [9 <./ressources/Lab3Figures/E2.png>]
+<./ressources/Lab3Figures/schema3.png, id=167, 1207.51125pt x 330.23375pt>
 File: ./ressources/Lab3Figures/schema3.png Graphic file (type png)
 <use ./ressources/Lab3Figures/schema3.png>
 Package pdftex.def Info: ./ressources/Lab3Figures/schema3.png  used on input li
-ne 317.
+ne 308.
 (pdftex.def)             Requested size: 543.37505pt x 148.6038pt.
 
-Overfull \hbox (88.13094pt too wide) in paragraph at lines 317--319
+Overfull \hbox (88.13094pt too wide) in paragraph at lines 308--310
  [][] 
  []
 
-<./ressources/Lab3Figures/F.png, id=174, 1367.1075pt x 897.3525pt>
+<./ressources/Lab3Figures/F.png, id=168, 1367.1075pt x 897.3525pt>
 File: ./ressources/Lab3Figures/F.png Graphic file (type png)
 <use ./ressources/Lab3Figures/F.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/F.png  used on input line 347
+Package pdftex.def Info: ./ressources/Lab3Figures/F.png  used on input line 338
 .
 (pdftex.def)             Requested size: 341.43307pt x 224.1048pt.
-[11 <./ressources/Lab3Figures/schema3.png>] [12 <./ressources/Lab3Figures/F.png
+[10 <./ressources/Lab3Figures/schema3.png>] [11 <./ressources/Lab3Figures/F.png
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 364.
+(hyperref)                removing `math shift' on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 364.
+(hyperref)                removing `subscript' on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 364.
+(hyperref)                removing `subscript' on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cdot' on input line 364.
+(hyperref)                removing `\cdot' on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 364.
+(hyperref)                removing `subscript' on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 364.
+(hyperref)                removing `math shift' on input line 355.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--371
+Underfull \hbox (badness 10000) in paragraph at lines 357--362
 
  []
 
-<./ressources/Lab3Figures/G.png, id=189, 1367.1075pt x 897.3525pt>
+<./ressources/Lab3Figures/G.png, id=184, 1367.1075pt x 897.3525pt>
 File: ./ressources/Lab3Figures/G.png Graphic file (type png)
 <use ./ressources/Lab3Figures/G.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/G.png  used on input line 376
+Package pdftex.def Info: ./ressources/Lab3Figures/G.png  used on input line 367
 .
 (pdftex.def)             Requested size: 341.43307pt x 224.1048pt.
-[13 <./ressources/Lab3Figures/G.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 410--417
+[12 <./ressources/Lab3Figures/G.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 401--408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--421
+Underfull \hbox (badness 10000) in paragraph at lines 409--412
 
  []
 
-<./ressources/Lab3Figures/HI.png, id=198, 1367.1075pt x 897.3525pt>
+<./ressources/Lab3Figures/HI.png, id=192, 1367.1075pt x 897.3525pt>
 File: ./ressources/Lab3Figures/HI.png Graphic file (type png)
 <use ./ressources/Lab3Figures/HI.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/HI.png  used on input line 44
-5.
+Package pdftex.def Info: ./ressources/Lab3Figures/HI.png  used on input line 43
+6.
 (pdftex.def)             Requested size: 341.43307pt x 224.1048pt.
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 453.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 444.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 453.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 455.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 455.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 444.
 
 Missing character: There is no ° in font cmr10!
-[14 <./ressources/Lab3Figures/HI.png>] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 467--474
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 446.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 446.
+
+Missing character: There is no ° in font cmr10!
+[13 <./ressources/Lab3Figures/HI.png>] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 458--465
 
  []
 
-<./ressources/Lab3Figures/JK.png, id=209, 1362.08875pt x 817.0525pt>
+<./ressources/Lab3Figures/JK.png, id=204, 1362.08875pt x 817.0525pt>
 File: ./ressources/Lab3Figures/JK.png Graphic file (type png)
 <use ./ressources/Lab3Figures/JK.png>
-Package pdftex.def Info: ./ressources/Lab3Figures/JK.png  used on input line 49
-0.
+Package pdftex.def Info: ./ressources/Lab3Figures/JK.png  used on input line 48
+1.
 (pdftex.def)             Requested size: 341.43307pt x 204.81117pt.
-[16 <./ressources/Lab3Figures/JK.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 506--510
+[15 <./ressources/Lab3Figures/JK.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 497--501
 
  []
 
-<./ressources/Lab3Figures/all.png, id=217, 1362.08875pt x 817.0525pt>
+<./ressources/Lab3Figures/all.png, id=212, 1362.08875pt x 817.0525pt>
 File: ./ressources/Lab3Figures/all.png Graphic file (type png)
 <use ./ressources/Lab3Figures/all.png>
 Package pdftex.def Info: ./ressources/Lab3Figures/all.png  used on input line 5
-27.
+18.
 (pdftex.def)             Requested size: 341.43307pt x 204.81117pt.
-[17 <./ressources/Lab3Figures/all.png>] [18] (./main.aux)
+[16 <./ressources/Lab3Figures/all.png>] [17] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 140B6DD61628163E3F5A0F0046851A02;3374.
  ) 
 Here is how much of TeX's memory you used:
- 28396 strings out of 474222
- 572630 string characters out of 5748734
+ 28401 strings out of 474222
+ 572903 string characters out of 5748734
  1933975 words of memory out of 5000000
- 50191 multiletter control sequences out of 15000+600000
+ 50200 multiletter control sequences out of 15000+600000
  577613 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,93p,434b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,93p,449b,912s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -1168,10 +1192,10 @@ onts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm
 nts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (18 pages, 1431377 bytes).
+Output written on main.pdf (17 pages, 1469212 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -80,6 +80,17 @@ K_{\text{total}} = K_{s1} \cdot K_{s2} = 50\ \text{(rad/s)/V}
 
 Le pôle dominant est celui associé à $T_3 = 0{,}1$\,s ($\omega_3 = 10$\,rad/s), car c'est
 lui qui impose la dynamique la plus lente au système.
+\\\\\\
+\textbf{NOTE :} Toutes l'analyse à été réalisée sur online MATLAB (dû aux pertes de nos données et la distance entre nos domiciles et l'école). Matlab ont quelques problèmes à régler sur leur version en ligne ceci-dit... Bref, certains graphiques ont été refaits au propre grâce à du code matlab et à l'aide de l'IA notament pour les point (D, E, F). Le point A par exemple nous aurait donné :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{what.png}
+    \caption{Réponse indicielle du point A}
+    \label{fig:schema1}
+\end{figure}
+
+Or le rendu était plus présentable avec tf() et step(). Dans le doute, la méthodologie employée est explicitée à chaque point.
 
 \newpage
 % ============================================================
@@ -87,7 +98,7 @@ lui qui impose la dynamique la plus lente au système.
 % ============================================================
 \section{Point A : Réponse indicielle en boucle ouverte}
 
-\textit{Méthodologie :} Le système $G_s(s)$ est construit directement sous MATLAB via la
+Le système $G_s(s)$ est construit directement sous MATLAB via la
 commande \texttt{tf()} à partir des paramètres numériques donnés, sans recours à un outil
 graphique interactif. La réponse indicielle est ensuite obtenue par la commande
 \texttt{step()} appliquée à la fonction de transfert en boucle ouverte. Le schéma
@@ -97,7 +108,7 @@ conformément au schéma bloc du sujet de laboratoire.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.45]{schema1.png}
+    \includegraphics[scale=0.55]{schema1.png}
     \caption{Schéma Simulink de la réponse indicielle en boucle ouverte du système.}
     \label{fig:schema1}
 \end{figure}
@@ -122,25 +133,16 @@ dominant $T_3 = 0{,}1$\,s.
 % ============================================================
 \section{Point B : Tension nécessaire pour atteindre \SI{50}{rad/s}}
 
-\textit{Méthodologie :} Ce point est résolu par calcul analytique pur, sans simulation.
 On applique le théorème de la valeur finale pour relier la valeur statique de la sortie
 à l'amplitude de l'entrée échelon, puis on inverse la relation.\\[6pt]
 
-En régime permanent ($t \to \infty$), le théorème de la valeur finale donne pour une
-entrée échelon $U$ :
-\[
-Y(\infty) = \lim_{s \to 0}\, s \cdot G_s(s) \cdot \frac{U}{s}
-           = G_s(0) \cdot U = K_s \cdot U = 50\,U
-\]
-
-Pour obtenir $Y(\infty) = 50$\,rad/s :
+En régime permanent ($t \to \infty$), le théorème de la valeur finale pour une valeur echelon permet d'obtenir pour $Y(\infty) = 50$\,rad/s :
 \[
 U = \frac{Y(\infty)}{K_s} = \frac{50}{50} = \SI{1}{V}
 \]
 
-Une tension d'entrée de \textbf{1\,V} suffit pour stabiliser la sortie à exactement
-50\,rad/s en boucle ouverte, ce que confirme directement la lecture de la
-figure~\ref{fig:A}.
+Une tension d'entrée de 1V de min est nécessaire pour stabiliser la sortie à exactement
+50\,rad/s en boucle ouverte. Cela confirme directement la lecture de la réponse indicielle sur Fig. \ref{fig:A}.
 
 \newpage
 % ============================================================
@@ -148,32 +150,24 @@ figure~\ref{fig:A}.
 % ============================================================
 \section{Point C : Diagramme de Bode de $G_s(s)$ avec $K_P = 1$}
 
-\textit{Méthodologie :} Le diagramme de Bode est tracé avec \texttt{margin(Gs)} pour
-$K_P = 1$, ce qui permet de lire directement les marges brutes du système non compensé.
+Le diagramme de Bode est tracé avec \texttt{margin(Gs)} pour
+$K_P = 1$. Ca nous permet de lire directement les marges brutes du système non compensé.
 On calcule ensuite analytiquement le module $|G_s(j\omega_c)|$ à la pulsation
 $\omega_c = 54$\,rad/s, qui est la pulsation où la phase vaut $-115°$ (correspondant à
 une marge de phase cible de 65°). Le gain $K_P$ est alors déduit par inversion :
-$K_P = 1/|G_s(j\omega_c)|$. Aucun outil graphique interactif n'est utilisé à ce stade.\\[6pt]
+$K_P = 1/|G_s(j\omega_c)|$. 
 
 Pour qu'un système en boucle fermée présente une réponse indicielle sans dépassement,
-il faut une marge de phase $\varphi_m \geq 65°$.
-
-\paragraph{Étape 1 — Marges actuelles avec $K_P = 1$.}
-La figure~\ref{fig:C} donne :
+il faut une marge de phase $\varphi_m \geq 65°$. Il faut donc les marges actuelles avec $K_P = 1$ et nous obtenons avec Fig. \ref{fig:C}
 \[
 \text{PM} = 21{,}9°\ \text{à}\ \omega = 212\ \text{rad/s}, \qquad
 \text{GM} = 13{,}3\ \text{dB}\ \text{à}\ \omega = 470\ \text{rad/s}
 \]
-La marge de phase est insuffisante ($21{,}9° < 65°$), confirmant la nécessité d'une
-réduction de gain.
-
-\paragraph{Étape 2 — Trouver $\omega_c$ tel que $\varphi(\omega_c) = -115°$.}
+sauf que cela est insuffisant ($21{,}9° < 65°$). Nous devons donc réduire le gain. Pour ce faire, il faut trouver $\omega_c$ tel que $\varphi(\omega_c) = -115°$.
 \[
 \varphi(\omega) = -\arctan(\omega T_1) - \arctan(\omega T_2) - \arctan(\omega T_3)
 \]
-Cette condition est satisfaite pour $\omega_c \approx 54$\,rad/s.
-
-\paragraph{Étape 3 — Calcul de $|G_s(j\omega_c)|$.}
+En reduisant le gain de tel facon, nous trouvons $\omega_c \approx 54$\,rad/s. Par la suite, il faut calcul le module de $G_s$, $|G_s(j\omega_c)|$, tel qu'il suit :
 \begin{align}
 |G_s(j \cdot 54)| &=
   \frac{50}{\sqrt{1+(54 \times 0{,}0005)^2}
@@ -185,8 +179,7 @@ Cette condition est satisfaite pour $\omega_c \approx 54$\,rad/s.
    = \frac{50}{1{,}000364 \times 1{,}137 \times 5{,}492}
   \approx \frac{50}{6{,}244} \approx 8{,}0
 \end{align}
-
-\paragraph{Étape 4 — Gain $K_P$.}
+Enfin, nous obtenons le gain $K_P$ suivnat :
 \[
 K_P = \frac{1}{|G_s(j\omega_c)|} \approx \frac{1}{8{,}0} \approx 0{,}125\ \text{V·s/rad}
 \]
@@ -200,9 +193,7 @@ K_P = \frac{1}{|G_s(j\omega_c)|} \approx \frac{1}{8{,}0} \approx 0{,}125\ \text{
 \end{figure}
 
 La valeur $K_P \approx 0{,}125$\,V·s/rad assure une marge de phase de 65° et donc une
-réponse indicielle en boucle fermée sans dépassement. Dans la simulation Simulink,
-une valeur plus conservative $K_P = 0{,}05$ a été retenue, offrant une marge de phase
-de 101° — ce choix est justifié et commenté au point G.
+réponse indicielle en boucle fermée sans dépassement.
 
 \newpage
 % ============================================================
