@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  13 MAY 2026 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.1)  14 MAY 2026 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -462,9 +462,6 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 )
 (./main.aux (./srcs/hist_fluage.aux) (./srcs/interferometrie2.aux)
 (./srcs/annexes.aux
-
-LaTeX Warning: Label `fig:franges' multiply defined.
-
 
 LaTeX Warning: Label `fig:franges' multiply defined.
 
@@ -1281,108 +1278,44 @@ ine 66.
 ]
 \openout2 = `./srcs/annexes.aux'.
 
- (./srcs/annexes.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--9
-\OT1/cmtt/m/n/12 https://courselectronique.wordpress.com/etude-des-circuits/
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13                 P
-                      rotocole de laboratoire, \textit{Hepia, cours sur les ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
-[]\OT1/cmr/m/n/12 Protocole de lab-o-ra-toire, \OT1/cmr/m/it/12 Hepia, cours su
-r les on-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
-\OT1/cmr/m/it/12 des \OT1/cmtt/m/n/12 https://cyberlearn.hes-so.ch/pluginfile.p
-hp/697672/
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
- [14
+ (./srcs/annexes.tex [14
 
 ]
-Overfull \hbox (241.74008pt too wide) in paragraph at lines 35--58
- [][] 
- []
-
-
-LaTeX Warning: File `1V.jpg' not found on input line 99.
-
-
-! Package pdftex.def Error: File `1V.jpg' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99     \includegraphics[scale=0.5]{1V.jpg}
-                                            
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
- [15]
-<./ressources/images/5V.jpg, id=234, 642.4pt x 481.8pt>
+<./ressources/images/5V.jpg, id=226, 642.4pt x 481.8pt>
 File: ./ressources/images/5V.jpg Graphic file (type jpg)
 <use ./ressources/images/5V.jpg>
-Package pdftex.def Info: ./ressources/images/5V.jpg  used on input line 107.
+Package pdftex.def Info: ./ressources/images/5V.jpg  used on input line 86.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
-<./ressources/images/10V.jpg, id=235, 642.4pt x 481.8pt>
+ [15]
+<./ressources/images/10V.jpg, id=232, 642.4pt x 481.8pt>
 File: ./ressources/images/10V.jpg Graphic file (type jpg)
 <use ./ressources/images/10V.jpg>
-Package pdftex.def Info: ./ressources/images/10V.jpg  used on input line 115.
+Package pdftex.def Info: ./ressources/images/10V.jpg  used on input line 94.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
- [16 <./ressources/images/5V.jpg>]
-<./ressources/images/15V.jpg, id=242, 642.4pt x 481.8pt>
+<./ressources/images/15V.jpg, id=233, 642.4pt x 481.8pt>
 File: ./ressources/images/15V.jpg Graphic file (type jpg)
 <use ./ressources/images/15V.jpg>
-Package pdftex.def Info: ./ressources/images/15V.jpg  used on input line 123.
+Package pdftex.def Info: ./ressources/images/15V.jpg  used on input line 102.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
-<./ressources/images/20V.jpg, id=243, 642.4pt x 481.8pt>
+ [16 <./ressources/images/5V.jpg> <./ressources/images/10V.jpg>]
+<./ressources/images/20V.jpg, id=240, 642.4pt x 481.8pt>
 File: ./ressources/images/20V.jpg Graphic file (type jpg)
 <use ./ressources/images/20V.jpg>
-Package pdftex.def Info: ./ressources/images/20V.jpg  used on input line 131.
+Package pdftex.def Info: ./ressources/images/20V.jpg  used on input line 110.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
- [17 <./ressources/images/10V.jpg> <./ressources/images/15V.jpg>]
-<./ressources/images/25V.jpg, id=250, 642.4pt x 481.8pt>
+<./ressources/images/25V.jpg, id=241, 642.4pt x 481.8pt>
 File: ./ressources/images/25V.jpg Graphic file (type jpg)
 <use ./ressources/images/25V.jpg>
-Package pdftex.def Info: ./ressources/images/25V.jpg  used on input line 139.
+Package pdftex.def Info: ./ressources/images/25V.jpg  used on input line 118.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
-<./ressources/images/30V.jpg, id=251, 642.4pt x 481.8pt>
+ [17 <./ressources/images/15V.jpg> <./ressources/images/20V.jpg>]
+<./ressources/images/30V.jpg, id=248, 642.4pt x 481.8pt>
 File: ./ressources/images/30V.jpg Graphic file (type jpg)
 <use ./ressources/images/30V.jpg>
-Package pdftex.def Info: ./ressources/images/30V.jpg  used on input line 147.
+Package pdftex.def Info: ./ressources/images/30V.jpg  used on input line 126.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
- [18 <./ressources/images/20V.jpg> <./ressources/images/25V.jpg>]) [19 <./resso
-urces/images/30V.jpg>] (./main.aux (./srcs/hist_fluage.aux) (./srcs/interferome
-trie2.aux) (./srcs/annexes.aux))
+) [18 <./ressources/images/25V.jpg> <./ressources/images/30V.jpg>] (./main.aux 
+(./srcs/hist_fluage.aux) (./srcs/interferometrie2.aux) (./srcs/annexes.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1397,11 +1330,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 648BBA1164090C0B9D31958B8AC04EE1;2800.
  ) 
 Here is how much of TeX's memory you used:
- 13788 strings out of 474222
- 219160 string characters out of 5748734
- 1938975 words of memory out of 5000000
- 35751 multiletter control sequences out of 15000+600000
- 565892 words of font info for 63 fonts, out of 8000000 for 9000
+ 13746 strings out of 474222
+ 218559 string characters out of 5748734
+ 1937975 words of memory out of 5000000
+ 35715 multiletter control sequences out of 15000+600000
+ 565723 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,117p,706b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
@@ -1413,12 +1346,11 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (19 pages, 3445789 bytes).
+/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (18 pages, 3430683 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 252 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
  233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
