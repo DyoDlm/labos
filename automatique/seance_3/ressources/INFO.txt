@@ -1,0 +1,63 @@
+=== Paramètres ===
+K = Ks1*Ks2 = 50 rad/s/V
+
+=== Point B ===
+Tension pour 50 rad/s : u = 1 V
+
+=== Point C ===
+Gs seul (KP=1) : PM=21.91° à 211.94 rad/s, GM=13.34 dB à 470.11 rad/s
+Calcul Bode : omega_c = 63.0 rad/s  => KP_calculé = 0.1509
+Calcul manuel (wc=54 rad/s) : |Gs| = 8.0081 => KP = 0.1249
+
+=== Point D ===
+KP simulé      = 0.05
+Gcl(0)         = 0.7143  (=71.4% de la consigne)
+Ke de correction = 1.4000
+
+Marge de phase avec KP=0.05 : PM = 101.0°
+
+Warning: Error in state of SceneNode.
+String scalar or character vector must have valid interpreter syntax:
+BO : t_{95\\%} \\approx 0.40 s
+ 
+> In defaulterrorcallback (line 12)
+In print (line 6)
+In saveas (line 140)
+In wtf (line 136) 
+Warning: Error in state of SceneNode.
+String scalar or character vector must have valid interpreter syntax:
+BF : t_{95\\%} \\approx 0.08 s
+ 
+> In defaulterrorcallback (line 12)
+In print (line 6)
+In saveas (line 140)
+In wtf (line 136) 
+=== Point E ===
+BO : Ts(95%) = 0.402 s
+BF : Ts(95%) = 0.083 s,  Tr = 0.050 s,  Dép. = 0.07%
+
+=== Point F ===
+Déviation statique BF : ΔY = Ks2*d/(1+KP*Ks) = 7.143 rad/s
+Déviation statique BO : ΔY = Ks2*d            = 25.000 rad/s
+
+=== Point G ===
+G0 = KP*Gs (KP=0.05) : PM=101.01° à wcp=22.26 rad/s, GM=39.36 dB à wcg=470.11 rad/s
+G0(0) = KP*Ks = 0.05*50 = 2.50 (≈ 8.0 dB) => système CLASSE 0
+
+=== Points H & I – PI ===
+C = 0.5744, Ti = T3 = 0.1000 s
+G0_PI : PM=28.37° à wcp=155.14 rad/s, GM=17.28 dB
+
+=== Points J & K – PID ===
+KP=0.1509, Ti=0.1000 s, Td=0.0100 s
+G0_PID : PM=90.26° à wcp=69.99 rad/s, GM=Inf dB
+
+=== Résumé ===
+  KP calculé (PM=65°) : 0.1509  (wc = 63.0 rad/s)
+  KP simulé  (PM=101°): 0.0500  (wc = 22.3 rad/s)
+  Ke (avec KP=0.05)   : 1.4000
+
+  Paramètres PID (forme parallèle Simulink) :
+    P = KP        = 0.150881
+    I = KP/Ti     = 1.508810
+    D = KP*Td     = 0.001509
