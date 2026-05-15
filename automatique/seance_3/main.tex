@@ -45,9 +45,9 @@
 \textit{Trois ingénieurs, Pascal, Irène et Dalton, rentrent dans un bar.}
 \\\\
 \begin{itemize}
-    \item  \textit{Le premier s'exclame            : \\"Pour chaque verre que vous me payez,je vous en paie un en retour !"}\\\\
-    \item  \textit{La deuxième lui répond sagement : \\"Pour chaque verre que nous buvons, je buverais un verre d'eau"}\\\\
-    \item  \textit{Ce à quoi le troisième rétorque : \\"Mwa, jé suis déjà beurré..."}\\\\
+    \item  \textit{Le premier [Pascal]s'exclame            : \\"Pour chaque verre que vous me payez,je vous en paie un en retour !"}\\\\
+    \item  \textit{La deuxième [Irène] lui répond sagement : \\"Pour chaque verre que nous buvons, je buverais un verre d'eau"}\\\\
+    \item  \textit{Ce à quoi le troisième [Dalton] rétorque : \\"Mwa, jé suis déjà beurré..."}\\\\
 \end{itemize}
 
 \\\\
@@ -76,8 +76,8 @@ La méthode de dimensionnement utilisée est la méthode de Bode et les simulati
 
 Tous les paramètres du système sont donnés ci-dessous :
 \[
-K_{s1} = 2 \times 10^{-3}\ \text{N·m/V}, \quad
-K_{s2} = 2{,}5 \times 10^4\ \frac{\text{rad/s}}{\text{N·m}}, \quad
+K_{s1} = 2 \cdot 10^{-3}\ \text{N·m/V}, \quad
+K_{s2} = 2{,}5 \cdot 10^4\ \frac{\text{rad/s}}{\text{N·m}}, \quad
 T_1 = 0{,}0005\ \text{s}, \quad
 T_2 = 0{,}01\ \text{s}, \quad
 T_3 = 0{,}1\ \text{s}
@@ -183,13 +183,13 @@ En reduisant le gain de tel facon, nous trouvons $\omega_c \approx 54$\,rad/s. P
 
 \begin{align}
 |G_s(j \cdot 54)| &=
-  \frac{50}{\sqrt{1+(54 \times 0{,}0005)^2}
-  \cdot \sqrt{1+(54 \times 0{,}01)^2}
-  \cdot \sqrt{1+(54 \times 0{,}1)^2}} \notag \\
+  \frac{50}{\sqrt{1+(54 \cdot 0{,}0005)^2}
+  \cdot \sqrt{1+(54 \cdot 0{,}01)^2}
+  \cdot \sqrt{1+(54 \cdot 0{,}1)^2}} \notag \\
   &= \frac{50}{\sqrt{1{,}000729}
      \cdot \sqrt{1{,}2916}
      \cdot \sqrt{30{,}16}}
-   = \frac{50}{1{,}000364 \times 1{,}137 \times 5{,}492}
+   = \frac{50}{1{,}000364 \cdot 1{,}137 \cdot 5{,}492}
   \approx \frac{50}{6{,}244} \approx 8{,}0
 \end{align}
 Enfin, nous obtenons le gain $K_P$ suivnat :
@@ -224,14 +224,14 @@ G_{cl}(0) = \frac{K_P \cdot K_s}{1 + K_P \cdot K_s}
 
 Avec $K_P = 0{,}05$ (valeur simulée) et $K_s = 50$ :
 \[
-G_{cl}(0) = \frac{0{,}05 \times 50}{1 + 0{,}05 \times 50}
+G_{cl}(0) = \frac{0{,}05 \cdot 50}{1 + 0{,}05 \cdot 50}
           = \frac{2{,}5}{3{,}5} \approx 0{,}714
 \qquad (\SI{71.4}{\percent}\ \text{de la consigne})
 \]
 
 La sortie n'atteindrait que 71,4\,\% de la consigne (environ 35,7\,rad/s pour une
 consigne de 50\,rad/s). Pour corriger, on pose $K_e$
-tel que $K_e \times G_{cl}(0) = 1$ :
+tel que $K_e \cdot G_{cl}(0) = 1$ :
 \[
 K_e = \frac{1}{G_{cl}(0)} = \frac{1 + K_P \cdot K_s}{K_P \cdot K_s}
     = \frac{3{,}5}{2{,}5} = 1{,}4
@@ -290,7 +290,7 @@ La réponse reste apériodique dans les deux cas ce qui confirme que $\varphi_m 
     \centering
     \includegraphics[width=0.75\linewidth]{E2.png}
     \caption{Comparaison BO (bleu) vs BF (rouge) avec correction $K_e = 1{,}4$.
-             Les deux atteignent 50\,rad/s, mais la BF est $5\times$ plus rapide
+             Les deux atteignent 50\,rad/s, mais la BF est $5\timest$ plus rapide
              ($t_r \approx 0{,}1$\,s vs $0{,}5$\,s).}
     \label{fig:E2}
 \end{figure}
@@ -326,12 +326,12 @@ En régime permanent :
 \Delta Y_{\infty,\,\text{BF}} =
   H_\text{pert}(0) \cdot P_\text{pert} =
   \frac{K_{s2} \cdot P_\text{pert}}{1 + K_P \cdot K_s} =
-  \frac{25000 \times 10^{-3}}{1 + 0{,}05 \times 50} =
+  \frac{25000 \cdot 10^{-3}}{1 + 0{,}05 \cdot 50} =
   \frac{25}{3{,}5} \approx +\SI{7,1}{\radian\per\second}
 \]
 \[
 \Delta Y_{\infty,\,\text{BO}} =
-  K_{s2} \cdot P_\text{pert} = 25000 \times 10^{-3} = +\SI{25}{\radian\per\second}
+  K_{s2} \cdot P_\text{pert} = 25000 \cdot 10^{-3} = +\SI{25}{\radian\per\second}
 \]
 
 \begin{figure}[H]
@@ -347,7 +347,7 @@ Avec la boucle fermée, la perturbation est moindre : on élimine une grande par
 % ============================================================
 \section{Point G : Diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$}
 
-\textit{Méthodologie :} Le diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$ est tracé
+Le diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$ est tracé
 avec \texttt{margin()} pour la valeur simulée $K_P = 0{,}05$. On calcule explicitement
 le gain statique $G_0(0) = K_P \cdot K_s$ et on l'exprime en dB pour l'identifier sur
 le graphe. La comparaison avec le schéma 6.12 du polycopié est ensuite faite en
@@ -433,7 +433,7 @@ l'erreur jusqu'à ramener la sortie exactement à la consigne.
 % ============================================================
 \section{Points J \& K : Régulateur PID}
 
-\textit{Méthodologie :} Le passage au PID consiste à ajouter un terme dérivateur qui
+Le passage au PID consiste à ajouter un terme dérivateur qui
 compense le second pôle $T_2$, en plus de la compensation de $T_3$ déjà assurée par
 le PI. Les paramètres $T_i = T_3$ et $T_d = T_2$ sont déduits analytiquement
 (annulations pôle-zéro successives). Les trois régulateurs P, PI et PID sont ensuite
@@ -451,7 +451,7 @@ Les paramètres en forme parallèle pour le bloc PID de Simulink sont :
 \[
 P = K_P = 0{,}125, \qquad
 I = \frac{K_P}{T_i} = 1{,}25, \qquad
-D = K_P \cdot T_d = 1{,}25 \times 10^{-3}
+D = K_P \cdot T_d = 1{,}25 \cdot 10^{-3}
 \]
 
 \begin{figure}[H]
@@ -501,8 +501,7 @@ La figure~\ref{fig:J} compare les réponses temporelles des trois régulateurs f
 \section{Conclusion}
 
 Ce laboratoire a permis d'étudier et de comparer l'effet des régulateurs P, PI et PID
-sur un système d'entraînement électrique rotatif du troisième ordre, en utilisant la
-méthode de Bode comme outil de dimensionnement.
+avec la méthode de Bode comme outil de dimensionnement. 
 \\\\
 Le régulateur P est dimensionné pour une marge de phase de 65°
 ($K_P \approx 0{,}125$ à $\omega_c = 54$\,rad/s). Il améliore significativement la rapidité
