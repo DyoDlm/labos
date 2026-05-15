@@ -40,6 +40,18 @@
 % PAGE DE GARDE
 % ============================================================
 \maketitle
+
+
+\textit{Trois ingénieurs, Pascal, Irène et Dalton, rentrent dans un bar.}
+\\\\
+\begin{itemize}
+    \item  \textit{Le premier s'exclame            : \\"Pour chaque verre que vous me payez,je vous en paie un en retour !"}\\\\
+    \item  \textit{La deuxième lui répond sagement : \\"Pour chaque verre que nous buvons, je buverais un verre d'eau"}\\\\
+    \item  \textit{Ce à quoi le troisième rétorque : \\"Mwa, jé suis déjà beurré..."}\\\\
+\end{itemize}
+
+\\\\
+Seite Alexander, 2026
 \newpage
 
 % ============================================================
@@ -81,7 +93,7 @@ K_{\text{total}} = K_{s1} \cdot K_{s2} = 50\ \text{(rad/s)/V}
 Le pôle dominant est celui associé à $T_3 = 0{,}1$\,s ($\omega_3 = 10$\,rad/s), car c'est
 lui qui impose la dynamique la plus lente au système.
 \\\\\\
-\textbf{NOTE :} Toutes l'analyse à été réalisée sur online MATLAB (dû aux pertes de nos données et la distance entre nos domiciles et l'école). Matlab ont quelques problèmes à régler sur leur version en ligne ceci-dit... Bref, certains graphiques ont été refaits au propre grâce à du code matlab et à l'aide de l'IA notament pour les point (D, E, F). Le point A par exemple nous aurait donné :
+\textbf{NOTE :} Toutes l'analyse à été réalisée sur online MATLAB (dû aux pertes de nos données et la distance entre nos domiciles et l'école). Matlab ont quelques problèmes à régler sur leur version en ligne ceci-dit... Bref, certains graphiques ont été refaits au propre grâce à du code matlab et à l'aide de l'IA générative (Free Online Mistral Chat) notament pour les point (D, E, F, I). Le point A par exemple nous aurait donné :
 
 \begin{figure}[H]
     \centering
@@ -90,7 +102,7 @@ lui qui impose la dynamique la plus lente au système.
     \label{fig:schema1}
 \end{figure}
 
-Or le rendu était plus présentable avec tf() et step(). Dans le doute, la méthodologie employée est explicitée à chaque point.
+Or le rendu était plus présentable avec tf() et step(). Dans le doute, la méthodologie employée est explicitée à chaque point. Fun-fact : simulink online vous impose un clavier inconnu (surement français).
 
 \newpage
 % ============================================================
@@ -168,6 +180,7 @@ sauf que cela est insuffisant ($21{,}9° < 65°$). Nous devons donc réduire le 
 \varphi(\omega) = -\arctan(\omega T_1) - \arctan(\omega T_2) - \arctan(\omega T_3)
 \]
 En reduisant le gain de tel facon, nous trouvons $\omega_c \approx 54$\,rad/s. Par la suite, il faut calcul le module de $G_s$, $|G_s(j\omega_c)|$, tel qu'il suit :
+
 \begin{align}
 |G_s(j \cdot 54)| &=
   \frac{50}{\sqrt{1+(54 \times 0{,}0005)^2}
@@ -240,10 +253,9 @@ $K_\text{entrée}$. On dit merci au régulateur d'être utile.
 % ============================================================
 \section{Point E : Comparaison boucle ouverte vs boucle fermée}
 
-\textit{Méthodologie :} Les deux systèmes (boucle ouverte et boucle fermée) sont
-simulés en parallèle via \texttt{step()} sous MATLAB pour la même entrée échelon,
-sans recours à Simulink ni à Control System Designer. On génère deux figures distinctes :
-d'abord sans $K_e$ pour illustrer l'erreur statique, puis avec $K_e = 1{,}4$ pour la
+Les deux systèmes (boucle ouverte et boucle fermée) sont
+simulés en parallèle via \texttt{step()} sous MATLAB pour la même entrée échelon afin de transposer les résultats obtenus avec Simulink sur un même graphique. On génère deux figures distinctes :
+d'abord sans $K_e$ pour illustrer l'erreur statique puis avec $K_e = 1{,}4$ pour la
 comparaison dynamique.
 
 \subsection{Sans correction $K_e$ (E1)}
@@ -266,22 +278,18 @@ calcul $G_{cl}(0) = 0{,}714$, tandis que la boucle ouverte atteint correctement
 \newpage
 \subsection{Avec correction $K_e = 1{,}4$ (E2)}
 
-La figure~\ref{fig:E2} montre qu'avec $K_e = 1{,}4$, les deux systèmes atteignent
-désormais 50\,rad/s en régime permanent. La boucle fermée (orange) présente une
-dynamique nettement supérieure à la boucle ouverte (bleu) :
-\begin{itemize}
-    \item Temps de réponse à 5\,\% en BF : $t_r \approx 0{,}10$\,s
-          contre $\approx 0{,}50$\,s en BO — gain de rapidité d'un facteur 5.
-    \item Réponse apériodique dans les deux cas (pas de dépassement),
-          ce qui confirme $\varphi_m > 65°$.
-    \item La BO est dominée par le pôle lent $T_3 = 0{,}1$\,s ;
-          la BF déplace les pôles dominants plus loin dans le demi-plan gauche.
-\end{itemize}
+Nous pouvons voir sur Fig. \ref{fig:E2} qu'avec $K_e = 1{,}4$, les deux systèmes atteignent
+désormais 50\,rad/s en régime permanent. Douce magie. La boucle fermée (rouge) présente une
+dynamique nettement supérieure à la boucle ouverte (bleu).
+
+\\\\
+En effet, le temps de réponse à 5\,\% en BF et vaut $\approx 0{,}10$\,s contre $\approx 0{,}50$\,s en BO, soit 5x plus élevé.
+La réponse reste apériodique dans les deux cas ce qui confirme que $\varphi_m > 65°$. La boucle ouverte est dominée par le pôle lent $T_3 = 0{,}1$\,s
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{E2.png}
-    \caption{Comparaison BO (bleu) vs BF (orange) avec correction $K_e = 1{,}4$.
+    \caption{Comparaison BO (bleu) vs BF (rouge) avec correction $K_e = 1{,}4$.
              Les deux atteignent 50\,rad/s, mais la BF est $5\times$ plus rapide
              ($t_r \approx 0{,}1$\,s vs $0{,}5$\,s).}
     \label{fig:E2}
@@ -289,63 +297,51 @@ dynamique nettement supérieure à la boucle ouverte (bleu) :
 
 \newpage
 % ============================================================
-% POINT F : EFFET D'UNE PERTURBATION DE 1 MNM
+% POINT F : EFFET D'UNE PERTURBATION DE 1 mNm
 % ============================================================
-\section{Point F : Effet d'une perturbation de \SI{1}{mNm}}
+\section{Point F : Effet d'une perturbation de \SI{1}{\milli\newton\metre}}
 
-\textit{Méthodologie :} La fonction de transfert perturbation$\to$sortie est calculée
+La fonction de transfert perturbation$\to$sortie est calculée
 analytiquement via le principe de superposition. La réponse à la perturbation est
 simulée séparément avec \texttt{step()} puis ajoutée à la réponse de consigne avec un
-décalage temporel de 1\,s. Le graphique superpose BO et BF sur la même figure avec
+décalage temporel de \SI{1}{\second}. Le graphique superpose BO et BF sur la même figure avec
 annotations des déviations statiques. Le schéma Simulink correspondant est présenté
 à la figure~\ref{fig:schema3}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.45]{schema3.png}
-    \caption{Schéma Simulink avec injection de perturbation (Step à $t = 1$\,s).
-             Voie haute : boucle ouverte. Voie basse : boucle fermée avec $K_P$ et $K_e$.}
+    \caption{Schéma Simulink avec injection de perturbation (Step à $t = \SI{1}{\second}$).}
     \label{fig:schema3}
 \end{figure}
 
-Une perturbation $d = 1$\,mNm $= 10^{-3}$\,N·m est injectée au nœud de sommation
-situé entre les blocs $K_{s1}/(1+sT_1)$ et $K_{s2}$, conformément au schéma du sujet.
 La fonction de transfert perturbation$\to$sortie en boucle fermée avec régulateur P est :
 \[
 H_\text{pert}(s) =
   \frac{\dfrac{K_{s2}}{(1+sT_2)(1+sT_3)}}{1 + K_P \cdot G_s(s)}
 \]
 
-En régime permanent (théorème de la valeur finale pour un échelon de perturbation
-$P_\text{pert} = 10^{-3}$\,N·m) :
+En régime permanent :
 \[
 \Delta Y_{\infty,\,\text{BF}} =
   H_\text{pert}(0) \cdot P_\text{pert} =
   \frac{K_{s2} \cdot P_\text{pert}}{1 + K_P \cdot K_s} =
   \frac{25000 \times 10^{-3}}{1 + 0{,}05 \times 50} =
-  \frac{25}{3{,}5} \approx +7{,}1\ \text{rad/s}
+  \frac{25}{3{,}5} \approx +\SI{7,1}{\radian\per\second}
 \]
 \[
 \Delta Y_{\infty,\,\text{BO}} =
-  K_{s2} \cdot P_\text{pert} = 25000 \times 10^{-3} = +25\ \text{rad/s}
+  K_{s2} \cdot P_\text{pert} = 25000 \times 10^{-3} = +\SI{25}{\radian\per\second}
 \]
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{F.png}
-    \caption{Effet de la perturbation de 1\,mNm à $t = 1$\,s en BO et BF.
-             BF : déviation $\approx +7{,}1$\,rad/s. BO : déviation $\approx +25$\,rad/s.}
+    \caption{Effet de la perturbation de \SI{1}{\milli\newton\metre} à $t = \SI{1}{\second}$ (BF bleu, BO rouge).}
     \label{fig:F}
 \end{figure}
 
-La figure~\ref{fig:F} met en évidence l'effet de la perturbation. En boucle fermée,
-la rétroaction réduit la déviation d'un facteur $(1 + K_P \cdot K_s) = 3{,}5$ par
-rapport à la boucle ouverte, mais l'erreur reste \textit{permanente} : la sortie ne
-revient pas à la consigne. En boucle ouverte, aucun mécanisme de rejet n'existe et la
-déviation atteint directement $+25$\,rad/s. Il faudra une action intégrale pour
-éliminer complètement cette erreur statique résiduelle.
-
-\newpage
+Avec la boucle fermée, la perturbation est moindre : on élimine une grande partie de l'erreur statique, tandis qu'en boucle ouverte, ça part à Bagdad.
 % ============================================================
 % POINT G : DIAGRAMME DE BODE DE G_0(s) = K_P . G_s(s)
 % ============================================================
@@ -367,27 +363,10 @@ La figure~\ref{fig:G} présente le diagramme de Bode de $G_0(s)$ avec $K_P = 0{,
     \label{fig:G}
 \end{figure}
 
-On relève les points suivants, en comparaison avec le schéma 6.12 du polycopié :
-
-\begin{itemize}
-    \item \textbf{Pente à basse fréquence : 0\,dB/dec.} Le gain statique de boucle
-          vaut $G_0(0) = K_P \cdot K_s = 0{,}05 \times 50 = 2{,}5 \approx +8$\,dB.
-          Cette pente nulle est caractéristique d'un \textbf{système de classe 0} :
-          elle implique une erreur statique permanente face à une perturbation échelon,
-          conformément à l'observation du point F. Le schéma 6.12 montre au contraire
-          un profil idéal à $-20$\,dB/dec à basse fréquence (présence d'un intégrateur),
-          ce que notre $G_0$ avec P seul ne possède pas.
-
-    \item \textbf{Fréquence de croisement $\omega_c = 22{,}3$\,rad/s, PM\,=\,101°.}
-          La marge de phase très élevée garantit l'absence de dépassement, mais résulte
-          d'un choix conservatif de $K_P = 0{,}05$ (au lieu de 0,125 calculé au point C).
-          Ce choix ralentit volontairement la dynamique pour bénéficier d'une robustesse
-          accrue.
-
-    \item \textbf{Marge de gain GM\,=\,39{,}4\,dB à 470\,rad/s.} Le système tolère
-          une augmentation de gain d'un facteur $10^{39{,}4/20} \approx 93$ avant
-          d'osciller, ce qui représente une robustesse très importante.
-\end{itemize}
+En comparaison avec le polycop, on constate une pente à basse fréquence de 0\,dB/dec. 
+Elle implique une erreur statique permanente face à une perturbation échelon conformément à l'observation du point F. Le schéma 6.12 montre au contraire
+un profil idéal à $-20$\,dB/dec à basse fréquence (présence d'un intégrateur),
+ce que notre $G_0$ avec P seul ne possède pas.
 
 \newpage
 % ============================================================
@@ -395,19 +374,21 @@ On relève les points suivants, en comparaison avec le schéma 6.12 du polycopi�
 % ============================================================
 \section{Points H \& I : Régulateur PI}
 
-\textit{Méthodologie :} Le choix du régulateur PI découle directement de l'analyse du
-point G : l'absence d'intégrateur dans $G_0$ est la cause de l'erreur statique de
-perturbation. On montre par le théorème de la valeur finale qu'un intégrateur dans la
-boucle annule cette erreur. Le gain $C$ du PI est ensuite déterminé via Control System
-Designer en imposant la compensation du pôle dominant $T_3$ par le zéro du PI.
-Le diagramme de Bode résultant est tracé avec \texttt{margin()} pour vérifier les marges
-obtenues.\\[6pt]
-
 L'erreur statique observée au point F est liée à l'absence d'action intégrale dans le
 régulateur. Pour l'éliminer, il faut que $G_0(j\omega) \to \infty$ quand $\omega \to 0$,
 ce qui s'obtient en ajoutant un pôle en $s = 0$ dans le régulateur.\\[6pt]
+\\\\
 
-\textbf{Lien avec le point G :} sur le diagramme de Bode, l'intégrateur fait passer
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{schema4.png}
+    \caption{Schémas Simulink de référence pour observer les différences entre régulateurs}
+    \label{fig:I}
+\end{figure}
+
+
+Sur le diagramme de Bode, l'intégrateur fait passer
 la pente à basse fréquence de 0\,dB/dec à $-20$\,dB/dec. Cela correspond au profil
 idéal du schéma 6.12 du polycopié. Par le théorème de la valeur finale, l'erreur
 statique face à une perturbation échelon devient nulle :
@@ -430,7 +411,7 @@ alors la dynamique résultante.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{HI.png}
+    \includegraphics[scale=0.35]{HI.png}
     \caption{Diagramme de Bode de $G_0(s) = R_{PI}(s) \cdot G_s(s)$.
              PM\,=\,73,7° à $\omega_c = 27{,}7$\,rad/s, GM\,=\,37{,}3\,dB.
              Pente $-20$\,dB/dec à basse fréquence (intégrateur actif).}
@@ -475,7 +456,7 @@ D = K_P \cdot T_d = 1{,}25 \times 10^{-3}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{JK.png}
+    \includegraphics[scale=0.35]{JK.png}
     \caption{Diagramme de Bode de $G_0(s)$ avec régulateur PID.}
     \label{fig:K}
 \end{figure}
@@ -490,11 +471,6 @@ pulsation de coupure est plus élevée, ce qui accélère la dynamique en boucle
 % COMPARAISON P VS PI VS PID
 % ============================================================
 \section{Comparaison P vs PI vs PID}
-
-\textit{Méthodologie :} Les trois boucles fermées sont simulées en parallèle avec
-\texttt{step()} pour la même consigne. La perturbation de 1\,mNm est ajoutée par
-superposition à $t = 1$\,s sur chaque signal, en utilisant la fonction de transfert
-perturbation$\to$sortie propre à chaque régulateur.\\[6pt]
 
 La figure~\ref{fig:J} compare les réponses temporelles des trois régulateurs face
 à une perturbation de 1\,mNm appliquée à $t = 1$\,s :
@@ -512,7 +488,7 @@ La figure~\ref{fig:J} compare les réponses temporelles des trois régulateurs f
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{all.png}
+    \includegraphics[scale=0.4]{all.png}
     \caption{Comparaison des réponses temporelles avec régulateurs P, PI et PID
              face à une perturbation de 1\,mNm à $t = 1$\,s.}
     \label{fig:J}
@@ -527,25 +503,63 @@ La figure~\ref{fig:J} compare les réponses temporelles des trois régulateurs f
 Ce laboratoire a permis d'étudier et de comparer l'effet des régulateurs P, PI et PID
 sur un système d'entraînement électrique rotatif du troisième ordre, en utilisant la
 méthode de Bode comme outil de dimensionnement.
-
-Le \textbf{régulateur P}, dimensionné pour une marge de phase de 65°
-($K_P \approx 0{,}125$ à $\omega_c = 54$\,rad/s), améliore significativement la rapidité
+\\\\
+Le régulateur P est dimensionné pour une marge de phase de 65°
+($K_P \approx 0{,}125$ à $\omega_c = 54$\,rad/s). Il améliore significativement la rapidité
 de la boucle fermée par rapport à la boucle ouverte (temps de réponse divisé par 5).
-Une valeur plus conservative $K_P = 0{,}05$ (PM\,=\,101°) a été retenue en simulation.
 Cependant, le régulateur P laisse subsister une erreur statique permanente face aux
 perturbations : le gain de boucle étant fini à fréquence nulle (système de classe 0,
 pente 0\,dB/dec sur le Bode), le rejet est partiel.
-
-L'ajout du terme intégrateur (\textbf{régulateur PI} avec $T_n = T_3 = 0{,}1$\,s)
+\\\\
+L'ajout du terme intégrateur (régulateur PI) avec $T_n = T_3 = 0{,}1$\,s)
 résout ce problème en portant le gain de boucle à l'infini en régime stationnaire
 (classe 1, pente $-20$\,dB/dec). La marge de phase obtenue (PM\,=\,73{,}7°
 à $\omega_c = 27{,}7$\,rad/s) garantit l'absence de dépassement et un rejet complet
 des perturbations échelon.
-
-Enfin, le \textbf{régulateur PID} améliore encore la dynamique en compensant le second
+\\\\
+Enfin, le régulateur PID améliore encore la dynamique en compensant le second
 pôle $T_2$ via le terme dérivateur, tout en conservant les propriétés de rejet du PI.
-La méthode de Bode s'avère un outil puissant et systématique pour le dimensionnement
-de ces régulateurs, permettant de relier directement les marges de stabilité aux
+A.K.A Bode c'est le G.O.A.T. Il permet de relier directement les marges de stabilité aux
 performances temporelles du système.
+
+\newpage
+\section{annexes}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.65]{code1.png}
+    \caption{première partie du code matlab}
+    \label{fig:J}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.65]{code2.png}
+    \caption{Deuxième partiedu code matlab}
+    \label{fig:J}
+\end{figure}
+\newpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.65]{code3.png}
+    \caption{Troisième partie du code matlab}
+    \label{fig:J}
+\end{figure}
+\newpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.65]{code4.png}
+    \caption{Quatrième partie du code matlab}
+    \label{fig:J}
+\end{figure}
+\newpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.65]{code5.png}
+    \caption{Cinquième partie du code matlab}
+    \label{fig:J}
+\end{figure}
 
 \end{document}

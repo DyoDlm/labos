@@ -181,267 +181,40 @@ No file main.aux.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
 nary-french.trsl) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) [1{/var/lib/texmf/fo
-nts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-
-super-t1.enc}]
-No file main.toc.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 56--64
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--85
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--85
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
-[3{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./ressources/La
-b3Figures/what.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd)
 
-LaTeX Warning: Reference `fig:schema1' on page 4 undefined on input line 105.
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
 
-Overfull \hbox (81.3623pt too wide) in paragraph at lines 111--112
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
-LaTeX Warning: Reference `fig:A' on page 4 undefined on input line 123.
 
-[4 <./ressources/Lab3Figures/schema1.png> <./ressources/Lab3Figures/A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
 
-LaTeX Warning: Reference `fig:A' on page 5 undefined on input line 145.
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
-[5]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 151.
+! LaTeX Error: There's no line here to end.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 151.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 156.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 156.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 161.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 161.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Reference `fig:C' on page 6 undefined on input line 161.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 163.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 163.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-Missing character: There is no ° in font cmr10!
-[6 <./ressources/Lab3Figures/C0.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 202.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 202.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 202.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--208
-
-
-LaTeX Warning: Reference `fig:schema2' on page 7 undefined on input line 230.
-
-[7 <./ressources/Lab3Figures/schema2.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 253.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 253.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 253.
-
-
-LaTeX Warning: Reference `fig:E1' on page 8 undefined on input line 255.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 270.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 270.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 270.
-
-
-LaTeX Warning: Reference `fig:E2' on page 8 undefined on input line 272.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 279.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 279.
-
-Missing character: There is no ° in font cmr10!
-[8 <./ressources/Lab3Figures/E1.png>] [9 <./ressources/Lab3Figures/E2.png>]
-
-LaTeX Warning: Reference `fig:schema3' on page 10 undefined on input line 304.
-
-
-Overfull \hbox (88.13094pt too wide) in paragraph at lines 308--310
- [][] 
-[10 <./ressources/Lab3Figures/schema3.png>]
-
-LaTeX Warning: Reference `fig:F' on page 11 undefined on input line 344.
-
-[11 <./ressources/Lab3Figures/F.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cdot' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 355.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 357--362
-
-
-LaTeX Warning: Reference `fig:G' on page 12 undefined on input line 363.
-
-[12 <./ressources/Lab3Figures/G.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 401--408
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 409--412
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 444.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 444.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 446.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 446.
-
-Missing character: There is no ° in font cmr10!
-[13 <./ressources/Lab3Figures/HI.png>] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 458--465
-
-[15 <./ressources/Lab3Figures/JK.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 497--501
-
-
-LaTeX Warning: Reference `fig:J' on page 16 undefined on input line 502.
-
-[16 <./ressources/Lab3Figures/all.png>] [17] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
- )
-(see the transcript file for additional information)</usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-bx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sftt1095.pfb>
-Output written on main.pdf (17 pages, 1462494 bytes).
-Transcript written on main.log.
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \\\\
+         
+? OK, entering \batchmodeThis is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
 (./main.tex
@@ -618,6 +391,24 @@ zlibraryquotes.code.tex)
 
 LaTeX Warning: Label `fig:schema1' multiply defined.
 
+
+LaTeX Warning: Label `fig:I' multiply defined.
+
+
+LaTeX Warning: Label `fig:J' multiply defined.
+
+
+LaTeX Warning: Label `fig:J' multiply defined.
+
+
+LaTeX Warning: Label `fig:J' multiply defined.
+
+
+LaTeX Warning: Label `fig:J' multiply defined.
+
+
+LaTeX Warning: Label `fig:J' multiply defined.
+
 ) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -628,218 +419,37 @@ LaTeX Warning: Label `fig:schema1' multiply defined.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
 nary-french.trsl) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) [1{/var/lib/texmf/fo
-nts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-
-super-t1.enc}] (./main.toc) [2]
-Underfull \hbox (badness 10000) in paragraph at lines 56--64
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--85
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--85
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
-[3{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./ressources/La
-b3Figures/what.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd)
-Overfull \hbox (81.3623pt too wide) in paragraph at lines 111--112
- [][] 
-[4 <./ressources/Lab3Figures/schema1.png> <./ressources/Lab3Figures/A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
-[5]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
 
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 151.
 
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
 
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
 
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 151.
 
+! LaTeX Error: There's no line here to end.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 156.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 156.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 161.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 161.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 163.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 163.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 166.
-
-Missing character: There is no ° in font cmr10!
-[6 <./ressources/Lab3Figures/C0.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 202.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 202.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 202.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--208
-
-[7 <./ressources/Lab3Figures/schema2.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 253.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 253.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 253.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 270.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 270.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 270.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 279.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 279.
-
-Missing character: There is no ° in font cmr10!
-[8 <./ressources/Lab3Figures/E1.png>] [9 <./ressources/Lab3Figures/E2.png>]
-Overfull \hbox (88.13094pt too wide) in paragraph at lines 308--310
- [][] 
-[10 <./ressources/Lab3Figures/schema3.png>] [11 <./ressources/Lab3Figures/F.png
->]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cdot' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 355.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 357--362
-
-[12 <./ressources/Lab3Figures/G.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 401--408
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 409--412
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 444.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 444.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 446.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 446.
-
-Missing character: There is no ° in font cmr10!
-[13 <./ressources/Lab3Figures/HI.png>] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 458--465
-
-[15 <./ressources/Lab3Figures/JK.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 497--501
-
-[16 <./ressources/Lab3Figures/all.png>] [17] (./main.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- )
-(see the transcript file for additional information)</usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-bx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sftt1095.pfb>
-Output written on main.pdf (17 pages, 1469212 bytes).
-Transcript written on main.log.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \\\\
+         
+? OK, entering \batchmode

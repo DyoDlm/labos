@@ -6,10 +6,11 @@
 \contentsline {section}{\numberline {5}Point D : Gain d'entrée et correction $K_e$}{7}{section.5}%
 \contentsline {section}{\numberline {6}Point E : Comparaison boucle ouverte vs boucle fermée}{8}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Sans correction $K_e$ (E1)}{8}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Avec correction $K_e = 1{,}4$ (E2)}{8}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Point F : Effet d'une perturbation de \SI {1}{mNm}}{10}{section.7}%
-\contentsline {section}{\numberline {8}Point G : Diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$}{12}{section.8}%
-\contentsline {section}{\numberline {9}Points H \& I : Régulateur PI}{13}{section.9}%
-\contentsline {section}{\numberline {10}Points J \& K : Régulateur PID}{15}{section.10}%
-\contentsline {section}{\numberline {11}Comparaison P vs PI vs PID}{16}{section.11}%
-\contentsline {section}{\numberline {12}Conclusion}{17}{section.12}%
+\contentsline {subsection}{\numberline {6.2}Avec correction $K_e = 1{,}4$ (E2)}{9}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Point F : Effet d'une perturbation de \SI {1}{\milli \newton \metre }}{10}{section.7}%
+\contentsline {section}{\numberline {8}Point G : Diagramme de Bode de $G_0(s) = K_P \cdot G_s(s)$}{11}{section.8}%
+\contentsline {section}{\numberline {9}Points H \& I : Régulateur PI}{12}{section.9}%
+\contentsline {section}{\numberline {10}Points J \& K : Régulateur PID}{14}{section.10}%
+\contentsline {section}{\numberline {11}Comparaison P vs PI vs PID}{15}{section.11}%
+\contentsline {section}{\numberline {12}Conclusion}{16}{section.12}%
+\contentsline {section}{\numberline {13}annexes}{17}{section.13}%
