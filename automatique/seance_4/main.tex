@@ -117,9 +117,7 @@ dont les paramètres sont définis tel que
 \]
 
 % --------------------------------------------------------------------------
-\section{A : Fonction de transfert du système}
-
-\subsection{Gain statique global en boucle ouverte (TO CHECK)}
+\section{A : Fonction de transfert du système (TO CHECK)}
 
 En négligeant le régulateur pour l'instant, la chaîne directe est :
 
@@ -144,9 +142,7 @@ Alors, la fonction de transfert en boucle ouverte est :
 \]
 
 % --------------------------------------------------------------------------
-\section{Tâche B -- Dimensionnement du régulateur}
-
-\subsection{Cahier des charges}
+\section{B : Dimensionnement du régulateur}
 
 Nous souhaitons un dépassement maximal de $D \leq 5\,\%$ sur la réponse indicielle avec un écart statique nul.
 
@@ -157,62 +153,36 @@ Cela nous pousse à choisir un régulateur PI, car il permet d'annuler l'écart 
   G_R(s) = K_p \left(1 + \frac{1}{T_n s}\right) = \frac{K_p (1 + T_n s)}{T_n s}
 \]
 
-\subsection{Méthode de compensation de pôle dominant}
+Pour compenser le pôle dominant, nous choisissons $T_n = T_1 = 8 \cdot 10^{-3}$\,s. La boucle ouverte compensée devient un système du premier ordre avec intégration :
 
-On choisit $T_n = T_1 = 8 \cdot 10^{-3}$\,s afin de compenser le pôle dominant du moteur.
-La boucle ouverte compensée devient un système du premier ordre avec intégration :
-
-\begin{equation}
+\[
   G_{\text{BO,comp}}(s) = \frac{K_p \cdot K_s}{T_n \cdot s \cdot (1 + s \cdot 10^{-3})}
   \approx \frac{K_p \cdot K_s}{T_n \cdot s}
   \quad \text{(pour } \omega \ll 1000\,\text{rad/s)}
-\end{equation}
+\]
 
-\subsection{Calcul de $K_p$ via le critère de phase}
+Un dépassement de 5\,\% correspond à un facteur d'amortissement $\zeta \approx 0{,}69$, soit une marge de phase $\varphi_m \approx 65^{\circ}$.
 
-Un dépassement de 5\,\% correspond à un facteur d'amortissement $\zeta \approx 0{,}69$, soit une marge
-de phase $\varphi_m \approx 65^{\circ}$.
+En appliquant la méthode de Bode avec le modèle de second ordre équivalent, on obtient la constante intégrale :
 
-En appliquant la méthode de Bode avec le modèle de second ordre équivalent, on obtient la constante
-intégrale :
-
-\begin{equation}
+\[
   T_i = 2 \cdot K_s \cdot T_2
-\end{equation}
+\]
 
-où $T_2 = 1 \cdot 10^{-3}$\,s (constante de temps de l'amplificateur, cas sans retard). Numériquement :
+où $T_2 = 1 \cdot 10^{-3}$\,s déterminer directement la constante de temps de l'amplificateur. Nous obtenons alors numériquement pour $T_i$ et $K_p$ :
 
-\begin{equation}
+\[
   T_i = 2 \cdot 1{,}008 \cdot 1 \cdot 10^{-3} \approx 2{,}016 \cdot 10^{-3}\,\text{s}
-\end{equation}
+\]
 
-\begin{equation}
+\[
   K_p = \frac{T_n}{T_i} = \frac{8 \cdot 10^{-3}}{2{,}016 \cdot 10^{-3}} \approx 3{,}97
-\end{equation}
-
-\subsection{Résumé des paramètres du régulateur PI}
-
-\begin{table}[H]
-  \centering
-  \caption{Paramètres du régulateur PI (sans retard)}
-  \begin{tabular}{lll}
-    \toprule
-    Paramètre & Valeur & Description \\
-    \midrule
-    $T_n$ & $8 \cdot 10^{-3}$ s & Temps d'action intégrale \\
-    $T_i$ & $\approx 2{,}016 \cdot 10^{-3}$ s & Constante de temps intégrale \\
-    $K_p$ & $\approx 3{,}97$ & Gain proportionnel \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
+\]
+\newpage
 % --------------------------------------------------------------------------
-\section{Tâche C -- Simulation Simulink (sans retard)}
+\section{C : Simulation Simulink}
 
-\subsection{Schéma Simulink}
-
-La boucle de régulation a été modélisée sous Simulink avec le régulateur PI calculé ci-dessus.
-La figure~\ref{fig:schema_simulink} présente le schéma bloc utilisé.
+La boucle de régulation a été modélisée sous Simulink avec le régulateur PI calculé précédemment est visible sur Fig. \ref{fig:schema_simulink}.
 
 \begin{figure}[H]
   \centering
@@ -220,18 +190,7 @@ La figure~\ref{fig:schema_simulink} présente le schéma bloc utilisé.
   \caption{Schéma Simulink de la boucle de régulation de vitesse}
   \label{fig:schema_simulink}
 \end{figure}
-
-\subsection{Réponse indicielle simulée}
-
-Un échelon de consigne de 0 à 10\,rad/s est appliqué. La figure~\ref{fig:B_step} montre la réponse
-indicielle théorique obtenue par simulation.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.75\textwidth]{B_step_(G_th).png}
-  \caption{Réponse indicielle simulée -- régulateur PI sans retard}
-  \label{fig:B_step}
-\end{figure}
+Un échelon de consigne de 0 à 10\,rad/s est appliqué. Fig. \ref{fig:step_dep} montre la réponse indicielle théorique obtenue par la simulation Simulink.
 
 \begin{figure}[H]
   \centering
@@ -240,27 +199,23 @@ indicielle théorique obtenue par simulation.
   \label{fig:step_dep}
 \end{figure}
 
-\subsection{Performances obtenues}
-
-\begin{table}[H]
+\newpage
+Dont nous pouvons visualiser les paramètres depuis Matlab sur Fig. \ref{fig:B_step}.
+\begin{figure}[H]
   \centering
-  \caption{Performances de la simulation (tâche C)}
-  \begin{tabular}{lll}
-    \toprule
-    Critère & Valeur obtenue & Cahier des charges \\
-    \midrule
-    Dépassement & $\leq 5\,\%$ & $\leq 5\,\%$ \checkmark \\
-    Écart statique & 0 & 0 \checkmark \\
-    Temps de réponse à 5\,\% & $T_r \approx 6 \cdot 10^{-3}$\,s & -- \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+    \includegraphics[scale=0.6]{B_step.png}
+    \caption{Réponse indicielle simulée}
+  \label{fig:B_step}
+\end{figure}
 
-Le temps de réponse à 5\,\% vaut environ $T_r \approx 6$\,ms, ce qui est cohérent avec les constantes
-de temps du système ($T_1 = 8$\,ms).
+Le temps de réponse à 5\,\% vaut environ $T_r \approx 6$\,ms, ce qui est cohérent avec les constantes de temps du système obtenues théoriquement par :
+\[
+    hello = completer
+\]
 
+\newpage
 % --------------------------------------------------------------------------
-\section{Tâche D -- Tension de commande $u_{cm}$}
+\section{D : Tension de commande $u_{cm}$}
 
 La figure~\ref{fig:step_commande} montre l'évolution de la tension de commande $u_{cm}$ lors de l'application
 de l'échelon de consigne (0 à 10\,rad/s).
@@ -277,79 +232,38 @@ acceptable de l'amplificateur (typiquement $\pm 10$\,V), ce qui signifie que le 
 pas lors du démarrage. La commande est donc pleinement linéaire et les performances simulées sont
 représentatives du comportement réel attendu.
 
+\newpage
 % --------------------------------------------------------------------------
-\section{Tâches E-F-G -- Implémentation sur l'installation réelle}
+\section{E-F-G-H-I : Implémentation sur l'installation réelle}
 
-\subsection{Implémentation}
-
-Le schéma Simulink \texttt{SIRAu\_PI\_vit.mdl} a été adapté pour intégrer le régulateur PI dimensionné.
-Les paramètres ont été chargés via le script \texttt{Param\_PI\_Vit.m} (voir extrait en
-annexe~\ref{ann:code}). Le code a ensuite été compilé sous MATLAB 2016a et chargé sur le PC cible
-via xPC-Target.
-
-\subsection{Résultats expérimentaux (sans retard, $T_2 = 1$\,ms)}
-
-La figure~\ref{fig:G_pratique} présente la réponse en vitesse mesurée sur l'installation réelle.
+Le schéma Simulink \texttt{SIRAu\_PI\_vit.mdl} a été adapté pour intégrer le régulateur PI dimensionné. Les paramètres ont été chargés via le script \texttt{Param\_PI\_Vit.m} compilé run l'expérience sur le PC cible (xPcx quelque chose...).
+\\\\
+L'expérience sur le PC cible controlant le montage à donc permit de mesurer la réponse en vitesse mesurée sur l'installation réelle. Cela est visible sur Fig. \ref{fig:G_pratique}.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.75\textwidth]{G_fig_pratique.png}
+  \includegraphics[scale=0.8]{G_fig_pratique.png}
   \caption{Réponse expérimentale -- régulateur PI ($T_2 = 1$\,ms)}
   \label{fig:G_pratique}
 \end{figure}
 
-\subsection{Analyse}
 
-Le dépassement observé expérimentalement est d'environ \textbf{7--8\,\%}, contre 5\,\% visé en
-simulation. Plusieurs raisons expliquent cet écart :
+\newpage
 
-\begin{itemize}
-  \item \textbf{Frottements du moteur} : non modélisés dans la fonction de transfert linéaire, les
-    frottements secs ralentissent le moteur en basse vitesse mais n'amortissent pas efficacement
-    le dépassement. Ils introduisent une non-linéarité qui modifie le comportement réel par rapport
-    au modèle.
-  \item \textbf{Retard non pris en compte} : le système réel présente un retard de traitement
-    (calcul numérique, conversion CAN/CNA) qui dégrade la marge de phase et augmente le dépassement.
-  \item \textbf{Discrétisation} : le régulateur est implémenté en temps discret ($T_E = 1$\,ms),
-    ce qui introduit un demi-pas de retard supplémentaire.
-\end{itemize}
+Le dépassement observé expérimentalement est d'environ \textbf{7--8\,\%}, contre 5\,\% visé avec le modèle initial. De plus, la qu'avec Simulink (voir Fig. \ref{fig:HI_th2}), nous n'obtenons non-pas $\approx$ 8 \%, mais $\approx$ 15\% de dépassement alors que nous sommes sensés obtenir la même valeur.
 
-Malgré cela, le comportement reste globalement satisfaisant : l'écart statique est nul et la réponse
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.8]{fig_HI_theorique.png}
+  \caption{Réponse simulée complète avec retard (vue globale)}
+  \label{fig:HI_th2}
+\end{figure}
+
+Le gain statique semble être surdimensionné, or les frottements du moteurs sont sensés baisser le gain. Les frottements ralentissent le moteur en basse vitesse mais n'amortissent pas efficacement le dépassement. Ces derniers n'ont pas étés modélisés correctement dans la fonction de transfert du système. Mais comme le montage est vieux, il se peut que le gain du moteur soit plus bas que prévu. Ainsi il vient compenser celui du régulateur et nous obtenons malgré-tout un dépassement relativement juste. L'écart statique est nul et la réponse
 converge correctement vers la consigne.
-
-% --------------------------------------------------------------------------
-\section{Tâche H -- Redimensionnement avec prise en compte du retard}
-
-\subsection{Modélisation du retard}
-
-Un retard de $\tau = 0{,}5$\,ms est introduit dans la boucle (figure~\ref{fig:schema_retard}).
+\\\\
+Pour palier à ce problème, un retard de $\tau = 0{,}5$\,ms est introduit dans la boucle (voir Fig. \ref{fig:HI_th}).
 Ce retard est approximé par une cellule du premier ordre de constante de temps $\tau = 0{,}5$\,ms :
-
-\begin{equation}
-  e^{-\tau s} \approx \frac{1}{1 + \tau s} = \frac{1}{1 + 5 \cdot 10^{-4} s}
-\end{equation}
-
-Ce retard dégrade la marge de phase et nécessite de recalculer le gain $K_p$.
-
-\subsection{Nouveau dimensionnement}
-
-Avec la prise en compte du retard, la constante de temps effective augmente. On prend désormais
-$T_2 = 1{,}5 \cdot 10^{-3}$\,s (somme de la constante de temps de l'amplificateur et du retard) :
-
-\begin{equation}
-  T_i^{\text{new}} = 2 \cdot K_s \cdot T_2 = 2 \cdot 1{,}008 \cdot 1{,}5 \cdot 10^{-3}
-  \approx 3{,}024 \cdot 10^{-3}\,\text{s}
-\end{equation}
-
-\begin{equation}
-  K_p^{\text{new}} = \frac{T_n}{T_i^{\text{new}}} = \frac{8 \cdot 10^{-3}}{3{,}024 \cdot 10^{-3}}
-  \approx 2{,}65
-\end{equation}
-
-Le gain proportionnel est donc réduit par rapport au cas sans retard, ce qui est cohérent : on
-sacrifie une partie de la rapidité pour retrouver la marge de phase souhaitée.
-
-\subsection{Simulation avec retard}
 
 \begin{figure}[H]
   \centering
@@ -358,20 +272,29 @@ sacrifie une partie de la rapidité pour retrouver la marge de phase souhaitée.
   \label{fig:HI_th}
 \end{figure}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.75\textwidth]{fig_HI_theorique.png}
-  \caption{Réponse simulée complète avec retard (vue globale)}
-  \label{fig:HI_th2}
-\end{figure}
+\[
+  e^{-\tau s} \approx \frac{1}{1 + \tau s} = \frac{1}{1 + 5 \cdot 10^{-4} s}
+\]
 
-La simulation confirme que le dépassement est ramené à un niveau acceptable ($\leq 5\,\%$) avec le
+Ce retard dégrade la marge de phase et nécessite de recalculer le gain $K_p$. On prend désormais
+$T_2 = 1{,}5 \cdot 10^{-3}$\,s (somme de la constante de temps de l'amplificateur et du retard) :
+
+\[
+  T_i^{\text{new}} = 2 \cdot K_s \cdot T_2 = 2 \cdot 1{,}008 \cdot 1{,}5 \cdot 10^{-3}
+  \approx 3{,}024 \cdot 10^{-3}\,\text{s}
+\]
+
+\[
+  K_p^{\text{new}} = \frac{T_n}{T_i^{\text{new}}} = \frac{8 \cdot 10^{-3}}{3{,}024 \cdot 10^{-3}}
+  \approx 2{,}65
+\]
+
+Le gain proportionnel est donc réduit par rapport au cas sans retard, ce qui est cohérent : on
+sacrifie une partie de la rapidité pour retrouver la marge de phase souhaitée.
+
+Ainsi, nous observons sur Fig. \ref{fig:H_pratique} que le dépassement est ramené à un niveau acceptable ($\leq 5\,\%$) avec le
 nouveau jeu de paramètres.
 
-% --------------------------------------------------------------------------
-\section{Tâche I -- Résultats expérimentaux avec retard}
-
-\subsection{Résultats}
 
 \begin{figure}[H]
   \centering
@@ -431,41 +354,5 @@ Cette expérience illustre bien l'importance de modéliser correctement tous les
 (y compris les retards de calcul) pour obtenir un comportement en boucle fermée conforme au cahier
 des charges.
 
-% --------------------------------------------------------------------------
-\appendix
-\section{Code MATLAB -- Paramètres du régulateur}
-\label{ann:code}
-
-\begin{lstlisting}[caption={Param\_PI\_Vit.m -- Paramètres du régulateur PI}]
-%% Données pour labo moteur DC vitesse
-%  sur schema SIRAu_PI_vit.mdl
-
-%% Général
-TE = 1e-3;          % Temps d'échantillonnage [s]
-Temps_manip = 5;    % Durée de la manipulation [s]
-
-%% Capteur de vitesse
-Kmes = 10.7e-3;     % Gain tachymètre [V.s/rad]
-
-%% Paramètres du système
-Kmot = 4.53e3;      % Gain moteur [rad/(s.Nm)]
-Kele = 20.8e-3;     % Gain amplificateur [Nm/V]
-T1   = 8e-3;        % Constante de temps moteur [s]
-
-% G (sans retard) :
-% T2 = 1e-3;
-% H (avec retard 0.5 ms) :
-T2 = 0.0015;
-
-Ks = Kmot * Kele * Kmes;  % Gain statique de boucle
-
-%% Dimensionnement du régulateur PI
-Tn = 8e-3;          % Compensation du pôle dominant (= T1)
-Ti = 2 * Ks * T2;   % Constante intégrale [s]
-Kp = Tn / Ti;       % Gain proportionnel
-
-%% Filtre d'entrée
-Kmes_filtre = Kmes;
-\end{lstlisting}
 
 \end{document}
