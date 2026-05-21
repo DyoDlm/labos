@@ -1,0 +1,29 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Description du système}{2}{section.2}%
+\contentsline {section}{\numberline {3}A : Fonction de transfert du système}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Gain statique global en boucle ouverte)}{2}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Tâche B -- Dimensionnement du régulateur}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Cahier des charges}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Choix du type de régulateur}{3}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Méthode de compensation de pôle dominant}{3}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Calcul de $K_p$ via le critère de phase}{3}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Résumé des paramètres du régulateur PI}{4}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Tâche C -- Simulation Simulink (sans retard)}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Schéma Simulink}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Réponse indicielle simulée}{4}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Performances obtenues}{5}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Tâche D -- Tension de commande $u_{cm}$}{6}{section.6}%
+\contentsline {section}{\numberline {7}Tâches E-F-G -- Implémentation sur l'installation réelle}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Implémentation}{6}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Résultats expérimentaux (sans retard, $T_2 = 1$\,ms)}{6}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Analyse}{7}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Tâche H -- Redimensionnement avec prise en compte du retard}{7}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Modélisation du retard}{7}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Nouveau dimensionnement}{8}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Simulation avec retard}{8}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Tâche I -- Résultats expérimentaux avec retard}{9}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Résultats}{9}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Comparaison et analyse}{10}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Conclusion}{10}{section.10}%
+\contentsline {section}{\numberline {A}Code MATLAB -- Paramètres du régulateur}{10}{appendix.A}%
