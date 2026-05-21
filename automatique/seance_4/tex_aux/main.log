@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  21 MAY 2026 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  21 MAY 2026 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,7 +693,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \\\\
+l.150 \\\\
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -706,7 +706,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.150 C
+l.151 C
        ela nous pousse à choisir un régulateur PI, car il permet d'annuler...
 
 Your command was ignored.
@@ -714,107 +714,122 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
  [2] [3]
-<./ressources/images/schema_simulink.png, id=80, 619.56468pt x 246.9225pt>
+<./ressources/images/schema_simulink.png, id=75, 619.56468pt x 246.9225pt>
 File: ./ressources/images/schema_simulink.png Graphic file (type png)
 <use ./ressources/images/schema_simulink.png>
 Package pdftex.def Info: ./ressources/images/schema_simulink.png  used on input
- line 189.
+ line 190.
 (pdftex.def)             Requested size: 386.96027pt x 154.2169pt.
-<./ressources/images/step_depassement_mot.png, id=83, 420.06938pt x 297.36093pt
+<./ressources/images/step_depassement_mot.png, id=78, 420.06938pt x 297.36093pt
 >
 File: ./ressources/images/step_depassement_mot.png Graphic file (type png)
 <use ./ressources/images/step_depassement_mot.png>
 Package pdftex.def Info: ./ressources/images/step_depassement_mot.png  used on 
-input line 197.
+input line 198.
 (pdftex.def)             Requested size: 341.43307pt x 241.6959pt.
  [4 <./ressources/images/schema_simulink.png> <./ressources/images/step_depasse
 ment_mot.png>]
-<./ressources/images/B_step.png, id=94, 713.66624pt x 476.78125pt>
+<./ressources/images/B_step.png, id=89, 713.66624pt x 476.78125pt>
 File: ./ressources/images/B_step.png Graphic file (type png)
 <use ./ressources/images/B_step.png>
-Package pdftex.def Info: ./ressources/images/B_step.png  used on input line 206
+Package pdftex.def Info: ./ressources/images/B_step.png  used on input line 207
 .
 (pdftex.def)             Requested size: 428.20305pt x 286.07095pt.
  [5 <./ressources/images/B_step.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 218.
+(hyperref)                removing `math shift' on input line 219.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 218.
+(hyperref)                removing `subscript' on input line 219.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 218.
+(hyperref)                removing `math shift' on input line 219.
 
-<./ressources/images/step_commande.png, id=102, 420.06938pt x 297.36093pt>
+<./ressources/images/step_commande.png, id=97, 420.06938pt x 297.36093pt>
 File: ./ressources/images/step_commande.png Graphic file (type png)
 <use ./ressources/images/step_commande.png>
 Package pdftex.def Info: ./ressources/images/step_commande.png  used on input l
-ine 225.
+ine 226.
 (pdftex.def)             Requested size: 341.43307pt x 241.6959pt.
  [6 <./ressources/images/step_commande.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-39.
+40.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 239--242
+Underfull \hbox (badness 10000) in paragraph at lines 240--243
 
  []
 
-<./ressources/images/G_fig_pratique.png, id=111, 591.71063pt x 409.53pt>
+<./ressources/images/G_fig_pratique.png, id=106, 591.71063pt x 409.53pt>
 File: ./ressources/images/G_fig_pratique.png Graphic file (type png)
 <use ./ressources/images/G_fig_pratique.png>
 Package pdftex.def Info: ./ressources/images/G_fig_pratique.png  used on input 
-line 245.
+line 246.
 (pdftex.def)             Requested size: 473.36914pt x 327.62444pt.
 
-Overfull \hbox (18.12503pt too wide) in paragraph at lines 245--246
+Overfull \hbox (18.12503pt too wide) in paragraph at lines 246--247
  [][] 
  []
 
  [7 <./ressources/images/G_fig_pratique.png>]
-<./ressources/images/fig_HI_theorique.png, id=120, 419.31656pt x 295.1025pt>
+<./ressources/images/fig_HI_theorique.png, id=115, 419.31656pt x 295.1025pt>
 File: ./ressources/images/fig_HI_theorique.png Graphic file (type png)
 <use ./ressources/images/fig_HI_theorique.png>
 Package pdftex.def Info: ./ressources/images/fig_HI_theorique.png  used on inpu
-t line 257.
+t line 258.
 (pdftex.def)             Requested size: 335.45369pt x 236.0823pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--267
+Underfull \hbox (badness 10000) in paragraph at lines 263--268
 
  []
 
-<./ressources/images/HI_theorique.png, id=122, 711.4078pt x 310.91156pt>
+<./ressources/images/HI_theorique.png, id=117, 711.4078pt x 310.91156pt>
 File: ./ressources/images/HI_theorique.png Graphic file (type png)
 <use ./ressources/images/HI_theorique.png>
 Package pdftex.def Info: ./ressources/images/HI_theorique.png  used on input li
-ne 270.
+ne 271.
 (pdftex.def)             Requested size: 341.43307pt x 149.2216pt.
  [8 <./ressources/images/fig_HI_theorique.png> <./ressources/images/HI_theoriqu
 e.png>]
-<./ressources/images/H_fig_pratique.png, id=132, 593.21625pt x 423.08063pt>
+<./ressources/images/H_fig_pratique.png, id=127, 593.21625pt x 423.08063pt>
 File: ./ressources/images/H_fig_pratique.png Graphic file (type png)
 <use ./ressources/images/H_fig_pratique.png>
 Package pdftex.def Info: ./ressources/images/H_fig_pratique.png  used on input 
-line 301.
+line 302.
 (pdftex.def)             Requested size: 341.43307pt x 243.51479pt.
- [9 <./ressources/images/H_fig_pratique.png>] [10] (./main.aux)
+ [9 <./ressources/images/H_fig_pratique.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 310--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--320
+
+ []
+
+ [10] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A7020F638DC1E201BA0AEF0E48308B9C;1749.
+(rerunfilecheck)             Checksum: D111FFD23EB8F4C498DD88A3FB19F6FE;1509.
  ) 
 Here is how much of TeX's memory you used:
- 16191 strings out of 474222
- 253751 string characters out of 5748733
- 1934975 words of memory out of 5000000
- 38205 multiletter control sequences out of 15000+600000
- 574034 words of font info for 75 fonts, out of 8000000 for 9000
+ 16169 strings out of 474222
+ 253381 string characters out of 5748733
+ 1933975 words of memory out of 5000000
+ 38191 multiletter control sequences out of 15000+600000
+ 573259 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1193b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -824,17 +839,17 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (11 pages, 400245 bytes).
+/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+ftt1200.pfb>
+Output written on main.pdf (11 pages, 382735 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

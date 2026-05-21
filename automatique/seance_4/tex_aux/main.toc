@@ -1,10 +1,9 @@
 \babel@toc {french}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}Description du système}{2}{section.2}%
-\contentsline {section}{\numberline {3}A : Fonction de transfert du système (TO CHECK)}{2}{section.3}%
+\contentsline {section}{\numberline {3}A : Fonction de transfert du système}{2}{section.3}%
 \contentsline {section}{\numberline {4}B : Dimensionnement du régulateur}{3}{section.4}%
 \contentsline {section}{\numberline {5}C : Simulation Simulink}{4}{section.5}%
 \contentsline {section}{\numberline {6}D : Tension de commande $u_{cm}$}{6}{section.6}%
 \contentsline {section}{\numberline {7}E-F-G-H-I : Implémentation sur l'installation réelle}{7}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Comparaison et analyse}{10}{subsection.7.1}%
 \contentsline {section}{\numberline {8}Conclusion}{10}{section.8}%

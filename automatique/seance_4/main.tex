@@ -117,7 +117,7 @@ dont les paramètres sont définis tel que
 \]
 
 % --------------------------------------------------------------------------
-\section{A : Fonction de transfert du système (TO CHECK)}
+\section{A : Fonction de transfert du système}
 
 En négligeant le régulateur pour l'instant, la chaîne directe est :
 
@@ -138,7 +138,8 @@ Alors, la fonction de transfert en boucle ouverte est :
 
 \[
   G_{\text{BO}}(s) = G_R(s) \cdot \frac{K_{\text{élé}} \cdot K_{\text{mot}} \cdot K_{\text{mes}}}
-  {(1 + s \cdot 10^{-3})(1 + s \cdot 8 \cdot 10^{-3})}
+      {(1 + s T_{\text{élé}})(1 + s T_1)} = G_R(s) \cdot \frac{1,008}
+    {(1 + s \cdot 10^{-3})(1 + s \cdot 8 \cdot 10^{-3})}
 \]
 
 % --------------------------------------------------------------------------
