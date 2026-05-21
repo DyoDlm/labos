@@ -303,56 +303,22 @@ nouveau jeu de paramètres.
   \label{fig:H_pratique}
 \end{figure}
 
-\subsection{Comparaison et analyse}
-
-\begin{table}[H]
-  \centering
-  \caption{Comparaison des résultats expérimentaux}
-  \begin{tabular}{lccc}
-    \toprule
-    & \textbf{Simulation} & \textbf{Expérience G} & \textbf{Expérience H} \\
-    & (sans retard) & ($T_2=1$\,ms) & ($T_2=1{,}5$\,ms) \\
-    \midrule
-    Dépassement & $\leq 5\,\%$ & $\approx 7$--$8\,\%$ & $\approx 0\,\%$ \\
-    Écart statique & 0 & 0 & 0 \\
-    Rapidité & $T_r \approx 6$\,ms & bonne & légèrement réduite \\
-    $K_p$ & 3,97 & 3,97 & 2,65 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-La prise en compte du retard dans le dimensionnement (tâche H) a permis d'éliminer le dépassement
-sur l'installation réelle. En revanche, la réponse est légèrement plus lente, ce qui est le compromis
-classique entre rapidité et stabilité (marge de phase).
-
-Les frottements du moteur jouent également un rôle : ils amortissent naturellement les oscillations
-et peuvent expliquer pourquoi le dépassement en G était de 7--8\,\% seulement (et non pas plus
-élevé), et pourquoi en H on observe une réponse sans dépassement alors que la simulation en prédit un
-faible mais non nul.
-
-% --------------------------------------------------------------------------
+\newpage
 \section{Conclusion}
 
 Ce laboratoire a permis d'appliquer une démarche complète de dimensionnement d'un régulateur PI
-pour un moteur à courant continu :
-
-\begin{enumerate}
-  \item La \textbf{fonction de transfert} du système a été établie à partir des modèles linéarisés
-    des différents sous-systèmes.
-  \item Un \textbf{régulateur PI} a été dimensionné par compensation du pôle dominant (méthode de
-    Bode), permettant d'obtenir un dépassement théorique de 5\,\% et un écart statique nul.
-  \item La \textbf{simulation Simulink} a validé les performances ($T_r \approx 6$\,ms,
-    $u_{cm,\text{max}} \approx 0{,}46$\,V, largement dans les limites de l'amplificateur).
-  \item L'\textbf{expérience sur l'installation réelle} a montré un dépassement légèrement supérieur
-    (7--8\,\%) dû principalement au retard numérique et aux frottements non modélisés.
-  \item La \textbf{prise en compte du retard} dans le redimensionnement a conduit à réduire le gain
-    ($K_p : 3{,}97 \to 2{,}65$), ce qui a éliminé le dépassement expérimental au prix d'une légère
-    diminution de la rapidité.
-\end{enumerate}
+pour un moteur à courant continu. Après l'obtention de la fonction de transfert du système, nous avons dimensionné un régulateur PI
+permettant d'obtenir un dépassement théorique de 5\,\% et un écart statique nul. Une simulation Simulink a permit de validr les performances
+($T_r \approx 6$\,ms, $u_{cm,\text{max}} \approx 0{,}46$\,V.
+\\\\
+Afin de vérifier expérimentalement le modèle théorique, l'expérience sur l'installation réelle a montré un dépassement légèrement supérieur
+(7--8\,\%) dû principalement au retard numérique et aux frottements non modélisés. En prenant en compte le retard, 
+le redimensionnement a conduit à réduire le gain
+    ($K_p : 3{,}97 \to 2{,}65$). Cela a éliminé le dépassement expérimental au prix d'une légèrediminution de la rapidité.
+\\\\
 
 Cette expérience illustre bien l'importance de modéliser correctement tous les éléments du système
-(y compris les retards de calcul) pour obtenir un comportement en boucle fermée conforme au cahier
-des charges.
+(y compris les retards de calcul) pour obtenir un comportement en boucle fermée conforme aux attentes.
 
 
 \end{document}
