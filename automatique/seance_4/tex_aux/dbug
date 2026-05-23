@@ -89,7 +89,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 \newpage
+l.80 \newpage
               [1]
 
 ! LaTeX Error: There's no line here to end.
@@ -98,7 +98,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 \\\\
+l.89 \\\\
          
 ? OK, entering \batchmodeThis is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
@@ -191,7 +191,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 \newpage
+l.80 \newpage
               [1]
 
 ! LaTeX Error: There's no line here to end.
@@ -200,6 +200,6 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 \\\\
+l.89 \\\\
          
 ? OK, entering \batchmode

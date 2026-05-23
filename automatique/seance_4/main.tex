@@ -30,6 +30,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
+\rhead{Laboratoire de systèmes asservis}
 \rhead{Dimensionnement d'un regulateur PI pour un moteur à courant continu}
 \lhead{HEPIA}
 \graphicspath{ {./ressources/images/} }
@@ -64,13 +65,11 @@
   \centering
   \vspace*{2cm}
   {\scshape\Large HEPIA \par}
-  \vspace{0.5cm}
-  {\large Automatique \& Régulation\par}
   \vspace{2cm}
   \rule{\linewidth}{0.5pt}\\[0.4cm]
-  {\huge\bfseries Laboratoire \#4\par}
-  \vspace{0.3cm}
-  {\Large\bfseries Dimensionnement d'un régulateur\\pour un moteur à courant continu\par}
+      {\huge\bfseries Laboratoire 4 de systèmes asservis\\}
+  \vspace{1cm}
+        {\Large\bfseries Dimensionnement d'un régulateur PI pour moteur CC}
   \rule{\linewidth}{0.5pt}\\[1.5cm]
   \vfill
   {\large Genève, \today\par}
@@ -83,7 +82,7 @@
 % --------------------------------------------------------------------------
 \section{Introduction}
 
-Les moteurs électriques à courant continu (MCC) sont omniprésents dans l'industrie : robots, véhicules
+Les moteurs électriques à courant continu sont omniprésents dans l'industrie : robots, véhicules
 électriques, systèmes d'entraînement CNC, etc. Ce laboratoire a pour but d'appliquer les méthodes de
 dimensionnement de régulateurs vues en cours afin d'imposer une consigne de vitesse à un tel moteur.
 
@@ -211,7 +210,11 @@ Dont nous pouvons visualiser les paramètres depuis Matlab sur Fig. \ref{fig:B_s
 
 Le temps de réponse à 5\,\% vaut environ $T_r \approx 6$\,ms, ce qui est cohérent avec les constantes de temps du système obtenues théoriquement par :
 \[
-    hello = completer
+  T_{r,\text{th}} 
+  = \frac{3}{\zeta\,\omega_n}
+  = \frac{3}{\zeta}\sqrt{\frac{T_n\,T_2}{K_p\,K_s}}
+  = \frac{3}{0{,}69}\sqrt{\frac{8\cdot10^{-3}\cdot1\cdot10^{-3}}{3{,}97\cdot1{,}008}}
+  \approx 6{,}1\,\text{ms}
 \]
 
 \newpage

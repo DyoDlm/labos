@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  21 MAY 2026 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  23 MAY 2026 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -478,7 +478,7 @@ Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 57.
+Package hyperref Info: Option `colorlinks' set `true' on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
@@ -488,26 +488,26 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Info: Redefining \degres on input line 60.
-LaTeX Info: Redefining \up on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Info: Redefining \degres on input line 61.
+LaTeX Info: Redefining \up on input line 61.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count315
@@ -564,7 +564,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 60.
+Package hyperref Info: Link coloring ON on input line 61.
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -595,7 +595,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 \newpage
+l.80 \newpage
               [1]
 
 ! LaTeX Error: There's no line here to end.
@@ -604,7 +604,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 \\\\
+l.89 \\\\
          
 ? Q
 OK, entering \batchmode...
@@ -615,7 +615,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 L
+l.90 L
       es objectifs de ce rapport sont donc d'établir la fonction de transfe...
 
 Your command was ignored.
@@ -625,7 +625,7 @@ or  <return>  to continue without it.
 ! Display math should end with $$.
 <to be read again> 
                    K
-l.108     $K
+l.107     $K
             _{\text{mot}}$ = $4{,}53 \cdot 10^3$,
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -633,7 +633,7 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.108     $K_
+l.107     $K_
              {\text{mot}}$ = $4{,}53 \cdot 10^3$,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -641,7 +641,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.112     $K_
+l.111     $K_
              {\text{élé}}$ = $20{,}8 \cdot 10^{-3}$,
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -649,7 +649,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.116     $K_
+l.115     $K_
              {\text{mes}}$ = $10{,}7 \cdot 10^{-3}$
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -661,7 +661,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 \]
+l.116 \]
         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -670,7 +670,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.117 \]
+l.116 \]
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -681,7 +681,7 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.117 \]
+l.116 \]
         
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -693,7 +693,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.150 \\\\
+l.149 \\\\
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -706,7 +706,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.151 C
+l.150 C
        ela nous pousse à choisir un régulateur PI, car il permet d'annuler...
 
 Your command was ignored.
@@ -718,49 +718,49 @@ or  <return>  to continue without it.
 File: ./ressources/images/schema_simulink.png Graphic file (type png)
 <use ./ressources/images/schema_simulink.png>
 Package pdftex.def Info: ./ressources/images/schema_simulink.png  used on input
- line 190.
+ line 189.
 (pdftex.def)             Requested size: 386.96027pt x 154.2169pt.
 <./ressources/images/step_depassement_mot.png, id=78, 420.06938pt x 297.36093pt
 >
 File: ./ressources/images/step_depassement_mot.png Graphic file (type png)
 <use ./ressources/images/step_depassement_mot.png>
 Package pdftex.def Info: ./ressources/images/step_depassement_mot.png  used on 
-input line 198.
+input line 197.
 (pdftex.def)             Requested size: 341.43307pt x 241.6959pt.
  [4 <./ressources/images/schema_simulink.png> <./ressources/images/step_depasse
 ment_mot.png>]
 <./ressources/images/B_step.png, id=89, 713.66624pt x 476.78125pt>
 File: ./ressources/images/B_step.png Graphic file (type png)
 <use ./ressources/images/B_step.png>
-Package pdftex.def Info: ./ressources/images/B_step.png  used on input line 207
+Package pdftex.def Info: ./ressources/images/B_step.png  used on input line 206
 .
 (pdftex.def)             Requested size: 428.20305pt x 286.07095pt.
  [5 <./ressources/images/B_step.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 219.
+(hyperref)                removing `math shift' on input line 222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 219.
+(hyperref)                removing `subscript' on input line 222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 219.
+(hyperref)                removing `math shift' on input line 222.
 
 <./ressources/images/step_commande.png, id=97, 420.06938pt x 297.36093pt>
 File: ./ressources/images/step_commande.png Graphic file (type png)
 <use ./ressources/images/step_commande.png>
 Package pdftex.def Info: ./ressources/images/step_commande.png  used on input l
-ine 226.
+ine 229.
 (pdftex.def)             Requested size: 341.43307pt x 241.6959pt.
  [6 <./ressources/images/step_commande.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-40.
+43.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 240--243
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
 
  []
 
@@ -768,10 +768,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--243
 File: ./ressources/images/G_fig_pratique.png Graphic file (type png)
 <use ./ressources/images/G_fig_pratique.png>
 Package pdftex.def Info: ./ressources/images/G_fig_pratique.png  used on input 
-line 246.
+line 249.
 (pdftex.def)             Requested size: 473.36914pt x 327.62444pt.
 
-Overfull \hbox (18.12503pt too wide) in paragraph at lines 246--247
+Overfull \hbox (18.12503pt too wide) in paragraph at lines 249--250
  [][] 
  []
 
@@ -780,10 +780,10 @@ Overfull \hbox (18.12503pt too wide) in paragraph at lines 246--247
 File: ./ressources/images/fig_HI_theorique.png Graphic file (type png)
 <use ./ressources/images/fig_HI_theorique.png>
 Package pdftex.def Info: ./ressources/images/fig_HI_theorique.png  used on inpu
-t line 258.
+t line 261.
 (pdftex.def)             Requested size: 335.45369pt x 236.0823pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--268
+Underfull \hbox (badness 10000) in paragraph at lines 266--271
 
  []
 
@@ -791,7 +791,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--268
 File: ./ressources/images/HI_theorique.png Graphic file (type png)
 <use ./ressources/images/HI_theorique.png>
 Package pdftex.def Info: ./ressources/images/HI_theorique.png  used on input li
-ne 271.
+ne 274.
 (pdftex.def)             Requested size: 341.43307pt x 149.2216pt.
  [8 <./ressources/images/fig_HI_theorique.png> <./ressources/images/HI_theoriqu
 e.png>]
@@ -799,20 +799,20 @@ e.png>]
 File: ./ressources/images/H_fig_pratique.png Graphic file (type png)
 <use ./ressources/images/H_fig_pratique.png>
 Package pdftex.def Info: ./ressources/images/H_fig_pratique.png  used on input 
-line 302.
+line 305.
 (pdftex.def)             Requested size: 341.43307pt x 243.51479pt.
  [9 <./ressources/images/H_fig_pratique.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 310--320
+Underfull \hbox (badness 10000) in paragraph at lines 313--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--320
+Underfull \hbox (badness 10000) in paragraph at lines 313--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--320
+Underfull \hbox (badness 10000) in paragraph at lines 313--323
 
  []
 
@@ -846,7 +846,7 @@ sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/s
 hare/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/typ
 e1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 ftt1200.pfb>
-Output written on main.pdf (11 pages, 382735 bytes).
+Output written on main.pdf (11 pages, 382806 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  152 compressed objects within 2 object streams
