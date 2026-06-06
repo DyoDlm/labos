@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.18)  18 FEB 2026 11:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.28)  6 JUN 2026 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -453,7 +453,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/share/texlive/texmf-dist/tex/latex/gensymb/gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 22.
+Package hyperref Info: Option `colorlinks' set `true' on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
@@ -464,39 +464,27 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `eq:alembert2' multiply defined.
 
-) (./srcs/accoustique/2_description.aux) (./srcs/accoustique/4_resultats.aux)
-(./srcs/electrique/2_description.aux) (./srcs/electrique/4_resultats.aux)
-(./srcs/annexes.aux
-
-LaTeX Warning: Label `fig:r25' multiply defined.
-
-
-LaTeX Warning: Label `fig:r100' multiply defined.
-
-
-LaTeX Warning: Label `fig:r500' multiply defined.
-
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count326
@@ -562,7 +550,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 28.
+Package hyperref Info: Link coloring ON on input line 27.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
@@ -571,15 +559,15 @@ Package hyperref Info: Link coloring ON on input line 28.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \celsius on input line 28.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 28.
+LaTeX Info: Redefining \celsius on input line 27.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 27.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 28.
-Package gensymb Info: Using \Omega for \ohm on input line 28.
+LaTeX Info: Redefining \ohm on input line 27.
+Package gensymb Info: Using \Omega for \ohm on input line 27.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -590,7 +578,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 \newline
+l.34 \newline
              
 ? Q
 OK, entering \batchmode...
@@ -646,9 +634,21 @@ l.3 ...30067 \pm 1771$ $V^2$/$m^2$, $\alpha_U_i_n_
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
+LaTeX Warning: Reference `fig:angle' on page 2 undefined on input line 3.
+
+
+LaTeX Warning: Reference `fig:rhoo' on page 2 undefined on input line 3.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
+
+
+LaTeX Warning: Citation `protocole' on page 2 undefined on input line 20.
+
+
+LaTeX Warning: Citation `protocole' on page 2 undefined on input line 43.
 
  [2
 
@@ -656,582 +656,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
 LaTeX Warning: Citation `protocol' on page 3 undefined on input line 59.
 
-) [3]
-\openout2 = `./srcs/accoustique/2_description.aux'.
 
- (./srcs/accoustique/2_description.tex
-! Double subscript.
-l.5 ...alimente d'une tension crete a crete ($U_p_
-                                                  p$ = 5V). Cela est possibl...
-I treat `x_1_2' essentially like `x_1{}_2'.
+LaTeX Warning: Citation `protocole' on page 3 undefined on input line 82.
 
-<./ressources/images/montage_acc1.png, id=161, 681.54625pt x 483.8075pt>
-File: ./ressources/images/montage_acc1.png Graphic file (type png)
-<use ./ressources/images/montage_acc1.png>
-Package pdftex.def Info: ./ressources/images/montage_acc1.png  used on input li
-ne 9.
-(pdftex.def)             Requested size: 272.61366pt x 193.51956pt.
-<./ressources/images/montage_acc2.png, id=164, 698.61pt x 146.5475pt>
-File: ./ressources/images/montage_acc2.png Graphic file (type png)
-<use ./ressources/images/montage_acc2.png>
-Package pdftex.def Info: ./ressources/images/montage_acc2.png  used on input li
-ne 17.
-(pdftex.def)             Requested size: 419.16924pt x 87.92915pt.
-) [4
 
+LaTeX Warning: Citation `protocole' on page 3 undefined on input line 88.
 
-
- <./ressources/images/montage_acc1.png> <./ressources/images/montage_acc2.png>]
-\openout2 = `./srcs/accoustique/4_resultats.aux'.
-
- (./srcs/accoustique/4_resultats.tex
-
-LaTeX Warning: Reference `eq:lambda' on page 5 undefined on input line 8.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
-
- []
-
-! Double subscript.
-l.32 ...\cdot 10^{2}~\mathrm{m/s}\qquad pour~ c_t_
-                                                  h \approx 343 \mathrm{m/s}.
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-<./ressources/images/accoustique/angle.png, id=174, 569.12625pt x 302.12875pt>
-File: ./ressources/images/accoustique/angle.png Graphic file (type png)
-<use ./ressources/images/accoustique/angle.png>
-Package pdftex.def Info: ./ressources/images/accoustique/angle.png  used on inp
-ut line 38.
-(pdftex.def)             Requested size: 234.8775pt x 124.68958pt.
- [5
-
-
-
- <./ressources/images/accoustique/angle.png>]
-<./ressources/images/accoustique/acc1.png, id=185, 462.528pt x 346.896pt>
-File: ./ressources/images/accoustique/acc1.png Graphic file (type png)
-<use ./ressources/images/accoustique/acc1.png>
-Package pdftex.def Info: ./ressources/images/accoustique/acc1.png  used on inpu
-t line 53.
-(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 54.
-See the caption package documentation for explanation.
-
-<./ressources/images/accoustique/acc2.png, id=188, 462.528pt x 346.896pt>
-File: ./ressources/images/accoustique/acc2.png Graphic file (type png)
-<use ./ressources/images/accoustique/acc2.png>
-Package pdftex.def Info: ./ressources/images/accoustique/acc2.png  used on inpu
-t line 66.
-(pdftex.def)             Requested size: 225.4804pt x 169.11243pt.
-<./ressources/images/accoustique/acc3.png, id=189, 462.528pt x 346.896pt>
-File: ./ressources/images/accoustique/acc3.png Graphic file (type png)
-<use ./ressources/images/accoustique/acc3.png>
-Package pdftex.def Info: ./ressources/images/accoustique/acc3.png  used on inpu
-t line 74.
-(pdftex.def)             Requested size: 225.4804pt x 169.11243pt.
-! Display math should end with $$.
-<to be read again> 
-                   \alpha 
-l.83 	$\alpha
-             _U = 155 \pm 8$ V/m ,\qquad
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.83 	$\alpha
-             _U = 155 \pm 8$ V/m ,\qquad
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Double subscript.
-l.84 	$\alpha_U_
-                ^2$ $= 30067 \pm 1771$ $V^2$/$m^2$,
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Missing { inserted.
-<to be read again> 
-                   ^
-l.84 	$\alpha_U_^
-                 2$ $= 30067 \pm 1771$ $V^2$/$m^2$,
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.84 	$\alpha_U_^2$
-                    $= 30067 \pm 1771$ $V^2$/$m^2$,
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Double subscript.
-l.85 	\qquad $\alpha_U_
-                       i_n_v = 0.21 \pm 0.02$ $V/m$.
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.85 	\qquad $\alpha_U_i_
-                         n_v = 0.21 \pm 0.02$ $V/m$.
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.85 	\qquad $\alpha_U_i_n_
-                           v = 0.21 \pm 0.02$ $V/m$.
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86 \]
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.86 \]
-       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.86 \]
-       
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-) [6 <./ressources/images/accoustique/acc1.png> <./ressources/images/accoustiqu
-e/acc2.png> <./ressources/images/accoustique/acc3.png>]
-\openout2 = `./srcs/electrique/2_description.aux'.
-
- (./srcs/electrique/2_description.tex
-
-LaTeX Warning: Reference `montage_elec' on page 7 undefined on input line 5.
-
-<./ressources/images/montage_elec.png, id=199, 644.4075pt x 483.8075pt>
-File: ./ressources/images/montage_elec.png Graphic file (type png)
-<use ./ressources/images/montage_elec.png>
-Package pdftex.def Info: ./ressources/images/montage_elec.png  used on input li
-ne 15.
-(pdftex.def)             Requested size: 187.89914pt x 141.06833pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 16.
-See the caption package documentation for explanation.
-
-<./ressources/images/rlc.png, id=201, 579.16376pt x 307.1475pt>
-File: ./ressources/images/rlc.png Graphic file (type png)
-<use ./ressources/images/rlc.png>
-Package pdftex.def Info: ./ressources/images/rlc.png  used on input line 32.
-(pdftex.def)             Requested size: 187.89914pt x 99.64835pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 33.
-See the caption package documentation for explanation.
-
-) [7
-
-
-
- <./ressources/images/montage_elec.png> <./ressources/images/rlc.png>]
-\openout2 = `./srcs/electrique/4_resultats.aux'.
-
- (./srcs/electrique/4_resultats.tex
-
-Package caption Warning: \label without proper reference on input line 10.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:r0' on page 8 undefined on input line 5.
-
-<./ressources/images/electrique/r5.png, id=213, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r5.png Graphic file (type png)
-<use ./ressources/images/electrique/r5.png>
-Package pdftex.def Info: ./ressources/images/electrique/r5.png  used on input l
-ine 9.
-(pdftex.def)             Requested size: 303.53633pt x 173.44933pt.
-
-Package caption Warning: \label without proper reference on input line 10.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:r0' on page 8 undefined on input line 14.
-
- [8
-
-
-
- <./ressources/images/electrique/r5.png>]
-<./ressources/images/electrique/r25.png, id=225, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r25.png Graphic file (type png)
-<use ./ressources/images/electrique/r25.png>
-Package pdftex.def Info: ./ressources/images/electrique/r25.png  used on input 
-line 61.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-<./ressources/images/electrique/christophe/r_50.png, id=226, 803.0pt x 504.8862
-5pt>
-File: ./ressources/images/electrique/christophe/r_50.png Graphic file (type png
-)
-<use ./ressources/images/electrique/christophe/r_50.png>
-Package pdftex.def Info: ./ressources/images/electrique/christophe/r_50.png  us
-ed on input line 69.
-(pdftex.def)             Requested size: 225.4804pt x 141.76778pt.
-! Double subscript.
-l.75 ...e attendre la tension d'entree en 10 $V_p_
-                                                  p$ a mesure que $Z_L$ tend...
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-
-LaTeX Warning: Reference `tab:amp' on page 9 undefined on input line 75.
-
-<./ressources/images/electrique/r100.png, id=231, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r100.png Graphic file (type png)
-<use ./ressources/images/electrique/r100.png>
-Package pdftex.def Info: ./ressources/images/electrique/r100.png  used on input
- line 81.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-<./ressources/images/electrique/r500.png, id=232, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r500.png Graphic file (type png)
-<use ./ressources/images/electrique/r500.png>
-Package pdftex.def Info: ./ressources/images/electrique/r500.png  used on input
- line 89.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-
-LaTeX Warning: Reference `tab' on page 9 undefined on input line 95.
-
-
-LaTeX Warning: Reference `eq:' on page 9 undefined on input line 95.
-
-
-LaTeX Warning: Reference `eq:' on page 9 undefined on input line 95.
-
-
-LaTeX Warning: Reference `eq:' on page 9 undefined on input line 95.
-
- [9 <./ressources/images/electrique/r25.png> <./ressources/images/electrique/ch
-ristophe/r_50.png (PNG copy)> <./ressources/images/electrique/r100.png> <./ress
-ources/images/electrique/r500.png>]
-
-Package caption Warning: \label without proper reference on input line 118.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:th' on page 10 undefined on input line 99.
-
-
-LaTeX Warning: Reference `eq:pr' on page 10 undefined on input line 99.
-
-! Double subscript.
-<argument> $\rho _t_
-                    h$
-l.104 ...f{Lien $Z_C , Z_L$} & \textbf{$\rho_t_h$}
-                                                   & \textbf{$\rho_m_e_s$} \\
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-<argument> $\rho _m_
-                    e_s$
-l.104 ...extbf{$\rho_t_h$} & \textbf{$\rho_m_e_s$}
-                                                   \\
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-<argument> $\rho _m_e_
-                      s$
-l.104 ...extbf{$\rho_t_h$} & \textbf{$\rho_m_e_s$}
-                                                   \\
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.108 \hline
-            
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.108 \hline
-            
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.108 \hline
-            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.108 \hline
-            
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-LaTeX Warning: Reference `eq:rho' on page 10 undefined on input line 122.
-
-<./ressources/images/rho.png, id=247, 578.16pt x 361.35pt>
-File: ./ressources/images/rho.png Graphic file (type png)
-<use ./ressources/images/rho.png>
-Package pdftex.def Info: ./ressources/images/rho.png  used on input line 126.
-(pdftex.def)             Requested size: 219.70308pt x 137.31442pt.
-! Double subscript.
-l.133 ...de $\alpha_U = 155 \pm 8$ V/m, $\alpha_U_
-                                                  ^2$ $= 30067 \pm 1771$ $V^...
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Missing { inserted.
-<to be read again> 
-                   ^
-l.133 ...e $\alpha_U = 155 \pm 8$ V/m, $\alpha_U_^
-                                                  2$ $= 30067 \pm 1771$ $V^2...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.133 ...$\alpha_U = 155 \pm 8$ V/m, $\alpha_U_^2$
-                                                   $= 30067 \pm 1771$ $V^2$/...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Double subscript.
-l.133 ...= 30067 \pm 1771$ $V^2$/$m^2$, $\alpha_U_
-                                                  i_n_v = 0.21 \pm 0.02$ $V/...
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.133 ...30067 \pm 1771$ $V^2$/$m^2$, $\alpha_U_i_
-                                                  n_v = 0.21 \pm 0.02$ $V/m$...
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.133 ...067 \pm 1771$ $V^2$/$m^2$, $\alpha_U_i_n_
-                                                  v = 0.21 \pm 0.02$ $V/m$ (...
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-) [10 <./ressources/images/rho.png>]
-\openout2 = `./srcs/annexes.aux'.
-
- (./srcs/annexes.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--9
-\OT1/cmtt/m/n/12 https://courselectronique.wordpress.com/etude-des-circuits/
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13                 P
-                      rotocole de laboratoire, \textit{Hepia, cours sur les ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
-[]\OT1/cmr/m/n/12 Protocole de lab-o-ra-toire, \OT1/cmr/m/it/12 Hepia, cours su
-r les on-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
-\OT1/cmr/m/it/12 des \OT1/cmtt/m/n/12 https://cyberlearn.hes-so.ch/pluginfile.p
-hp/697672/
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
- [11
-
-
-
-]
-! Double subscript.
-l.31 	$D_r_
-           e_e_l$ \ cm &
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.31 	$D_r_e_
-             e_l$ \ cm &
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.31 	$D_r_e_e_
-               l$ \ cm &
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.32 	$\lambda$ \ cm  &
-                        \\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: ./ressources/images/electrique/r5.png Graphic file (type png)
-<use ./ressources/images/electrique/r5.png>
-Package pdftex.def Info: ./ressources/images/electrique/r5.png  used on input l
-ine 138.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-<./ressources/images/electrique/r10.png, id=265, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r10.png Graphic file (type png)
-<use ./ressources/images/electrique/r10.png>
-Package pdftex.def Info: ./ressources/images/electrique/r10.png  used on input 
-line 146.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./ressources/images/electrique/r15.png, id=266, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r15.png Graphic file (type png)
-<use ./ressources/images/electrique/r15.png>
-Package pdftex.def Info: ./ressources/images/electrique/r15.png  used on input 
-line 157.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-<./ressources/images/electrique/r20.png, id=267, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r20.png Graphic file (type png)
-<use ./ressources/images/electrique/r20.png>
-Package pdftex.def Info: ./ressources/images/electrique/r20.png  used on input 
-line 165.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: ./ressources/images/electrique/r25.png Graphic file (type png)
-<use ./ressources/images/electrique/r25.png>
-Package pdftex.def Info: ./ressources/images/electrique/r25.png  used on input 
-line 175.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-<./ressources/images/electrique/r30.png, id=268, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r30.png Graphic file (type png)
-<use ./ressources/images/electrique/r30.png>
-Package pdftex.def Info: ./ressources/images/electrique/r30.png  used on input 
-line 183.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./ressources/images/electrique/r35.png, id=269, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r35.png Graphic file (type png)
-<use ./ressources/images/electrique/r35.png>
-Package pdftex.def Info: ./ressources/images/electrique/r35.png  used on input 
-line 193.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-<./ressources/images/electrique/r40.png, id=270, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r40.png Graphic file (type png)
-<use ./ressources/images/electrique/r40.png>
-Package pdftex.def Info: ./ressources/images/electrique/r40.png  used on input 
-line 201.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: ./ressources/images/electrique/r100.png Graphic file (type png)
-<use ./ressources/images/electrique/r100.png>
-Package pdftex.def Info: ./ressources/images/electrique/r100.png  used on input
- line 211.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-File: ./ressources/images/electrique/r500.png Graphic file (type png)
-<use ./ressources/images/electrique/r500.png>
-Package pdftex.def Info: ./ressources/images/electrique/r500.png  used on input
- line 219.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./ressources/images/electrique/r1500.png, id=271, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r1500.png Graphic file (type png)
-<use ./ressources/images/electrique/r1500.png>
-Package pdftex.def Info: ./ressources/images/electrique/r1500.png  used on inpu
-t line 227.
-(pdftex.def)             Requested size: 252.94437pt x 144.53964pt.
-<./ressources/images/electrique/r2000.png, id=272, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r2000.png Graphic file (type png)
-<use ./ressources/images/electrique/r2000.png>
-Package pdftex.def Info: ./ressources/images/electrique/r2000.png  used on inpu
-t line 237.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-<./ressources/images/electrique/r2500.png, id=273, 505.89pt x 289.08pt>
-File: ./ressources/images/electrique/r2500.png Graphic file (type png)
-<use ./ressources/images/electrique/r2500.png>
-Package pdftex.def Info: ./ressources/images/electrique/r2500.png  used on inpu
-t line 245.
-(pdftex.def)             Requested size: 225.4804pt x 128.84529pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [12{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [13 <./resso
-urces/images/electrique/r10.png>] [14 <./ressources/images/electrique/r15.png> 
-<./ressources/images/electrique/r20.png> <./ressources/images/electrique/r30.pn
-g> <./ressources/images/electrique/r35.png> <./ressources/images/electrique/r40
-.png>] [15 <./ressources/images/electrique/r1500.png> <./ressources/images/elec
-trique/r2000.png> <./ressources/images/electrique/r2500.png>] (./main.aux (./sr
-cs/1_intro.aux) (./srcs/accoustique/2_description.aux) (./srcs/accoustique/4_re
-sultats.aux) (./srcs/electrique/2_description.aux) (./srcs/electrique/4_resulta
-ts.aux) (./srcs/annexes.aux))
+) [3] (./main.aux (./srcs/1_intro.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1243,16 +674,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7B208F1DAE5C534653E10B49B7729922;3451.
+(rerunfilecheck)             Checksum: 5C111423BB395E50FFBE8223B3BCAA00;548.
  ) 
 Here is how much of TeX's memory you used:
- 13921 strings out of 474222
- 225885 string characters out of 5748733
- 1946975 words of memory out of 5000000
- 35859 multiletter control sequences out of 15000+600000
- 565215 words of font info for 61 fonts, out of 8000000 for 9000
+ 13450 strings out of 474222
+ 210407 string characters out of 5748733
+ 1935975 words of memory out of 5000000
+ 35483 multiletter control sequences out of 15000+600000
+ 564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,10n,117p,1347b,508s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,6n,117p,1356b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -1262,13 +693,11 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (15 pages, 883863 bytes).
+cm/cmsy8.pfb>
+Output written on main.pdf (3 pages, 122368 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
- 78 named destinations out of 1000 (max. 500000)
- 284 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
